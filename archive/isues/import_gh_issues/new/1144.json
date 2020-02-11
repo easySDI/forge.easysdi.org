@@ -1,0 +1,14 @@
+{
+    "issue": {
+        "closed": true,
+        "title": "Download statistics are not stored anymore",
+        "created_at": "2015-09-22T11:02:32Z",
+        "labels": [
+            "Defect",
+            "Redmine status : Closed",
+            "Category : SHOP"
+        ],
+        "body": "**Original author :** Portier Thomas\n\nSince 4.3 download statistics are not stored in diffusion_download table\n\n**Fixed versions :** 4.4.0"
+    },
+    "comments": []
+}

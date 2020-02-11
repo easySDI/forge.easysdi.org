@@ -1,0 +1,14 @@
+{
+    "issue": {
+        "closed": true,
+        "title": "Save a copy of a map layer crashes",
+        "created_at": "2015-04-07T15:05:41Z",
+        "labels": [
+            "Defect",
+            "Redmine status : Closed",
+            "Category : MAP"
+        ],
+        "body": "**Original author :** Portier Thomas\n\nIf the alias of the map layer is greater than 30 characters, the save a copy function crashes with sql error as \" Duplicate entry\"\n\n**Fixed versions :** 4.2.8"
+    },
+    "comments": []
+}

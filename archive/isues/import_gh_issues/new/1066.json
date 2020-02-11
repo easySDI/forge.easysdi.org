@@ -1,0 +1,14 @@
+{
+    "issue": {
+        "closed": true,
+        "title": "New REST extraction interface does not store files in correct place.",
+        "created_at": "2015-07-29T07:20:55Z",
+        "labels": [
+            "Defect",
+            "Redmine status : Closed",
+            "Category : SHOP"
+        ],
+        "body": "**Original author :** Blatti Yves\n\nNew REST extraction interface does not store files in correct place.\r\n\r\nCorrect place is: @joomlaRoot\/{configurablePath}\/{orderID}\/{productID}\/{filename.ext}@\r\n\r\nThe interfaces creates a folder in : @joomlaRoot\/{configurablePath}\/{orderGUID}@ and store file in @joomlaRoot\/{configurablePath}\/{orderGUID+orderProductGUID}.zip@\r\n\r\nNote:\r\n@{configurablePath}@ = the path set in backend, relative to joomla root\r\n@{orderID}@ = #__sdi_order.id\r\n@{productID}@ = #__sdi_diffusion.id\r\n@{orderGUID}@ = #__sdi_order.guid\r\n@{orderProductGUID}@ = #__sdi_order_diffusion.guid\n\n**Fixed versions :** 4.3.2"
+    },
+    "comments": []
+}

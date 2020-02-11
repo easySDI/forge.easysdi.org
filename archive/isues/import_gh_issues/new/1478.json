@@ -1,0 +1,14 @@
+{
+    "issue": {
+        "closed": true,
+        "title": "EasySDI EXTRACT 1.2",
+        "created_at": "2019-12-12T10:09:15Z",
+        "labels": [
+            "Enhancement",
+            "Redmine status : Closed",
+            "Category : EXTRACT"
+        ],
+        "body": "**Original author :** Blatti Yves\n\nMerge EXTARCT module updates (https:\/\/projets.asitvd.ch\/versions\/134)\r\n\r\nFrench detail :\r\nEvolution #20315: Ajouter des variables \u00e0 passer \u00e0 FME (Desktop et Server)\r\nEvolution #21289: T\u00e9l\u00e9charger tous les fichiers lors de la validation\r\nEvolution #22286: Notifications optionnelles dans le compte utilisateur\r\nEvolution #22291: T\u00e9l\u00e9charger le p\u00e9rim\u00e8tre en DXF ou KML\r\nEvolution #22299: Ajout d'une option \"horaire\/jour d'activit\u00e9\"\r\nEvolution #23161: Passer (skip) un \u00e9tape lors d'une erreur\r\nEvolution #23238: Connecteur easySDI : ne pas zipper si un seul fichier\r\nDysfonctionnement #22380: Les assets sont conserv\u00e9s en cache browser lors d'une mise \u00e0 jour\r\nDysfonctionnement #22384: Retour \u00e0 la ligne automatique manquant dans le path du fichier archiv\u00e9\r\nDysfonctionnement #22424: Retour de l'erreur FME dans EXTRACT\r\nDysfonctionnement #22541: Polices diff\u00e9rentes entre mail de validation et notification\r\nDysfonctionnement #22570: Erreur 500 lors de l'affichage d'une demande assign\u00e9e \u00e0 un op\u00e9rateur qui n'existe plus\r\nDysfonctionnement #22577: L'export d'un produit a \u00e9chou\u00e9\r\nDysfonctionnement #23565: CSS dans le body\r\nDysfonctionnement #23626: Labels dans plugin FME (workbench -> workspace)\r\nDysfonctionnement #23695: Sur Windows, les retours \u00e0 la ligne sont doubl\u00e9s lors du setProduct easySDI\n\n**Fixed versions :** 4.5.2"
+    },
+    "comments": []
+}

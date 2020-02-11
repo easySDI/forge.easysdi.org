@@ -1,0 +1,14 @@
+{
+    "issue": {
+        "closed": true,
+        "title": "Filter on organism selection fails in view=orders and view=resources",
+        "created_at": "2015-09-04T17:09:56Z",
+        "labels": [
+            "Defect",
+            "Redmine status : Closed",
+            "Category : SHOP"
+        ],
+        "body": "**Original author :** M\u00e9rour Xavier\n\nWe have detected two cases :\r\n\r\n* *case 1 : in view=orders (front-end)*, the filter displays all organisms where the connected user has a role\r\n--> It should only display in the list organisms where the user is \"member of\" OR the user is \"organism manager\" > 1 \r\n\r\n_nb : if the user has no role (ony \"member of\"), the filter should not be displayed since it's unacessary._\r\n\r\n\r\n\r\n* *case 2 : in view=resources (front-end)*, the filter displays all organisms where the connected user has \"role validation\"\r\n--> It should only display the list or organisms where the user has at leat one of the following roles :\r\n- Resource manager\r\n- Medatada manager\r\n- Metadata editor\r\n- Diffusion manager\r\n- Preview manager\r\n- Extraction manager\r\n- Organism manager\r\n\r\n\r\n\r\n------\r\n\r\n\r\nBy the way, for both lists, the name of organisms are ordered \"strangely\". It should be ordered alphabetically.\n\n**Fixed versions :** 4.3.2"
+    },
+    "comments": []
+}

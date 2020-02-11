@@ -1,0 +1,19 @@
+{
+    "issue": {
+        "closed": true,
+        "title": "Enhancement of WFS location engine",
+        "created_at": "2014-10-20T14:37:06Z",
+        "labels": [
+            "Feature",
+            "Redmine status : Rejected",
+            "Category : MAP"
+        ],
+        "body": "**Original author :** Magoni Bruno\n\nThere is actually two location engines inside MAP (Google and WFS).\r\n\r\nThere is some need about enhancing WFS location engine, and also keeping it compliant with another new feature #839\r\n* Goal is to perform WFS location on a larger number of features, which implies to categorize founded features\r\n* if founded feature is located into an indoor layer, it is necessary that MAP locates automatically to the corresponding level\r\n\r\nTo answer such needs, new parameters should be added to the WFS location definition:\r\n* Name of the category features attribute\r\n* Name of the level features attribute\r\n* Highlighting founded\/selected feature (yes\/no)\r\n\r\nIf a level is associated to the selected feature into the founded list, the MAP context will force reload of all indoor layers.\r\nLocation will be based on the bounding box of the selected feature.\r\nif highlight is activated, the feature will be kept highlighted until une new location is done by the user or if the user empty the location search entry.\r\n"
+    },
+    "comments": [
+        {
+            "body": "**Original author :** Van Hoecke H\u00e9l\u00e8ne \n\nRejected by the TC.",
+            "created_at": "2015-06-26T08:54:49Z"
+        }
+    ]
+}

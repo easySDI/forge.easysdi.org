@@ -1,0 +1,14 @@
+{
+    "issue": {
+        "closed": true,
+        "title": "Wrong label in metadata edition form",
+        "created_at": "2014-10-10T12:54:33Z",
+        "labels": [
+            "Defect",
+            "Redmine status : Rejected",
+            "Category : CATALOG"
+        ],
+        "body": "**Original author :** Van Hoecke H\u00e9l\u00e8ne \n\nFor some fields, potentially textareas or multilingual fields, the label is replaced by the html element id.\n\n**Fixed versions :** 4.2.0"
+    },
+    "comments": []
+}

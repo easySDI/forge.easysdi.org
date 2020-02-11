@@ -1,0 +1,23 @@
+{
+    "issue": {
+        "closed": true,
+        "title": "SQL slowdowns on Shop > Orders",
+        "created_at": "2017-09-27T13:54:42Z",
+        "labels": [
+            "Defect",
+            "Redmine status : Closed",
+            "Category : SHOP"
+        ],
+        "body": "**Original author :** Bubloz Ivan\n\nOn the page \"My commands\" (Frontend) the data loading is very slow.\r\nThe problem was found in \"sdiBasket\" class.\r\nTo fix this bug we have extended the class with a new optional \"smartviewmode\" property (set to false by default).\r\n\r\nSample call of the \"SmartView\" mode\r\n```\n\r\n$basket = new SdiBasket ();\r\n$basket-> Smartviewmode = true;\r\n$basket-LoadOrder ($item-> ID);\r\n```\n\r\n\r\nThis mode ignores setting properties that are not used in this view.\r\n\n\n**Fixed versions :** 4.5.0"
+    },
+    "comments": [
+        {
+            "body": "**Original author :** Bubloz Ivan\n\nRevision r10250\r\n\r\nHello,\r\nI am the new developper by ASIT VD.\r\nIt is my firt commit, can you please check it ?\r\nMany Thanks.\r\nBest regards.\r\n",
+            "created_at": "2017-09-27T14:40:29Z"
+        },
+        {
+            "body": "**Original author :** Blatti Yves\n\nOK for TC",
+            "created_at": "2017-10-26T08:49:44Z"
+        }
+    ]
+}

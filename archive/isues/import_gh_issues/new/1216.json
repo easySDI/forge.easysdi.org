@@ -1,0 +1,31 @@
+{
+    "issue": {
+        "closed": true,
+        "title": "Distinguish the 'archived' state of an order from order status",
+        "created_at": "2015-12-04T08:04:39Z",
+        "labels": [
+            "Enhancement",
+            "Redmine status : Closed",
+            "Category : SHOP"
+        ],
+        "body": "**Original author :** Blatti Yves\n\nDistinguish the 'archived' state from order status.\r\n\r\nThis will allow the user to:\r\n* have 'active' and 'archived' orders (like in a mailbox) + the boolean filter (same look as for validations : !boolean_filter.png!)\r\n* have a coherent module (last orders, which will contain only last active orders)\r\n* be able to archive order in states : 'finish', 'rejected by TP' and 'rejected by provider' (= ANY of the end of order life cycle)\r\n* don't loose informations on the history of the order depending of it's archive state\r\n\r\nThat is the behavior we wanted in v4 workshop, but since we added new order status the process has now branches, and we cannot rely on the order status anymore. See:\r\n\r\n```\n\r\nV4.2.X order status : we can use the archive state\r\n    +------+     +------+           +------+     +--------+\r\n    |      +---->+      +---....--->+finish+---->+archived|\r\n    +------+     +------+           +------+     +--------+\r\n\r\nV4.3.x oreder status : cannot use the archive status for views,\r\n                       since we cannot archive rejected orders\r\n                                    +-------------+\r\n                               .--->|rej. by supl.|\r\n                               .    +-------------+\r\n                               .\r\n    +------+     +------+      .    +------+     +--------+\r\n    |      +---->+      +---....--->+finish+---->+archived|\r\n    +------+     +------+      .    +------+     +--------+\r\n                               .\r\n                               .    +-------------+\r\n                               .--->+rej. by TP   |\r\n                                    +-------------+\r\n```\n\r\n\r\n## Implications\r\n\r\nIn the code:\r\n* add the boolean filter in orders view\r\n* only show active order in the 'last orders module' (#1078)\r\n* change the archive method controller, and allow it in view from any end status\r\n* remove archived status from constants and tests\r\n\r\nThe sql update plan is:\r\n* add the new field ( archived(boolean) )\r\n* set the archived flag to all orders that are in archived status\r\n* set status to 'finish' to all 'archived' orders (the only state they could have been in before!)\r\n* delete the archive status from the sys table\n\n**Fixed versions :** 4.4.1"
+    },
+    "comments": [
+        {
+            "body": "**Original author :** Blatti Yves\n\nWe talked about the Thomas proposals (Using different filters in views) at ASIT VD,\r\nbut we cannot fit all use cases (ex: Canceled and Rejected, will be there forever, they'll never be archived).\r\n\r\nWe also had a look of the implications in code, and it seems lighter than we imagined.\r\n ",
+            "created_at": "2015-12-10T14:01:19Z"
+        },
+        {
+            "body": "**Original author :** Portier Thomas\n\n+1",
+            "created_at": "2015-12-14T13:40:24Z"
+        },
+        {
+            "body": "**Original author :** Van Hoecke H\u00e9l\u00e8ne \n\n+1",
+            "created_at": "2016-01-14T13:28:49Z"
+        },
+        {
+            "body": "**Original author :** Van Hoecke H\u00e9l\u00e8ne \n\nTC has accepted the enhancement according to Yves' proposal",
+            "created_at": "2016-01-14T13:29:59Z"
+        }
+    ]
+}

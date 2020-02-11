@@ -1,0 +1,19 @@
+{
+    "issue": {
+        "closed": true,
+        "title": "Need to include property.php table definition explicitly ",
+        "created_at": "2016-07-04T14:15:09Z",
+        "labels": [
+            "Defect",
+            "Redmine status : Closed",
+            "Category : SHOP"
+        ],
+        "body": "**Original author :** Blatti Yves\n\nNeed to include property.php table definition explicitly after #1309 for mod_easysdi_lastorders\r\n\r\n\n\n**Fixed versions :** 4.4.2"
+    },
+    "comments": [
+        {
+            "body": "**Original author :** Blatti Yves\n\nrev. 9933",
+            "created_at": "2016-07-04T14:16:19Z"
+        }
+    ]
+}

@@ -1,0 +1,19 @@
+{
+    "issue": {
+        "closed": true,
+        "title": "Error when creating a catalog",
+        "created_at": "2014-04-10T10:18:28Z",
+        "labels": [
+            "Defect",
+            "Redmine status : Rejected",
+            "Category : CATALOG"
+        ],
+        "body": "**Original author :** Portier Thomas\n\nOn a \"fresh\" installation, if the administrator didn't saved the Catalog Option with a language, there is an SQL error : \r\n\r\nYou have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 3 SQL=SELECT value FROM ac9fy_sdi_language WHERE id=\r\n\r\nIt should display a warning message or use the default JOOMLA language\r\n\r\nThomas"
+    },
+    "comments": [
+        {
+            "body": "**Original author :** Magoni Bruno\n\nThis problem has got a workaround which is saving easySDI options forms after deployment. This will save all options and prevent such problem.\r\n\r\nThis \"defect\" will be fixed with feature #661 which will be realized in upper version than version:4.1.0 (easySDI 4.1.0 will be cross-database and all SQL queries rewritten to fully support Joomla data access layer).",
+            "created_at": "2014-04-16T07:44:34Z"
+        }
+    ]
+}

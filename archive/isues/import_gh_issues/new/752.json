@@ -1,0 +1,63 @@
+{
+    "issue": {
+        "closed": true,
+        "title": "Alternative login page after basket (use Joomla! instead of EasySDI)",
+        "created_at": "2014-06-26T09:09:08Z",
+        "labels": [
+            "Feature",
+            "Redmine status : Closed",
+            "Category : SHOP"
+        ],
+        "body": "**Original author :** Blatti Yves\n\nWe'd like to have an alternate flow for basket login.\r\nThis need comes from the online price calculation:\r\n\r\n*Current flow:*\r\n\r\n# a user is not logged in and see his basket with products\r\n# click on \"order\"\r\n# log in and confirm\r\n\r\n\r\n> *Problem*: he never sees the updated basket with new prices (depending on his organism category) with eventually free products and rebates.\r\n\r\n*Proposed flow:*\r\n\r\n# a user is not logged in and see his basket with products\r\n(the \"accept terms and conditions\" buttons is now placed at the bottom of basket)\r\n# the button at bottom of basket is \"login\" (or create account), he clicks on it\r\n# the Joomla! login page if offered to him, he logs in\r\n# the basket is shown again with new prices depending of his organism categories\r\n# now the buttons at bottom are \"confirm order\" and\/or \"ask for estimate\" and \"save basket\"\r\n# when he clicks on \"confirm order\" or \"ask for estimate\" the order is sent (no more confirmation screen)\r\n\r\n> *Pros* : \r\n> - The user sees the basket with correct\/final price\r\n> - If a user is logged in before he goes to his basket, he can confirm an order in one single step (Final basket, actions in step 6)\r\n> - The Joomla! Login page is easily overridable (for example: add a create account link or form), and is the same across all the website\r\n> *Cons* :\r\n> - if an easySDI platform if configured with only free products, this would add a step, BUT:\r\n> 1: this flow is more \"standard\" in online shops\r\n> 2: currents users of easySDI with \"everything free\" policy (like SI17 and tigeo) use the feature \"user perimeter\" (mon p\u00e9rim\u00e8tre), and this feature implies that the user is already logged in. In this case (a logged user), the flow is even shorter.\r\n\r\nThe proposed system (with current and proposed flow is shown in attachment: \"new_basket_flow_v2.png\":https:\/\/forge.easysdi.org\/attachments\/732\/new_basket_flow_v2.png)\n\n**Fixed versions :** 4.3.0"
+    },
+    "comments": [
+        {
+            "body": "**Original author :** M\u00e9rour Xavier\n\n@Thomas\r\nThis ticket is our proposal after our talk on phone.\r\nAre you OK with it ?\r\n\r\n@all\r\n\r\nThanks for any comments \/ remarks.",
+            "created_at": "2014-06-26T09:17:17Z"
+        },
+        {
+            "body": "**Original author :** Magoni Bruno\n\nBlatti Yves wrote:\r\n> > *Cons* :\r\n> > - if an easySDI platform if configured with only free products, this would add a non-needed step\r\n> >->for this we propose to have a global SHOP configuration: use \"easySDI login\" (same as current in v4.1) on \"use Joomla! login page\" (with a return to basket after login)\r\n> \r\n\r\nAs far as I understand, non-needed step will also appear if basket is composed with only free products even if they are paying products defined inside the platform.\r\nSo this condition should be managed in regards of the basket content and not through a global configuration.\r\n\r\nRegarding the process, I don't understand why a user could be able to login and confirm order without seeing again conditions of his basket after log on. Even if price could be decreased (but potentially it's not always the case), a user must normally confirm his order seeing the final basket conditions.\r\nSo I won't bring such possibility that imposes also to develop a new easySDI basket login page.\r\nI guess that displaying Joomla default login module is sufficient and several ways could be choose (module inside the basket page, module as a div, module in a new page, ...). I have some preference for a div as basket page contains already lot of content to incorporate login form...\r\n\r\nBruno\r\n\r\n\r\n",
+            "created_at": "2014-06-26T15:05:17Z"
+        },
+        {
+            "body": "**Original author :** Blatti Yves\n\nAdapted with Bruno's remarks.",
+            "created_at": "2014-06-30T11:45:10Z"
+        },
+        {
+            "body": "**Original author :** Blatti Yves\n\n(new_basket_flow.png is no longer part of the feature, but remains here for \"history\" ;-) )",
+            "created_at": "2014-06-30T11:47:32Z"
+        },
+        {
+            "body": "**Original author :** M\u00e9rour Xavier\n\nI find the new proposal much more valuable for easySDI (both for current and future users) since :\r\n- it gives an homogenous workflow inside the platform (no matter the context)\r\nAND\r\n-  it matches common users' experiences on the web.\r\n\r\n\r\n\r\n",
+            "created_at": "2014-06-30T11:57:26Z"
+        },
+        {
+            "body": "**Original author :** Magoni Bruno\n\nSpeaking with Yves, login page will be displayed as a new page (no integration in  basket page or no DIV) as it will allow configuring login page and template completely...",
+            "created_at": "2014-06-30T12:25:26Z"
+        },
+        {
+            "body": "**Original author :** M\u00e9rour Xavier\n\nright ;-)",
+            "created_at": "2014-06-30T12:27:39Z"
+        },
+        {
+            "body": "**Original author :** Magoni Bruno\n\nSuch feature seems mature as explained to be voted...\r\n",
+            "created_at": "2014-06-30T12:33:02Z"
+        },
+        {
+            "body": "**Original author :** Magoni Bruno\n\n+1",
+            "created_at": "2014-06-30T12:33:29Z"
+        },
+        {
+            "body": "**Original author :** M\u00e9rour Xavier\n\n+1\r\n\r\n_PS : we did the overide of Joomla! login page today as a test : it's easy and straighforward._ ",
+            "created_at": "2014-06-30T13:38:54Z"
+        },
+        {
+            "body": "**Original author :** M\u00e9rour Xavier\n\n@Bruno\r\n\r\nStatus should be changed to \"Request for vote\" ;-)",
+            "created_at": "2014-06-30T14:44:58Z"
+        },
+        {
+            "body": "**Original author :** Plainecassagne Laurent\n\nLaurent\r\n+1",
+            "created_at": "2014-07-01T12:37:22Z"
+        }
+    ]
+}

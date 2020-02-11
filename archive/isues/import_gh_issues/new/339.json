@@ -1,0 +1,14 @@
+{
+    "issue": {
+        "closed": false,
+        "title": "WMS parameter 'format' is not allowed in lower case first letter (f)",
+        "created_at": "2011-03-18T08:12:07Z",
+        "labels": [
+            "Defect",
+            "Redmine status : New",
+            "Category : MONITOR"
+        ],
+        "body": "**Original author :** Larsen de Martino Jorgen\n\nIt is not possible to use the WMS parameter 'format' with first letter (f) in lower case because it is at reserved word in ajax rest.\r\n\r\nThe solution could be either \r\n# to document this as a restriction when using the format parameter and deliver a usefull exception to the user explaining what went wrong\r\n# to change the code to solve this issue in order to make the parameter non case sensitive\r\n# Or something completely different that I have nor thought of\r\n"
+    },
+    "comments": []
+}

@@ -1,0 +1,19 @@
+{
+    "issue": {
+        "closed": true,
+        "title": "Warning in SearchJForm",
+        "created_at": "2017-01-11T14:01:04Z",
+        "labels": [
+            "Defect",
+            "Redmine status : Closed",
+            "Category : CATALOG"
+        ],
+        "body": "**Original author :** Blatti Yves\n\n```\n\r\n( ! ) Notice: Trying to get property of non-object in\\joomla\\components\\com_easysdi_catalog\\libraries\\easysdi\\SearchJForm.php on line 430\r\n```\n\n\n**Fixed versions :** 4.4.4"
+    },
+    "comments": [
+        {
+            "body": "**Original author :** Blatti Yves\n\nrev. 10065",
+            "created_at": "2017-01-11T14:06:44Z"
+        }
+    ]
+}

@@ -1,0 +1,31 @@
+{
+    "issue": {
+        "closed": true,
+        "title": "Add the ability to have custom code in basket and order (recapitulation) view",
+        "created_at": "2015-08-25T06:54:36Z",
+        "labels": [
+            "Enhancement",
+            "Redmine status : Closed",
+            "Category : SHOP"
+        ],
+        "body": "**Original author :** Blatti Yves\n\nAdd the ability to have custom code in basket and order (recapitulation) view.\r\nThe idea is to add a custom plugin trigger to get custom JS code in views having a map.\r\nThis would allow integrator to add code in basket map etc. For example: custom layer switcher, custom search box...\n\n**Fixed versions :** 4.3.2"
+    },
+    "comments": [
+        {
+            "body": "**Original author :** Van Hoecke H\u00e9l\u00e8ne \n\nTC has validated this enhancement",
+            "created_at": "2015-08-28T08:10:41Z"
+        },
+        {
+            "body": "**Original author :** Blatti Yves\n\nBasket Plugin : rev. 9048",
+            "created_at": "2015-09-09T18:09:07Z"
+        },
+        {
+            "body": "**Original author :** Blatti Yves\n\nRecap plugin : rev. 9056",
+            "created_at": "2015-09-10T11:52:31Z"
+        },
+        {
+            "body": "**Original author :** Blatti Yves\n\nSince there's thwo structures of views:\r\n* The basket view\r\n* The \"recap\" views (order, validation & request)\r\n\r\nEach have it's plugin type!\r\n\r\nIf one want's to have a JS plugin for it's SHOP:\r\n\r\nFor basket:\r\n- create a plugin in folder @easysdi_basket_script@\r\n- the plug has to offer a method @public function getBasketScript()@ that returns javascript as String\r\nFor recaps:\r\n- create a plugin in folder @easysdi_recap_script@\r\n- the plug has to offer a method @public function getRecapScript($context)@ that returns javascript as String\r\n- context var contains the 'viewType' constant (see easysdi_shop_helper) : usage example @if(Easysdi_shopHelper::ORDERVIEW_ORDER == $context->viewType)@\r\nNotes:\r\n- this mechanism does not alter current users if they're not using plugins\r\n- multiple plugins can be loaded of each types, scripts are concatenated.\r\n- plugins can add interact with DOM document (for example: @$document->addScript(Juri::base(true) . '\/components\/com_asitvd_simpleshop\/libraries\/autocomplete\/jquery.autocomplete.min.js');@)\r\n\r\nA plugin example: file @joomlaROOT\/plugins\/easysdi_recap_script\/asitvdrecap\/asitvdrecap.php@\r\n\r\n```\n\r\n<code class=\"php\">\r\ndefined('_JEXEC') or die;\r\n\r\n\/\/shop helper for view types constants\r\nrequire_once JPATH_SITE . '\/components\/com_easysdi_shop\/helpers\/easysdi_shop.php';\r\n\r\nclass PlgEasysdi_recap_scriptAsitvdrecap extends JPlugin {\r\n    public function getRecapScript($context) {\r\n        \/\/only display in 'order' view (client view)\r\n        if (Easysdi_shopHelper::ORDERVIEW_ORDER == $context->viewType) {\r\n            \/\/add some JS files\r\n            $document = JFactory::getDocument();\r\n            $document->addScript(Juri::base(true) . '\/components\/com_asitvd_simpleshop\/libraries\/autocomplete\/jquery.autocomplete.min.js');\r\n            $document->addScript(Juri::base(true) . '\/plugins\/easysdi_recap_script\/asitvdrecap\/asitvdrecap.js');\r\n\r\n            \/\/run the initialisation method of asitvdrecap.js\r\n            return 'asitvdrecapInit();';\r\n        } else {\r\n            \/\/no script for other views\r\n            return '';\r\n        }\r\n    }\r\n\r\n}\r\n\r\n```\n",
+            "created_at": "2015-09-10T12:06:33Z"
+        }
+    ]
+}

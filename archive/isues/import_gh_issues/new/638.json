@@ -1,0 +1,67 @@
+{
+    "issue": {
+        "closed": true,
+        "title": "Changing integrated PHP proxy",
+        "created_at": "2013-12-20T10:07:25Z",
+        "labels": [
+            "Enhancement",
+            "Redmine status : Closed",
+            "Category : MAP"
+        ],
+        "body": "**Original author :** Magoni Bruno\n\n\"Surrogafier\" php proxy is not able to support POST requests and cookies.\r\nWhith such constraints, MAP is not able to work properly and Apache proxy path must still be used (which can be difficult to manage regarding the Internet Provider you work with).\r\n\r\nSo, it is important to find another PHP proxy which supports fully features of MAP.\r\n\r\nIn the mean time, it is important to add a tooltip inside MAP options interface (over label Proxy) explaining such behaviour: _\"Type in a specific PHP proxy that MAP must use; if empty, it means that MAP uses the one per default integrated inside easySDI\"_\n\n**Fixed versions :** 4.3.0"
+    },
+    "comments": [
+        {
+            "body": "**Original author :** Van Hoecke H\u00e9l\u00e8ne \n\nWe have developed a proxy php to replace the \"Surrogafier\" which is not answering our needs in eaSYSDI MAP.\r\nThis proxy supports GET, POST and cookies. \r\nIt is included in CORE component and already used in easySDI for other functionnalities.\r\n\r\nWe propose to set this proxy as default one in the MAP component and get rid of the \"Surrogafier\".",
+            "created_at": "2015-02-27T13:23:11Z"
+        },
+        {
+            "body": "**Original author :** Van Hoecke H\u00e9l\u00e8ne \n\nDo we have to keep the proxy php as an option? The integrated proxy PHP could be used in any cases.",
+            "created_at": "2015-02-27T15:34:28Z"
+        },
+        {
+            "body": "**Original author :** Van Hoecke H\u00e9l\u00e8ne \n\nSecurity of this proxy PHP must be enhance before validating its integration.",
+            "created_at": "2015-03-06T08:16:43Z"
+        },
+        {
+            "body": "**Original author :** Magoni Bruno\n\nHi TC,\r\n\r\nAs far as I understand ,the surrogafier php proxy was not configured to secure any caller or any proxyied endpoint.\r\nAs it is important to secure quite a bit the new php proxy, I propose that TC validates such issue and open new enhancement about php proxy security (there is no less security than now).\r\n\r\nSo, is TC able to validate such old issue with the 2 main points:\r\n* new integrated php proxy becomes the default one for easySDI extensions\r\n* there is no more option about php proxy in MAP and SHOP components' configuration as it will always be used by easySDI\r\n\r\nHope that you agree with such proposal :-)\r\n\r\n",
+            "created_at": "2015-03-09T11:33:13Z"
+        },
+        {
+            "body": "**Original author :** Blatti Yves\n\nThat's OK for me",
+            "created_at": "2015-03-11T11:56:13Z"
+        },
+        {
+            "body": "**Original author :** Villemagne J\u00e9r\u00f4me\n\n+1",
+            "created_at": "2015-03-11T13:43:52Z"
+        },
+        {
+            "body": "**Original author :** Portier Thomas\n\nWhere can I find this proxy to test it?",
+            "created_at": "2015-03-11T14:30:48Z"
+        },
+        {
+            "body": "**Original author :** Villemagne J\u00e9r\u00f4me\n\nHi Thomas,\r\n\r\n-> \/components\/com_easysdi_core\/controllers\/proxy.php\r\n\r\nFYI: it's actually used by the datatable translation system",
+            "created_at": "2015-03-11T14:33:37Z"
+        },
+        {
+            "body": "**Original author :** Van Hoecke H\u00e9l\u00e8ne \n\nIt's OK for me.",
+            "created_at": "2015-03-12T07:46:14Z"
+        },
+        {
+            "body": "**Original author :** Battaglia Marc\n\nok for me too.",
+            "created_at": "2015-03-12T07:52:24Z"
+        },
+        {
+            "body": "**Original author :** Portier Thomas\n\nOk for me too.",
+            "created_at": "2015-03-12T09:40:21Z"
+        },
+        {
+            "body": "**Original author :** Magoni Bruno\n\n\r\n",
+            "created_at": "2015-03-12T09:56:18Z"
+        },
+        {
+            "body": "**Original author :** Van Hoecke H\u00e9l\u00e8ne \n\nSHOP component does not use the param 'proxyphp' available in component options. So, this option is removed.",
+            "created_at": "2015-03-13T16:12:19Z"
+        }
+    ]
+}

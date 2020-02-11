@@ -1,0 +1,31 @@
+{
+    "issue": {
+        "closed": true,
+        "title": "order panel display pricing even if there is no pricing associated with the product",
+        "created_at": "2015-09-17T15:54:03Z",
+        "labels": [
+            "Defect",
+            "Redmine status : Closed",
+            "Category : SHOP"
+        ],
+        "body": "**Original author :** Portier Thomas\n\n\n\n**Fixed versions :** 4.3.2"
+    },
+    "comments": [
+        {
+            "body": "**Original author :** Blatti Yves\n\nHi Thomas !\r\n\r\nWhat do you mean by 'order panel' ? The order view for the user ?\r\n\r\nAnd by 'no pricing associated with the product' you say a free product ?\r\n\r\nDo you have a screen shot maybe ?",
+            "created_at": "2015-09-17T16:21:36Z"
+        },
+        {
+            "body": "**Original author :** Portier Thomas\n\nYou can fix it in administrator\\components\\com_easysdi_shop\\layouts\\com_easysdi_shop\\order.php\r\n\r\nby replacing \r\n\r\n```\n\r\n<tfoot>\r\n```\n\r\n\r\nby \r\n\r\n```\n\r\n<tfoot style=\"<?php if (!isset($item->basket->pricing) || !$item->basket->isActivated): ?>display:none;<?php endif; ?>\">\r\n```\n\r\n\r\nI let you do it.\r\n\r\nIn my case I dont manage pricing at all.",
+            "created_at": "2015-09-18T07:30:30Z"
+        },
+        {
+            "body": "**Original author :** Blatti Yves\n\nOh OK, it was fixed in the meantime, all the table is hidden\r\n```\n\r\n<table class=\"table table-striped\" id='pricingTotal-table' style=\"<?php if (!$showPricing || $viewType == Easysdi_shopHelper::ORDERVIEW_REQUEST): ?>display:none;<?php endif; ?>\">\r\n```\n",
+            "created_at": "2015-09-18T08:22:41Z"
+        },
+        {
+            "body": "**Original author :** Blatti Yves\n\nRevision: 9099",
+            "created_at": "2015-09-18T14:33:41Z"
+        }
+    ]
+}

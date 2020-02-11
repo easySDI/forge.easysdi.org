@@ -1,0 +1,14 @@
+{
+    "issue": {
+        "closed": true,
+        "title": "Access scope in catalog search results",
+        "created_at": "2015-01-15T14:46:43Z",
+        "labels": [
+            "Defect",
+            "Redmine status : Closed",
+            "Category : CATALOG"
+        ],
+        "body": "**Original author :** Van Hoecke H\u00e9l\u00e8ne \n\nRights of current user are not correctly taking into account when performing a catalog search : to much results are visible in the list.\n\n**Fixed versions :** 4.2.5"
+    },
+    "comments": []
+}

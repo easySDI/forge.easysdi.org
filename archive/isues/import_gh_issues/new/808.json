@@ -1,0 +1,19 @@
+{
+    "issue": {
+        "closed": true,
+        "title": "Validation fails with stereotype \"file\"",
+        "created_at": "2014-08-22T07:52:47Z",
+        "labels": [
+            "Defect",
+            "Redmine status : Closed",
+            "Category : CATALOG"
+        ],
+        "body": "**Original author :** Blatti Yves\n\nValidation fails with stereotype \"file\".\r\nBehavior of the stereotype: if you fill in a file for the first time, the first field is used (and checked by validator).\r\nIf you save and reopen the metadata form, the first field is empty, and the second contains file URL. (see screenshot)\r\nProblem is: the validation fails because of the first field is empty.\n\n**Fixed versions :** 4.3.2"
+    },
+    "comments": [
+        {
+            "body": "**Original author :** Blatti Yves\n\nUser can edit both fields (he can delete a file for example), so we cannot predict which field is mandatory on form generation.\r\n\r\nFields are:\r\n```\n\r\n+-------------------------++-----------------+\r\n| Browse field            || Browse button   |\r\n+-------------------------++-----------------+\r\n+-------------------------++-------++--------+\r\n| Previous file           || View  || Delete |\r\n+-------------------------++-------++--------+\r\n```\n\r\n\r\nI suggest we add a little procedure that runs before validation:\r\n```\n\r\nforeach(FileStereotypeWithRequiredClass as fs){\r\n   if(fs.Previous_File is blank){\r\n       fs.setBrowse_FieldMandatory();\r\n   }\r\n}\r\n```\n\r\n\r\nFor this we should should use a custom \"filerequired\" class (not the html \"required\") that we put on the stereotype root, and not pre-set \"required\" on the browse field on form generation.\r\n\r\nAny inputs everyone?\r\n",
+            "created_at": "2014-08-22T09:31:03Z"
+        }
+    ]
+}

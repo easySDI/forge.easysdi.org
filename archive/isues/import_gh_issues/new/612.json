@@ -1,0 +1,14 @@
+{
+    "issue": {
+        "closed": false,
+        "title": "Reengineering Monitor authentication",
+        "created_at": "2013-04-12T11:21:18Z",
+        "labels": [
+            "Feature",
+            "Redmine status : New",
+            "Category : MONITOR"
+        ],
+        "body": "**Original author :** Magoni Bruno\n\nThe goal is to change way of storing MONITOR users\/roles in database and authenticating beside MONITOR servlet.\r\n\r\n* EasySDI account service should be used instead of specific MONITOR admin account.\r\n* Specific MONITOR users\/roles should be entirely replaced by Joomla access rights logical.\r\n* Monitor propxy php file should build the http call to MONITOR servlet adding authentication login instead of defining directly authentication login inside MONITOR servlet URL configuration.\r\n* Verify that SPRING security layer is fully intergated into MONITOR servlet to manage http basic protocol.\r\n"
+    },
+    "comments": []
+}

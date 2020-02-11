@@ -1,0 +1,23 @@
+{
+    "issue": {
+        "closed": true,
+        "title": "Can we exclude mpdf\\ttfontdata + monitor proxy log",
+        "created_at": "2015-06-15T09:02:15Z",
+        "labels": [
+            "Enhancement",
+            "Redmine status : Closed",
+            "Category : CORE"
+        ],
+        "body": "**Original author :** Blatti Yves\n\nCan we exclude joomla\\easysdi\\com_easysdi_core\\src\\administrator\\libraries\\mpdf\\ttfontdata from SVN ?\r\nThose are only temp files created by the lib... right ?\r\n\r\nAnd com_easysdi_monitor\\src\\site\\views\\proxy\\tmpl\\logs\\log.txt ?\r\n\r\nAnd src\/META-INF ?\n\n**Fixed versions :** 4.3.2"
+    },
+    "comments": [
+        {
+            "body": "**Original author :** Van Hoecke H\u00e9l\u00e8ne \n\nOK to exclude all those files.",
+            "created_at": "2015-06-26T09:30:14Z"
+        },
+        {
+            "body": "**Original author :** Blatti Yves\n\nIn my branch https:\/\/svn.easysdi.org\/svn\/easysdi\/sandboxes\/asit-vd\/4.3.x \r\n3 revisions:\r\n8793\r\n8794\r\n8795",
+            "created_at": "2015-06-30T13:05:17Z"
+        }
+    ]
+}

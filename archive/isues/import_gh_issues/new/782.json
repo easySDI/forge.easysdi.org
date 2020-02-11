@@ -1,0 +1,14 @@
+{
+    "issue": {
+        "closed": true,
+        "title": "jQuery libraries are not loaded in the map",
+        "created_at": "2014-07-25T09:02:31Z",
+        "labels": [
+            "Defect",
+            "Redmine status : Closed",
+            "Category : MAP"
+        ],
+        "body": "**Original author :** Van Hoecke H\u00e9l\u00e8ne \n\nPath to jQuery libraries is wrong in \\components\\com_easysdi_map\\helpers\\easysdi_map.php.\r\n\r\n\n\n**Fixed versions :** 4.2.0"
+    },
+    "comments": []
+}

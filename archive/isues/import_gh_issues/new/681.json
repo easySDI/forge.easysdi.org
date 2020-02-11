@@ -1,0 +1,43 @@
+{
+    "issue": {
+        "closed": true,
+        "title": "French translation for Policy",
+        "created_at": "2014-04-14T13:32:00Z",
+        "labels": [
+            "Feature",
+            "Redmine status : Closed",
+            "Category : SERVICE"
+        ],
+        "body": "**Original author :** Portier Thomas\n\nI would like to change the translation of \"Policies\" to \"R\u00e8gles\" in french. We could also change this in \"Rules\" in english.\r\n\r\nIs it ok for you?\n\n**Fixed versions :** 4.0.2"
+    },
+    "comments": [
+        {
+            "body": "**Original author :** M\u00e9rour Xavier\n\nIt's better than policies, you are right.\r\n\r\nOthers proposals :\r\n\r\n\"Access rules\" \/ \"R\u00e8gles d'acc\u00e8s\"\r\n\"Access rights\" \/ \"Droits d'acc\u00e8s\"\r\n\r\nWhat else... ?\r\n_a nespresso please ;-)_",
+            "created_at": "2014-04-14T13:42:02Z"
+        },
+        {
+            "body": "**Original author :** M\u00e9rour Xavier\n\nCan we make a choice on this \"small\" change ?",
+            "created_at": "2014-04-28T11:45:11Z"
+        },
+        {
+            "body": "**Original author :** Portier Thomas\n\n+1 for \"Access rules\" \/ \"R\u00e8gles d'acc\u00e8s\" ",
+            "created_at": "2014-04-28T12:22:44Z"
+        },
+        {
+            "body": "**Original author :** M\u00e9rour Xavier\n\nI go as well for \"Access rules\" \/ \"R\u00e8gles d'acc\u00e8s\"",
+            "created_at": "2014-04-28T12:24:42Z"
+        },
+        {
+            "body": "**Original author :** Magoni Bruno\n\n+1 for \"Access rules\" \/ \"R\u00e8gles d'acc\u00e8s\"",
+            "created_at": "2014-04-28T12:44:42Z"
+        },
+        {
+            "body": "**Original author :** Magoni Bruno\n\nHi everyone,\r\n\r\nBased on votes, I propose to agree with such translation feature.\r\nAs V4.0.2 is going to be built just now, such change will be available later on, so I set it to V4.1.0...\r\n\r\nThanks\r\n",
+            "created_at": "2014-04-28T12:48:52Z"
+        },
+        {
+            "body": "**Original author :** Portier Thomas\n\nI commited it in my 4.0.2 branche. If you didn't package it, it can be included in version 4.0.2.",
+            "created_at": "2014-04-30T07:47:40Z"
+        }
+    ]
+}

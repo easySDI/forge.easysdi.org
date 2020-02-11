@@ -1,0 +1,19 @@
+{
+    "issue": {
+        "closed": true,
+        "title": "Update headers for version and year in V4.4.0",
+        "created_at": "2016-02-02T09:39:01Z",
+        "labels": [
+            "Defect",
+            "Redmine status : Closed",
+            "Category : CORE"
+        ],
+        "body": "**Original author :** Blatti Yves\n\nUpdate headers for version and year in V4.4.0\n\n**Fixed versions :** 4.4.0"
+    },
+    "comments": [
+        {
+            "body": "**Original author :** Blatti Yves\n\nPHP & JS\r\nrev. 9438",
+            "created_at": "2016-02-02T09:42:41Z"
+        }
+    ]
+}

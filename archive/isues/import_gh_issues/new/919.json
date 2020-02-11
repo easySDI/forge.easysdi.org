@@ -1,0 +1,14 @@
+{
+    "issue": {
+        "closed": true,
+        "title": "Javascript error in relation and replication search",
+        "created_at": "2015-02-27T14:06:27Z",
+        "labels": [
+            "Defect",
+            "Redmine status : Closed",
+            "Category : CATALOG"
+        ],
+        "body": "**Original author :** Portier Thomas\n\nIn the relation and replication search form, there is a javascript error due to the call of the file :\r\nhttp:\/\/cdn.datatables.net\/plug-ins\/9dcbecd42ad\/i18n\/Fran%C3%A7ais%20(fr).json\r\n\r\nThe good file to load is : \r\nhttp:\/\/cdn.datatables.net\/plug-ins\/9dcbecd42ad\/i18n\/French.json\r\n\r\n\n\n**Fixed versions :** 4.2.7"
+    },
+    "comments": []
+}

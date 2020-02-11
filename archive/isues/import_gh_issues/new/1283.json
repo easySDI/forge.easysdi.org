@@ -1,0 +1,14 @@
+{
+    "issue": {
+        "closed": true,
+        "title": "missing foreign key for processing component",
+        "created_at": "2016-03-15T14:43:08Z",
+        "labels": [
+            "Defect",
+            "Redmine status : Closed",
+            "Category : PROCESSING"
+        ],
+        "body": "**Original author :** Portier Thomas\n\n\n\n**Fixed versions :** 4.4.0"
+    },
+    "comments": []
+}

@@ -1,0 +1,12 @@
+{
+   "comments" : [],
+   "issue" : {
+      "closed" : true,
+      "created_at" : "2020-01-01T12:00:00Z",
+      "title" : "DELETE ME",
+      "labels" : [
+         "to-delete"
+      ],
+      "body" : "This is a temp issue to delete"
+   }
+}

@@ -1,0 +1,14 @@
+{
+    "issue": {
+        "closed": true,
+        "title": "Support for IN and NOT IN operators in the rules",
+        "created_at": "2018-11-20T15:38:12Z",
+        "labels": [
+            "Enhancement",
+            "Redmine status : Closed",
+            "Category : EXTRACT"
+        ],
+        "body": "**Original author :** Blatti Yves\n\nTo allow the comparison of a variable with several values, add support for IN and NOT IN (SQL equivalent) operators\r\n\r\n*example 1 :*\r\n\r\n@productguid IN (\"70370f51-ec38-4eeb-b0e2-5489ffa03969\", \"65939378-46bf-4d76-a74c-a01a94ad8381\", \"196\")@\r\n\r\nthis rule must currently be written as such:\r\n\r\n@productguid \"70370f51-ec38-4eeb-b0e2-5489ffa03969\" OR productguid \"65939378-46bf-4d76-a74c-a01a94ad8381\" OR productguid == \"196\")@\r\n\r\n*example 2 :*\r\n\r\n@productguid NOT IN (\"70370f51-ec38-4eeb-b0e2-5489ffa03969\", \"65939378-46bf-4d76-a74c-a01a94ad8381\", \"196\")@\r\n\r\nthis rule must currently be written as such:\r\n\r\n@productguid != \"70370f51-ec38-4eeb-b0e2-5489ffa03969\" AND productguid != \"65939378-46bf-4d76-a74c-a01a94ad8381\" AND productguid != \"196\")@\r\n\r\nThese operators are compatible with others (assignees and geographical) and can be combined with ANDs or ORs.\r\n\r\n*example 3 :*\r\n\r\n@productguid IN (\"70370f51-ec38-4eeb-b0e2-5489ffa03969\", \"196\") AND surface < 10000@\r\n\r\nSource (french) : https:\/\/projets.asitvd.ch\/issues\/19613\n\n**Fixed versions :** 4.5.1"
+    },
+    "comments": []
+}

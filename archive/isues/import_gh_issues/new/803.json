@@ -1,0 +1,19 @@
+{
+    "issue": {
+        "closed": true,
+        "title": "Stereotype \"Resourcetype\" automatically selects first values + no validator",
+        "created_at": "2014-08-18T07:41:33Z",
+        "labels": [
+            "Defect",
+            "Redmine status : Closed",
+            "Category : CATALOG"
+        ],
+        "body": "**Original author :** Blatti Yves\n\nIn stereotype \"Resourcetype\" of metadata edition:\r\n* The first value is automatically selected, so if a user doesn't pay attention, the first will be saved.\r\n  In V2, the field was blank (witch forces the user to choose the good item)\r\n  (the chosen trick to do so, is to introduce a blank option in html select, as for other lists in MD edit)\r\n* If the lowerbound of relation is > 0, the \"required\" class must be set.\r\n  \r\nI propose to patch #742 in the same time.\n\n**Fixed versions :** 4.2.0"
+    },
+    "comments": [
+        {
+            "body": "**Original author :** Blatti Yves\n\nOups, #742 is a feature. not a defect. We may have to talk about it first...",
+            "created_at": "2014-08-18T11:41:40Z"
+        }
+    ]
+}

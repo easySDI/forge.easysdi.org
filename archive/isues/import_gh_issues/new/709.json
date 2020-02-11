@@ -1,0 +1,18 @@
+{
+    "issue": {
+        "closed": true,
+        "title": "Missing LICENSE.txt file in package installer",
+        "created_at": "2014-05-12T07:53:51Z",
+        "labels": [
+            "Defect",
+            "Redmine status : Closed"
+        ],
+        "body": "**Original author :** Magoni Bruno\n\n!tweet_license.png!\n\n**Fixed versions :** 4.4.0"
+    },
+    "comments": [
+        {
+            "body": "**Original author :** Blatti Yves\n\nOK For joomla package, rev. 9447",
+            "created_at": "2016-02-03T13:59:37Z"
+        }
+    ]
+}

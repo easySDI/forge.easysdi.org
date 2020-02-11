@@ -1,0 +1,18 @@
+{
+    "issue": {
+        "closed": false,
+        "title": "Support of global geographic restriction per user\/role",
+        "created_at": "2009-11-19T08:38:25Z",
+        "labels": [
+            "Feature",
+            "Redmine status : New"
+        ],
+        "body": "**Original author :** M\u00e9rour Xavier\n\nToday, a defined policy declares given restrictions, i.e. scales, bbox,etc... for a list of user\/role.\r\n\r\nIf the administrator manages many different configurations in which he defined the geographic restriction, he has to redefine the geographic restriction for each new policy. But often, for a given user, the geographic restriction is the same (ex.: for a commune).\r\n\r\nA nice functionnality to add would be to be able to define a \"default geographic restriction\" for each user and then give the possibility to assign this default restriction to given policies. \r\n\r\nTo discuss... may be not so clear...\r\n\r\n\r\n "
+    },
+    "comments": [
+        {
+            "body": "**Original author :** M\u00e9rour Xavier\n\nIt appears that this evolution is not straighforward with current architecture. To fullfil the demand, policies and rights should be stored in a relational database. It implies major changes in the actual PROXY.\r\n\r\nWe will propose things in the next months regarding this issue.",
+            "created_at": "2010-05-10T11:43:00Z"
+        }
+    ]
+}

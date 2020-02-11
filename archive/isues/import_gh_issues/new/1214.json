@@ -1,0 +1,23 @@
+{
+    "issue": {
+        "closed": true,
+        "title": "Move order id in the recaps in the H1 element",
+        "created_at": "2015-12-02T16:54:06Z",
+        "labels": [
+            "Enhancement",
+            "Redmine status : Closed",
+            "Category : SHOP"
+        ],
+        "body": "**Original author :** Blatti Yves\n\nWe have proposed to add the ID of the order in the h2 title, near the name.\r\nProblem is, this can be confusing since many orders have an 'automatic' name containg a date. (This gives \"Order: My UserName - 2015-12-02 21:15 - 198566\")\r\nIt would be easier for users (clients AND providers) if ID was in the H1 title.\r\n\r\nProposed layout:\r\n!move_id_in_h1_title.png!\r\n\r\n\n\n**Fixed versions :** 4.4.0"
+    },
+    "comments": [
+        {
+            "body": "**Original author :** Van Hoecke H\u00e9l\u00e8ne \n\nTC has validated the H1 content as described in all recaps view (order and request)",
+            "created_at": "2015-12-04T10:12:50Z"
+        },
+        {
+            "body": "**Original author :** Blatti Yves\n\nrev. 9342 + 9351",
+            "created_at": "2015-12-10T15:23:52Z"
+        }
+    ]
+}

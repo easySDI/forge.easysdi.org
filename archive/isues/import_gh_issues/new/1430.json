@@ -1,0 +1,14 @@
+{
+    "issue": {
+        "closed": true,
+        "title": "SQL server migration files are missing for v4.4.4 and v4.4.5",
+        "created_at": "2017-06-27T08:21:36Z",
+        "labels": [
+            "Defect",
+            "Redmine status : Closed",
+            "Category : CORE"
+        ],
+        "body": "**Original author :** Van Hoecke H\u00e9l\u00e8ne \n\nSQL server migration files are missing for v4.4.4 and v4.4.5.\r\n\r\nCorresponding statements are probably missing in installation file (to check).\n\n**Fixed versions :** 4.5.0"
+    },
+    "comments": []
+}

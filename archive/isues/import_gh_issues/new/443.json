@@ -1,0 +1,30 @@
+{
+    "issue": {
+        "closed": true,
+        "title": " Change PROXY servlet name and web.xml",
+        "created_at": "2011-07-05T12:19:56Z",
+        "labels": [
+            "Feature",
+            "Redmine status : Rejected"
+        ],
+        "body": "**Original author :** M\u00e9rour Xavier\n\nAs suggested here #399, and if PSC validate this change, we should to adapt the servlet name to get uniformized EasySDI names.\r\ncurrent name : proxy\r\nnew name : sdi_proxy\r\nNew web.xml would be adapted as well (see #399)"
+    },
+    "comments": [
+        {
+            "body": "**Original author :** M\u00e9rour Xavier\n\nAccepted according to #399.\r\n\r\nTarget version could be possibly  2.2.0 ?\r\nI let you see according to ongoing tasks...",
+            "created_at": "2011-07-05T12:21:51Z"
+        },
+        {
+            "body": "**Original author :** M\u00e9rour Xavier\n\nAny news on this issue ?\r\n\r\n(done with PUBLISH #427 and SHOP #428 servlets so far... still needs to be done for MONITOR #426)",
+            "created_at": "2011-09-06T08:35:53Z"
+        },
+        {
+            "body": "**Original author :** Magoni Bruno\n\nYou was faster than us to upgrade some components...\r\nFor now we haven't worked on such servlet uniformization :-(",
+            "created_at": "2011-11-28T15:59:20Z"
+        },
+        {
+            "body": "**Original author :** Blatti Yves\n\nThis does not apply to current versions [4+] (name is correct, and version is set at build time)",
+            "created_at": "2016-02-03T15:11:14Z"
+        }
+    ]
+}

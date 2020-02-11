@@ -1,0 +1,19 @@
+{
+    "issue": {
+        "closed": true,
+        "title": "Unable to deselect a perimeter (using wms+wfs perimeters) in SHOP",
+        "created_at": "2014-08-21T12:44:42Z",
+        "labels": [
+            "Defect",
+            "Redmine status : Closed",
+            "Category : SHOP"
+        ],
+        "body": "**Original author :** Blatti Yves\n\nWhen using a custom perimeter in SHOP (with a wms+wfs couple):\r\n- I can add multiple perimeters using CTRL key\r\n- Then if I want to deselect just one item (and not clear the entire selection), i can't (or didn't fount the way to...)"
+    },
+    "comments": [
+        {
+            "body": "**Original author :** Blatti Yves\n\nThis one has been done with #943.\r\nNo code to merge. Target is 4.3.2 .",
+            "created_at": "2015-06-26T13:40:36Z"
+        }
+    ]
+}

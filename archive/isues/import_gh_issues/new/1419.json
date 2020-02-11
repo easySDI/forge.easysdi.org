@@ -1,0 +1,19 @@
+{
+    "issue": {
+        "closed": true,
+        "title": "In view diffusion, property values do not take ordering in account",
+        "created_at": "2017-05-24T06:42:43Z",
+        "labels": [
+            "Defect",
+            "Redmine status : Closed",
+            "Category : SHOP"
+        ],
+        "body": "**Original author :** Blatti Yves\n\nIn view diffusion, property values do not take ordering in account\n\n**Fixed versions :** 4.5.0"
+    },
+    "comments": [
+        {
+            "body": "**Original author :** Blatti Yves\n\nrev. 10170",
+            "created_at": "2017-05-24T06:44:25Z"
+        }
+    ]
+}

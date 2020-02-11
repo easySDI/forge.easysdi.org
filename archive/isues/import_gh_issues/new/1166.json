@@ -1,0 +1,14 @@
+{
+    "issue": {
+        "closed": true,
+        "title": "Fix array declaration to be compatible with PHP < 5.4",
+        "created_at": "2015-10-27T17:17:13Z",
+        "labels": [
+            "Defect",
+            "Redmine status : Closed",
+            "Category : SHOP"
+        ],
+        "body": "**Original author :** Van Hoecke H\u00e9l\u00e8ne \n\n\r\nIn _\\components\\com_easysdi_shop\\helpers\\easysdi_shop.php_, an array is declare as : \r\n```\n$tempExtractions = [];\r\n```\n\r\nthis is only supported by PHP > 5.4\r\n\r\n\r\nFix by using : \r\n```\n$tempExtractions = array();\r\n```\n\n\n**Fixed versions :** 4.3.2"
+    },
+    "comments": []
+}

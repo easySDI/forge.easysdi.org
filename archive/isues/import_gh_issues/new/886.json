@@ -1,0 +1,14 @@
+{
+    "issue": {
+        "closed": true,
+        "title": "Custom fields for virtual services on linux",
+        "created_at": "2014-12-16T10:26:36Z",
+        "labels": [
+            "Defect",
+            "Redmine status : Closed",
+            "Category : SERVICE"
+        ],
+        "body": "**Original author :** Portier Thomas\n\nTwo custom fields allowedoperationsql and physicalservicesql doesn't load on linux because files associated contains uppercase characters :\r\nallowedoperationSQL.php\r\nphysicalserviceSQL.php\r\n\r\nWe have to rename to : \r\nallowedoperationsql.php\r\nphysicalservicesql.php\n\n**Fixed versions :** 4.2.3"
+    },
+    "comments": []
+}

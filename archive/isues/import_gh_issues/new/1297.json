@@ -1,0 +1,19 @@
+{
+    "issue": {
+        "closed": true,
+        "title": "GXP locales are not loaded in backend maps",
+        "created_at": "2016-03-23T16:44:09Z",
+        "labels": [
+            "Defect",
+            "Redmine status : Closed",
+            "Category : MAP"
+        ],
+        "body": "**Original author :** Blatti Yves\n\nGXP locales are not loaded in backend maps \r\nWe should use JURI::root instead of JURI::base \n\n**Fixed versions :** 4.4.1"
+    },
+    "comments": [
+        {
+            "body": "**Original author :** Blatti Yves\n\nRev. 9564",
+            "created_at": "2016-03-23T16:45:40Z"
+        }
+    ]
+}

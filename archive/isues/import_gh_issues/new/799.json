@@ -1,0 +1,14 @@
+{
+    "issue": {
+        "closed": true,
+        "title": "Service compliance in SERVICE",
+        "created_at": "2014-08-14T11:45:42Z",
+        "labels": [
+            "Defect",
+            "Redmine status : Closed",
+            "Category : SERVICE"
+        ],
+        "body": "**Original author :** Blatti Yves\n\nTwo points in SERVICE component:\r\n- in com_easysdi_service\\src\\administrator\\helpers\\easysdi_service.php : the lowest compliant version is used instead of higher.\r\n- in com_easysdi_service\\src\\administrator\\helpers\\PhysicalService.php : the compliance is not loaded, so request are made without versions in policy screens\n\n**Fixed versions :** 4.2.0"
+    },
+    "comments": []
+}

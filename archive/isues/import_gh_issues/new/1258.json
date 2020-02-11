@@ -1,0 +1,39 @@
+{
+    "issue": {
+        "closed": true,
+        "title": "Can we get rid of libraries\/openlayers\/ and use the last version packaged ?",
+        "created_at": "2016-02-05T14:50:43Z",
+        "labels": [
+            "Enhancement",
+            "Redmine status : Closed",
+            "Category : CORE"
+        ],
+        "body": "**Original author :** Blatti Yves\n\nCan we get rid of libraries\/openlayers\/ and use the last version packaged (libraries\/OpenLayers-2.13.1\/)?"
+    },
+    "comments": [
+        {
+            "body": "**Original author :** Blatti Yves\n\n~388 files and ~6.5MB economy...",
+            "created_at": "2016-02-05T14:51:33Z"
+        },
+        {
+            "body": "**Original author :** Blatti Yves\n\nOh, and there's a bonus version in com_easysdi_service !",
+            "created_at": "2016-02-05T14:59:18Z"
+        },
+        {
+            "body": "**Original author :** Blatti Yves\n\nOh... same question for proj4js-1.4.1 : unused",
+            "created_at": "2016-02-10T14:59:04Z"
+        },
+        {
+            "body": "**Original author :** Van Hoecke H\u00e9l\u00e8ne \n\nA clean up is necessary : unused libraries must be remove, and only one version of used libraries must be kept.",
+            "created_at": "2016-02-19T10:47:45Z"
+        },
+        {
+            "body": "**Original author :** Blatti Yves\n\nClosed by #1218, thanks to Thomas",
+            "created_at": "2016-09-05T06:43:47Z"
+        },
+        {
+            "body": "**Original author :** Blatti Yves\n\nHi H\u00e9l\u00e8ne,\r\n\r\nThis has been resolved by : https:\/\/forge.easysdi.org\/issues\/1218.\r\nDo we close or reject and put content in the other issue ?\r\n\r\nThanks\r\n\r\n",
+            "created_at": "2016-09-05T06:46:26Z"
+        }
+    ]
+}

@@ -1,0 +1,19 @@
+{
+    "issue": {
+        "closed": true,
+        "title": "MD edit: reset form button doesn't work if modifications have been applies to the structure",
+        "created_at": "2015-09-09T16:37:13Z",
+        "labels": [
+            "Defect",
+            "Redmine status : Closed",
+            "Category : CATALOG"
+        ],
+        "body": "**Original author :** Blatti Yves\n\nMD edit: reset form button doesn't work if modifications have been applies to the structure (add\/remove fields etc...)\n\n**Fixed versions :** 4.3.2"
+    },
+    "comments": [
+        {
+            "body": "**Original author :** Blatti Yves\n\nRev. 9047",
+            "created_at": "2015-09-09T16:39:23Z"
+        }
+    ]
+}

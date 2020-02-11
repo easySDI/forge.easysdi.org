@@ -1,0 +1,19 @@
+{
+    "issue": {
+        "closed": true,
+        "title": "Force deletion o a resource",
+        "created_at": "2016-02-11T14:20:15Z",
+        "labels": [
+            "Enhancement",
+            "Redmine status : Closed",
+            "Category : CATALOG"
+        ],
+        "body": "**Original author :** Portier Thomas\n\nIf there is a problem with the metadata in the catalog (i.e metadata doesn't exist anymore), it is impossible to delete th associated resource. It should be possible to force the deletion in the joomla database.\n\n**Fixed versions :** 4.4.1"
+    },
+    "comments": [
+        {
+            "body": "**Original author :** Van Hoecke H\u00e9l\u00e8ne \n\nIf geonetwork returns a message that no metadata were found, user should be allowed to force deletion of easySDI resource.\r\nIf geonetwork doesn't answered (down...), resource shouldn't be deleted.",
+            "created_at": "2016-02-19T10:57:54Z"
+        }
+    ]
+}

@@ -1,0 +1,13 @@
+{
+    "issue": {
+        "closed": true,
+        "title": "SQL syntax error",
+        "created_at": "2014-08-26T13:31:33Z",
+        "labels": [
+            "Defect",
+            "Redmine status : Rejected"
+        ],
+        "body": "**Original author :** Van Hoecke H\u00e9l\u00e8ne \n\n*In com_easysdi_contact*\r\nadministrator\\components\\com_easysdi_contact\\models\\users.php\r\nadministrator\\components\\com_easysdi_contact\\models\\organisms.php\r\n\r\nAt the very end of the method getListQuery(), remove the group by 'a.id' statement. It gives an incorrect SQL query.\r\n\r\n*In com_easysdi_catalog*\r\nadministrator\\components\\com_easysdi_catalog\\models\\resourcestype.php\r\n\r\nIn method getListQuery(), at line 115, quote name of the column 'view' (reserved keyword in SQLServer):\r\n```\n\r\n\/\/ Select the required fields from the table.\r\n        $query->select(\r\n                $this->getState(\r\n                        'list.select', 'a.id, a.alias, a.checked_out, a.checked_out_time, a.predefined, a.versioning, a.diffusion,' . $db->quoteName( 'a.view') .' , a.ordering, a.state, a.name'\r\n                )\r\n        );\r\n```\n\n\n**Fixed versions :** 4.2.0"
+    },
+    "comments": []
+}

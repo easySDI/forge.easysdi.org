@@ -1,0 +1,19 @@
+{
+    "issue": {
+        "closed": false,
+        "title": "New stereotype : Resource name",
+        "created_at": "2014-08-15T10:01:04Z",
+        "labels": [
+            "Feature",
+            "Redmine status : Request For Comments",
+            "Category : CATALOG"
+        ],
+        "body": "**Original author :** Blatti Yves\n\nWe'd like to avoid our providers to set the name of a resource multiple times: like in resource, then again in metadata.\r\nWe propose a new metadata stereotype that place the resource name in MD content. We see two different logic for doing this:\r\n\r\n* 1) Get and store name when editing *\r\nThis certainly is easier version, when a metadata is edited, the stereotype loads the resource name, and place it XML according to relations.\r\n- Problem: if a resource is renamed, the metadata will by unsynced, or we have to update the metadata in any way...\r\n\r\n* 2) Use proxy *\r\nThis one is trickier but more robust. On metadata edition, the stereotype place a special easySDI tag in proper place in XML. The name is not stored, but the proxy replaces the tag by the resource name on the fly when accessing the metadata.\r\n\r\nProblem in any cases: I think that the resource name is not multi-lingual, so this stereotype would be usable in single language environments."
+    },
+    "comments": [
+        {
+            "body": "**Original author :** Blatti Yves\n\nSolution 2 cannot be chosen because value (title) would not be saved in metadata, and then indexation and search wont work on this field.\r\nSolution 1 introduces other problems: how do we manage a change in name? Or an external CSW update? Alternative is to use this as a default value only.\r\n\r\n>this solution has to be inspected before any decision can be taken.",
+            "created_at": "2014-10-03T11:14:50Z"
+        }
+    ]
+}

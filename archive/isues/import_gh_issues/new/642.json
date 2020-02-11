@@ -1,0 +1,59 @@
+{
+    "issue": {
+        "closed": true,
+        "title": "Add categories for organism",
+        "created_at": "2014-03-14T09:17:05Z",
+        "labels": [
+            "Feature",
+            "Redmine status : Closed",
+            "Category : CONTACT"
+        ],
+        "body": "**Original author :** M\u00e9rour Xavier\n\nAdd categories for organism for differents purposes (access restriction for categories, price calculation in the basket,...).\r\n\r\n* in the backend\r\n\r\n>> add a new entry under CONTACT called \"categories\" with attributes : name and alias of categorie\r\n>> add in \"organism\" in the first tab \"organism edition\" a multiselect (0 - n) to attach the organism to 0 or n categories\r\n>> add a filter \"categories\" in the organism page. Since the organism can belong to multi-categories, the filter should, if possible, a multiselect type.\r\n>> in the backend SERVICE, in \"policies\", add in access scope the organism categories (today : public, by user, by organism)\r\n\r\n* in the frontend \r\n\r\n>> all access scope (ressource, diffusion...) should have categories available (today : public, by user, by organism)\r\n>>> resource generality access scope\r\n>>> resource diffusion access scope\r\n>>> resource vizualisation access scope\r\n\r\n* other impacts :\r\n\r\n>> the categories should be added in the SHOP webservice (in XML) for the client or the third party.\r\n>>> node \"categories\" with subnodes \"category\" related to each categories assigned to the organism of the client and of the thirdparty\r\n\r\n* installers:\r\n>> database changes will be driven by easySDI Joomla installers\/uninstallers (cross database)\n\n**Fixed versions :** 4.2.0"
+    },
+    "comments": [
+        {
+            "body": "**Original author :** Magoni Bruno\n\nHi Xavier,\r\n\r\nMay I ask you furter explanations about purposes implementation.\r\nAs I understand, this feature plans to implement organisms' categories and use it in different access scope definitions.\r\n\r\nSo implementing future purposes (using organisms' categories attributions) is not part about this feature. Can you tell us more precisely which future purposes you're thinking about or which other new feature are binded to ?\r\n\r\nAbout SHOP webservice, is it correct than you are waiting for that XML content must also described which categories the organism of the client or third party is member of ?\r\n\r\nThanks a lot for your support!\r\n\r\n",
+            "created_at": "2014-05-08T09:25:41Z"
+        },
+        {
+            "body": "**Original author :** M\u00e9rour Xavier\n\nHello Bruno,\r\n\r\nMy answers are here below.\r\n\r\n```\n\r\nAs I understand, this feature plans to implement organisms' categories and use it in different access scope definitions.\r\n```\n\r\nThat's right !\r\n```\n\r\nSo implementing future purposes (using organisms' categories attributions) is not part about this feature.\r\nCan you tell us more precisely which future purposes you're thinking about or which other new feature\r\nare binded to ?\r\n```\n\r\nI can give 3 use cases :\r\n# the organism's category can be used in geodata price calculation (i.e. school = free, private = cost). This is part of another feature (#643) that will be developped later this year in easySDI.\r\n# the organism's category can be used to add the organism\/client email to newsletter feature (not in easySDI) if one's want to send specific content to specific type of organism.\r\n# the organism's category can be used to distinguish between different kind of account on the platform. In our case (ASIT VD), we need to make a difference between \"member\" and \"not-member\". That will be two categories.\r\n```\n\r\nAbout SHOP webservice, is it correct than you are waiting for that XML content must also described which\r\ncategories the organism of the client or third party is member of ?\r\n```\n\r\nRight, the webservice should contain the information of the categorie(s) the client or third party belong to. This info could be used by the geodata supplier and therefore needed in the XML.",
+            "created_at": "2014-05-09T08:23:59Z"
+        },
+        {
+            "body": "**Original author :** M\u00e9rour Xavier\n\n\n",
+            "created_at": "2014-05-14T19:29:35Z"
+        },
+        {
+            "body": "**Original author :** M\u00e9rour Xavier\n\nBruno,\r\n\r\nWe forgot in this description to add :\r\n\r\n- in the backend SERVICE, in \"policies\", add in access scope the organism categories (today : public, by user, by organism)\r\n\r\nThanks.",
+            "created_at": "2014-05-22T08:14:41Z"
+        },
+        {
+            "body": "**Original author :** Magoni Bruno\n\nOne more question to you Xavier:\r\nIs it nested categories or not (unique level) ?\r\n\r\nThanks,",
+            "created_at": "2014-05-22T15:50:54Z"
+        },
+        {
+            "body": "**Original author :** M\u00e9rour Xavier\n\nthe need is unique level.",
+            "created_at": "2014-05-22T22:07:30Z"
+        },
+        {
+            "body": "**Original author :** M\u00e9rour Xavier\n\nTo the PSC.\r\n\r\nThe feature is ready to be coded in EasySDI : please vote !",
+            "created_at": "2014-05-23T08:53:21Z"
+        },
+        {
+            "body": "**Original author :** M\u00e9rour Xavier\n\n+1 for me",
+            "created_at": "2014-05-23T08:54:01Z"
+        },
+        {
+            "body": "**Original author :** Magoni Bruno\n\n+1",
+            "created_at": "2014-05-23T10:17:23Z"
+        },
+        {
+            "body": "**Original author :** Teixeira J\u00e9r\u00f4me\n\n+1",
+            "created_at": "2014-05-23T13:35:33Z"
+        },
+        {
+            "body": "**Original author :** Plainecassagne Laurent\n\n+1",
+            "created_at": "2014-05-26T07:34:31Z"
+        }
+    ]
+}

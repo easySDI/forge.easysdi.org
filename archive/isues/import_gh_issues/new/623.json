@@ -1,0 +1,31 @@
+{
+    "issue": {
+        "closed": true,
+        "title": "New component DASHBOARD",
+        "created_at": "2013-07-17T09:44:44Z",
+        "labels": [
+            "Feature",
+            "Redmine status : Closed",
+            "Category : DASHBOARD"
+        ],
+        "body": "**Original author :** M\u00e9rour Xavier\n\nThis component will add advanced dashboard in EasySDI.\r\n\r\n_Further description needed..._\n\n**Fixed versions :** 4.0.0"
+    },
+    "comments": [
+        {
+            "body": "**Original author :** M\u00e9rour Xavier\n\nthe new component was committed in RC 6 of easysdi V4 and contain 1 dashboard \"diffusion\" which contains the main indicators of the diffusion done through the portal (via extraction and download) :\r\n\r\n\r\n- general overview\r\n- analytics for given period of time with more detailed indicators (top extraction, top users, top download, ...)\r\n\r\nSee attached file to have a general idea.\r\n\r\n",
+            "created_at": "2014-03-18T20:22:44Z"
+        },
+        {
+            "body": "**Original author :** M\u00e9rour Xavier\n\nRemaining task : documention to write in the easysdi wiki for dashboard installation and general parameters (birt report engine mainly)",
+            "created_at": "2014-03-18T20:23:46Z"
+        },
+        {
+            "body": "**Original author :** Magoni Bruno\n\nThanks to ASIT-VD for this great new feature!\r\nI propose to close such ticket as this feature is now available in easySDI V4.\r\nIf you want to keep trace of DASHBOARD documentation, don't hesitate to create a new ticket about such task.\r\n\r\nThanks again,",
+            "created_at": "2014-03-19T12:07:53Z"
+        },
+        {
+            "body": "**Original author :** M\u00e9rour Xavier\n\nRight.",
+            "created_at": "2014-03-19T13:20:52Z"
+        }
+    ]
+}

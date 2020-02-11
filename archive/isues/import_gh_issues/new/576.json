@@ -1,0 +1,13 @@
+{
+    "issue": {
+        "closed": true,
+        "title": "Libraries missing in Proxy servlet project",
+        "created_at": "2013-01-07T16:48:10Z",
+        "labels": [
+            "Defect",
+            "Redmine status : Closed"
+        ],
+        "body": "**Original author :** Van Hoecke H\u00e9l\u00e8ne \n\nLibraries json-lib-2.4-jdk15.jar and ezmorph-1.0.6.jar are missing in the Proxy project repository.\r\n\n\n**Fixed versions :** 3.1.2"
+    },
+    "comments": []
+}

@@ -1,0 +1,14 @@
+{
+    "issue": {
+        "closed": true,
+        "title": "Remove Publish button in resources list ",
+        "created_at": "2016-06-10T09:10:35Z",
+        "labels": [
+            "Enhancement",
+            "Redmine status : Closed",
+            "Category : CATALOG"
+        ],
+        "body": "**Original author :** Van Hoecke H\u00e9l\u00e8ne \n\nPush in 4.4.1 the enhancement originally made for the 4.3.x and kept in this branch.\r\n\r\n```\n\r\nIl y a plusieurs champs obligatoires qui doivent \u00eatre saisis pour valider ou publier une m\u00e9tadonn\u00e9e (par exemple le champ \"Metadatentyp (AGI)\").\r\nSi on assigne une m\u00e9tadonn\u00e9e \u00e0 un \u00e9diteur pour la saisie des m\u00e9tadonn\u00e9es, l'\u00e9diteur peut alors valider la m\u00e9tadonn\u00e9e m\u00eame si certains champs obligatoires ne sont pas saisis (car il n'a pas les droits d'\u00e9dition pour ces champs - par exemple le champ \"Metadatentyp (AGI)\").\r\nCela semble correcte sinon l'\u00e9diteur ne pourrait pas valider la m\u00e9tadonn\u00e9e.\r\nCe qui pose probl\u00e8me c'est que l'on peut ensuite publi\u00e9e la m\u00e9tadonn\u00e9e valid\u00e9e par l'\u00e9diteur et que lors de cette publication les champs obligatoires ne sont apparement plus v\u00e9rifier. Cela rend donc la publication d'une m\u00e9tadonn\u00e9e possible m\u00eame si les champs obligatoires ne sont pas tous saisis.\r\n```\n\n\n**Fixed versions :** 4.4.1"
+    },
+    "comments": []
+}

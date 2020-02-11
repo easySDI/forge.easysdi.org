@@ -1,0 +1,14 @@
+{
+    "issue": {
+        "closed": true,
+        "title": "Back-end layer ordering issue",
+        "created_at": "2013-01-31T16:39:10Z",
+        "labels": [
+            "Defect",
+            "Redmine status : Closed",
+            "Category : MAP"
+        ],
+        "body": "**Original author :** Van Hoecke H\u00e9l\u00e8ne \n\nIn the back-end, the layer ordering is done for all the layers defined in the solution.\r\nIt must be done by layers group (for each layers group, index must be 1 to x).\n\n**Fixed versions :** 3.1.3"
+    },
+    "comments": []
+}

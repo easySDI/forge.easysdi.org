@@ -1,0 +1,14 @@
+{
+    "issue": {
+        "closed": true,
+        "title": "Missing DDL for #__sdi_accessscope -> using categories",
+        "created_at": "2014-06-27T12:39:54Z",
+        "labels": [
+            "Defect",
+            "Redmine status : Closed",
+            "Category : CORE"
+        ],
+        "body": "**Original author :** Blatti Yves\n\nI wanted to add an accesscope of type category on a resource, then:\r\n```\n\r\n 'Unknown column 'category_id' in 'field list' SQL=INSERT INTO jos_sdi_accessscope (`entity_guid`,`category_id`) VALUES ('071d8abd-b11f-4e04-85af-5fc24bb601b8','1')' \r\n```\n\r\n\r\nI checked Install and Updates SQL scripts, but there is no DDL for such column.\n\n**Fixed versions :** 4.2.0"
+    },
+    "comments": []
+}

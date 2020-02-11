@@ -1,0 +1,30 @@
+{
+    "issue": {
+        "closed": true,
+        "title": "Not closing modals when clicking outside",
+        "created_at": "2014-10-20T13:54:24Z",
+        "labels": [
+            "Enhancement",
+            "Redmine status : Rejected"
+        ],
+        "body": "**Original author :** Magoni Bruno\n\neasySDI modal frames are used for displaying information or filling any form.\r\nWhen clicking outside, easySDI automatically closes such modal even if some information has been previously filled in but not submitted.\r\nSuch behaviour is problematic as user looses entries without any message.\r\n\r\nBest solution seems to prevent closing all modals which allow user filling in any entry (won't apply to modal with simple \"OK\" button).\r\nSuch enhancement should be apply with \"data-backdrop\" parameter equals to \"static\"\r\n\r\n"
+    },
+    "comments": [
+        {
+            "body": "**Original author :** Magoni Bruno\n\n* this feature should also cover keyboard action (not only \"click-outside\" event); not sure that \"data-backdrop\" parameter is sufficient and is only a \"hack\"\r\n* feature #633 should be also considered to find a systematic way of driving all modals",
+            "created_at": "2014-12-12T10:29:35Z"
+        },
+        {
+            "body": "**Original author :** Blatti Yves\n\nTo also disable the escape key use \r\n```\n\r\n data-backdrop=\"static\" data-keyboard=\"false\" \r\n```\n",
+            "created_at": "2015-06-05T15:04:52Z"
+        },
+        {
+            "body": "**Original author :** Van Hoecke H\u00e9l\u00e8ne \n\nTC hasn't made a decision on it.",
+            "created_at": "2015-11-17T11:08:05Z"
+        },
+        {
+            "body": "**Original author :** Van Hoecke H\u00e9l\u00e8ne \n\nThis the responsability of the developper to implement the expected behaviour.\r\n\r\nDefect ticket should be open to indicate if a specific modal doesn't behave correctly.",
+            "created_at": "2015-12-04T09:43:32Z"
+        }
+    ]
+}

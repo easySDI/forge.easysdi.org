@@ -1,0 +1,19 @@
+{
+    "issue": {
+        "closed": true,
+        "title": "Unable to search user by email address in contact BE",
+        "created_at": "2016-02-18T13:07:44Z",
+        "labels": [
+            "Defect",
+            "Redmine status : Closed",
+            "Category : CONTACT"
+        ],
+        "body": "**Original author :** Blatti Yves\n\nUnable to search user by email address in contact\n\n**Fixed versions :** 4.4.0"
+    },
+    "comments": [
+        {
+            "body": "**Original author :** Blatti Yves\n\nrev. 9467",
+            "created_at": "2016-02-18T13:12:23Z"
+        }
+    ]
+}

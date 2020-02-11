@@ -1,0 +1,14 @@
+{
+    "issue": {
+        "closed": true,
+        "title": "trashed processing appear in front end",
+        "created_at": "2016-03-15T15:08:47Z",
+        "labels": [
+            "Defect",
+            "Redmine status : Closed",
+            "Category : PROCESSING"
+        ],
+        "body": "**Original author :** Portier Thomas\n\n\n\n**Fixed versions :** 4.4.0"
+    },
+    "comments": []
+}

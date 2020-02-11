@@ -1,0 +1,14 @@
+{
+    "issue": {
+        "closed": false,
+        "title": "Adding new vector layers type : GeoJson & KML",
+        "created_at": "2015-04-07T09:14:23Z",
+        "labels": [
+            "Feature",
+            "Redmine status : Request For Comments",
+            "Category : MAP"
+        ],
+        "body": "**Original author :** Portier Thomas\n\nIn order to add ability to display vector layers in the map, there could be two new specific service type as Google, Bing or OSM : KML and GeoJSON.\r\nFor these types of layers, there will be a single field to fill by the administrator : the url of the file.\r\n\r\nActually, these new types of layers will have to be implemented in the MAP and the preview."
+    },
+    "comments": []
+}

@@ -1,0 +1,30 @@
+{
+    "issue": {
+        "closed": true,
+        "title": "Warning messages during installation",
+        "created_at": "2009-12-01T11:35:57Z",
+        "labels": [
+            "Feature",
+            "Redmine status : Closed"
+        ],
+        "body": "**Original author :** Magoni Bruno\n\nDepending on the PHP security level, some warning messages are displayed when installing the CORE (ADMIN) component.\r\nEven if there is also successful messages at the end of the procedure, it would be better to fix this problem for the end-user convenience.\r\n\n\n**Fixed versions :** 4.0.0"
+    },
+    "comments": [
+        {
+            "body": "**Original author :** M\u00e9rour Xavier\n\nis this problem stil existing ?\r\n\r\nI think it was corrected.",
+            "created_at": "2011-01-19T20:23:10Z"
+        },
+        {
+            "body": "**Original author :** Magoni Bruno\n\nInstallation procedure should be tested completely to retreive exactly in which PHP security levels warning are returned.\r\nNot sure that we can change something as it concerns simplexml php class file which is a utility package inside Joomla.\r\n",
+            "created_at": "2011-01-28T04:32:33Z"
+        },
+        {
+            "body": "**Original author :** M\u00e9rour Xavier\n\nWhat about this with new EasySDI V4 ?\r\n\r\nIs there any test done before packaging it ?",
+            "created_at": "2013-12-20T14:01:45Z"
+        },
+        {
+            "body": "**Original author :** Magoni Bruno\n\neasySDI V4 has been fully tested with strict PHP level; so no more notice or warning messages during installation process or when working on easySDI.\r\n",
+            "created_at": "2013-12-20T14:10:43Z"
+        }
+    ]
+}

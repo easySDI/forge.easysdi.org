@@ -1,0 +1,39 @@
+{
+    "issue": {
+        "closed": true,
+        "title": "WPS order expose manual orders",
+        "created_at": "2015-02-18T10:25:28Z",
+        "labels": [
+            "Defect",
+            "Redmine status : Closed",
+            "Category : SHOP"
+        ],
+        "body": "**Original author :** Portier Thomas\n\nThe WPS should only expose the automatic orders\n\n**Fixed versions :** 4.2.5"
+    },
+    "comments": [
+        {
+            "body": "**Original author :** M\u00e9rour Xavier\n\nIf true, it's major issue according to me.\r\nI change priority to \"high\".",
+            "created_at": "2015-02-18T11:39:01Z"
+        },
+        {
+            "body": "**Original author :** M\u00e9rour Xavier\n\nThomas, Do you know if it also affect version 4.3 ?",
+            "created_at": "2015-02-19T14:01:55Z"
+        },
+        {
+            "body": "**Original author :** Portier Thomas\n\nI think so.",
+            "created_at": "2015-02-19T14:35:28Z"
+        },
+        {
+            "body": "**Original author :** M\u00e9rour Xavier\n\nOK, then can you tell us about your correction since it should be done as well in branch 4.3 ;-)",
+            "created_at": "2015-02-19T14:37:29Z"
+        },
+        {
+            "body": "**Original author :** Villemagne J\u00e9r\u00f4me\n\nHello,\r\n\r\nworking on the 4.3.'s service, I'll push the correction to it.\r\n\r\n@Thomas:\r\nAs I can show in svn, you just added the two 'productmining' constant and complete the query's where with.\r\nPlease, can you confirm that there is no other change or need ?",
+            "created_at": "2015-02-25T09:35:13Z"
+        },
+        {
+            "body": "**Original author :** Portier Thomas\n\nYes, I confirm",
+            "created_at": "2015-02-26T12:26:18Z"
+        }
+    ]
+}

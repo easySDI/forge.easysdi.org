@@ -1,0 +1,23 @@
+{
+    "issue": {
+        "closed": true,
+        "title": "Compulsory SHOP properties not tested",
+        "created_at": "2015-11-25T14:21:49Z",
+        "labels": [
+            "Defect",
+            "Redmine status : Rejected",
+            "Category : SHOP"
+        ],
+        "body": "**Original author :** M\u00e9rour Xavier\n\nWhen a a property \"checkbox\" is setted to \"compulsory\" in backend, the test is not done in front-end (if the user do not check at least one property, he still can validate the properties).\r\n\r\n--> check on compulsory should be done\r\n"
+    },
+    "comments": [
+        {
+            "body": "**Original author :** M\u00e9rour Xavier\n\nSeen with this defect #1205",
+            "created_at": "2015-11-25T14:22:28Z"
+        },
+        {
+            "body": "**Original author :** Blatti Yves\n\nDuplicate of #1134",
+            "created_at": "2015-11-26T08:10:16Z"
+        }
+    ]
+}

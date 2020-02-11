@@ -1,0 +1,19 @@
+{
+    "issue": {
+        "closed": true,
+        "title": "Catalog searchform : Joomla 3.7.x changes checkbox default's behavior",
+        "created_at": "2017-06-07T12:38:06Z",
+        "labels": [
+            "Defect",
+            "Redmine status : Closed",
+            "Category : CATALOG"
+        ],
+        "body": "**Original author :** Blatti Yves\n\nJoomla 3.7.x changes checkbox (JFormFieldCheckbox) default's values behavior :\r\nSee : https:\/\/github.com\/joomla\/joomla-cms\/commit\/97e4048357481d3747c2e19e4f31ab89824dfaa8\r\n\r\nThe catalog searchform booleans (like isOrderable, isDownloadable,...) are not checked after the search ran.\r\n\r\nTo reproduce :\r\n- open a catalog with a boolean filter\r\n- check a box (for example: isOrderable)\r\n- run the search\r\n- results are correct, but the checkbox is no mere checked\r\n- if we run the search again, the filter is lost.\r\n\r\nNotes :\r\n* Checkbox attributes in metadata edit form are not affected, the *JFormFieldCheckboxes* is used and is not affected.\r\n* Backend booleans are all represented by _yes\/no_ radio buttons\n\n**Fixed versions :** 4.5.0"
+    },
+    "comments": [
+        {
+            "body": "**Original author :** Blatti Yves\n\nrev. 10193",
+            "created_at": "2017-06-07T12:45:03Z"
+        }
+    ]
+}

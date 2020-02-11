@@ -1,0 +1,23 @@
+{
+    "issue": {
+        "closed": true,
+        "title": "Hidden and Visible fields are not saved in XML (MD edition)",
+        "created_at": "2015-08-18T08:20:53Z",
+        "labels": [
+            "Defect",
+            "Redmine status : Closed",
+            "Category : CATALOG"
+        ],
+        "body": "**Original author :** Blatti Yves\n\nFields _hidden_ and _visible_ are not saved with their default values in metadata edition.\r\n\r\nAll _hidden_ fields rendered as lists are removed from DOM, so they're not posted, and not saved in metadata XML.\r\nAll _visible_ fields rendered as lists are shown but the default value is not set, nor saved in XML.\r\n\r\nNote: I cannot affect this to an exact version.\n\n**Fixed versions :** 4.3.2"
+    },
+    "comments": [
+        {
+            "body": "**Original author :** Blatti Yves\n\nI have set a relation of both types to demonstrate on Depth's ASIT VD test platform:\r\n!relations_on_testplatform.png!",
+            "created_at": "2015-08-18T08:23:22Z"
+        },
+        {
+            "body": "**Original author :** Van Hoecke H\u00e9l\u00e8ne \n\nProblem solved for visible and hidden lists with a *single default value*.\r\nThe case of multiple default values will be the subject of a new issue.",
+            "created_at": "2015-08-21T08:22:09Z"
+        }
+    ]
+}

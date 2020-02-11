@@ -1,0 +1,19 @@
+{
+    "issue": {
+        "closed": true,
+        "title": "NULL shown if there's no pricing profile + no validation",
+        "created_at": "2016-12-13T09:15:37Z",
+        "labels": [
+            "Defect",
+            "Redmine status : Closed",
+            "Category : SHOP"
+        ],
+        "body": "**Original author :** Blatti Yves\n\nNULL shown if there's no pricing profile, a message would be nice\r\n\r\n!noprofile.png!\r\n\r\nAlso, there's no validation if a profile has been selected (only possible when there's no profile at all !)\n\n**Fixed versions :** 4.4.4"
+    },
+    "comments": [
+        {
+            "body": "**Original author :** Blatti Yves\n\nrev. 10058",
+            "created_at": "2016-12-22T10:45:51Z"
+        }
+    ]
+}

@@ -1,0 +1,34 @@
+{
+    "issue": {
+        "closed": true,
+        "title": "Javascript review",
+        "created_at": "2014-09-24T12:18:38Z",
+        "labels": [
+            "Enhancement",
+            "Redmine status : Rejected"
+        ],
+        "body": "**Original author :** Villemagne J\u00e9r\u00f4me\n\nA complete javascript review is needed :\r\n* javascript must be in js files and not in view\r\n* javascript event should be set via javascript and not in html\r\n* chaining should be use everytime it's possible\r\n\r\nAfter what, javascript can be rewritten to be optimized and more consistent.\r\n\r\nJavascript minification could be great"
+    },
+    "comments": [
+        {
+            "body": "**Original author :** Villemagne J\u00e9r\u00f4me\n\nIf possible, generated javascript should be store in a .js.php file in the same folder than js files (ie: js for Thesaurus)",
+            "created_at": "2014-09-24T12:33:17Z"
+        },
+        {
+            "body": "**Original author :** Villemagne J\u00e9r\u00f4me\n\nAJAX call can be reduce by:\r\n* using more precise DOM selector (cf resources.js:initActionList)",
+            "created_at": "2014-09-25T12:39:35Z"
+        },
+        {
+            "body": "**Original author :** Van Hoecke H\u00e9l\u00e8ne \n\nMinified javascript must be loaded when joomla is not in DEBUG mode but readable non minified javascript should be loaded in DEBUG mode.\r\n```\n\r\nif(JDEBUG)\r\n$doc->addScript('library.debug.js');\r\n}else{\r\n$doc->addScript('library.minify.js');\r\n}\r\n```\n",
+            "created_at": "2014-09-30T09:33:12Z"
+        },
+        {
+            "body": "**Original author :** Villemagne J\u00e9r\u00f4me\n\n* by using namespace, js objects default settings can be set once ; object's instances can extend\/override this default settings ; by having default settings let's uniformize the solution (cf datatables definition in version.js)",
+            "created_at": "2014-11-27T12:31:37Z"
+        },
+        {
+            "body": "**Original author :** Van Hoecke H\u00e9l\u00e8ne \n\nRejected but the content will be pushed in the wiki as best pratices.",
+            "created_at": "2015-05-07T13:05:20Z"
+        }
+    ]
+}

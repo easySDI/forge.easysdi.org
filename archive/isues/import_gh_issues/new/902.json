@@ -1,0 +1,34 @@
+{
+    "issue": {
+        "closed": true,
+        "title": "New administrator role for resources",
+        "created_at": "2015-02-16T10:14:40Z",
+        "labels": [
+            "Enhancement",
+            "Redmine status : Rejected"
+        ],
+        "body": "**Original author :** Van Hoecke H\u00e9l\u00e8ne \n\nIt would be interesting to have a new role in easySDI : an administrator who can see (at least in reading mode) all the resources of the plateform.\r\nWith the current available roles, no one can have a complete view of the resources hosted (except if a user is added as a manager on all the resources, but this is not a user friendly way to do this)."
+    },
+    "comments": [
+        {
+            "body": "**Original author :** M\u00e9rour Xavier\n\nH\u00e9l\u00e8ne,\r\n\r\nCan you describe the use case that lead to this proposal please ?\r\n\r\n_PS : I see it as a convenient feature, thus it has many impacts on Front-end interfaces since resources from differents organisms would be displayed and no filter on \"organism\" is currently available._ ",
+            "created_at": "2015-02-16T10:56:29Z"
+        },
+        {
+            "body": "**Original author :** Blatti Yves\n\nSounds like a *great* idea to me.\r\n1: It *avoid setting an admin as delegate on every resources of every organism*. Nice!\r\n2: It would *avoid developing some backend\/admin features\/screens*, they could just be added in frontend, only available to this role.\r\nThis logic should be applied, not only to resources, but to other screens, like validation, for example : in the 4.3.x validation process we have mail sent to thrid party. A good admin feature would be \"resent notification\". With this role, no need to add anything in backend.",
+            "created_at": "2015-02-18T10:22:32Z"
+        },
+        {
+            "body": "**Original author :** Magoni Bruno\n\nI agree with Xavier that \"organism\" filter and \"organism membership\" info should be added in frontend and backend if it's missing!\r\n\r\nThanks TC to vote on such issue which is part of #895",
+            "created_at": "2015-03-18T07:43:51Z"
+        },
+        {
+            "body": "**Original author :** M\u00e9rour Xavier\n\nI would suggest to reject this feature since its perimeters is covered by #895 and #933.\r\n\r\nDo you agree ?\r\n\r\n",
+            "created_at": "2015-03-18T11:11:52Z"
+        },
+        {
+            "body": "**Original author :** Villemagne J\u00e9r\u00f4me\n\nReject or link as 'Solved by #895' ...\r\n\r\nBut I agree",
+            "created_at": "2015-03-20T16:49:06Z"
+        }
+    ]
+}

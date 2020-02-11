@@ -1,0 +1,23 @@
+{
+    "issue": {
+        "closed": true,
+        "title": "Extraction REST Service does not encode special chars",
+        "created_at": "2016-01-11T14:47:22Z",
+        "labels": [
+            "Defect",
+            "Redmine status : Closed",
+            "Category : SHOP"
+        ],
+        "body": "**Original author :** Blatti Yves\n\nSpecial Chars are never encoded by REST service, and XML output may fail.\r\nSame problem as #852 using createElementNS with value.\n\n**Fixed versions :** 4.4.0"
+    },
+    "comments": [
+        {
+            "body": "**Original author :** Blatti Yves\n\nrev. 9397",
+            "created_at": "2016-01-11T15:07:20Z"
+        },
+        {
+            "body": "**Original author :** Blatti Yves\n\nFix: \r\n* \"Wrong Document Error\", on getException the response document is not the same, use @$parent->ownerDocument->...@\r\n* And add verbosity to XML errors\r\nRev. 9409\r\n",
+            "created_at": "2016-01-19T08:40:10Z"
+        }
+    ]
+}

@@ -1,0 +1,14 @@
+{
+    "issue": {
+        "closed": true,
+        "title": "Mavenizing MONITOR",
+        "created_at": "2013-04-22T04:59:16Z",
+        "labels": [
+            "Feature",
+            "Redmine status : Closed",
+            "Category : MONITOR"
+        ],
+        "body": "**Original author :** Magoni Bruno\n\n\n\n**Fixed versions :** 4.0.0"
+    },
+    "comments": []
+}

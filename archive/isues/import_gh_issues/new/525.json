@@ -1,0 +1,13 @@
+{
+    "issue": {
+        "closed": false,
+        "title": "Hide search title when unecessary",
+        "created_at": "2012-05-23T13:03:38Z",
+        "labels": [
+            "Feature",
+            "Redmine status : New"
+        ],
+        "body": "**Original author :** M\u00e9rour Xavier\n\nWhen using CATALOG context features, we have the following use case :\r\n\r\n- we set a new context\r\n- add some search criteria and hide them\r\n- activate the option \"execute a default search\"\r\n\r\nWhen going front end, we then have a screen with unecessary infos like :\r\n- title \"search\" (h1)\r\n- button \"search\" and \"initialize\" + \"advanced search\"\r\n- title \"results\" (h1)\r\n- text \"number of found metadata\"\r\n\r\nThose infos are not usefull : we juste want a list of result with a specific XSLT applied.\r\n\r\nShould be enhanced...\r\n\r\nWe will bring some idea on this topic later on.\r\n"
+    },
+    "comments": []
+}

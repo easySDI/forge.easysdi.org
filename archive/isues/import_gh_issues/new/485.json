@@ -1,0 +1,27 @@
+{
+    "issue": {
+        "closed": true,
+        "title": "User interface clean up",
+        "created_at": "2011-11-03T07:22:37Z",
+        "labels": [
+            "Feature",
+            "Redmine status : Rejected",
+            "Category : MONITOR"
+        ],
+        "body": "**Original author :** Larsen de Martino Jorgen\n\nA lot of new features have been implemented in the Monitor component over the last year.\r\n\r\nI believe it is time to go through the component and remove functions that has been replaced by new features.\r\n\r\nThis goes for user interface as well as for code.\r\n\r\nI am not sure how to design a process to do this - any suggestions?\r\n\r\nbest,\r\nJorgen de Martino"
+    },
+    "comments": [
+        {
+            "body": "**Original author :** M\u00e9rour Xavier\n\nI agree, we need to make some \"clean-up\".\r\n\r\nConcerning the design, I would say that you can make suggestion in this ticket and we can discuss on it - you are now the one with the best knowledge of the GUI, don't you ? :-)\r\n\r\nConcerning the code, it's more tricky. I let Bruno giving its point of view.\r\n\r\n*******\r\n\r\nMore generally, I am wondering if we should do this quiclky by going through the GUI... or have a more transversal thought of all EasySDI modules. Indeed, GUI of differents components do not share the same logic of navigation and \"touch and feel\".\r\n\r\nI think we have to discuss this on the EasySDI users meeting on 24. november.\r\n\r\n.",
+            "created_at": "2011-11-03T08:27:11Z"
+        },
+        {
+            "body": "**Original author :** Larsen de Martino Jorgen\n\nDear all\r\n\r\nI have compiled some suggestions along with screen dumps in the attached PDF file.\r\n\r\nI am sorry it was not possible for me to do it inline - to many suggestions :-)",
+            "created_at": "2011-11-03T15:18:55Z"
+        },
+        {
+            "body": "**Original author :** M\u00e9rour Xavier\n\nThis is an old and very specific ticket & the community plans to make a large MONITOR refactoring.\r\n\r\nTherefore, this ticket is rejected.",
+            "created_at": "2016-02-03T15:00:48Z"
+        }
+    ]
+}

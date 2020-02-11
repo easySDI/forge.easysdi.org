@@ -1,0 +1,35 @@
+{
+    "issue": {
+        "closed": true,
+        "title": "Remove PostgreSQL support",
+        "created_at": "2016-02-22T15:49:44Z",
+        "labels": [
+            "Feature",
+            "Redmine status : Closed",
+            "Category : CORE"
+        ],
+        "body": "**Original author :** Blatti Yves\n\nOn February 12th 2016 meeting, Technical Committee proposes to remove PostgreSQL support.\r\nReasons are:\r\n* There is no known user of easySDI running PGSQL\r\n* PGSQL install and updates are not tested in easySDI\r\n* There is (or was) Joomla problems in PGSQL support. We cannot guarantee that current Joomla version runs properly on PGSQL\r\n* Third party software is very rarely supported on PGSQL, so a user of Joomla\/easySDI on PGSQL would not be able to take advantage of market modules\/plugins\/components.\n\n**Fixed versions :** 4.4.1"
+    },
+    "comments": [
+        {
+            "body": "**Original author :** M\u00e9rour Xavier\n\nPSC agree with laying aside PGSQL support in easySDI solution.",
+            "created_at": "2016-03-04T08:38:42Z"
+        },
+        {
+            "body": "**Original author :** Magoni Bruno\n\nSC (Xavier, Laurent, Bruno) has voted for such removal",
+            "created_at": "2016-03-04T08:42:10Z"
+        },
+        {
+            "body": "**Original author :** Blatti Yves\n\nI have looked up for postgresql in code... (things like @if(JFactory::getDbo()->name == 'postgresql'@)\r\n=> didn't find any, so the only thing to do is : remove install + update SQL files, then adapt ant build for xml generation",
+            "created_at": "2016-03-24T09:59:46Z"
+        },
+        {
+            "body": "**Original author :** Blatti Yves\n\nrev. 9571",
+            "created_at": "2016-03-24T10:30:00Z"
+        },
+        {
+            "body": "**Original author :** Blatti Yves\n\nrev. 9572\r\n(force removal of files, since installer doesn't remove the SQL folder\/files in case of update,\r\nsame method as used by Joomla installer: https:\/\/github.com\/joomla\/joomla-cms\/blob\/staging\/administrator\/components\/com_admin\/script.php)",
+            "created_at": "2016-03-24T14:03:46Z"
+        }
+    ]
+}

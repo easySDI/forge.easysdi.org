@@ -1,0 +1,55 @@
+{
+    "issue": {
+        "closed": true,
+        "title": "Stereotype \"geographic extent\"",
+        "created_at": "2014-05-27T14:28:21Z",
+        "labels": [
+            "Defect",
+            "Redmine status : Closed",
+            "Category : CATALOG"
+        ],
+        "body": "**Original author :** M\u00e9rour Xavier\n\nThe new version of easySDI (V4.x) integrates different types of stereotypes to help to edit metadata. One if \"geographicextent\" which existed already in V2 but has not yet been totally coded in V4.\r\n\r\nWhat is missing ?\r\n\r\n- the capability to choose multiple extents (perimeters) from a list to fill a single list of \"selected perimeters\" (without adding new occurences in the MD edition form, as it works now)\r\n- the geographicIdentifiers (ISO) of the perimeters (stored in predefined perimeters) is not saved in metadata\r\n\r\n\r\nThis should be added to cover the same functionnality as available in V2.\r\n\r\nSee in attachement screenshot of what is available in V2 (GUI could be enhanced, see proposal below)\r\n\r\n----\r\n\r\nOpen questions :\r\n\r\n- in V2, there was only one stereotype with options. Should we do like this again or code another stereotype something like \"geographicExtent_multiple\" ?\r\n- GUI was not perfect in V2 for searching predefined perimeters in the list). See in attchement our proposal to have a more \"user-friendly\" form (mainly, it adds a search on the multiselect as proposed in JUI since Joomla! v3). See proposal animated in GIF attached.\r\n\r\n\r\n\r\n\r\n\r\n\r\n\n\n**Fixed versions :** 4.2.0"
+    },
+    "comments": [
+        {
+            "body": "**Original author :** M\u00e9rour Xavier\n\n@Bruno @Thomas @J\u00e9r\u00f4me\r\n\r\nAny input on open questions ?",
+            "created_at": "2014-06-25T09:11:19Z"
+        },
+        {
+            "body": "**Original author :** Blatti Yves\n\nAfter phone call with Marc and discussion at ASIT VD, *we all agreed on a simplified version of this stereotype*:\nIt will be a simple multiselect with choosen, plus customization:\n* as in v2, items label will contain their type (ex:  \"Bex [Commune VD]\")\n* items will stack vertically (all the same size)\n* container will have a max height (because we can have hundreds of items selected see \"here\":http:\/\/tof.canardpc.com\/view\/a8a3fd1c-ff19-45c6-89a0-c3b1fb30742f.jpg)\n* selected items will be alphabetically sorted (on opening , and when adding new ones)\n* initial size of select is standard (see \"here\":http:\/\/tof.canardpc.com\/view\/efd79b2b-7a71-4fd3-8ac5-44221243fc3c.jpg)\n* selected items are visible in the dropdown but disabled (see \"here\":http:\/\/tof.canardpc.com\/view\/ed64f70f-b25a-44aa-af9b-935af6105308.jpg)\n* not visible here, but we'd like that the placeholder remains visible even if some values are selected\n\nSample fiddles:\n\n(blank select, like in a new MD)\nhttp:\/\/jsfiddle.net\/M7Td2\/\n\n(preselected values, linke a metadata update)\nhttp:\/\/jsfiddle.net\/K6U4C\/",
+            "created_at": "2014-07-08T08:54:06Z"
+        },
+        {
+            "body": "**Original author :** Magoni Bruno\n\nNeed some explanations as feature haven't been developed as initially mentioned...",
+            "created_at": "2014-07-17T20:31:21Z"
+        },
+        {
+            "body": "**Original author :** Magoni Bruno\n\nHi Yves,\r\n\r\nIf I understand well, could you please summarize what needs to be done for finalizing issue as initially described, or keep we such integration as is ?\r\n\r\nThanks in advance,\r\nBruno",
+            "created_at": "2014-07-17T20:33:21Z"
+        },
+        {
+            "body": "**Original author :** Blatti Yves\n\nRemain points:\r\n* items will stack vertically (all the same size)\r\n* container will have a max height (because we can have hundreds of items selected)\r\n* initial size of select is standard\r\n* we'd like that the placeholder remains visible even if some values are selected\r\n\r\nProblem is, we use joomla default chosen, and it doesn't inherit classes from original select.\r\nSo we can't add CSS and js on an object we don't know.\r\nWe'll have to find a trick for this.\r\n\r\nMarc told me that he doesn't have time for this feature anymore. So we can give it a try at ASIT VD.\r\n\r\nWhat do you think ?",
+            "created_at": "2014-07-18T10:43:33Z"
+        },
+        {
+            "body": "**Original author :** Magoni Bruno\n\nIf you want to take time about ergonomic remaining points, I don't see any problem.\r\nBut it is important to locate these ergonomic features outside of this ticket if you have not time to work quickly on it (next 2 weeks).\r\nI guess it's time to stop adding new features to 4.2 version as it's important now to have a stable version regarding to the milestones delivery...\r\n\r\nSo, I let you creating a new issue for such remaining points regarding your availability; in this case such ticket can be affected back to me and I will state it as \"resolved\"...\r\n\r\nThanks,\r\n\r\n",
+            "created_at": "2014-07-22T10:15:10Z"
+        },
+        {
+            "body": "**Original author :** Blatti Yves\n\nOK, so I propose to only add a class to these items so we can \"play\" with their look in CSS (in our template).\r\nSomething like this (I can push it on my next commit):\r\n```\n\r\n$jfield->__set('class','sdi-extent-multiselect');\r\n```\n\r\n\r\nAnd we'll fill a ticket if we need more, or if we produce something generic enough for the community.\r\n\r\nWould it be OK?\r\n",
+            "created_at": "2014-07-22T12:07:54Z"
+        },
+        {
+            "body": "**Original author :** Blatti Yves\n\nHo, it didn't hit me in the first place, but labels are wrong, the type is missing.\r\nWe have \"Bex\" instead of \"Bex [Commune VD]\"",
+            "created_at": "2014-07-23T06:55:35Z"
+        },
+        {
+            "body": "**Original author :** Battaglia Marc\n\nThank you to test on your environment.",
+            "created_at": "2014-08-26T07:57:54Z"
+        },
+        {
+            "body": "**Original author :** Blatti Yves\n\nHi, I'm on holidays for now, I'll check when I'll be back.\r\n\r\nThe remains point before I left were:\r\n* \"note13\":https:\/\/forge.easysdi.org\/issues\/721#note-13 (the category(type) is missing)\r\n* #796 (Stereotype geographic extent stores database ids intestead of \"codes\")\r\n\r\nI'll give you inputs afters tests on Monday !",
+            "created_at": "2014-08-27T10:21:08Z"
+        }
+    ]
+}

@@ -1,0 +1,14 @@
+{
+    "issue": {
+        "closed": true,
+        "title": "php notice message if user not found in core",
+        "created_at": "2016-06-23T10:19:52Z",
+        "labels": [
+            "Defect",
+            "Redmine status : Closed",
+            "Category : CORE"
+        ],
+        "body": "**Original author :** Portier Thomas\n\n\n\n**Fixed versions :** 4.4.2"
+    },
+    "comments": []
+}

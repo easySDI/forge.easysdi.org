@@ -1,0 +1,23 @@
+{
+    "issue": {
+        "closed": true,
+        "title": "SHOP perimeter allows auto-intersecting polygons",
+        "created_at": "2015-03-27T11:03:28Z",
+        "labels": [
+            "Defect",
+            "Redmine status : Closed",
+            "Category : SHOP"
+        ],
+        "body": "**Original author :** Blatti Yves\n\nSHOP perimeter allows auto-intersecting polygons.\r\n(Lost feature from v2)\n\n**Fixed versions :** 4.3.2"
+    },
+    "comments": [
+        {
+            "body": "**Original author :** Blatti Yves\n\nDone in #943 : Enhance perimeter selection in SHOP for better User Experience\r\n",
+            "created_at": "2015-06-17T09:50:30Z"
+        },
+        {
+            "body": "**Original author :** Blatti Yves\n\nCan be closed (no code to merge)",
+            "created_at": "2015-06-17T09:50:58Z"
+        }
+    ]
+}

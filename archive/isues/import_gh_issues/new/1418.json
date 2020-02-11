@@ -1,0 +1,19 @@
+{
+    "issue": {
+        "closed": true,
+        "title": "Undefined property: stdClass::$checked_out_time ...\\administrator\\components\\com_easysdi_map\\views\\maps\\tmpl\\default.php",
+        "created_at": "2017-05-19T11:22:20Z",
+        "labels": [
+            "Defect",
+            "Redmine status : Closed",
+            "Category : MAP"
+        ],
+        "body": "**Original author :** Blatti Yves\n\nUndefined property: stdClass::$checked_out_time ...\\administrator\\components\\com_easysdi_map\\views\\maps\\tmpl\\default.php\n\n**Fixed versions :** 4.5.0"
+    },
+    "comments": [
+        {
+            "body": "**Original author :** Blatti Yves\n\nrev. 10169",
+            "created_at": "2017-05-19T11:26:21Z"
+        }
+    ]
+}

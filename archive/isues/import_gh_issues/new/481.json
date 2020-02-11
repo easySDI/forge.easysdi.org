@@ -1,0 +1,19 @@
+{
+    "issue": {
+        "closed": true,
+        "title": "Servicestate tab - execute does not reflect request validation rules",
+        "created_at": "2011-09-27T10:41:54Z",
+        "labels": [
+            "Enhancement",
+            "Redmine status : Rejected",
+            "Category : MONITOR"
+        ],
+        "body": "**Original author :** Larsen de Martino Jorgen\n\nWhen executing a request under 'Service state' tab - the response only reflects whether the service is available or not.\r\n\r\nA future enhancement could be that the response also took into account the validation rules set under request details.\r\n\r\nAnd that validation information was collected and showed for each request in the job that was executed."
+    },
+    "comments": [
+        {
+            "body": "**Original author :** M\u00e9rour Xavier\n\nThis is an old and very specific ticket & the community plans to make a large MONITOR refactoring.\r\n\r\nTherefore, this ticket is rejected.",
+            "created_at": "2016-02-03T15:01:52Z"
+        }
+    ]
+}

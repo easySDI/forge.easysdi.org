@@ -1,0 +1,23 @@
+{
+    "issue": {
+        "closed": true,
+        "title": "Add a 'client organism' filter in SHOP BE orders view",
+        "created_at": "2016-11-17T09:31:08Z",
+        "labels": [
+            "Enhancement",
+            "Redmine status : Closed",
+            "Category : SHOP"
+        ],
+        "body": "**Original author :** Blatti Yves\n\nWhen you have a lot of users in an organism, it's hard to search for all of the orders created by the clients.\r\nWe propose to add a 'client organism' filter in SHOP BE orders view.\n\n**Fixed versions :** 4.4.4"
+    },
+    "comments": [
+        {
+            "body": "**Original author :** Van Hoecke H\u00e9l\u00e8ne \n\nAccepted by the TC.",
+            "created_at": "2017-01-06T09:22:20Z"
+        },
+        {
+            "body": "**Original author :** Blatti Yves\n\nrev. 10063",
+            "created_at": "2017-01-06T13:37:24Z"
+        }
+    ]
+}

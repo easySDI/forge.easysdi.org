@@ -1,0 +1,27 @@
+{
+    "issue": {
+        "closed": true,
+        "title": "diffusion files deleted",
+        "created_at": "2014-07-22T11:57:27Z",
+        "labels": [
+            "Defect",
+            "Redmine status : Closed",
+            "Category : SHOP"
+        ],
+        "body": "**Original author :** Portier Thomas\n\nWhen you upload a file in the diffusion panel of a ressource for download or extract, this file is well uploaded on the server.\r\nIf you resave your diffusion without changing anything the file you just uploaded is deleted from the server.\n\n**Fixed versions :** 4.2.2"
+    },
+    "comments": [
+        {
+            "body": "**Original author :** Blatti Yves\n\nI'm not sure I was supposed to me the assignee here...",
+            "created_at": "2014-07-23T09:58:24Z"
+        },
+        {
+            "body": "**Original author :** Magoni Bruno\n\nThomas, as I understand this issue has been solved by you abd is available into your sandbox, right?\r\nThanks for your feedback,",
+            "created_at": "2014-07-24T15:38:38Z"
+        },
+        {
+            "body": "**Original author :** Portier Thomas\n\nyes",
+            "created_at": "2014-07-25T07:14:04Z"
+        }
+    ]
+}

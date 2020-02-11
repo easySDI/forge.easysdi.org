@@ -1,0 +1,22 @@
+{
+    "issue": {
+        "closed": true,
+        "title": "Use Squeezebox for all modal and iframe",
+        "created_at": "2013-11-08T09:21:40Z",
+        "labels": [
+            "Enhancement",
+            "Redmine status : Rejected"
+        ],
+        "body": "**Original author :** Van Hoecke H\u00e9l\u00e8ne \n\nUse Squeezebox for all modal and iframe in EasySDI solution.\r\n\r\nhttp:\/\/www.spiralscripts.co.uk\/Joomla-Tips\/using-modal-windows-with-joomla.html"
+    },
+    "comments": [
+        {
+            "body": "**Original author :** Van Hoecke H\u00e9l\u00e8ne \n\nTC proposes that :\r\n- Boostrap modal must be used in priority.\r\n- other libraries can be used if needed ",
+            "created_at": "2015-03-06T09:31:43Z"
+        },
+        {
+            "body": "**Original author :** Van Hoecke H\u00e9l\u00e8ne \n\nThis the responsability of the developper to implement the expected behaviour described in the wiki page.\r\n\r\nThsi ticket is no longer needed.",
+            "created_at": "2015-12-04T09:45:08Z"
+        }
+    ]
+}

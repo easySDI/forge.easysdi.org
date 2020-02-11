@@ -1,0 +1,14 @@
+{
+    "issue": {
+        "closed": true,
+        "title": "The servlet ask for authentication",
+        "created_at": "2014-04-23T10:11:22Z",
+        "labels": [
+            "Defect",
+            "Redmine status : Closed",
+            "Category : MONITOR"
+        ],
+        "body": "**Original author :** Portier Thomas\n\nEven if we pass authentication user and password in the url of the monitor, the servlet ask http authentication when the user creates or makes a modification on a job\n\n**Fixed versions :** 4.4.1"
+    },
+    "comments": []
+}

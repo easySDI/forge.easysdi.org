@@ -1,0 +1,31 @@
+{
+    "issue": {
+        "closed": true,
+        "title": "Accessscope of properties does not behave like in v2",
+        "created_at": "2014-06-11T14:03:18Z",
+        "labels": [
+            "Defect",
+            "Redmine status : Closed",
+            "Category : SHOP"
+        ],
+        "body": "**Original author :** Blatti Yves\n\nAccessscope of properties does not behave like in v2:\r\n\r\n*In v2*, we can restrict access to certain properties for some provider (accessscope of the property is set to one or more organisms). That means that only the selected provider car use this property for his products.\r\nBut *any user* view, and can use the property when placing an order.\r\n\r\n*In v4*, the property is correctly restricted to the selected organism (as provider), but is ALSO limited for users when adding the product to the basket. That means that a non logged user, or a user form another organisms cannot use this property.\r\n\r\nThis is a problem for ASIT VD, is it a bug or a feature?\n\n**Fixed versions :** 4.2.0"
+    },
+    "comments": [
+        {
+            "body": "**Original author :** M\u00e9rour Xavier\n\nIf no one disagree, I suggest to stick to V2 behaviour and, therefore, change the current code.\r\n\r\nPlease add any comment if you disagree :-)",
+            "created_at": "2014-06-16T14:17:10Z"
+        },
+        {
+            "body": "**Original author :** Magoni Bruno\n\nI confirm that it's a bug and not a feature :-(\r\n",
+            "created_at": "2014-06-25T07:37:42Z"
+        },
+        {
+            "body": "**Original author :** M\u00e9rour Xavier\n\nThanks for correcting this behaviour.",
+            "created_at": "2014-06-25T08:34:45Z"
+        },
+        {
+            "body": "**Original author :** Blatti Yves\n\nIn my sandbox: \/easysdi\/sandboxes\/asit-vd\/4.2.x\/com_easysdi_core\/src\/administrator\/libraries\/easysdi\/catalog\/cswmetadata.php",
+            "created_at": "2014-07-01T09:13:43Z"
+        }
+    ]
+}

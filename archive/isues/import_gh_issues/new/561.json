@@ -1,0 +1,13 @@
+{
+    "issue": {
+        "closed": true,
+        "title": "Adding DS definition",
+        "created_at": "2012-10-03T18:34:41Z",
+        "labels": [
+            "Feature",
+            "Redmine status : Closed"
+        ],
+        "body": "**Original author :** Magoni Bruno\n\nDS definition is missing inside EasySDI installers and EasySDI extensions for Joomla.\r\nHave to add @define( 'DS', DIRECTORY_SEPARATOR );@ everywhere needed inside source code...\r\n\r\nShould also prepare Joomla 3.x compliance with same code than 2.5!\n\n**Fixed versions :** 3.1.0"
+    },
+    "comments": []
+}

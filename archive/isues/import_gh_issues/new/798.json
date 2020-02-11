@@ -1,0 +1,51 @@
+{
+    "issue": {
+        "closed": true,
+        "title": "Add a catalog option : scroll to results yes\/no",
+        "created_at": "2014-08-13T12:13:37Z",
+        "labels": [
+            "Feature",
+            "Redmine status : Closed",
+            "Category : CATALOG"
+        ],
+        "body": "**Original author :** M\u00e9rour Xavier\n\nThe V4 introduced in new behaviour when searching in a CATALOG : when the user validates its search, the result page is automatically positionned on an anchor \"results\" with the text (xx results).\r\n\r\nWith this behaviour, the user to not see anymore its search bar without scrolling up.\r\nIt is somehow confusing because the user looses the search context.\r\n\r\nI would suggest to add an option in each catalog (context) : scroll to results yes\/no.\r\n\r\n\n\n**Fixed versions :** 4.3.0"
+    },
+    "comments": [
+        {
+            "body": "**Original author :** Blatti Yves\n\nTechnical Committee stated that it's OK to make this new behavior optional.\r\n\r\nAttention: linked to #789 because changing to GET will break HTML anchor auto scroll system. Must certainly be re-implemented with JS.",
+            "created_at": "2014-09-05T09:43:16Z"
+        },
+        {
+            "body": "**Original author :** M\u00e9rour Xavier\n\n1+ for me",
+            "created_at": "2014-10-07T09:59:46Z"
+        },
+        {
+            "body": "**Original author :** Plainecassagne Laurent\n\n+1",
+            "created_at": "2014-10-07T10:00:40Z"
+        },
+        {
+            "body": "**Original author :** Magoni Bruno\n\n+1",
+            "created_at": "2014-10-07T10:00:46Z"
+        },
+        {
+            "body": "**Original author :** Blatti Yves\n\nIn my sandbox 4.3.0",
+            "created_at": "2014-11-19T09:26:49Z"
+        },
+        {
+            "body": "**Original author :** Blatti Yves\n\nNeed a default value !",
+            "created_at": "2015-01-09T08:47:18Z"
+        },
+        {
+            "body": "**Original author :** Blatti Yves\n\nHi J\u00e9r\u00f4me,\r\nFor this issue, you told me I had to add a default value. But it seems to be there. Do you still encounter a problem with it?\r\nThanks !",
+            "created_at": "2015-02-11T10:42:42Z"
+        },
+        {
+            "body": "**Original author :** Villemagne J\u00e9r\u00f4me\n\nYes, I still encouter it ! It append if you never saved the catalog's config after the solution's upgrade.",
+            "created_at": "2015-02-11T16:57:44Z"
+        },
+        {
+            "body": "**Original author :** Blatti Yves\n\nYour problem is not reproducible on two other instances.\r\nIf OK for you, you can close it now J\u00e9r\u00f4me.\r\n\r\nThe behavior of JS with no result has been patched in my sandbox.",
+            "created_at": "2015-02-12T09:50:53Z"
+        }
+    ]
+}

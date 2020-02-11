@@ -1,0 +1,14 @@
+{
+    "issue": {
+        "closed": false,
+        "title": "Average Response time based on time ",
+        "created_at": "2010-10-08T09:46:46Z",
+        "labels": [
+            "Feature",
+            "Redmine status : New",
+            "Category : MONITOR"
+        ],
+        "body": "**Original author :** M\u00e9rour Xavier\n\nThe idea is to implement a ressource that would return aggregated logs on a specific period of time -> a unique tuple should be return. It is needed in order to get disponibility and average response time for specific period of time.\r\n\r\nProbably, this could be done by adding a new GET parameter in aggregated logs, something like :\r\n\r\nperformAverage=true\/false."
+    },
+    "comments": []
+}

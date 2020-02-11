@@ -1,0 +1,14 @@
+{
+    "issue": {
+        "closed": true,
+        "title": "MD edition : choice list option with value ='0' not handle",
+        "created_at": "2017-05-18T13:46:31Z",
+        "labels": [
+            "Defect",
+            "Redmine status : Closed",
+            "Category : CATALOG"
+        ],
+        "body": "**Original author :** Van Hoecke H\u00e9l\u00e8ne \n\nIn the metadata edition form, if a choice list offer an option with a value ='0', this value will never be saved in the metadata content.\n\n**Fixed versions :** 4.5.0"
+    },
+    "comments": []
+}

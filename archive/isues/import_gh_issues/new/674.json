@@ -1,0 +1,43 @@
+{
+    "issue": {
+        "closed": true,
+        "title": "Delete \"button\" in diffusion",
+        "created_at": "2014-04-09T14:43:20Z",
+        "labels": [
+            "Feature",
+            "Redmine status : Closed",
+            "Category : SHOP"
+        ],
+        "body": "**Original author :** M\u00e9rour Xavier\n\nIn the diffusion page (parameters for download \/extraction), there is four button above :\r\n\r\nSave  \/   Save & close    \/   Delete   \/ Cancel\r\n\r\n\r\nThe Delete button, if clicked, will delete the diffusion parameters directly.\r\nThat's rude !\r\n\r\nI would suggest to remove this \"delete\" feature to avoid loss of diffusion parameters. If no diffusion is available, the user can always use the status \"published\/unpublished\".\r\n\r\n_by the way : this last status should be renamed as well. I suggest : \"Active \/ inactive\" or something equivalent._\r\n\r\nWhat do you think ?\r\n\r\n\r\n\r\n\n\n**Fixed versions :** 4.0.2"
+    },
+    "comments": [
+        {
+            "body": "**Original author :** Magoni Bruno\n\nHi Xavier,\r\n\r\nFirst of all, I guess that this issue is a feature as there is no functional defect and that you propose a new behaviour :-)\r\n\r\nI don't remember why such \"delete\" action have been implemented and I'm not able to say if it must be kept or can be removed...\r\nBut you're right that it's too dangerous that clicking on \"delete\" button empty the formulary AND SAVE IT! I would prefer to rename such button \"Empty\" and remove the saving process when clicking on it.\r\n\r\nAbout using status, another way could be to store properties even if the corresponding checkbox (download or extract) is unchecked. By this way, properties are stored and can be recovered when checkbox is checked again by user...\r\n\r\nChanging this issue as a feature will allow Community to validate such change before coding it.\r\n",
+            "created_at": "2014-04-09T16:05:10Z"
+        },
+        {
+            "body": "**Original author :** M\u00e9rour Xavier\n\nHello,\r\n\r\nGo for a \"feature\" instead of \"defect\" :-)\r\n\r\n```\n\r\nI would prefer to rename such button \"Empty\" and remove the saving process when clicking on it.\r\n```\n\r\nI would even remove this button : I do not really see the \"empty\" feature as necessary here.\r\n\r\n```\n\r\nAbout using status, another way could be to store properties even if the corresponding checkbox\r\n(download or extract) is unchecked. By this way, properties are stored and can be recovered when\r\ncheckbox is checked again by user...\r\n```\n\r\nGood idea !\r\nBut then the status \"publish\" is not necessary anynore, right ?\r\n\r\n\r\n",
+            "created_at": "2014-04-10T07:03:43Z"
+        },
+        {
+            "body": "**Original author :** Portier Thomas\n\nThe same thing has to be done in the visualization form",
+            "created_at": "2014-04-10T07:54:29Z"
+        },
+        {
+            "body": "**Original author :** Magoni Bruno\n\nM\u00e9rour Xavier wrote:\r\n```\n\r\n> [...]\r\n> I would even remove this button : I do not really see the \"empty\" feature as necessary here.\r\n```\n\r\nAs I don't remember such necessity and if no one disagree with, button \"Delete\" can be removed!\r\n\r\nM\u00e9rour Xavier wrote:\r\n```\n\r\n> [...]\r\n> Good idea !\r\n> But then the status \"publish\" is not necessary anynore, right ?\r\n```\n\r\nFor me, status and saving some of the properties doesn't fit the same goal, so I will keep status (for now it's quite homogeneous with other easySDI objects and doesn't need to refactor all logical about not using anymore this flag).\r\n",
+            "created_at": "2014-04-10T09:55:04Z"
+        },
+        {
+            "body": "**Original author :** M\u00e9rour Xavier\n\n+1 for removing this button in the \"diffusion\" page as well as in the \"visualization\" page.\r\n\r\n--------------\r\n\r\nAbout the status, OK for keeping it (homogenous objects) BUT I would suggest to change its name and display layout (for end users better undestanding) :\r\n\r\n1. change publish\/unpublish to active \/inactive\r\n2. display a toggle or something equivalent, more \"visual\" and colorfull than just a select as currently.",
+            "created_at": "2014-04-10T13:49:36Z"
+        },
+        {
+            "body": "**Original author :** Magoni Bruno\n\n+1 for removing buttons\r\n",
+            "created_at": "2014-04-11T08:18:05Z"
+        },
+        {
+            "body": "**Original author :** Portier Thomas\n\nI removed delete buttons in visualization and diffusion\r\n\r\nCommited in my branche 4.0.2",
+            "created_at": "2014-04-30T07:46:21Z"
+        }
+    ]
+}

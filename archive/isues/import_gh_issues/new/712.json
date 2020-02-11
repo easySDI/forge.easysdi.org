@@ -1,0 +1,19 @@
+{
+    "issue": {
+        "closed": false,
+        "title": "trashed policy taken into account by proxy",
+        "created_at": "2014-05-15T11:24:55Z",
+        "labels": [
+            "Defect",
+            "Redmine status : New",
+            "Category : PROXY"
+        ],
+        "body": "**Original author :** Portier Thomas\n\nA policy that is trashed is taken into account by the proxy, it should not.\r\n\r\nWe could remove the trash feature and add a direct delete feature for policies."
+    },
+    "comments": [
+        {
+            "body": "**Original author :** M\u00e9rour Xavier\n\nI agree, I do not see the need of the trash feature.\r\nDelete is for me OK",
+            "created_at": "2014-05-15T12:09:29Z"
+        }
+    ]
+}

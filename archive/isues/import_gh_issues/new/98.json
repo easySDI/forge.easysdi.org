@@ -1,0 +1,19 @@
+{
+    "issue": {
+        "closed": true,
+        "title": "Displaying scale only in meter\/in miles",
+        "created_at": "2009-12-23T14:39:22Z",
+        "labels": [
+            "Feature",
+            "Redmine status : Closed",
+            "Category : MAP"
+        ],
+        "body": "**Original author :** Magoni Bruno\n\nThe goal is that the MAP displays the scale information in:\r\n- one system (metric\/miles)\r\n- in both system\r\n\r\nThe Administrator should have the possibility to configure this from the back-end.\n\n**Fixed versions :** 4.0.0"
+    },
+    "comments": [
+        {
+            "body": "**Original author :** Magoni Bruno\n\nThis feature has been realized before new feature acceptance process...\r\n",
+            "created_at": "2014-09-21T13:46:15Z"
+        }
+    ]
+}

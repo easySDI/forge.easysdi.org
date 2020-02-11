@@ -1,0 +1,19 @@
+{
+    "issue": {
+        "closed": true,
+        "title": "HTTP 303 caching in basket redirect (#726)",
+        "created_at": "2015-02-16T08:46:19Z",
+        "labels": [
+            "Defect",
+            "Redmine status : Closed",
+            "Category : SHOP"
+        ],
+        "body": "**Original author :** Blatti Yves\n\n#726 introduces an optional redirection if basket is empty.\r\nThis is done with a JApplication->redirect wich produces an HTTP 303 code (see other).\r\nSome browsers cache this result if source is a GET and not a POST (Chrome does this).\r\n\r\nFix is to disable caching in JResponse (JResponse::allowCache(false);)\n\n**Fixed versions :** 4.3.0"
+    },
+    "comments": [
+        {
+            "body": "**Original author :** Blatti Yves\n\nIn my 4.3.x sandbox ",
+            "created_at": "2015-02-16T08:47:24Z"
+        }
+    ]
+}

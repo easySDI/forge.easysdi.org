@@ -1,0 +1,19 @@
+{
+    "issue": {
+        "closed": true,
+        "title": "Add index on #__sdi_translation (text1, text2) since they're used in where clauses",
+        "created_at": "2015-03-09T10:47:42Z",
+        "labels": [
+            "Defect",
+            "Redmine status : Closed",
+            "Category : CATALOG"
+        ],
+        "body": "**Original author :** Blatti Yves\n\nWe need indexes on on #__sdi_translation (text1, text2) fields since they're used in WHERE and ORDER BY clauses:\r\n* 'text1' :\r\n** private function getBoundaryByName($name) : \\components\\com_easysdi_catalog\\libraries\\easysdi\\FormStereotype.php:327\r\n** private function getAttributOptions($searchCriteria) : \\components\\com_easysdi_catalog\\libraries\\easysdi\\SearchJForm.php:347\r\n* 'text2' :\r\n** private function getGuidFromLocaleValue($relation_id, $texte) : \\components\\com_easysdi_catalog\\libraries\\easysdi\\FormGenerator.php:1699\r\n\n\n**Fixed versions :** 4.3.2"
+    },
+    "comments": [
+        {
+            "body": "**Original author :** Blatti Yves\n\nAll good to me (MySQL checked only)",
+            "created_at": "2015-07-28T09:52:02Z"
+        }
+    ]
+}

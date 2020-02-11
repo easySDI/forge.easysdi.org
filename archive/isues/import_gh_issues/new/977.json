@@ -1,0 +1,14 @@
+{
+    "issue": {
+        "closed": true,
+        "title": "Add number of products to process in the \"requests list\" view",
+        "created_at": "2015-04-07T07:20:54Z",
+        "labels": [
+            "Enhancement",
+            "Redmine status : Closed",
+            "Category : SHOP"
+        ],
+        "body": "**Original author :** Blatti Yves\n\nIn v2, we listed \"products\" that needed to be processed, in v4 we chose to have orders in this view.\r\nThis is fine, but we should add a product count in this view, otherwise we can't know the \"amount of work to do\" in the list view and have to open all orders.\r\n\r\nWe propose to add the count of products (affected to the current user) to process in the \"requests list\" view.\n\n**Fixed versions :** 4.3.2"
+    },
+    "comments": []
+}

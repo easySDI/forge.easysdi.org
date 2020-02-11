@@ -1,0 +1,19 @@
+{
+    "issue": {
+        "closed": true,
+        "title": "add proxy for mode zoning",
+        "created_at": "2014-03-26T14:37:38Z",
+        "labels": [
+            "Feature",
+            "Redmine status : Rejected",
+            "Category : SHOP"
+        ],
+        "body": "**Original author :** M\u00e9rour Xavier\n\nhe download feature in \"diffusion\" has the \"zoning\" mode (the file is uploading via a MAP which offers n URL via a WFS, each URL corresponds to another file for another area).\r\n\r\nProblem : with the current code, the remote URL is visible. It is OK when the data has a public access scope. But if access scope is \"private\", the URLs remains accessibles for any one who knows the URL.\r\n\r\nProposition : add a proxy feature to hide remote URLs and secure them (ask for login\/password)\r\n\r\nOour proposition will follow...\r\n"
+    },
+    "comments": [
+        {
+            "body": "**Original author :** Blatti Yves\n\nDuplicate : This has been implemented here #1042 and #1159",
+            "created_at": "2016-02-03T11:19:02Z"
+        }
+    ]
+}

@@ -1,0 +1,14 @@
+{
+    "issue": {
+        "closed": false,
+        "title": "Add \"delete alerts\" option",
+        "created_at": "2011-02-11T17:56:55Z",
+        "labels": [
+            "Feature",
+            "Redmine status : New",
+            "Category : MONITOR"
+        ],
+        "body": "**Original author :** M\u00e9rour Xavier\n\nIn the \"maintenance\" tab, we have the possibility to delete raw and\/or aggregated logs for any job.\r\n\r\nThe same feature should be available for alerts related to job since old alerts, saying some months old, are most of the time not relevant.\r\n\r\n"
+    },
+    "comments": []
+}

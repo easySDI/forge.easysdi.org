@@ -1,0 +1,14 @@
+{
+    "issue": {
+        "closed": true,
+        "title": "mixing up versions",
+        "created_at": "2016-11-29T10:40:25Z",
+        "labels": [
+            "Defect",
+            "Redmine status : Closed",
+            "Category : CATALOG"
+        ],
+        "body": "**Original author :** Van Hoecke H\u00e9l\u00e8ne \n\nI create a new Version of a geoproduct and its children (successful).\r\nIn the list of resources, I choose the second last Version of the geoproduct (Status = published). Then I want to see the list of children of this particular Version, but I get the list of the latest Versions of children (Status = in Arbeit).\r\n\r\nObviously the Versions get mixed up, or, after choosing the Version of the geoproducht (parent), the list of children is not updated...\n\n**Fixed versions :** 4.3.7"
+    },
+    "comments": []
+}

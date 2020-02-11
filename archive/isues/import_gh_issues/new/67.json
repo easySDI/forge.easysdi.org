@@ -1,0 +1,22 @@
+{
+    "issue": {
+        "closed": true,
+        "title": "PROXY admin panel enhancement",
+        "created_at": "2009-05-01T14:36:51Z",
+        "labels": [
+            "Feature",
+            "Redmine status : Rejected"
+        ],
+        "body": "**Original author :** M\u00e9rour Xavier\n\nIt would be convienient to have different features in the PROXY admin panel, like enabling the :\r\n\r\n- listing of policies or configuration per user or role\r\n- listing  of policies or configuration per expired date\r\n- listing  of policies or configuration per configuration\r\n- listing  of policies or configuration per remote server accessed\r\n- listing of \r\n- etc...\r\n\r\nA general discussion and brainstorming should be performed in order to collect ideas and to improve the UI.\r\n\r\n\r\n"
+    },
+    "comments": [
+        {
+            "body": "**Original author :** Magoni Bruno\n\nHi Xavier,\r\n\r\nDo we have to keep such feature or can we remove it ?\r\nPROXY and SERVICES have been re engineered a lot in new version...\r\n\r\nThanks,",
+            "created_at": "2014-06-24T10:13:05Z"
+        },
+        {
+            "body": "**Original author :** M\u00e9rour Xavier\n\nSome of the needs listed are still relevant BUT as no such feature is asked by the community, I suggest to reject this issue.",
+            "created_at": "2014-06-24T10:15:40Z"
+        }
+    ]
+}

@@ -1,0 +1,26 @@
+{
+    "issue": {
+        "closed": false,
+        "title": "Update Datatables library",
+        "created_at": "2015-06-12T06:17:05Z",
+        "labels": [
+            "Enhancement",
+            "Redmine status : Accepted"
+        ],
+        "body": "**Original author :** Blatti Yves\n\nCan we update the datatables library ?\r\nWe use the 1.9.4 version.\r\nThe 1.10+ version:\r\n- supports a lot more plugins \r\n- ease the AJAX system and can handle simple JSONs formats\r\n- can be styled to match bootstrap and templates overrides (#1013)\r\n\r\nUpdate seems to be easy since we only use \"static\" datatables for now.\r\n\r\n"
+    },
+    "comments": [
+        {
+            "body": "**Original author :** Villemagne J\u00e9r\u00f4me\n\n+1\r\n\r\nCan we (you) list all DT actually used ? (to ease upgrade tests)",
+            "created_at": "2015-06-12T07:48:45Z"
+        },
+        {
+            "body": "**Original author :** Blatti Yves\n\nWhat I found:\r\n\r\nADMIN:\r\ncom_easysdi_contact\/organism (in by branch)\r\n\r\nSITE:\r\ncom_easysdi_core\/version (version links etc...)\r\ncom_easysdi_catalog\/metadata\/replication\r\n\r\n",
+            "created_at": "2015-06-12T08:57:43Z"
+        },
+        {
+            "body": "**Original author :** Van Hoecke H\u00e9l\u00e8ne \n\n+1",
+            "created_at": "2015-06-12T12:47:19Z"
+        }
+    ]
+}

@@ -1,0 +1,23 @@
+{
+    "issue": {
+        "closed": true,
+        "title": "Add an organism filter in resources view if resources from more than one organism are listed",
+        "created_at": "2015-03-11T11:59:12Z",
+        "labels": [
+            "Enhancement",
+            "Redmine status : Closed",
+            "Category : CATALOG"
+        ],
+        "body": "**Original author :** Blatti Yves\n\nWith delegation, we can have resource from multiple organisms in the \"resources\" view.\r\nWe should add an organism filter, only visible if resources from multiple organisms are listed.\n\n**Fixed versions :** 4.3.2"
+    },
+    "comments": [
+        {
+            "body": "**Original author :** M\u00e9rour Xavier\n\nFor info, this filter already exist in \"validation\" screen in FE.\r\nSee attached file.\r\n\r\n*As mentioned by Yves, the filter should not be displayed if there is only one organism in the list (since the filter is not needed)*",
+            "created_at": "2015-03-18T11:07:21Z"
+        },
+        {
+            "body": "**Original author :** Magoni Bruno\n\nI propose to consider such issue to be done in consistency of main issue #895 realization...",
+            "created_at": "2015-03-25T10:12:34Z"
+        }
+    ]
+}

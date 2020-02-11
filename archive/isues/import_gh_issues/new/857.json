@@ -1,0 +1,13 @@
+{
+    "issue": {
+        "closed": true,
+        "title": "Error \"417 Expectation Failed\" with cURL",
+        "created_at": "2014-11-07T13:32:11Z",
+        "labels": [
+            "Defect",
+            "Redmine status : Closed"
+        ],
+        "body": "**Original author :** Van Hoecke H\u00e9l\u00e8ne \n\ncURL obeys the RFCs as it should. \r\nMeaning that for a HTTP\/1.1 backend if the POST size is above 1024 bytes, cURL sends a 'Expect: 100-continue' header. The server acknowledges and sends back the '100' status code.\r\ncuRL then sends the request body. This is proper behaviour.\r\n\r\nHowever, some servers do not support that header.\r\n\r\nThe use of curl requests must be corrected everywhere in easySDI code to emptying the 'Expect:' header :\r\n\r\ncurl_setopt($ch, CURLOPT_HTTPHEADER, array('Expect:'));\r\n \r\nWith that, we're saying to the server: please accept the body right now.\r\n\r\nThis should avoid tough and tricky issues in certain deployement environments.\n\n**Fixed versions :** 4.3.0"
+    },
+    "comments": []
+}

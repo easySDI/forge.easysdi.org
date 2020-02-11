@@ -1,0 +1,47 @@
+{
+    "issue": {
+        "closed": true,
+        "title": "Add a basemap componant\/module",
+        "created_at": "2009-12-07T10:16:04Z",
+        "labels": [
+            "Feature",
+            "Redmine status : Closed",
+            "Category : MAP"
+        ],
+        "body": "**Original author :** M\u00e9rour Xavier\n\nCurrently, a list of basemap is definable under the componant SHOP and then used to \"pick one of this basemap for the SHOP front-end interface in step 2.\r\n\r\nWe see that basemap can be used in many different componants and modules (CATALOG for example too).\r\n\r\nI suggest to move this basemap list outside of the SHOP componant and make a independant componant (or module) to manage this list.\r\nThen other componants like SHOP or CATALOG can point to the basemap item to choose the desired one.\r\n\r\n\r\nAny comments ?\r\n\n\n**Fixed versions :** 4.0.0"
+    },
+    "comments": [
+        {
+            "body": "**Original author :** Magoni Bruno\n\nThis is a good idea to have a fully independant basemap container which can be reused inside several EasySDI components.\r\nAs basemaps could be used by other EasySDI components, I would like to propose that basemaps definition will be part of the CORE component and not be a self component.\r\nWe must be aware when reengineering source code that basemaps definition are now used by the new MAP component.\r\n",
+            "created_at": "2009-12-09T07:50:03Z"
+        },
+        {
+            "body": "**Original author :** M\u00e9rour Xavier\n\nRight Bruno... do you plan to apply theses changes with EasySDI V2 ? \r\n_For the map, the logic is indeed quite similar with based layer... just that it can have several basemaps in the same MAP instance._ ",
+            "created_at": "2010-03-31T13:17:05Z"
+        },
+        {
+            "body": "**Original author :** Magoni Bruno\n\nWon't be done in V2 as we are still waiting to find a contributor to migrate SHOP from V1 to V2...",
+            "created_at": "2010-12-02T09:14:44Z"
+        },
+        {
+            "body": "**Original author :** M\u00e9rour Xavier\n\nAre you talking about migrating SHOP or MAP component to V2 ?",
+            "created_at": "2010-12-02T11:24:52Z"
+        },
+        {
+            "body": "**Original author :** Magoni Bruno\n\nEven if it should be implemented into CORE, it's a transversal need which concern SHOP and MAP.\r\nBut you're rigth as it seems better to think about this logical when refining MAP...and not SHP.\r\n",
+            "created_at": "2011-01-31T11:52:38Z"
+        },
+        {
+            "body": "**Original author :** M\u00e9rour Xavier\n\nCan I have some refreshing news on this feature ?\r\nIs there any thing done in EasySDI V4.0 in that direction ?\r\n\r\n",
+            "created_at": "2013-12-20T13:54:30Z"
+        },
+        {
+            "body": "**Original author :** Magoni Bruno\n\nHi Xavier,\n\nGood news about this feature :-)\nIn easySDI V4, administrator can create maps (previously map contexts) with MAP component.\nAll these maps can be used in other component (i.e. permieter's definition in SHOP component), so there is no more basemap or map context needed to be defined in other component than MAP! Each map is reusable totally in each easySDI component!\n\n",
+            "created_at": "2013-12-20T14:03:43Z"
+        },
+        {
+            "body": "**Original author :** M\u00e9rour Xavier\n\nIt goes evenfurther than just \"basemap\" since it can includes others layers. Great news !\r\n\r\n",
+            "created_at": "2013-12-20T14:06:07Z"
+        }
+    ]
+}

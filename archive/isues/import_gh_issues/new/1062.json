@@ -1,0 +1,14 @@
+{
+    "issue": {
+        "closed": true,
+        "title": "Unable to reuse SHOP models outside of component due to relative paths",
+        "created_at": "2015-07-27T11:16:38Z",
+        "labels": [
+            "Defect",
+            "Redmine status : Closed",
+            "Category : SHOP"
+        ],
+        "body": "**Original author :** Blatti Yves\n\nWe cannot reuse some models outside of SHOP component (to use in custom modules or other custom components).\r\nTo correct this we have to change base path in includes:\r\n```\n\r\n<code class=\"php\">\r\nrequire_once JPATH_COMPONENT_SITE . '\/libraries\/easysdi\/sdiBasket.php';\r\n\r\n```\n\r\n\r\nto:\r\n```\n\r\n<code class=\"php\">\r\nrequire_once JPATH_SITE . '\/components\/com_easysdi_shop\/libraries\/easysdi\/sdiBasket.php';\r\n\r\n```\n\r\n\r\nIt has no functional impact in the component.\r\n\r\n\n\n**Fixed versions :** 4.3.2"
+    },
+    "comments": []
+}

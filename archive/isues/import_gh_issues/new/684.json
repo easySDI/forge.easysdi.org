@@ -1,0 +1,26 @@
+{
+    "issue": {
+        "closed": true,
+        "title": "Improve the monitor display view",
+        "created_at": "2014-04-16T10:02:09Z",
+        "labels": [
+            "Defect",
+            "Redmine status : Closed"
+        ],
+        "body": "**Original author :** Portier Thomas\n\nThe administration of the monitor is not on the same model than the other EasySDI modules (no menu, no Options etc...)\r\n\r\nThe url of the servlet was hardcoded as http:\/\/localhost:8080\/Monitor\n\n**Fixed versions :** 4.0.2"
+    },
+    "comments": [
+        {
+            "body": "**Original author :** Magoni Bruno\n\nHi Thomas,\r\n\r\nThanks for this fix!\r\nCan you please tell us where such URL can now be configured inside easySDI backoffice ?\r\n",
+            "created_at": "2014-04-16T10:08:13Z"
+        },
+        {
+            "body": "**Original author :** Portier Thomas\n\nIn the options of the monitor in back office. The field existed but wasn't taken into account.",
+            "created_at": "2014-04-16T11:27:47Z"
+        },
+        {
+            "body": "**Original author :** Magoni Bruno\n\nOK, perfect!",
+            "created_at": "2014-04-16T12:45:17Z"
+        }
+    ]
+}

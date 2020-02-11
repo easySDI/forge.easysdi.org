@@ -1,0 +1,14 @@
+{
+    "issue": {
+        "closed": true,
+        "title": "Missing CSS classes in \"resources\" view",
+        "created_at": "2015-06-16T08:20:24Z",
+        "labels": [
+            "Defect",
+            "Redmine status : Closed",
+            "Category : CORE"
+        ],
+        "body": "**Original author :** Blatti Yves\n\nCSS classes have been added on resources table (#653) to allow customization, but table head miss those classes.\n\n**Fixed versions :** 4.3.2"
+    },
+    "comments": []
+}

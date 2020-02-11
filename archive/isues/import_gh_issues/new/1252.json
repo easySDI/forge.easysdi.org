@@ -1,0 +1,23 @@
+{
+    "issue": {
+        "closed": true,
+        "title": "Saving a basket is not handled in a single transaction -> REST service may fail",
+        "created_at": "2016-02-01T12:35:03Z",
+        "labels": [
+            "Defect",
+            "Redmine status : Closed",
+            "Category : SHOP"
+        ],
+        "body": "**Original author :** Blatti Yves\n\nSaving a basket is not handled in a single transaction, so when the REST extraction service gets the orders, it may have a partial order, or have missing elements (like pricing).\r\nI have joined an example of a curl client accessing the service on short interval while an order is saved, it shows:\r\n- 1) no new request\r\n- 2) request being saved (XML validation fails)\r\n- 3) request pricing being saved (XML validation fails)\r\n- 4) a new request is served\r\n- 5) no new request\r\n\r\nSteps 2 & 3 should never happen.\r\nI see two ways for resolving it:\r\n- save the order in a single transaction (complete model\/controler rewrite)\r\n- use a sort of flag, the the service would check, or the sent date for example\r\n\r\nNote: the WPS may be affected too. Not tested yet.\n\n**Fixed versions :** 4.4.0"
+    },
+    "comments": [
+        {
+            "body": "**Original author :** Blatti Yves\n\nWill use the second method proposed: set the time at @0000-00-00 00:00:00@ on order creation, then correct it in _finalizeSave()_.\r\nThe WPS and REST then get orders only with sent date > @0000-00-00 00:00:00@",
+            "created_at": "2016-02-03T10:31:06Z"
+        },
+        {
+            "body": "**Original author :** Blatti Yves\n\nfixed at rev. 9445\r\n\r\n(also fixed a small string error in Easysdi_shopHelper : MOD_EASYSDI_LASTORDERS_TIME_NOW -> COM_EASYSDI_SHOP_TIME_NOW )",
+            "created_at": "2016-02-03T10:41:56Z"
+        }
+    ]
+}

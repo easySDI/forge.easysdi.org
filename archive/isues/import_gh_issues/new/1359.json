@@ -1,0 +1,19 @@
+{
+    "issue": {
+        "closed": false,
+        "title": "Updates to Google Maps APIs Standard Plan ",
+        "created_at": "2016-07-08T11:53:57Z",
+        "labels": [
+            "Defect",
+            "Redmine status : Affected",
+            "Category : MAP"
+        ],
+        "body": "**Original author :** Van Hoecke H\u00e9l\u00e8ne \n\nDue to recent updates to Google Maps APIs Standard Plan, usage of Google APIS need now an API key.\r\n\r\nhttp:\/\/googlegeodevelopers.blogspot.ch\/2016\/06\/building-for-scale-updates-to-google.html\r\nhttps:\/\/www.latecnosfera.com\/2016\/06\/google-maps-api-error-missing-keymap-error-solved.html#how-to-fix-the-error"
+    },
+    "comments": [
+        {
+            "body": "**Original author :** Portier Thomas\n\nThe key will be a new parameter in each map. It will be applied to geoext and leaflet.",
+            "created_at": "2016-09-02T08:10:14Z"
+        }
+    ]
+}

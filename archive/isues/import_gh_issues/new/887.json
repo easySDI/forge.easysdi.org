@@ -1,0 +1,14 @@
+{
+    "issue": {
+        "closed": false,
+        "title": "Several EasySDI contact for one joomla account",
+        "created_at": "2014-12-16T10:29:01Z",
+        "labels": [
+            "Defect",
+            "Redmine status : New",
+            "Category : CONTACT"
+        ],
+        "body": "**Original author :** Portier Thomas\n\nFor now it is possible to associate several easysdi contact to one joomla account. It's dangerous because the proxy can't manage it.\r\nWe have to had a constraint for that."
+    },
+    "comments": []
+}

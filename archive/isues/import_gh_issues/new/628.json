@@ -1,0 +1,23 @@
+{
+    "issue": {
+        "closed": true,
+        "title": "Auto Alias when creating a new physical service",
+        "created_at": "2013-07-26T12:45:12Z",
+        "labels": [
+            "Defect",
+            "Redmine status : Closed",
+            "Category : SERVICE"
+        ],
+        "body": "**Original author :** Portier Thomas\n\nCreating a new physical service, the Alias should be generated when it is left to blank like all others joomla objects\n\n**Fixed versions :** 4.4.0"
+    },
+    "comments": [
+        {
+            "body": "**Original author :** Magoni Bruno\n\nHello Thomas,\r\n\r\nWe will update such ticket when 4.0.0 stable version is out if it's OK for you...\r\n\r\nThanks",
+            "created_at": "2013-10-17T10:17:28Z"
+        },
+        {
+            "body": "**Original author :** Blatti Yves\n\nrev. 9446",
+            "created_at": "2016-02-03T12:55:47Z"
+        }
+    ]
+}

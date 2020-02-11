@@ -1,0 +1,51 @@
+{
+    "issue": {
+        "closed": true,
+        "title": "option delete user easysdi and\/ user joomla",
+        "created_at": "2014-03-14T09:08:33Z",
+        "labels": [
+            "Enhancement",
+            "Redmine status : Closed",
+            "Category : CONTACT"
+        ],
+        "body": "**Original author :** M\u00e9rour Xavier\n\nad the option to be able to delete a user joomla and \/ or easysdi when deleting a user in the backend & frontend\n\n**Fixed versions :** 4.4.1"
+    },
+    "comments": [
+        {
+            "body": "**Original author :** M\u00e9rour Xavier\n\nI would suggest that it should be a general parameter for easySDI under component \"CONTACT\" with a toggle like this :\r\n\r\nDelete the Joomla user when the EasySDI account is deleted :  yes\/no\r\n\r\n\r\n-----\r\n\r\nopen questions : \r\n\r\n- interaction with \"EasySDI plugin Contact\" ?\r\n- is it a delete feature or a \"trash\" feature ? \/ if the user is in the trash, what is the behaviour or the user account (inactive automatically ?)\r\n",
+            "created_at": "2014-03-17T12:58:18Z"
+        },
+        {
+            "body": "**Original author :** M\u00e9rour Xavier\n\nAny input on this question Thomas ?",
+            "created_at": "2014-03-21T15:01:51Z"
+        },
+        {
+            "body": "**Original author :** Portier Thomas\n\nMy opinion is that the trash feature for EasySDI contact is unnecessary. A warning message would be sufficient.\r\n\r\nI don't think an option to delete also JOOMLA user is a good idea. EasySDI should not be able to delete JOOMLA user.\r\n\r\nAs we can't add an easySDI user without creating a JOOMLA user, we should not be able to delete a JOOMLA user throw EasySDI.",
+            "created_at": "2014-03-21T17:04:10Z"
+        },
+        {
+            "body": "**Original author :** Blatti Yves\n\nIf I can give my word here:\r\n-At ASIT VD we manage ~1600 joomla user accounts, all of them are EasySDI accounts.\r\n-We have about 20 new account per week\r\n-Some of them are spam, non-interested users, errors etc... we have to drop them (that's the need)\r\n-We won't delete \"real\" account that have history, if an account is no more needed we would prefer to disable it\r\n\r\nProposal:\r\nFor my use, the best would be a modal on user deletion, something like this:\r\n\r\n```\n\r\n+---------------------------------------------------------+\r\n|                                                       X |\r\n+---------------------------------------------------------+\r\n|   You are about to delete an EasySDI User,              |\r\n|   what do you want to do with the joomla User?          |\r\n|                                                         |\r\n|                                                         |\r\n|   +--------+   +---------+   +----------------------+   |\r\n|   | Delete |   | Disable |   | Do nothing (keep it) |   |\r\n|   +--------+   +---------+   +----------------------+   |\r\n|                                            +--------+   |\r\n|                                            | Cancel |   |\r\n|                                            +--------+   |\r\n+---------------------------------------------------------+\r\n```\n\r\n",
+            "created_at": "2014-03-24T10:05:54Z"
+        },
+        {
+            "body": "**Original author :** Blatti Yves\n\nRemark: I see that we can \"trash\" an EasySDI user, it functional (Yes it goes in the trash, but is the logic followed... does it forbids the user to have right, create ressources etc...) ? If not, I would propose to hide this feature\r\n",
+            "created_at": "2014-03-24T10:17:46Z"
+        },
+        {
+            "body": "**Original author :** M\u00e9rour Xavier\n\nFor info, this feature was already in discussion on previsous easySDI version here :#544",
+            "created_at": "2014-03-25T21:16:34Z"
+        },
+        {
+            "body": "**Original author :** Portier Thomas\n\nI have tested the trash logic. When an EasySDI user is trashed, he can connect and create ressources. I'm ok to disable the trash function and propose to delete directly the user. But we have to verify before deleting if there are objects linked to the EasySDI User. If it is the case, admin should not be able to delete it and a message should explain why : \r\n- Ressources are linked to the user\r\n- Command are linked to the user\r\n- etc...\r\n\r\nOk for your Dialog proposition Yves.",
+            "created_at": "2014-04-29T09:03:45Z"
+        },
+        {
+            "body": "**Original author :** Blatti Yves\n\nOpen questions:\r\n- tests before deleting a user (existing orders...)\r\n- do we propose a logic for organisms ?",
+            "created_at": "2016-02-03T14:29:23Z"
+        },
+        {
+            "body": "**Original author :** Van Hoecke H\u00e9l\u00e8ne \n\nTC has vaildated the Yves' proposal and Thomas' addition.",
+            "created_at": "2016-02-19T10:26:51Z"
+        }
+    ]
+}

@@ -1,0 +1,19 @@
+{
+    "issue": {
+        "closed": true,
+        "title": "third party validation - the screen does not reflect spec.",
+        "created_at": "2014-11-20T09:59:25Z",
+        "labels": [
+            "Defect",
+            "Redmine status : Closed",
+            "Category : SHOP"
+        ],
+        "body": "**Original author :** M\u00e9rour Xavier\n\nThe specifications for the third party validation screen was accepted as follow :\r\nhttps:\/\/forge.easysdi.org\/attachments\/download\/680\/7_gliffy_validation-screens.png\r\n\r\nThe coded screen does not look like this :\r\n\r\n- columnm order is different\r\n- the toggle \"done \/ to do\" is replaced by a list of status (9 different status !)\r\n- the link on the name of the request to see orders' details is missing\r\n- the two button at the end of the list is merged in one button \"Action\"\r\n\r\nWhy ?\r\n\n\n**Fixed versions :** 4.3.0"
+    },
+    "comments": [
+        {
+            "body": "**Original author :** M\u00e9rour Xavier\n\nCorrections done, I am OK with them.",
+            "created_at": "2015-01-20T15:15:10Z"
+        }
+    ]
+}

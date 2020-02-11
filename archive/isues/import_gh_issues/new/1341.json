@@ -1,0 +1,19 @@
+{
+    "issue": {
+        "closed": true,
+        "title": "Moved libraries are not deleted in BE on update",
+        "created_at": "2016-06-15T12:42:18Z",
+        "labels": [
+            "Defect",
+            "Redmine status : Closed",
+            "Category : CORE"
+        ],
+        "body": "**Original author :** Blatti Yves\n\nMoved libraries are not deleted in BE on update after #1218\n\n**Fixed versions :** 4.4.1"
+    },
+    "comments": [
+        {
+            "body": "**Original author :** Blatti Yves\n\nrev. 9843",
+            "created_at": "2016-06-15T12:45:27Z"
+        }
+    ]
+}

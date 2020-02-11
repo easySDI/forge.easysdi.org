@@ -1,0 +1,19 @@
+{
+    "issue": {
+        "closed": true,
+        "title": "When having > 2 diffusions in basket and removing one, perimeters are duplicated.",
+        "created_at": "2017-08-04T13:46:18Z",
+        "labels": [
+            "Defect",
+            "Redmine status : Closed",
+            "Category : SHOP"
+        ],
+        "body": "**Original author :** Blatti Yves\n\nWhen having > 2 diffusions in basket and removing one, perimeters are duplicated.\r\n\r\n!duplicated_perims.png!\n\n**Fixed versions :** 4.5.0"
+    },
+    "comments": [
+        {
+            "body": "**Original author :** Blatti Yves\n\nrev. 10242",
+            "created_at": "2017-08-04T14:53:55Z"
+        }
+    ]
+}

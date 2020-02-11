@@ -1,0 +1,23 @@
+{
+    "issue": {
+        "closed": true,
+        "title": "Selecting allowed Feature Types in policy",
+        "created_at": "2015-02-26T16:08:34Z",
+        "labels": [
+            "Defect",
+            "Redmine status : Closed",
+            "Category : SERVICE"
+        ],
+        "body": "**Original author :** Van Hoecke H\u00e9l\u00e8ne \n\nWhen you let the default rules at a WFS policy creation (allow all servers and all feature types), none of the feature types are actually available in the virtual service (check with the GetCapabilities).\r\nYou have to authorized feature type by feature type...\r\n\n\n**Fixed versions :** 4.3.1"
+    },
+    "comments": [
+        {
+            "body": "**Original author :** Portier Thomas\n\nSame bug for WMS : https:\/\/forge.easysdi.org\/issues\/722",
+            "created_at": "2015-02-27T08:47:49Z"
+        },
+        {
+            "body": "**Original author :** Van Hoecke H\u00e9l\u00e8ne \n\nActually, after few tests, it seems that a request with a filter on object id will return ALL the features of the source (when you are waiting for one item...) : the filter is just not forwarded to the physical service.\r\n\r\nI guess there is a big problem either in the registration of the rules in joomla database or in the PROXY java interpretation of them. It also could be both...",
+            "created_at": "2015-03-12T08:50:25Z"
+        }
+    ]
+}

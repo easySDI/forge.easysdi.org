@@ -1,0 +1,23 @@
+{
+    "issue": {
+        "closed": true,
+        "title": "Filtrer \"organism\" in  \"my resources\" fail",
+        "created_at": "2015-06-01T12:41:19Z",
+        "labels": [
+            "Defect",
+            "Redmine status : Rejected",
+            "Category : CORE"
+        ],
+        "body": "**Original author :** M\u00e9rour Xavier\n\nAs soon as a user has the role \"resource manager\" for its own organism + another role (for example, tested with \"tarification manager\" or \"diffusion manager\") for another organism, the filter \"Organism\" in the \"my resource\" screen show up with the two organisms listed.\r\n\r\n--> it should not be the case since the user has role \"resource manager\" only for one organism.\r\n\r\n\r\n\r\n"
+    },
+    "comments": [
+        {
+            "body": "**Original author :** Villemagne J\u00e9r\u00f4me\n\nHello Xavier,\r\n\r\nthat follow a discussion we had while implementing the organism filter consequently of the new role 'Organism Manager'.\r\n\r\nThe resources view lists all the resources on which the current user have at least one right, and not only those on which he has the Resource Manager one.\r\nThen, why the filter should perform match against Resource Manager role only ?\r\n\r\nFrom here, we added #986 which should cover your needing. Isn't ?\r\n\r\nOpen to discuss about :-)",
+            "created_at": "2015-06-02T11:47:23Z"
+        },
+        {
+            "body": "**Original author :** Blatti Yves\n\nFixed by #1111",
+            "created_at": "2016-02-03T13:18:50Z"
+        }
+    ]
+}

@@ -1,0 +1,14 @@
+{
+    "issue": {
+        "closed": true,
+        "title": "Metadata remplications should only list \"provider\" organisms",
+        "created_at": "2015-06-16T13:24:10Z",
+        "labels": [
+            "Defect",
+            "Redmine status : Closed",
+            "Category : CATALOG"
+        ],
+        "body": "**Original author :** Blatti Yves\n\nMetadata replication modal offers a filter on organism.\r\nIt lists all organisms (at ASIT VD : > 1000)\r\nIt  should only contain \"provider\" organisms [ = organisms that have at least one resource] (at ASIT VD ~50).\n\n**Fixed versions :** 4.3.2"
+    },
+    "comments": []
+}

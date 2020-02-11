@@ -1,0 +1,13 @@
+{
+    "issue": {
+        "closed": false,
+        "title": "Central Authentication Service",
+        "created_at": "2013-05-10T09:47:35Z",
+        "labels": [
+            "Feature",
+            "Redmine status : New"
+        ],
+        "body": "**Original author :** Magoni Bruno\n\nGoal is to integrate \"Central Authentication Service (CAS)\":http:\/\/en.wikipedia.org\/wiki\/Central_Authentication_Service feature inside EasySDI:\r\n* for every Java servlets using authentication mechanism (i.e. PROXY) with \"Spring Security\":https:\/\/wiki.jasig.org\/display\/CASC\/Spring+Security+%28previously+Acegi%29+as+CAS+Client\r\n* for Joomla as a new EasySDI CONTACT authentication plugin with \"phpCAS\":https:\/\/wiki.jasig.org\/display\/CASC\/phpCAS\r\n\r\nThis feature will allow Single Sign On (SSO) capability for EasySDI solution based on server-side and client-side application and APIs (see http:\/\/www.jasig.org\/cas)"
+    },
+    "comments": []
+}

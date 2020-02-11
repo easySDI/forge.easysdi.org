@@ -1,0 +1,19 @@
+{
+    "issue": {
+        "closed": true,
+        "title": "SHOP allows to order without accepting terms and conditions",
+        "created_at": "2015-03-30T07:31:09Z",
+        "labels": [
+            "Defect",
+            "Redmine status : Closed",
+            "Category : SHOP"
+        ],
+        "body": "**Original author :** Blatti Yves\n\nSHOP allows to order without accepting terms and conditions.\r\n* Button is not disabled\r\n* Products transmission starts and order is saved\n\n**Fixed versions :** 4.3.1"
+    },
+    "comments": [
+        {
+            "body": "**Original author :** Villemagne J\u00e9r\u00f4me\n\nThe button's ids were modified in the view but not in the JS",
+            "created_at": "2015-04-16T08:25:40Z"
+        }
+    ]
+}

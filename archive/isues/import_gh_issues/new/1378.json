@@ -1,0 +1,19 @@
+{
+    "issue": {
+        "closed": true,
+        "title": "Multiple Notice: Undefined property easysdi_map.php",
+        "created_at": "2016-10-19T09:39:28Z",
+        "labels": [
+            "Defect",
+            "Redmine status : Closed",
+            "Category : MAP"
+        ],
+        "body": "**Original author :** Blatti Yves\n\nMultiple Notice: Undefined property easysdi_map.php\r\n\r\nMap helper tries to access potentially non existing (optional) fields from model to build JSON.\n\n**Fixed versions :** 4.4.3"
+    },
+    "comments": [
+        {
+            "body": "**Original author :** Blatti Yves\n\nrev. 10013",
+            "created_at": "2016-10-19T09:50:50Z"
+        }
+    ]
+}

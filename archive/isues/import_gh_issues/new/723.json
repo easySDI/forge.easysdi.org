@@ -1,0 +1,23 @@
+{
+    "issue": {
+        "closed": true,
+        "title": "Rule ressource manager should be mandatory",
+        "created_at": "2014-06-03T08:38:59Z",
+        "labels": [
+            "Feature",
+            "Redmine status : Rejected",
+            "Category : CORE"
+        ],
+        "body": "**Original author :** Portier Thomas\n\nA user can affect the rule \"ressource manager\" to nobody. If he do it, the ressource is lost in space, nobody can delete or manage it. This rule should be mandatory."
+    },
+    "comments": [
+        {
+            "body": "**Original author :** M\u00e9rour Xavier\n\nHello Thomas,\r\n\r\nYou are right... it was discussed yesterday here : #699 (see my last remark).\r\nIt's on the way to be corrected.\r\n\r\nQuestion : we had the following discussion this morning with Yves. Should we put \"mandatory\" all the roles or just the \"resource manager\". We think it should be ALL.\r\n\r\nDo you agree ?\r\n\r\n\r\n",
+            "created_at": "2014-06-03T08:46:35Z"
+        },
+        {
+            "body": "**Original author :** Magoni Bruno\n\nI prefer close this feature as it's content is fully part of #699\r\nThanks",
+            "created_at": "2014-06-04T17:00:34Z"
+        }
+    ]
+}

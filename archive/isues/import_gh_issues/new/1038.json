@@ -1,0 +1,14 @@
+{
+    "issue": {
+        "closed": false,
+        "title": "Size of the map in IE",
+        "created_at": "2015-06-11T09:47:53Z",
+        "labels": [
+            "Defect",
+            "Redmine status : Affected",
+            "Category : MAP"
+        ],
+        "body": "**Original author :** Van Hoecke H\u00e9l\u00e8ne \n\nIn IE, the size of a MAP is not consistent with the window size.\r\nA part of the solution is to change the *onWindowResize* behaviour and getting the height from the actual height and not deducted from the width.\r\n"
+    },
+    "comments": []
+}

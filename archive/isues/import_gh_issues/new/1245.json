@@ -1,0 +1,19 @@
+{
+    "issue": {
+        "closed": true,
+        "title": "Wrong translation prefix in title",
+        "created_at": "2016-01-21T13:15:44Z",
+        "labels": [
+            "Defect",
+            "Redmine status : Closed",
+            "Category : PROCESSING"
+        ],
+        "body": "**Original author :** Blatti Yves\n\nWrong translation prefix in title + leading spaces\n\n**Fixed versions :** 4.4.0"
+    },
+    "comments": [
+        {
+            "body": "**Original author :** Blatti Yves\n\nrev. 9418",
+            "created_at": "2016-01-21T13:18:39Z"
+        }
+    ]
+}

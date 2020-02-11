@@ -1,0 +1,23 @@
+{
+    "issue": {
+        "closed": false,
+        "title": "Metadata validation upon INSPIRE validator REST API",
+        "created_at": "2013-10-17T10:32:00Z",
+        "labels": [
+            "Feature",
+            "Redmine status : New",
+            "Category : CATALOG"
+        ],
+        "body": "**Original author :** Magoni Bruno\n\nOne interesting feature would be to propose INSPIRE validation metadata to editors and managers...\r\nSee http:\/\/inspire-geoportal.ec.europa.eu\/validator2\/#"
+    },
+    "comments": [
+        {
+            "body": "**Original author :** M\u00e9rour Xavier\n\nThat's a nice idea.\n\nHowever, does it make sense to add this feature for end users (editors and managers) if we already have a validating feature within EasySDI  ? If the model in well defined AND the validations rules well described, it should be enough.\n\n\nIn any case, this feature should be implemented as an option (parameters in the backend) since INSPIRE rules does not automatically apply to all catalogs  or part of catalogs (ressource contact for example).\n\nLet's talk about it during next PSC.",
+            "created_at": "2013-10-18T06:48:13Z"
+        },
+        {
+            "body": "**Original author :** Teixeira J\u00e9r\u00f4me\n\nBonjour @ tuti.\r\nOui effectivement, c'est une bonne id\u00e9e.\r\nLe pousser en front-end via un param\u00e8tre en option me para\u00eet judicieux.\r\n",
+            "created_at": "2013-10-26T13:53:36Z"
+        }
+    ]
+}

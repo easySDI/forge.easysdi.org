@@ -1,0 +1,22 @@
+{
+    "issue": {
+        "closed": true,
+        "title": "Catalog notifications should be optionnal",
+        "created_at": "2015-09-28T12:47:23Z",
+        "labels": [
+            "Enhancement",
+            "Redmine status : Closed"
+        ],
+        "body": "**Original author :** Blatti Yves\n\nCatalog notifications should be optionnal.\r\n('Affected to an editor' and 'validated -> ready to publish')\n\n**Fixed versions :** 4.4.0"
+    },
+    "comments": [
+        {
+            "body": "**Original author :** Van Hoecke H\u00e9l\u00e8ne \n\nTC has validated that all *catalog* notifications must be optionnal. This is not about other components.",
+            "created_at": "2015-09-28T13:08:21Z"
+        },
+        {
+            "body": "**Original author :** Blatti Yves\n\nrev 9384 !!! Wrong label in SVN (my branch)",
+            "created_at": "2015-12-22T16:05:39Z"
+        }
+    ]
+}

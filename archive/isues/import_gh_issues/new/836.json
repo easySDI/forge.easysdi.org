@@ -1,0 +1,13 @@
+{
+    "issue": {
+        "closed": false,
+        "title": "Validate a metadata should validate cardinality of all relationships",
+        "created_at": "2014-10-10T13:03:55Z",
+        "labels": [
+            "Feature",
+            "Redmine status : New"
+        ],
+        "body": "**Original author :** Van Hoecke H\u00e9l\u00e8ne \n\nValidate a metadata should validate the cardinality of all relationships and not only the fields filled."
+    },
+    "comments": []
+}

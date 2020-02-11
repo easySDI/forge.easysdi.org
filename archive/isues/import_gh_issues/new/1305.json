@@ -1,0 +1,14 @@
+{
+    "issue": {
+        "closed": true,
+        "title": "change leaflet sidebar css class",
+        "created_at": "2016-04-04T11:51:24Z",
+        "labels": [
+            "Defect",
+            "Redmine status : Closed",
+            "Category : MAP"
+        ],
+        "body": "**Original author :** Portier Thomas\n\nThe default sidebar class of the easySDI Leaflet map was generic and should override other classes in websites. We have to change its name.\n\n**Fixed versions :** 4.4.1"
+    },
+    "comments": []
+}

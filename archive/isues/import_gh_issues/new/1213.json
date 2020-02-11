@@ -1,0 +1,23 @@
+{
+    "issue": {
+        "closed": true,
+        "title": "Display ID and GUID in diffusion view ",
+        "created_at": "2015-12-02T16:33:40Z",
+        "labels": [
+            "Enhancement",
+            "Redmine status : Closed",
+            "Category : SHOP"
+        ],
+        "body": "**Original author :** Blatti Yves\n\nA user creates a diffusion but cannot get the id and guid of the diffusion.\r\n\r\nWe could add them in the second tab of the diffusion view.\r\nThose infos are needed for automatic product mining (external systems).\r\n\r\nProposed layout:\r\n\r\n!add_id_and_guid.png!\n\n**Fixed versions :** 4.4.0"
+    },
+    "comments": [
+        {
+            "body": "**Original author :** Van Hoecke H\u00e9l\u00e8ne \n\nTC has validated those informations in Infos tab.",
+            "created_at": "2015-12-04T10:10:38Z"
+        },
+        {
+            "body": "**Original author :** Blatti Yves\n\nrev. 9341",
+            "created_at": "2015-12-10T15:03:45Z"
+        }
+    ]
+}

@@ -1,0 +1,14 @@
+{
+    "issue": {
+        "closed": true,
+        "title": "Impact on the Proxy of the new Joomla password hashing algorithm",
+        "created_at": "2014-07-25T08:58:29Z",
+        "labels": [
+            "Defect",
+            "Redmine status : Closed",
+            "Category : PROXY"
+        ],
+        "body": "**Original author :** Van Hoecke H\u00e9l\u00e8ne \n\nSince Joomla 3.3 the algorithm used to hash password is Bcrypt (previously MD5).\r\n\r\nEasySDI Proxy needs to known which algorithm is used in the case of an HTTP basic authentification requested by a third client (outside of the Joomla EasySDI infrastructure).\r\n\r\nProxy has to check the Joomla version in the CMS database and then apply the corresponding hashing function.\n\n**Fixed versions :** 4.2.0"
+    },
+    "comments": []
+}

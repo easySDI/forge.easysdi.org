@@ -1,0 +1,19 @@
+{
+    "issue": {
+        "closed": true,
+        "title": "Text and textarea product property values are not exposed by REST WS",
+        "created_at": "2017-08-31T10:15:34Z",
+        "labels": [
+            "Defect",
+            "Redmine status : Closed",
+            "Category : SHOP"
+        ],
+        "body": "**Original author :** Blatti Yves\n\nText and textarea product property values are not exposed by REST WS.\n\n**Fixed versions :** 4.5.0"
+    },
+    "comments": [
+        {
+            "body": "**Original author :** Blatti Yves\n\nrev. 10243",
+            "created_at": "2017-08-31T12:01:12Z"
+        }
+    ]
+}

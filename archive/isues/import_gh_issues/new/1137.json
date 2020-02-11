@@ -1,0 +1,19 @@
+{
+    "issue": {
+        "closed": true,
+        "title": "Catalog \"results\" does not support singular\/plural",
+        "created_at": "2015-09-17T09:52:17Z",
+        "labels": [
+            "Defect",
+            "Redmine status : Closed",
+            "Category : CATALOG"
+        ],
+        "body": "**Original author :** Blatti Yves\n\nCatalog \"results\" does not support singular\/plural.\n\n**Fixed versions :** 4.3.2"
+    },
+    "comments": [
+        {
+            "body": "**Original author :** Blatti Yves\n\nrev. 9097",
+            "created_at": "2015-09-17T09:58:34Z"
+        }
+    ]
+}

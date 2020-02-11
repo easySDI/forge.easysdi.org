@@ -1,0 +1,27 @@
+{
+    "issue": {
+        "closed": true,
+        "title": "Feature location sharing",
+        "created_at": "2014-10-20T12:59:41Z",
+        "labels": [
+            "Feature",
+            "Redmine status : Rejected",
+            "Category : MAP"
+        ],
+        "body": "**Original author :** Magoni Bruno\n\nFor now, there is no request engine into a MAP.\r\nWaiting for it, there is a strong need to be able to locate feature and share it with other application.\r\n\r\nThis new MAP tool  will allow to link from any other application to an URL pointing on a map highlighting a specific feature. Specific feature will be determined through its unique identifier given in the URL. Location of any geographical feature will be realized through a OGC WFS Server.\r\n\r\nA new \"location context\" should be developed into easySDI with suck backoffice parameters definition:\r\n- URL of the WFS service\r\n- Name of the WFS feature type\r\n- Prefix of the WFS feature type\r\n- Name of the WFS feature type identification attribute\r\n- Name of the WFS feature type geometry attribute\r\n- Zoom factor around the found object (i.e. 50% of the object bounding box)\r\n\r\nThe MAP URL will contain at least:\r\n* easySDI identifier of the MAP context to open\r\n* easySDI identifier of the location's context to use\r\n* value of the feature object identifier to locate\r\nBackoffice interface will also displays sample of the final URL. Such sample will ease administrator task when submitting such URL to other application manager (i.e http:\/\/my.easysdi.org\/index.php?option=com_easysdi_map&map_id=[xxx]&localization_id=[yyy]&value=[zzz]\r\n\r\nEven if such URL is public, layers will be always binded to right access defined into easySDI!\r\nLocated feature will be centered and highlighted into the MAP.\r\n"
+    },
+    "comments": [
+        {
+            "body": "**Original author :** Portier Thomas\n\nI think this feature is too complex and will be rarely used. Moreover, it requires a heavy development and add complexity of the administrator interface.\r\n\r\nA more simple feature letting the user (not administrator) to share an url containing the current extent and the list of layers diplayed would be more relevant. If a layer is added manualy by the user, this feature should be disabled.\r\n\r\nFor specific development based on vector features as a request engine, I think that using a leaflet map overwritten would be more relevant than trying to make a generic request engine.",
+            "created_at": "2014-10-29T09:28:48Z"
+        },
+        {
+            "body": "**Original author :** Van Hoecke H\u00e9l\u00e8ne \n\nThis feature is way too specific to be implemented as it's described.\r\nA common reflexion should be made on the benefit to add a generic request engine to the map.",
+            "created_at": "2015-05-05T07:03:47Z"
+        },
+        {
+            "body": "**Original author :** Van Hoecke H\u00e9l\u00e8ne \n\nRejected by the TC.",
+            "created_at": "2015-06-26T08:54:08Z"
+        }
+    ]
+}

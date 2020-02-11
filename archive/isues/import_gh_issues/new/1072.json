@@ -1,0 +1,23 @@
+{
+    "issue": {
+        "closed": true,
+        "title": "add validation date in \"validation panel\"",
+        "created_at": "2015-07-30T09:28:34Z",
+        "labels": [
+            "Enhancement",
+            "Redmine status : Closed",
+            "Category : SHOP"
+        ],
+        "body": "**Original author :** M\u00e9rour Xavier\n\n* Save the user who validated\/rejected the order\r\n* Differ the view for todo\/done validation (keep the current layout for the \"todo\")\r\n* In the valiudation done view :\r\n** Add the validated date and who did it in a phrase: \"Validated on 02.03.2015 by My Supername\" or \"Rejected on 02.03.2015 by My Supername\"\r\n** Hide the mandate reference (since it has been validated, it has not much importance)\r\n* In the order recap view:\r\n** Ad the same phrase : \"Validated on 02.03.2015 by My Supername\" or \"Rejected on 02.03.2015 by My Supername\" in the thirdparty block\r\n** Move the validation\/rejection remark in the thirdparty block\r\n\r\n\r\n!validation_list.png!\n\n**Fixed versions :** 4.3.2"
+    },
+    "comments": [
+        {
+            "body": "**Original author :** Van Hoecke H\u00e9l\u00e8ne \n\nTC has validated this enhancement.",
+            "created_at": "2015-09-28T12:33:11Z"
+        },
+        {
+            "body": "**Original author :** Blatti Yves\n\nRev. 9127",
+            "created_at": "2015-10-09T06:56:10Z"
+        }
+    ]
+}

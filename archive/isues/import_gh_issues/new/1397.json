@@ -1,0 +1,19 @@
+{
+    "issue": {
+        "closed": true,
+        "title": "Missing Member organism in BE user list",
+        "created_at": "2017-01-13T07:28:25Z",
+        "labels": [
+            "Defect",
+            "Redmine status : Closed",
+            "Category : CONTACT"
+        ],
+        "body": "**Original author :** Blatti Yves\n\nWe cannot know the user's ember organism in the BE list, we have to open each of the.\r\nWe'll also correct the label under the Name (alias->username)\n\n**Fixed versions :** 4.4.4"
+    },
+    "comments": [
+        {
+            "body": "**Original author :** Blatti Yves\n\nrev. 10066",
+            "created_at": "2017-01-13T08:33:37Z"
+        }
+    ]
+}

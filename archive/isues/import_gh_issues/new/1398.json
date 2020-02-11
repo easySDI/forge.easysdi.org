@@ -1,0 +1,19 @@
+{
+    "issue": {
+        "closed": true,
+        "title": "MD Title not used in Sheet view html head title",
+        "created_at": "2017-01-13T09:37:18Z",
+        "labels": [
+            "Defect",
+            "Redmine status : Closed",
+            "Category : CATALOG"
+        ],
+        "body": "**Original author :** Blatti Yves\n\nMD Title is not used in Sheet view html head title\n\n**Fixed versions :** 4.4.4"
+    },
+    "comments": [
+        {
+            "body": "**Original author :** Blatti Yves\n\nrev. 10067",
+            "created_at": "2017-01-13T09:41:24Z"
+        }
+    ]
+}

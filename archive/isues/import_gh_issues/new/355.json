@@ -1,0 +1,19 @@
+{
+    "issue": {
+        "closed": true,
+        "title": "Manage SSH certificate error",
+        "created_at": "2011-04-01T16:19:25Z",
+        "labels": [
+            "Feature",
+            "Redmine status : Rejected",
+            "Category : PROXY"
+        ],
+        "body": "**Original author :** M\u00e9rour Xavier\n\nWhen accessing a remote server with SSH certification, the PROXY needs the public key to access the service. If the key is not available on the PROXY server (or not uptodate),  the remote server will return an error and the PROXY will trace it in its logs (see \"issue\":http:\/\/forge.easysdi.org\/issues\/show\/352) BUT the final client will have no information. More over, a PROXY will multi-server will not respond to any of the request even if other servers give correct responses.\r\n\r\nIn order to deal with this, the PROXY should handle the following case :\r\n\r\n- in a \"restrictive error\" mode, the PROXY should return the following OGC exception with the alias of the concerned remote server :\r\n\r\n   <Exception exceptionCode=\"ResourceNotFound\">\r\n      <ExceptionText>\r\n       _some text explaining the error, for example \"unable to find valid SSH certification\"_ \r\n      <ExceptionText>\r\n   <\/Exception>\r\n\r\n- in \"permissive error \" mode, the PROXY should behave as usual -> the error is not returned to the client if others remote servers answer correctly.\r\n\r\n_This is a transversal evolution to apply to every connectors !_ \r\n\r\n"
+    },
+    "comments": [
+        {
+            "body": "**Original author :** Blatti Yves\n\nProxy does not support SSH anymore.\r\nSSL\/TLS is supported, and Tomcat\/Java security policies are applied to proxy.",
+            "created_at": "2017-06-29T07:25:33Z"
+        }
+    ]
+}

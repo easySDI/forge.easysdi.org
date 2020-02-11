@@ -1,0 +1,14 @@
+{
+    "issue": {
+        "closed": true,
+        "title": "Assignation as an option",
+        "created_at": "2015-01-16T10:44:45Z",
+        "labels": [
+            "Defect",
+            "Redmine status : Closed",
+            "Category : CATALOG"
+        ],
+        "body": "**Original author :** Van Hoecke H\u00e9l\u00e8ne \n\nFollowing this feature #749 :\r\n\r\nThe menu entry \"Gestion\/Historique des assignations\" in resources list page is still visible after installation of the feature.\r\nIf you go to administrator and set the value for this option, every thing is well render.\r\nThe default value of the option (deactivate the feature) seems to be not well handle for the specified menu entry.\n\n**Fixed versions :** 4.2.8"
+    },
+    "comments": []
+}

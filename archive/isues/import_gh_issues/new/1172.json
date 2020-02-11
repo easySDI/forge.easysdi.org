@@ -1,0 +1,19 @@
+{
+    "issue": {
+        "closed": true,
+        "title": "getting easySDI user with wrong ID",
+        "created_at": "2015-11-04T11:02:32Z",
+        "labels": [
+            "Defect",
+            "Redmine status : Closed",
+            "Category : CORE"
+        ],
+        "body": "**Original author :** Blatti Yves\n\nRevision 9169 changed @sdiUser->getUserById($sdiId)@ to use a Joomla user ID instead of easySDI user ID.\r\n\r\nI have checked and it seems to be wrong. There's two ways of getting an easySDI user from an easySDI user ID:\r\n * new sdiUser($anID)\r\n * sdiFactory::getSdiUser($anID)\r\n\r\nThen I checked the code:\r\n\r\n*new sdiUser($anID) :*\r\neasysdi\\com_easysdi_catalog\\src\\site\\controllers\\metadata.php lines 849 + 850 (use easySDI id)\r\neasysdi\\com_easysdi_shop\\src\\site\\controllers\\order.php line 185 (use easySDI id)\r\neasysdi\\com_easysdi_shop\\src\\site\\models\\order.php line 93 (use easySDI id)\r\n\r\n*getSdiUser($anID) :*\r\neasysdi\\com_easysdi_shop\\src\\site\\controllers\\basket.php line 279 (use easySDI id)\r\neasysdi\\com_easysdi_shop\\src\\site\\controllers\\extract.php line 461 (use easySDI id)\r\neasysdi\\com_easysdi_shop\\src\\site\\controllers\\order.php lines 67 + 136 (use easySDI id)\r\neasysdi\\com_easysdi_shop\\src\\site\\helpers\\easysdi_shop.php lines 1172 + 1198 + 1237 (use easySDI id)\r\neasysdi\\com_easysdi_shop\\src\\site\\models\\request.php line 77 (use easySDI id)\r\neasysdi\\com_easysdi_shop\\src\\site\\views\\order\\view.html.php line 43 (use easySDI id)\r\neasysdi\\com_easysdi_shop\\src\\site\\libraries\\easysdi\\sdiBasket.php lines 76 (use easySDI id)\r\n\r\nSo using a Joomla ID seems to be an error.\r\nWe have to correct it in sdiUser class + \r\neasysdi\\com_easysdi_shop\\src\\site\\controllers\\download.php line 97  (use Joomla id)\r\n\r\nI found the error in the other direction here:\r\nC:\\projets-ybi\\easysdi4dev\\joomla\\easysdi\\com_easysdi_shop\\src\\site\\libraries\\easysdi\\sdiBasket.php lines 127 \r\n@$ex->created_by = sdiFactory::getSdiUser($extraction->created_by)->name;@ -> (use easySDI id => Should use Joomla Id I think)\r\n\r\nOnce both have been corrected, we sould be good.\r\n\n\n**Fixed versions :** 4.3.2"
+    },
+    "comments": [
+        {
+            "body": "**Original author :** Blatti Yves\n\nrev. 9182",
+            "created_at": "2015-11-05T10:07:39Z"
+        }
+    ]
+}

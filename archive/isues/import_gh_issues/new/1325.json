@@ -1,0 +1,23 @@
+{
+    "issue": {
+        "closed": true,
+        "title": "When no public policy is found, the proxy should send an HTTP 401 to ask for authentication",
+        "created_at": "2016-05-10T10:02:34Z",
+        "labels": [
+            "Defect",
+            "Redmine status : Closed",
+            "Category : PROXY"
+        ],
+        "body": "**Original author :** Blatti Yves\n\nWhen no public policy is found, the proxy should send an HTTP 401 to ask for authentication.\r\n\r\nWhen a user connects to a secured service, if the software clients does not send the  credentials on the first requests it will receive an OGC exception with an HTTP 200 code.\r\n\r\nLike this one: \r\n\r\n```\n\r\nHTTP\/1.1 200 OK\r\nServer: Apache-Coyote\/1.1\r\neasysdi-proxy-error-occured: true\r\nLast-Modified: Tue, 10 May 2016 09:55:15 GMT\r\nExpires: Tue, 10 May 2016 10:15:15 GMT\r\nCache-Control: max-age=1200\r\nEtag: \"1462875315615\"\r\nContent-Encoding: gzip\r\nContent-Type: text\/xml;charset=utf-8\r\nContent-Length: 277\r\nDate: Tue, 10 May 2016 09:55:15 GMT\r\n\r\n<?xml version='1.0' encoding='utf-8'?>\r\n\r\n<ExceptionReport xmlns=\"http:\/\/www.opengis.net\/ows\/2.0\" xmlns:xsi=\"http:\/\/www.w3.org\/2001\/XMLSchema-instance\" xsi:schemaLocation=\"http:\/\/www.opengis.net\/ows\/2.0 owsExceptionReport.xsd\" version=\"1.0.0\">\r\n\t<Exception exceptionCode=\"NoApplicableCode\">\r\n\t\t<ExceptionText>Error occurred during SERVICENAME service initialization : No public policy found.<\/ExceptionText>\r\n\t<\/Exception>\r\n<\/ExceptionReport>\r\n```\n\r\n\r\nSome software client WILL NOT SEND credentials without having received a 401 response beforehand. (ESRI desktop suite for example, they cannot use secured WMS for now...)\r\n\r\n```\n\r\nHTTP\/1.1 401 Unauthorized\r\nServer: Apache-Coyote\/1.1\r\neasysdi-proxy-error-occured: true\r\nWWW-Authenticate: Basic realm=\"EasySDI proxy service SERVICENAME\"\r\nContent-Type: text\/xml;charset=utf-8\r\nContent-Length: 277\r\nDate: Tue, 10 May 2016 09:55:15 GMT\r\n\r\n<?xml version='1.0' encoding='utf-8'?>\r\n\r\n<ExceptionReport xmlns=\"http:\/\/www.opengis.net\/ows\/2.0\" xmlns:xsi=\"http:\/\/www.w3.org\/2001\/XMLSchema-instance\" xsi:schemaLocation=\"http:\/\/www.opengis.net\/ows\/2.0 owsExceptionReport.xsd\" version=\"1.0.0\">\r\n\t<Exception exceptionCode=\"NoApplicableCode\">\r\n\t\t<ExceptionText>Error occurred during SERVICENAME service initialization : No public policy found.<\/ExceptionText>\r\n\t<\/Exception>\r\n<\/ExceptionReport>\r\n```\n\r\n\r\nI think this should be done in @OgcProxyServlet::createProxy@ and look like what is implemented in @EasySdiConfigFilter::doFilter@\r\n\n\n**Fixed versions :** 4.4.1"
+    },
+    "comments": [
+        {
+            "body": "**Original author :** Blatti Yves\n\nCould be something like:\r\n\r\n```\n\r\n<code class=\"java\">\r\nif (((HttpServletRequest) servletRequest).getUserPrincipal() == null) {\r\n   \/\/Spring Anonymous user is used to perform this request, but not policy defined for it\r\n   servletResponse.setStatus(HttpServletResponse.SC_UNAUTHORIZED);\r\n   servletResponse.setHeader(\"WWW-Authenticate\", \"Basic realm=\\\"EasySDI Proxy service \" + servletName + \"\\\"\");\r\n   servletResponse.setHeader(\"easysdi-proxy-error-occured\", \"true\");\r\n   logger.error(\"Error occurred during \" + servletName + \" service initialization : No public policy found.\");\r\n   sendException(\"Error occurred during \" + servletName + \" service initialization : No public policy found.\", OWSExceptionReport.CODE_NO_APPLICABLE_CODE, \"\", HttpServletResponse.SC_OK, connector, null);\r\n   return null;\r\n}\r\n\r\n```\n",
+            "created_at": "2016-05-10T10:09:52Z"
+        },
+        {
+            "body": "**Original author :** Blatti Yves\n\nrev. 9850",
+            "created_at": "2016-06-17T06:32:20Z"
+        }
+    ]
+}

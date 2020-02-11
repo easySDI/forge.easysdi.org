@@ -1,0 +1,79 @@
+{
+    "issue": {
+        "closed": true,
+        "title": "Assignation should be an option",
+        "created_at": "2014-06-20T13:34:14Z",
+        "labels": [
+            "Enhancement",
+            "Redmine status : Closed",
+            "Category : CATALOG"
+        ],
+        "body": "**Original author :** Portier Thomas\n\nAssignation came with the 4.2.0. This should be an option.\r\nJust adding an option on catalog backend \"Manage assignation\" that will hide the menu items in front office.\r\n\r\nOk for you?\n\n**Fixed versions :** 4.2.2"
+    },
+    "comments": [
+        {
+            "body": "**Original author :** M\u00e9rour Xavier\n\nIt's a good idea. Assignation is a very specific need linked to internal procedures (like Berne) and I agree it should be optionnal to keep the menu as simple as possible. \r\n\r\n_This is actually what was discussed during easySDI workshop in 2013._",
+            "created_at": "2014-06-20T14:37:48Z"
+        },
+        {
+            "body": "**Original author :** Magoni Bruno\n\nAnd synchronization to (see #751) !?!",
+            "created_at": "2014-06-24T09:52:51Z"
+        },
+        {
+            "body": "**Original author :** M\u00e9rour Xavier\n\n@Bruno,\r\n\r\nCan those two features (assignation and synchronization) be put as \"optional\" with a backend option within Bern dev. ?",
+            "created_at": "2014-06-24T12:11:09Z"
+        },
+        {
+            "body": "**Original author :** Magoni Bruno\n\nHi Xavier,\r\n\r\nUnfortunately the optional property of using such features haven't been planned\/reminded with Bern :-(",
+            "created_at": "2014-06-25T07:35:41Z"
+        },
+        {
+            "body": "**Original author :** Magoni Bruno\n\nHi,\r\n\r\nI wonder if such features should not be configured for each resource's type rather then in Catalog's options.\r\nPer default values could be setted to \"false\" for each of these features.\r\n",
+            "created_at": "2014-08-03T19:03:52Z"
+        },
+        {
+            "body": "**Original author :** Magoni Bruno\n\nTechnical Committee validates that configuration applies to global catalog's option",
+            "created_at": "2014-10-03T09:41:39Z"
+        },
+        {
+            "body": "**Original author :** Plainecassagne Laurent\n\n+1",
+            "created_at": "2014-10-07T10:24:02Z"
+        },
+        {
+            "body": "**Original author :** M\u00e9rour Xavier\n\n+1",
+            "created_at": "2014-10-07T10:24:11Z"
+        },
+        {
+            "body": "**Original author :** Magoni Bruno\n\n+1",
+            "created_at": "2014-10-07T10:24:12Z"
+        },
+        {
+            "body": "**Original author :** Teixeira J\u00e9r\u00f4me\n\n+ 1",
+            "created_at": "2014-10-07T10:24:22Z"
+        },
+        {
+            "body": "**Original author :** Portier Thomas\n\nDevelopped and commited.",
+            "created_at": "2014-11-03T15:39:27Z"
+        },
+        {
+            "body": "**Original author :** M\u00e9rour Xavier\n\nThanks Thomas for this work !\r\n\r\nQuestion : does it concern assignation and synchronization ? or just assignation ?",
+            "created_at": "2014-11-04T07:17:11Z"
+        },
+        {
+            "body": "**Original author :** Portier Thomas\n\nIt concerns only assignation",
+            "created_at": "2014-11-04T08:42:49Z"
+        },
+        {
+            "body": "**Original author :** M\u00e9rour Xavier\n\nOK, thanks. Then another ticket should be open for synchronization... I do it.",
+            "created_at": "2014-11-04T09:00:26Z"
+        },
+        {
+            "body": "**Original author :** Magoni Bruno\n\nHi Thomas,\r\n\r\nCan you please confirm that this feature has been released with 4.2.0. In such case I will let you close such issue.\r\nIf not, may I ask you to change affected version (4.2.1 ?).\r\n\r\nThanks a lot,\r\n",
+            "created_at": "2014-12-12T16:17:20Z"
+        },
+        {
+            "body": "**Original author :** Magoni Bruno\n\nI've had a look inside 4.2.0 and see that such feature haven't been integrated in such version.\r\nSo I set it as unplanned in advance...\r\n\r\nThanks",
+            "created_at": "2014-12-12T17:03:35Z"
+        }
+    ]
+}

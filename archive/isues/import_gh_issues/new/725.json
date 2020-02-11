@@ -1,0 +1,19 @@
+{
+    "issue": {
+        "closed": true,
+        "title": "#716 was not packaged in 4.1.0",
+        "created_at": "2014-06-03T12:53:40Z",
+        "labels": [
+            "Defect",
+            "Redmine status : Closed",
+            "Category : MAP"
+        ],
+        "body": "**Original author :** Blatti Yves\n\n#716 was not packaged in 4.1.0\n\n**Fixed versions :** 4.2.0"
+    },
+    "comments": [
+        {
+            "body": "**Original author :** Blatti Yves\n\nCommit in : \/easysdi\/sandboxes\/asit-vd\/4.1.1\/com_easysdi_map\/src\/site\/helpers\/easysdi_map.php",
+            "created_at": "2014-06-03T12:54:38Z"
+        }
+    ]
+}

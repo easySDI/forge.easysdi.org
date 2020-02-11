@@ -1,0 +1,19 @@
+{
+    "issue": {
+        "closed": true,
+        "title": "Size of the wkt organism perimeter",
+        "created_at": "2015-08-28T10:26:41Z",
+        "labels": [
+            "Defect",
+            "Redmine status : Closed",
+            "Category : CONTACT"
+        ],
+        "body": "**Original author :** Portier Thomas\n\nThe size of the WKT organism perimeter is limited to 65535 character.\r\nIt should be extended by changing type in mysql to longtext\n\n**Fixed versions :** 4.4.0"
+    },
+    "comments": [
+        {
+            "body": "**Original author :** Van Hoecke H\u00e9l\u00e8ne \n\nMerge in r9485",
+            "created_at": "2016-02-23T08:48:49Z"
+        }
+    ]
+}

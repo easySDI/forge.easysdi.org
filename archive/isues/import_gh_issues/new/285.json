@@ -1,0 +1,63 @@
+{
+    "issue": {
+        "closed": true,
+        "title": "INSPIRE compliancy",
+        "created_at": "2011-01-11T10:53:58Z",
+        "labels": [
+            "Feature",
+            "Redmine status : Closed",
+            "Category : MONITOR"
+        ],
+        "body": "**Original author :** Portier Thomas\n\nIt could be added to the MONITOR a compatibility check with the INSPIRE constraints :\r\nThe minimum number of requests CSW taken into account (valid when the first byte is returned) simultaneously shall be 30 per second. The probability that the service is available shall be 99%.\r\nWMS \/ WFS: The minimum number of requests simultaneously taken into account should be 20 per second. The probability that the service is available shall be 99%.\n\n**Fixed versions :** 4.0.0"
+    },
+    "comments": [
+        {
+            "body": "**Original author :** M\u00e9rour Xavier\n\nHello Thomas,\n\nThat's y good idea indeed !\nI see some similarity with issue #275\n\nLet's wait for Jesper Kihlberg's explanations... it may arise that it is the same need.\n\nNB : note that the criteria \"The minimum number of requests simultaneously taken into account should be 20 per second\" is quite vague. First of all, what kind of request is it (GetCapabilities, GetMap...)? if it's a GetMap, with which parameters (1,2,3 layers... width\/height ?). Do you have any info Thomas ?\n\n\n\n\n\n",
+            "created_at": "2011-01-11T11:13:32Z"
+        },
+        {
+            "body": "**Original author :** Portier Thomas\n\ncriterias are described in the Inspire documentations : http:\/\/inspire.jrc.ec.europa.eu\/documents\/Network_Services\/Technical%20Guidance%20View%20Services%20v%202.0.pdf (p. 27)",
+            "created_at": "2011-01-11T11:52:57Z"
+        },
+        {
+            "body": "**Original author :** Leetz Ben\n\nIn the INSPIRE Networkservice DS it says:\r\nPerformace:\r\n\"For a 470 Kilobytes image (e.g. 800 \u00d7 600 pixels with a colour depth of 8 bits), the response time for sending the initial response to a Get Map Request to a view service shall be maximum *5 seconds* in normal situation.\" normal situation is 90% of time. \r\nCapacity:\r\n\"The minimum number of simultaneous service requests to a view service (WMS) to be served in accordance with the quality of service performance criteria shall be *20 per second.*\"\r\n(the request can be limited to one layer)\r\n\r\nThe only thing what is quite vague to me, is: Should it be 20 different GetMap Request or can it be the same. (Servercaching)\r\nWhat is as well still unclear to me, a 800*600 pixel GetMap request will most of the time not result in an 470KB map, because of serverside compression. I still dont't have an idea how to interpred this part.\r\n\r\nCSW is 3 Seconds, and so on. See\r\nSee: http:\/\/eur-lex.europa.eu\/LexUriServ\/LexUriServ.do?uri=OJ:L:2010:323:0001:0010:EN:PDF",
+            "created_at": "2011-01-11T12:01:35Z"
+        },
+        {
+            "body": "**Original author :** M\u00e9rour Xavier\n\nThanks for those inputs !\r\n\r\nBen, you are right : service compression will make a difference. I interpret the \"470 KB map\" as the size without compression (because nothing is stated in the docs).\r\n\r\n",
+            "created_at": "2011-01-11T12:25:38Z"
+        },
+        {
+            "body": "**Original author :** Magoni Bruno\n\n@Jorgen: I assume that this input from Thomas could be interesting to look at during the call of feed-back; don't see any way to force you about increasing your own project :-) and feel free to react about it...",
+            "created_at": "2011-02-17T14:11:59Z"
+        },
+        {
+            "body": "**Original author :** Larsen de Martino Jorgen\n\nThe Quality of Service requirements from INSPIRE will have to be interpret and an interpretation has to be agreed upon. The discussion about iterpretation has begun in different foras that deals with implementing rules for INSPIRE.\r\n\r\nBut we, at the National Survey and Cadastre Denmark, believe that we can start implementing tools for collecting Quality of Service data and make the functionality flexible to what ever the iterpretation might be at the end of the discussion.\r\n\r\nThe Rules stated by Ben Leetz is our starting point. Which means that we propose to:\r\nExpand the functionality of the Monitor to be able to both handle simultanious requests and report collectively on the requests see Monitor issue #275\r\nAdd functionality that can filter the 10% worst request out of the reports\r\n\r\nIt is our assessment that if any additional needs arises from the INSPIRE quality of service discissions. These can be implemented at that time.",
+            "created_at": "2011-02-18T10:24:41Z"
+        },
+        {
+            "body": "**Original author :** M\u00e9rour Xavier\n\nI think Jorgen is right, we have to keep MONITOR as flexible as possible to deal with any new needs that may arise in the future. \r\n\r\nNevertheless, what we could imagine is to have a kind of optionnal \"setup\" that would put default INSPIRE parameters for any job (for example a button with label \"Apply INSPIRE QoS rules\" to the job).  ",
+            "created_at": "2011-02-18T10:31:49Z"
+        },
+        {
+            "body": "**Original author :** Larsen de Martino Jorgen\n\nAn INSPIRE compliance button would be perfect :-)\n\nMy thinking in relation to reporting on jobs is as stated in #276.\nI think that SLA should be applied when creating a report and not when creating a job. Because of the limitations that it creates for future possibilities.\nNew clients with other SLA needs than the ones implemented on specific jobs might want to see how we have performed historically in relation to their specific SLA needs.\nThis can be acchieved per logging availability and performance 24\/7\/365 for all jobs created.",
+            "created_at": "2011-02-21T09:07:11Z"
+        },
+        {
+            "body": "**Original author :** Magoni Bruno\n\nI don't know if it will be a button or anything else :-) but I would prefer a SLA profile that stores already SLA definition regarding INSPIRE contraints.\r\nTo specify in details through advanced modelization (UML static classes)...\r\n\r\nRegarding current notes, I propose that Steering Committee vote to keep this issue for a future release...\r\nThanks\r\n",
+            "created_at": "2011-04-14T14:02:31Z"
+        },
+        {
+            "body": "**Original author :** Portier Thomas\n\nOk for this evolution.",
+            "created_at": "2011-05-05T12:06:29Z"
+        },
+        {
+            "body": "**Original author :** M\u00e9rour Xavier\n\nOK +1",
+            "created_at": "2011-05-09T08:16:55Z"
+        },
+        {
+            "body": "**Original author :** Magoni Bruno\n\nHello Thomas,\r\n\r\nRegarding the vote, this issue will be kept for a future release.\r\nThis ticket will be stated to \"new\".\r\n",
+            "created_at": "2011-05-10T08:37:40Z"
+        }
+    ]
+}

@@ -1,0 +1,19 @@
+{
+    "issue": {
+        "closed": true,
+        "title": "bad checkbox layout in order properties",
+        "created_at": "2015-11-25T14:05:07Z",
+        "labels": [
+            "Defect",
+            "Redmine status : Closed",
+            "Category : SHOP"
+        ],
+        "body": "**Original author :** M\u00e9rour Xavier\n\nWhen adding a product in basket, user first choose properties. Properties with checkbox type is bdaly rendered (see file attached) and is thefore confusing for the user.\r\n\r\n--> each checkbox should be rendered on a single line (proposal)\n\n**Fixed versions :** 4.3.2"
+    },
+    "comments": [
+        {
+            "body": "**Original author :** Blatti Yves\n\nrev. 9305",
+            "created_at": "2015-12-02T13:16:46Z"
+        }
+    ]
+}

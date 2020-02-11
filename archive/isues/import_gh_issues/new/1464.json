@@ -1,0 +1,14 @@
+{
+    "issue": {
+        "closed": true,
+        "title": "Display EXTRACT version + link to easysdi.org",
+        "created_at": "2018-11-20T15:25:54Z",
+        "labels": [
+            "Enhancement",
+            "Redmine status : Closed",
+            "Category : EXTRACT"
+        ],
+        "body": "**Original author :** Blatti Yves\n\n*Description*\r\n\r\n* In order to facilitate support and communication, it is necessary to display the currently installed (full) version, the project site and the GPL license.\r\n* This content must be added to a new panel on the configuration page, named \"About EXTRACT\"\r\n* Content: \"EXTRACT is part of the open source project <a href=\"http:\/\/www.easysdi.org\">easySDI<\/a> and is distributed under GPLv3 license. <br\/>Installed version : {fullversion}\" \/  \"EXTRACT fait partie du projet open source <a href=\"http:\/\/www.easysdi.org\">easySDI<\/a> et est distribu\u00e9 sous licence GPLv3. <br\/>Version install\u00e9e : {fullversion}\"\r\n\r\n*Model*\r\n\r\n!17762-about-extract.png!\r\n\r\nSource : https:\/\/projets.asitvd.ch\/issues\/17762\n\n**Fixed versions :** 4.5.1"
+    },
+    "comments": []
+}

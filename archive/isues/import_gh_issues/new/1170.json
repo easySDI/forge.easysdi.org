@@ -1,0 +1,23 @@
+{
+    "issue": {
+        "closed": true,
+        "title": "FormHtmlGenerator uses external resources (blank gif)",
+        "created_at": "2015-11-03T12:51:46Z",
+        "labels": [
+            "Defect",
+            "Redmine status : Closed",
+            "Category : CATALOG"
+        ],
+        "body": "**Original author :** Blatti Yves\n\nFormHtmlGenerator uses external resources (blank gif).\r\nIn \\joomla\\easysdi\\com_easysdi_catalog\\src\\site\\libraries\\easysdi\\FormHtmlGenerator.php:Line855\r\n\r\n\/\/ path to Ext images\r\nExt.BLANK_IMAGE_URL = 'http:\/\/gis.bnhelp.cz\/wwwlibs\/ext\/ext3\/resources\/images\/default\/s.gif';\r\n\r\nThis make easySDI dependent to this site and creates mixed content on https sites.\r\n\n\n**Fixed versions :** 4.4.0"
+    },
+    "comments": [
+        {
+            "body": "**Original author :** Blatti Yves\n\nWe should use Snecha's gif (https:\/\/www.sencha.com\/s.gif) or include it in component (personal preference)",
+            "created_at": "2015-11-03T12:55:29Z"
+        },
+        {
+            "body": "**Original author :** Blatti Yves\n\nrev 9355",
+            "created_at": "2015-12-14T12:46:39Z"
+        }
+    ]
+}

@@ -1,0 +1,19 @@
+{
+    "issue": {
+        "closed": true,
+        "title": "sync-package-all ant script doesn't package global installer",
+        "created_at": "2015-09-11T15:55:01Z",
+        "labels": [
+            "Defect",
+            "Redmine status : Closed",
+            "Category : CORE"
+        ],
+        "body": "**Original author :** Portier Thomas\n\n\n\n**Fixed versions :** 4.4.0"
+    },
+    "comments": [
+        {
+            "body": "**Original author :** Van Hoecke H\u00e9l\u00e8ne \n\nMerge in r9485",
+            "created_at": "2016-02-23T08:48:50Z"
+        }
+    ]
+}

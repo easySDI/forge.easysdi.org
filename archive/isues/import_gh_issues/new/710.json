@@ -1,0 +1,13 @@
+{
+    "issue": {
+        "closed": false,
+        "title": "Add geometry in SHOP webservice",
+        "created_at": "2014-05-13T07:51:07Z",
+        "labels": [
+            "Feature",
+            "Redmine status : New"
+        ],
+        "body": "**Original author :** M\u00e9rour Xavier\n\nWhen an order is saved in the SHOP, this order contains either :\r\n\r\n- the geometry of the perimeter (pairs of X\/Y). That's the case for any \"free perimeter\" such as rectangle of polygone\r\n- the ID of a list of perimeter type. That's the case for any other perimeter such as \"parcels\", \"communes\", \"country\",...\r\n\r\nIn the second case, perimeters' geometry is not know by the SHOP and, therfore, isn't transmitted by the webservice to third parties (suppliers). It's a pity if the supplier wants to make automatic extraction of the data based on geometry : the supplier has to reconstruct the geometry from the perimeters' ID.\r\n\r\n\r\nThe proposed feature is to add a mechanism in the SHOP to fetch the perimeters' geometry and transmit it to the supplier(s) via the SHOP webservice (in addition to the actual XML content).\r\n\r\nWhat do you think ? Thanks for your comments and remarks.\r\n\r\n\r\n\r\n"
+    },
+    "comments": []
+}

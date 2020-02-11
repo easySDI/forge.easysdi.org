@@ -1,0 +1,18 @@
+{
+    "issue": {
+        "closed": true,
+        "title": "File header content",
+        "created_at": "2015-05-01T06:43:45Z",
+        "labels": [
+            "Defect",
+            "Redmine status : Closed"
+        ],
+        "body": "**Original author :** Van Hoecke H\u00e9l\u00e8ne \n\nFiles header are supposed to be : \r\n\r\n```\n\r\n\/**\r\n * @version     4.0.0\r\n * @package     com_easysdi_[component]\r\n * @copyright   Copyright (C) 2013. All rights reserved.\r\n * @license     GNU General Public License version 2 or later; see LICENSE.txt\r\n * @author      EasySDI Community <contact@easysdi.org> - http:\/\/www.easysdi.org\r\n *\/\r\n```\n\r\n\r\nBut :\r\n- some files present other headers with developer name and no reference to project...\r\n- version must be upgraded to 4.3.x\n\n**Fixed versions :** 4.3.2"
+    },
+    "comments": [
+        {
+            "body": "**Original author :** Van Hoecke H\u00e9l\u00e8ne \n\nFile header should be ;\r\n\r\n```\n\r\n\/**\r\n * @version     4.x.x\r\n * @package     com_easysdi_[component]\r\n * @copyright   Copyright (C) 2013-2015. All rights reserved.\r\n * @license     GNU General Public License version 3 or later; see LICENSE.txt\r\n * @author      EasySDI Community <contact@easysdi.org> - http:\/\/www.easysdi.org\r\n *\/\r\n```\n\r\n\r\nLICENCE.txt : file is missing, should be added at the root administrator rep. \r\n\r\n\r\nAn automatic update of the headers should be add to the continious integration.\r\n",
+            "created_at": "2015-05-29T08:38:15Z"
+        }
+    ]
+}

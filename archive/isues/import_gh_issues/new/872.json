@@ -1,0 +1,19 @@
+{
+    "issue": {
+        "closed": true,
+        "title": "third party validation - multiples entries for the same order",
+        "created_at": "2014-11-20T10:23:20Z",
+        "labels": [
+            "Defect",
+            "Redmine status : Closed",
+            "Category : SHOP"
+        ],
+        "body": "**Original author :** M\u00e9rour Xavier\n\nWhen an order is done with a third party, the screen \"orders validation\" displays 9 times entries for the same order.\r\nSee screenshot attached.\r\n\r\nWhy ? (is it because we also have 9 possible status for the order ??)\n\n**Fixed versions :** 4.3.0"
+    },
+    "comments": [
+        {
+            "body": "**Original author :** M\u00e9rour Xavier\n\nOK, since issue seeems to be resolved. Thanks.\r\nYou can change status to resolved if you agree :-)\r\n",
+            "created_at": "2015-01-20T10:03:36Z"
+        }
+    ]
+}

@@ -1,0 +1,14 @@
+{
+    "issue": {
+        "closed": true,
+        "title": "SQL Server compatibility",
+        "created_at": "2016-05-31T16:21:19Z",
+        "labels": [
+            "Defect",
+            "Redmine status : Closed",
+            "Category : CORE"
+        ],
+        "body": "**Original author :** Van Hoecke H\u00e9l\u00e8ne \n\nMisc. SQL statements corrections to be compliant with SQL server\n\n**Fixed versions :** 4.4.1"
+    },
+    "comments": []
+}

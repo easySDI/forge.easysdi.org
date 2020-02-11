@@ -1,0 +1,19 @@
+{
+    "issue": {
+        "closed": true,
+        "title": "Pricing : total DB type needs to be DECIMAL(19,2) as for config values",
+        "created_at": "2015-09-16T10:00:13Z",
+        "labels": [
+            "Defect",
+            "Redmine status : Closed",
+            "Category : SHOP"
+        ],
+        "body": "**Original author :** Blatti Yves\n\nPricing : total DB type needs to be DECIMAL(19,2) as for config values to allow consistent totals and avoid floating points behaviors. \r\nFollowing : Defect #1050 : SHOP Pricing does not support \"large\" amounts.\r\n\n\n**Fixed versions :** 4.3.2"
+    },
+    "comments": [
+        {
+            "body": "**Original author :** Blatti Yves\n\nrev. 9093.\r\n\r\nIt will need a check on the SQLServer scripts. I think there may be a problem with the constraints.",
+            "created_at": "2015-09-16T14:37:48Z"
+        }
+    ]
+}

@@ -1,0 +1,14 @@
+{
+    "issue": {
+        "closed": true,
+        "title": "Pricing - if an organism has no category -> free",
+        "created_at": "2014-11-14T08:55:48Z",
+        "labels": [
+            "Defect",
+            "Redmine status : Closed",
+            "Category : SHOP"
+        ],
+        "body": "**Original author :** Blatti Yves\n\nLinked to #643:\r\nIf a user add products (with pricing profile) to his basket, and his organism has no category, price is 0.\r\nThe profile should be applied without category matching (no rebate).\r\n\r\n\n\n**Fixed versions :** 4.3.0"
+    },
+    "comments": []
+}

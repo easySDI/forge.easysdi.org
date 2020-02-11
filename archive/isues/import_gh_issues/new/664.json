@@ -1,0 +1,14 @@
+{
+    "issue": {
+        "closed": false,
+        "title": " Autocomplete search function",
+        "created_at": "2014-03-27T16:37:33Z",
+        "labels": [
+            "Feature",
+            "Redmine status : New",
+            "Category : CATALOG"
+        ],
+        "body": "**Original author :** Portier Thomas\n\nThere is two ways to implement this function : \r\n- Implement an indexer in EasySDI for each search field and for each context of catalog : very complicated and a lot of work but very efficient (possibility to manage rights?)\r\n- Implement a JOOMLA finder plugin that will index all the published ressources name with link to the metadata sheet : very simple to implement, can't manage rights but integrated with the others JOOMLA components ([[http:\/\/docs.joomla.org\/Creating_a_Smart_Search_plug-in]])\r\n\r\nThese two functions are complementary."
+    },
+    "comments": []
+}

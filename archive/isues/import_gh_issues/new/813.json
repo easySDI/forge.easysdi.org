@@ -1,0 +1,14 @@
+{
+    "issue": {
+        "closed": true,
+        "title": "SQL syntax error",
+        "created_at": "2014-08-29T13:18:38Z",
+        "labels": [
+            "Defect",
+            "Redmine status : Rejected",
+            "Category : SERVICE"
+        ],
+        "body": "**Original author :** Van Hoecke H\u00e9l\u00e8ne \n\nAPI method 'union' is not well supported by SQL Server.\r\nUse replaced in 'administrator\\components\\com_easysdi_service\\models\\physicalservice.php' \n\n**Fixed versions :** 4.2.0"
+    },
+    "comments": []
+}

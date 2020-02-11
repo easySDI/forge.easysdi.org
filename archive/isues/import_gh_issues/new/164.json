@@ -1,0 +1,18 @@
+{
+    "issue": {
+        "closed": false,
+        "title": "Reprojection abilities",
+        "created_at": "2010-05-10T12:38:10Z",
+        "labels": [
+            "Feature",
+            "Redmine status : New"
+        ],
+        "body": "**Original author :** M\u00e9rour Xavier\n\nThe PROXY should be able to reproject on-the-fly to other SRS. It will answer many users cases, specially for tiled WMS (WMTS) where cached tiles are in EPSG:4326 and the remote server delivers only in EPSG:21781, and would prevent from adding an extra cache for each supported SRS.\r\n\r\n\r\nSome ideas for implementation :\r\n\r\nhttp:\/\/www.neogeo-online.net\/blog\/archives\/283\/\r\nhttp:\/\/mapproxy.org\/\r\n\r\n\r\n"
+    },
+    "comments": [
+        {
+            "body": "**Original author :** M\u00e9rour Xavier\n\nAnother ressource for this issue (java):\r\n\r\nhttp:\/\/gvsigmobileonopenmoko.wordpress.com\/2010\/05\/03\/on-the-fly-reprojection-of-tiles-using-your-favorite-conventional-wms-servers\/",
+            "created_at": "2010-05-10T14:46:00Z"
+        }
+    ]
+}

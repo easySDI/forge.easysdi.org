@@ -1,0 +1,46 @@
+{
+    "issue": {
+        "closed": true,
+        "title": "Crowdin translation import : missing strings + naming in catalog",
+        "created_at": "2014-07-30T07:17:17Z",
+        "labels": [
+            "Defect",
+            "Redmine status : Closed"
+        ],
+        "body": "**Original author :** Blatti Yves\n\nSome points about language files:\r\n\r\n* Since Crowdin translation import is functional, translated files (FR\/DE) are overwritten.\r\nSome translation were only done in French, so we'll have to add strings in English, wait for Crowdin import, translate them on Crowdin and wait for import in easySDI repo. (fortunately there's not a lot of them ;-) )\r\n\r\n* Not related to Crowdin, but some stings in esaySDI catalog have different prefix:\r\n\r\n```\n\r\nCOM_EASYSDI_CATALOG_VALIDATE_AND_SAVE_ITEM=\"Valider et enregistrer\"\r\nCOM_EASYSDI_CATALOG_INPROGRESS_ITEM=\"En travail\"\r\nCOM_EASYSDI_CATALOGE_SEARCH=\"Rechercher\"\r\nCOM_EASYSDI_CATALOGE_THESAURUS_GEMET=\"Select Keywords\"\r\n```\n\r\n\r\n@COM_EASYSDI_CATALOGE@ ... with an \"E\", any technical reason to this ?\r\n\n\n**Fixed versions :** 4.2.0"
+    },
+    "comments": [
+        {
+            "body": "**Original author :** Magoni Bruno\n\n* Automatic translation process is not for now fully functionnal as it is still be tested. Official info will be published when this process is validated.\r\nTranslation process is first part of the incoming Continuous Integration Platform which has been implemented for testing now; and your summary is correct on how such process is working.\r\nFrench entries in en-GB reference file is a known issue described by Xavier in Localization Platform and still need to be addressed as you say.\r\n\r\n* COM_EASYSDI_CATALOGE prefix is bad typo and should be fixed in future releases...\r\n",
+            "created_at": "2014-07-30T07:57:28Z"
+        },
+        {
+            "body": "**Original author :** M\u00e9rour Xavier\n\nHi Bruno,\r\n\r\nThanks for your info and I am glad to read the CIP is coming gently ;.)\r\n\r\nConcerning \"French entries in en-GB reference file\", we started to correct it this morning and Yves will commit those corrections today.",
+            "created_at": "2014-07-30T08:05:18Z"
+        },
+        {
+            "body": "**Original author :** Blatti Yves\n\nMissing EN translation, and French versions on string in EN files that we found have been fixed.\r\nIn my sandbox: svn:\/\/127.0.0.1:13690\/easysdi\/sandboxes\/asit-vd\/4.2.x\r\n\r\nI won't touch the COM_EASYSDI_CATALOGE typo without knowing the implications with Crowdin. I suspect that we'll loose all translations that are affected if we patch this, am I right ?",
+            "created_at": "2014-07-30T14:06:05Z"
+        },
+        {
+            "body": "**Original author :** Magoni Bruno\n\nHi Yves,\r\n\r\nYou're right that renaming alias entry in en-GB files will remove previous translation.\r\nTo fix this regarding correct process will imply to:\r\n1. add now new fixed alias entries in en-GB file (i.e. COM_EASYSDI_CATALOG_SEARCH=\"Search\")\r\n2. wait nightly build for automatic update of en-GB new version's file into Localization Platform\r\n3. translate in french new alias entries through Localization Platform (keeping old ones allow translators to search them and copy paste translation into new ones)\r\n4. remove old alias entries from en-GB file (i.e. COM_EASYSDI_CATALOGE_SEARCH=\"Rechercher\")\r\n5. wait nightly build that will end automatically such fix process\r\n\r\nContinuous Integration process is still tested and will be inactivated since tomorrow for three weeks waiting come back of Marc on such issue :-(\r\nThanks for your patience and the already done work.\r\n",
+            "created_at": "2014-07-30T14:32:37Z"
+        },
+        {
+            "body": "**Original author :** Blatti Yves\n\nOK, step one is done, we'll wait for CI to be rolling again...",
+            "created_at": "2014-08-05T07:34:03Z"
+        },
+        {
+            "body": "**Original author :** Battaglia Marc\n\nContinuous integration is functional again. Translations are added and committed on the SVN.",
+            "created_at": "2014-08-25T14:42:15Z"
+        },
+        {
+            "body": "**Original author :** Blatti Yves\n\nNot ready for closing:\r\n- I haven't validated that all strings are OK on crowding + translated.\r\n- Then we'll have to drop old strings (misspelled prefix) in English files",
+            "created_at": "2014-08-27T10:03:21Z"
+        },
+        {
+            "body": "**Original author :** Magoni Bruno\n\nHi Yves,\r\n\r\nLast week, we have worked on this issue.\r\n- Reference entries of \"*CATALOGE*\" have been moved to \"CATALOG\" and changed into the source code and committed in 4.2.x branch; translations of such entries have also been recovered into translation platform\r\n- Some missing reference entries has been added in en-GB files; just need to translate them into translation platform\r\n\r\n\r\n",
+            "created_at": "2014-09-27T08:53:25Z"
+        }
+    ]
+}

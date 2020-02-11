@@ -1,0 +1,19 @@
+{
+    "issue": {
+        "closed": true,
+        "title": "MAP colors customization not availlable in order and request views",
+        "created_at": "2015-06-09T07:09:17Z",
+        "labels": [
+            "Defect",
+            "Redmine status : Closed",
+            "Category : SHOP"
+        ],
+        "body": "**Original author :** Blatti Yves\n\nV2 feature \"MAP colors customization\" is now supported (#942).\r\nBut we didn't add it to the \"order\" and \"request\" view.\n\n**Fixed versions :** 4.3.2"
+    },
+    "comments": [
+        {
+            "body": "**Original author :** Blatti Yves\n\n+ grid download map !",
+            "created_at": "2015-06-12T15:17:40Z"
+        }
+    ]
+}

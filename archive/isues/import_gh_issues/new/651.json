@@ -1,0 +1,47 @@
+{
+    "issue": {
+        "closed": true,
+        "title": "[DASHBOARD] frontend plugin",
+        "created_at": "2014-03-20T08:55:10Z",
+        "labels": [
+            "Feature",
+            "Redmine status : Rejected",
+            "Category : DASHBOARD"
+        ],
+        "body": "**Original author :** Portier Thomas\n\nIt would be great if there was a plugin to display indicators in front-end depending of the user organism logged in"
+    },
+    "comments": [
+        {
+            "body": "**Original author :** M\u00e9rour Xavier\n\nHello Thomas,\r\n\r\nWhich indicators would you see in front-end ?\r\n\r\nXavier",
+            "created_at": "2014-03-20T08:58:03Z"
+        },
+        {
+            "body": "**Original author :** Portier Thomas\n\nAll of them.\r\nIt could be a parameter of the plugin.",
+            "created_at": "2014-03-20T09:58:30Z"
+        },
+        {
+            "body": "**Original author :** M\u00e9rour Xavier\n\nI like \"all of them\" but it we need to set some priorities, which main indicators would you pick up ?\r\n\r\n_Personnaly, for example, I find more useful the \"average responsse time of extraction\" than the top users..._",
+            "created_at": "2014-03-20T10:56:04Z"
+        },
+        {
+            "body": "**Original author :** M\u00e9rour Xavier\n\nThomas,\r\n\r\nIf you want to give a try to put the current dashboard available in backend in the front, it should be easily done (according to Yves). \r\n\r\nBriefly :\r\n\r\n- you need to add to the component DASHBOARD a front-end view (similar to the backend)\r\n- use in your view the controllers developped in the back-end\r\n- add a forced filter on the organism (user connected)\r\n\r\nOne day work is realistic.\r\n\r\nIssue to address : check security on the JSON webservice (anyone should not access it)\r\n\r\nXavier",
+            "created_at": "2014-03-21T10:10:35Z"
+        },
+        {
+            "body": "**Original author :** M\u00e9rour Xavier\n\nHello Thomas,\r\n\r\nIs it still a need for you ?\r\n\r\n",
+            "created_at": "2015-03-04T07:18:41Z"
+        },
+        {
+            "body": "**Original author :** M\u00e9rour Xavier\n\nThomas,\r\n\r\nAny news on this feature ?\r\n\r\nThanks ;-)",
+            "created_at": "2015-06-17T09:13:12Z"
+        },
+        {
+            "body": "**Original author :** Blatti Yves\n\nWe'll take care of dashboard this year (yes... backend and front end!  Yey !)\r\nWe'll have proposal soon for PSC",
+            "created_at": "2016-02-03T14:11:50Z"
+        },
+        {
+            "body": "**Original author :** Blatti Yves\n\nDuplicated and solved by #1286",
+            "created_at": "2016-03-29T14:23:04Z"
+        }
+    ]
+}

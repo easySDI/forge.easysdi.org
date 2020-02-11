@@ -1,0 +1,19 @@
+{
+    "issue": {
+        "closed": true,
+        "title": "Organism filter in \"validation\" page ",
+        "created_at": "2016-01-11T10:45:54Z",
+        "labels": [
+            "Defect",
+            "Redmine status : Closed",
+            "Category : SHOP"
+        ],
+        "body": "**Original author :** M\u00e9rour Xavier\n\nIn the View ?view=orders&layout=validation, the filter on \"organisms\" displays the list of organisms where the user has rights for validation.\r\n\r\nBUT it also displays its own organism, even if the user has no right for validation in its own organism.\r\n\r\n--> the list should be only based on rights\r\n\n\n**Fixed versions :** 4.4.0"
+    },
+    "comments": [
+        {
+            "body": "**Original author :** Blatti Yves\n\nrev. 9407",
+            "created_at": "2016-01-15T16:02:10Z"
+        }
+    ]
+}

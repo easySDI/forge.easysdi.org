@@ -1,0 +1,55 @@
+{
+    "issue": {
+        "closed": true,
+        "title": "Distinguish mandatory information in metadata",
+        "created_at": "2015-04-03T11:22:05Z",
+        "labels": [
+            "Enhancement",
+            "Redmine status : Closed",
+            "Category : CATALOG"
+        ],
+        "body": "**Original author :** Magoni Bruno\n\nIt is important for metadata editor to know which mandatory fields must be filled in their formulary.\r\nFor now, a workaround is to add an asterisk at the end of each relation's label to mention such mandatory constraint.\r\n\r\nThis is not the right way and easySDI could be able to automaticall add such asterisk after each mandatory fields...\r\n\n\n**Fixed versions :** 4.3.2"
+    },
+    "comments": [
+        {
+            "body": "**Original author :** Blatti Yves\n\nGood point.\r\nI suggest using a CSS class (at filed-group level) for this to allow each easySDI admin to customize the look of the fields\/labels (asterisk, color, bold....)",
+            "created_at": "2015-06-24T15:07:55Z"
+        },
+        {
+            "body": "**Original author :** Portier Thomas\n\ninput.required {\r\n  background-image: url('data:image\/png;base64,iVBORw0KGgoAAAANSUhEUgAAABEAAAAQCAYAAADwMZRfAAAABmJL\u2026siOPByFBSlhBFbX08tpLzue03G2iaCZIufckTzP\/vDHgAlNkS+OU\/y8sAAAAASUVORK5CYII=');\r\n  background-position: 100% 0;\r\n  background-repeat: no-repeat;\r\n}",
+            "created_at": "2015-06-26T08:34:21Z"
+        },
+        {
+            "body": "**Original author :** Van Hoecke H\u00e9l\u00e8ne \n\nThe attribute \"required\" is already present on each field. \r\nApplying a css based on it should do the trick.\r\n\r\nA default template should be give with easySDI.",
+            "created_at": "2015-06-26T08:35:02Z"
+        },
+        {
+            "body": "**Original author :** Blatti Yves\n\n## The problem I see now...\r\n\r\n... is that *only the filed* (input, select,...) carries the \"required\" attributes.\r\nAnd afaik we cannot style parent, parent's siblings and cousins elements in CSS.\r\n\r\nA (simple) required field nesting looks like this:\r\n```\n\r\n+---div.attribute-group... (id:attribute-group...) (easysdi specific)\r\n    |\r\n    \\---div.control-group (bootstrap standard)\r\n        |\r\n        +---div.control-label\r\n        |   |\r\n        |   \\---label (no class)\r\n        |\r\n        \\---div.controls\r\n            |\r\n            \\---select.required or input.required etc...\r\n```\n \r\n\r\nBut may differ for special fields (stereotypes... with append for example):\r\n\r\n```\n\r\n+---div.attribute-group... (id:attribute-group...) (easysdi specific)\r\n    |\r\n    \\---div.control-group (bootstrap standard)\r\n        |\r\n        +---div.control-label\r\n        |   |\r\n        |   \\---label (no class)\r\n        |\r\n        \\---div.controls\r\n            |\r\n            \\---div.input-append.file-controls\r\n                |\r\n                \\input.required etc...\r\n```\n \r\n\r\n\u00a0 \r\n\r\n+*So we cannot style the label*+ (add an asterisk, make it bol or red... as we're use to see in forms)\r\n\r\n\r\n## Proposal: \r\n\r\nadd a custom class (\"labelrequired\") to the labels when we add the required attribute to the field.\r\nSee: https:\/\/docs.joomla.org\/Form_field#Common_attributes\r\n\r\nResult would be:\r\n```\n\r\n+---div.attribute-group... (id:attribute-group...) (easysdi specific)\r\n    |\r\n    \\---div.control-group (bootstrap standard)\r\n        |\r\n        +---div.control-label\r\n        |   |\r\n        |   \\---label.labelrequired <<<<<<< this\r\n        |\r\n        \\---div.controls\r\n            |\r\n            \\---select.required or input.required etc...\r\n```\n \r\n\r\n*With it we can style both label and\/or field*\r\n\r\nWhat do you guys think ?\r\n\r\n\r\nNote: The alternative is to add a class at the \"div.attribute-group\" level, but the would be more complex since this part may differ from stereotypes...\r\n",
+            "created_at": "2015-06-26T12:48:57Z"
+        },
+        {
+            "body": "**Original author :** Villemagne J\u00e9r\u00f4me\n\nAs far as I now, the metadata's form's generation use a Joomla way ; then I'm NOT for the alternative.\r\nUse the labelclass attribute seems to me to be the best way.\r\n\r\nQuestion: why use 'labelrequired' instead of simply 'required' ?\r\n\r\nRegarding Thomas' input, I'd like better attach the required mark to the label and not to the input...\r\n```\n\r\nlabel.labelrequired:after{\r\n    content: '*';\r\n}\r\n```\n",
+            "created_at": "2015-06-26T13:32:24Z"
+        },
+        {
+            "body": "**Original author :** Blatti Yves\n\nVillemagne J\u00e9r\u00f4me wrote:\r\n> I'd like better attach the required mark to the label and not to the input...\r\n\r\nMe too. (More \"standard\")\r\n\r\nI proposed \"labelrequired\" to ensure that there will be no collision with the \"required\" class for bootstrap, validation, etc.\r\nThis may be a little paranoid, but there is multiple features working with the required class and the required attribute. And I cannot ensure they all work with a \"fieldtag.requiredclass\" logic or attributes selectors on specific html tags.\r\n\r\n\r\n\r\n",
+            "created_at": "2015-06-29T06:40:14Z"
+        },
+        {
+            "body": "**Original author :** Villemagne J\u00e9r\u00f4me\n\n+1",
+            "created_at": "2015-06-29T06:42:42Z"
+        },
+        {
+            "body": "**Original author :** Van Hoecke H\u00e9l\u00e8ne \n\nSounds good to me. +1",
+            "created_at": "2015-06-29T06:52:27Z"
+        },
+        {
+            "body": "**Original author :** Blatti Yves\n\nAll good to me",
+            "created_at": "2015-11-03T18:45:46Z"
+        },
+        {
+            "body": "**Original author :** Blatti Yves\n\nThanks H\u00e9l\u00e8ne",
+            "created_at": "2015-11-03T18:46:04Z"
+        }
+    ]
+}

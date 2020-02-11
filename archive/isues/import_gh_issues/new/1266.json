@@ -1,0 +1,27 @@
+{
+    "issue": {
+        "closed": true,
+        "title": "Google layers doesn't work",
+        "created_at": "2016-02-18T10:13:57Z",
+        "labels": [
+            "Defect",
+            "Redmine status : Closed",
+            "Category : MAP"
+        ],
+        "body": "**Original author :** Portier Thomas\n\nAn OpenLayers 2.13.1 bug disable ability to show TERRAIN, HYBRID and ROADMAP google layers :\r\nhttps:\/\/github.com\/openlayers\/ol2\/issues\/1450#issuecomment-146207698\n\n**Fixed versions :** 4.4.0"
+    },
+    "comments": [
+        {
+            "body": "**Original author :** Blatti Yves\n\nCheck if possible to add here with other overrides: https:\/\/forge.easysdi.org\/projects\/easysdi\/repository\/entry\/branches\/4.4.x\/joomla\/easysdi\/com_easysdi_core\/src\/administrator\/libraries\/easysdi\/js\/OpenLayers\/override-openlayers.js",
+            "created_at": "2016-02-19T11:03:35Z"
+        },
+        {
+            "body": "**Original author :** Van Hoecke H\u00e9l\u00e8ne \n\nThanks Thomas to add the fix to easySDI.",
+            "created_at": "2016-02-19T11:03:58Z"
+        },
+        {
+            "body": "**Original author :** Portier Thomas\n\nOk this is done",
+            "created_at": "2016-03-15T14:51:58Z"
+        }
+    ]
+}

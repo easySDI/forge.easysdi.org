@@ -1,0 +1,19 @@
+{
+    "issue": {
+        "closed": false,
+        "title": "Remove \"fee without profile\"",
+        "created_at": "2017-01-03T13:27:15Z",
+        "labels": [
+            "Enhancement",
+            "Redmine status : Accepted",
+            "Category : SHOP"
+        ],
+        "body": "**Original author :** Blatti Yves\n\nPricing has been fully implemented in easySDI (#643), we can now describe the price of a product by:\r\n* free\r\n* paid (fee with a pricing profile)\r\n** by surface\r\n** by fixed base price\r\n** with min\/max\r\n** any combination of the above\r\n** +free for categories\r\n** +special rebates\r\n* paid (fee without a pricing profile)\r\n** this was the previous way of having a paid product, the user cannot know the price if the basket\r\n** the user must ask for an estimate if he want to ensure the price before ordering\r\n** providers must manage the estimate workflow (human or via webservice)\r\n\r\n## We propose to remove the \"fee without a pricing profile\" pricing method\r\nWhy ?\r\n\r\n* *No use*\r\n** At ASIT VD we were the last know users of this pricing method\r\n** Our providers have now moved to the \"pricing profile\" method for all the products\r\n* easySDI would *offer a finite\/known basket price for every order* if we remove the feature\r\n* *Large simplification* in code and apprehension of the application\r\n** No more estimate ! Every basket has a price\r\n** No more special cases in code for MCV and Web Services\r\n\r\n"
+    },
+    "comments": [
+        {
+            "body": "**Original author :** Van Hoecke H\u00e9l\u00e8ne \n\nAccepted by TC.",
+            "created_at": "2017-01-06T09:28:38Z"
+        }
+    ]
+}

@@ -1,0 +1,13 @@
+{
+    "issue": {
+        "closed": false,
+        "title": "Joomla installation process problem with SQL server",
+        "created_at": "2014-12-15T16:26:40Z",
+        "labels": [
+            "Defect",
+            "Redmine status : New"
+        ],
+        "body": "**Original author :** Van Hoecke H\u00e9l\u00e8ne \n\nEach time component's options are saved or each time component is reinstalled (updated), all component's options are parsed and backslash characters are escaped with a backslash(!). \r\nThis process adds in an exponential way some unwanted characters that can lead to reach database field's limit size or php memory limit size.\r\n"
+    },
+    "comments": []
+}

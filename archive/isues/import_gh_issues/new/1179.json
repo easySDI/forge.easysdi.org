@@ -1,0 +1,19 @@
+{
+    "issue": {
+        "closed": true,
+        "title": "order finished mail goes to the wrong user",
+        "created_at": "2015-11-10T14:41:45Z",
+        "labels": [
+            "Defect",
+            "Redmine status : Closed",
+            "Category : SHOP"
+        ],
+        "body": "**Original author :** Blatti Yves\n\norder finished mail goes to the wrong user\n\n**Fixed versions :** 4.3.2"
+    },
+    "comments": [
+        {
+            "body": "**Original author :** Blatti Yves\n\nrev. 9210",
+            "created_at": "2015-11-10T14:45:48Z"
+        }
+    ]
+}

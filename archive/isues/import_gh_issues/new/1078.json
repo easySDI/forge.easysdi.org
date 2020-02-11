@@ -1,0 +1,27 @@
+{
+    "issue": {
+        "closed": true,
+        "title": "Modules: last orders & pending requests",
+        "created_at": "2015-08-05T11:42:37Z",
+        "labels": [
+            "Enhancement",
+            "Redmine status : Closed",
+            "Category : SHOP"
+        ],
+        "body": "**Original author :** Blatti Yves\n\nWe developed front-end modules for our usage of SHOP:\r\n- One displaying the 5 last order\r\n- One displaying the 5 last pending requests\r\n\r\nThey also offer a link to complete lists (orders and requests)\r\n\r\nAre you interested in merging the in easySDI ?\r\n\r\nWork todo would be :\r\n- Change some strings (translation prefixes, reuse a maximum from SHOP)\r\n- Move the tables row rendering from Views to Layout in the SHOP component (\/components\/easysdi_shop\/layout) to reuse them\r\n- Update the build process (ANT)\r\n\r\nProducing the same for validation would be easy.\r\n\r\nPreview:\r\n!modules_lastorders_pendingrequests.png!\n\n**Fixed versions :** 4.4.0"
+    },
+    "comments": [
+        {
+            "body": "**Original author :** Blatti Yves\n\nNote: translation are partially done on screenshot\r\nJoomla 3.2 Layout : http:\/\/magazine.joomla.org\/international-stories-all\/articles-in-french-all\/les-ameliorations-de-jlayout-pour-joomla-3-2",
+            "created_at": "2015-08-05T11:43:49Z"
+        },
+        {
+            "body": "**Original author :** Van Hoecke H\u00e9l\u00e8ne \n\nTC OK.",
+            "created_at": "2015-08-28T08:34:30Z"
+        },
+        {
+            "body": "**Original author :** Blatti Yves\n\nrev 9343\r\nrev 9344\r\nrev 9354",
+            "created_at": "2015-12-10T16:54:06Z"
+        }
+    ]
+}

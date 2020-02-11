@@ -1,0 +1,19 @@
+{
+    "issue": {
+        "closed": true,
+        "title": "Lists order in metadata edition fails",
+        "created_at": "2012-07-06T09:13:23Z",
+        "labels": [
+            "Defect",
+            "Redmine status : Closed",
+            "Category : CATALOG"
+        ],
+        "body": "**Original author :** M\u00e9rour Xavier\n\nWhen you have an stereotype \"list\" for an attribute in metadata model, the order of the list is based on item's ID and not on the ordering value.\r\n\r\n_Very annoying if you want to make a list based on an alphabetic order._\r\n\r\nThe order should follow the \"ordering value\" definable in the backend for each list (actually, this ordering is currently unusable)\n\n**Fixed versions :** 4.0.0"
+    },
+    "comments": [
+        {
+            "body": "**Original author :** Magoni Bruno\n\nDone in V4",
+            "created_at": "2014-04-25T16:46:04Z"
+        }
+    ]
+}

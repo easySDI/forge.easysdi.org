@@ -1,0 +1,14 @@
+{
+    "issue": {
+        "closed": true,
+        "title": "Export for aggregated data not working correctly",
+        "created_at": "2012-02-05T07:30:43Z",
+        "labels": [
+            "Defect",
+            "Redmine status : Closed",
+            "Category : MONITOR"
+        ],
+        "body": "**Original author :** Larsen de Martino Jorgen\n\nWhen exporting aggregated data an hour to much is exported.\r\n\r\nFx. I have a SLA from 8:00 - 16:00 -  in all 8 hours.\r\nI choose this SLA and choose to see report for 14 days.\r\nI Export the data to CSV and I get 9 hours of results instead of 8 hours.\r\n\r\nIssue has been fixed by Thomas Bergstedt\r\nThis ticket is just to document the bug and the fix and to be able to refer to the bug when commiting the change to the export function\r\n\r\nAll the best\r\nJorgen de Martino\r\n\r\nHope to see you all soon\n\n**Fixed versions :** 4.0.0"
+    },
+    "comments": []
+}

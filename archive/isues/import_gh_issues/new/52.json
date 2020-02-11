@@ -1,0 +1,18 @@
+{
+    "issue": {
+        "closed": true,
+        "title": "add WFS-T capacities",
+        "created_at": "2009-02-26T15:57:34Z",
+        "labels": [
+            "Feature",
+            "Redmine status : Rejected"
+        ],
+        "body": "**Original author :** M\u00e9rour Xavier\n\nIn order to manage transactionnal WFS, a WFS-T connector should be added in the future to the PROXY :\r\n\r\n- to the servlet Java\r\n- to the Joomla component for administration needs\r\n\r\n"
+    },
+    "comments": [
+        {
+            "body": "**Original author :** Blatti Yves\n\nDuplicated by #441 (keeping #441 that has comments)",
+            "created_at": "2016-02-03T15:09:18Z"
+        }
+    ]
+}

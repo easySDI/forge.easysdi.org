@@ -1,0 +1,19 @@
+{
+    "issue": {
+        "closed": true,
+        "title": "Relation based on resource type has changed behaviour",
+        "created_at": "2014-11-14T16:25:37Z",
+        "labels": [
+            "Defect",
+            "Redmine status : Rejected",
+            "Category : CATALOG"
+        ],
+        "body": "**Original author :** Portier Thomas\n\nA relation based on a resource type (Contact) with a 1..1 cardinality is no more displayed by default. Now there is a \"+\" to add a new contact.\r\nIf I don't add a contact, I can validate my metadata. I should not be able to do it. Metadata contact is a mandatory field."
+    },
+    "comments": [
+        {
+            "body": "**Original author :** Portier Thomas\n\nfixed in 4.2.0",
+            "created_at": "2014-12-12T13:02:09Z"
+        }
+    ]
+}

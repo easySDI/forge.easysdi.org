@@ -1,0 +1,13 @@
+{
+    "issue": {
+        "closed": false,
+        "title": "New stereotype : Download - online resource",
+        "created_at": "2014-08-15T11:12:11Z",
+        "labels": [
+            "Feature",
+            "Redmine status : New"
+        ],
+        "body": "**Original author :** Blatti Yves\n\nNew stereotype proposal.\r\nISO 19115 has fields for downloadable data in distributionInfo .. transferOptions .. CI_OnlineResource etc...\r\nIt would be great if easySDI was able to fill in this fields with database informations of SHOP when a product download is available ! This could be achieved by a stereotype (as it could be places anywhere in MD tree).\r\n\r\nSame question as in #800 applies: is it stored at edit time, or injected by java proxy ?"
+    },
+    "comments": []
+}

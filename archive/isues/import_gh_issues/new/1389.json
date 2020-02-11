@@ -1,0 +1,14 @@
+{
+    "issue": {
+        "closed": false,
+        "title": "Response time in BE can be wrong",
+        "created_at": "2016-12-13T09:17:28Z",
+        "labels": [
+            "Defect",
+            "Redmine status : Affected",
+            "Category : SHOP"
+        ],
+        "body": "**Original author :** Blatti Yves\n\nResponse time in BE can be wrong\r\n\r\n!errorvalue.png!"
+    },
+    "comments": []
+}

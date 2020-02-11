@@ -1,0 +1,14 @@
+{
+    "issue": {
+        "closed": true,
+        "title": "Attribution causes javascript error on preview",
+        "created_at": "2015-03-30T07:51:46Z",
+        "labels": [
+            "Defect",
+            "Redmine status : Closed",
+            "Category : MAP"
+        ],
+        "body": "**Original author :** Portier Thomas\n\n\n\n**Fixed versions :** 4.2.8"
+    },
+    "comments": []
+}

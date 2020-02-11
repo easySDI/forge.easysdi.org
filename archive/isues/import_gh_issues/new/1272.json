@@ -1,0 +1,23 @@
+{
+    "issue": {
+        "closed": true,
+        "title": "Foreign key error when country not set in organisation adress",
+        "created_at": "2016-02-23T11:01:38Z",
+        "labels": [
+            "Defect",
+            "Redmine status : Closed",
+            "Category : CONTACT"
+        ],
+        "body": "**Original author :** Portier Thomas\n\nWhen saving an easysdi user without setting the country in adress, there is a foreign key error : \r\nCannot add or update a child row: a foreign key constraint fails (`bdt32`.`bdt32_sdi_address`, CONSTRAINT `bdt32_sdi_address_fk5` FOREIGN KEY (`country_id`) REFERENCES `bdt32_sdi_sys_country` (`id`)) SQL=UPDATE `bdt32_sdi_address` SET `guid`='2c7a5746-47b2-8234-69c2-d1c60564de91',`alias`='_3',`created_by`='633',`created`='2016-02-23 10:52:23',`modified_by`='633',`modified`='2016-02-23 10:52:23',`ordering`=NULL,`state`='1',`checked_out`='0',`checked_out_time`='2016-02-23 10:52:23',`user_id`='2',`organism_id`=NULL,`addresstype_id`='1',`civility`='',`firstname`='',`lastname`='',`function`='',`address`='',`addresscomplement`='',`postalcode`='',`postalbox`='',`locality`='',`country_id`='0',`phone`='',`mobile`='',`fax`='',`email`='',`sameascontact`='1' WHERE `id`='16'\r\n\r\n\r\ncountry_id should be set to NULL and not to '0'. Are you ok with this Yves?\n\n**Fixed versions :** 4.4.0"
+    },
+    "comments": [
+        {
+            "body": "**Original author :** Blatti Yves\n\nPerfectly right.\r\nI'll correct it right now",
+            "created_at": "2016-02-23T12:44:41Z"
+        },
+        {
+            "body": "**Original author :** Blatti Yves\n\nFixed in rev. 9493",
+            "created_at": "2016-02-23T12:47:21Z"
+        }
+    ]
+}

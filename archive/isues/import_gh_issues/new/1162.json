@@ -1,0 +1,19 @@
+{
+    "issue": {
+        "closed": true,
+        "title": "Basket message does not differ is user logged or not.",
+        "created_at": "2015-10-09T12:50:06Z",
+        "labels": [
+            "Defect",
+            "Redmine status : Closed",
+            "Category : SHOP"
+        ],
+        "body": "**Original author :** Blatti Yves\n\nBasket message does not differ is user logged or not.\r\n\r\nIn #752 we have defined that the bottom message should change if the user is logged or not.\r\nIt is currently the same message in both cases.\n\n**Fixed versions :** 4.3.2"
+    },
+    "comments": [
+        {
+            "body": "**Original author :** Blatti Yves\n\nrev. 9192",
+            "created_at": "2015-11-06T18:04:25Z"
+        }
+    ]
+}

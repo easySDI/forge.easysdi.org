@@ -1,0 +1,14 @@
+{
+    "issue": {
+        "closed": true,
+        "title": "Access to online libraries with http protocol",
+        "created_at": "2015-03-13T12:31:00Z",
+        "labels": [
+            "Defect",
+            "Redmine status : Closed",
+            "Category : CORE"
+        ],
+        "body": "**Original author :** Portier Thomas\n\nIn a website in https, some libraries are not loaded because they are called through http protocol. It should have been called in https.\n\n**Fixed versions :** 4.2.8"
+    },
+    "comments": []
+}

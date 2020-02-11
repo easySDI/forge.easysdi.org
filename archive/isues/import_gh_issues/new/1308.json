@@ -1,0 +1,19 @@
+{
+    "issue": {
+        "closed": true,
+        "title": "Unable to style metadata sheet PDF output",
+        "created_at": "2016-04-08T08:05:01Z",
+        "labels": [
+            "Defect",
+            "Redmine status : Closed",
+            "Category : CATALOG"
+        ],
+        "body": "**Original author :** Blatti Yves\n\nUnable to style metadata sheet PDF output with CSS:\r\n* The template CSS is not used by mpdf since only the xml2html is passes to pdf processor.\r\n\r\nI propose to add a custom CSS field in catalog config (like in dashboard), this way we could:\r\n* Type in custom CSS, or\r\n* link an existing CSS file with an import : @ @import \"http:\/\/localhost\/templates\/mytemplate\/main.css\";@\n\n**Fixed versions :** 4.4.1"
+    },
+    "comments": [
+        {
+            "body": "**Original author :** Blatti Yves\n\nrev. -9687- 9832",
+            "created_at": "2016-04-08T09:23:59Z"
+        }
+    ]
+}

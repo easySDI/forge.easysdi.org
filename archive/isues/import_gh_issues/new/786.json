@@ -1,0 +1,18 @@
+{
+    "issue": {
+        "closed": true,
+        "title": "4.2.0 Beta 4 Package contains install folders and size doubled",
+        "created_at": "2014-07-29T14:18:47Z",
+        "labels": [
+            "Defect",
+            "Redmine status : Rejected"
+        ],
+        "body": "**Original author :** Blatti Yves\n\nProblem with the 4.2.0 Beta 4 Joomla package:\r\n\r\nIn the @easysdi@ folder (that normally contains components, modules and plugins install ZIPs) there's also installation folders for each item (unzipped).\r\nThe package has doubled size!\r\n\r\n```\n\r\ncontent of : easysdi-4.2.0-beta-4.zip\/easysdi\r\n\r\ncom_easysdi_catalog.zip\r\ncom_easysdi_contact.zip\r\ncom_easysdi_core.zip\r\ncom_easysdi_dashboard.zip\r\ncom_easysdi_map.zip\r\ncom_easysdi_monitor.zip\r\ncom_easysdi_service.zip\r\ncom_easysdi_shop.zip\r\ninstall_53d7a2f1005fa (folder)\r\ninstall_53d7a3e8b9653 (folder)\r\ninstall_53d7a3f0cd444 (folder)\r\ninstall_53d7a3f31e72c (folder)\r\ninstall_53d7a3f8058e2 (folder)\r\ninstall_53d7a3f8a9ef2 (folder)\r\ninstall_53d7a3fb5495c (folder)\r\ninstall_53d7a3fd9b501 (folder)\r\ninstall_53d7a40056c14 (folder)\r\ninstall_53d7a40559464 (folder)\r\ninstall_53d7a407ac419 (folder)\r\ninstall_53d7a40818d9f (folder)\r\ninstall_53d7a408c7e7b (folder)\r\ninstall_53d7a40a7dd8a (folder)\r\ninstall_53d7a40ad4dba (folder)\r\ninstall_53d7a40ae79e5 (folder)\r\ninstall_53d7a40b1be40 (folder)\r\ninstall_53d7a40b5534c (folder)\r\ninstall_53d7a40b8b432 (folder)\r\ninstall_53d7a40bd8336 (folder)\r\ninstall_53d7a40c7bc00 (folder)\r\ninstall_53d7a40ceffa1 (folder)\r\ninstall_53d7a40d451c2 (folder)\r\ninstall_53d7a40d7935b (folder)\r\ninstall_53d7a40dc1ebc (folder)\r\ninstall_53d7a40ddc0c8 (folder)\r\nmod_easysdi_adminbutton.zip\r\nmod_easysdi_admininfo.zip\r\nmod_easysdi_basket.zip\r\nplg_easysdi_contact.zip\r\nplg_easysdi_monitor.zip\r\nplg_easysdi_service.zip\r\nplg_getdiffudownloadables.zip\r\nplg_getdiffudownloads.zip\r\nplg_getdiffuextractables.zip\r\nplg_getdiffuextractions.zip\r\nplg_getordersaresptime.zip\r\nplg_getordersbutton.zip\r\nplg_getorganisms.zip\r\nplg_getresources.zip\r\nplg_getusers.zip\r\nplg_getusersbutton.zip\r\ntpl_easysdiadminpositions.zip\r\n```\n"
+    },
+    "comments": [
+        {
+            "body": "**Original author :** Magoni Bruno\n\nHi Yves,\r\n\r\nSorry about that problem, but such package should normally not be uploaded to the forge.\r\nThis package was not built with ant and was manually done for some tests, so such problem won't appear in future classical builts.\r\n\r\nThis issue is rejected.",
+            "created_at": "2014-07-30T07:28:59Z"
+        }
+    ]
+}

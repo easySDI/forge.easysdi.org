@@ -1,0 +1,18 @@
+{
+    "issue": {
+        "closed": true,
+        "title": "war files of 4.0.2 have uppercase on first letter",
+        "created_at": "2014-04-30T15:18:22Z",
+        "labels": [
+            "Defect",
+            "Redmine status : Closed"
+        ],
+        "body": "**Original author :** Blatti Yves\n\nSame as #675 for 4.0.1\r\nWar files of 4.0.2 ( in https:\/\/forge.easysdi.org\/projects\/easysdi\/files) have first letter in uppercase.\r\nIf you download it and deploy it \"as is\" in tomcat, the context will be http:\/\/myserver:8080\/Proxy instead of http:\/\/myserver:8080\/proxy for example.\r\n\r\n\n\n**Fixed versions :** 4.1.0"
+    },
+    "comments": [
+        {
+            "body": "**Original author :** Magoni Bruno\n\nWar files are temporarily renamed with lower case until fixing build process",
+            "created_at": "2014-05-01T06:18:37Z"
+        }
+    ]
+}

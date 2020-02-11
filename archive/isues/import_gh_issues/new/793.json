@@ -1,0 +1,14 @@
+{
+    "issue": {
+        "closed": true,
+        "title": "Unable to use a virtualservice WMS as perimeter in SHOP",
+        "created_at": "2014-08-08T11:38:52Z",
+        "labels": [
+            "Defect",
+            "Redmine status : Closed",
+            "Category : SHOP"
+        ],
+        "body": "**Original author :** Blatti Yves\n\nUnable to use a virtualservice WMS as perimeter in SHOP.\r\nServices URL building for perimeters do not use \"url\" or \"reflected_url\" in components\\com_easysdi_shop\\libraries\\easysdi\\sdiPerimeter.php\n\n**Fixed versions :** 4.2.0"
+    },
+    "comments": []
+}

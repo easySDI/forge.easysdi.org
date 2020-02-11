@@ -1,0 +1,55 @@
+{
+    "issue": {
+        "closed": true,
+        "title": "Log size in question \/ refactor log logic",
+        "created_at": "2010-10-05T07:46:03Z",
+        "labels": [
+            "Feature",
+            "Redmine status : Closed",
+            "Category : PROXY"
+        ],
+        "body": "**Original author :** M\u00e9rour Xavier\n\nAll requests passing through the PROXY are logged in a text file. It contains many information like user, requestTime, RequestLenght, Pre- and PostTreatment, remote address, querystring,...\r\n\r\nThese are usefull information to make statistics and follow services use.\r\n\r\nBUT it needs a lot of storage ressources : we had for example a 300 Mo log file some days ago.\r\n\r\nWe should consider differents options to redure\/optimize log size, like :\r\n\r\n- reduce information stored in logs\r\n- have a less verbose logs structure\r\n- compress\/aggregate logs\r\n- do not logs some user for instance (admin(monitor users...)\r\n- log only certain type of logEntry (INFO, ERROR, DEBUG, SYSTEM)\r\n\r\nto discuss...\r\n\r\n\r\n\r\n\n\n**Fixed versions :** 3.0.0"
+    },
+    "comments": [
+        {
+            "body": "**Original author :** M\u00e9rour Xavier\n\nWe could also imagine having an option for each proxy instance with log=tue or log=false.\r\nIf set to \"false\" by the administrator, no log are computed, saving data storage and speeding up a bit the PROXY.",
+            "created_at": "2010-11-05T10:39:52Z"
+        },
+        {
+            "body": "**Original author :** M\u00e9rour Xavier\n\nThe proposal is to add log verbosity options in PROXY backend with the following options :\r\n\r\n- silent logging -> no log at all\r\n- minimal logging -> only <LogRequest> nodes are stored (\"see log structure description\":http:\/\/forge.easysdi.org\/wiki\/proxy\/Logs#3)\r\n- informative logging -> only SYSTEM type of logEntries are stored\r\n- debug logging -> all type of logs are stored (ERROR, SYTEM, INFO, DEBUG)\r\n\r\nThese options are definable \"per connector\" (WMS, WMTS, WFS,...).\r\n\r\nBruno, can you add\/correct any relevant information about this issue ?",
+            "created_at": "2011-03-25T17:41:32Z"
+        },
+        {
+            "body": "**Original author :** M\u00e9rour Xavier\n\nI also found some redundant information : \r\n\"RemoteResponseToRequestUrl\" type in SYSTEM log is the addition of \"RemoteRequestUrl\" and \"RemoteRequest\"\r\nIs there any good reason to have it ?\r\n\r\nOtherwise, I am not sure to see the difference between \"DEBUG\" and \"INFO\" logEntries (there is maybe a good reason...). We may \"merge\" them in a single logEntry type, no ? ",
+            "created_at": "2011-03-25T17:41:46Z"
+        },
+        {
+            "body": "**Original author :** M\u00e9rour Xavier\n\nFinally, log verbosity option will be definable per config (and not per connector).",
+            "created_at": "2011-04-15T14:22:05Z"
+        },
+        {
+            "body": "**Original author :** M\u00e9rour Xavier\n\nCan be closed as it as been resolved with ticket #451 (PROXY 2.2.0)\r\n\r\nThanks.",
+            "created_at": "2011-08-16T11:08:12Z"
+        },
+        {
+            "body": "**Original author :** Magoni Bruno\n\nHello,\r\nI preconised not to close this task for now as adding log4j support is a transitory step before removing definitively old EasySDI proprietary logs.\r\nI prefer keeping a trace of this before closing current ticket.\r\n\r\nThanks for your feedback.\r\n",
+            "created_at": "2011-08-18T07:29:50Z"
+        },
+        {
+            "body": "**Original author :** M\u00e9rour Xavier\n\nFine with me !",
+            "created_at": "2011-08-18T07:35:00Z"
+        },
+        {
+            "body": "**Original author :** Magoni Bruno\n\nI propose that to close this feature with PROXY migration on Joomla 2.5.\r\nIf so, decision not tu support anymore EasySDI logs with PROXY V3.0should be validated by Steering Commitee.",
+            "created_at": "2012-03-30T13:53:31Z"
+        },
+        {
+            "body": "**Original author :** Magoni Bruno\n\n+1",
+            "created_at": "2012-03-30T13:54:43Z"
+        },
+        {
+            "body": "**Original author :** M\u00e9rour Xavier\n\n+1",
+            "created_at": "2012-03-30T13:56:36Z"
+        }
+    ]
+}

@@ -1,0 +1,19 @@
+{
+    "issue": {
+        "closed": true,
+        "title": "Access scope id has changed between v 4.0 and v 4.2",
+        "created_at": "2015-04-02T13:03:33Z",
+        "labels": [
+            "Defect",
+            "Redmine status : Closed",
+            "Category : SHOP"
+        ],
+        "body": "**Original author :** Portier Thomas\n\nAccess scope id has changed between v 4.0 and v 4.2\r\n\r\nin 4.0 : \r\n1 - public\r\n2- organism\r\n3- user\r\n\r\nin 4.2 : \r\n1- public\r\n2- category organism\r\n3- organism\r\n4- user\r\n\r\nTo make it work after an upgrade we have to execute this query :\r\n\r\nupdate jos_sdi_diffusion set accessscope_id = 4 where accessscope_id = 3;\r\nupdate jos_sdi_diffusion set accessscope_id = 3 where accessscope_id = 2;\r\n\r\nTo include in sql files?\n\n**Fixed versions :** 4.2.8"
+    },
+    "comments": [
+        {
+            "body": "**Original author :** Portier Thomas\n\nYou have also to update the #___sdi_resource table : \r\n\r\nupdate jos_sdi_resource set accessscope_id = 4 where accessscope_id = 3;\r\nupdate jos_sdi_resource set accessscope_id = 3 where accessscope_id = 2;",
+            "created_at": "2015-05-05T07:23:20Z"
+        }
+    ]
+}

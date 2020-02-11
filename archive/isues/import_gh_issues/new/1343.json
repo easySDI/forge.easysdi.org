@@ -1,0 +1,19 @@
+{
+    "issue": {
+        "closed": true,
+        "title": "easysdi_loader.css paths not updated after move",
+        "created_at": "2016-06-15T13:13:11Z",
+        "labels": [
+            "Defect",
+            "Redmine status : Rejected",
+            "Category : CORE"
+        ],
+        "body": "**Original author :** Blatti Yves\n\neasysdi_loader.css paths not updated after move in #1218\n\n**Fixed versions :** 4.4.1"
+    },
+    "comments": [
+        {
+            "body": "**Original author :** Blatti Yves\n\nFalse alarm",
+            "created_at": "2016-06-15T13:19:53Z"
+        }
+    ]
+}

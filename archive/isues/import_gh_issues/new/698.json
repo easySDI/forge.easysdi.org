@@ -1,0 +1,35 @@
+{
+    "issue": {
+        "closed": true,
+        "title": "Change \"predefined\" label in resource type BE",
+        "created_at": "2014-04-28T12:15:35Z",
+        "labels": [
+            "Enhancement",
+            "Redmine status : Closed",
+            "Category : CATALOG"
+        ],
+        "body": "**Original author :** M\u00e9rour Xavier\n\nTo follow up with this discussion here (https:\/\/forge.easysdi.org\/boards\/15\/topics\/531), I suggest to change the label in the resource type page in back-end, currently named \"predefined\". \r\n\r\nProposals :\r\n\r\n* \"read-only resource\"\r\nor\r\n* \"non-editable resource\"\r\n\r\nI would also suggest to add a tooltip on the label with the following text : \r\n\"A read-only resource cannot be created or edited in easySDI but is available to be linked or searched like any other resource in easySDI. The resource content (main attributes, metadata) should then be generated from a tierce database)\"\r\n\r\n\r\nPlease share your remarks on this issue.\n\n**Fixed versions :** 4.3.2"
+    },
+    "comments": [
+        {
+            "body": "**Original author :** Magoni Bruno\n\nTechnical Committee agree with \"Read-only metadata\" and tooltip...\r\n",
+            "created_at": "2014-10-03T09:45:45Z"
+        },
+        {
+            "body": "**Original author :** Magoni Bruno\n\n+1",
+            "created_at": "2014-10-07T10:29:05Z"
+        },
+        {
+            "body": "**Original author :** M\u00e9rour Xavier\n\n+1",
+            "created_at": "2014-10-07T10:29:21Z"
+        },
+        {
+            "body": "**Original author :** Plainecassagne Laurent\n\n+1",
+            "created_at": "2014-10-07T10:29:32Z"
+        },
+        {
+            "body": "**Original author :** Teixeira J\u00e9r\u00f4me\n\n+ 1",
+            "created_at": "2014-10-07T10:29:34Z"
+        }
+    ]
+}

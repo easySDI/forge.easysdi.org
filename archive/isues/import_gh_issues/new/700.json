@@ -1,0 +1,43 @@
+{
+    "issue": {
+        "closed": true,
+        "title": "\"Eligible to order to\" - what is it exactly ?",
+        "created_at": "2014-04-28T13:59:45Z",
+        "labels": [
+            "Defect",
+            "Redmine status : Closed",
+            "Category : CONTACT"
+        ],
+        "body": "**Original author :** M\u00e9rour Xavier\n\nWhen defining potential roles in backend, there is one called \"Eligible to order to\" (\"Peut commander pour\").\r\nWhere is it used ?\r\n\r\n@J\u00e9r\u00f4me\r\nDo you use it \/ plan to use it ?\r\n\r\n\r\n----\r\n\r\nI guess it's a bad refactory of the feature from easySDI v.2 --> the role was ported by root user just to let its \"organism name\" appear in the list of tierce in the basket.\r\n\r\nAs we have a new feature coming this year that will cover this need (and more), see #644, I would suggest to remove this role if not used by anyone. It is more confusing than anything else...\r\n\r\n\r\nPlease share your mind :-)\r\n\r\n\n\n**Fixed versions :** 4.2.0"
+    },
+    "comments": [
+        {
+            "body": "**Original author :** Magoni Bruno\n\nHi,\r\n\r\nDon't forget to add someone at issue's watcher if you want to ask him specific question.\r\nAccount's notification parameter is not necessarily set \"For any event of all projects\" ;-)\r\n",
+            "created_at": "2014-05-01T06:27:39Z"
+        },
+        {
+            "body": "**Original author :** M\u00e9rour Xavier\n\nHello J\u00e9r\u00f4me,\r\n\r\nConcercing this feature in V4, do you use it \/ plan to use it ?\r\n\r\nThanks !",
+            "created_at": "2014-05-05T06:24:33Z"
+        },
+        {
+            "body": "**Original author :** M\u00e9rour Xavier\n\nJ\u00e9r\u00f4me, can you please give me some inputs on this feature ?\r\nThanks ;-)",
+            "created_at": "2014-05-07T12:36:22Z"
+        },
+        {
+            "body": "**Original author :** Teixeira J\u00e9r\u00f4me\n\n Indeed Xavier, it is a balance that earlier we validated at functional specifications. \r\nI did not ask for this feature. We do not have a partner using this feature. We can totally remove this role and properties in EasySDI \r\n@+ Xav",
+            "created_at": "2014-05-21T14:57:20Z"
+        },
+        {
+            "body": "**Original author :** M\u00e9rour Xavier\n\nThanks J\u00e9r\u00f4me for your answer.\r\n\r\n-------------------------\r\n\r\nAs stated by J\u00e9r\u00f4me, they do not use it. Neither us.\r\n\r\nI suggest to remove this role as it is more confusing than anything else.\r\n\r\nTo do :\r\n- check where this role is used in easySDI (should be in SHOP) ?\r\n- remove the code\r\n",
+            "created_at": "2014-05-21T15:02:40Z"
+        },
+        {
+            "body": "**Original author :** Magoni Bruno\n\nFeature to clean...",
+            "created_at": "2014-05-23T08:39:09Z"
+        },
+        {
+            "body": "**Original author :** Teixeira J\u00e9r\u00f4me\n\nHello Bruno,\r\nWe do not use the function, we can delete her",
+            "created_at": "2014-12-15T08:34:44Z"
+        }
+    ]
+}

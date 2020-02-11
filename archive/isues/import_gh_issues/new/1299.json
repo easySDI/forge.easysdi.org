@@ -1,0 +1,14 @@
+{
+    "issue": {
+        "closed": true,
+        "title": "SQL statements optimization",
+        "created_at": "2016-03-25T07:45:10Z",
+        "labels": [
+            "Defect",
+            "Redmine status : Closed",
+            "Category : SHOP"
+        ],
+        "body": "**Original author :** Van Hoecke H\u00e9l\u00e8ne \n\nSome SQL statements are not optimized :\r\n\r\n- List view of orders in BE : all fields are returned, filter them could improved performance.\r\n- ...\n\n**Fixed versions :** 4.4.1"
+    },
+    "comments": []
+}

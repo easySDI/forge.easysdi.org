@@ -1,0 +1,19 @@
+{
+    "issue": {
+        "closed": true,
+        "title": "SiteMap error",
+        "created_at": "2017-01-16T14:22:08Z",
+        "labels": [
+            "Defect",
+            "Redmine status : Closed",
+            "Category : CATALOG"
+        ],
+        "body": "**Original author :** Blatti Yves\n\nIf a metadata has never been updated, the lastmod field is considered invalid : 0000-00-00.\r\nUse create date instead where never modified.\r\n\r\n```\n\r\nGoogle:\r\nErreurs Date non valideTag : lastmod Valeur : 0000-00-00\r\n```\n\n\n**Fixed versions :** 4.4.4"
+    },
+    "comments": [
+        {
+            "body": "**Original author :** Blatti Yves\n\nrev. 10068",
+            "created_at": "2017-01-16T14:23:31Z"
+        }
+    ]
+}

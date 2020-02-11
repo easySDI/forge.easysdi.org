@@ -1,0 +1,27 @@
+{
+    "issue": {
+        "closed": true,
+        "title": "SQl Error on new Catalog profil",
+        "created_at": "2014-04-02T13:47:54Z",
+        "labels": [
+            "Defect",
+            "Redmine status : Rejected",
+            "Category : CATALOG"
+        ],
+        "body": "**Original author :** BRUNET Cl\u00e9ment\n\nHi, \r\n\r\nI try to create a new profile or new class in the catalog and I've got this error message : \r\n\r\n1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 3 SQL=SELECT value FROM ids_sdi_language WHERE id=\r\n\r\nDid I forgot to configure something before  ?\r\n\r\nThanks."
+    },
+    "comments": [
+        {
+            "body": "**Original author :** Magoni Bruno\n\nHi Cl\u00e9ment,\r\n\r\nSeems that no language for metadata is specified.\r\nIn CATALOG options, did you save the configuration with a per default language (i.e. French) ?\r\nIt's important to volontary save the configuration and not just display it, as the default values that fill this formulary are not saved into the database during easySDI deployment... (such feature has been already define in issue #661)\r\n\r\nPS: please do not assign new ticket specifically to someone if you don't have got any contractual terms with easySDI provider; easySDI Community will answer to your post best effort :-)\r\n\r\nThanks a lot,\r\nBruno",
+            "created_at": "2014-04-02T14:24:20Z"
+        },
+        {
+            "body": "**Original author :** BRUNET Cl\u00e9ment\n\nIndeed, the default language configuration was missing. Thanks.\r\n\r\nI'll use the forum for my next questions; sorry.\r\n\r\nThanks to you.\r\nCl\u00e9ment.",
+            "created_at": "2014-04-02T15:38:04Z"
+        },
+        {
+            "body": "**Original author :** Magoni Bruno\n\nNo problem...and you were right posting such issue ;-)\r\nDon't hesitate posting new issue if you encounter other incident or want to propose new feature.\r\n\r\nForums are still here for discussion about ideas and considerations; I hope that difference between issue and forums entries are always clear for everyone :-)\r\n\r\nAs I can see, it's very important to save default configuration values during deployment (issue #661) as it is disturbing for easySDI Administrator!\r\n\r\nBest Wishes,\r\nBruno\r\n",
+            "created_at": "2014-04-02T15:48:01Z"
+        }
+    ]
+}

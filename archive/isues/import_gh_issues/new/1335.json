@@ -1,0 +1,14 @@
+{
+    "issue": {
+        "closed": true,
+        "title": "CSW search fields in catalog aren't working",
+        "created_at": "2016-06-10T09:14:43Z",
+        "labels": [
+            "Defect",
+            "Redmine status : Closed",
+            "Category : CATALOG"
+        ],
+        "body": "**Original author :** Van Hoecke H\u00e9l\u00e8ne \n\nPush in 4.4.1 the fix originally made for the 4.3.x and kept in this branch.\r\n\r\n```\n\r\nLes crit\u00e8res de recherche de type CSW sur des champs date ne fonctionnent pas car ils utilisent le \"name\" du crit\u00e8re dans la requ\u00eate CSW \u00e0 la place du \"CSW search field\" (par langue) d\u00e9fini par l'utilisateur.\r\n```\n\n\n**Fixed versions :** 4.4.1"
+    },
+    "comments": []
+}

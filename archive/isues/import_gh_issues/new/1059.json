@@ -1,0 +1,14 @@
+{
+    "issue": {
+        "closed": true,
+        "title": "Field's wrong name in a sqlsrv SHOP table",
+        "created_at": "2015-07-09T16:55:41Z",
+        "labels": [
+            "Defect",
+            "Redmine status : Closed",
+            "Category : SHOP"
+        ],
+        "body": "**Original author :** Van Hoecke H\u00e9l\u00e8ne \n\nThe field named \"validate\" in #__sdi_order table should be named \"validated\". \r\nError only in sqlsrv 4.3.0 installer.\n\n**Fixed versions :** 4.3.2"
+    },
+    "comments": []
+}

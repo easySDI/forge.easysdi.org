@@ -1,0 +1,23 @@
+{
+    "issue": {
+        "closed": true,
+        "title": "Platform fee calculation fail",
+        "created_at": "2015-08-28T15:18:19Z",
+        "labels": [
+            "Defect",
+            "Redmine status : Closed",
+            "Category : SHOP"
+        ],
+        "body": "**Original author :** M\u00e9rour Xavier\n\nPlatform fee calculation fails, either with overall platform fee or per category platform fee.\r\n\r\nThis ticket should be done after #1098\n\n**Fixed versions :** 4.3.2"
+    },
+    "comments": [
+        {
+            "body": "**Original author :** M\u00e9rour Xavier\n\nAnother defect is still there :\r\n\r\nIn the basket, when choosing a third party, the platfrom fee is calculated based on the its account (organism category). It is FALSE, the platform fee is always based on the client's category.\r\n(this was already discussed with J\u00e9r\u00f4me V.)\r\n\r\n",
+            "created_at": "2015-11-12T09:22:37Z"
+        },
+        {
+            "body": "**Original author :** Blatti Yves\n\nI tested most of the cases, seem to work like it should !\r\nThank H\u00e9l\u00e8ne !",
+            "created_at": "2015-11-18T08:54:47Z"
+        }
+    ]
+}

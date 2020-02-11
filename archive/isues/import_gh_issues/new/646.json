@@ -1,0 +1,51 @@
+{
+    "issue": {
+        "closed": true,
+        "title": "add proxy feature to dowload via remote URL",
+        "created_at": "2014-03-14T16:08:17Z",
+        "labels": [
+            "Feature",
+            "Redmine status : Closed",
+            "Category : SHOP"
+        ],
+        "body": "**Original author :** M\u00e9rour Xavier\n\nthe download feature in \"diffusion\" has three modes :\r\n\r\n- \"upload\" (the file is uploaded by the supplier on the server)\r\n- \"URL\" (the file remain distant on a remote URL... most of the time, a server of the supplier)\r\n- \"zoning\" (the file is uploading via a MAP which  offers n URL via a WFS, each URL corresponds to another file for another area).\r\n\r\nProblem : with both URL and Zoning, the remote URL is visible. It is OK when the data has a public access scope. But if access scope is \"private\", the URLs remains accessibles for any one who knows the URL.\r\n\r\nProposition : add a proxy feature to hide remote URLs and secure them (ask for login\/password)\n\n**Fixed versions :** 4.3.0"
+    },
+    "comments": [
+        {
+            "body": "**Original author :** M\u00e9rour Xavier\n\nThis proposition can be relatively quickly added to the mode \"URL\" by adding a PHP proxy with URL rewriting.\r\n\r\nThis is more tricky with the third mode \"zoning\" and need some more thoughts.\r\n\r\nI suggest to add for no the proxy feature for the mode \"URL\".\r\n\r\n@Bruno, could you change the name of the ticket (I cannot) with \"add proxy feature to dowload via remote URL\" please ?",
+            "created_at": "2014-03-17T13:07:21Z"
+        },
+        {
+            "body": "**Original author :** M\u00e9rour Xavier\n\nThe feature \"add proxy for mode zoning\" will be described in another issue.",
+            "created_at": "2014-03-26T14:31:33Z"
+        },
+        {
+            "body": "**Original author :** M\u00e9rour Xavier\n\nTo the PSC.\r\n\r\nThe feature is ready to be coded in EasySDI : please vote !",
+            "created_at": "2014-05-23T08:52:31Z"
+        },
+        {
+            "body": "**Original author :** M\u00e9rour Xavier\n\nTo the PSC.\r\n\r\nThe feature is ready to be coded in EasySDI : please vote !",
+            "created_at": "2014-05-23T08:54:36Z"
+        },
+        {
+            "body": "**Original author :** M\u00e9rour Xavier\n\n+1 for me",
+            "created_at": "2014-05-23T08:55:39Z"
+        },
+        {
+            "body": "**Original author :** Magoni Bruno\n\n+1",
+            "created_at": "2014-05-23T10:17:44Z"
+        },
+        {
+            "body": "**Original author :** Teixeira J\u00e9r\u00f4me\n\n+ 1 pour le 17...",
+            "created_at": "2014-05-23T13:31:43Z"
+        },
+        {
+            "body": "**Original author :** Plainecassagne Laurent\n\n+1",
+            "created_at": "2014-05-26T07:35:21Z"
+        },
+        {
+            "body": "**Original author :** Magoni Bruno\n\nSuch functionality must complete current easySDI download proxy...\nProcess can see under attachment:download_proxy.png\n\nManaged endpoint protocols are: http, https, ftp, sftp\nWhen selecting URL storage, optional login information of the endpoint can be captured and a test button allows user to test connection to the resource\n\nIncluding Joomla tooltip over all labels!\n",
+            "created_at": "2014-07-01T16:18:15Z"
+        }
+    ]
+}

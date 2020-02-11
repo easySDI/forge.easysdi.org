@@ -1,0 +1,14 @@
+{
+    "issue": {
+        "closed": true,
+        "title": "Updating third-party libraries",
+        "created_at": "2018-11-20T15:42:02Z",
+        "labels": [
+            "Enhancement",
+            "Redmine status : Closed",
+            "Category : EXTRACT"
+        ],
+        "body": "**Original author :** Blatti Yves\n\nUpdate of the embedded libraries, specifically the sensitive libraries (security).\r\nIn particular Spring (https:\/\/spring.io\/blog\/2018\/04\/05\/multiple-cve-reports-published-for-the-spring-framework + https:\/\/spring.io\/blog\/2018\/04\/09\/cve-2018-1275-address-partial-fix-for-cve-2018-1270)\r\n\r\nSource (french) : https:\/\/projets.asitvd.ch\/issues\/19794\n\n**Fixed versions :** 4.5.1"
+    },
+    "comments": []
+}

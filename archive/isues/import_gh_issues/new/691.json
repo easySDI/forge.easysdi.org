@@ -1,0 +1,14 @@
+{
+    "issue": {
+        "closed": true,
+        "title": "Order by name in users screen ",
+        "created_at": "2014-04-24T09:38:00Z",
+        "labels": [
+            "Defect",
+            "Redmine status : Closed",
+            "Category : CONTACT"
+        ],
+        "body": "**Original author :** M\u00e9rour Xavier\n\nIn the back-end in Users' management screen, the feature \"order by\" on the column \"name\" does not work.\r\n\r\n_PS : others \"order by\" work fine_\n\n**Fixed versions :** 4.1.0"
+    },
+    "comments": []
+}

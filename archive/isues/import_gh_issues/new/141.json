@@ -1,0 +1,34 @@
+{
+    "issue": {
+        "closed": true,
+        "title": "Add dashbord features to CORE",
+        "created_at": "2010-03-05T09:37:03Z",
+        "labels": [
+            "Feature",
+            "Redmine status : Closed"
+        ],
+        "body": "**Original author :** M\u00e9rour Xavier\n\nThe aim is to get a better and transversal vision of activities on the SDI portal for administrator and users.\r\nThe idea is to add features to the CORE that will propose a kind of dashboard for :\r\n\r\n- general figures (number of users, of furnitures,...)\r\n- SHOP figures (number of request, delivered products,...)\r\n- CATALOG figures (number of metadata, private\/public,...)\r\n- PROXY figures (users, amount of Mo transferred, number of services relayd,...)\r\n- etc...\r\n\r\nAn idea is to build a plug-in mechanism in CORE, so that for each new component installation (i.e. SHOP, CATALOG,...), new features will be added to the CORE dashboard.\r\n\r\nTo be discussed... particularly the relationship\/agenda with EasySDI V2 release issues have to be addressed.\n\n**Fixed versions :** 4.0.0"
+    },
+    "comments": [
+        {
+            "body": "**Original author :** M\u00e9rour Xavier\n\nWe did some job on this on Joomla! 2.5 in order to add such features in EasySDI V3.\r\n\r\nI will present them during a coming PSC meeting.",
+            "created_at": "2012-09-07T08:07:39Z"
+        },
+        {
+            "body": "**Original author :** M\u00e9rour Xavier\n\nDashboard fetaures were presented during our last PSC meeting. Lot of enthusiasm !\n\n!http:\/\/forge.easysdi.org\/attachments\/527\/COM_DASHBOARD_ADMINISTRATION3.png!\n\nWe now need to discuss the strategy for inserting it in the EasySDI V3 (new component or Core ?).\n\n",
+            "created_at": "2012-09-20T15:56:00Z"
+        },
+        {
+            "body": "**Original author :** M\u00e9rour Xavier\n\nThe feature is under developpement and is now waiting for stabilized the new EasyDI datamodel to be finished.\r\n\r\nMains concepts were validating during the two-days workshop on the 27th and 28th of june:\r\n\r\n- the new EasySDI backend HOME will have its own indicators. All of them will be published\/unpublished via modules and plugins (Joomla standard mechanism).\r\n- EasySDI package will be available with a set of default indicators that do not need any Java servlet installation or third party apps.\r\n- The HOME will be fully customizable via Modules, meaning an administrator will be able to add any third party modules (for example module \"connected users\") in the panel.\r\n- Advanced dashboard will be available via another componant DASHBOARD (not CORE) - description here #623\r\n",
+            "created_at": "2013-07-17T09:45:05Z"
+        },
+        {
+            "body": "**Original author :** M\u00e9rour Xavier\n\nIndicators to add in the EasysDI HOME will be as follow (as needed by SI17) :\n\n- average time for request treatment (global)\n- # of awaiting request (orders\/\n- # of metadata (ressources)\n- # of downloadable data\n- # of downloaded products (global)\n- # of extracted data (global)\n- # of orderable data (global)\n\n\nTo be done later in the DASHBOARD screens (with filter per period, organism,...), need the servlets : \n\n- # of uploaded products (per organism)\n- # of extracted data (per organism)\n",
+            "created_at": "2013-09-27T10:35:07Z"
+        },
+        {
+            "body": "**Original author :** M\u00e9rour Xavier\n\nThis feature was added during beta release of easysdi V4 and will be availaible in stable v4 release.\r\n\r\nThis ticket can be closed.",
+            "created_at": "2014-03-18T20:16:02Z"
+        }
+    ]
+}

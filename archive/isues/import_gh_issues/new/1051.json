@@ -1,0 +1,23 @@
+{
+    "issue": {
+        "closed": true,
+        "title": "Added select fields in MD edition: placeholder not translated",
+        "created_at": "2015-06-17T13:08:28Z",
+        "labels": [
+            "Defect",
+            "Redmine status : Closed",
+            "Category : CATALOG"
+        ],
+        "body": "**Original author :** Blatti Yves\n\nWhen we add a field (or a class containing fields) in metadata edit forms,\r\nif the field is a 'select' the placeholder is \"select an option\" whatever the user language is.\n\n**Fixed versions :** 4.3.2"
+    },
+    "comments": [
+        {
+            "body": "**Original author :** Blatti Yves\n\n\\administrator\\components\\com_easysdi_core\\libraries\\easysdi\\catalog\\editMetadata.js chosenRefresh() needs to use the same default values as joomla.",
+            "created_at": "2015-06-17T13:34:44Z"
+        },
+        {
+            "body": "**Original author :** Blatti Yves\n\nCommit 8778 in my sandbox",
+            "created_at": "2015-06-18T08:29:34Z"
+        }
+    ]
+}

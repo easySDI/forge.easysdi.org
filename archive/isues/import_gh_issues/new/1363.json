@@ -1,0 +1,14 @@
+{
+    "issue": {
+        "closed": true,
+        "title": "Publication date update",
+        "created_at": "2016-07-15T11:44:47Z",
+        "labels": [
+            "Defect",
+            "Redmine status : Closed",
+            "Category : CATALOG"
+        ],
+        "body": "**Original author :** Van Hoecke H\u00e9l\u00e8ne \n\nWhen the publication date is updated on a version, the end publication date (endpublished) of the previous version must be updated with the value of the new publication date of the current metadata.\n\n**Fixed versions :** 4.3.5"
+    },
+    "comments": []
+}

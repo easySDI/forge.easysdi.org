@@ -1,0 +1,19 @@
+{
+    "issue": {
+        "closed": true,
+        "title": "Direct access link does not check that the Joolma user is active (not blocked)",
+        "created_at": "2018-04-09T13:07:29Z",
+        "labels": [
+            "Defect",
+            "Redmine status : Closed",
+            "Category : SHOP"
+        ],
+        "body": "**Original author :** Blatti Yves\n\nDirect access link to the order view (#1148) does not check that the Joomla user is active (not blocked).\r\nIt happens when the user account is disabled after he placed an order.\n\n**Fixed versions :** 4.5.0"
+    },
+    "comments": [
+        {
+            "body": "**Original author :** Blatti Yves\n\nrev. 10306",
+            "created_at": "2018-04-09T13:13:14Z"
+        }
+    ]
+}

@@ -1,0 +1,14 @@
+{
+    "issue": {
+        "closed": true,
+        "title": "google geocoder doesn't work anymore when searching by lat\/lon",
+        "created_at": "2016-04-01T13:23:27Z",
+        "labels": [
+            "Defect",
+            "Redmine status : Closed",
+            "Category : MAP"
+        ],
+        "body": "**Original author :** Portier Thomas\n\n\n\n**Fixed versions :** 4.4.1"
+    },
+    "comments": []
+}

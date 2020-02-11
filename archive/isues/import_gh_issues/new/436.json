@@ -1,0 +1,14 @@
+{
+    "issue": {
+        "closed": false,
+        "title": "Validate metadate according to INSPIRE",
+        "created_at": "2011-06-29T18:11:44Z",
+        "labels": [
+            "Feature",
+            "Redmine status : New",
+            "Category : CATALOG"
+        ],
+        "body": "**Original author :** M\u00e9rour Xavier\n\nI found an interesting application to check metadata validity according to INSPIRE technical guidance (\"PDF\":http:\/\/inspire.jrc.ec.europa.eu\/reports\/ImplementingRules\/metadata\/MD_IR_and_ISO_20090218.pdf) here http:\/\/www.inspire-geoportal.eu\/INSPIREValidatorClient\/validate.do\r\n\r\nIt's an online application called *INSPIRE Validator client* that provides a user interface with a metadata file upload facility.\r\n\r\nThere's also an *INSPIRE Validator Service* that can be invoked by http request to validate Inspire Metadata (see tab \"About\" within the link given above.\r\n\r\n\r\n_I imagine this feature could be added quite quicky in the CATALOG..._"
+    },
+    "comments": []
+}

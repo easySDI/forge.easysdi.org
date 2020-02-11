@@ -1,0 +1,31 @@
+{
+    "issue": {
+        "closed": true,
+        "title": "Removing CGP compliance",
+        "created_at": "2013-01-29T09:13:49Z",
+        "labels": [
+            "Feature",
+            "Redmine status : Closed",
+            "Category : PROXY"
+        ],
+        "body": "**Original author :** Magoni Bruno\n\nCatalogue Gateway Protocol (CGP) is an old feature encapsulated inside PROXY servlet for CATALOG transactions.\r\nThis protocol was used by the Swiss metadata network before CSW specifications.\r\nWith the new Geocat version, this protocol was still supported for backward compatibility with old Swiss catalogues before they move to CSW.\r\n\r\nAs far as I know, Swiss users of EasySDI CATALOG (Bern and Vaud) don't use any more such CGP protocol and we propose to remove this feature from the new PROXY version.\r\n\r\nMay I ask EasySDI Steering Committee to give back his advice and vote about removing such feature ?\r\n+1 = remove CGP protocol from EasySDI v3 \/ no advice\r\n-1 = keep CGP protocol inside EasySDI v3\r\n\r\nThanks a lot,\r\nBruno\r\n\n\n**Fixed versions :** 4.0.0"
+    },
+    "comments": [
+        {
+            "body": "**Original author :** Portier Thomas\n\n+1",
+            "created_at": "2013-01-29T11:42:20Z"
+        },
+        {
+            "body": "**Original author :** M\u00e9rour Xavier\n\n+1\n\nIndeed, this features is obsolete and can be removed from next PROXY version.",
+            "created_at": "2013-01-29T14:44:09Z"
+        },
+        {
+            "body": "**Original author :** Magoni Bruno\n\n+1",
+            "created_at": "2013-01-29T15:24:57Z"
+        },
+        {
+            "body": "**Original author :** Magoni Bruno\n\nHello H\u00e9l\u00e8ne,\r\n\r\nConfirmation done about removing CGP feature from the new PROXY version.\r\n\r\nThanks,",
+            "created_at": "2013-01-29T15:26:10Z"
+        }
+    ]
+}

@@ -1,0 +1,19 @@
+{
+    "issue": {
+        "closed": true,
+        "title": "SHOP direct download uses redirections (with SEO), not supported by clients",
+        "created_at": "2017-04-27T09:55:21Z",
+        "labels": [
+            "Defect",
+            "Redmine status : Closed",
+            "Category : SHOP"
+        ],
+        "body": "**Original author :** Blatti Yves\n\nSHOP direct download (single product or grid) uses re directions (HTTP 303), this is not well supported by clients (cURL, Wget, FME...) specially in conjunction with basic authentication.\r\nWe must use the final download URL in views, and avoid redirecting afterwards.\r\n\r\nLink example : http[s]:\/\/[joomla]\/index.php?option=com_easysdi_shop&task=download.download&id=[prodId]&featurecode=[code]\n\n**Fixed versions :** 4.5.0"
+    },
+    "comments": [
+        {
+            "body": "**Original author :** Blatti Yves\n\nrev. 10164",
+            "created_at": "2017-04-27T10:27:36Z"
+        }
+    ]
+}

@@ -1,0 +1,19 @@
+{
+    "issue": {
+        "closed": true,
+        "title": "Unable to publish\/unpublish\/trash\/archive on Joomla! 3.9.1",
+        "created_at": "2019-01-09T07:17:00Z",
+        "labels": [
+            "Defect",
+            "Redmine status : Closed",
+            "Category : CORE"
+        ],
+        "body": "**Original author :** Blatti Yves\n\nUnable to publish\/unpublish\/trash\/archive on Joomla! 3.9.1\r\n\r\nRelated :\r\nhttps:\/\/github.com\/joomla\/joomla-cms\/issues\/23204\r\nhttps:\/\/github.com\/joomla\/joomla-cms\/pull\/23200\r\nhttps:\/\/github.com\/joomla\/joomla-cms\/pull\/22851\r\n\r\nFor now on the state column MUST be named \"published\" *OR* MUST be aliased to \"published\" using something in table class like :\r\n\r\n```\n\r\n<code class=\"php\">\r\n    public function __construct(&$db) {\r\n        $this->setColumnAlias('published', 'state');\r\n    }\r\n\r\n```\n\n\n**Fixed versions :** 4.5.1"
+    },
+    "comments": [
+        {
+            "body": "**Original author :** Blatti Yves\n\nRev. 10462",
+            "created_at": "2019-01-09T07:57:44Z"
+        }
+    ]
+}

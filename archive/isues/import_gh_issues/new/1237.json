@@ -1,0 +1,19 @@
+{
+    "issue": {
+        "closed": true,
+        "title": "Country is not saved in addresses (users and organisms)",
+        "created_at": "2016-01-11T10:40:43Z",
+        "labels": [
+            "Defect",
+            "Redmine status : Closed",
+            "Category : CONTACT"
+        ],
+        "body": "**Original author :** M\u00e9rour Xavier\n\nIn back-end, when editing a user or an organism the field \"country\" in the 3 addresses is not saved.\n\n**Fixed versions :** 4.4.0"
+    },
+    "comments": [
+        {
+            "body": "**Original author :** Blatti Yves\n\nrev. 9408",
+            "created_at": "2016-01-15T16:33:19Z"
+        }
+    ]
+}

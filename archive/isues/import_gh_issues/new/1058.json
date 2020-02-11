@@ -1,0 +1,27 @@
+{
+    "issue": {
+        "closed": true,
+        "title": "Always display all main components entries in backend",
+        "created_at": "2015-07-09T15:30:26Z",
+        "labels": [
+            "Enhancement",
+            "Redmine status : Closed",
+            "Category : CORE"
+        ],
+        "body": "**Original author :** Blatti Yves\n\nAlways display all main components entries in backend\r\nScreenshot: \r\n!always_display_main_entries.png!\r\n\n\n**Fixed versions :** 4.3.2"
+    },
+    "comments": [
+        {
+            "body": "**Original author :** Blatti Yves\n\nAccepted by TC here: #877",
+            "created_at": "2015-07-09T15:33:04Z"
+        },
+        {
+            "body": "**Original author :** Blatti Yves\n\nWill also correct \"3rd level\" menu entries, and titles.",
+            "created_at": "2015-07-09T15:33:55Z"
+        },
+        {
+            "body": "**Original author :** Blatti Yves\n\nIn my branch : rev : 8820",
+            "created_at": "2015-07-09T15:47:06Z"
+        }
+    ]
+}

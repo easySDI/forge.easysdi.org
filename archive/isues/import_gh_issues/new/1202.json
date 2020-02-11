@@ -1,0 +1,19 @@
+{
+    "issue": {
+        "closed": true,
+        "title": "Manual process (treatment) of a product (diffusion) in request view, will lose third party informations",
+        "created_at": "2015-11-24T09:10:08Z",
+        "labels": [
+            "Defect",
+            "Redmine status : Closed",
+            "Category : SHOP"
+        ],
+        "body": "**Original author :** Blatti Yves\n\nManual process (treatment) of a product (diffusion) in request view, will lose third party informations\n\n**Fixed versions :** 4.3.2"
+    },
+    "comments": [
+        {
+            "body": "**Original author :** Blatti Yves\n\nrev. 9284",
+            "created_at": "2015-11-24T09:16:00Z"
+        }
+    ]
+}

@@ -1,0 +1,39 @@
+{
+    "issue": {
+        "closed": true,
+        "title": "Label of a resource type relation",
+        "created_at": "2014-06-12T10:07:04Z",
+        "labels": [
+            "Defect",
+            "Redmine status : Closed",
+            "Category : CATALOG"
+        ],
+        "body": "**Original author :** Portier Thomas\n\nIn the metadata form, for a field of type child resource (ex : contact), the label is hard coded as \"Name\".\r\n\r\nIf we fix it to the relation label, the label is repeated 3 time... (cf attached image). I suggest to remove the label for this type of relation.\r\n\r\nWhat do you think?\n\n**Fixed versions :** 4.2.0"
+    },
+    "comments": [
+        {
+            "body": "**Original author :** M\u00e9rour Xavier\n\nYou propose to remove the third label only, right ?",
+            "created_at": "2014-06-12T12:09:25Z"
+        },
+        {
+            "body": "**Original author :** Portier Thomas\n\nYes",
+            "created_at": "2014-06-12T12:37:18Z"
+        },
+        {
+            "body": "**Original author :** M\u00e9rour Xavier\n\nI agree +1",
+            "created_at": "2014-06-12T12:42:57Z"
+        },
+        {
+            "body": "**Original author :** Portier Thomas\n\nFixed and ready to be merged for 4.2.0 RC1",
+            "created_at": "2014-09-09T14:30:14Z"
+        },
+        {
+            "body": "**Original author :** Magoni Bruno\n\nSuch issue may be defined as a defect instead of a new feature.\r\nThanks Thomas for your fix!",
+            "created_at": "2014-09-09T14:43:18Z"
+        },
+        {
+            "body": "**Original author :** Magoni Bruno\n\nChecking metadata content when editing focus on a label to highlight encountered error.\r\nSo \"Name\" has been changed in \"Resource\", as a label must be kept...",
+            "created_at": "2014-11-04T13:18:40Z"
+        }
+    ]
+}

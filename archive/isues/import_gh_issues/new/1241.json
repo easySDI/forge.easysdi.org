@@ -1,0 +1,19 @@
+{
+    "issue": {
+        "closed": true,
+        "title": "Upload large file size",
+        "created_at": "2016-01-19T15:55:48Z",
+        "labels": [
+            "Enhancement",
+            "Redmine status : Rejected",
+            "Category : SHOP"
+        ],
+        "body": "**Original author :** Portier Thomas\n\nIn the current version of the shop, it is not possible to upload a file > 999 Mo. \r\n\r\nIt could be possible using this kind of librairie : http:\/\/javascript.developpez.com\/telecharger\/detail\/id\/4130\/Upload-de-fichiers-Ajax-reprise-d-upload-informations-temps-reel-fonctions-et-styles-evenementiels-crop-et-redimensions-d-images"
+    },
+    "comments": [
+        {
+            "body": "**Original author :** Blatti Yves\n\nHi Thomas !\r\n\r\nI just tested with 2116517843 Bytes file (~2GB) without any problems on my winbox with current 4.4 branch.\r\n\r\nMaybe your problem comes from your php @upload_max_filesize@ parameter (php.ini) ?",
+            "created_at": "2016-01-26T13:41:51Z"
+        }
+    ]
+}

@@ -1,0 +1,19 @@
+{
+    "issue": {
+        "closed": true,
+        "title": "Pricing: saving an \"organism pricing\" fails if there is not at least one \"rebate for category\"",
+        "created_at": "2015-03-26T15:25:52Z",
+        "labels": [
+            "Defect",
+            "Redmine status : Rejected",
+            "Category : SHOP"
+        ],
+        "body": "**Original author :** Blatti Yves\n\nSaving an \"organism pricing\" fails if there is not at least one \"rebate for category\"\r\nBut this is optional, we should be able to save the \"organism pricing\" without any rebate."
+    },
+    "comments": [
+        {
+            "body": "**Original author :** Battaglia Marc\n\nDuplicate the #1008 issue. Rejected",
+            "created_at": "2015-05-19T13:12:26Z"
+        }
+    ]
+}

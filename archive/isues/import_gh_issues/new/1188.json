@@ -1,0 +1,19 @@
+{
+    "issue": {
+        "closed": true,
+        "title": "REST extraction interface may exposes multiple the same product multiple times in XML (and fail)",
+        "created_at": "2015-11-13T09:57:46Z",
+        "labels": [
+            "Defect",
+            "Redmine status : Closed",
+            "Category : SHOP"
+        ],
+        "body": "**Original author :** Blatti Yves\n\nREST extraction interface may exposes multiple the same product multiple times in XML (and fail)\n\n**Fixed versions :** 4.3.2"
+    },
+    "comments": [
+        {
+            "body": "**Original author :** Blatti Yves\n\nrev. 9216",
+            "created_at": "2015-11-13T14:12:10Z"
+        }
+    ]
+}

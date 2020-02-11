@@ -1,0 +1,46 @@
+{
+    "issue": {
+        "closed": true,
+        "title": "SQL syntax error",
+        "created_at": "2014-08-29T13:34:38Z",
+        "labels": [
+            "Defect",
+            "Redmine status : Closed"
+        ],
+        "body": "**Original author :** Van Hoecke H\u00e9l\u00e8ne \n\nmisc\n\n**Fixed versions :** 4.2.0"
+    },
+    "comments": [
+        {
+            "body": "**Original author :** Van Hoecke H\u00e9l\u00e8ne \n\nSQL installer modifications (to match Joomla syntax) :\r\n- use simple quote and not double brackets to set default value\r\n- use value '1900-01-01T00:00:00.000' as datetime default and not the function getdate() \r\n- not necessary to set NULL as default value for nullable field",
+            "created_at": "2014-09-09T12:20:51Z"
+        },
+        {
+            "body": "**Original author :** Van Hoecke H\u00e9l\u00e8ne \n\nIn com_easysdi_service\/src\/administrator\/models\/policy.php, line 1105, the use of double quote in the query must be replaced by an escaped single quote.",
+            "created_at": "2014-09-11T07:45:21Z"
+        },
+        {
+            "body": "**Original author :** Van Hoecke H\u00e9l\u00e8ne \n\nAPI method 'union' is not well supported by SQL Server.\r\nUse replaced in 'administrator\\components\\com_easysdi_service\\models\\physicalservice.php'",
+            "created_at": "2014-09-11T07:45:46Z"
+        },
+        {
+            "body": "**Original author :** Van Hoecke H\u00e9l\u00e8ne \n\n*In com_easysdi_contact*\r\nadministrator\\components\\com_easysdi_contact\\models\\users.php\r\nadministrator\\components\\com_easysdi_contact\\models\\organisms.php\r\n\r\nAt the very end of the method getListQuery(), remove the group by 'a.id' statement. It gives an incorrect SQL query.\r\n\r\n*In com_easysdi_catalog*\r\nadministrator\\components\\com_easysdi_catalog\\models\\resourcestype.php\r\n\r\nIn method getListQuery(), at line 115, quote name of the column 'view' (reserved keyword in SQLServer):\r\n\r\n```\n\r\n\/\/ Select the required fields from the table.\r\n        $query->select(\r\n                $this->getState(\r\n                        'list.select', 'a.id, a.alias, a.checked_out, a.checked_out_time, a.predefined, a.versioning, a.diffusion,' . $db->quoteName( 'a.view') .' , a.ordering, a.state, a.name'\r\n                )\r\n        );\r\n```\n",
+            "created_at": "2014-09-11T07:47:18Z"
+        },
+        {
+            "body": "**Original author :** Van Hoecke H\u00e9l\u00e8ne \n\nIn administrator\/components\/com_easysdi_service\/models\/policy.php, line 299, the group by statement seems to be useless and leads to an SQL Server error. Just commented it out.",
+            "created_at": "2014-09-11T09:32:54Z"
+        },
+        {
+            "body": "**Original author :** Van Hoecke H\u00e9l\u00e8ne \n\nNeed to add a default value on asset_id to work with SQL Server \r\n```\n\r\nALTER TABLE [#__sdi_category] ADD  DEFAULT '0' FOR [asset_id];\r\nALTER TABLE [#__sdi_organism] ADD  DEFAULT '0'  FOR [asset_id];\r\n```\n",
+            "created_at": "2014-09-11T11:58:14Z"
+        },
+        {
+            "body": "**Original author :** Van Hoecke H\u00e9l\u00e8ne \n\nIn sditable.php, function check() did not properly rewrite alias field. \r\nReplace all the rewrite actions by the use of JApplication::stringURLSafe($this->alias).",
+            "created_at": "2014-09-11T13:10:39Z"
+        },
+        {
+            "body": "**Original author :** Van Hoecke H\u00e9l\u00e8ne \n\nLetting the Joomla API sqlserver driver manage the default values in queries had shown several problems :\r\n\r\n- the use of \"$this->reset()\" in the load method of classes extending JTable : the object is correctly reset with the schema read from the database, but when the object is sent back to be stored, all the default values are sent as string fields (causing error for all the non string fields)\r\n\r\n- when a field of the database schema is not define on a JTable object, before building the SQL statement, the joomla driver (driver.php, updateObject())automatically add this field and set it a NULL value causing error for non nullable fields...\r\n\r\nTo avoid those errors :\r\n- remove all the use of reset() method in table object\r\n- Complete the sdiTable class to fill all the mandatory fields with default values",
+            "created_at": "2014-09-12T16:23:31Z"
+        }
+    ]
+}

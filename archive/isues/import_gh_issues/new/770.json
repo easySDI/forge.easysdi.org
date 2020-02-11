@@ -1,0 +1,30 @@
+{
+    "issue": {
+        "closed": true,
+        "title": "Apply category access scope on Search results, Download, Extraction and visualization ",
+        "created_at": "2014-07-04T13:53:45Z",
+        "labels": [
+            "Feature",
+            "Redmine status : Closed"
+        ],
+        "body": "**Original author :** Blatti Yves\n\nApply category access scope on Search results, Download, Extraction and Visualization (and Extended MD)\n\n**Fixed versions :** 4.2.0"
+    },
+    "comments": [
+        {
+            "body": "**Original author :** Blatti Yves\n\naffected:\r\n* FrontEnd\r\n** Models\r\n*** resource\r\n*** visualization\r\n*** download\r\n*** diffusion\r\n** controllers\r\n*** download\r\n** forms\r\n*** visualization\r\n** libraries\r\n*** Cswrecord\r\n* Backend\r\n** libraries\r\n*** cswMetadata\r\n*** sdiMetadata\r\n*** sdiModel\r\n*** sdiUser\r\n\r\nin index-fields.xsl\r\nadd\r\n```\n\r\n            <xsl:for-each select=\"sdi:resource\/sdi:categories\/sdi:category\/@guid\">\r\n                <Field name=\"sdicategory\" string=\"{string(.)}\" store=\"true\" index=\"true\" token=\"true\"\/>\r\n            <\/xsl:for-each> \r\n```\n\r\n(need to adapt doc)\r\n",
+            "created_at": "2014-07-10T10:35:59Z"
+        },
+        {
+            "body": "**Original author :** Magoni Bruno\n\nSuch new feature is directly binded to issue #642.\r\nAs it complete full integration of organisms' categories, we can consider that such complement doesn't need any vote...\r\n",
+            "created_at": "2014-07-17T20:26:19Z"
+        },
+        {
+            "body": "**Original author :** Blatti Yves\n\nin my sandbox: svn:\/\/127.0.0.1:13690\/easysdi\/sandboxes\/asit-vd\/4.2.x",
+            "created_at": "2014-07-30T14:00:44Z"
+        },
+        {
+            "body": "**Original author :** Blatti Yves\n\nRevision 7199",
+            "created_at": "2014-08-14T09:11:04Z"
+        }
+    ]
+}

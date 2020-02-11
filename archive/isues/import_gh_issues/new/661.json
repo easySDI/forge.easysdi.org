@@ -1,0 +1,43 @@
+{
+    "issue": {
+        "closed": true,
+        "title": "Saving default configuration",
+        "created_at": "2014-03-27T15:27:25Z",
+        "labels": [
+            "Feature",
+            "Redmine status : Rejected",
+            "Category : CORE"
+        ],
+        "body": "**Original author :** Magoni Bruno\n\nAfter installation process, default configuration values should be automatically setted during postflight process with @setParams@ method\r\ni.e.\r\n```\n\r\nif ($type == 'install') {\r\n            require_once JPATH_ADMINISTRATOR . '\/components\/com_easysdi_core\/helpers\/easysdi_core.php';\r\n            $params['infrastructureID'] = Easysdi_coreHelper::uuid();\r\n            $this->setParams($params);\r\n        }\r\n```\n\r\n\r\nTo prevent managing such default value in multiple location inside easySDI, XML configuration of backoffice options must not contains anymore default values. These default values must be only driven by postflights processes.\r\n\n\n**Fixed versions :** Unplanned"
+    },
+    "comments": [
+        {
+            "body": "**Original author :** Magoni Bruno\n\nI think it's time to vote on such important feature...\r\n",
+            "created_at": "2014-07-25T13:17:48Z"
+        },
+        {
+            "body": "**Original author :** Magoni Bruno\n\n+1",
+            "created_at": "2014-07-25T13:17:54Z"
+        },
+        {
+            "body": "**Original author :** M\u00e9rour Xavier\n\n+1",
+            "created_at": "2014-07-27T07:27:08Z"
+        },
+        {
+            "body": "**Original author :** Teixeira J\u00e9r\u00f4me\n\n+1",
+            "created_at": "2014-09-03T11:35:28Z"
+        },
+        {
+            "body": "**Original author :** Plainecassagne Laurent\n\n+1",
+            "created_at": "2014-10-07T10:30:07Z"
+        },
+        {
+            "body": "**Original author :** Blatti Yves\n\nI think this is correctly done now...\r\n... and the problem with infrastructure is solved.\r\nCan we close this ?",
+            "created_at": "2016-02-03T14:08:50Z"
+        },
+        {
+            "body": "**Original author :** Van Hoecke H\u00e9l\u00e8ne \n\nThis had be done in a previous 4.x.x version.\r\n\r\nSo this ticket is rejected by the TC.",
+            "created_at": "2016-02-19T09:56:12Z"
+        }
+    ]
+}

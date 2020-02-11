@@ -1,0 +1,23 @@
+{
+    "issue": {
+        "closed": true,
+        "title": "XML and PDF are not stored",
+        "created_at": "2015-08-19T08:43:28Z",
+        "labels": [
+            "Defect",
+            "Redmine status : Closed",
+            "Category : SHOP"
+        ],
+        "body": "**Original author :** Blatti Yves\n\nMetadata's XML and PDF are not stored, nor transmitted in GetOrders XML response.\n\n**Fixed versions :** 4.3.2"
+    },
+    "comments": [
+        {
+            "body": "**Original author :** Blatti Yves\n\n(Is not related to #1066)",
+            "created_at": "2015-08-21T07:08:14Z"
+        },
+        {
+            "body": "**Original author :** Blatti Yves\n\nIdentifiers were not passed, and files where stores using php's temp filenames.\r\nRev. 8937",
+            "created_at": "2015-08-21T07:15:10Z"
+        }
+    ]
+}

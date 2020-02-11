@@ -1,0 +1,19 @@
+{
+    "issue": {
+        "closed": true,
+        "title": "Search on request ID does not work in view=request",
+        "created_at": "2015-11-10T07:59:20Z",
+        "labels": [
+            "Defect",
+            "Redmine status : Closed",
+            "Category : SHOP"
+        ],
+        "body": "**Original author :** M\u00e9rour Xavier\n\nThe search on the request ID in the view=request does not work.\n\n**Fixed versions :** 4.3.2"
+    },
+    "comments": [
+        {
+            "body": "**Original author :** Blatti Yves\n\nrev. 9208",
+            "created_at": "2015-11-10T12:11:46Z"
+        }
+    ]
+}

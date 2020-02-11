@@ -1,0 +1,14 @@
+{
+    "issue": {
+        "closed": true,
+        "title": "Can't manage admin rules for component processing",
+        "created_at": "2016-03-18T11:23:35Z",
+        "labels": [
+            "Defect",
+            "Redmine status : Closed",
+            "Category : PROCESSING"
+        ],
+        "body": "**Original author :** Portier Thomas\n\n\n\n**Fixed versions :** 4.4.1"
+    },
+    "comments": []
+}

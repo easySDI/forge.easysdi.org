@@ -1,0 +1,43 @@
+{
+    "issue": {
+        "closed": true,
+        "title": "Click out of any perimeter",
+        "created_at": "2009-05-19T09:47:52Z",
+        "labels": [
+            "Defect",
+            "Redmine status : Closed",
+            "Category : SHOP"
+        ],
+        "body": "**Original author :** M\u00e9rour Xavier\n\nIf the user click outside of any perimeter (exemple : in a lake which is not part of a district), the interface displays the message \"perimeter is loading\" with no end.\r\n\r\nA normal behaviour should be : the WFS response is interpreted to see that there is no perimeter in the area (the lake) and diplay the message \"no perimeter in this area\".\r\n\r\nIt is apparently a problem in Openlayers : the response of the WFS (if the reponse do not contain any data) is not relayed.\r\nTo verify... and eventually open an issue in openlayers forge.\n\n**Fixed versions :** 4.0.0"
+    },
+    "comments": [
+        {
+            "body": "**Original author :** M\u00e9rour Xavier\n\nI suggest to keep this issue for EasySDI V3. Openlayers may have fix it, we will have to check.\r\n\r\nWhat do you think Bruno ?\r\n\r\n",
+            "created_at": "2012-06-01T17:06:22Z"
+        },
+        {
+            "body": "**Original author :** Magoni Bruno\n\nYes, we have to keep this trace...\r\n",
+            "created_at": "2012-06-04T07:00:18Z"
+        },
+        {
+            "body": "**Original author :** M\u00e9rour Xavier\n\nTo check for SHOP V3.",
+            "created_at": "2012-06-04T07:09:31Z"
+        },
+        {
+            "body": "**Original author :** M\u00e9rour Xavier\n\nshould we add category \"shop\" for this ticket ?",
+            "created_at": "2012-09-21T07:04:48Z"
+        },
+        {
+            "body": "**Original author :** Magoni Bruno\n\nHi Xavier,\r\n\r\nDo you always encounter such problem with easySDI V4 ?\r\n\r\nThanks,\r\n",
+            "created_at": "2014-06-24T11:02:52Z"
+        },
+        {
+            "body": "**Original author :** M\u00e9rour Xavier\n\nI did some test and I confirm that the problem does not occur anymore.",
+            "created_at": "2014-06-24T12:20:41Z"
+        },
+        {
+            "body": "**Original author :** M\u00e9rour Xavier\n\nYou can reject it.",
+            "created_at": "2014-06-26T09:01:46Z"
+        }
+    ]
+}

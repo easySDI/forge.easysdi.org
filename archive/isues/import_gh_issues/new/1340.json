@@ -1,0 +1,19 @@
+{
+    "issue": {
+        "closed": true,
+        "title": "Monitor admin sys.ini language files not synchronized",
+        "created_at": "2016-06-15T12:37:19Z",
+        "labels": [
+            "Defect",
+            "Redmine status : Closed",
+            "Category : MONITOR"
+        ],
+        "body": "**Original author :** Blatti Yves\n\nMonitor admin sys.ini language files not synchronized\n\n**Fixed versions :** 4.4.1"
+    },
+    "comments": [
+        {
+            "body": "**Original author :** Blatti Yves\n\nrev. 9842",
+            "created_at": "2016-06-15T12:44:17Z"
+        }
+    ]
+}

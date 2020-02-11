@@ -1,0 +1,14 @@
+{
+    "issue": {
+        "closed": false,
+        "title": "Organism creation",
+        "created_at": "2014-09-11T14:43:25Z",
+        "labels": [
+            "Defect",
+            "Redmine status : New",
+            "Category : CONTACT"
+        ],
+        "body": "**Original author :** Van Hoecke H\u00e9l\u00e8ne \n\nCan not create an organism and set it a category in the same time."
+    },
+    "comments": []
+}

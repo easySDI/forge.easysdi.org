@@ -1,0 +1,51 @@
+{
+    "issue": {
+        "closed": true,
+        "title": "bug on deleting a ressource",
+        "created_at": "2014-05-02T15:16:25Z",
+        "labels": [
+            "Defect",
+            "Redmine status : Closed",
+            "Category : CATALOG"
+        ],
+        "body": "**Original author :** Portier Thomas\n\nI go to my ressource list and I edit a metadata\r\nI go back on my list with the \"return\" button\r\nI try to delete a metadata and i got an error 500\n\n**Fixed versions :** 4.2.0"
+    },
+    "comments": [
+        {
+            "body": "**Original author :** Magoni Bruno\n\nError HTTP 500 appears only the first time we want to delete a resource; trying to delete again same resource displays correctly the confirmation modal box!\r\n",
+            "created_at": "2014-05-18T17:19:53Z"
+        },
+        {
+            "body": "**Original author :** Battaglia Marc\n\nunable to reproduce... ",
+            "created_at": "2014-05-20T13:51:02Z"
+        },
+        {
+            "body": "**Original author :** Magoni Bruno\n\nIssue rejected as impossible to reproduce...",
+            "created_at": "2014-05-20T14:25:13Z"
+        },
+        {
+            "body": "**Original author :** Portier Thomas\n\nI confirm I can reproduce it.\r\n\r\nMore widely, there is a problem with links between pages of the resource panel in front-end.\r\n\r\nMy resource panel has this url : http:\/\/www.tigeo.fr\/mes-ressources\r\n\r\nIf I edit a metadata, the url is switched to : http:\/\/www.tigeo.fr\/component\/easysdi_catalog\/?view=metadata&layout=edit\r\n\r\nIt should be more like : http:\/\/www.tigeo.fr\/mes-ressources\/metadata\/edit\r\n\r\nSame thing appears when I want to manage visualisation : http:\/\/www.tigeo.fr\/component\/easysdi_map\/?view=visualization&layout=edit\r\n\r\nIt should be more like : http:\/\/www.tigeo.fr\/mes-ressources\/visualization\/edit\r\n\r\nThis probleme is caused by existence of several components (core, catalog) ?",
+            "created_at": "2014-06-06T15:19:07Z"
+        },
+        {
+            "body": "**Original author :** M\u00e9rour Xavier\n\nSeems to be a general design problem. The point will be first point out to the PSCS (this friday)\r\nIt should be then discussed in Technical Committee as soom as possible to see how to solve this issue.\r\n",
+            "created_at": "2014-06-12T09:14:39Z"
+        },
+        {
+            "body": "**Original author :** Battaglia Marc\n\nOk, I reproduced the bug after editing metadata. \r\n\r\nThe problem was the use of: \r\n```\n\r\n <a href=\"#\" onclick=\"showDeleteModal('\/resources\/version\/remove\/170',170);\">\r\n```\n\r\ninstead of\r\n```\n\r\n<a href=\"#\" onclick=\"showDeleteModal('\/resources\/version\/remove\/170',170); return false;\">\r\n```\n\r\n\r\nWithout the \"return false\", the page is redirected to the current url followed by #. According to the current url, this causes an error 500.\r\n\r\nThe problem is the same for visualization.\r\n\r\nWe added return false after each method used in an onClick.",
+            "created_at": "2014-06-13T14:23:32Z"
+        },
+        {
+            "body": "**Original author :** M\u00e9rour Xavier\n\nHello Marc,\r\n\r\nIf it solves the problem, I am happy :-)\r\nReally thought it was deeper...\r\n\r\nThanks !",
+            "created_at": "2014-06-13T14:31:49Z"
+        },
+        {
+            "body": "**Original author :** M\u00e9rour Xavier\n\nQuestion : should not this issue put in the next release since 4.2.0 Beta 1 is already out ?",
+            "created_at": "2014-06-13T14:45:01Z"
+        },
+        {
+            "body": "**Original author :** Magoni Bruno\n\nFix has been already packaged in 4.2.0 Beta 1 :-)",
+            "created_at": "2014-06-13T14:51:26Z"
+        }
+    ]
+}

@@ -1,0 +1,18 @@
+{
+    "issue": {
+        "closed": true,
+        "title": "Error on install",
+        "created_at": "2014-10-23T13:58:25Z",
+        "labels": [
+            "Defect",
+            "Redmine status : Closed"
+        ],
+        "body": "**Original author :** Portier Thomas\n\nI'm working on th latest version of the 4.2.x branch.\r\n\r\nOn a fresh install of EasySDI on a Joomla 3.3.6, I have the error : \r\nKey column 'version_id' doesn't exist in table SQL=CREATE TABLE IF NOT EXISTS `bdt32_sdi_assignment` ( `id` int(11) UNSIGNED NOT NULL AUTO_INCREMENT, `guid` VARCHAR(36) NOT NULL , `assigned` DATETIME , `assigned_by` INT(11) UNSIGNED NOT NULL, `assigned_to` INT(11) UNSIGNED NOT NULL , `metadata_id` INT(11) UNSIGNED NOT NULL , `text` VARCHAR (500), PRIMARY KEY (`id`) , INDEX `bdt32_sdi_assignment_fk1` (`assigned_by`) , INDEX `bdt32_sdi_assignment_fk2` (`assigned_to`) , INDEX `bdt32_sdi_assignment_fk3` (`version_id`) , CONSTRAINT `bdt32_sdi_assignment_fk1` FOREIGN KEY (`assigned_by` ) REFERENCES `bdt32_sdi_user` (`id` ) ON DELETE CASCADE ON UPDATE NO ACTION, CONSTRAINT `bdt32_sdi_assignment_fk2` FOREIGN KEY (`assigned_to` ) REFERENCES `bdt32_sdi_user` (`id` ) ON DELETE CASCADE ON UPDATE NO ACTION, CONSTRAINT `bdt32_sdi_assignment_fk3` FOREIGN KEY (`metadata_id` ) REFERENCES `bdt32_sdi_metadata` (`id` ) ON DELETE CASCADE ON UPDATE NO ACTION ) ENGINE=InnoDB DEFAULT CHARSET=utf8;\n\n**Fixed versions :** 4.2.2"
+    },
+    "comments": [
+        {
+            "body": "**Original author :** Portier Thomas\n\nI'm on mysql",
+            "created_at": "2014-10-23T15:20:50Z"
+        }
+    ]
+}

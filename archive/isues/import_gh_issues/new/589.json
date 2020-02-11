@@ -1,0 +1,39 @@
+{
+    "issue": {
+        "closed": true,
+        "title": "Adding php proxy",
+        "created_at": "2013-02-01T10:12:35Z",
+        "labels": [
+            "Feature",
+            "Redmine status : Closed",
+            "Category : MAP"
+        ],
+        "body": "**Original author :** Magoni Bruno\n\nConfiguring MAP needs to use proxy solutions requiring system proxy, i.e.:\r\n* proxy cgi\r\n* apache proxy\r\n\r\nGoal is to integrate a php proxy (per default configuration) which allow EasySDI Administrator to prevent automatically any javascript cross-domain problem without having to configure system proxy as mentioned before.\r\nphp proxy will slow down web transaction more than cgi\/apache proxy but will ease EasySDI configuration for organisms which are not able to manage such system proxy.\n\n**Fixed versions :** 4.0.0"
+    },
+    "comments": [
+        {
+            "body": "**Original author :** M\u00e9rour Xavier\n\nQuestion : php proxy would be the default configuration but the system proxy will remain (as an option) if necessary, right ?",
+            "created_at": "2013-02-06T08:53:07Z"
+        },
+        {
+            "body": "**Original author :** Portier Thomas\n\nThe administrator can mange the proxy path in the Map config. The default path could be \"component\/com_easysdi_map\/proxy.php\" but if the user wants to use an other one, he can change it.",
+            "created_at": "2013-02-06T12:19:45Z"
+        },
+        {
+            "body": "**Original author :** M\u00e9rour Xavier\n\nOk, that's fine.\r\n",
+            "created_at": "2013-02-06T13:02:21Z"
+        },
+        {
+            "body": "**Original author :** Magoni Bruno\n\n\"Surrogafier\" php proxy project (http:\/\/bcable.net\/project.php?surrogafier) have got nice features and could be integrated to\/inspired for EasySDI php proxy...need some common discussion about that...\r\nThanks to Thomas for proposing such php proxy!\r\n",
+            "created_at": "2013-03-20T11:36:21Z"
+        },
+        {
+            "body": "**Original author :** M\u00e9rour Xavier\n\nI would suggest to add this discussion to the list of points that have to be discussed within the technical committee.",
+            "created_at": "2013-03-20T12:41:28Z"
+        },
+        {
+            "body": "**Original author :** Magoni Bruno\n\n\"Surrogafier\" php proxy has been integrated inside easySDI.\r\nIn MAP otions, administrator can define which kind of PHP proxy must be used. If empty, it means that easySDI uses the one which is integrated.\r\n",
+            "created_at": "2013-12-20T10:02:25Z"
+        }
+    ]
+}

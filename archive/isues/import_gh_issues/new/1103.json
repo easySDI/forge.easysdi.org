@@ -1,0 +1,19 @@
+{
+    "issue": {
+        "closed": true,
+        "title": "4.3 extraction interface exposes manual products if provider has manual and auto in the same order",
+        "created_at": "2015-09-02T14:37:59Z",
+        "labels": [
+            "Defect",
+            "Redmine status : Closed",
+            "Category : SHOP"
+        ],
+        "body": "**Original author :** Blatti Yves\n\n4.3 extraction interface exposes manual products if provider has manual and auto in the same order\r\n- check is done only at order level\r\n- if at least one product is in \"auto\" mining then all products are exposed (including manual mining)\n\n**Fixed versions :** 4.3.2"
+    },
+    "comments": [
+        {
+            "body": "**Original author :** Blatti Yves\n\nrevision : 9003",
+            "created_at": "2015-09-02T14:48:01Z"
+        }
+    ]
+}

@@ -1,0 +1,27 @@
+{
+    "issue": {
+        "closed": true,
+        "title": "Removing PdfServlet",
+        "created_at": "2013-04-10T14:51:07Z",
+        "labels": [
+            "Feature",
+            "Redmine status : Closed",
+            "Category : CATALOG"
+        ],
+        "body": "**Original author :** Magoni Bruno\n\nPdfServlet is a current EasySDI java servlet which allows to export metadata in pdf format based on FOP open source project http:\/\/xmlgraphics.apache.org\/fop\/.\r\nSuch pdf metadata export feature is also available in easySDI based on php MPDF open source project http:\/\/www.mpdf1.com\/mpdf\/index.php\r\n\r\nHaving deployed several metadata catalogues with both technologies, our feedback is that deploying\/manipulating FOP is more painful than using MPDF. Also using FOP inside easySDI does not increase time response when generating metadata in pdf format.\r\nSo we propose to remove FOP java API and to keep pdf export feature through MPDF php API only.\r\n\r\nMay I ask EasySDI Steering Committee to give back his advice and vote about removing PdfServlet ?\r\n+1 = remove PdfServlet from EasySDI v3\r\n0  = no advice\r\n-1 = keep PdfServlet inside EasySDI v3\r\n\r\n\r\nThanks a lot,\r\nBruno\r\n\n\n**Fixed versions :** 4.0.0"
+    },
+    "comments": [
+        {
+            "body": "**Original author :** Portier Thomas\n\n+1 to remove FOP.\r\n\r\nWe could also analyse if mpdf can be replace by BIRT used in the DASHBORD?",
+            "created_at": "2013-04-11T07:54:25Z"
+        },
+        {
+            "body": "**Original author :** M\u00e9rour Xavier\n\nConsidering that we :\r\n\r\n- do not use all FOP features and strenghs,\r\n- do not produce big PDF files (metadata have generally 2-3 pages)\r\n- want to simplify the EasySDI deployement process\r\n\r\nI vote +1.\r\n\r\n_Side effect not to forget : current XSL sent to FOP will need some adaptations._",
+            "created_at": "2013-04-12T08:22:16Z"
+        },
+        {
+            "body": "**Original author :** Magoni Bruno\n\n+1\r\n\r\nMy opinion is that BIRT suits especially for reporting and MPDF suits specifically for PDF export based on XML\/XHTML source document.\r\n\r\n",
+            "created_at": "2013-04-12T09:24:22Z"
+        }
+    ]
+}

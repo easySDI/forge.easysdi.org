@@ -1,0 +1,19 @@
+{
+    "issue": {
+        "closed": true,
+        "title": "Extraction service does not advertise correct easySDI version",
+        "created_at": "2016-09-21T15:40:20Z",
+        "labels": [
+            "Defect",
+            "Redmine status : Closed",
+            "Category : SHOP"
+        ],
+        "body": "**Original author :** Blatti Yves\n\nExtraction service does not advertise correct easySDI version (hardcoded 4.3.0)\n\n**Fixed versions :** 4.4.3"
+    },
+    "comments": [
+        {
+            "body": "**Original author :** Blatti Yves\n\nrev. 9985",
+            "created_at": "2016-09-21T15:43:15Z"
+        }
+    ]
+}

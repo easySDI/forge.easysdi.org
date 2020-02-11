@@ -1,0 +1,23 @@
+{
+    "issue": {
+        "closed": true,
+        "title": "test email",
+        "created_at": "2016-04-18T09:16:23Z",
+        "labels": [
+            "Defect",
+            "Redmine status : Closed",
+            "Category : CONTACT"
+        ],
+        "body": "**Original author :** Pochet Gilles\n\n\n\n**Fixed versions :** 4.4.1"
+    },
+    "comments": [
+        {
+            "body": "**Original author :** Pochet Gilles\n\ndewqewq",
+            "created_at": "2016-04-18T09:25:05Z"
+        },
+        {
+            "body": "**Original author :** Pochet Gilles\n\nawerawewerwer",
+            "created_at": "2016-04-18T09:27:05Z"
+        }
+    ]
+}

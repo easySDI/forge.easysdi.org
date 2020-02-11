@@ -1,0 +1,19 @@
+{
+    "issue": {
+        "closed": true,
+        "title": "Request Model does not check filename sanity + does not store displayName",
+        "created_at": "2015-10-27T18:37:08Z",
+        "labels": [
+            "Defect",
+            "Redmine status : Closed",
+            "Category : SHOP"
+        ],
+        "body": "**Original author :** Blatti Yves\n\nRequest Model (class Easysdi_shopModelRequest) @saveproduct()@:\r\n* does not check filename sanity\r\n** I propose to move @getCleanFilename@ from extract to the helper to reuse it\r\n* does not store displayName\r\n** Store the cleaned filename\n\n**Fixed versions :** 4.4.0"
+    },
+    "comments": [
+        {
+            "body": "**Original author :** Blatti Yves\n\nrev. 9441",
+            "created_at": "2016-02-02T13:44:37Z"
+        }
+    ]
+}

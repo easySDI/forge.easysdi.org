@@ -1,0 +1,19 @@
+{
+    "issue": {
+        "closed": true,
+        "title": "Error when editing metadata if user have no language set",
+        "created_at": "2014-10-28T10:21:14Z",
+        "labels": [
+            "Defect",
+            "Redmine status : Closed",
+            "Category : CATALOG"
+        ],
+        "body": "**Original author :** Portier Thomas\n\nAn error appears when the user uses default JOOMLA language.\r\n\r\nCatchable fatal error: Object of class stdClass could not be converted to string in \/home\/htdocs\/www\/tigeo\/components\/com_easysdi_catalog\/libraries\/easysdi\/FormHtmlGenerator.php on line 807\r\n\r\nfixed and commited in my 4.2.x branche\n\n**Fixed versions :** 4.2.0"
+    },
+    "comments": [
+        {
+            "body": "**Original author :** Van Hoecke H\u00e9l\u00e8ne \n\nFixes made by Marc Battaglia in 4.2.0 RC1.\r\nYour fixes were not used.",
+            "created_at": "2014-11-03T09:01:32Z"
+        }
+    ]
+}

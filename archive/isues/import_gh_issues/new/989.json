@@ -1,0 +1,23 @@
+{
+    "issue": {
+        "closed": true,
+        "title": "Order recapitulation view : perimeter not loaded in map",
+        "created_at": "2015-05-01T06:57:49Z",
+        "labels": [
+            "Defect",
+            "Redmine status : Rejected",
+            "Category : SHOP"
+        ],
+        "body": "**Original author :** Van Hoecke H\u00e9l\u00e8ne \n\nIn order (and request) recapitualation view, if the map is displayed in other SRS than EPSG:4326, a free perimeter can not be properly loaded.\r\n\r\nIn this case, the free perimeter coordinates have to be reprojected with proj4js library. But, the destination projection is never completely loaded (concretely, the flag 'readyToUse' is never set to true)...\r\nThe necessary definition files (EPSG and mercator js files) seem to be not available for transformation.\r\n\r\nNB : test with EPSG:2056"
+    },
+    "comments": [
+        {
+            "body": "**Original author :** Blatti Yves\n\nHi H\u00e9l\u00e8ne, is this still a problem ? We don't encounter it on EPSG:21781",
+            "created_at": "2016-03-01T12:52:02Z"
+        },
+        {
+            "body": "**Original author :** Van Hoecke H\u00e9l\u00e8ne \n\nI guess we can rejected it if you don't see any problem on your platform.",
+            "created_at": "2016-04-01T07:04:17Z"
+        }
+    ]
+}

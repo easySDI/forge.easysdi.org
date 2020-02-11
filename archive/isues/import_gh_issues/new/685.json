@@ -1,0 +1,19 @@
+{
+    "issue": {
+        "closed": true,
+        "title": "Wrong title of resource shown in metadata edition",
+        "created_at": "2014-04-16T12:46:05Z",
+        "labels": [
+            "Defect",
+            "Redmine status : Closed",
+            "Category : CATALOG"
+        ],
+        "body": "**Original author :** Blatti Yves\n\nIn metadata edition, the title shown is wrong.\r\nThis only appear if IDs are different for resource, version and metadata (and it's not the case if you start with a catalog from scratch, auto-incremented values will be the same for the 3 objects)\r\n\r\nI suppose the problem comes from:\r\nin @components\\com_easysdi_catalog\\views\\metadata\\view.html.php@ @ line 181\r\n\r\n```\n\r\n<code class=\"php\">\r\n    public function getTitle() {\r\n        $query = $this->db->getQuery(true);\r\n\r\n        $query->select('m.id, v.name, s.value, s.id AS state, v.id as version, r.name as resource_name');\r\n        $query->from('#__sdi_version v');\r\n        $query->innerJoin('#__sdi_metadata m ON m.version_id = v.id');\r\n        $query->innerJoin('#__sdi_sys_metadatastate s ON s.id = m.metadatastate_id');\r\n        $query->innerJoin('#__sdi_resource r ON r.id = v.resource_id');\r\n        $query->where('v.resource_id = ' . $this->item->id);\r\n        $query->order('v.name DESC');\r\n\r\n        $this->db->setQuery($query);\r\n        $metadata = $this->db->loadObjectList();\r\n        \r\n        return $metadata[0];\r\n    }\r\n\r\n```\n\r\n\r\n\"$this->item\" represents a metadata, not a resource, so it sould be:\r\n\r\n```\n\r\n<code class=\"php\">\r\n    public function getTitle() {\r\n        $query = $this->db->getQuery(true);\r\n\r\n        $query->select('m.id, v.name, s.value, s.id AS state, v.id as version, r.name as resource_name');\r\n        $query->from('#__sdi_version v');\r\n        $query->innerJoin('#__sdi_metadata m ON m.version_id = v.id');\r\n        $query->innerJoin('#__sdi_sys_metadatastate s ON s.id = m.metadatastate_id');\r\n        $query->innerJoin('#__sdi_resource r ON r.id = v.resource_id');\r\n        $query->where('m.id = ' . $this->item->id);\r\n        $query->order('v.name DESC');\r\n\r\n        $this->db->setQuery($query);\r\n        $metadata = $this->db->loadObjectList();\r\n        \r\n        return $metadata[0];\r\n    }\r\n\r\n```\n\r\n\r\nAnd I suppose we can drop the _order_ clause and use loadObject, because we should always get a single object from database (metadata is unique and linked to a single version).\n\n**Fixed versions :** 4.1.0"
+    },
+    "comments": [
+        {
+            "body": "**Original author :** Blatti Yves\n\nin sansbox: \/easysdi\/sandboxes\/asit-vd\/4.0.2\/joomla\/easysdi\/com_easysdi_catalog",
+            "created_at": "2014-04-28T10:25:32Z"
+        }
+    ]
+}

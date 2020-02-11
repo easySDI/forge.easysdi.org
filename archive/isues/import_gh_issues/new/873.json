@@ -1,0 +1,27 @@
+{
+    "issue": {
+        "closed": true,
+        "title": "third party validation - extra fields do not show up",
+        "created_at": "2014-11-20T10:27:01Z",
+        "labels": [
+            "Defect",
+            "Redmine status : Closed",
+            "Category : SHOP"
+        ],
+        "body": "**Original author :** M\u00e9rour Xavier\n\nIn the basket, there will be possible to select the tiers. If one selected, three extra fields will appear below (see basket layout attached in #643 ). \r\n\r\nProblems :\r\n\r\n- I do not see them\r\n- I know the visibility of the 3 extra fields should be optionnal as decribed in specifications #644 BUT I do not find the option in backend. \r\n\r\n\n\n**Fixed versions :** 4.3.0"
+    },
+    "comments": [
+        {
+            "body": "**Original author :** Villemagne J\u00e9r\u00f4me\n\nXavier,\r\n\r\nI am indeed miss these three fields during the development phase. With the establishment of the offer, the three fields were supposed non-persisted, but I realize now that the specifications might lacked details about it.\r\n\r\nCan you confirm if these fields should only be included in the notification email to thirdparty validator, or if they should also appear in various interfaces?\r\nIf necessary, thank you to list the relevant interfaces.",
+            "created_at": "2014-11-24T13:48:48Z"
+        },
+        {
+            "body": "**Original author :** M\u00e9rour Xavier\n\nHi J\u00e9r\u00f4me,\r\n\r\nNo, *they are persistent* since they will be used in others screens. \r\n\r\nBut you are right : those screens were not specified because they need to be designed... so you did not miss any interfaces (indeed, the screen \"view=order here https:\/\/forge.easysdi.org\/attachments\/download\/680\/7_gliffy_validation-screens.png  need some work. We told Bruno we will do it later. It was not part of the dev. to do.\r\n\r\nWhas is actually missing is the option in backend \"visibility of the 3 extra fields\" as described in the ticket.\r\n\r\n\r\n\r\n\r\n\r\n\r\n",
+            "created_at": "2014-11-24T14:19:38Z"
+        },
+        {
+            "body": "**Original author :** M\u00e9rour Xavier\n\nHello J\u00e9r\u00f4me. You confirm that the three fields are now persistent ? \r\n(I cannot check since they are no screen yet)",
+            "created_at": "2015-01-20T10:00:11Z"
+        }
+    ]
+}

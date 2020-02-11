@@ -1,0 +1,14 @@
+{
+    "issue": {
+        "closed": true,
+        "title": "Pricing - Overall fee if products free not taken into account",
+        "created_at": "2014-11-20T13:05:39Z",
+        "labels": [
+            "Defect",
+            "Redmine status : Closed",
+            "Category : SHOP"
+        ],
+        "body": "**Original author :** Blatti Yves\n\nLinked to #643:\r\nPlatform parameter \"do not apply overall fee if all products free\" is not taken into account (overall fee is applied in any cases).\r\nSee selenium tests\n\n**Fixed versions :** 4.3.0"
+    },
+    "comments": []
+}

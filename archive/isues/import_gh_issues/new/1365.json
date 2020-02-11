@@ -1,0 +1,19 @@
+{
+    "issue": {
+        "closed": true,
+        "title": "For J3.6.x : Params -> fieldset description",
+        "created_at": "2016-08-08T08:28:56Z",
+        "labels": [
+            "Defect",
+            "Redmine status : Closed",
+            "Category : CORE"
+        ],
+        "body": "**Original author :** Blatti Yves\n\nIn joomla 3.6.x the fieldset description must be set or removed (not left empty).\r\nOtherwise the bar is shoen empty, see : \r\n\r\n!xml.png!\r\n\r\ngives that when string is empty : \r\n\r\n!conf_page.png!\r\n\r\n\n\n**Fixed versions :** 4.4.3"
+    },
+    "comments": [
+        {
+            "body": "**Original author :** Blatti Yves\n\n+ string fixes\r\n\r\nrev. 9970\r\n",
+            "created_at": "2016-08-09T09:25:20Z"
+        }
+    ]
+}

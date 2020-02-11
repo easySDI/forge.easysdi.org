@@ -1,0 +1,14 @@
+{
+    "issue": {
+        "closed": true,
+        "title": "Size of the metadata preview modal window ",
+        "created_at": "2015-03-10T09:44:31Z",
+        "labels": [
+            "Defect",
+            "Redmine status : Closed",
+            "Category : CATALOG"
+        ],
+        "body": "**Original author :** Van Hoecke H\u00e9l\u00e8ne \n\nIn the parameters of the component MAP, the size of the modal windows opened from a map can be set by the administrator. \r\nThis allows users to have metadata sheet views and catalog search forms rendered in a window which size is consistent with the platform template.\r\n\r\nThose parameters are not offered by the component CATALOG. \r\nThus, the size of the modals opened from the resources list form and from the metadata edition form is hard coded. This causes renderer problems in some views which are decisive for the metadata editor.\r\n \r\nIt would be interesting to add same parameters as component MAP in component CATALOG.\n\n**Fixed versions :** 4.3.1"
+    },
+    "comments": []
+}

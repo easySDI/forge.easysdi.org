@@ -1,0 +1,14 @@
+{
+    "issue": {
+        "closed": true,
+        "title": "defaultvalue of sdi_catalog_searchcriteria too small",
+        "created_at": "2017-06-16T15:04:52Z",
+        "labels": [
+            "Defect",
+            "Redmine status : Closed",
+            "Category : CATALOG"
+        ],
+        "body": "**Original author :** Portier Thomas\n\nThe column is limited with 255. If we add more, it resets the field.\n\n**Fixed versions :** 4.5.0"
+    },
+    "comments": []
+}

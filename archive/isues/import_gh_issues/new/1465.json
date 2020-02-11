@@ -1,0 +1,14 @@
+{
+    "issue": {
+        "closed": true,
+        "title": "\"Email notification\" task",
+        "created_at": "2018-11-20T15:32:55Z",
+        "labels": [
+            "Enhancement",
+            "Redmine status : Closed",
+            "Category : EXTRACT"
+        ],
+        "body": "**Original author :** Blatti Yves\n\n*Description*\r\n\r\n* New processing plugin.\r\n* Title: \"Notification email\" \/ \"Notification email\"\r\n* Description: \"Sends a customizable email notification.\" \/ \"Envoie une notification email personnalisable.\"\r\n* Icon class: fa-envelope-o\r\n* Settings :\r\n** \"Recipient emails, separated by semicolons\", email (new type), required\r\n** \"Subject of the message\", text, mandatory\r\n** \"Message content\", textarea, required\r\n* Help tooltip:\r\n```\n\r\nLe plugin de notification email permet d'envoyer un message \u00e0 un ou plusieurs destinataires.\r\n\r\nLes emails des destinataires doivent \u00eatre s\u00e9par\u00e9s par des points-virgules.\r\n\r\nL'objet et le contenu du message peuvent contenir des variables qui seront remplac\u00e9es par les propri\u00e9t\u00e9s de la requ\u00eate. Les propri\u00e9t\u00e9s dynamiques autoris\u00e9es sont les suivantes :\r\n\r\n    orderLabel\r\n    orderGuid\r\n    productGuid\r\n    productLabel\r\n    startDate\r\n    organism\r\n    client\r\n\r\nExemple d'objet : \"Nouvelle demande pour le produit {productLabel}, client {client}\" \r\n\r\nExemple de contenu : \"Le client {client} (organism) a command\u00e9 le produit {productLabel}\r\n                      N\u00b0 de commande : {orderLabel}\r\n                      Date de traitement : {startDate}\r\n                      Les donn\u00e9es livr\u00e9es ont \u00e9t\u00e9 archiv\u00e9es vers : \/home\/data\/extract\/archive\/{orderLabel}\/{productLabel}\" \r\n```\n\r\n\r\n* When an element arrives at this processing task, the system sends an email to each recipient (each an email, one recipient does not see the others).\r\n* The text of the object and message are those defined in the task settings.\r\n* The text of the object and message can contain variables that will be replaced (see archiving plugin).\r\n* The variables that can be used are:\r\n** orderLabel\r\n** orderGuid\r\n** productGuid\r\n** productLabel\r\n** startDate\r\n** organism\r\n** client\r\n* The list of recipients in the configuration requires that emails be separated by semicolons\r\n* When the task is executed, the recipient list is split by comma or semicolon (\",\",\",\";\"), the emails are then cleaned by trim (spaces at the beginning and end, tabs, shopping cart returns...[\\s])\r\n* The sending parameters come from the system configuration (sender, smtp conf, etc)\r\n\r\n*Models*\r\n\r\n!18705-email-notification.png!\r\n\r\nSource (french) : https:\/\/projets.asitvd.ch\/issues\/18705\n\n**Fixed versions :** 4.5.1"
+    },
+    "comments": []
+}

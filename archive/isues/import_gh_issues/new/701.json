@@ -1,0 +1,13 @@
+{
+    "issue": {
+        "closed": true,
+        "title": "Debug trace in policy editing",
+        "created_at": "2014-04-30T08:10:44Z",
+        "labels": [
+            "Defect",
+            "Redmine status : Closed"
+        ],
+        "body": "**Original author :** Portier Thomas\n\nThere was a debug trace in policy editing. I removed it.\r\n\r\nCommited in my 4.0.2 branche\n\n**Fixed versions :** 4.0.2"
+    },
+    "comments": []
+}

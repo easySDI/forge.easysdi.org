@@ -1,0 +1,27 @@
+{
+    "issue": {
+        "closed": true,
+        "title": "Removing XQuery engine",
+        "created_at": "2013-02-19T11:45:22Z",
+        "labels": [
+            "Feature",
+            "Redmine status : Closed",
+            "Category : CATALOG"
+        ],
+        "body": "**Original author :** Magoni Bruno\n\nXQuery engine is a current EasySDI feature which allows Administrator to edit and execute metadata mining requests.\r\nThis feature was sponsored by Canton of Bern to be able to run XQuery reports over metadata information stored inside CSW server and EasySDI tables.\r\n\r\nAs far as I know, only Canton of Bern was using such feature.\r\nFew weeks ago, Canton of Bern informs us that they are not using anymore this query engine and has replaced it with FME scripts.\r\nDEPTH totally agree that using such query logical is more painful and less powerful than using dedicated data mining solutions (such as ETL engines or BI engines). So we propose to \r\ngive up such feature inside the new EasySDI versions.\r\n\r\nMay I ask EasySDI Steering Committee to give back his advice and vote about removing such feature ?\r\n+1 = remove XQuery engine from EasySDI v3 \/ no advice\r\n-1 = keep XQuery engine inside EasySDI v3\r\n\r\nThanks a lot,\r\nBruno\r\n\n\n**Fixed versions :** 4.0.0"
+    },
+    "comments": [
+        {
+            "body": "**Original author :** Magoni Bruno\n\n+1",
+            "created_at": "2013-02-19T11:45:30Z"
+        },
+        {
+            "body": "**Original author :** M\u00e9rour Xavier\n\n+ 1",
+            "created_at": "2013-02-25T11:17:24Z"
+        },
+        {
+            "body": "**Original author :** Portier Thomas\n\n+1",
+            "created_at": "2013-02-25T21:06:46Z"
+        }
+    ]
+}

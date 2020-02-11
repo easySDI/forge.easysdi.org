@@ -1,0 +1,14 @@
+{
+    "issue": {
+        "closed": true,
+        "title": "If a layer is no more available in a web service, the map doesn't load",
+        "created_at": "2016-06-14T08:40:08Z",
+        "labels": [
+            "Defect",
+            "Redmine status : Closed",
+            "Category : MAP"
+        ],
+        "body": "**Original author :** Portier Thomas\n\nIf a layer configured in the map is no more available, the map doesn't load and there is a javascript error message.\n\n**Fixed versions :** 4.4.2"
+    },
+    "comments": []
+}

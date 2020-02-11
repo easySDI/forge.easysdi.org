@@ -1,0 +1,13 @@
+{
+    "issue": {
+        "closed": true,
+        "title": "Missing foreign keys in Sql Server install script",
+        "created_at": "2014-09-09T15:20:46Z",
+        "labels": [
+            "Defect",
+            "Redmine status : Closed"
+        ],
+        "body": "**Original author :** Van Hoecke H\u00e9l\u00e8ne \n\nForeign keys of tables used by the component SERVICE are missing from the install script for SQL Server database.\r\n\r\nThey should be added to the file com_easysdi_core\/sql\/install\/sqlsrv\/alter.sql\n\n**Fixed versions :** 4.2.0"
+    },
+    "comments": []
+}

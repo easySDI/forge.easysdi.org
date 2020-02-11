@@ -1,0 +1,14 @@
+{
+    "issue": {
+        "closed": true,
+        "title": "Wrong behavior of the metadata edition form for relationship cardinality ",
+        "created_at": "2014-10-10T12:51:06Z",
+        "labels": [
+            "Defect",
+            "Redmine status : Closed",
+            "Category : CATALOG"
+        ],
+        "body": "**Original author :** Van Hoecke H\u00e9l\u00e8ne \n\nCardinality of relationships toward classes and attributes does not correctly behave in the metadata edition form, for example :\r\n- relationship toward attribute 0..n : no + icone available to add instance\r\n- relationship toward class 0..1 : + icone avalaible whatever the number of instance already added\n\n**Fixed versions :** 4.2.0"
+    },
+    "comments": []
+}

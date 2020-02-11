@@ -1,0 +1,19 @@
+{
+    "issue": {
+        "closed": true,
+        "title": "Thirdparty validator informations are never shown in Request view",
+        "created_at": "2015-11-24T09:17:38Z",
+        "labels": [
+            "Defect",
+            "Redmine status : Closed",
+            "Category : SHOP"
+        ],
+        "body": "**Original author :** Blatti Yves\n\nThirdparty validator informations are never shown in Request view\n\n**Fixed versions :** 4.3.2"
+    },
+    "comments": [
+        {
+            "body": "**Original author :** Blatti Yves\n\nrev. 9285",
+            "created_at": "2015-11-24T09:33:05Z"
+        }
+    ]
+}

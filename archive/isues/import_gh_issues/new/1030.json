@@ -1,0 +1,14 @@
+{
+    "issue": {
+        "closed": true,
+        "title": "[SQLSERVER] : can't save relation as a search criteria",
+        "created_at": "2015-06-08T11:07:23Z",
+        "labels": [
+            "Defect",
+            "Redmine status : Closed",
+            "Category : CATALOG"
+        ],
+        "body": "**Original author :** Van Hoecke H\u00e9l\u00e8ne \n\nErreur\r\nL'enregistrement a \u00e9chou\u00e9 avec l'erreur suivante : [Microsoft][SQL Server Native Client 11.0][SQL Server]Conversion failed when converting the varchar value '((0))' to data type tinyint.SQL=UPDATE [sdi_sdi_relation] SET [guid]='672d30ce-f3bb-a014-4552-95e87043dbc7',[alias]='metadatastandardname',[created_by]='640',[created]='2015-06-08 10:54:33',[modified_by]='640',[modified]='2015-06-08 10:54:33',[ordering]='9',[state]='1',[checked_out]='640',[checked_out_time]='2015-06-08 10:54:19',[name]='metadataStandardName',[description]='',[parent_id]='1',[attributechild_id]='8',[classchild_id]=NULL,[lowerbound]='0',[upperbound]='1',[relationtype_id]=NULL,[rendertype_id]='5',[namespace_id]=NULL,[isocode]=NULL,[classassociation_id]=NULL,[issearchfilter]='1',[relationscope_id]='2',[editorrelationscope_id]='2',[childresourcetype_id]=NULL,[childtype_id]='2',[access]='1',[accessscope_limitation]='((0))' WHERE [id]='9'\n\n**Fixed versions :** 4.3.2"
+    },
+    "comments": []
+}

@@ -1,0 +1,14 @@
+{
+    "issue": {
+        "closed": true,
+        "title": "Proxy request on column meta",
+        "created_at": "2015-06-15T09:58:49Z",
+        "labels": [
+            "Defect",
+            "Redmine status : Closed",
+            "Category : PROXY"
+        ],
+        "body": "**Original author :** Portier Thomas\n\nWhen I configure a csw virtual service and I call a getrecords request : \r\nhttp:\/\/localhost\/proxy\/geonetwork?request=GetRecords&service=CSW&version=2.0.2&elementSetName=full&typeNames=csw%3ARecord\r\n\r\nThe proxy crashes because it try to make a SQL request on a 'meta' column on the 'resourcetype' table. But this column doesn't exist anymore.\n\n**Fixed versions :** 4.3.2"
+    },
+    "comments": []
+}

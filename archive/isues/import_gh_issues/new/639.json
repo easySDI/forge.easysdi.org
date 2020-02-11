@@ -1,0 +1,19 @@
+{
+    "issue": {
+        "closed": false,
+        "title": "Set created_by id for system row in namespace table to current user id during install",
+        "created_at": "2014-01-28T13:24:17Z",
+        "labels": [
+            "Feature",
+            "Redmine status : New",
+            "Category : CORE"
+        ],
+        "body": "**Original author :** Battaglia Marc\n\n"
+    },
+    "comments": [
+        {
+            "body": "**Original author :** Battaglia Marc\n\n1. set created_by value to 0\r\n2. in postflight, set created_by to current user id",
+            "created_at": "2014-01-28T13:27:56Z"
+        }
+    ]
+}

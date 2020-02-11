@@ -1,0 +1,43 @@
+{
+    "issue": {
+        "closed": true,
+        "title": "Add ability to expose a map context configuration in json",
+        "created_at": "2014-12-11T09:10:27Z",
+        "labels": [
+            "Enhancement",
+            "Redmine status : Closed",
+            "Category : MAP"
+        ],
+        "body": "**Original author :** Portier Thomas\n\nIn order to use a map context in an other technology than gxp, we propose to expose the map configuration in json.\r\nIn order to do that we have to create a new view.json.php in the map view. We can access it adding format=json to the url\r\n\r\nThe json format will look like : \r\n```\n\r\n{\"status\":\"success\",\"data\":{\"id\":\"1\",\"name\":\"Tigeo\",\"title\":\"Tigeo\",\"srs\":\"EPSG:3857\",\"maxresolution\":\"156543.03390625\",\"numzoomlevel\":null,\"maxextent\":\"-20037508.3428, -20037508.3428, 20037508.3428, 20037508.3428\",\"restrictedextent\":\"170905.21,5370392.21,326772.86,5496529.28\",\"centercoordinates\":\"246592,5431536\",\"zoom\":\"9\",\"unit\":\"m\",\"tools\":[{\"id\":\"1\",\"alias\":\"googleearth\",\"params\":null},{\"id\":\"2\",\"alias\":\"navigation\",\"params\":null},{\"id\":\"3\",\"alias\":\"zoom\",\"params\":null},{\"id\":\"4\",\"alias\":\"navigationhistory\",\"params\":null},{\"id\":\"5\",\"alias\":\"zoomtoextent\",\"params\":null},{\"id\":\"6\",\"alias\":\"measure\",\"params\":null},{\"id\":\"10\",\"alias\":\"removelayer\",\"params\":null},{\"id\":\"11\",\"alias\":\"layerproperties\",\"params\":null},{\"id\":\"12\",\"alias\":\"getfeatureinfo\",\"params\":\"html\"},{\"id\":\"13\",\"alias\":\"layertree\",\"params\":null},{\"id\":\"14\",\"alias\":\"scaleline\",\"params\":\"{\\\\\\\"bottomInUnits\\\\\\\" :\\\\\\\"\\\\\\\",\\\\\\\"bottomOutUnits\\\\\\\" :\\\\\\\"\\\\\\\",\\\\\\\"topInUnits\\\\\\\" :\\\\\\\"m\\\\\\\",\\\\\\\"topOutUnits\\\\\\\" :\\\\\\\"km\\\\\\\"}\"},{\"id\":\"15\",\"alias\":\"mouseposition\",\"params\":null},{\"id\":\"16\",\"alias\":\"wfslocator\",\"params\":\"{\\\\\\\"urlwfslocator\\\\\\\" :\\\\\\\"http:\\\/\\\/lebouzin\\\/proxy_tigeo\\\/wfs-tigeo\\\\\\\",\\\\\\\"fieldname\\\\\\\" :\\\\\\\"NOM_COMM\\\\\\\",\\\\\\\"featuretype\\\\\\\" :\\\\\\\"communes_tarn_3857\\\\\\\",\\\\\\\"featureprefix\\\\\\\" :\\\\\\\"tigeo\\\\\\\",\\\\\\\"geometryname\\\\\\\" :\\\\\\\"the_geom\\\\\\\"}\"},{\"id\":\"17\",\"alias\":\"searchcatalog\",\"params\":\"1\"},{\"id\":\"18\",\"alias\":\"layerdetailsheet\",\"params\":null},{\"id\":\"19\",\"alias\":\"layerdownload\",\"params\":null},{\"id\":\"20\",\"alias\":\"layerorder\",\"params\":null}],\"groups\":[{\"id\":\"1\",\"alias\":\"fonds-de-plan\",\"ordering\":\"1\",\"name\":\"Fonds de plan\",\"isbackground\":\"1\",\"isdefault\":\"0\",\"layers\":[{\"id\":\"1\",\"alias\":\"openstreetmap\",\"ordering\":\"1\",\"name\":\"OpenStreetMap\",\"servicetype\":\"physical\",\"layername\":\"mapnik\",\"istiled\":\"0\",\"isdefaultvisible\":\"0\",\"opacity\":\"1.00\",\"asOL\":\"0\",\"asOLstyle\":\"\",\"asOLmatrixset\":\"\",\"asOLoptions\":\"\",\"metadatalink\":\"\",\"attribution\":\"\",\"serviceurl\":\"http:\\\/\\\/openstreetmap.org\\\/\",\"serviceconnector\":\"OSM\",\"servicealias\":\"OSM\",\"version\":null}]},{\"id\":\"3\",\"alias\":\"autre\",\"ordering\":\"3\",\"name\":\"Autre\",\"isbackground\":\"0\",\"isdefault\":\"1\",\"layers\":[]},{\"id\":\"2\",\"alias\":\"mipygeo\",\"ordering\":\"2\",\"name\":\"Mipygeo\",\"isbackground\":\"0\",\"isdefault\":\"0\",\"layers\":[{\"id\":\"2\",\"alias\":\"scot-de-midi-pyrenee\",\"ordering\":\"2\",\"name\":\"SCOT de Midi-Pyrenees\",\"servicetype\":\"physical\",\"layername\":\"scot_mp\",\"istiled\":\"0\",\"isdefaultvisible\":\"0\",\"opacity\":\"0.70\",\"asOL\":\"0\",\"asOLstyle\":\"\",\"asOLmatrixset\":\"\",\"asOLoptions\":\"\",\"metadatalink\":\"http:\\\/\\\/www.mipygeo.fr\\\/geonetwork\\\/apps\\\/search\\\/index.html?uuid=89bed9db-26a6-4f50-9471-a198932fe1a4\",\"attribution\":\"<img src=\\\"https:\\\/\\\/test.geoplateforme17.fr\\\/images\\\/logos\\\/logo_partenaires\\\/erdf.jpg\\\" height=\\\"60px\\\" \\\/>\\u00a9 ERDF 2014\",\"serviceurl\":\"http:\\\/\\\/carto.mipygeo.fr\\\/cgi-bin\\\/mapserv?\",\"serviceconnector\":\"WMS\",\"servicealias\":\"mipygeo\",\"version\":\"1.3.0\"},{\"id\":\"2\",\"alias\":\"scot-de-midi-pyrenee\",\"ordering\":\"2\",\"name\":\"SCOT de Midi-Pyrenees\",\"servicetype\":\"physical\",\"layername\":\"scot_mp\",\"istiled\":\"0\",\"isdefaultvisible\":\"0\",\"opacity\":\"0.70\",\"asOL\":\"0\",\"asOLstyle\":\"\",\"asOLmatrixset\":\"\",\"asOLoptions\":\"\",\"metadatalink\":\"http:\\\/\\\/www.mipygeo.fr\\\/geonetwork\\\/apps\\\/search\\\/index.html?uuid=89bed9db-26a6-4f50-9471-a198932fe1a4\",\"attribution\":\"<img src=\\\"https:\\\/\\\/test.geoplateforme17.fr\\\/images\\\/logos\\\/logo_partenaires\\\/erdf.jpg\\\" height=\\\"60px\\\" \\\/>\\u00a9 ERDF 2014\",\"serviceurl\":\"http:\\\/\\\/carto.mipygeo.fr\\\/cgi-bin\\\/mapserv?\",\"serviceconnector\":\"WMS\",\"servicealias\":\"mipygeo\",\"version\":\"1.3.0\"}]}],\"sitename\":\"Tigeo\"}}\r\n```\n\n\n**Fixed versions :** 4.2.8"
+    },
+    "comments": [
+        {
+            "body": "**Original author :** Magoni Bruno\n\nThanks Thomas to verify that such json service has a similar behaviour than a MAP about restrictions:\r\n* access to json service must follow Joomla's right (like a MAP component)\r\n* content of json must follow easySDI's right (like what is returned for building MAP component interface)\r\n",
+            "created_at": "2014-12-12T10:09:43Z"
+        },
+        {
+            "body": "**Original author :** Portier Thomas\n\nYes it's ok for the rights. Bruno could you change the status of this issue to affected?",
+            "created_at": "2015-03-02T15:36:40Z"
+        },
+        {
+            "body": "**Original author :** Portier Thomas\n\nto me",
+            "created_at": "2015-03-02T15:36:54Z"
+        },
+        {
+            "body": "**Original author :** Magoni Bruno\n\nHi Thomas,\r\n\r\nThanks for your verification!\r\nBefore affecting such realization, current process need to assign such new feature to Technical Comittee; what I'm doing right now...\r\n\r\nIf TC doesn't need further explanations, then it could be accepted at next TC meeting.\r\n\r\nThanks\r\nBruno",
+            "created_at": "2015-03-02T15:49:03Z"
+        },
+        {
+            "body": "**Original author :** Van Hoecke H\u00e9l\u00e8ne \n\nTC OK.",
+            "created_at": "2015-03-06T09:17:49Z"
+        },
+        {
+            "body": "**Original author :** Van Hoecke H\u00e9l\u00e8ne \n\nThanks to assign it to Thomas.",
+            "created_at": "2015-03-06T09:19:14Z"
+        },
+        {
+            "body": "**Original author :** Magoni Bruno\n\nI agree that it's an enhancement instead of a feature.\r\nSo I assign it to Thomas as you've decide it during TC session.\r\n",
+            "created_at": "2015-03-06T21:41:20Z"
+        }
+    ]
+}

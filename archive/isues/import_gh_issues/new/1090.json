@@ -1,0 +1,14 @@
+{
+    "issue": {
+        "closed": false,
+        "title": "Hidden and visible lists default values are not saved in XML (MD edition)",
+        "created_at": "2015-08-21T09:26:58Z",
+        "labels": [
+            "Defect",
+            "Redmine status : New",
+            "Category : CATALOG"
+        ],
+        "body": "**Original author :** Van Hoecke H\u00e9l\u00e8ne \n\nVisible and hidden fields rendered as lists with multiple default values are not properly managed : only one default value is selected at the form opening and, by consequence, only one value is saved in the XML.\r\n"
+    },
+    "comments": []
+}

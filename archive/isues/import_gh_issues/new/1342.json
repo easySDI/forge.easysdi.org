@@ -1,0 +1,19 @@
+{
+    "issue": {
+        "closed": true,
+        "title": "orphan easysdi_user.php file in contact",
+        "created_at": "2016-06-15T12:48:51Z",
+        "labels": [
+            "Defect",
+            "Redmine status : Closed",
+            "Category : CONTACT"
+        ],
+        "body": "**Original author :** Blatti Yves\n\norphan easysdi_user.php file in contact (left from 3.x serie)\n\n**Fixed versions :** 4.4.1"
+    },
+    "comments": [
+        {
+            "body": "**Original author :** Blatti Yves\n\nrev. 9844",
+            "created_at": "2016-06-15T12:49:25Z"
+        }
+    ]
+}

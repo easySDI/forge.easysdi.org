@@ -1,0 +1,19 @@
+{
+    "issue": {
+        "closed": true,
+        "title": "OTP (One time password) wrong usage of a dynamic variable",
+        "created_at": "2017-06-06T13:31:18Z",
+        "labels": [
+            "Defect",
+            "Redmine status : Closed",
+            "Category : SHOP"
+        ],
+        "body": "**Original author :** Blatti Yves\n\nNotice:  Undefined variable: _anInteger_ in [joomla]\/components\/com_easysdi_shop\/controllers\/order.php on line 226\r\n\r\nWrong usage of \"Variable variable\" ($$) in \/components\/com_easysdi_shop\/controllers\/order.php\n\n**Fixed versions :** 4.5.0"
+    },
+    "comments": [
+        {
+            "body": "**Original author :** Blatti Yves\n\nrev. 10176",
+            "created_at": "2017-06-06T13:42:34Z"
+        }
+    ]
+}

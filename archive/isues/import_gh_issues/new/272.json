@@ -1,0 +1,83 @@
+{
+    "issue": {
+        "closed": true,
+        "title": "Save and view most recent request response.",
+        "created_at": "2011-01-03T10:08:01Z",
+        "labels": [
+            "Feature",
+            "Redmine status : Rejected",
+            "Category : MONITOR"
+        ],
+        "body": "**Original author :** Kihlberg Jesper\n\nA \"show request\" page showing the resulting image\/web page for each of the requests attached to a job. The last response should be stored in the database.\r\nIt should be possible to select if the request should be stored."
+    },
+    "comments": [
+        {
+            "body": "**Original author :** Kihlberg Jesper\n\nOn the \"Jobs\" page, under \"Advanced params\" a checkbox should be added, that allows users to enable saving of the latest request result. See attached file \"monitor save response 1.png\"\r\nA new page should be added called \"Response overview\" this page shows an overview of all Jobs and Request that have \"save latest request\" enabled. The page shows a thumbnail and when clicked, the full response should be shown. (in another window?)",
+            "created_at": "2011-01-03T13:15:49Z"
+        },
+        {
+            "body": "**Original author :** Larsen de Martino Jorgen\n\nIt should be possible to create multible pages of \"Response overview\" and define the content of each page and define if the page is to be public or pass word protected. Each \"Response overview\" page should have a unique URL in order to be able to publish the \"Response overview\" page on a website. \nOn the user interface this could be done by adding af dropdown menu where the user can either choose a \"Response overview\" page or choose to create a new \"Response overview\" page.\n\nThe \"Response overview\" page should contain the following information for each request:\n\nWMS\n* Name (the bold headline on screendump)\n* Service name\n* Picture\n* Size in KB\n* Norm size in KB\n* Delivery time\n* Norm time\n\nWFS\n* Name (the bold headline on screendump)\n* Service name\n* XML output\n* Found output\n* Norm output\n* Delivery time\n* Norm time\n\nSoap address service\n* Name (the bold headline on screendump)\n* Service name\n* text output\n* Found output\n* Norm output\n* Delivery time\n* Norm time\n\nIn addition there should be alert colours if norm time, norm size, norm output, picture or XML output is not within acceptable limits.\n\nResponsetime(WMS, WFS, WMTS, Soap)\nYellow if response time > 10% of specified limit\n\nResponse size(WMS and WMTS)\nRed if > or < 10% of specified norm size\n\nXML and text(WFS and SOAP)\nRed if not equal to specified norm output\n\n",
+            "created_at": "2011-01-04T15:16:16Z"
+        },
+        {
+            "body": "**Original author :** Bergstedt Thomas\n\nHave uploaded a image over a suggest for the changes to be made in the Monitor database. \nThis is done for supporting the suggest new response overview page.\n\n3 new tables added and a relation to the queries table. This gives the option for creating a page with a overview of different queries for different jobs. The table \"last_query_results\" holds the last request result values for a query added to a overview page. ",
+            "created_at": "2011-01-11T13:02:01Z"
+        },
+        {
+            "body": "**Original author :** Bodtkjer Morten\n\nTo make it possible to create multiple pages of \"response overview\", the user interface design must be modified.\r\n\r\nThe attached file illustrates a user interface design which reflects this enhancement.",
+            "created_at": "2011-01-27T10:11:31Z"
+        },
+        {
+            "body": "**Original author :** Magoni Bruno\n\nAs described, the response overview is only accessible in Joomla back-end interface.\r\nShould it be accessible in front-end interface as a Joomla module or a plugin for specific users?\r\n",
+            "created_at": "2011-02-17T16:16:38Z"
+        },
+        {
+            "body": "**Original author :** M\u00e9rour Xavier\n\nTo follow Bruno's remark, it would be interested indeed to have front-end access of responses if we want to show results for public consultation or for specific users (identified users in Joomla!). ",
+            "created_at": "2011-02-17T16:21:07Z"
+        },
+        {
+            "body": "**Original author :** M\u00e9rour Xavier\n\nQuestion :\r\n\r\nhow do manage a job with multiple resquests (for example two GetMap) ?\r\nwill you display two block of overview or one with both image and related details (responsatime, size,...) ?\r\n\r\n",
+            "created_at": "2011-02-17T16:42:21Z"
+        },
+        {
+            "body": "**Original author :** Bergstedt Thomas\n\nThe idea behind this new tab is that you from a list of queries can add them to a overviewpage that you creates.\r\n\r\nIf you have (two GetMap requests) for the same job you can added one or them both to the overviewpages that you want them to be on. For eash request there would be a block with image and related detailes (responsetime, size,...).\r\n",
+            "created_at": "2011-02-24T13:04:06Z"
+        },
+        {
+            "body": "**Original author :** M\u00e9rour Xavier\n\nOK Thomas, very nice feature. \r\n\r\nI go for it :-)",
+            "created_at": "2011-02-24T13:12:10Z"
+        },
+        {
+            "body": "**Original author :** Magoni Bruno\n\nI have only one recommendation about Response overview pages which should be accessed by non authenticated user (public user) and authenticated user (in front end).\nA new MONITOR *Joomla module* must be developed where the Joomla Administrator can define which Response overview page(s) is(are) displayed. With this way, Response Overview pages can be integrated in the CMS and attached to any menu item.\n",
+            "created_at": "2011-03-14T17:47:23Z"
+        },
+        {
+            "body": "**Original author :** Magoni Bruno\n\nEasySDI Steering Committee vote is opened...\r\n",
+            "created_at": "2011-03-14T17:47:52Z"
+        },
+        {
+            "body": "**Original author :** Magoni Bruno\n\nHello Jorgen,\r\n\r\nThis issue has been validated by EasySDI Steering Committee (3 pros \/ 0 cons).\r\nI let you validate the final result with Morten.\r\n\r\nThanks",
+            "created_at": "2011-03-15T16:49:57Z"
+        },
+        {
+            "body": "**Original author :** Bergstedt Thomas\n\nThe changes for this issue have been commit.\r\n\r\n1) java servlet.\r\nUpdated db_dump_mysql.sql  (Monitor_db_changes.JPG) \r\nUpdated Monitor_log and deegree service interface.\r\nNew rest services for overviews and updates of the exist services.\r\nNew fil \"image-config.properties\" for imagesettings (request url and savepath). (Future create rest imagehandler, so that image only needs to be save in database).\r\n\r\n\r\n2) joomla interface\r\nNew menutab for creating\/modifying last request overview pages. (Response overview tab.JPG)\r\n\r\nUpdated advanced job settings and updated request settings.\r\n\r\nNew \"Overview.php\" page not integrated in joomla public interface. (Overview_php.JPG)\r\nFuture needs to be integrated in the joomla public part where none public page should have password protection and public pages should be listed) A new MONITOR Joomla module as Bruno Magoni describes. \r\n\r\nThe check save response in the jobs advanced settings must be checked for allowing last request to be showed in response overview menu and the right image config must be set. ",
+            "created_at": "2011-03-24T13:56:48Z"
+        },
+        {
+            "body": "**Original author :** Magoni Bruno\n\nThanks Thomas,\r\n\r\nHere is my feedback about source code and architecture. Thanks for your answers to my questions (in italic).\r\n\r\n*Java servlet*\r\n* database changes OK\r\n* monitor and deegree inetrface OK\r\n* new rest services OK\r\n* New fil \"image-config.properties\" for imagesettings: I will add a new issue about it but ```\ndoes it mean that image-config.properties file won't be used anymore as no more image will be stored on disk files?; is it possible for you to update the MONITOR wiki about how to configure new image-config.properties file?```\n\r\n* Gui: I will drive french translation of Monitor_fr.properties and Monitor_fr.properties.utf8 files in trunk\/src\/org\/easysdi\/monitor\/gui\/i18n directory\r\n\r\n*Joomla interface*\r\n* New menutab for creating\/modifying last request overview pages OK\r\n* Updated advanced job settings and updated request settings OK\r\n* New \"Overview.php\" page not integrated in joomla public interface: I will add a new issue about it```\ncould you please explain in MONITOR wiki the related changes to CheckAccess.php and proxy.php files; it is important to describe which kind of changes must be made to be able to run MONITOR```\n\r\n* The check save response in the jobs advanced settings must be checked for allowing last request to be showed in response overview menu and the right image config must be set OK\r\n* GUI: I will drive french translation of fr-FR.com_easysdi_monitor.ini file in trunk\/com_easysdi_monitor\/language\/admin directory",
+            "created_at": "2011-04-12T13:27:52Z"
+        },
+        {
+            "body": "**Original author :** Bergstedt Thomas\n\nThe images are store on the disk for now, but in the design for ticket http:\/\/forge.easysdi.org\/issues\/show\/274 a rest image handler would be made, so that images only would be stored in the database and not saved to the disk.\n\nThe wiki text for the joomle interface could be\n\n*Deploying the external overviewpage*\nDeploy the files from the folder \"Public_overview_site\" into the root of the Joomla.\n\nIn the \"overviewpage.js\" change the variable \"proxy_url\" \nIt is default set to\n\"\/administrator\/components\/com_easysdi_monitor\/views\/main\/tmpl\/proxy.php?proxy_url=\"\n\nThe \"proxy.php\" file located in the folder \"\/administrator\/components\/com_easysdi_monitor\/views\/main\/tmpl\/\" is only used for the external overviewpage.\nChange the $monitorUrl to get access for the tomcat rest services it is default set to\n\"http:\/\".\"\/localhost:8080\/Monitor\";\n\n(Optional)\nThe \"CheckAccess.php\" is used when an overviewpage in the monitor module is not made public, so that only users in the monitor database can get access to this page. \nThe monitor database settings must be changes in this file for getting a connection.\n\nThe wiki text for monitor servlet could be\n\n*Image-config settings*\nIn the java monitor you specify the image settings in the file \"image-config.properties\".\nSet a folder path to somewhere in the PHP server for saving the images into. (Remember to give write access)\n \n* imagefolderLocal=C:\\\\xampp\\\\htdocs\\\\monitor\\\\img\\\\\n\nSet a URL path for this image folder \n* imageFolderUrlPath=http:\/\/localhost\/monitor\/img\/\n",
+            "created_at": "2011-04-13T13:58:12Z"
+        },
+        {
+            "body": "**Original author :** Magoni Bruno\n\nAs discussed with Jorgen, the overview pages is not integrated inside Joomla CMS but should be (see #note-14).\r\nFor now it is suggested to wait until Joomla 1.6 issue gets fixed or as soon as new MONITOR release is ready to be built.\r\nIn the worst case, the folder \"Public_overview_site\" must be thrown out from the source code repository and corresponding web interface adapted not to call it... (wait & see)\r\n",
+            "created_at": "2011-05-04T14:25:25Z"
+        },
+        {
+            "body": "**Original author :** M\u00e9rour Xavier\n\nThis is an old and very specific ticket & the community plans to make a large MONITOR refactoring.\r\n\r\nTherefore, this ticket is rejected.",
+            "created_at": "2016-02-03T15:09:31Z"
+        }
+    ]
+}

@@ -1,0 +1,23 @@
+{
+    "issue": {
+        "closed": true,
+        "title": "Use radio toggles (yes\/no = green\/red) for perimeter selection",
+        "created_at": "2015-09-07T12:27:48Z",
+        "labels": [
+            "Enhancement",
+            "Redmine status : Closed",
+            "Category : SHOP"
+        ],
+        "body": "**Original author :** Blatti Yves\n\nSince #992 has been accepted, we only have to values for each perimeter (available or not) in diffusion view.\r\nAnd the list is not very readable:\r\n!perimeters_list.png!\r\n\r\nI propose to use radio toggles (like in pricing profiles) :\r\n!pricing_example.png!\n\n**Fixed versions :** 4.3.2"
+    },
+    "comments": [
+        {
+            "body": "**Original author :** Van Hoecke H\u00e9l\u00e8ne \n\nTC has validated this enhancement.",
+            "created_at": "2015-09-28T12:34:22Z"
+        },
+        {
+            "body": "**Original author :** Blatti Yves\n\nrev 9120",
+            "created_at": "2015-10-06T15:11:08Z"
+        }
+    ]
+}

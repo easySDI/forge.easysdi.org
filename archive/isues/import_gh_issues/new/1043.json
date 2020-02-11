@@ -1,0 +1,19 @@
+{
+    "issue": {
+        "closed": false,
+        "title": "Attribution with quote",
+        "created_at": "2015-06-15T13:01:33Z",
+        "labels": [
+            "Defect",
+            "Redmine status : New",
+            "Category : MAP"
+        ],
+        "body": "**Original author :** Portier Thomas\n\nWhen we add attribution in a layer, the MAP can't load"
+    },
+    "comments": [
+        {
+            "body": "**Original author :** Blatti Yves\n\nHi Thomas,\r\n\r\nI'm not able to reproduce this issue on a GeoExt map, is it a Leafleft map issue ?",
+            "created_at": "2016-09-05T09:40:40Z"
+        }
+    ]
+}

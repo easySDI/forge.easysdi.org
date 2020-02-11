@@ -1,0 +1,14 @@
+{
+    "issue": {
+        "closed": true,
+        "title": "translation code for catalog search  are in the wrong file",
+        "created_at": "2017-12-05T16:09:17Z",
+        "labels": [
+            "Defect",
+            "Redmine status : Closed",
+            "Category : CATALOG"
+        ],
+        "body": "**Original author :** Portier Thomas\n\nThis translation codes are in the administror language file. They are not translate in front office.\r\n\r\nCOM_EASYSDI_CATALOG_TITLE=\"Search\"\r\nCOM_EASYSDI_CATALOG_RESULTS_TITLE=\"results\"\r\nCOM_EASYSDI_CATALOG_N_RESULTS_1=\"%d result\"\r\nCOM_EASYSDI_CATALOG_N_RESULTS_MORE=\"%d results\"\r\nCOM_EASYSDI_CATALOG_SHEET_PROPERTIES_TITLE=\"Order\"\r\nCOM_EASYSDI_CATALOG_NO_RESULTS=\"No result for this search\"\n\n**Fixed versions :** 4.5.0"
+    },
+    "comments": []
+}

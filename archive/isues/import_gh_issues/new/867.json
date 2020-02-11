@@ -1,0 +1,14 @@
+{
+    "issue": {
+        "closed": true,
+        "title": "Pricing - do not display basket total value, if not all items have a define price",
+        "created_at": "2014-11-19T12:07:11Z",
+        "labels": [
+            "Defect",
+            "Redmine status : Closed",
+            "Category : SHOP"
+        ],
+        "body": "**Original author :** Blatti Yves\n\nLinked to #643:\r\nIf you have at least one item in your basket which is configured as \"fee without a pricing profile\", do not display total (cause it's not the final total).\n\n**Fixed versions :** 4.3.0"
+    },
+    "comments": []
+}

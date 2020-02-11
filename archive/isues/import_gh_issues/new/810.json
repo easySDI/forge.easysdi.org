@@ -1,0 +1,27 @@
+{
+    "issue": {
+        "closed": true,
+        "title": "Upgrade Boundless SDK GXP library to the latest version",
+        "created_at": "2014-08-25T11:55:18Z",
+        "labels": [
+            "Enhancement",
+            "Redmine status : Closed",
+            "Category : MAP"
+        ],
+        "body": "**Original author :** Van Hoecke H\u00e9l\u00e8ne \n\n* Upgrade Boundless SDK GXP library to the latest version 4.1 : http:\/\/boundlessgeo.com\/solutions\/solutions-software\/software\/\r\n* Adapt EasySDI code where it is needed to work with this version.\n\n**Fixed versions :** 4.2.0"
+    },
+    "comments": [
+        {
+            "body": "**Original author :** Van Hoecke H\u00e9l\u00e8ne \n\n@Bruno : to resolve",
+            "created_at": "2014-08-25T11:58:24Z"
+        },
+        {
+            "body": "**Original author :** Magoni Bruno\n\nTechnical update to fix some Boundless SDK bugs.\r\nDoesn't need any votes...",
+            "created_at": "2014-08-25T12:10:43Z"
+        },
+        {
+            "body": "**Original author :** Magoni Bruno\n\nI propose to classify such issue as enhancement instead of feature (doesn't need to be validated by Steering Committee)...",
+            "created_at": "2015-02-26T12:48:37Z"
+        }
+    ]
+}

@@ -1,0 +1,18 @@
+{
+    "issue": {
+        "closed": true,
+        "title": "Two processus running in parallel \/ logs limitation",
+        "created_at": "2010-03-15T15:28:56Z",
+        "labels": [
+            "Feature",
+            "Redmine status : Rejected"
+        ],
+        "body": "**Original author :** M\u00e9rour Xavier\n\nIn order to boost the PROXY, a mean is to install two Java container instances (Tomcat, ...) and to run them in parallel if the server has two CPU kernels for example >> it allows to treat more requests in the same period of time.\r\n\r\nBut a problem occurs : as the PROXY writes logs in files, one process has to wait until the other process finishes writing in logs and closing the file before writing its logs.\r\n\r\nHow could we solve this problem ? Is there any work-around ?\r\nOr logs should be stored in a database ?\r\n\r\n\r\n"
+    },
+    "comments": [
+        {
+            "body": "**Original author :** Blatti Yves\n\nThis no longer applies to modern JVM, Tomcat and proxy implementations.",
+            "created_at": "2016-02-03T15:31:59Z"
+        }
+    ]
+}

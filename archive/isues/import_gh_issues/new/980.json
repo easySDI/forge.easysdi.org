@@ -1,0 +1,19 @@
+{
+    "issue": {
+        "closed": false,
+        "title": "Manage external files retention time",
+        "created_at": "2015-04-07T08:07:24Z",
+        "labels": [
+            "Enhancement",
+            "Redmine status : Accepted",
+            "Category : SHOP"
+        ],
+        "body": "**Original author :** Blatti Yves\n\nWith easySDI 4.3, the new \"SHOP webservice \":https:\/\/forge.easysdi.org\/projects\/easysdi\/wiki\/4_shop_rest offers the ability to transmit a +binary file+ *OR* +file URL+ (external file).\r\n\r\nProblem is: In case of external file we don't manage a retention time, but files aren't eternal... so we have to remove download link after a while.\r\n\r\nWe propose to add an \"external file retention time\" parameter (as global shop parameter). Values would be days (integer), 0 is \"infinite\" (default).\r\nThis will allow easySDI to remove links from order summaries after the desired time (like we do with local stored files).\r\n"
+    },
+    "comments": [
+        {
+            "body": "**Original author :** Villemagne J\u00e9r\u00f4me\n\nOk from TC.\r\n",
+            "created_at": "2015-04-10T09:56:26Z"
+        }
+    ]
+}

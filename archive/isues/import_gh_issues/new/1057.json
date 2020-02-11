@@ -1,0 +1,19 @@
+{
+    "issue": {
+        "closed": false,
+        "title": "Missing indexes in sql server database schema",
+        "created_at": "2015-07-07T07:00:26Z",
+        "labels": [
+            "Defect",
+            "Redmine status : New",
+            "Category : CORE"
+        ],
+        "body": "**Original author :** Van Hoecke H\u00e9l\u00e8ne \n\nThere is some missing indexes in the SQL server database schema. \r\n\r\nFor example, #__sdi_resource and its related tables don't have indexes on foreign keys, which are usefull for the queries executed to build the resources page."
+    },
+    "comments": [
+        {
+            "body": "**Original author :** Van Hoecke H\u00e9l\u00e8ne \n\nA solution is to run this query that creates all missing index on foreign keys :\r\n```\n\r\nSelect\r\n'IF NOT EXISTS (SELECT * FROM sys.indexes WHERE object_id = OBJECT_ID(N''[dbo].['\r\n+ tab.[name]\r\n+ ']'') AND name = N''IX_'\r\n+ cols.[name]\r\n+ ''') '\r\n+ 'CREATE NONCLUSTERED INDEX [IX_'\r\n+ cols.[name]\r\n+ '] ON [dbo].['\r\n+ tab.[name]\r\n+ ']( ['\r\n+ cols.[name]\r\n+ '] ASC ) WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, SORT_IN_TEMPDB = OFF, IGNORE_DUP_KEY = OFF, DROP_EXISTING = OFF, ONLINE = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY]'\r\nFrom sys.foreign_keys keys\r\nInner Join sys.foreign_key_columns keyCols\r\nOn keys.object_id = keyCols.constraint_object_id\r\nInner Join sys.columns cols\r\nOn keyCols.parent_object_id = cols.object_id\r\nAnd keyCols.parent_column_id = cols.column_id\r\nInner Join sys.tables tab\r\nOn keyCols.parent_object_id = tab.object_id\r\nOrder by tab.[name], cols.[name]\r\n```\n",
+            "created_at": "2015-07-21T13:09:19Z"
+        }
+    ]
+}

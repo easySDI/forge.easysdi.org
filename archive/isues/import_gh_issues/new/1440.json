@@ -1,0 +1,43 @@
+{
+    "issue": {
+        "closed": true,
+        "title": "New tool : EasySDI EXTRACT",
+        "created_at": "2017-09-18T12:04:43Z",
+        "labels": [
+            "Feature",
+            "Redmine status : Closed",
+            "Category : EXTRACT"
+        ],
+        "body": "**Original author :** Blatti Yves\n\nEXTRACT is a Java web application that connects to easySDI shop with \"SHOP'S REST WS\":https:\/\/forge.easysdi.org\/projects\/easysdi\/wiki\/4_shop_rest to automate order processing.\r\nIt connects to ETLs (FME for example) and other systems _via_ plugins to gather data for the order.\r\n\r\n\r\nEXTRACT Has been accepted on PSC meeting 7th mars 2017\r\n\r\n\r\nMain features are : \r\n- import orders from easySDI SHOP\r\n- filter and dispatch orders according properties (format, client, perimeters...)\r\n- process orders according to a parameterized treatment (1 to n tasks)\r\n- load task plugins to achieve specific tasks (validation, add remark,  launch FME desktop\/server jobs,...)\r\n- export results to easySDI SHOP\r\n\n\n**Fixed versions :** 4.5.0"
+    },
+    "comments": [
+        {
+            "body": "**Original author :** Blatti Yves\n\n@Xavier: can you please fill this issue with EXTRACT description + functional\/ergonomic impacts ? It will be the issue for the initial commit (V1) of EXTRACT delivered by arx iT.",
+            "created_at": "2017-09-18T12:06:33Z"
+        },
+        {
+            "body": "**Original author :** M\u00e9rour Xavier\n\nEXTRACT is ready to be integrated to easySDI forge since V1.0 stable is available since mid-september.\r\n\r\nDocumentation is currently available as \"PDF\/word\" format and will be soon added to this news wiki section : https:\/\/forge.easysdi.org\/projects\/easysdi\/wiki\/Extract_Installation?parent=4",
+            "created_at": "2017-09-27T09:22:50Z"
+        },
+        {
+            "body": "**Original author :** M\u00e9rour Xavier\n\nArxIt (https:\/\/forge.easysdi.org\/users\/1670) is ready to commit all EXTRACT code in the coming weeks.",
+            "created_at": "2017-09-27T09:25:51Z"
+        },
+        {
+            "body": "**Original author :** M\u00e9rour Xavier\n\n*I propose to formely discuss this issue next week as we have a Steering Committee on 6.10 (11am).*\r\n",
+            "created_at": "2017-09-27T09:27:56Z"
+        },
+        {
+            "body": "**Original author :** M\u00e9rour Xavier\n\nEXTRACT integration has been formely validated by PSC.\r\nThe code is about to be commit in SVN by ArxIT.\r\n\r\n@Helene\r\nPlease can you change status to \"accepted\" (I cannot do that)",
+            "created_at": "2017-10-20T14:54:06Z"
+        },
+        {
+            "body": "**Original author :** Blatti Yves\n\nAccepted by PSC on 6.10.2017",
+            "created_at": "2018-02-22T17:28:07Z"
+        },
+        {
+            "body": "**Original author :** Blatti Yves\n\nArxit branch merged in ASIT VD 4.4.X branch",
+            "created_at": "2018-02-22T17:29:26Z"
+        }
+    ]
+}

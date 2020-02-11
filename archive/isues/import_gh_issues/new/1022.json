@@ -1,0 +1,23 @@
+{
+    "issue": {
+        "closed": true,
+        "title": "\"resources\" view has become drastically slower since 4.3.2",
+        "created_at": "2015-05-29T14:48:07Z",
+        "labels": [
+            "Defect",
+            "Redmine status : Closed",
+            "Category : CORE"
+        ],
+        "body": "**Original author :** Blatti Yves\n\n\"resources\" view has become drastically slower since 4.3.2. (2 seconds to load !)\r\nAn SQL query ?\n\n**Fixed versions :** 4.3.2"
+    },
+    "comments": [
+        {
+            "body": "**Original author :** Van Hoecke H\u00e9l\u00e8ne \n\nYes, it comes from the SQL query and the criterias added for \"the organism manager\".\r\nOptimisation was made on the query, but it is still slower than before.",
+            "created_at": "2015-06-08T14:24:51Z"
+        },
+        {
+            "body": "**Original author :** M\u00e9rour Xavier\n\nTested, correction OK\r\n\r\nThat's fine for us.\r\n\r\nThanks.",
+            "created_at": "2015-06-08T14:26:33Z"
+        }
+    ]
+}

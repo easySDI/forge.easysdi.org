@@ -1,0 +1,14 @@
+{
+    "issue": {
+        "closed": true,
+        "title": "Wrong link to catalog search from a map",
+        "created_at": "2015-06-08T14:47:39Z",
+        "labels": [
+            "Defect",
+            "Redmine status : Closed",
+            "Category : MAP"
+        ],
+        "body": "**Original author :** Van Hoecke H\u00e9l\u00e8ne \n\nThe link to open a catalog search inside a map missed parameters :\r\n- tmpl = component\r\n- preview = map\r\n- id\n\n**Fixed versions :** 4.3.2"
+    },
+    "comments": []
+}

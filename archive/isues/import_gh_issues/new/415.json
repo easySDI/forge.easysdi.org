@@ -1,0 +1,19 @@
+{
+    "issue": {
+        "closed": true,
+        "title": "Check that at least one diffusion property is defined",
+        "created_at": "2011-06-21T14:22:49Z",
+        "labels": [
+            "Feature",
+            "Redmine status : Rejected",
+            "Category : SHOP"
+        ],
+        "body": "**Original author :** M\u00e9rour Xavier\n\nIn the supplier frontend, under \"my product\", no verification om diffusion property is done. Implement such control to prevent a product without diffusion property being orderable should be available.\r\n\r\nThe rule would be : at least one diffusion property must be defined for any product. If not, the \"orderable\" option cannot be set to \"True\" and a red message should indicate the error (omething like \"no diffusion property defined\". \r\n"
+    },
+    "comments": [
+        {
+            "body": "**Original author :** Blatti Yves\n\nNot relevant for easySDI v4",
+            "created_at": "2017-06-29T07:30:01Z"
+        }
+    ]
+}

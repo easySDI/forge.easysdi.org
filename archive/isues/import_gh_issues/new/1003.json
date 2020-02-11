@@ -1,0 +1,23 @@
+{
+    "issue": {
+        "closed": true,
+        "title": "JDEBUG mode not compatible with BASKET",
+        "created_at": "2015-05-12T10:06:23Z",
+        "labels": [
+            "Defect",
+            "Redmine status : Rejected",
+            "Category : SHOP"
+        ],
+        "body": "**Original author :** Van Hoecke H\u00e9l\u00e8ne \n\nIn JDEBUG mode, it is impossible to save a basket.\r\n\r\nThe call to \"task=basket.saveProduct\" returns an error due to the underlying call to JSession::checkToken() which always returns \"false\" in DEBUG mode.\r\n\r\nThis can be a problem for developers, without the JDEBUG activated, all the libraries used in the basket (and there is libraries...) are loaded in their minified versions."
+    },
+    "comments": [
+        {
+            "body": "**Original author :** Blatti Yves\n\nUnable to reproduce with Joomla 3.4.8 and easySDI 4.4.0.\r\nCan someone still reproduce on up to date Joomla ?\r\nMaybe a Joomla bug on specific version ?",
+            "created_at": "2016-02-12T09:45:15Z"
+        },
+        {
+            "body": "**Original author :** Van Hoecke H\u00e9l\u00e8ne \n\nSeems to be solved in current Joomla version.\r\ncan be rejected.",
+            "created_at": "2016-02-19T10:37:07Z"
+        }
+    ]
+}

@@ -1,0 +1,59 @@
+{
+    "issue": {
+        "closed": true,
+        "title": "Enhancement of \"ressource page\" layout and feature",
+        "created_at": "2014-03-21T13:11:02Z",
+        "labels": [
+            "Feature",
+            "Redmine status : Closed",
+            "Category : CATALOG"
+        ],
+        "body": "**Original author :** M\u00e9rour Xavier\n\nWe would like tu suggest some enhancements in the \"ressource page\" :\r\n\r\n* Layout\r\n\r\nreplace in the column \"type\" the texts by \"icons\" and display them before the name of the ressourc\r\n(the idea is to have more place for the title and less text for simpler screen)\r\n\r\n* Feature\r\n\r\nadd the ability \"sort by\" on column \"name\" by just clicking on the title of the colomn\r\n\r\nQuestion : do we need to keep status \"deleted\" in the filter ? \r\n\r\n\r\n\r\nWhat do you think ?\n\n**Fixed versions :** 4.3.0"
+    },
+    "comments": [
+        {
+            "body": "**Original author :** M\u00e9rour Xavier\n\nThomas, I would like to have your opinion on this proposal.\r\n\r\nThanks.",
+            "created_at": "2014-03-21T15:53:19Z"
+        },
+        {
+            "body": "**Original author :** Portier Thomas\n\nIt is possible to manage replacement of the  label type via css in your template. I think it will be more simple than associate an icon to the ressource type in EasySDI. Do you suggest that also to change the search field in catalog search?\r\n\r\nOrdering column by clicking on the column name would be great.\r\n\r\nYes, the status \"deleted\" can be dropped.\r\n\r\n",
+            "created_at": "2014-03-21T16:56:39Z"
+        },
+        {
+            "body": "**Original author :** M\u00e9rour Xavier\n\nOK for \"delete\" status.\r\nOK for oreding feature.\r\n\r\nConcerning the status with or\/icon... yes it could be done through CSS.. But I am not sure it's a good idea. \r\nTo be discussed further.\r\n",
+            "created_at": "2014-03-21T17:22:51Z"
+        },
+        {
+            "body": "**Original author :** M\u00e9rour Xavier\n\nyves, what is your opinion ?\r\n\r\n",
+            "created_at": "2014-03-21T17:23:13Z"
+        },
+        {
+            "body": "**Original author :** Blatti Yves\n\nI \"vote\" for the CSS solution:\r\n- it's easier to code (we don't need to add backend configurations for images or icon to ressource types)\r\n- we just add a CSS class to the items. Why not use the alias of ressource type (maybe prefixed, to avoid collisions) \r\n- this solution won't impact users that wont use the feature\r\n",
+            "created_at": "2014-03-24T08:37:57Z"
+        },
+        {
+            "body": "**Original author :** M\u00e9rour Xavier\n\nThat's OK for me... developper's opinion is much more valuable on this kind of issue :-)",
+            "created_at": "2014-03-24T08:40:26Z"
+        },
+        {
+            "body": "**Original author :** M\u00e9rour Xavier\n\nOK for you Thomas ?",
+            "created_at": "2014-03-24T08:40:44Z"
+        },
+        {
+            "body": "**Original author :** Portier Thomas\n\nyes",
+            "created_at": "2014-04-02T09:37:39Z"
+        },
+        {
+            "body": "**Original author :** M\u00e9rour Xavier\n\nOK, so the summary of this ticket is (TODO) :\r\n\r\n- add the ability \"sort by\" on column \"name\" by just clicking on the title of the colomn\r\n\r\nThat's all :-)\r\n\r\n",
+            "created_at": "2014-06-06T16:25:15Z"
+        },
+        {
+            "body": "**Original author :** M\u00e9rour Xavier\n\nAnother thing that is missing on this page :\"results number\".\r\n\r\nIt should be displayed above the list \/ below the filter (as usual I would say).\r\n\r\nIt's clearly missing.",
+            "created_at": "2014-06-27T13:45:27Z"
+        },
+        {
+            "body": "**Original author :** M\u00e9rour Xavier\n\nNew summary of the ticket :\r\n\r\n- add the ability \"sort by\" on column \"name\" by just clicking on the title of the colomn\r\n- add result number below the filter (OR in pagination maybe ? to discuss...)\r\n- add a CSS class \"resource type\" to each item (based on alias of ressource type and prefixed, to avoid collisions)\r\n- add a CSS class \"type of access scope\" to each item (also prefixed to avoid collisions)\r\n\r\n",
+            "created_at": "2014-06-27T14:05:04Z"
+        }
+    ]
+}

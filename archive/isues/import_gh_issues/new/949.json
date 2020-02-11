@@ -1,0 +1,19 @@
+{
+    "issue": {
+        "closed": true,
+        "title": "Basket : perimeter area should apear in title",
+        "created_at": "2015-03-23T09:02:04Z",
+        "labels": [
+            "Defect",
+            "Redmine status : Closed",
+            "Category : SHOP"
+        ],
+        "body": "**Original author :** Blatti Yves\n\nIt was decided with #643 to put the surface\/area of selected perimeter in the perimeter section title (and not at the side of the map).\r\nSee #643 mockups.\n\n**Fixed versions :** 4.3.2"
+    },
+    "comments": [
+        {
+            "body": "**Original author :** Blatti Yves\n\nThis one has been done with #943.\r\nNo code to merge. Target is 4.3.2 .",
+            "created_at": "2015-06-26T13:37:41Z"
+        }
+    ]
+}

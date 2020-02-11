@@ -1,0 +1,19 @@
+{
+    "issue": {
+        "closed": true,
+        "title": "Unable to upload a zip file in diffusion (banned extension)",
+        "created_at": "2015-11-11T10:07:23Z",
+        "labels": [
+            "Defect",
+            "Redmine status : Closed",
+            "Category : SHOP"
+        ],
+        "body": "**Original author :** Blatti Yves\n\nUnable to upload a zip file in diffusion (banned extension)\r\nNeed to use 'unsafe upload'\n\n**Fixed versions :** 4.3.2"
+    },
+    "comments": [
+        {
+            "body": "**Original author :** Blatti Yves\n\nrev. 9212",
+            "created_at": "2015-11-11T10:10:26Z"
+        }
+    ]
+}

@@ -1,0 +1,14 @@
+{
+    "issue": {
+        "closed": true,
+        "title": "Copy an order does not check that product, properties, third-party or perimeter are still available ",
+        "created_at": "2016-04-08T09:48:31Z",
+        "labels": [
+            "Defect",
+            "Redmine status : Closed",
+            "Category : SHOP"
+        ],
+        "body": "**Original author :** Blatti Yves\n\n## Problems when an order is copied:\r\n\r\n* A diffusion\/product can:\r\n** have been remove from diffusion\r\n** changed diffusion access scope\r\n** property change:\r\n*** new mandatory property\r\n*** mandatory property value not selected\r\n*** removed property\r\n* The resource can:\r\n** have been removed from catalog\r\n*** put in progress\r\n*** archived\r\n*** unpublished\r\n** changed access scope\r\n* Third party may not be selectable anymore\r\n* Perimeter can not be usable for product list anymore \r\n\r\n## Behavior proposal :\r\n\r\n* If a perimeter is not more available (perimeter removed, or disabled), but there is still a common perimeter: *allow copy* but *drop the perimeter* and *show a message* [2]\r\n* If there is no more common perimeter : *block copy* [1]\r\n* If there was a third party that is no more available : *allow copy* , *remove all third party information* and *add a message* [3] (this third party is no more available)\r\n\r\n* *Anything that prevent a product to be added to the basket must block the copy* with a message [1], for example:\r\n** A *new mandatory property* has been added\r\n** A *mandatory property value* is not available anymore\r\n** *Access scope* has been restricted on *diffusion* OR on *metadata* (user has no more access to it)\r\n** Metadata has been *unpublished* or *archived*\r\n** Diffusion has been *unpublished*\r\n** Extraction has been *disabled*\r\n\r\n* *Copy must be clean*, for example:\r\n** If a property has been removed from diffusion, do not copy it in the new basket\r\n\r\n[1] When copy is blocked, show a message an stay in the same screen : https:\/\/forge.easysdi.org\/attachments\/download\/1009\/block_copy.png\r\n[2] Inform user that perimeter has been removed : https:\/\/forge.easysdi.org\/attachments\/download\/1010\/drop_perim.png\r\n[3] Inform user that third party has been removed : https:\/\/forge.easysdi.org\/attachments\/download\/1011\/drop_tp.png\r\n\n\n**Fixed versions :** 4.4.2"
+    },
+    "comments": []
+}

@@ -1,0 +1,13 @@
+{
+    "issue": {
+        "closed": true,
+        "title": "easySDI libraries \"cleanup\" and questions",
+        "created_at": "2014-08-22T10:36:17Z",
+        "labels": [
+            "Feature",
+            "Redmine status : Closed"
+        ],
+        "body": "**Original author :** Blatti Yves\n\nA cleanup of unnecessary files in libraries has been done in the past to lower easySDI package size.\r\nI see that there are some remaining (examples  + unit testing : total ~6.65 Mo):\r\n\r\n- \/administrator\/components\/com_easysdi_dashboard\/libraries\/flot\/examples (~1 Mo)\r\n- \/administrator\/components\/com_easysdi_monitor\/libraries\/ext\/examples (~200 Ko)\r\n- \/administrator\/components\/com_easysdi_core\/libraries\/DataTables-1.9.4\/media\/unit_testing (~1.2 Mo)\r\n- \/administrator\/components\/com_easysdi_core\/libraries\/mpdf\/examples (~4.0 Mo)\r\n- \/administrator\/components\/com_easysdi_core\/libraries\/syntaxhighlighter\/tests (~250 Ko)\r\n\r\n+ Embedded libraries components (~1.2 Mo):\r\nMONITOR embeds a jQuery version... is it incompatible with the joomla's version? (~70 Ko)\r\nSERVICE embeds a version of proj4js (~450Ko) and openlayers (~700 Ko) : and we already have two versions of both in core. Why not using them (or try to ...)?\r\n\r\nTotal represents more than 1\/4 of easySDI's current package size...\n\n**Fixed versions :** 4.3.0"
+    },
+    "comments": []
+}

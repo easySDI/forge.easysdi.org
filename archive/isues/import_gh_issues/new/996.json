@@ -1,0 +1,14 @@
+{
+    "issue": {
+        "closed": true,
+        "title": "\"View available data from\" in the map addlayers toolbox not translated in french",
+        "created_at": "2015-05-05T10:17:39Z",
+        "labels": [
+            "Defect",
+            "Redmine status : Closed",
+            "Category : MAP"
+        ],
+        "body": "**Original author :** Portier Thomas\n\n\n\n**Fixed versions :** 4.2.8"
+    },
+    "comments": []
+}

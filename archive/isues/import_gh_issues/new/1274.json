@@ -1,0 +1,19 @@
+{
+    "issue": {
+        "closed": true,
+        "title": "Metadata temp xml and pdf files are not destroyed after creation",
+        "created_at": "2016-02-26T10:40:52Z",
+        "labels": [
+            "Defect",
+            "Redmine status : Closed",
+            "Category : CATALOG"
+        ],
+        "body": "**Original author :** Blatti Yves\n\nCatalog sheets temporary xml and pdf files are not destroyed after creation.\r\nThey remain in \/tmp\r\n(every export, and every SHOP order are concerned)\n\n**Fixed versions :** 4.4.0"
+    },
+    "comments": [
+        {
+            "body": "**Original author :** Blatti Yves\n\nrev. 9500",
+            "created_at": "2016-03-02T13:59:52Z"
+        }
+    ]
+}

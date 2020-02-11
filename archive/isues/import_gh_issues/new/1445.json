@@ -1,0 +1,14 @@
+{
+    "issue": {
+        "closed": true,
+        "title": "One time password is not regenerated",
+        "created_at": "2017-12-05T11:57:36Z",
+        "labels": [
+            "Defect",
+            "Redmine status : Closed",
+            "Category : SHOP"
+        ],
+        "body": "**Original author :** Portier Thomas\n\nThe one time password is not regenerated when the user fills 3 bad passwords\n\n**Fixed versions :** 4.5.0"
+    },
+    "comments": []
+}

@@ -1,0 +1,19 @@
+{
+    "issue": {
+        "closed": true,
+        "title": "Perimeter area is doubled with polygon and rectangle",
+        "created_at": "2016-03-03T14:41:09Z",
+        "labels": [
+            "Defect",
+            "Redmine status : Closed",
+            "Category : SHOP"
+        ],
+        "body": "**Original author :** Blatti Yves\n\nPerimeter area is doubled with polygon and rectangle in basket, because \"draw\" features are parsed in area calculation\n\n**Fixed versions :** 4.4.0"
+    },
+    "comments": [
+        {
+            "body": "**Original author :** Blatti Yves\n\nrev. 9502",
+            "created_at": "2016-03-03T14:44:11Z"
+        }
+    ]
+}

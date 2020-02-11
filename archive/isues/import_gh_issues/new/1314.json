@@ -1,0 +1,14 @@
+{
+    "issue": {
+        "closed": true,
+        "title": "Submit button to show job report is hidden",
+        "created_at": "2016-04-14T08:40:38Z",
+        "labels": [
+            "Defect",
+            "Redmine status : Closed",
+            "Category : MONITOR"
+        ],
+        "body": "**Original author :** Portier Thomas\n\nWe have to remove SLA combobox\n\n**Fixed versions :** 4.4.1"
+    },
+    "comments": []
+}

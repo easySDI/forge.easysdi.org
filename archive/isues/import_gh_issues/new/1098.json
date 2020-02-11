@@ -1,0 +1,14 @@
+{
+    "issue": {
+        "closed": true,
+        "title": "Price does not refresh well in basket",
+        "created_at": "2015-08-28T14:52:24Z",
+        "labels": [
+            "Defect",
+            "Redmine status : Closed",
+            "Category : SHOP"
+        ],
+        "body": "**Original author :** M\u00e9rour Xavier\n\nWhen adding a product in the basket with \"fee without profile\" option for this product, it indicates \"0 CHF\"... it should not since no profil is defined.\r\n\r\n\n\n**Fixed versions :** 4.3.2"
+    },
+    "comments": []
+}

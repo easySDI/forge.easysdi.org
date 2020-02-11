@@ -1,0 +1,47 @@
+{
+    "issue": {
+        "closed": true,
+        "title": "New component EasySDI Processing",
+        "created_at": "2015-12-07T11:20:48Z",
+        "labels": [
+            "Feature",
+            "Redmine status : Closed",
+            "Category : PROCESSING"
+        ],
+        "body": "**Original author :** Portier Thomas\n\nThis component will permit to order processings.\r\n\r\nIn the backend, administrator will be able to add new processing types (Quality check, geocoding, isochron calculation)\r\nIn the frontend, the user will be able to order new processings and\/or to upload the result of a processing ordered.\r\n\r\nA processing type will be tagged as automatic or manual. A REST service will expose the automatic processing orders as it is done in the shop component.\r\n\r\nPlugins could be associated to a processing type in order to add specific features as moderate quality checks.\n\n**Fixed versions :** 4.4.0"
+    },
+    "comments": [
+        {
+            "body": "**Original author :** M\u00e9rour Xavier\n\n@H\u00e9l\u00e8ne or Bruno\r\nWe need a new \"category\" named \"PROCESSING\" for this new component. Can you add it please ?",
+            "created_at": "2015-12-11T16:42:37Z"
+        },
+        {
+            "body": "**Original author :** M\u00e9rour Xavier\n\nI vote for.\r\nGreat new component from France, congratulations !\r\n\r\n+1",
+            "created_at": "2015-12-11T16:54:25Z"
+        },
+        {
+            "body": "**Original author :** Magoni Bruno\n\n+1",
+            "created_at": "2015-12-11T17:48:00Z"
+        },
+        {
+            "body": "**Original author :** Plainecassagne Laurent\n\n+1",
+            "created_at": "2015-12-11T17:53:25Z"
+        },
+        {
+            "body": "**Original author :** Magoni Bruno\n\nNew category \"PROCESSING\" added!",
+            "created_at": "2015-12-11T17:55:08Z"
+        },
+        {
+            "body": "**Original author :** Teixeira J\u00e9r\u00f4me\n\nGreat new\r\nVote + 1\r\n\r\nSorry for my long-lasting absence, I wish you good Christmas and new Year holidays",
+            "created_at": "2015-12-11T17:57:34Z"
+        },
+        {
+            "body": "**Original author :** Van Hoecke H\u00e9l\u00e8ne \n\n+1",
+            "created_at": "2015-12-14T07:52:09Z"
+        },
+        {
+            "body": "**Original author :** M\u00e9rour Xavier\n\nPSC has voted positively for this new component.\r\n\r\nWelcome PROCESSING !\r\n\r\n@H\u00e9l\u00e8ne, can you chaneg status please (only manager can do it).\r\n",
+            "created_at": "2015-12-15T07:52:30Z"
+        }
+    ]
+}

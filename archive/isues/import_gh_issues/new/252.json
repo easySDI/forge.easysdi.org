@@ -1,0 +1,14 @@
+{
+    "issue": {
+        "closed": false,
+        "title": "Develop an alert plugin for back-end",
+        "created_at": "2010-11-09T14:51:06Z",
+        "labels": [
+            "Feature",
+            "Redmine status : New",
+            "Category : MONITOR"
+        ],
+        "body": "**Original author :** M\u00e9rour Xavier\n\nTo get a better view on monitored services, it would be of great help to have alerts displayed directly on Welcome administration panel.\r\n\r\nA simple Joomla! plugin could be developed with the following logic :\r\n\r\nGet all jobs with status different from \"available\"\r\nReturn the list of the jobs + status + date\/time\r\n\r\nTo be discussed \r\n\r\n\r\n\r\n\r\n\r\n"
+    },
+    "comments": []
+}

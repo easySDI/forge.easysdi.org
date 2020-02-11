@@ -1,0 +1,19 @@
+{
+    "issue": {
+        "closed": true,
+        "title": "Map in the request panel is not shown",
+        "created_at": "2015-02-27T16:27:50Z",
+        "labels": [
+            "Defect",
+            "Redmine status : Closed",
+            "Category : SHOP"
+        ],
+        "body": "**Original author :** Portier Thomas\n\n\n\n**Fixed versions :** 4.2.7"
+    },
+    "comments": [
+        {
+            "body": "**Original author :** Portier Thomas\n\nproj4js 1.1.0 didn't take into account EPSG:3857 (it was called EPSG:3875)...",
+            "created_at": "2015-03-02T08:56:28Z"
+        }
+    ]
+}

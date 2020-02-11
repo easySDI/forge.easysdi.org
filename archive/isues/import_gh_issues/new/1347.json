@@ -1,0 +1,39 @@
+{
+    "issue": {
+        "closed": true,
+        "title": "Monitor : remove own version of JQuery, update Highcharts and move to FE",
+        "created_at": "2016-06-21T11:33:12Z",
+        "labels": [
+            "Defect",
+            "Redmine status : Closed",
+            "Category : MONITOR"
+        ],
+        "body": "**Original author :** Blatti Yves\n\nMonitor loads it's own version of JQuery which conflict with Joomla's version.\r\nI propose to remove the lib and use systems' default.\r\n\r\nThomas, do you agree ?\n\n**Fixed versions :** 4.4.2"
+    },
+    "comments": [
+        {
+            "body": "**Original author :** Portier Thomas\n\nYes I tried it but HighChart doesn't show anymore the charts if we don't load this jquery version. But I didn't search why. It must be a detail but I didn't have time to look further.",
+            "created_at": "2016-06-23T10:35:53Z"
+        },
+        {
+            "body": "**Original author :** Blatti Yves\n\nProposed fix : \r\n* update to last version of Highcharts in the 2.x series witch should be compliant with the joomla's JQuery version\r\n* place hightchart in FE like other libs\r\n* remove embedded JQuery\r\n",
+            "created_at": "2016-06-24T12:06:11Z"
+        },
+        {
+            "body": "**Original author :** Blatti Yves\n\nAlso :\r\n* remove unused XMLRPC2 lib\r\n* move assets to FE (CSS + img)\r\n* fix plugin",
+            "created_at": "2016-06-24T12:50:18Z"
+        },
+        {
+            "body": "**Original author :** Blatti Yves\n\n+ fix wrong case in default parameters (Monitor -> monitor)",
+            "created_at": "2016-06-24T12:54:09Z"
+        },
+        {
+            "body": "**Original author :** Blatti Yves\n\nrev. 9887",
+            "created_at": "2016-06-24T13:25:58Z"
+        },
+        {
+            "body": "**Original author :** Blatti Yves\n\nbuild.xml use wrong pathname for monitor plugin, fix and commit in rev. 9889",
+            "created_at": "2016-06-24T13:39:27Z"
+        }
+    ]
+}

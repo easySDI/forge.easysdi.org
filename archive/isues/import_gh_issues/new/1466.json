@@ -1,0 +1,14 @@
+{
+    "issue": {
+        "closed": true,
+        "title": "Added parameter documentation for FME connector",
+        "created_at": "2018-11-20T15:36:25Z",
+        "labels": [
+            "Enhancement",
+            "Redmine status : Closed",
+            "Category : EXTRACT"
+        ],
+        "body": "**Original author :** Blatti Yves\n\n* Modification of the FME and FME Server plugins\r\n* Add a help tooltip (as for other plugins)\r\n!18810_access_tooltip.png!\r\n* The content of the help must help an EXTRACT administrator to create an FME script compatible with EXTRACT\r\n* It should describe past variables, their names, types and example data.\r\n** Perimeter (and its encoding in WKT WGS84)\r\n** Product (string, external product ID)\r\n** FolderOut (output folder used for FME desktop)\r\n** Parameters (describe their encoding and dynamic aspect)\r\n* Explain the return values to give (difference between FME desktop and server)\r\n* for FME Server -> specify that the \"Data Download\" service should be used and not \"Job Submitter\".\r\n\r\n*Public parameters to be used in an FME script*\r\n!18810-FME_published_parameters.png!\r\n\r\nSource (french) : https:\/\/projets.asitvd.ch\/issues\/18810\n\n**Fixed versions :** 4.5.1"
+    },
+    "comments": []
+}

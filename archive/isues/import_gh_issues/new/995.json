@@ -1,0 +1,18 @@
+{
+    "issue": {
+        "closed": true,
+        "title": "Indoor navigation & download by grid",
+        "created_at": "2015-05-05T08:55:14Z",
+        "labels": [
+            "Enhancement",
+            "Redmine status : Closed"
+        ],
+        "body": "**Original author :** Van Hoecke H\u00e9l\u00e8ne \n\nWith indoor navigation available for vizualisation, it would be interesting to allow the download by grid to be perform as well in an indoor context : the grid layer would be compatible with indoor navigation, and the feature selection could be made inside indoor level. \n\n**Fixed versions :** 4.3.1"
+    },
+    "comments": [
+        {
+            "body": "**Original author :** Van Hoecke H\u00e9l\u00e8ne \n\nTC ok.",
+            "created_at": "2015-05-07T13:30:53Z"
+        }
+    ]
+}

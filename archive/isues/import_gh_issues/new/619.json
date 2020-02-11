@@ -1,0 +1,14 @@
+{
+    "issue": {
+        "closed": false,
+        "title": "Enhance installation process",
+        "created_at": "2013-05-15T14:11:43Z",
+        "labels": [
+            "Feature",
+            "Redmine status : New",
+            "Category : CORE"
+        ],
+        "body": "**Original author :** M\u00e9rour Xavier\n\nOnce package installation is done, you get a relative \"poor\" screen with the minimum info.\r\n\r\nThis screen should be used to inform the user and give a better experience with :\r\n\r\n- saying thank you for installation EasySDI\r\n- give a link to www.easysdi.org and forge.easysdi (forum, wiki,...)\r\n- add EasySDI logo\r\n- add a direct link to EasySDI dashboard (home of the component)\r\n"
+    },
+    "comments": []
+}

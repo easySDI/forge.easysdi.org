@@ -1,0 +1,35 @@
+{
+    "issue": {
+        "closed": true,
+        "title": "URL test does not work",
+        "created_at": "2015-01-19T15:05:13Z",
+        "labels": [
+            "Enhancement",
+            "Redmine status : Closed",
+            "Category : SHOP"
+        ],
+        "body": "**Original author :** M\u00e9rour Xavier\n\nIn resource management, in diffusion options, the user can choose product storage = URL under \"Download\" (See attached image).\r\nThen he's asked for the file URL and, optionally , for login\/password. Then the user can test the URL Access.\r\n\r\nIt seems that this feature only test the domain name :\r\n\r\n- if I test www.easysdi.org, it returns \"The resource is accessible thanks to the information provided\"\r\n- if I test \"easysdi.org\/fffff\" (which is HTTP error 404), the test returns a \"The resource is accessible thanks to the information provided\". It should return an error message (\"The resource is accessible thanks to the information provided\").\r\n\n\n**Fixed versions :** 4.3.1"
+    },
+    "comments": [
+        {
+            "body": "**Original author :** M\u00e9rour Xavier\n\nAfter some discussion, the current test is indeed only on the domain name.\r\n\r\nThis should be enhanced with a complete URL test (on headers returned).",
+            "created_at": "2015-01-20T15:30:56Z"
+        },
+        {
+            "body": "**Original author :** M\u00e9rour Xavier\n\nTo be discussed first in TC",
+            "created_at": "2015-01-20T15:31:35Z"
+        },
+        {
+            "body": "**Original author :** Van Hoecke H\u00e9l\u00e8ne \n\nTC validates that the test must be on complete URL and should be implemented by Head Request.\r\nTC proposes that this functionnality was located in the CORE to be factorisable.",
+            "created_at": "2015-03-06T10:02:48Z"
+        },
+        {
+            "body": "**Original author :** M\u00e9rour Xavier\n\nPlease complete description with code HTTP handling (+ localization)",
+            "created_at": "2015-03-13T15:39:57Z"
+        },
+        {
+            "body": "**Original author :** Blatti Yves\n\nTC has accepted to relocate this method in CORE to be transversal.\r\n\r\nI would suggest that this URL check helper would have the following features:\r\n* Handle HTTP, HTTPS, FTP, (FTPS  if possible with php curl)\r\n* Optional authentication (user\/password)\r\n* Follow redirections\r\n* Do not load full files (they can be really heavy), instead use HTTP HEAD (CURLOPT_NOBODY), or load only partial file with GET (in case of HTTP). What about FTP ?\r\n* Return an object with:\r\n** Success (true\/false) : _true_ only if file is reachable\r\n** Code (200, 404, 403, ...)\r\n** Message ('Found','Not found','Forbidden',...)\r\n* The user of the library can use only the status, or can give a more detailed message if needed (code  + message)\r\n* I would suggest that this library does not carry any translations",
+            "created_at": "2015-03-17T09:29:25Z"
+        }
+    ]
+}

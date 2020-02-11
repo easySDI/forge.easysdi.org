@@ -1,0 +1,47 @@
+{
+    "issue": {
+        "closed": true,
+        "title": "Main menu in backend tTranslat",
+        "created_at": "2014-03-18T19:44:12Z",
+        "labels": [
+            "Enhancement",
+            "Redmine status : Rejected",
+            "Category : CORE"
+        ],
+        "body": "**Original author :** M\u00e9rour Xavier\n\n"
+    },
+    "comments": [
+        {
+            "body": "**Original author :** Magoni Bruno\n\nHi Xavier,\n\nSorry but I don't understand precisely what means backoffice menu to translate...\n\nThanks in advance for your precisions,",
+            "created_at": "2014-04-25T16:16:42Z"
+        },
+        {
+            "body": "**Original author :** M\u00e9rour Xavier\n\nOops ! Seems the ticket was truncated. Sorry.\r\n\r\nHere is ma proposal again : change some translation of the main back-end menu to reflect more what is inside.\r\n\r\nMy proposal ( for english & French )\r\n\r\nHome \/ Accueil --> OK\r\nContacts \/ Contacts --> Users \/ Utilisateurs\r\nCatalog \/ Catalogues --> Catalogs \/ Catalogues\r\nShop \/ Commande --> Shop \/ Shop\r\nServices \/ Services --> OK\r\nMap \/ Cartes --> OK\r\nMonitor \/ Monitor --> OK\r\nDahsboard \/ Dashboard --> OK\r\n\r\n\r\nWhat do you think ?\r\n\r\n",
+            "created_at": "2014-04-28T08:50:13Z"
+        },
+        {
+            "body": "**Original author :** Magoni Bruno\n\nHi Xavier,\r\n\r\nContact has been choosen to aggregate \"User\" & \"Organism\" so I prefer keeping \"Contact\" terminolgy...\r\n\r\nSo in my opinion we could have:\r\nHome \/ Accueil --> OK\r\nContacts \/ Contacts --> -Users \/ Utilisateurs- OK\r\nCatalog \/ Catalogues --> Catalogs \/ Catalogues\r\nShop \/ Commande --> Shop \/ Magasin\r\nServices \/ Services --> OK\r\nMap \/ Cartes --> Maps \/ Cartes\r\nMonitor \/ Monitor --> OK\r\nDahsboard \/ Dashboard --> OK",
+            "created_at": "2014-04-30T10:06:53Z"
+        },
+        {
+            "body": "**Original author :** Portier Thomas\n\nMy opinion : \r\n\r\nHome \/ Accueil --> OK\r\nContacts \/ Contacts\r\nCatalogs \/ Catalogues\r\nShop \/ Commandes\r\nServices \/ Services --> OK\r\nMaps \/ Cartes\r\nMonitor \/ Monitor --> OK\r\nDahsboard \/ Tableau de bord",
+            "created_at": "2014-04-30T10:29:46Z"
+        },
+        {
+            "body": "**Original author :** M\u00e9rour Xavier\n\nI agree with the need to distinguish \"user\" and organisms\" ;-)\r\n\r\nFor the SHOP in french, why not keeping \"shop\" as it is a usual term on the web even in French. Using only \"commande\" is restrictive\" since you have in this menu also parameters (properties,...). I find the word SHOP reflects more its content.",
+            "created_at": "2014-05-05T07:04:30Z"
+        },
+        {
+            "body": "**Original author :** Blatti Yves\n\nIs the current terminology OK for you ? Can we close this issue ?",
+            "created_at": "2016-01-26T13:44:58Z"
+        },
+        {
+            "body": "**Original author :** M\u00e9rour Xavier\n\nWhat is your point of view TC ?",
+            "created_at": "2016-01-26T14:00:05Z"
+        },
+        {
+            "body": "**Original author :** Portier Thomas\n\nNot really important. Translations can be override for each platform. TC reject this issue.",
+            "created_at": "2016-02-19T10:29:24Z"
+        }
+    ]
+}

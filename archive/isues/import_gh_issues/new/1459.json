@@ -1,0 +1,14 @@
+{
+    "issue": {
+        "closed": true,
+        "title": "Add the possibility to modify files (before export)",
+        "created_at": "2018-11-20T14:19:14Z",
+        "labels": [
+            "Enhancement",
+            "Redmine status : Closed",
+            "Category : EXTRACT"
+        ],
+        "body": "**Original author :** Blatti Yves\n\nDescription\r\n\r\n* The objective is to be able to add and delete files when the element is in a stopped state (ERROR, STANDBY, EXPORT_FAIL)\r\n* It is impossible to add files if processing is completed or cancelled\r\n* Changes are made in the detail screen of an item https:\/\/[extractserver]\/extract\/requests\/[id]\r\n* File Deletion :\r\n** The deletion is proposed by a red trashcan icon, on the right of the file download link (fa-trash class)\r\n** The deletion is preceded by a confirmation (Message: Are you sure you want to delete the\"[file_name]\" file), in modal, like the other application confirmations.\r\n** If the deletion is confirmed, the file is deleted immediately (AJAX, or reloading the same page)\r\n** If the deletion is cancelled, no action is taken and the user remains on the same page.\r\n** The files are deleted from the temporary folder of the element (output)\r\n* File Add:\r\n** A button allows you to browse to upload 1 or more files\r\n** Text of the button in French: \"Add files...\"\r\n** When you click, the browser's file selection window is opened\r\n** The user selects one or more files\r\n** If it confirms (open button of the browser modal), the files are immediately uploaded (AJAX, or reloading the same page)\r\n** If it cancels, no action is taken and the user remains on the same page.\r\n** If one or more files are already present for this request element, a message informs that the files with the same name will be overwritten.\r\n** \"Files with the same name will be overwritten.\"\r\n** During upload, files whose names contain dangerous characters, or which may be poorly supported by OSs (' \u00b4 \" \/ \\ : : ; ; ; etc...) are renamed (cleaned). See realization of EM91\/archiving in v1.0. Example: @l'ap\u00e9ro.zip -> l_apero.zip@\r\n** The files are uploaded to the temporary folder of the element (output)\r\n\r\nModels\r\n\r\nAdding files and deleting:\r\n\r\n!16831_add_or_delete_files.png!\r\n\r\nIf no file present : \r\n\r\n!16831_add_files_no_files_present.png!\r\n\r\nSelect multiple files:\r\n\r\n!16831_add_multiple_files.png!\r\n\r\nDelete confirm:\r\n\r\n!16831_delete-file-confirm.png!\r\n\r\nNo change possible if processing in progress (active status) or if processing completed\/cancelled:\r\n\r\n!16831_process_complete.png!\r\n\r\n\r\nSource (french) : https:\/\/projets.asitvd.ch\/issues\/16683\n\n**Fixed versions :** 4.5.1"
+    },
+    "comments": []
+}

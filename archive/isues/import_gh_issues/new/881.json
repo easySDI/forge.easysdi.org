@@ -1,0 +1,14 @@
+{
+    "issue": {
+        "closed": true,
+        "title": "Sql server update scripts",
+        "created_at": "2014-12-15T07:59:26Z",
+        "labels": [
+            "Defect",
+            "Redmine status : Closed",
+            "Category : CORE"
+        ],
+        "body": "**Original author :** Van Hoecke H\u00e9l\u00e8ne \n\nSql server update scripts present some syntax errors.\n\n**Fixed versions :** 4.2.1"
+    },
+    "comments": []
+}

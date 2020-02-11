@@ -1,0 +1,23 @@
+{
+    "issue": {
+        "closed": true,
+        "title": "Auto-select contact on import",
+        "created_at": "2015-02-26T08:49:21Z",
+        "labels": [
+            "Enhancement",
+            "Redmine status : Rejected",
+            "Category : CATALOG"
+        ],
+        "body": "**Original author :** Portier Thomas\n\nAdd ability to auto-select contact if the name of the contact imported is the same as an existing contact resource name."
+    },
+    "comments": [
+        {
+            "body": "**Original author :** Blatti Yves\n\nHi Thomas !\r\n\r\nAs this stereotype logic is not limited to contacts, it can carry any model of metadata.\r\nHow do you plan to find the name IN the imported metadata ?\r\n",
+            "created_at": "2015-03-02T16:04:29Z"
+        },
+        {
+            "body": "**Original author :** Portier Thomas\n\nI don't think this feature has to be implemented in the core of EasySDI. I've overwritten the metadata default page in my template by adding : \r\n\r\n```\n\r\n<?php\r\n    \/\/R\u00e9cup\u00e9ration du XML import\u00e9\r\n    $nsdao = new SdiNamespaceDao();\r\n    \r\n    $import = $this->_models['metadata']->getState('metadata.import');\r\n    if (isset($import['xml']))\r\n    {\r\n        $structure = new DOMDocument('1.0', 'utf-8');\r\n        $structure->loadXML($import['xml']);\r\n        $domXpathStr = new DOMXPath($structure);\r\n        foreach ($nsdao->getAll() as $ns) {\r\n            $domXpathStr->registerNamespace($ns->prefix, $ns->uri);\r\n        }\r\n        \r\n        \/\/Si il y en a un r\u00e9cup\u00e9ration du nom pour le point de contact de la donn\u00e9e et de la m\u00e9tadonn\u00e9e\r\n        $metadataContact = $domXpathStr->query('\/gmd:MD_Metadata\/gmd:contact\/gmd:CI_ResponsibleParty\/gmd:individualName\/gco:CharacterString')->item(0)->nodeValue;\r\n        $dataContact = $domXpathStr->query('\/gmd:MD_Metadata\/gmd:identificationInfo\/gmd:MD_DataIdentification\/gmd:pointOfContact\/gmd:CI_ResponsibleParty\/gmd:individualName\/gco:CharacterString')->item(0)->nodeValue;\r\n\r\n        \/\/Javascript qui essaie de s\u00e9lectionner les bons noms dans les listes\r\n ?>\r\n<script>\r\njQuery(document).ready(function() {\r\n        \r\n        jQuery('#jform__sla_gmd_dp_MD_Metadata_sla_gmd_dp_contact').find(\"option\").each(function(){\r\n            if (jQuery(this).text() == '<?php echo $metadataContact?>'){\r\n                jQuery('#jform__sla_gmd_dp_MD_Metadata_sla_gmd_dp_contact').val(jQuery(this).val());\r\n                jQuery('#jform__sla_gmd_dp_MD_Metadata_sla_gmd_dp_contact').trigger(\"liszt:updated\");\r\n            }\r\n        });\r\n        \r\n         jQuery('#jform__sla_gmd_dp_MD_Metadata_sla_gmd_dp_identificationInfo_sla_gmd_dp_MD_DataIdentification_sla_gmd_dp_pointOfContact').find(\"option\").each(function(){\r\n            if (jQuery(this).text() == '<?php echo $dataContact?>'){\r\n                jQuery('#jform__sla_gmd_dp_MD_Metadata_sla_gmd_dp_identificationInfo_sla_gmd_dp_MD_DataIdentification_sla_gmd_dp_pointOfContact').val(jQuery(this).val());\r\n                jQuery('#jform__sla_gmd_dp_MD_Metadata_sla_gmd_dp_identificationInfo_sla_gmd_dp_MD_DataIdentification_sla_gmd_dp_pointOfContact').trigger(\"liszt:updated\");\r\n            }\r\n        });\r\n\r\n});\r\n<\/script>\r\n<?php\r\n    }\r\n?>\r\n```\n",
+            "created_at": "2015-03-05T15:42:52Z"
+        }
+    ]
+}

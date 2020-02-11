@@ -1,0 +1,19 @@
+{
+    "issue": {
+        "closed": true,
+        "title": "Shop order sent date does not use daylight saving time correctly ",
+        "created_at": "2016-03-29T14:15:25Z",
+        "labels": [
+            "Defect",
+            "Redmine status : Closed",
+            "Category : SHOP"
+        ],
+        "body": "**Original author :** Blatti Yves\n\nShop order sent date does not use daylight saving time correctly.\n\n**Fixed versions :** 4.4.1"
+    },
+    "comments": [
+        {
+            "body": "**Original author :** Blatti Yves\n\nUse Joomla JFactory::getDate()->toSql() instead of PHP function\r\nrev. 9621",
+            "created_at": "2016-03-29T14:18:00Z"
+        }
+    ]
+}

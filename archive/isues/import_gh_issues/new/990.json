@@ -1,0 +1,19 @@
+{
+    "issue": {
+        "closed": true,
+        "title": "Indoor navigation & order",
+        "created_at": "2015-05-01T12:38:18Z",
+        "labels": [
+            "Enhancement",
+            "Redmine status : Closed",
+            "Category : SHOP"
+        ],
+        "body": "**Original author :** Van Hoecke H\u00e9l\u00e8ne \n\nWith the ability of the map to offer indoor navigation, it would be interesting to propose indoor navigation for perimeter selection in the basket.\r\n\r\n*Description :*\r\nThe indoor navigation activation is drove by the map : if the \"indoor navigation tool\" is activated on the map used by the basket (for order perimeter definition), then current level set on this map will be saved as an order information.\r\n\r\n\r\n\r\n\r\n\n\n**Fixed versions :** 4.3.1"
+    },
+    "comments": [
+        {
+            "body": "**Original author :** Van Hoecke H\u00e9l\u00e8ne \n\nTC OK",
+            "created_at": "2015-05-07T13:32:19Z"
+        }
+    ]
+}

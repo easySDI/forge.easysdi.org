@@ -1,0 +1,27 @@
+{
+    "issue": {
+        "closed": true,
+        "title": "Adding the version of the component to JS and CSS assets",
+        "created_at": "2016-01-21T09:41:34Z",
+        "labels": [
+            "Enhancement",
+            "Redmine status : Closed",
+            "Category : CORE"
+        ],
+        "body": "**Original author :** Portier Thomas\n\nBy adding th number of version to each js call, we'll force the loading of new javascript files in client cache.\r\n\r\nexemple in the resource view : \r\n```\n\r\n$xml = JFactory::getXML(JPATH_ADMINISTRATOR .'\/components\/com_easysdi_core\/easysdi_core.xml');\r\n$version = (string)$xml->version;\r\n\r\n$document = JFactory::getDocument();\r\n$document->addScript('administrator\/components\/com_easysdi_core\/libraries\/easysdi\/view\/view.js?v='.$version);\r\n```\n\n\n**Fixed versions :** 4.4.0"
+    },
+    "comments": [
+        {
+            "body": "**Original author :** Blatti Yves\n\nThe idea to mark js versions and avoid unsing old cached is very good !\r\n\r\nBut:\r\n1) Shouldn't we use something more granular, this would be cool also for devs and tests ? For example, like we have in build-infos containing svn revision \"4.4.0-r9412\".\r\n\r\n2) I'm not fan of reading the XML, it's a heavy process (and will have to be done maaaany times if you do it like this).\r\n\r\nI would prefer that we write the version somewhere on build, like in PHP file... and why not have it read and store in a singleton style in sdiFactory.\r\nThat way we could use : @$document->addScript('administrator\/components\/com_easysdi_core\/libraries\/easysdi\/view\/view.js?v='.sdiFactory::getSdiBuildVersion());@\r\n\r\n@sdiFactory::getSdiBuildVersion()@ should read the value from file on first call and store it statically for next calls.\r\n\r\n",
+            "created_at": "2016-01-21T14:17:04Z"
+        },
+        {
+            "body": "**Original author :** Van Hoecke H\u00e9l\u00e8ne \n\nYves' proposal is accepted by the TC.",
+            "created_at": "2016-02-19T10:42:06Z"
+        },
+        {
+            "body": "**Original author :** Blatti Yves\n\nrev. 9497+9501\r\n\r\nAs proposed, the version is available in sdiFactory:\r\n* sdiFactory::getSdiVersion() returns the semver verison (eg. 4.4.0)\r\n* sdiFactory::getSdiFullVersion() returns the semver verison concatenated with last svn revision(eg. 4.4.0-9458)\r\n\r\nFor assets versioning, I suggest to use the full version (to ease developers work), example:\r\n```\n\r\n<code class=\"php\">\r\n$doc->addScript($base_url . '\/js\/easysdi_processing.js?v=' . sdiFactory::getSdiFullVersion());\r\n\r\n```\n\r\n\r\nI have done it for all JS and CSS assets that I have found.\r\n\r\nNote : *We should only do this for easdySDI assets, not for external libraries (jQuery, openlayers, proj, etc...)*\r\nWhy ?\r\n* external libs should not be edited by easySDI devs\r\n* most of them are versioned in the path or filenames\r\n* they may be loaded by cms, framework or other plugin & modules, and they have to keep the simple URL for the Joomla's @addScript@ and @addStyleSheet@ mechanisms duplicate avoidance to work (@url@ is the array's key)\r\n\r\n",
+            "created_at": "2016-03-02T11:01:25Z"
+        }
+    ]
+}

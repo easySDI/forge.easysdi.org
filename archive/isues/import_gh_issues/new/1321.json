@@ -1,0 +1,23 @@
+{
+    "issue": {
+        "closed": true,
+        "title": "Add a descriptive field about pricing in SHOP",
+        "created_at": "2016-05-03T09:49:16Z",
+        "labels": [
+            "Enhancement",
+            "Redmine status : Closed",
+            "Category : SHOP"
+        ],
+        "body": "**Original author :** Blatti Yves\n\nWe'd like to add a descriptive field in pricing configuration of a diffusion.\r\nSome providers have exceptions, special documents of pricing conditions to link, or billing system details to add with the pricing of their products.\r\nEasySDI does not support any 'free text' field in the pricing definition of a diffusion, we'd like to add that.\r\n\r\nThe new filed would be visible in the diffusion view, be optional, and only visible if the pricing is enabled on the platform.\r\n\r\nThe text value would be added in the extended pricing metadata and be usable via XSLT (extending #1294).\r\n\r\n```\n\r\n<code class=\"xml\">\r\n   <sdi:ex_Pricing type=\"feewithapricingprofile\">\r\n      <sdi:ex_PricingOrganism internal_free=\"false\" fixed_fee_ti=\"50\" data_free_fixed_fee=\"true\">\r\n         <sdi:ex_CategoryRebate categoryId=\"1\" categoryAlias=\"membres\" categoryName=\"Membres ASIT VD\" rebate=\"15\"\/>\r\n      <\/sdi:ex_PricingOrganism>\r\n      <sdi:ex_PricingProfile id=\"2\" name=\"G\u00e9odonn\u00e9e de base \u00e0 10CHF\" alias=\"geodonnee-de-base-10\" fixed_fee=\"0\" surface_rate=\"10.00\" min_fee=\"0\" max_fee=\"2000.00\">\r\n         <sdi:ex_CategoryRebate categoryId=\"9\" categoryAlias=\"adminpub\" categoryName=\"Administration publiques\" rebate=\"100.00\"\/>\r\n      <\/sdi:ex_PricingProfile >\r\n      <!-- BEGIN ENHANCEMENT PROPOSAL -->\r\n      <sdi:ex_PricingRemark>Les frais sont factur\u00e9s 10 jours apr\u00e8s livraison, toute r\u00e9clamation doit se faire sous 15 jours \u00e0 contentieux@provider.tld<\/sdi:ex_PricingRemark>\r\n      <!-- END ENHANCEMENT PROPOSAL -->\r\n   <\/sdi:ex_Pricing>\r\n\r\n```\n\r\n\r\nMockup:\r\n\r\n!new_pricing_detail_field.png!\r\n\r\nNote that the status field would be moved, to keep the pricing fields together.\r\n\n\n**Fixed versions :** 4.4.3"
+    },
+    "comments": [
+        {
+            "body": "**Original author :** Van Hoecke H\u00e9l\u00e8ne \n\nCOTEC has validated this enhancement.",
+            "created_at": "2016-06-10T08:13:42Z"
+        },
+        {
+            "body": "**Original author :** Blatti Yves\n\nrev. 9964 + 9965",
+            "created_at": "2016-08-08T08:39:09Z"
+        }
+    ]
+}

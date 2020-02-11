@@ -1,0 +1,31 @@
+{
+    "issue": {
+        "closed": true,
+        "title": "Graph component not working with largee data sets",
+        "created_at": "2011-11-03T07:28:31Z",
+        "labels": [
+            "Enhancement",
+            "Redmine status : Rejected",
+            "Category : MONITOR"
+        ],
+        "body": "**Original author :** Larsen de Martino Jorgen\n\nWhen generation reports in Monitor I have come across a problem that is probably related to the extreme amount of data we generate at the Danish national Survey.\r\n\r\nFx. I have a job that consists of 10 request that are executed every 60 sec. - I have not yet been able to generate a full graph for this job - sometimes nothing shows and sometimes I get 2-4 graphs.\r\n\r\nI can export the data so I believe the data is collected correctly.\r\n\r\nI see two issues\r\n# Graph is not working with large data sets\r\n# Graph area is to small to show 10 requests at one time\r\n\r\n\r\nSolution could either be to fix this in exiting graph component or to find another component that is able to deal with large datasets\r\n\r\nAlll the best\r\nJorgen de Martino"
+    },
+    "comments": [
+        {
+            "body": "**Original author :** M\u00e9rour Xavier\n\nHello Jorgen,\r\n\r\nThe problem of \"big amount of data\" you have was identified as a limit with the current library used (Highcharts) when we (PSC) chosed it but we thought the amount of data would be not that big :-)\r\n\r\nThis is not a specific problem of Highcharts, it's more a problem with any Javascript chart library.\r\n\r\nMy opinion is : if you want to show\/make graphs with lots of data online, we will certainly have to change the library for a Flash library since they handle much bigger amount of data (about a year ago, we identified Open Flash Chart and YUI Charts as two good candidates). Another approach would be to say : we keep going with Highcharts for small-medium amount of data and use others tools (offline) to process big amount of data like you have for example.\r\n\r\nNeed to be discussed.\r\n\r\nWhat is your opinion ?\r\n",
+            "created_at": "2011-11-03T08:18:43Z"
+        },
+        {
+            "body": "**Original author :** Larsen de Martino Jorgen\n\nI am for shifting to a flash library if that solves the issue. it might even bring some new exiting features to the graph section.\r\n\r\nIt would be great to be able to have it inline in the Monitor component and only use the export option when you really want to play with data\r\n\r\nAs always - Depending on the cost off course :-)",
+            "created_at": "2011-11-03T15:29:03Z"
+        },
+        {
+            "body": "**Original author :** M\u00e9rour Xavier\n\nUpdate :\r\n\r\nHere is an interesting discussion thread in Highcharts forum :\r\nhttp:\/\/highslide.com\/forum\/viewtopic.php?f=9&t=7673&p=36045&hilit=thousand#p36045\r\n\r\nAnd when looking at Highcharts roadmap, new version for fall 2011 indicates \"Better performance in Highcharts with thousands of points\"\r\nhttp:\/\/www.highcharts.com\/support\/roadmap\r\n\r\n",
+            "created_at": "2011-11-08T22:15:54Z"
+        },
+        {
+            "body": "**Original author :** M\u00e9rour Xavier\n\nThis is an old and very specific ticket & the community plans to make a large MONITOR refactoring.\r\n\r\nTherefore, this ticket is rejected.",
+            "created_at": "2016-02-03T15:01:35Z"
+        }
+    ]
+}

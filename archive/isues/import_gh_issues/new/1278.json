@@ -1,0 +1,19 @@
+{
+    "issue": {
+        "closed": true,
+        "title": "Simplify metadata edition toolbars and make them coherent with other views",
+        "created_at": "2016-03-10T09:13:42Z",
+        "labels": [
+            "Enhancement",
+            "Redmine status : Closed",
+            "Category : CATALOG"
+        ],
+        "body": "**Original author :** Blatti Yves\n\n## Goals:\r\n\r\n* Simplify metadata edition toolbars\r\n* Make them coherent with other views toolbars (look, colors, icons and labels)\r\n* Since MD form can be a long page, duplicate the toolbar at top and bottom to ease access\r\n\r\n## Enhancements\r\n\r\n* 'Validate and save', 'save and close', 'save and continue', 'save and publish', 'in progress' (witch saves by the way) will be merged in a 'save' drop down with the standard look\r\n* Less used tools : import, replicate, preview (XML & XHTML) and 'reset for'm will be placed under a 'tools' drop down\r\n* The 'validate' button (that does not save but only triggers JS validation) is not very useful, we propose to remove it\r\n* 'Return' will be named and look like all 'cancel' buttons in easySDI (Joomla's default)\r\n* 'Collapse all\/expand all' will be removed from the toolbar and be placed in the main 'well' (since it's not an action on MD it should not appear on MD toolbar)\r\n* The buttons in the tool bar will of course appear depending of MD status and User rights\r\n\r\n## Proposed look:\r\n\r\nThe toolbar closed:\r\n\r\n!toolbar_closed.png!\r\n\r\nThe tools :\r\n\r\n!toolbar_tools.png!\r\n\r\nThe save menu:\r\n\r\n!toolbar_save.png!\r\n\r\nExpand\/collapse moved: \r\n\r\n!expand_collapse.png!\r\n\r\n## Positioning\r\n\r\n```\n\r\n+------------------------+\r\n| Save \u25bc| Tools \u25bc| Cancel|\r\n+------------------------+\r\n+---------------------------------------------------------+\r\n|Metadata edition fields                      +----------+|\r\n|                                             |Expand all||\r\n|                                             +----------+|\r\n|                                                         |\r\n:                                                         :\r\n:                                                         :\r\n|                                                         |\r\n|                                                         |\r\n|                                                         |\r\n+---------------------------------------------------------+\r\n+------------------------+\r\n| Save \u25bc| Tools \u25bc| Cancel|\r\n+------------------------+\r\n```\n\r\n\r\n\r\n\r\n\r\n\n\n**Fixed versions :** 4.4.1"
+    },
+    "comments": [
+        {
+            "body": "**Original author :** Blatti Yves\n\nrev. 9641",
+            "created_at": "2016-03-31T12:58:29Z"
+        }
+    ]
+}

@@ -1,0 +1,13 @@
+{
+    "issue": {
+        "closed": false,
+        "title": "Mix-up between predefined extent name and translation",
+        "created_at": "2016-07-12T14:26:43Z",
+        "labels": [
+            "Defect",
+            "Redmine status : New"
+        ],
+        "body": "**Original author :** Van Hoecke H\u00e9l\u00e8ne \n\nIn metadata edition form, there is a mix-up between predefined extent name and translation.\r\n\r\nThis bug was not found before because the content of those 2 fields are often equals.\r\n\r\nA workaround is to change the name of the extent by is translation (text1), but works only on single language plateform.\r\n\r\nBug is to search in ajax.php and FormStereotype.php.\r\n"
+    },
+    "comments": []
+}

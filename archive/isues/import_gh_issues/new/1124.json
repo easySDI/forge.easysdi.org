@@ -1,0 +1,31 @@
+{
+    "issue": {
+        "closed": true,
+        "title": "A new propertie \"server\" in WMS physical service?",
+        "created_at": "2015-09-11T07:25:23Z",
+        "labels": [
+            "Enhancement",
+            "Redmine status : Closed",
+            "Category : SERVICE"
+        ],
+        "body": "**Original author :** Portier Thomas\n\nWhat is the new service \"server\" propertie? What is its functional impact?\r\nFor now there is two values : geoserver and arcgisserver. What about others servers as mapserver?\n\n**Fixed versions :** 4.4.3"
+    },
+    "comments": [
+        {
+            "body": "**Original author :** Blatti Yves\n\nCouldn't we just change the labels ? Since we don't have other 'specific' configurations...\r\nThe list could be:\r\n* Default (geoserver...)\r\n* Arcgis server",
+            "created_at": "2016-02-03T13:00:26Z"
+        },
+        {
+            "body": "**Original author :** Van Hoecke H\u00e9l\u00e8ne \n\nThis property allows WMS filtering for the indoor (level) navigation functionnality.\r\n\r\nThe WMS filter is build according to the server type :\r\n- ArcGIS Server : layerDefs={\"level\":\"1\"}\r\n- GeoServer : cql_filter=\"level=1\"\r\n\r\nThe WMS filter is a vendor specific parameter, each server type implements, or not, a WMS filter.\r\n\r\nReplacing \"Geoserver\" by \"Default\" would mean that every other server than ArcGIS use a cql_filter parameter for filtering.\r\n\r\nThis is not true, but it would be more comprehensible for the user.",
+            "created_at": "2016-04-01T06:58:17Z"
+        },
+        {
+            "body": "**Original author :** Van Hoecke H\u00e9l\u00e8ne \n\nCOTEC validates Yves' proposal : the label will be changed to \"default\" to be more comprehensible.",
+            "created_at": "2016-06-10T08:04:48Z"
+        },
+        {
+            "body": "**Original author :** Blatti Yves\n\nrev. 9984",
+            "created_at": "2016-09-05T09:22:05Z"
+        }
+    ]
+}

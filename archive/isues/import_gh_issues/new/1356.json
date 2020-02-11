@@ -1,0 +1,23 @@
+{
+    "issue": {
+        "closed": true,
+        "title": "Diffusion page small enhancements ",
+        "created_at": "2016-07-07T06:49:42Z",
+        "labels": [
+            "Enhancement",
+            "Redmine status : Closed",
+            "Category : SHOP"
+        ],
+        "body": "**Original author :** Blatti Yves\n\nWe'd like to make some enhancements on the diffusion page to ease it's usage by users:\r\n\r\n* Make extraction mining default to manual (1: it's the most used, 2: providers with auto mining are power users)\r\n* Download : translate the storage types (local, url, zoning)\r\n* Add tooltips on labels\r\n* Use Yes-No boostrap radios instead of checkboxes to enable download and extraction\r\n* When pricing is not free, disable the _download_ form instead of hiding it\r\n* Use a different string for the extraction role (currently the same as in the resource view)\r\n* Move Min and Max surface under perimeter (it makes more sense to have them here...)\r\n* Add some IDs to allow CSS customization\r\n* -if available, select the free perimeter by default (new diffusion)-\n\n**Fixed versions :** 4.4.3"
+    },
+    "comments": [
+        {
+            "body": "**Original author :** Van Hoecke H\u00e9l\u00e8ne \n\nEnhancement is accepted by TC with a unique exclusion (see description)",
+            "created_at": "2016-07-07T14:00:44Z"
+        },
+        {
+            "body": "**Original author :** Blatti Yves\n\nrev. 9967 + 9977",
+            "created_at": "2016-08-09T07:12:07Z"
+        }
+    ]
+}

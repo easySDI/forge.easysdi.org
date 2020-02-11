@@ -1,0 +1,14 @@
+{
+    "issue": {
+        "closed": true,
+        "title": "The contact list is no longer displayed on SQLServer",
+        "created_at": "2017-06-08T12:59:31Z",
+        "labels": [
+            "Defect",
+            "Redmine status : Closed",
+            "Category : CONTACT"
+        ],
+        "body": "**Original author :** Battaglia Marc\n\nLors de l'affichage des contacts, j'obtiens l'erreur suivante:\r\n\r\n[Microsoft][SQL Server Native Client 11.0][SQL Server]Error converting data type varchar to bigint. SQL=SELECT * FROM ( SELECT a.id, a.checked_out, a.checked_out_time, a.created_by, a.ordering,a.state,a.catid,([o].[name]+' ['+[o].[id]+']') AS member_organism, o.id as member_organism_id,u.name, u.username ,uc.name AS editor,ag.title AS access_level,c.title AS category_title , ROW_NUMBER() OVER (ORDER BY u.name asc) AS RowNumber FROM #__#__user AS a LEFT JOIN #__users AS u ON u.id=a.user_id LEFT JOIN #__#__user_role_organism uro ON uro.user_id=a.id AND uro.role_id=1 LEFT JOIN #__#__organism o ON uro.organism_id=o.id LEFT JOIN #__users AS uc ON uc.id=a.checked_out LEFT JOIN #__viewlevels AS ag ON ag.id = a.access LEFT JOIN #__categories AS c ON c.id = a.catid WHERE (a.state IN (0, 1)) ) A WHERE A.RowNumber BETWEEN 1 AND 15\r\n\r\nC'est d\u00fb \u00e0 la ligne 128 du fichier administrator\\components\\com_easysdi_contact\\models\\users.php \r\n\r\n$query->concatenate(array($db->qn('o.name'), \"' ['\", $db->qn('o.id'), \"']'\"))  la concat\u00e9nation de type diff\u00e9rent n'est pas support\u00e9.\n\n**Fixed versions :** 4.5.0"
+    },
+    "comments": []
+}

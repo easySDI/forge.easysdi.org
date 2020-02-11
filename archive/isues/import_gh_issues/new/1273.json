@@ -1,0 +1,14 @@
+{
+    "issue": {
+        "closed": true,
+        "title": "Email not sent to user when processing done",
+        "created_at": "2016-02-23T11:17:03Z",
+        "labels": [
+            "Defect",
+            "Redmine status : Closed",
+            "Category : PROCESSING"
+        ],
+        "body": "**Original author :** Portier Thomas\n\n\n\n**Fixed versions :** 4.4.0"
+    },
+    "comments": []
+}

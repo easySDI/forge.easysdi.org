@@ -1,0 +1,23 @@
+{
+    "issue": {
+        "closed": true,
+        "title": "SHOP : mandatory checkbox in product property is not validated",
+        "created_at": "2015-09-16T18:41:31Z",
+        "labels": [
+            "Defect",
+            "Redmine status : Closed",
+            "Category : SHOP"
+        ],
+        "body": "**Original author :** Blatti Yves\n\nWhen a product has a list of check box for a property and the property is mandatory, there is no check that at least on is selected\n\n**Fixed versions :** 4.4.0"
+    },
+    "comments": [
+        {
+            "body": "**Original author :** Blatti Yves\n\nSeen with this defect #1205",
+            "created_at": "2015-11-26T08:10:50Z"
+        },
+        {
+            "body": "**Original author :** Blatti Yves\n\nRev. 9462",
+            "created_at": "2016-02-09T16:55:25Z"
+        }
+    ]
+}

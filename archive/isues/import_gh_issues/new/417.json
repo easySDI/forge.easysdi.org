@@ -1,0 +1,14 @@
+{
+    "issue": {
+        "closed": false,
+        "title": "Adapt translation code to EasySDI logic",
+        "created_at": "2011-06-23T10:23:53Z",
+        "labels": [
+            "Feature",
+            "Redmine status : New",
+            "Category : MONITOR"
+        ],
+        "body": "**Original author :** M\u00e9rour Xavier\n\nTranslation code in MONITOR should be \"adapted\" to stick to others EasySDI component logic :\r\n\r\nNAME-OF-COMPONENT_CODE (example : MONITOR_SAVE_DATA)"
+    },
+    "comments": []
+}

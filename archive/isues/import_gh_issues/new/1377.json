@@ -1,0 +1,19 @@
+{
+    "issue": {
+        "closed": true,
+        "title": "com_easysdi_contact function names are wrong in router.php",
+        "created_at": "2016-10-19T09:08:17Z",
+        "labels": [
+            "Defect",
+            "Redmine status : Closed",
+            "Category : CONTACT"
+        ],
+        "body": "**Original author :** Blatti Yves\n\ncom_easysdi_contact function names are wrong:\r\n\r\nfunction Easysdi_coreBuildRoute(&$query)\r\nfunction Easysdi_coreParseRoute($segments)\r\n\r\ninstead of :\r\n\r\nfunction Easysdi_contactBuildRoute(&$query)\r\nfunction Easysdi_contactParseRoute($segments)\r\n\r\nWill create a fatal error as of Joomla! 3.6.3\r\n\n\n**Fixed versions :** 4.4.3"
+    },
+    "comments": [
+        {
+            "body": "**Original author :** Blatti Yves\n\nrev. 10012",
+            "created_at": "2016-10-19T09:09:47Z"
+        }
+    ]
+}

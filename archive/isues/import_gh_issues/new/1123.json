@@ -1,0 +1,27 @@
+{
+    "issue": {
+        "closed": true,
+        "title": "Can't edit metadata if no other language suported",
+        "created_at": "2015-09-10T15:02:43Z",
+        "labels": [
+            "Defect",
+            "Redmine status : Closed",
+            "Category : CATALOG"
+        ],
+        "body": "**Original author :** Portier Thomas\n\nIf the only default language is specified and no other language set, if we edit metadata we have the error : \r\n\r\n```\n\r\nYou have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 4 SQL=SELECT * FROM bdt32_sdi_language l INNER JOIN bdt32_languages ls ON ls.lang_code=l.code WHERE id IN ()\r\n```\n\r\n\r\nproblem in\\com_easysdi_catalog\\controllers\\metadata.php on line 1131 the getSupported()\r\n\r\n\n\n**Fixed versions :** 4.4.0"
+    },
+    "comments": [
+        {
+            "body": "**Original author :** Blatti Yves\n\nThat's strange. We're running this configuration. (French only as default lang).\r\nIs it a 4.3.2 branch you are running ?\r\n\r\nLook at the code in : \\joomla\\components\\com_easysdi_catalog\\libraries\\easysdi\\dao\\SdiLanguageDao.php:line27\r\n\r\nIf there's supported lang, there's no SQL Query. ",
+            "created_at": "2015-09-10T15:20:55Z"
+        },
+        {
+            "body": "**Original author :** Portier Thomas\n\nYes but for an unknown reason, the $supportedIds is set. I just added a test on the size of the array and it's ok.",
+            "created_at": "2015-09-11T13:53:13Z"
+        },
+        {
+            "body": "**Original author :** Van Hoecke H\u00e9l\u00e8ne \n\nMerge in r9485",
+            "created_at": "2016-02-23T08:48:49Z"
+        }
+    ]
+}

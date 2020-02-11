@@ -1,0 +1,19 @@
+{
+    "issue": {
+        "closed": true,
+        "title": "Managing SSH public key in the backend",
+        "created_at": "2011-04-01T16:30:32Z",
+        "labels": [
+            "Feature",
+            "Redmine status : Rejected",
+            "Category : PROXY"
+        ],
+        "body": "**Original author :** M\u00e9rour Xavier\n\nIn the ideal case, the administrator should be able to manage SSH public keys of remote server directly in the Joomla! backend.\r\nThe use of the KeyStore class Java API(\"doc here\":http:\/\/download.oracle.com\/javase\/6\/docs\/api\/java\/security\/KeyStore.html) would facilitate this implementation.\r\n\r\nAn implementation could also be done to monitor the experacy date of certificates."
+    },
+    "comments": [
+        {
+            "body": "**Original author :** M\u00e9rour Xavier\n\nnot relevant any more...",
+            "created_at": "2016-06-30T10:05:15Z"
+        }
+    ]
+}

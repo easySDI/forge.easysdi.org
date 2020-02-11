@@ -1,0 +1,14 @@
+{
+    "issue": {
+        "closed": true,
+        "title": "Add tools to leaflet map",
+        "created_at": "2018-07-11T10:08:15Z",
+        "labels": [
+            "Defect",
+            "Redmine status : Closed",
+            "Category : MAP"
+        ],
+        "body": "**Original author :** Portier Thomas\n\n3 tools can be added to the leaflet map : \r\n- locate control that adds a button to locate the user on the map\r\n- fullscreen that adds a button to fullscreen the map\r\n- geocoder ban that add a tool that permit the user to find a place based on the french BAN API\n\n**Fixed versions :** 4.5.1"
+    },
+    "comments": []
+}

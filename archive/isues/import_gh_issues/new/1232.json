@@ -1,0 +1,14 @@
+{
+    "issue": {
+        "closed": true,
+        "title": "Pricing footer displaid when pricing is disabled",
+        "created_at": "2015-12-22T09:01:24Z",
+        "labels": [
+            "Defect",
+            "Redmine status : Closed",
+            "Category : SHOP"
+        ],
+        "body": "**Original author :** Portier Thomas\n\nIn the order layout, if pricing is disabled, description of pricing is displaid, it should not.\n\n**Fixed versions :** 4.4.0"
+    },
+    "comments": []
+}

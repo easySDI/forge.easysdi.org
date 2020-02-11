@@ -1,0 +1,14 @@
+{
+    "issue": {
+        "closed": true,
+        "title": "File > 4Go can't be downloaded",
+        "created_at": "2017-04-27T16:40:50Z",
+        "labels": [
+            "Defect",
+            "Redmine status : Closed",
+            "Category : SHOP"
+        ],
+        "body": "**Original author :** Portier Thomas\n\nDue to overflowing PHP's 32-bit integer, file size > 4 Go is not downloaded with flush output method\n\n**Fixed versions :** 4.5.0"
+    },
+    "comments": []
+}

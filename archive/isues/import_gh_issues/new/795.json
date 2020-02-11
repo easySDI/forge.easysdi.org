@@ -1,0 +1,27 @@
+{
+    "issue": {
+        "closed": true,
+        "title": "no *.sys.ini for monitor in crowdin",
+        "created_at": "2014-08-12T07:59:18Z",
+        "labels": [
+            "Defect",
+            "Redmine status : Closed",
+            "Category : MONITOR"
+        ],
+        "body": "**Original author :** Blatti Yves\n\nThere is no *.sys.ini for monitor in crowdin\n\n**Fixed versions :** 4.2.0"
+    },
+    "comments": [
+        {
+            "body": "**Original author :** Magoni Bruno\n\nen_GB.com_easysdi_monitor.sys.ini file has been added inside localization platform. Ending translation is now open...\r\n\r\n\r\n",
+            "created_at": "2014-09-21T08:20:53Z"
+        },
+        {
+            "body": "**Original author :** Magoni Bruno\n\nHi Marc,\r\n\r\nCould you please verify that Continuous Integration Platform has mapped this new file ?\r\n\r\nThanks",
+            "created_at": "2014-09-21T08:21:44Z"
+        },
+        {
+            "body": "**Original author :** Magoni Bruno\n\n*.sys.ini file about MONITOR Joomla extension is available into easySDI deployment package",
+            "created_at": "2014-12-02T20:27:05Z"
+        }
+    ]
+}

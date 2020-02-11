@@ -1,0 +1,19 @@
+{
+    "issue": {
+        "closed": true,
+        "title": "A new pricing data tree is saved on every order 'save' (draft)",
+        "created_at": "2015-11-12T11:52:58Z",
+        "labels": [
+            "Defect",
+            "Redmine status : Closed",
+            "Category : SHOP"
+        ],
+        "body": "**Original author :** Blatti Yves\n\nA new pricing data tree is saved on every order 'save' (draft).\r\nThis creates incoherent data in DB and makes the REST extraction service crash !\n\n**Fixed versions :** 4.3.2"
+    },
+    "comments": [
+        {
+            "body": "**Original author :** Blatti Yves\n\nSeems to work ! Thanks H\u00e9l\u00e8ne !",
+            "created_at": "2015-11-16T14:16:08Z"
+        }
+    ]
+}

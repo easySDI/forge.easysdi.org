@@ -1,0 +1,26 @@
+{
+    "issue": {
+        "closed": false,
+        "title": "Pagination missing in frontend object management",
+        "created_at": "2011-06-27T15:08:03Z",
+        "labels": [
+            "Feature",
+            "Redmine status : New"
+        ],
+        "body": "**Original author :** M\u00e9rour Xavier\n\nWell, everything is said in the title !\r\n\r\nUser should be able to define how many results he\/she wants to display on the page.\r\nDefault value should be set to \"20\"\r\n"
+    },
+    "comments": [
+        {
+            "body": "**Original author :** M\u00e9rour Xavier\n\nMisses as well under metadate management (task=listMetadata)",
+            "created_at": "2011-06-29T08:24:56Z"
+        },
+        {
+            "body": "**Original author :** M\u00e9rour Xavier\n\nBecause it may cause some templating problems for some EasySDI users, I suggest to add under EasySDI general configuration two options :\r\n\r\n- pagination default value (20)\r\n- able pagination choice : yes\/no\r\n\r\n",
+            "created_at": "2011-08-24T13:54:39Z"
+        },
+        {
+            "body": "**Original author :** Magoni Bruno\n\nHi Xavier,\r\n\r\nI agree with you but propose to change such issue from defect to feature.\r\nWith V4, object management in backoffice operates default Joomla pagination.\r\n\r\nThanks,",
+            "created_at": "2014-04-25T16:26:57Z"
+        }
+    ]
+}

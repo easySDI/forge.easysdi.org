@@ -1,0 +1,31 @@
+{
+    "issue": {
+        "closed": true,
+        "title": "Stereotype Gemet makes crashing metadata editing form",
+        "created_at": "2014-11-14T16:13:11Z",
+        "labels": [
+            "Defect",
+            "Redmine status : Closed",
+            "Category : CATALOG"
+        ],
+        "body": "**Original author :** Portier Thomas\n\nSince last update of the 4.2.x branche, I have a big crash on editing metadata form. It dosn't crash if I disable the keyword gemet relation : \r\n\r\n Catchable fatal error: Argument 1 passed to DOMNode::appendChild() must be an instance of DOMNode, null given, called in \/home\/htdocs\/www\/tigeo\/components\/com_easysdi_catalog\/libraries\/easysdi\/FormGenerator.php on line 194 and defined in \/home\/htdocs\/www\/tigeo\/components\/com_easysdi_catalog\/libraries\/easysdi\/FormGenerator.php on line 533"
+    },
+    "comments": [
+        {
+            "body": "**Original author :** Van Hoecke H\u00e9l\u00e8ne \n\nYou should set GEMET stereotype on the relation defining keyword to have it working as expected.",
+            "created_at": "2014-11-17T07:41:11Z"
+        },
+        {
+            "body": "**Original author :** Portier Thomas\n\nI can't set GEMET stereotype on a relation, the stereotype applies to an attribute. Do you mean that GEMET should be listed in the render type option?",
+            "created_at": "2014-11-17T08:43:25Z"
+        },
+        {
+            "body": "**Original author :** Van Hoecke H\u00e9l\u00e8ne \n\nYes, on the relation ending on the attribute with a GEMET stereotype, you have to set a GEMET render type (not stereotype as i said, my mistake sorry).\r\nIt is possible that the update SQL files didn't run when you installed the package you built. That could explain why you can't see GEMET render type. This render type is supposed to be added in the database with the 4.2.0-rc-1 installer.",
+            "created_at": "2014-11-17T08:57:08Z"
+        },
+        {
+            "body": "**Original author :** Portier Thomas\n\nYes you were right. It's Ok. Thanks.",
+            "created_at": "2014-11-17T10:19:27Z"
+        }
+    ]
+}

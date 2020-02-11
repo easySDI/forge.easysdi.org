@@ -1,0 +1,27 @@
+{
+    "issue": {
+        "closed": false,
+        "title": "An hidden relation with a default value doesn't keep the value",
+        "created_at": "2015-09-11T14:32:11Z",
+        "labels": [
+            "Defect",
+            "Redmine status : New",
+            "Category : CATALOG"
+        ],
+        "body": "**Original author :** Portier Thomas\n\nI want to hide hierarchy level field in the metadata form but I want to fix a default value (dataset).\r\n\r\nIf I set the relation to \"hidden\", dataset value is not stored in the metadata. Empty value is set."
+    },
+    "comments": [
+        {
+            "body": "**Original author :** Blatti Yves\n\nHi Thomas !\r\n\r\nHave you updated your 4.3.x branch recently? Because this should have been fixed here : #1085 (except for multi-select here #1090)",
+            "created_at": "2015-09-11T14:47:43Z"
+        },
+        {
+            "body": "**Original author :** Portier Thomas\n\nNo it doesn't work for list with a stereotype textchoice even if there is a single default value",
+            "created_at": "2015-09-15T09:07:06Z"
+        },
+        {
+            "body": "**Original author :** Blatti Yves\n\nYou are right.\r\nI there is no node, it is correctly set, but if there's an empty node, the value is not set.",
+            "created_at": "2015-09-15T12:51:29Z"
+        }
+    ]
+}

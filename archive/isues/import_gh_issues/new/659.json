@@ -1,0 +1,14 @@
+{
+    "issue": {
+        "closed": false,
+        "title": "Problem with accented text search",
+        "created_at": "2014-03-27T15:16:15Z",
+        "labels": [
+            "Defect",
+            "Redmine status : New",
+            "Category : CATALOG"
+        ],
+        "body": "**Original author :** Magoni Bruno\n\nFor now, easySDI remove all accented text which are present inside search criteria (see  \\components\\com_easysdi_catalog\\libraries\\easysdi\\Cswrecords.php line 40)\r\nPROXY servlet may be causes this trouble and investigation should be made to accept such content witout any content manipulation...\r\n\r\nPS: space character is also problematic"
+    },
+    "comments": []
+}

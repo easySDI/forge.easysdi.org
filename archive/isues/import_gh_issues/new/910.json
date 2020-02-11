@@ -1,0 +1,14 @@
+{
+    "issue": {
+        "closed": true,
+        "title": "MAP : zoom slider weird behaviour",
+        "created_at": "2015-02-24T15:04:19Z",
+        "labels": [
+            "Defect",
+            "Redmine status : Closed",
+            "Category : MAP"
+        ],
+        "body": "**Original author :** Van Hoecke H\u00e9l\u00e8ne \n\nAfter moving the zoom slider thumb with the mouse, the pointer stays linked to it and every movement on the map move the thumb on the slider. \r\n\n\n**Fixed versions :** 4.3.0"
+    },
+    "comments": []
+}

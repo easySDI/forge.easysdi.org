@@ -1,0 +1,35 @@
+{
+    "issue": {
+        "closed": true,
+        "title": "Filter on Users by Organism",
+        "created_at": "2014-04-24T09:35:08Z",
+        "labels": [
+            "Feature",
+            "Redmine status : Closed",
+            "Category : CONTACT"
+        ],
+        "body": "**Original author :** M\u00e9rour Xavier\n\nIn the backend, in the user management screen, there is mean to filter by \"organism\".\r\n\r\n--> a filter \"select an organism\" should be added to ease the management of users. The filter should take in account the propertie \"is Member of\" only.\r\n\r\n\n\n**Fixed versions :** 4.2.0"
+    },
+    "comments": [
+        {
+            "body": "**Original author :** M\u00e9rour Xavier\n\nThomas,\r\n\r\nDo you agree ? do you have any other input for filters on this screen ?",
+            "created_at": "2014-05-14T15:22:52Z"
+        },
+        {
+            "body": "**Original author :** Portier Thomas\n\nYes and I'd remove the category filter. There is no more category menu item and I think user categories are not usefull.",
+            "created_at": "2014-05-14T16:35:53Z"
+        },
+        {
+            "body": "**Original author :** M\u00e9rour Xavier\n\nOK.\r\n\r\nconcerning the \"categories\" (Joomla categories), there is indeed no sense to keep it.\r\n\r\nBUT as categories (easySDI categories) will be added soon on organism level (see #642), I change the #642 ticket (add the filter \"categories\" on \"organism page\" in BE)",
+            "created_at": "2014-05-14T19:24:20Z"
+        },
+        {
+            "body": "**Original author :** Magoni Bruno\n\nHi Xavier,\r\n\r\nAs we are working on #642, I propose that we realize such cleaning...\r\n\r\nDo you agree with?\r\n",
+            "created_at": "2014-05-30T07:41:21Z"
+        },
+        {
+            "body": "**Original author :** M\u00e9rour Xavier\n\nI agree :-)",
+            "created_at": "2014-06-01T20:28:53Z"
+        }
+    ]
+}

@@ -1,0 +1,19 @@
+{
+    "issue": {
+        "closed": true,
+        "title": "Remove jQuery-File-Upload servers (PHP, node, python, go)",
+        "created_at": "2016-06-15T13:43:23Z",
+        "labels": [
+            "Defect",
+            "Redmine status : Closed",
+            "Category : CATALOG"
+        ],
+        "body": "**Original author :** Blatti Yves\n\nRemove jQuery-File-Upload servers (PHP, node, python, go), they're unused and may add security risks.\n\n**Fixed versions :** 4.4.1"
+    },
+    "comments": [
+        {
+            "body": "**Original author :** Blatti Yves\n\nrev. 9845",
+            "created_at": "2016-06-15T14:05:28Z"
+        }
+    ]
+}

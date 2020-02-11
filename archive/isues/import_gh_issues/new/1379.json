@@ -1,0 +1,19 @@
+{
+    "issue": {
+        "closed": true,
+        "title": "Catalog multiple PHP Notices",
+        "created_at": "2016-10-19T10:27:09Z",
+        "labels": [
+            "Defect",
+            "Redmine status : Closed",
+            "Category : CATALOG"
+        ],
+        "body": "**Original author :** Blatti Yves\n\nUndefined index in views\\catalog\\view.html.php \r\n\r\nUndefined property in \\catalogsearchcriterias\\tmpl\\default.php\n\n**Fixed versions :** 4.4.3"
+    },
+    "comments": [
+        {
+            "body": "**Original author :** Blatti Yves\n\nrev. 10014",
+            "created_at": "2016-10-19T11:40:19Z"
+        }
+    ]
+}

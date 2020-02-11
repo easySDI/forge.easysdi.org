@@ -1,0 +1,19 @@
+{
+    "issue": {
+        "closed": true,
+        "title": "MD edit form : add and remove fields and fieldsets in ajax doen't work since #895 (organism manager)",
+        "created_at": "2015-09-08T16:51:02Z",
+        "labels": [
+            "Defect",
+            "Redmine status : Closed",
+            "Category : CATALOG"
+        ],
+        "body": "**Original author :** Blatti Yves\n\nMD edit form : add and remove fields and fieldsets in ajax doen't work since #895 (organism manager):\r\n\r\n* If user is organism manager and resource manager : the form is locked but he can remove and add (one) field or fieldset\r\n* If user in metadataresponsible or metadataeditor, he cannot add more than one field in ajax, or remove fields\r\n** This problems comes from the rights checks that are not available in ajax \n\n**Fixed versions :** 4.3.2"
+    },
+    "comments": [
+        {
+            "body": "**Original author :** Blatti Yves\n\nrev. 9038",
+            "created_at": "2015-09-08T16:59:08Z"
+        }
+    ]
+}

@@ -1,0 +1,27 @@
+{
+    "issue": {
+        "closed": false,
+        "title": "Multilanguage \"Terms of Use\"",
+        "created_at": "2016-10-03T09:22:07Z",
+        "labels": [
+            "Enhancement",
+            "Redmine status : New",
+            "Category : SHOP"
+        ],
+        "body": "**Original author :** Schaer Peter\n\nIn EasySDI SHOP configuration we have the \"terms of use\"-option. A relative or an absolute link can be placed there. Is there any possiblity to enter a link for each language present in joomla (e.g. french and german)? If not, is that a possible enhancement?"
+    },
+    "comments": [
+        {
+            "body": "**Original author :** Blatti Yves\n\nHi Peter,\r\nSorry for the late reply.\r\n\r\nThis is currently not possible, because it's stored in the 'com_config' Joomla native storage. It does not support translation.\r\n\r\n+It would need a small dev to make it multilingual.+\r\n\r\nI suppose it has not been done because the rest of the SHOP (Basket etc) is not fully multilingual.\r\n\r\nDo you use SHOP for download only, or do you plan to use it with the full basket functionality ?",
+            "created_at": "2016-10-14T14:15:28Z"
+        },
+        {
+            "body": "**Original author :** Schaer Peter\n\nHi Yves\r\n\r\nwe only use the SHOP for download and we have an acceptable workaround (linking to a pdf file containing informations in both languages). So there's no urgency in this.\r\n\r\nThanks\r\nPeter",
+            "created_at": "2016-10-14T14:31:45Z"
+        },
+        {
+            "body": "**Original author :** Blatti Yves\n\nThanks Peter, we'll keep your issue open",
+            "created_at": "2016-10-17T13:52:39Z"
+        }
+    ]
+}

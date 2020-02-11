@@ -1,0 +1,13 @@
+{
+    "issue": {
+        "closed": true,
+        "title": "Unable to save Pricing (organism's level) if at least on category rebate is not set",
+        "created_at": "2015-05-19T08:02:06Z",
+        "labels": [
+            "Defect",
+            "Redmine status : Closed"
+        ],
+        "body": "**Original author :** Villemagne J\u00e9r\u00f4me\n\nUnable to save Pricing (organism's level) if at least on category rebate is not set.\r\nWe should be able to save pricing without any rebate.\n\n**Fixed versions :** 4.3.2"
+    },
+    "comments": []
+}

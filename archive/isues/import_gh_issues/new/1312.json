@@ -1,0 +1,14 @@
+{
+    "issue": {
+        "closed": true,
+        "title": "link to the download file is impossible if the download directory is protected",
+        "created_at": "2016-04-12T15:47:50Z",
+        "labels": [
+            "Defect",
+            "Redmine status : Closed",
+            "Category : SHOP"
+        ],
+        "body": "**Original author :** Portier Thomas\n\nThe lien near the upload field in the diffusion panel is a direct link to the file on the server, it should be a link to the download shop service. Indeed if the directory is htaccess protected (and it should be), it is impossible to download it.\n\n**Fixed versions :** 4.4.1"
+    },
+    "comments": []
+}

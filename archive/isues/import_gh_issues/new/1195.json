@@ -1,0 +1,19 @@
+{
+    "issue": {
+        "closed": true,
+        "title": "\"Mandate reference\" for third party",
+        "created_at": "2015-11-16T14:03:18Z",
+        "labels": [
+            "Defect",
+            "Redmine status : Closed",
+            "Category : SHOP"
+        ],
+        "body": "**Original author :** M\u00e9rour Xavier\n\nThe field \"mandate_ref\" in DB is limited to 75 characters. --> should be extended to 500 chars.\r\n\r\nThe online field (HTML) is not limited in basket --> should be limited as well to 500 chars.\n\n**Fixed versions :** 4.3.2"
+    },
+    "comments": [
+        {
+            "body": "**Original author :** Blatti Yves\n\nrev. 4245",
+            "created_at": "2015-11-16T15:17:09Z"
+        }
+    ]
+}

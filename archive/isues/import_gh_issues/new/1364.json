@@ -1,0 +1,14 @@
+{
+    "issue": {
+        "closed": true,
+        "title": "CSW query constraint on publication date",
+        "created_at": "2016-07-15T11:52:54Z",
+        "labels": [
+            "Defect",
+            "Redmine status : Closed",
+            "Category : CATALOG"
+        ],
+        "body": "**Original author :** Van Hoecke H\u00e9l\u00e8ne \n\nPublished state is queried with the published date of 'tomorrow' instead of 'today'.\n\n**Fixed versions :** 4.3.5"
+    },
+    "comments": []
+}

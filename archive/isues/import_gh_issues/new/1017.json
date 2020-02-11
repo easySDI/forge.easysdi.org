@@ -1,0 +1,23 @@
+{
+    "issue": {
+        "closed": false,
+        "title": "Notify manager when a data package is uploaded",
+        "created_at": "2015-05-22T15:57:14Z",
+        "labels": [
+            "Enhancement",
+            "Redmine status : Accepted",
+            "Category : SHOP"
+        ],
+        "body": "**Original author :** Van Hoecke H\u00e9l\u00e8ne \n\nIt would be interesting to have an automatic notification when a data package is deposited via the front-end diffusion management page.\r\nFor now, when a user do so, there is no automatic way to inform the person in charge of processing those data.  \r\n\r\nThis notification could be an email containing : \r\n- package file name\r\n- diffusion manager who uploaded the data\r\n\r\nThis email could have as recipient the extraction manager and\/or the platform administrator (to discuss).\r\n"
+    },
+    "comments": [
+        {
+            "body": "**Original author :** M\u00e9rour Xavier\n\nI see this proposal as a nice enhancement.\r\n\r\nI would also suggest to set the deposit + notification (all in one) as optional in the backend since this feature is not used by all platform. \r\n\r\n(I have no opinion on email recipient since I do not kno the use case - we do not use this feature)",
+            "created_at": "2015-05-27T09:11:01Z"
+        },
+        {
+            "body": "**Original author :** Van Hoecke H\u00e9l\u00e8ne \n\nTC has validated.\r\nThe recipient should be the organism manager.\r\nA specific joomla event should be raised as well. This event will not be used for now but will be available for specific user development or futur easySDI enhancement.",
+            "created_at": "2015-05-29T08:13:49Z"
+        }
+    ]
+}

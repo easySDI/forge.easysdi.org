@@ -1,0 +1,59 @@
+{
+    "issue": {
+        "closed": false,
+        "title": "\"File\" stereotype :deletion of file, problem of relpicated MD",
+        "created_at": "2013-07-15T12:44:31Z",
+        "labels": [
+            "Defect",
+            "Redmine status : Affected",
+            "Category : CATALOG"
+        ],
+        "body": "**Original author :** Blatti Yves\n\nProblem with \"File\" stereotype:\r\nIf we replicate a metadata with an existing linked file, then the replicated metadata can delete the file of the original.\r\n\r\nThis is not an important issue for us (we can disable the deletion on file), but we must not reproduce it in V4.\n\n**Fixed versions :** Unplanned"
+    },
+    "comments": [
+        {
+            "body": "**Original author :** M\u00e9rour Xavier\n\nWhat about this issue in V4 Bruno ?\r\nDo you have any input on the way the stereotype in v4 was coded ?",
+            "created_at": "2014-03-25T20:48:36Z"
+        },
+        {
+            "body": "**Original author :** Magoni Bruno\n\nHi Yves,\r\n\r\nIs it possible for you to verify that such problem always exists in V4?\r\n\r\nThanks a lot for your help!\r\nBruno",
+            "created_at": "2014-04-11T07:37:11Z"
+        },
+        {
+            "body": "**Original author :** Blatti Yves\n\nJust tested, and the problem is still present on V4.0.1",
+            "created_at": "2014-04-11T08:55:13Z"
+        },
+        {
+            "body": "**Original author :** Blatti Yves\n\nI see multiple ways of fixing it (and there's certainly many other, we'll have to discuss them)\r\n\r\n1.  \"The XML way\" : on replication, parse XML for \"locally attached items\", if found, duplicate the files with a new name, and replace the links.\r\n\r\n2. \"The Filesystem way\" : we choose to name attachment with MD identifiers (prefix), or place them in an identified folder (let's say ...\/media\/easysdi\/images\/md_guid\/uniquefilename.ext), when we replicate a metadata, we replicate all the files with the prefix OR the whole folder related to the metadata.\r\n\r\n3. \"The dirty way\" : on deletion of an attachment (of a replicated metadata), we don't delete the file, it stays on the system, so the \"original\" metadata keeps pointing on it\r\n\r\nLet's compare them:\r\n\r\n|_.Method |_.Ease of implementation|_.\"Beauty\"|_.Migration\/Update problem|_.remark|\r\n|1.  \"The XML way\"|--|++|no problem with existing data|Looks a bit heavy to solve a small problem...|\r\n|2. \"The Filesystem way\"|+|+|we'd have to parse all existing MD and rename or move attachments|Looks like a good compromise but, the update is a problem|\r\n|3. \"The dirty way\"|++|--|no problem with existing data\r\n                          (but problems in the future... with orphaned files...)|could be used temporarily, waiting for a clean fix |\r\n\r\nOther (better) solutions\/proposals welcome ! ;-)\r\n",
+            "created_at": "2014-04-11T09:15:13Z"
+        },
+        {
+            "body": "**Original author :** Magoni Bruno\n\n3rd option will be temporarily followed, waiting for a complete fix...\r\n",
+            "created_at": "2014-11-14T08:28:32Z"
+        },
+        {
+            "body": "**Original author :** Magoni Bruno\n\nAs validated in #801, method *1* will be used to fix such issue (note 11 is not up to date anymore).\r\n",
+            "created_at": "2015-03-18T07:48:02Z"
+        },
+        {
+            "body": "**Original author :** Magoni Bruno\n\nFor now the temporary \"dirty way\" will be covered until Community works on the \"XML way\"...",
+            "created_at": "2015-04-17T10:10:33Z"
+        },
+        {
+            "body": "**Original author :** Blatti Yves\n\nCan it be closed now ? -> #801",
+            "created_at": "2015-08-06T11:39:33Z"
+        },
+        {
+            "body": "**Original author :** Van Hoecke H\u00e9l\u00e8ne \n\nCan you answer Marc?",
+            "created_at": "2015-08-28T07:58:00Z"
+        },
+        {
+            "body": "**Original author :** M\u00e9rour Xavier\n\nHello Marc,\r\n\r\nWe (Yves and I) are doing our cleaning session in the forge. \r\nCan you give us some inputs on this one (i.e. can we close it ?)\r\n\r\nThanks",
+            "created_at": "2016-02-03T12:59:47Z"
+        },
+        {
+            "body": "**Original author :** M\u00e9rour Xavier\n\nMarc, \r\n\r\nAny news on this issue please ?\r\n\r\nThanks",
+            "created_at": "2016-04-27T13:36:49Z"
+        }
+    ]
+}

@@ -1,0 +1,19 @@
+{
+    "issue": {
+        "closed": true,
+        "title": "If there's multiple layers in SHOP's map, only the first is added in the basket",
+        "created_at": "2015-09-11T11:58:19Z",
+        "labels": [
+            "Defect",
+            "Redmine status : Closed",
+            "Category : SHOP"
+        ],
+        "body": "**Original author :** Blatti Yves\n\nIf there's multiple layers in SHOP's map, only the first is added in the basket.\r\nBut all of them are visible in the perimeter popup\r\nAnd all of them are visible in \"recap\" views\n\n**Fixed versions :** 4.3.2"
+    },
+    "comments": [
+        {
+            "body": "**Original author :** Blatti Yves\n\nNow all non vectors layers are copied in the minimap.\r\nRev. 9088",
+            "created_at": "2015-09-15T06:36:11Z"
+        }
+    ]
+}

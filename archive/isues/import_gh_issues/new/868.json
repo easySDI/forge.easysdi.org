@@ -1,0 +1,14 @@
+{
+    "issue": {
+        "closed": true,
+        "title": "Pricing - unable to remove an item from basket",
+        "created_at": "2014-11-19T12:08:50Z",
+        "labels": [
+            "Defect",
+            "Redmine status : Closed",
+            "Category : SHOP"
+        ],
+        "body": "**Original author :** Blatti Yves\n\nLinked to #643:\r\nIn basket view, I'm unable to remove an item from basket\n\n**Fixed versions :** 4.3.0"
+    },
+    "comments": []
+}

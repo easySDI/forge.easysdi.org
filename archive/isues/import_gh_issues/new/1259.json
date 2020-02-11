@@ -1,0 +1,19 @@
+{
+    "issue": {
+        "closed": true,
+        "title": " \"Geographic extent\" relation does not use the configured label and tooltip",
+        "created_at": "2016-02-08T12:46:04Z",
+        "labels": [
+            "Defect",
+            "Redmine status : Closed",
+            "Category : CATALOG"
+        ],
+        "body": "**Original author :** Blatti Yves\n\n \"Geographic extent\" relation does not use the configured label and tooltip in metadata edition form (same as #1257)\n\n**Fixed versions :** 4.4.0"
+    },
+    "comments": [
+        {
+            "body": "**Original author :** Blatti Yves\n\nrev. 9457",
+            "created_at": "2016-02-08T13:34:06Z"
+        }
+    ]
+}

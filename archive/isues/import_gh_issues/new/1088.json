@@ -1,0 +1,23 @@
+{
+    "issue": {
+        "closed": true,
+        "title": "Message to confirm an order should be specific",
+        "created_at": "2015-08-20T12:20:18Z",
+        "labels": [
+            "Defect",
+            "Redmine status : Closed",
+            "Category : SHOP"
+        ],
+        "body": "**Original author :** Blatti Yves\n\nMessage to confirm an order should be specific.\r\nIt is :\r\nCOM_EASYSDI_SHOP_ITEM_SAVED_SUCCESSFULLY -> \"Item saved successfully\"\r\n\r\nIt should be something like \"You order has been sent\"\r\n\r\n\n\n**Fixed versions :** 4.3.2"
+    },
+    "comments": [
+        {
+            "body": "**Original author :** Blatti Yves\n\n\r\nNote:\r\n\\components\\com_easysdi_shop\\controllers\\basket.php:L192",
+            "created_at": "2015-08-20T12:20:23Z"
+        },
+        {
+            "body": "**Original author :** Blatti Yves\n\nIt is now specific, and differentiated for order, draft, and estimate\r\nrev. 8938",
+            "created_at": "2015-08-21T07:34:12Z"
+        }
+    ]
+}

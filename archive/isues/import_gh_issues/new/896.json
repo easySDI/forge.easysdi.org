@@ -1,0 +1,51 @@
+{
+    "issue": {
+        "closed": true,
+        "title": "Display a message when no results in catalog",
+        "created_at": "2015-02-12T09:53:09Z",
+        "labels": [
+            "Enhancement",
+            "Redmine status : Closed",
+            "Category : CATALOG"
+        ],
+        "body": "**Original author :** Blatti Yves\n\nWhen a search gives in catalog gives no results, there's no message.\r\nAt least \"No results\" (aucun r\u00e9sultat) should be added.\r\n\r\nBut as CATALOG is one of the core components we should polish this part...\r\nWe propose to add a way to customize the \"no results page\". It should be catalog dependent (as some catalog have different features).\r\nWe can imagine different ways to achieve it:\r\n- XSL\r\n- Have an HTML editable field in catalog object for the \"no result message\" (but we loose support for multilingual, and a translatable field is not appropriate)\r\n- Other ideas ?\n\n**Fixed versions :** 4.3.2"
+    },
+    "comments": [
+        {
+            "body": "**Original author :** Van Hoecke H\u00e9l\u00e8ne \n\nTC validates the message by catalog.\r\nYves will work on a more detailed proposition.",
+            "created_at": "2015-03-06T10:14:45Z"
+        },
+        {
+            "body": "**Original author :** Blatti Yves\n\nAfter TC discussion and some investigations, here are some implementation proposals :\r\n\r\n1) XSL :\r\n* easySDI already needs XSL for results and is considered a complex task in the easySDI installation process, we won't add complexity. \r\n* we don't have data (XML) to pass to processor, so it would be just HTML\r\n* *rejected solution* : is not an interesting way to achieve this\r\n\r\n2) Direct use of translatable :\r\n* field size is between 255 and 500 chars long, we can't store big content in it\r\n* *rejected solution* : not possible due to limitations\r\n\r\n3) Thomas and H\u00e9l\u00e8ne have proposed to use a *Joomla article* (as storage), and point to it (article ID) in the *multilingual field* of a catalog.\r\n* *Pros* :\r\n** This offers the ability to have a full custom content with Joomla article (com_content)\r\n** com_content is available on all joomla installs\r\n** Keeps the multilingual capabilities (with two languages, we would have to set 2 different articles IDs, one in each language)\r\n** Light to implement, easy to understand if clearly documented (tooltips etc...)\r\n** Can be optional:\r\n*** With a default string in Joomla translations ('no result found')\r\n*** If no article id is specified for user language on the catalog, display the default string\r\n* *Cons* : \r\n** When porting easySDI v2 -> v4 we have chosen to avoid this kind of mechanisms previously used in v2\r\n\r\n4) Use a *Joomla plugin*\r\n* *Pros* :\r\n** By default use a string in translations files ('no result found')\r\n** If a plugin (new plugin type) is found, do not display default string, and load plugin content\r\n** No plugin would be delivered with easySDI, but catalog would trigger the event\r\n* *Cons* :\r\n** If someone want to extend the default 'no results' behavior, it becomes +mandatory+ to code a plugin, which is not convenient for integrators\r\n** In multilingual environment, the +plugin has to manage languages AND different catalogs+\r\n\r\n\r\nMy point after looking at those solutions:\r\n*Solution 3* proposed by Thomas and H\u00e9l\u00e8ne seems to be the +easier way to implement AND to use+.\r\nBut are we OK with this mechanism ? (Personally, I am)\r\n\r\n*Thanks to TC member for their replies.*\r\n\r\n\r\n",
+            "created_at": "2015-03-09T13:46:40Z"
+        },
+        {
+            "body": "**Original author :** Portier Thomas\n\n+1",
+            "created_at": "2015-03-13T09:36:23Z"
+        },
+        {
+            "body": "**Original author :** Blatti Yves\n\nAs requested by TC, investigations points to solution N\u00b03.\r\nTC members please vote if OK.",
+            "created_at": "2015-03-13T09:49:05Z"
+        },
+        {
+            "body": "**Original author :** Villemagne J\u00e9r\u00f4me\n\n+1",
+            "created_at": "2015-03-18T08:26:30Z"
+        },
+        {
+            "body": "**Original author :** Magoni Bruno\n\n+1 for third option",
+            "created_at": "2015-03-18T08:27:34Z"
+        },
+        {
+            "body": "**Original author :** M\u00e9rour Xavier\n\n@Bruno\r\n\r\nAs it has been voted and accepted by a TC's majority, can you change the status to \"accepted\" and then \"affected\".\r\n\r\nThanks.",
+            "created_at": "2015-03-27T09:18:43Z"
+        },
+        {
+            "body": "**Original author :** Blatti Yves\n\nHi H\u00e9l\u00e8ne!\r\nCan you pass this one in Assigned (to me) ?\r\nThx !",
+            "created_at": "2015-06-11T14:38:38Z"
+        },
+        {
+            "body": "**Original author :** Blatti Yves\n\nWe can now use the \"text2\" field to specify an article or table content, values are:\r\n- blank (default) : will use the new default string\r\n- an integer : will load com_content article with the supplied ID\r\n- a string composend of: \"tableNameNonPrefixed:fieldName:anId\" to load from another table. example : \"k2_items:introtext:81\" will load a K2 item content.\r\n\r\nRevision : 8898",
+            "created_at": "2015-08-04T12:57:09Z"
+        }
+    ]
+}

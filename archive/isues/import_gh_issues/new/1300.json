@@ -1,0 +1,14 @@
+{
+    "issue": {
+        "closed": true,
+        "title": "Missing field in BE list view",
+        "created_at": "2016-03-25T09:49:17Z",
+        "labels": [
+            "Defect",
+            "Redmine status : Closed",
+            "Category : CORE"
+        ],
+        "body": "**Original author :** Van Hoecke H\u00e9l\u00e8ne \n\nList view of perimeters (SHOP):\r\nThe field checked_out_time is missing in SQL query used to build the list of perimeters.\r\n\r\nList view of layers group (MAP):\r\nFields checked_out and checked_out_time are missing from the SQL statement\n\n**Fixed versions :** 4.4.1"
+    },
+    "comments": []
+}

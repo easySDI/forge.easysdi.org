@@ -1,0 +1,35 @@
+{
+    "issue": {
+        "closed": true,
+        "title": "Add backend authentication to zoning download",
+        "created_at": "2015-10-08T09:12:43Z",
+        "labels": [
+            "Enhancement",
+            "Redmine status : Closed",
+            "Category : SHOP"
+        ],
+        "body": "**Original author :** Blatti Yves\n\nWe have the ability to use backend authentication when protecting an URL typed download in easySDI:\r\n```\n\r\n+----------+    easySDI\/joomla security   +---------------+   backend user\/password   +--------------------------+\r\n| Client   +<---------------------------->+ easySDI SHOP  +<------------------------->|Backend: HTTP(s), (S)FTP...\r\n+----------+                              +---------------+                           +--------------------------+\r\n```\n\r\n\r\n!current-download-url.png!\r\n\r\nWe propose to add the same for grid\/zoning download.\r\nMost of the code can be reused.\r\n\r\nProposed: \r\n!zoning.png!\r\n\r\n\n\n**Fixed versions :** 4.3.2"
+    },
+    "comments": [
+        {
+            "body": "**Original author :** Blatti Yves\n\n+1",
+            "created_at": "2015-10-08T09:36:21Z"
+        },
+        {
+            "body": "**Original author :** Portier Thomas\n\n+1",
+            "created_at": "2015-10-12T22:17:41Z"
+        },
+        {
+            "body": "**Original author :** Van Hoecke H\u00e9l\u00e8ne \n\n+1",
+            "created_at": "2015-10-15T15:44:02Z"
+        },
+        {
+            "body": "**Original author :** Blatti Yves\n\nHi H\u00e9l\u00e8ne, it works, except for those two cases:\r\n\r\n*1) Binary files:* I have tested it on grid download with HTTP basic authentication on an apache server with a simple .htacces\/.htpasswd couple.\r\nProblem: when I download the file without authentication, everything works. When I add authentication and configuration in the diffusion, the downloaded files are truncated (trailing binary zeros are removed). Binary files are invalid (See sample files).\r\n\r\nThis problem seems to also affect URL download (without grid)\r\n\r\n*2) Exceptions:* Exceptions are not handled, when the password does not match for example, the backend server gives a 401, but there is a downloadable file containing the error in frontend.\r\nExample: the zip file (invalid zip) contains:\r\n```\n\r\n<!DOCTYPE HTML PUBLIC \"-\/\/IETF\/\/DTD HTML 2.0\/\/EN\">\r\n<html><head>\r\n<title>401 Unauthorized<\/title>\r\n<\/head><body>\r\n<h1>Unauthorized<\/h1>\r\n.....\r\n```\n\r\n",
+            "created_at": "2015-11-03T19:32:00Z"
+        },
+        {
+            "body": "**Original author :** Blatti Yves\n\nTested OK, thanks !",
+            "created_at": "2015-11-23T09:08:34Z"
+        }
+    ]
+}

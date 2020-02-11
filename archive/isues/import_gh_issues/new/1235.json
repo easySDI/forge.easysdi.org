@@ -1,0 +1,27 @@
+{
+    "issue": {
+        "closed": true,
+        "title": "Created date used instead of Sent date",
+        "created_at": "2016-01-08T10:53:55Z",
+        "labels": [
+            "Defect",
+            "Redmine status : Closed",
+            "Category : SHOP"
+        ],
+        "body": "**Original author :** M\u00e9rour Xavier\n\nWhen a request is created by a user, a created_date is saved. -> OK\r\nWhen the request is sent, a sent date is saved. -> OK\r\n\r\nIn various views, the displayed date is always the \"created date\" which is not very usefull.\r\n\r\nThe \"sent date\" should be displayed in every of this views :\r\n\r\n- in BE : index.php?option=com_easysdi_shop&view=orders\r\n- in FE : index.php?option=com_easysdi_shop&view=orders\r\n- in FE : index.php?option=com_easysdi_shop&view=orders&layout=validation\r\n- in FE : index.php?option=com_easysdi_shop&view=order&layout=validation\r\n- in FE : index.php?option=com_easysdi_shop&view=order&layout=edit\r\n- in FE : index.php?option=com_easysdi_shop&view=requests\r\n- in FE : index.php?option=com_easysdi_shop&view=request&layout=edit\r\n\r\n- in modules \"last_request\" and \"last_orders\"\r\n\r\n\r\nI suggest to keep \"created\" as title in the various column.\r\n\r\n\r\n\n\n**Fixed versions :** 4.4.0"
+    },
+    "comments": [
+        {
+            "body": "**Original author :** Van Hoecke H\u00e9l\u00e8ne \n\nTC validated the suggested fix.",
+            "created_at": "2016-01-14T13:38:33Z"
+        },
+        {
+            "body": "**Original author :** Blatti Yves\n\nAlso has to fix mod_easysdi_pendingrequests layout usage",
+            "created_at": "2016-01-29T13:04:09Z"
+        },
+        {
+            "body": "**Original author :** Blatti Yves\n\nrev. 9430",
+            "created_at": "2016-01-29T13:05:56Z"
+        }
+    ]
+}

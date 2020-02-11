@@ -1,0 +1,13 @@
+{
+    "issue": {
+        "closed": false,
+        "title": "SQL installation problem for MySQL 5.7+",
+        "created_at": "2015-12-09T08:00:43Z",
+        "labels": [
+            "Defect",
+            "Redmine status : New"
+        ],
+        "body": "**Original author :** Magoni Bruno\n\neasySDI installation package returns SQL error when played under MySQL 5.7.x and maybe for lesser MySQL version...\r\nProblem comes from easySDI core install.sql files whith @SET storage_engine=InnoDB;@ statement which must be replaced by @SET SESSION default_storage_engine=InnoDB;@ - MySQL storage engine variable's name has changed :-(\r\n\r\nFortunately ENGINE option in CREATE statement is still the same for last MySQL stable version; so it seems important now to check that all CREATE statements are mentionning such ENGINE option in install.sql file to guarantee correct easySDI database deployment.\r\n\r\nHaving a close look in same file about```\n\r\n-- force default collation for the same reason\r\n-- find how ?!\r\n```\nstatement @SET NAMES 'utf8' COLLATE 'utf_general_ci';@ should do the trick regarding http:\/\/dev.mysql.com\/doc\/refman\/5.6\/en\/set-statement.html\r\nand will replace the two current statements```\n\r\nSET NAMES 'utf8';\r\nSET CHARACTER SET utf8;\r\n```\n\r\n\r\n"
+    },
+    "comments": []
+}

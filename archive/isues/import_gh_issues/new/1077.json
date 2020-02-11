@@ -1,0 +1,23 @@
+{
+    "issue": {
+        "closed": true,
+        "title": "SHOP map fails to open if browser page is resized before opening",
+        "created_at": "2015-08-04T15:09:09Z",
+        "labels": [
+            "Defect",
+            "Redmine status : Closed",
+            "Category : SHOP"
+        ],
+        "body": "**Original author :** Blatti Yves\n\nSHOP map fials to open if browser page is resized before opening\r\n\r\nTo reproduce:\r\n- Add a product to basket\r\n- Open the basket page\r\n- Resize browser\r\n- Open perimeter definition: the map doesn't show up\n\n**Fixed versions :** 4.3.2"
+    },
+    "comments": [
+        {
+            "body": "**Original author :** Van Hoecke H\u00e9l\u00e8ne \n\nModal has to be display=block to allow resize event to be correctly spread to all components.",
+            "created_at": "2015-08-20T11:00:24Z"
+        },
+        {
+            "body": "**Original author :** Blatti Yves\n\nThanks you, works like a charm! Unable to reproduce.\r\nCan be closed.",
+            "created_at": "2015-08-21T07:39:00Z"
+        }
+    ]
+}

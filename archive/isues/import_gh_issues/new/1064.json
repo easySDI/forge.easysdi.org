@@ -1,0 +1,19 @@
+{
+    "issue": {
+        "closed": true,
+        "title": "Add support for WMTS REST encoding",
+        "created_at": "2015-07-28T08:43:36Z",
+        "labels": [
+            "Enhancement",
+            "Redmine status : Closed",
+            "Category : SERVICE"
+        ],
+        "body": "**Original author :** Blatti Yves\n\nWe should add support for WMTS with REST encoding in physical service definition, to use it in the MAP.\r\n(I'm not proposing to add proxy features and virtual services here)\r\n\r\nWe currently cannot negotiate with a RESTful only WMTS server*.\r\n\r\nI would propose to try the restful encoding if the KVP fails.\r\n\r\nOGC says:\r\n```\n\r\nA capabilities resource shall have a URI of the following form:\r\n{wmtsBaseUrl}\/{wmtsVersion}\/WMTSCapabilities{formatExtension}\r\n```\n\r\nFor example: http:\/\/wmts.geo.admin.ch\/1.0.0\/WMTSCapabilities.xml?lang=fr\r\n\r\n*Note: as far as I know, the XML(KVP), SOAP and REST interfaces are all optional in 1.0.0 WMTS\r\n\r\n\r\n\r\n\r\n\n\n**Fixed versions :** 4.4.1"
+    },
+    "comments": [
+        {
+            "body": "**Original author :** Van Hoecke H\u00e9l\u00e8ne \n\nThomas, can you check if Leaflet support WMTS with REST?\r\nImplement this implies that this has to be compatible with all kinds of MAP libraries.",
+            "created_at": "2015-08-28T08:23:44Z"
+        }
+    ]
+}

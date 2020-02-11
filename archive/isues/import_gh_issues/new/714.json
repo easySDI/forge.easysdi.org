@@ -1,0 +1,14 @@
+{
+    "issue": {
+        "closed": true,
+        "title": "ISO code reversed",
+        "created_at": "2014-05-18T17:06:51Z",
+        "labels": [
+            "Defect",
+            "Redmine status : Closed",
+            "Category : CATALOG"
+        ],
+        "body": "**Original author :** Magoni Bruno\n\n\"ISO 639-2 Terminology\" and \"ISO 639-1\" definitions are inverted.\r\nSuch configurations implies wrong metadata XML render.\r\n\r\n_sdi_sys_isolanguage content must be fixed through installers (INSTALL and UPDATE) like this:\r\n@1 \t1 \t1 \tiso639-1\r\n2 \t2 \t1 \tiso639-2B\r\n3 \t3 \t1 \tiso639-2T@\r\n\r\ninstead of:\r\n@1 \t1 \t1 \tiso639-2T\r\n2 \t2 \t1 \tiso639-2B\r\n3 \t3 \t1 \tiso639-1@\n\n**Fixed versions :** 4.1.0"
+    },
+    "comments": []
+}

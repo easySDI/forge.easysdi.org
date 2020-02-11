@@ -1,0 +1,19 @@
+{
+    "issue": {
+        "closed": true,
+        "title": "Manage proj4js projection in leaflet map",
+        "created_at": "2015-09-10T08:51:29Z",
+        "labels": [
+            "Enhancement",
+            "Redmine status : Closed",
+            "Category : MAP"
+        ],
+        "body": "**Original author :** Portier Thomas\n\nFor now only leaflet projections are managed. We have to use proj4leaflet to manage others projections\n\n**Fixed versions :** 4.5.0"
+    },
+    "comments": [
+        {
+            "body": "**Original author :** Van Hoecke H\u00e9l\u00e8ne \n\nAccepted by the TC",
+            "created_at": "2017-01-06T09:21:26Z"
+        }
+    ]
+}

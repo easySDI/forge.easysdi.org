@@ -1,0 +1,39 @@
+{
+    "issue": {
+        "closed": true,
+        "title": "Make scale selector and scaleline optional (like other controls)",
+        "created_at": "2014-08-05T08:31:34Z",
+        "labels": [
+            "Feature",
+            "Redmine status : Closed",
+            "Category : MAP"
+        ],
+        "body": "**Original author :** Blatti Yves\n\nMake scale selector and scaleline optional in a map (like other controls)\n\n**Fixed versions :** 4.3.0"
+    },
+    "comments": [
+        {
+            "body": "**Original author :** Blatti Yves\n\nFor us, one option to drive both scale selector and scaleline is OK",
+            "created_at": "2014-08-05T08:32:31Z"
+        },
+        {
+            "body": "**Original author :** M\u00e9rour Xavier\n\nThanks everyone for your comments on the proposed feature ;-)",
+            "created_at": "2014-08-13T12:15:41Z"
+        },
+        {
+            "body": "**Original author :** Magoni Bruno\n\nAccepted by everyone...",
+            "created_at": "2014-09-05T08:20:32Z"
+        },
+        {
+            "body": "**Original author :** Magoni Bruno\n\n+1",
+            "created_at": "2014-10-07T10:01:55Z"
+        },
+        {
+            "body": "**Original author :** M\u00e9rour Xavier\n\n+1",
+            "created_at": "2014-10-07T10:02:22Z"
+        },
+        {
+            "body": "**Original author :** Teixeira J\u00e9r\u00f4me\n\n+ 1",
+            "created_at": "2014-10-07T10:04:22Z"
+        }
+    ]
+}

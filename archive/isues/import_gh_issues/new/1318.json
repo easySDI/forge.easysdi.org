@@ -1,0 +1,19 @@
+{
+    "issue": {
+        "closed": true,
+        "title": "Should not be able to set price on free product in request view",
+        "created_at": "2016-04-20T11:01:37Z",
+        "labels": [
+            "Defect",
+            "Redmine status : Closed",
+            "Category : SHOP"
+        ],
+        "body": "**Original author :** Blatti Yves\n\nShould not be able to set price on free product in request view\n\n**Fixed versions :** 4.4.1"
+    },
+    "comments": [
+        {
+            "body": "**Original author :** Blatti Yves\n\nrev. -9674- 9833",
+            "created_at": "2016-04-20T11:27:57Z"
+        }
+    ]
+}

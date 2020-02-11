@@ -1,0 +1,35 @@
+{
+    "issue": {
+        "closed": true,
+        "title": "Remove SLA on Job tab",
+        "created_at": "2011-07-11T08:15:31Z",
+        "labels": [
+            "Feature",
+            "Redmine status : Rejected",
+            "Category : MONITOR"
+        ],
+        "body": "**Original author :** Larsen de Martino Jorgen\n\nThe advanced SLA tab has been implemented(#271) and will be a part of version 2.1. \r\n\r\nI suggest removal of the SLA options on the Job tab since it in my view has become obsolete with the introduction of the SLA setup tab.\r\n\r\nIn addition to being obsolete it will be confusing for the user to have 2 SLA possibilities."
+    },
+    "comments": [
+        {
+            "body": "**Original author :** M\u00e9rour Xavier\n\nOK for me, that's make sense.",
+            "created_at": "2011-07-11T09:18:14Z"
+        },
+        {
+            "body": "**Original author :** Magoni Bruno\n\nI guess it's a new feature and not a defect, right?",
+            "created_at": "2011-07-12T13:31:57Z"
+        },
+        {
+            "body": "**Original author :** Larsen de Martino Jorgen\n\nI agree",
+            "created_at": "2011-07-12T13:37:47Z"
+        },
+        {
+            "body": "**Original author :** Larsen de Martino Jorgen\n\nWhen are ad it - What about user name and password on the Job tab - can that be removed too?",
+            "created_at": "2011-07-13T07:17:43Z"
+        },
+        {
+            "body": "**Original author :** M\u00e9rour Xavier\n\nThis is an old and very specific ticket & the community plans to make a large MONITOR refactoring.\r\n\r\nTherefore, this ticket is rejected.",
+            "created_at": "2016-02-03T15:00:47Z"
+        }
+    ]
+}

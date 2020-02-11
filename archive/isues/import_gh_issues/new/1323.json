@@ -1,0 +1,14 @@
+{
+    "issue": {
+        "closed": true,
+        "title": "[leaflet] When a layer is deleted from layer legend, it is not deleted from layer tree",
+        "created_at": "2016-05-10T09:32:03Z",
+        "labels": [
+            "Defect",
+            "Redmine status : Closed",
+            "Category : MAP"
+        ],
+        "body": "**Original author :** Portier Thomas\n\n\n\n**Fixed versions :** 4.4.1"
+    },
+    "comments": []
+}

@@ -1,0 +1,14 @@
+{
+    "issue": {
+        "closed": false,
+        "title": "Use bootstrap styling for datables",
+        "created_at": "2015-05-20T12:54:13Z",
+        "labels": [
+            "Enhancement",
+            "Redmine status : Accepted",
+            "Category : CORE"
+        ],
+        "body": "**Original author :** Blatti Yves\n\nCould we use bootstrap CSS for datatables instead of \"purple-ish\" defaults?\r\n\r\nSee screenshots.\r\n\r\nDatatables doc : https:\/\/www.datatables.net\/manual\/styling\/bootstrap\r\nIntegration plugins: http:\/\/cdn.datatables.net\/plug-ins\/1.10.7\/integration\/"
+    },
+    "comments": []
+}

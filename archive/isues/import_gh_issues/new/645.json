@@ -1,0 +1,23 @@
+{
+    "issue": {
+        "closed": true,
+        "title": "management of attached file in an order",
+        "created_at": "2014-03-14T14:42:45Z",
+        "labels": [
+            "Feature",
+            "Redmine status : Rejected",
+            "Category : SHOP"
+        ],
+        "body": "**Original author :** M\u00e9rour Xavier\n\nThis is a small GUI enhancement.\r\n\r\nThe file attached to an order (one responded) should be deleted after xx days (config in backend) and the icon will remain with a red cross (need a flag in the database)"
+    },
+    "comments": [
+        {
+            "body": "**Original author :** M\u00e9rour Xavier\n\n@Bruno\n\nThis was assigned to you but no \"urgent\" need on this. I take it for now...",
+            "created_at": "2014-06-26T09:27:23Z"
+        },
+        {
+            "body": "**Original author :** Blatti Yves\n\nHas been implemented the differently in V4:\r\n- in orders list, a paper clip icon is show if the order has at least one file downloadable\r\n- In the order details, download button has a text showing how many days left the file is available, and a message when it's not anymore.\r\n",
+            "created_at": "2016-02-03T11:22:42Z"
+        }
+    ]
+}

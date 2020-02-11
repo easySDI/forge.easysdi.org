@@ -1,0 +1,14 @@
+{
+    "issue": {
+        "closed": true,
+        "title": "publication date",
+        "created_at": "2014-06-06T15:21:08Z",
+        "labels": [
+            "Defect",
+            "Redmine status : Closed",
+            "Category : CATALOG"
+        ],
+        "body": "**Original author :** Portier Thomas\n\nIf I affect a publication date for a metadata to today, it will be visible in serach results only tomorrow.\n\n**Fixed versions :** 4.2.4"
+    },
+    "comments": []
+}

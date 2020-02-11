@@ -1,0 +1,14 @@
+{
+    "issue": {
+        "closed": true,
+        "title": "Error while parsing WMS GetCapabilities",
+        "created_at": "2014-07-25T12:18:06Z",
+        "labels": [
+            "Defect",
+            "Redmine status : Closed",
+            "Category : PROXY"
+        ],
+        "body": "**Original author :** Van Hoecke H\u00e9l\u00e8ne \n\nWhen attribute _xlink:href_ under a Layer element contains the service url without a \"?\", the proxy fails to parse the XML response (although the response is correct).\n\n**Fixed versions :** 4.2.0"
+    },
+    "comments": []
+}

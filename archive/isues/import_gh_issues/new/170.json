@@ -1,0 +1,13 @@
+{
+    "issue": {
+        "closed": false,
+        "title": "OGC CITE compliance tests",
+        "created_at": "2010-06-01T11:48:48Z",
+        "labels": [
+            "Feature",
+            "Redmine status : New"
+        ],
+        "body": "**Original author :** M\u00e9rour Xavier\n\nRun a compliance test on the PROXY with the TEAM Engine is a task to perform once.\r\nAnd should be performed each time a new released is available. \r\n\r\n\r\n\r\nRessources :\r\nhttp:\/\/cite.opengeospatial.org\/node\/27\r\nhttp:\/\/cite.opengeospatial.org\/teamengine\/\r\nhttp:\/\/cite.opengeospatial.org\/test_engine\/wms"
+    },
+    "comments": []
+}

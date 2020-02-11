@@ -1,0 +1,14 @@
+{
+    "issue": {
+        "closed": false,
+        "title": "filter by extent category",
+        "created_at": "2014-07-01T07:40:58Z",
+        "labels": [
+            "Feature",
+            "Redmine status : New",
+            "Category : CATALOG"
+        ],
+        "body": "**Original author :** Portier Thomas\n\nIn the backend it should be possible to filter extents by extent category. Indeed, it's very difficult to sort items without a prefilter"
+    },
+    "comments": []
+}

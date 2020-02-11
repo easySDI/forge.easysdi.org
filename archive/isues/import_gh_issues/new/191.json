@@ -1,0 +1,26 @@
+{
+    "issue": {
+        "closed": true,
+        "title": "Component Author",
+        "created_at": "2010-07-16T09:50:53Z",
+        "labels": [
+            "Feature",
+            "Redmine status : Closed"
+        ],
+        "body": "**Original author :** M\u00e9rour Xavier\n\nCurrently, author information when an EasySDI component is installed under Joomla! shows \"Author : Depth\".\r\nTo be exact, it should be replaced by \"easysdi.org\" or \"easysdi.org and its contributors\".\r\n\r\nWhat do you think ?\n\n**Fixed versions :** 3.0.0"
+    },
+    "comments": [
+        {
+            "body": "**Original author :** Magoni Bruno\n\nHello Xavier,\r\n\r\nI propose this label: \"EasySDI Community\"",
+            "created_at": "2011-01-31T12:12:35Z"
+        },
+        {
+            "body": "**Original author :** M\u00e9rour Xavier\n\nThat's OK with me.",
+            "created_at": "2011-01-31T12:14:40Z"
+        },
+        {
+            "body": "**Original author :** M\u00e9rour Xavier\n\nTo be closed ?",
+            "created_at": "2012-09-07T08:08:11Z"
+        }
+    ]
+}

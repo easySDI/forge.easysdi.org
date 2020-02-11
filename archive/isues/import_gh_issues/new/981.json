@@ -1,0 +1,75 @@
+{
+    "issue": {
+        "closed": true,
+        "title": "Adding a leaflet map type",
+        "created_at": "2015-04-07T09:06:10Z",
+        "labels": [
+            "Feature",
+            "Redmine status : Closed",
+            "Category : MAP"
+        ],
+        "body": "**Original author :** Portier Thomas\n\nAdd a map type parameter : \r\n- geoext\r\n- leaflet\r\n\r\nAccording to the choice of the map type, tools that user can select will be different. Only the tools implemented for the choosen map type will be proposed to admin.\n\n**Fixed versions :** 4.4.0"
+    },
+    "comments": [
+        {
+            "body": "**Original author :** Villemagne J\u00e9r\u00f4me\n\nOk for TC.\r\nCopil has to vote.",
+            "created_at": "2015-04-10T09:40:31Z"
+        },
+        {
+            "body": "**Original author :** Portier Thomas\n\nA filter will be added to force admin select geoext map for shop and preview features. There will not be other impact for the actual map.",
+            "created_at": "2015-04-10T10:13:39Z"
+        },
+        {
+            "body": "**Original author :** M\u00e9rour Xavier\n\nHello,\r\n\r\nI would add to this feature the following constraint : the type of MAP (OL or leaflet) should be selected at the creation of the map AND it should not be possible to change the type afterwards.\r\nI suggest this to limit the risk of \"breaking\" a current configuration when type change.",
+            "created_at": "2015-04-10T11:49:43Z"
+        },
+        {
+            "body": "**Original author :** Magoni Bruno\n\nI guess there is some strategic discussion about integrating other mapping APIs inside easySDI (regarding the use cases) and\/or driving maps' building through json definition.\r\n\r\n* First of all, as json map's definition is now available (see #879) but we must care that it reflect full map's definition; in this case easySDI maps rendering should always use json service instead of database repository...\r\n* I guess that opening easySDI MAPS definition to be used by more than one mapping JS API is a very good thing (easySDI as got a key role in SDI definition whatever technologies you are using), but we must not forget that maintaining same functional level for all API will be very time consuming. The main point is to agree that several APIs could be integrated inside easySDI (not only OL3 and Leaflet):\r\n \r\n * for now easySDI is supporting only OL2\/GeoExt2; OL3 is released but no clear roadmap about porting GeoExt for OL3...\r\n * Leaflet is still under Beta version even if it's more and more mature...\r\n * arcGIS API is also a very interesting candidate for creating maps and open a door to ArcGIS Online platform...",
+            "created_at": "2015-04-14T07:12:02Z"
+        },
+        {
+            "body": "**Original author :** Magoni Bruno\n\nSC agree about such new issue but ask for some more detailed implementation before liberating it :-)\r\n\r\nMay I ask SC members to express clearly their vote.\r\nThanks a lot.",
+            "created_at": "2015-04-16T13:55:51Z"
+        },
+        {
+            "body": "**Original author :** Magoni Bruno\n\n+1",
+            "created_at": "2015-04-16T13:55:58Z"
+        },
+        {
+            "body": "**Original author :** Plainecassagne Laurent\n\n+1",
+            "created_at": "2015-04-16T14:10:33Z"
+        },
+        {
+            "body": "**Original author :** M\u00e9rour Xavier\n\n+1 considering my remark here https:\/\/forge.easysdi.org\/issues\/981#note-5",
+            "created_at": "2015-04-16T14:13:10Z"
+        },
+        {
+            "body": "**Original author :** Teixeira J\u00e9r\u00f4me\n\n+ 1",
+            "created_at": "2015-04-17T08:29:47Z"
+        },
+        {
+            "body": "**Original author :** Magoni Bruno\n\nThanks TC to explained a little bit more in details functional and ergonomic impacts.",
+            "created_at": "2015-05-15T16:11:53Z"
+        },
+        {
+            "body": "**Original author :** Portier Thomas\n\nMore informations about implementation. Sorry it's in french : \r\n\r\n```\n\r\nEn backend Un nouveau param\u00e8tre \"Type\" sera ajout\u00e9 \u00e0 un contexte de carte EasySDI. Ce param\u00e8tre sera un radio bouton pouvant prendre la valeur \"GeoExt\" ou \"Leaflet\".\r\nNous pr\u00e9f\u00e9rons rendre le type modifiable car dans le cas d'une copie d'un contexte existant, \u00e7a ne bloque pas l'administrateur.\r\n\r\nPar contre, lors d'une modification de cette valeur un contr\u00f4le v\u00e9rifiera si le contexte de carte n'est pas utilis\u00e9 : \r\n- Dans le shop pour la s\u00e9l\u00e9lection du p\u00e9rim\u00e8tre de commande\r\n- Dans le catalogue pour la saisie d'une \u00e9tendue g\u00e9ographique\r\n- Dans le map pour la carte de pr\u00e9visualisation\r\n\r\nSi il est utilis\u00e9 dans un de ces 3 cas, la valeur \"GeoExt\" sera rendue obligatoire.\r\n\r\nEn fonction du choix du type de carte, l'affichage des choix des outils sera diff\u00e9rent.\r\n\r\nPour GeoExt les outils suivant seront propos\u00e9s : \r\nGoogle Earth\r\nNavigation\r\nZoom\r\nHistorique de navigation\r\nEtendue max\r\nOutils de mesure\r\nGeocoder de Google\r\nImpression\r\nAjout de couche\r\nSuppression d'une couche\r\nPropri\u00e9t\u00e9 de la couche\r\nInformations sur la couche\r\nArbre de couches\r\nCoordonn\u00e9es de la souris\r\nRecherche dans le catalogue\r\nLien vers la fiche de m\u00e9tadonn\u00e9e\r\nT\u00e9l\u00e9chargement du produit associ\u00e9\r\nCommande du produit associ\u00e9\r\nEchelle\r\nLocalisation WFS\r\nNavigation par \u00e9tage\r\n\r\nPour Leaflet les outils suivant seront cach\u00e9s : \r\nGoogle Earth\r\nHistorique de navigation\r\nEtendue max\r\nSuppression d'une couche\r\nPropri\u00e9t\u00e9 de la couche\r\nCoordonn\u00e9es de la souris\r\nRecherche dans le catalogue\r\nEchelle\r\nLocalisation WFS\r\nNavigation par \u00e9tage\r\n```\n\r\n\r\nYou'll find attached a screenshot of the client part.\r\n",
+            "created_at": "2015-06-25T12:05:23Z"
+        },
+        {
+            "body": "**Original author :** Van Hoecke H\u00e9l\u00e8ne \n\nThanks to validate Thomas's proposal.\r\nTC has already validated it.",
+            "created_at": "2015-06-26T08:22:23Z"
+        },
+        {
+            "body": "**Original author :** M\u00e9rour Xavier\n\n@Thomas,\r\nFunctional and ergonomic impacts fields should be filled before vote, thanks ;-)",
+            "created_at": "2015-06-26T08:25:25Z"
+        },
+        {
+            "body": "**Original author :** M\u00e9rour Xavier\n\nPSC has validated this new feature. \r\nThanks Thomas for your further information about this feature.\r\n\r\nGo ahead ;-)",
+            "created_at": "2015-08-25T13:23:39Z"
+        },
+        {
+            "body": "**Original author :** M\u00e9rour Xavier\n\nSorry, need status \"accepted\" to be set before Thomas goes further with this ticket.",
+            "created_at": "2015-08-25T13:25:00Z"
+        }
+    ]
+}

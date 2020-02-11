@@ -1,0 +1,14 @@
+{
+    "issue": {
+        "closed": true,
+        "title": "Catalog search : search criteria labels problem",
+        "created_at": "2014-12-15T14:03:55Z",
+        "labels": [
+            "Defect",
+            "Redmine status : Closed",
+            "Category : CATALOG"
+        ],
+        "body": "**Original author :** Van Hoecke H\u00e9l\u00e8ne \n\nIn catalog search, labels of search criterias built on a relation are not loaded because of bug in \\components\\com_easysdi_catalog\\libraries\\easysdi\\SearchHtmlForm.php line 91\n\n**Fixed versions :** 4.2.3"
+    },
+    "comments": []
+}

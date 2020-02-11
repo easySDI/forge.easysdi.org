@@ -1,0 +1,19 @@
+{
+    "issue": {
+        "closed": true,
+        "title": "Components install check are useless and may fail (backend)",
+        "created_at": "2015-12-11T10:30:41Z",
+        "labels": [
+            "Defect",
+            "Redmine status : Closed",
+            "Category : CORE"
+        ],
+        "body": "**Original author :** Blatti Yves\n\nComponents install check are useless and may fail (backend).\r\n\r\n* easySDI install only by package\r\n* test are made in the CORE views, if we enter without passing the views, we don't have the value in session.\r\n** incompatible with admin modules\r\n** incompatible with #877\r\n* fail in contact module: : the tab \"request option\" is not always visible, depending on administrator previous navigation path in backend.\r\n\n\n**Fixed versions :** 4.4.0"
+    },
+    "comments": [
+        {
+            "body": "**Original author :** Blatti Yves\n\nrev. 9349",
+            "created_at": "2015-12-11T10:49:47Z"
+        }
+    ]
+}

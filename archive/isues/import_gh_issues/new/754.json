@@ -1,0 +1,19 @@
+{
+    "issue": {
+        "closed": true,
+        "title": "unable to update to 4.2.0-Beta2 : missing semicolon in Mysql update file",
+        "created_at": "2014-06-27T08:14:25Z",
+        "labels": [
+            "Defect",
+            "Redmine status : Closed",
+            "Category : CORE"
+        ],
+        "body": "**Original author :** Blatti Yves\n\nI'm unable to update to 4.2.0-Beta2 (from beta1): missing semicolons in update file.\r\nsource:tags\/4.2.0-beta-2\/joomla\/easysdi\/com_easysdi_core\/src\/administrator\/sql\/updates\/mysql\/4.2.0-beta-2.sql\r\nI suppose it's broken in pgsql too (maybe not in MSsql since semicolons are not mandatory in t-sql)\n\n**Fixed versions :** 4.2.0"
+    },
+    "comments": [
+        {
+            "body": "**Original author :** Blatti Yves\n\nDuplicate of  #755\r\nCan be removed",
+            "created_at": "2014-06-27T12:23:37Z"
+        }
+    ]
+}

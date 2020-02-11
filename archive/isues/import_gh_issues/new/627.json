@@ -1,0 +1,14 @@
+{
+    "issue": {
+        "closed": true,
+        "title": "Change layer status in layers list",
+        "created_at": "2013-07-26T12:07:13Z",
+        "labels": [
+            "Defect",
+            "Redmine status : Closed",
+            "Category : MAP"
+        ],
+        "body": "**Original author :** Portier Thomas\n\nAn error 500 is shown when unpublish or publish a layer in backoffice clicking on the status button in the layer list\n\n**Fixed versions :** 4.0.0"
+    },
+    "comments": []
+}

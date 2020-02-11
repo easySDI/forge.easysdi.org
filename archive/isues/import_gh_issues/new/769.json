@@ -1,0 +1,31 @@
+{
+    "issue": {
+        "closed": true,
+        "title": "After saving an item with accessscope 'category', category is not showed on net edit",
+        "created_at": "2014-07-04T13:51:58Z",
+        "labels": [
+            "Defect",
+            "Redmine status : Closed",
+            "Category : CORE"
+        ],
+        "body": "**Original author :** Blatti Yves\n\nAfter saving an item with access scope 'category', category is not showed on net edit:\r\n* I edit a resource (or else, a diffusion etc)\r\n* I set access scope to category, then choose some categories\r\n* Save\r\n(Access scope and categories are saved correctly)\r\n* If I reopen -> access scope is still set to categories, but no category is show in list\n\n**Fixed versions :** 4.2.0"
+    },
+    "comments": [
+        {
+            "body": "**Original author :** Magoni Bruno\n\nHi Yves,\r\n\r\nThis issue is assigned to you but we can take it in charge on our side.\r\nHave you already worked on it or can we affect such ticket to us?\r\n\r\nThanks\r\n",
+            "created_at": "2014-07-12T17:15:08Z"
+        },
+        {
+            "body": "**Original author :** Blatti Yves\n\nIt's done, I just wait to commit it with other tickets under progress: #770 & #740",
+            "created_at": "2014-07-14T07:07:05Z"
+        },
+        {
+            "body": "**Original author :** Blatti Yves\n\nin my sandbox: svn:\/\/127.0.0.1:13690\/easysdi\/sandboxes\/asit-vd\/4.2.x",
+            "created_at": "2014-07-30T14:01:45Z"
+        },
+        {
+            "body": "**Original author :** Blatti Yves\n\nRevision 7199",
+            "created_at": "2014-08-14T09:10:39Z"
+        }
+    ]
+}

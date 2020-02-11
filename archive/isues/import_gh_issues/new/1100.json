@@ -1,0 +1,19 @@
+{
+    "issue": {
+        "closed": true,
+        "title": "Tarification page, small layout defects",
+        "created_at": "2015-08-29T17:54:40Z",
+        "labels": [
+            "Defect",
+            "Redmine status : Closed",
+            "Category : SHOP"
+        ],
+        "body": "**Original author :** Blatti Yves\n\n* Distinguish COM_EASYSDI_SHOP_PRICINGPROFILE_TITLE from pricing and pricing profile page\r\n* Order categories by ordering (set in backend)\r\n* Trashed categories are shown in organism pricing and procing profile\n\n**Fixed versions :** 4.3.2"
+    },
+    "comments": [
+        {
+            "body": "**Original author :** Blatti Yves\n\nrev. 8975",
+            "created_at": "2015-08-29T18:26:32Z"
+        }
+    ]
+}

@@ -1,0 +1,14 @@
+{
+    "issue": {
+        "closed": false,
+        "title": "Support XML request for HTTP Post (Jobs).",
+        "created_at": "2010-10-08T09:39:51Z",
+        "labels": [
+            "Feature",
+            "Redmine status : New",
+            "Category : MONITOR"
+        ],
+        "body": "**Original author :** M\u00e9rour Xavier\n\nFor now we can only enter kvp for testing a query. We could extend this for posting xml request, for a CSW for instance."
+    },
+    "comments": []
+}

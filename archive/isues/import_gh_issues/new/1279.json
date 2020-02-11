@@ -1,0 +1,19 @@
+{
+    "issue": {
+        "closed": true,
+        "title": "Status is not showned in 'label' with class in MD edit form",
+        "created_at": "2016-03-10T09:52:52Z",
+        "labels": [
+            "Defect",
+            "Redmine status : Closed",
+            "Category : CATALOG"
+        ],
+        "body": "**Original author :** Blatti Yves\n\nIn MD edit form the 'staus' (Publish, in progress...) should use the styled label as in list.\n\n**Fixed versions :** 4.4.1"
+    },
+    "comments": [
+        {
+            "body": "**Original author :** Blatti Yves\n\nrev. -9655- 9831",
+            "created_at": "2016-04-07T12:55:59Z"
+        }
+    ]
+}

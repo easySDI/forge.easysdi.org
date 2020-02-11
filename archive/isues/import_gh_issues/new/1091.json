@@ -1,0 +1,19 @@
+{
+    "issue": {
+        "closed": true,
+        "title": "If an order is archived, the finished product count is 0 in list",
+        "created_at": "2015-08-24T09:11:03Z",
+        "labels": [
+            "Defect",
+            "Redmine status : Closed",
+            "Category : SHOP"
+        ],
+        "body": "**Original author :** Blatti Yves\n\nIf an order is archived, the finished product count is 0 in list. \"Archived 0\/3\"\r\n(The product is considered treated, even if the file is no more available or rejected)\n\n**Fixed versions :** 4.3.2"
+    },
+    "comments": [
+        {
+            "body": "**Original author :** Blatti Yves\n\nrev 8963",
+            "created_at": "2015-08-24T09:19:44Z"
+        }
+    ]
+}

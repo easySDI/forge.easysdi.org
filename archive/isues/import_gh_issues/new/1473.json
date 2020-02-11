@@ -1,0 +1,14 @@
+{
+    "issue": {
+        "closed": true,
+        "title": "Add a range in SHOP DASHBOARD's \"response time\"",
+        "created_at": "2019-05-01T12:59:56Z",
+        "labels": [
+            "Enhancement",
+            "Redmine status : Closed",
+            "Category : DASHBOARD"
+        ],
+        "body": "**Original author :** Blatti Yves\n\nWith more and more data extraction automation, thanks to EXTRACT, response times tends to shorten.\r\nWe'd like to split the time ranges in the dashboard :\r\n\r\nFrom :\r\n* <1h\r\n* 1h-48h\r\n* >48h\r\n\r\nTo\r\n* <1h\r\n* 1h-24h\r\n* 24h-48h\r\n* >48h\n\n**Fixed versions :** 4.5.2"
+    },
+    "comments": []
+}

@@ -1,0 +1,14 @@
+{
+    "issue": {
+        "closed": false,
+        "title": "WFS connector refactoring",
+        "created_at": "2011-09-12T09:33:52Z",
+        "labels": [
+            "Feature",
+            "Redmine status : New",
+            "Category : PROXY"
+        ],
+        "body": "**Original author :** M\u00e9rour Xavier\n\nA WMS connector was refactored in PROXY 2.2.0 (http:\/\/forge.easysdi.org\/projects\/proxy\/versions\/80).\r\n\r\nWFS connector should be refactored as well."
+    },
+    "comments": []
+}

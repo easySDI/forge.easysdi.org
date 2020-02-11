@@ -1,0 +1,19 @@
+{
+    "issue": {
+        "closed": true,
+        "title": "4.4.1 Update does not delete old dashboard layout files",
+        "created_at": "2016-03-31T13:20:26Z",
+        "labels": [
+            "Defect",
+            "Redmine status : Closed",
+            "Category : DASHBOARD"
+        ],
+        "body": "**Original author :** Blatti Yves\n\nSince they're in a still existing folder, Joomla install does not delete them.\r\nWill add the list to the core 'deleteUnexistingFiles' in script.php.\n\n**Fixed versions :** 4.4.1"
+    },
+    "comments": [
+        {
+            "body": "**Original author :** Blatti Yves\n\nrev. 9642",
+            "created_at": "2016-03-31T13:23:38Z"
+        }
+    ]
+}

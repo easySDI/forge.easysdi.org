@@ -1,0 +1,14 @@
+{
+    "issue": {
+        "closed": true,
+        "title": "The default language of the metadata is not right. Additional languages \u200b\u200bare not present.",
+        "created_at": "2014-07-01T07:08:06Z",
+        "labels": [
+            "Defect",
+            "Redmine status : Closed",
+            "Category : CATALOG"
+        ],
+        "body": "**Original author :** Battaglia Marc\n\n\n\n**Fixed versions :** 4.2.0"
+    },
+    "comments": []
+}

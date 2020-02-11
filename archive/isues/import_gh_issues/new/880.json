@@ -1,0 +1,19 @@
+{
+    "issue": {
+        "closed": true,
+        "title": "Rendering a map context in leaflet",
+        "created_at": "2014-12-11T09:43:39Z",
+        "labels": [
+            "Feature",
+            "Redmine status : Rejected",
+            "Category : MAP"
+        ],
+        "body": "**Original author :** Portier Thomas\n\nBy adding a new template in the map view, we can add a new leaflet rendering for the map.\r\n\r\nA new menu type option \"leaflet\" will be proposed to the administrator.\r\n\r\nFor now the only tool that will be implemented in this leaflet map will be the print tool."
+    },
+    "comments": [
+        {
+            "body": "**Original author :** Magoni Bruno\n\nNeed further precisions about how to implement MAP's types (GXP, leaflet, ...) and impact over layers' definition (which kind of properties are used for each layer in the case of leaflet or GXP integration)\r\n",
+            "created_at": "2014-12-12T09:53:44Z"
+        }
+    ]
+}

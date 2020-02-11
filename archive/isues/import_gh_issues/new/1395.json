@@ -1,0 +1,23 @@
+{
+    "issue": {
+        "closed": true,
+        "title": "Add diffusion related CSS classes in the \"resources\" view",
+        "created_at": "2017-01-03T14:27:51Z",
+        "labels": [
+            "Enhancement",
+            "Redmine status : Closed",
+            "Category : CATALOG"
+        ],
+        "body": "**Original author :** Blatti Yves\n\nWe'd like to add diffusion related CSS classes in the \"resources\" view.\r\nThis will allow users to style differently resources lines depending of their diffusion.\r\nClasses elements would show the diffusion :\r\n- has download\r\n- has extraction\r\n- accessscope\r\nNo class would be added if the diffusion is disabled (same as non present \/ non created)\r\n\r\nNote : the has to by dynamic since this is not resource related, but version related. Classes would be updated dynamically.\r\n\r\nWe use these classes to add some information in the list, for example, here's the resource accessscope usage (the lock) :\r\n!{width: 700px}resources-list.png!\r\n\r\n\n\n**Fixed versions :** 4.4.4"
+    },
+    "comments": [
+        {
+            "body": "**Original author :** Van Hoecke H\u00e9l\u00e8ne \n\nAccepted by TC.",
+            "created_at": "2017-01-06T09:34:36Z"
+        },
+        {
+            "body": "**Original author :** Blatti Yves\n\nrev. 10102+10103",
+            "created_at": "2017-03-01T13:27:05Z"
+        }
+    ]
+}

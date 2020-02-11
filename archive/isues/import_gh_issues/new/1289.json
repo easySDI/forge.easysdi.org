@@ -1,0 +1,14 @@
+{
+    "issue": {
+        "closed": true,
+        "title": "sdiUser raise Notice: Undefined offset in  get<ROLE>Organisms function",
+        "created_at": "2016-03-18T08:34:57Z",
+        "labels": [
+            "Defect",
+            "Redmine status : Closed",
+            "Category : CONTACT"
+        ],
+        "body": "**Original author :** Blatti Yves\n\nsdiUser raise Notice: Undefined offset in  get<ROLE>Organisms function\n\n**Fixed versions :** 4.4.1"
+    },
+    "comments": []
+}

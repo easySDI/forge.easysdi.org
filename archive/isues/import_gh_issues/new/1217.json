@@ -1,0 +1,19 @@
+{
+    "issue": {
+        "closed": true,
+        "title": "Add a 'backend only' flag on organisms categories",
+        "created_at": "2015-12-04T08:24:10Z",
+        "labels": [
+            "Enhancement",
+            "Redmine status : Closed",
+            "Category : CONTACT"
+        ],
+        "body": "**Original author :** Blatti Yves\n\nWe have 'admin' or 'technical' categories that we don't want front end users to select (in access scopes, pricing ...)\r\n\r\nProposal :\r\n* Add a 'backend only' flag on organisms categories.\r\n* Never display those categories in the front end (access scopes lists, pricing rebates, pricing free in profiles,...)\r\n\r\nDoes it have an impact on java (since model evolves) ?\n\n**Fixed versions :** 4.4.0"
+    },
+    "comments": [
+        {
+            "body": "**Original author :** Blatti Yves\n\nrev. 9350",
+            "created_at": "2015-12-11T13:26:01Z"
+        }
+    ]
+}

@@ -1,0 +1,14 @@
+{
+    "issue": {
+        "closed": true,
+        "title": "Basket perimeter surface gets wrong by adding\/removing elements",
+        "created_at": "2015-05-27T07:35:48Z",
+        "labels": [
+            "Defect",
+            "Redmine status : Closed",
+            "Category : SHOP"
+        ],
+        "body": "**Original author :** Blatti Yves\n\nBasket perimeter surface (area) gets wrong by adding\/removing WFS per-defined perimeter elements.\r\n* On each add the geodesic area is calculated and added to total surface\r\n* On each removal  the geodesic area is calculated and removed from total surface\r\n\r\nProblem is: at each operation roundings take place, and after some add\/remove the surface is wrong.\r\n\r\nI suggest to calculate the surface of all selected perimeter at each changes.\r\n\r\nNote: this issue may be present before 4.3.x, but impact is low since there's no pricing based on order surface.\n\n**Fixed versions :** 4.3.2"
+    },
+    "comments": []
+}

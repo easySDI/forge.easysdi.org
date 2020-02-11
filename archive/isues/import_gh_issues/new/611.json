@@ -1,0 +1,18 @@
+{
+    "issue": {
+        "closed": false,
+        "title": "Upgrading Geotools library",
+        "created_at": "2013-04-11T06:38:58Z",
+        "labels": [
+            "Enhancement",
+            "Redmine status : Accepted"
+        ],
+        "body": "**Original author :** Van Hoecke H\u00e9l\u00e8ne \n\nThe version of Geotools used in the EasySDI Proxy servlet is 2.4.1.\r\nThis version is quite old (2008) and can't be retreive from a maven repository.\r\n\r\nNow that the Proxy project is managed by Maven, upgrading to a more recent version would be interesting.\n\n**Fixed versions :** Unplanned"
+    },
+    "comments": [
+        {
+            "body": "**Original author :** Van Hoecke H\u00e9l\u00e8ne \n\nTC validates",
+            "created_at": "2015-03-06T08:06:04Z"
+        }
+    ]
+}

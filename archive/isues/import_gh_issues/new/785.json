@@ -1,0 +1,19 @@
+{
+    "issue": {
+        "closed": true,
+        "title": "Map can't use SRS others than standard ones (EPSG:4326...)",
+        "created_at": "2014-07-28T14:25:27Z",
+        "labels": [
+            "Defect",
+            "Redmine status : Closed",
+            "Category : MAP"
+        ],
+        "body": "**Original author :** Van Hoecke H\u00e9l\u00e8ne \n\nSome EasySDI users have noticed that map can't display data in other SRS than EPSG:4326 and EPSG:900913.\r\nJavascript error is raised when a map is configured with a specific SRS like EPSG:21781 for Switzerland.\r\n\r\n\n\n**Fixed versions :** 4.2.0"
+    },
+    "comments": [
+        {
+            "body": "**Original author :** Van Hoecke H\u00e9l\u00e8ne \n\nProblem was :\r\n\r\n- no Proj4js library was loaded with the map. Openlayers can transform coordinates by itself between EPSG:4326 and EPSG:900913 but can not handle others SRS.\r\n\r\n- Proj4js library version currently embedded in EasySDI project (1.4.1), and used for extent definition in the metadata form, is not compatibe with the version of OpenLayers used in the map.\r\n\r\n- OpenLayers version used in the map (2.12) has a bug (managment of reverse axis order for WMS 1.3.0) which is always ran when SRS other than the 2 mentionned above are used. This bug is corrected in v2.13 (which is also not compatible with Proj4js 1.4.1).\r\n\r\nCorrection made :\r\n1\/ Replace OL 2.12 by OL 2.13 in the MAP. \r\n2\/ Add Proj4js 1.1.0 to EasySDI project.\r\n3\/ Load Proj4js 1.1.0 in the MAP.\r\n\r\nConclusion : \r\nWe now have 2 versions of Proj4js and 2 versions of OpenLayers embedded in the EasySDI project.\r\nWe should replace the use of Proj4js 1.4.1 and Openlayers 2.12 by versions 1.1.0 and 2.13 every where in the project.\r\n",
+            "created_at": "2014-07-31T09:23:25Z"
+        }
+    ]
+}

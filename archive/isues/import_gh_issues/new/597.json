@@ -1,0 +1,14 @@
+{
+    "issue": {
+        "closed": false,
+        "title": "Limit with filter",
+        "created_at": "2013-02-12T13:55:33Z",
+        "labels": [
+            "Feature",
+            "Redmine status : New",
+            "Category : MAP"
+        ],
+        "body": "**Original author :** Van Hoecke H\u00e9l\u00e8ne \n\nOption \"Limit with filter\" should be hidden in the layer properties window if no default filter is available."
+    },
+    "comments": []
+}

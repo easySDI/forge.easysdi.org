@@ -1,0 +1,14 @@
+{
+    "issue": {
+        "closed": true,
+        "title": "Access the \"requests\" or \"orders\" views without rights creates a redirect loop",
+        "created_at": "2015-05-07T15:45:16Z",
+        "labels": [
+            "Defect",
+            "Redmine status : Closed",
+            "Category : SHOP"
+        ],
+        "body": "**Original author :** Blatti Yves\n\nIf you access the \"requests\" view without rights (Extraction responsible),redirect loop apprear.\r\nGET http:\/\/asitvd.depth.ch\/requests -> 303 Location : http:\/\/asitvd.depth.ch\/requests\r\n\r\nSAME for orders:\r\nGET http:\/\/asitvd.depth.ch\/orders -> 303 Location : http:\/\/asitvd.depth.ch\/orders\n\n**Fixed versions :** 4.3.2"
+    },
+    "comments": []
+}

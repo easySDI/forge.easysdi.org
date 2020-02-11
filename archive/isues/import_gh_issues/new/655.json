@@ -1,0 +1,55 @@
+{
+    "issue": {
+        "closed": true,
+        "title": "Cross database compliance",
+        "created_at": "2014-03-26T14:38:07Z",
+        "labels": [
+            "Feature",
+            "Redmine status : Closed",
+            "Category : CORE"
+        ],
+        "body": "**Original author :** Magoni Bruno\n\nFor industrialization reason, it is important that easySDI covers cross-database compatibility. Such new feature will allow administrators storing their IDS information in same relational database than their metadata or geographical data.\r\n\r\neasySDI is already based on data access layer through \"Joomla data access layer\":http:\/\/docs.joomla.org\/Accessing_the_database_using_JDatabase (PHP) and \"Hibernate ORM\":http:\/\/hibernate.org\/orm\/ (JAVA).\r\nSo the goal is to be able to deploy easySDI under each Joomla supported database (MySQL, SQL Server, SQL Azur, Postgresql).\r\n\r\n\"Geneva Airport\":http:\/\/www.gva.ch is interested in sponsoring the SQL Server compliance (and defacto SQL Azur), \"DEPTH\":http:\/\/www.depth.ch offers to sponsor Postgresql compliance.\r\n\r\nAs easySDI Community is ready to go implementing such feature, may I ask you to vote for it ?\r\nThanks a lot!\n\n**Fixed versions :** 4.1.0"
+    },
+    "comments": [
+        {
+            "body": "**Original author :** Magoni Bruno\n\n+1",
+            "created_at": "2014-03-26T14:56:59Z"
+        },
+        {
+            "body": "**Original author :** M\u00e9rour Xavier\n\nCross-database would be a great improvement for easySDI.\r\n\r\nI have thus 3 questions :\r\n\r\n* to be able to deploy easySDI on SQL Server and Postgresql (in addition to MySQL), ALL the components have to be \"checked\" for compliancy. Does this proposal will cover this task ?\r\n* this cross-database compliancy means that any new developement must be tested with the three database (it means all developers needs the three environment). I see a problem here : how can we get this done for any new dev. or change ?\r\n* strategy : do you plan to override Joomla framework for requests which needs adaptations ? or do you plan to commit change to the J! framework ? the second option would be better if we think in long-term, no ?\r\n\r\nThanks for your answers.\r\n\r\nXavier\r\n\r\n\r\n\r\n\r\n\r\n",
+            "created_at": "2014-03-26T14:58:39Z"
+        },
+        {
+            "body": "**Original author :** Magoni Bruno\n\n# cross-database compliancy will cover:\r\n\r\n * cross-database compliance of each easySDI Joomla installer\r\n * cross-database compliance of all easySDI Joomla extension\r\n * cross-database compliance of all easySDI Java servlets\r\n# yes, it will imply that easySDI must be fully compliant with cross-database functionality (PHP and JAVA) since 4.1.0 version; on our side we have implemented a development environment which contains the three databases where each new feature should be tested; unfortunately I don't see any other way to do it except implementing a fully functional continuous integration platform (which implies also tasks for implementing functional tests and unit tests to regularly play); the \"common\" database for development is MySQL but cross-database compliance should be verified before integration process...\r\n# we have already analyse impact of potential cross-database incompatibility for specific SQL requests; such requests can always been sent directly (regarding the source database) without overriding or hacking JDatabase object",
+            "created_at": "2014-03-26T15:20:38Z"
+        },
+        {
+            "body": "**Original author :** M\u00e9rour Xavier\n\nOK, thanks.\r\n\r\nFor me, the main \"cons\" for this cross-database is with point 2.\r\n\r\nI warn everybody with this second point : it will increase development time AND, even more, testing time for every new feature with SQL code.\r\n",
+            "created_at": "2014-03-26T15:56:56Z"
+        },
+        {
+            "body": "**Original author :** M\u00e9rour Xavier\n\nI go for it \r\n+ 1",
+            "created_at": "2014-03-26T15:57:08Z"
+        },
+        {
+            "body": "**Original author :** Magoni Bruno\n\nAs CORE component contains already all PHP and Javascript API dependencies about easySDI, it is much more convenient to also centralize all SQL procedures (insert, update, delete) in the CORE installer. This need is much more important as multiple databases will be supported with cross-database feature.\r\nIt will also simplify verification process about ordering component deployment!\r\n\r\n",
+            "created_at": "2014-03-27T09:56:55Z"
+        },
+        {
+            "body": "**Original author :** Portier Thomas\n\nI go for it \r\n+ 1",
+            "created_at": "2014-04-02T11:08:09Z"
+        },
+        {
+            "body": "**Original author :** Magoni Bruno\n\n*IMPORTANT*\r\neasySDI Steering Committee has discussed about maintaining cross-database compliance for releases upper than 4.1\r\n\r\nDecisions have been:\r\n# new easySDI features must be developed since 4.1 version to be cross-database with Joomla supported databases (MySQL, Postgresql, SQLServer)\r\n# development guidelines will be described for easySDI developers, driving them about how to add new features respecting strictly cross-database development rules\r\n# easySDI Community guaranty only mySQL compliance, in the way that functional tests are only applied on MySQL database; there won't be any functional tests on other databases before or during integration phase\r\n# easySDI cross-database compliance over other databases than MySQL could be guaranty through professional maintenance contract\r\n\r\nI hope that I clearly and correctly resume the Steering Committee position about cross-database compliance!\r\nThanks for adding any other comment if needed.",
+            "created_at": "2014-04-02T13:05:06Z"
+        },
+        {
+            "body": "**Original author :** M\u00e9rour Xavier\n\n@Bruno\r\nYou did a great digest of our discussions. ",
+            "created_at": "2014-04-02T13:29:48Z"
+        },
+        {
+            "body": "**Original author :** Battaglia Marc\n\nIn addition to point #10. Please read the documentation below, especially about \"Constructing SQL queries.\"\n\n[[http:\/\/docs.joomla.org\/Secure_coding_guidelines]]\n[[http:\/\/docs.joomla.org\/Inserting,_Updating_and_Removing_data_using_JDatabase]]\n\nYou must use the layer abstraction proposed by joomla to guarantee cross database compliance. ",
+            "created_at": "2014-04-07T14:00:48Z"
+        }
+    ]
+}

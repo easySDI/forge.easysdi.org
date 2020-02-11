@@ -1,0 +1,23 @@
+{
+    "issue": {
+        "closed": true,
+        "title": "Improve contextual help when editing metadata",
+        "created_at": "2012-02-01T17:12:19Z",
+        "labels": [
+            "Feature",
+            "Redmine status : Rejected",
+            "Category : CATALOG"
+        ],
+        "body": "**Original author :** M\u00e9rour Xavier\n\nCurrent metadata edition is helped by contextual tips when cursos is \"over\" class and\/or attributes title.\r\nThis is a nice feature but uit could be improved :\r\n\r\n- for many class\/attributes, no help is available. The user does not know it before \"flying over\" the title. It's kind of annoying.\r\n\r\nI would suggest to add a dedicated \"pictogram\" (\"?\") which should be only displayed when - and only when - a help content is available. This would ease the work of metadata editors for sur (experience done)."
+    },
+    "comments": [
+        {
+            "body": "**Original author :** Blatti Yves\n\nThat can be done by CSS, which gives the ability to every integrator to deal with it as desired.\r\n\r\n(CSS selector : @label[data-original-title]@ or @.com_easysdi_catalog.view-metadata.layout-edit label[data-original-title]@)\r\n\r\nIs it OK for you ?",
+            "created_at": "2016-02-03T11:33:09Z"
+        },
+        {
+            "body": "**Original author :** M\u00e9rour Xavier\n\nSince it can be done by CSS, I reject this issue.",
+            "created_at": "2016-02-03T11:35:48Z"
+        }
+    ]
+}

@@ -1,0 +1,39 @@
+{
+    "issue": {
+        "closed": true,
+        "title": "Buttons stacked vertically",
+        "created_at": "2014-06-03T14:56:20Z",
+        "labels": [
+            "Defect",
+            "Redmine status : Rejected",
+            "Category : CATALOG"
+        ],
+        "body": "**Original author :** M\u00e9rour Xavier\n\nThere are differents easySDI pages in FE where main toolbar buttons are stacked vertically, instead of horizontally.\r\n_See attachment as illustration (diffusion page)_\r\n\r\n\r\nWe saw it first on our template (ASIT VD) and it is also visible when protostar (Joomla! default template) template is activated.\r\n\r\n_Remarks : it is not visible in SI17 geoportal because it seems this defect was corrected (overided) by the template CSS._\r\n\r\n\r\nHere are the pages where we saw this behaviour (all in menu \"Manage\" in My Resources):\r\n\r\n- diffusion page (both tabs)\r\n- relation page \r\n- application page"
+    },
+    "comments": [
+        {
+            "body": "**Original author :** Blatti Yves\n\nSame in the *resource* form.\r\n",
+            "created_at": "2014-06-04T07:23:30Z"
+        },
+        {
+            "body": "**Original author :** Blatti Yves\n\nLooks like the toolbar is created by the JToolBar library\nFore example: components\\com_easysdi_core\\views\\resource\\view.html.php\n```\n<code class=\"php\">\n    function getToolbar() {\n        \/\/load the JToolBar library and create a toolbar\n        jimport('joomla.html.toolbar');\n        $bar = new JToolBar('toolbar');\n        \/\/and make whatever calls you require\n        $bar->appendButton('Standard', 'apply', JText::_('COM_EASYSDI_CORE_APPLY'), 'resource.apply', false);\n        $bar->appendButton('Separator');\n        $bar->appendButton('Standard', 'save', JText::_('COM_EASYSDI_CORE_SAVE'), 'resource.save', false);\n        $bar->appendButton('Separator');\n        $bar->appendButton('Standard', 'cancel', JText::_('JCancel'), 'resource.cancel', false);\n        \/\/generate the html and return\n        return $bar->render();\n    }\n\n```\n\n\nIn the Joomla! doc they add reference to Backend CSS (http:\/\/docs.joomla.org\/J3.x:Using_the_JToolBar_class_in_the_frontend), but the risk is to add collisions with front end CSS classes \nI suppose that we should simply override the look in our templates (as SI17 has done)\nWhat do you think ?",
+            "created_at": "2014-06-06T08:23:55Z"
+        },
+        {
+            "body": "**Original author :** M\u00e9rour Xavier\n\nThanks Yves for these explanation.\r\n\r\nThen, I agree with overidding the look with our template \r\n\r\nAlternatives : either add some easySDI CSS in the frontend or do not use the JToolbar class anymore... both are not good solutions.\r\n\r\nBUT we need to add some documentation about \"template prerequisites\" to explain how a specific template should override this default behaviour (cause keep in mind that a user with protostar will have this vertical layout).\r\n\r\n@Yves\r\nCan you add a new entry in the WIKI ? \r\n\r\n\r\n@Bruno, Thomas\r\nDo you agree ?\r\n\r\n\r\n ",
+            "created_at": "2014-06-06T08:37:42Z"
+        },
+        {
+            "body": "**Original author :** Blatti Yves\n\nStarted a page here : https:\/\/forge.easysdi.org\/projects\/easysdi\/wiki\/4_joomla_template_prerequisites\r\nI someone sees other prerequisites to creation of template for EasySDI, feel free to add the here ;-)",
+            "created_at": "2014-06-06T09:19:33Z"
+        },
+        {
+            "body": "**Original author :** M\u00e9rour Xavier\n\nBruno\r\n\r\nIf you agree, we can reject this issue (according to what Yves said).\r\n\r\nI let you do this.",
+            "created_at": "2014-06-06T14:53:34Z"
+        },
+        {
+            "body": "**Original author :** Magoni Bruno\n\nHi Xavier,\r\n\r\nRegarding your notes, I also consider that this issue can be rejected :-)\r\n",
+            "created_at": "2014-06-06T16:11:12Z"
+        }
+    ]
+}

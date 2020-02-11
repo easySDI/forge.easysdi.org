@@ -1,0 +1,23 @@
+{
+    "issue": {
+        "closed": true,
+        "title": "EXCEPTIONS parameter doesn't allow MAP to display WMS service",
+        "created_at": "2010-07-15T15:04:48Z",
+        "labels": [
+            "Defect",
+            "Redmine status : Closed",
+            "Category : MAP"
+        ],
+        "body": "**Original author :** Portier Thomas\n\nThis service could not be shown by the MAP because of the EXCEPTIONS parameter :\r\nhttp:\/\/shagrat.icc.es\/lizardtech\/iserv\/ows?\r\n\r\nI fixed it by adding \r\n\r\nEXCEPTIONS : 'application\/vnd.ogc.se_xml', \r\n\r\non line 575\r\n\r\nCould you update it in the svn?\r\n\r\nThanks\n\n**Fixed versions :** 4.0.0"
+    },
+    "comments": [
+        {
+            "body": "**Original author :** Portier Thomas\n\nThe file tu update : components\\com_easysdi_map\\classes\\layerTree.js",
+            "created_at": "2010-07-15T15:07:43Z"
+        },
+        {
+            "body": "**Original author :** Magoni Bruno\n\nHi Thomas,\r\n\r\nProposed fix doesn't cover completely described issue.\r\nTo globally achieve it, MAP should send to OL in every OGC request the Exception parameter supported by PROXY (XML content).\r\nShould be a new configuration parameter to set up for each Proxy configuration.\r\n\r\nTo implement in future version...",
+            "created_at": "2011-01-28T04:38:14Z"
+        }
+    ]
+}

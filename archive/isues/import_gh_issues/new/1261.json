@@ -1,0 +1,19 @@
+{
+    "issue": {
+        "closed": true,
+        "title": "Created date used instead of Sent date : missing backend view + dates",
+        "created_at": "2016-02-08T14:39:39Z",
+        "labels": [
+            "Defect",
+            "Redmine status : Closed",
+            "Category : SHOP"
+        ],
+        "body": "**Original author :** Blatti Yves\n\nIn #1235 the backend 'orders' view wasn't corrected, and dates are not shown with formatting nor timezone correction\n\n**Fixed versions :** 4.4.0"
+    },
+    "comments": [
+        {
+            "body": "**Original author :** Blatti Yves\n\nRev. 9460",
+            "created_at": "2016-02-09T16:11:43Z"
+        }
+    ]
+}

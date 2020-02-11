@@ -1,0 +1,13 @@
+{
+    "issue": {
+        "closed": true,
+        "title": "Layers and groups order in the geoviewer",
+        "created_at": "2013-05-10T07:21:55Z",
+        "labels": [
+            "Defect",
+            "Redmine status : Closed"
+        ],
+        "body": "**Original author :** Van Hoecke H\u00e9l\u00e8ne \n\nInside a group, layers are correctly order (the highest on top of the lowest in the map) but between groups the order is the opposite (layers of the highest group are under those from the lowest).\n\n**Fixed versions :** 3.1.4"
+    },
+    "comments": []
+}

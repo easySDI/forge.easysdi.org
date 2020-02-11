@@ -1,0 +1,13 @@
+{
+    "issue": {
+        "closed": false,
+        "title": "Fullscreen tool for the map",
+        "created_at": "2014-04-17T10:17:06Z",
+        "labels": [
+            "Feature",
+            "Redmine status : New"
+        ],
+        "body": "**Original author :** Portier Thomas\n\nAdding a fullscreen Tool to the MAP as an new optional tool that will make the current map display on the whole page"
+    },
+    "comments": []
+}

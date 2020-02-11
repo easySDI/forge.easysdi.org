@@ -1,0 +1,22 @@
+{
+    "issue": {
+        "closed": true,
+        "title": "Giving up \"ogc\" part of Proxy URLs",
+        "created_at": "2011-05-31T10:12:05Z",
+        "labels": [
+            "Feature",
+            "Redmine status : Rejected"
+        ],
+        "body": "**Original author :** Magoni Bruno\n\nFor historical reasons (that I don't remember right for now), Proxy URLs are builded like http:\/\/myserver.org:8080\/proxy\/ogc\/myconfig where:\r\n- @proxy@ is the name of the servlet application\r\n- @ogc@ is an alwasy added phrase\r\n- @myconfig@ is the name of a config defining which distants services are proxied\r\n\r\nWon't it be more convenient to give up about \"ogc\" added phrase because:\r\n* it will be more understandable for end-user how is deployed Proxy Servlet inside their servlet container\r\n* \"ogc\" is a non configurable term which was chossed for any reason (why not using any other term?)\r\n* retrieving error at the level of \/ogc is not convenient\r\n\r\nThanks for your feed-back if any..."
+    },
+    "comments": [
+        {
+            "body": "**Original author :** M\u00e9rour Xavier\n\nI thought that :\r\n\r\n\"proxy\" is the name of directory where the servlet is deployed\r\n\"ogc\" is the name of the servlet\r\n\r\nOur experience with the \"ogc\" part is that Spring security needs it and if we touch it some problems may come out. It is just some \"souvenirs\" from last year when we tried to defined patterns on Spring layer security.\r\n\r\nIf we want to \"hide\" this long path, we may use apache_rewrite for example ?\r\n(would be up to the server administrator to set this up)",
+            "created_at": "2011-05-31T12:29:40Z"
+        },
+        {
+            "body": "**Original author :** Magoni Bruno\n\nMay we reject such feature?\r\nSince last versions, \"ogc\" is not used anymore which simplifies servlet deployment and configuration! (sorry but it seems that such feature haven't been ask for vote before implementing it)...\r\n\r\n\r\n",
+            "created_at": "2014-05-18T19:14:38Z"
+        }
+    ]
+}

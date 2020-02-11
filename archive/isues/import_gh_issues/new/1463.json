@@ -1,0 +1,14 @@
+{
+    "issue": {
+        "closed": true,
+        "title": "Link to archived file",
+        "created_at": "2018-11-20T15:24:06Z",
+        "labels": [
+            "Enhancement",
+            "Redmine status : Closed",
+            "Category : EXTRACT"
+        ],
+        "body": "**Original author :** Blatti Yves\n\n*Description*\r\n\r\nModification of the archiving plugin.\r\n* Once a processing operation is finished and the result exported, the result file is no longer available in EXTRACT (temporary files deleted).\r\n* to allow the user to retrieve the files if an archiving task has been used, the archive path must be displayed in the return message in the log\r\n* The message replaces the OK, with \"Location : [complete_archive_path]\" \/ \"Emplacement : [complete_archive_path]\"\r\n\r\n*Model*\r\n\r\nCurrently:\r\n\r\n!17758_before.png!\r\n\r\nDesired behaviour:\r\n\r\n!17758_after2.png!\r\n\r\nSource (french) : https:\/\/projets.asitvd.ch\/issues\/17758\n\n**Fixed versions :** 4.5.1"
+    },
+    "comments": []
+}

@@ -1,0 +1,14 @@
+{
+    "issue": {
+        "closed": true,
+        "title": "date in the sitemap not interpreted by google",
+        "created_at": "2015-03-27T11:50:52Z",
+        "labels": [
+            "Defect",
+            "Redmine status : Closed",
+            "Category : CATALOG"
+        ],
+        "body": "**Original author :** Portier Thomas\n\nDate format in the sitemap is not well formated.\n\n**Fixed versions :** 4.2.8"
+    },
+    "comments": []
+}

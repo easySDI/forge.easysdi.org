@@ -1,0 +1,19 @@
+{
+    "issue": {
+        "closed": true,
+        "title": "Wrong notification sent in case of rejection third party",
+        "created_at": "2015-09-24T07:51:45Z",
+        "labels": [
+            "Defect",
+            "Redmine status : Closed",
+            "Category : SHOP"
+        ],
+        "body": "**Original author :** Blatti Yves\n\nWrong notification sent in case of rejection third party\r\nThe content if the \"new order\" mail.\r\n\r\n\\joomla\\components\\com_easysdi_shop\\models\\order.php\r\n```\n\r\n<code class=\"php\">\r\n    \/**\r\n     * thirdpartyRejection - rejection of an order by a thirdparty\r\n     * \r\n     * @param integer $id\r\n     * @param mixed $reason - defined as optional but $reason have to be set !\r\n     * @return boolean\r\n     * @since 4.3.0\r\n     *\/\r\n    public function thirdpartyRejection($id, $reason=null){\r\n        $id = (!empty($id)) ? $id : (int) $this->getState('order.id');\r\n        $table = $this->getTable();\r\n        if(!$table->load($id) || is_null($reason)){\r\n            return false;\r\n        }\r\n        \r\n        $table->orderstate_id = Easysdi_shopHelper::ORDERSTATE_REJECTED;\r\n        $table->validated = false;\r\n        $table->validated_date = date('Y-m-d H:i:s');\r\n        $table->validated_reason = $reason;\r\n        \r\n        if(($orderStored = $table->store()) === true){\r\n            $db = JFactory::getDbo();\r\n            $query = $db->getQuery(true)\r\n                    ->update('#__sdi_order_diffusion')\r\n                    ->set('productstate_id='.Easysdi_shopHelper::PRODUCTSTATE_REJECTED_TP)\r\n                    ->where('order_id = ' . (int)$id);\r\n            $db->setQuery($query);\r\n            $db->execute();\r\n            \r\n            \/\/ Notify customer\r\n            Easysdi_shopHelper::notifyCustomer($table->name);\r\n        }\r\n        \r\n        return $orderStored;\r\n    }\r\n\r\n```\n\n\n**Fixed versions :** 4.4.0"
+    },
+    "comments": [
+        {
+            "body": "**Original author :** Blatti Yves\n\nrev 9383",
+            "created_at": "2015-12-22T15:37:21Z"
+        }
+    ]
+}

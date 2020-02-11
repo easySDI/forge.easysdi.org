@@ -1,0 +1,23 @@
+{
+    "issue": {
+        "closed": true,
+        "title": "Should not be able to disactivate \"metadata\" in resource type",
+        "created_at": "2014-04-24T14:53:04Z",
+        "labels": [
+            "Feature",
+            "Redmine status : Closed",
+            "Category : CATALOG"
+        ],
+        "body": "**Original author :** M\u00e9rour Xavier\n\nThe toggle in BE for the feature \"metadata\" in resource type does not work on\/off does not change anything.\r\n\r\n--> well, it's normal because the metadata edition is necessary for any resource type (core of easySDI)\r\n\r\nI suggest to simply remove this toggle in the BE in \"resource type\" page.\n\n**Fixed versions :** 4.2.0"
+    },
+    "comments": [
+        {
+            "body": "**Original author :** Magoni Bruno\n\nAs I understand, goal is to clean such \"historic\" feature and database structure must also be cleaned like the user interface.\r\nTo prevent any unwanted impact removing unused attribute, source code (PHP and JAVA) must be verified in any case...\r\n",
+            "created_at": "2014-05-30T07:17:36Z"
+        },
+        {
+            "body": "**Original author :** M\u00e9rour Xavier\n\nWell, if needed OK :-)\r\nI thought it was just a GUI issue.",
+            "created_at": "2014-06-02T13:34:43Z"
+        }
+    ]
+}

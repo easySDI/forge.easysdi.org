@@ -1,0 +1,14 @@
+{
+    "issue": {
+        "closed": true,
+        "title": "Unbale to insert in #__sdi_wmslayer_policy : name is note quoted",
+        "created_at": "2014-08-05T07:32:40Z",
+        "labels": [
+            "Defect",
+            "Redmine status : Closed",
+            "Category : SERVICE"
+        ],
+        "body": "**Original author :** Blatti Yves\n\n\\administrator\\components\\com_easysdi_service\\models\\policy.php\r\nL:2006, same seems to affect #__sdi_featuretype_policy L:2104\n\n**Fixed versions :** 4.2.0"
+    },
+    "comments": []
+}

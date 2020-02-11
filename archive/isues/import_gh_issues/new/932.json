@@ -1,0 +1,27 @@
+{
+    "issue": {
+        "closed": true,
+        "title": "Error on Install",
+        "created_at": "2015-03-10T15:21:24Z",
+        "labels": [
+            "Defect",
+            "Redmine status : Closed",
+            "Category : CORE"
+        ],
+        "body": "**Original author :** Portier Thomas\n\nOn a fresh 3.3.6 joomla on Mysql, when I install EasySDI, I have the error : \r\n\r\nColumn count doesn't match value count at row 1 SQL=INSERT INTO `nv_sdi_language` VALUES ('1', '0', '1', '\u0627\u0644\u0639\u0631\u0628\u064a\u0629', 'ar-DZ', 'ar', 'ara', 'ar', 'DZ', 'ara');\n\n**Fixed versions :** 4.3.0"
+    },
+    "comments": [
+        {
+            "body": "**Original author :** Portier Thomas\n\nNew error on install : \r\n\r\nColumn 'datatable' cannot be null SQL=INSERT INTO `nv_sdi_language` VALUES ('22', '0', '1', 'Malti', 'mt-MT', 'mt', 'mlt', 'mt', 'MT','mlt', null);",
+            "created_at": "2015-03-12T09:30:04Z"
+        },
+        {
+            "body": "**Original author :** Portier Thomas\n\nNew error : \r\n\r\nTable 'easysdi_4.3.ha1zi_sdi_sys_server' doesn't exist SQL=INSERT INTO `ha1zi_sdi_sys_server` VALUES ('1','1','1','geoserver' );\r\n\r\nYou could just test the installation, it takes 5 mn ;-)",
+            "created_at": "2015-03-13T10:20:32Z"
+        },
+        {
+            "body": "**Original author :** Villemagne J\u00e9r\u00f4me\n\ndone",
+            "created_at": "2015-03-13T14:59:11Z"
+        }
+    ]
+}

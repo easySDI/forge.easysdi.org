@@ -1,0 +1,23 @@
+{
+    "issue": {
+        "closed": true,
+        "title": "Show the usage of a pricing profile in the list view",
+        "created_at": "2017-01-03T14:14:05Z",
+        "labels": [
+            "Enhancement",
+            "Redmine status : Closed",
+            "Category : SHOP"
+        ],
+        "body": "**Original author :** Blatti Yves\n\nShow the usage of a pricing profile in the list view:\r\n\r\n!profiles_list.png!\r\n\n\n**Fixed versions :** 4.4.4"
+    },
+    "comments": [
+        {
+            "body": "**Original author :** Van Hoecke H\u00e9l\u00e8ne \n\nAccepted by TC.",
+            "created_at": "2017-01-06T09:32:58Z"
+        },
+        {
+            "body": "**Original author :** Blatti Yves\n\n10062",
+            "created_at": "2017-01-06T13:13:41Z"
+        }
+    ]
+}

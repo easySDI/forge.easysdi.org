@@ -1,0 +1,27 @@
+{
+    "issue": {
+        "closed": true,
+        "title": "jos_ prefix harcoded",
+        "created_at": "2014-07-01T16:05:43Z",
+        "labels": [
+            "Defect",
+            "Redmine status : Closed",
+            "Category : CORE"
+        ],
+        "body": "**Original author :** Portier Thomas\n\nSome jos_ prefix was hardcoded.\r\n\r\nIt is fixed in my 4.2.0_RC1 branch\n\n**Fixed versions :** 4.2.0"
+    },
+    "comments": [
+        {
+            "body": "**Original author :** M\u00e9rour Xavier\n\nHello Thomas,\r\n\r\nWhat you detected is it related to #747 ?",
+            "created_at": "2014-07-02T07:46:05Z"
+        },
+        {
+            "body": "**Original author :** Portier Thomas\n\nNo, it is in the php code not in the SQL files",
+            "created_at": "2014-07-02T08:04:59Z"
+        },
+        {
+            "body": "**Original author :** M\u00e9rour Xavier\n\nOK, do not forget to set a target version...\r\n\r\n :-)",
+            "created_at": "2014-07-02T08:07:38Z"
+        }
+    ]
+}

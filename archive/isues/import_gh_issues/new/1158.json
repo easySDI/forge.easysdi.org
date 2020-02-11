@@ -1,0 +1,39 @@
+{
+    "issue": {
+        "closed": true,
+        "title": "Allow downloads (direct and zoning) to be fetch with HTTP basic auth and constant URL",
+        "created_at": "2015-10-08T09:00:13Z",
+        "labels": [
+            "Enhancement",
+            "Redmine status : Closed",
+            "Category : SHOP"
+        ],
+        "body": "**Original author :** Blatti Yves\n\nWe have users that want to automate the updates of their datasets by fetching them on easySDI.\r\n\r\nThe idea is to allow a download to be done by scripts\/programs. For that we need:\r\n* Ensure we have consistent URLs (adding GET URL, not only POST) known by users that have access to the download page\r\n* Allow HTTP authentication to download the files (does not log the user in, just allow a single access)\r\n\r\nExample use case (with grid):\r\n* The state (canton) grant an organism category (communes) to download a dataset using zoning.\r\n* The users (communes) want to use this to update their local datasets by scripting the download and update\r\n* The first time, the user has to go to the zoning\/grid download page, he can download the file and get the download URL to be reused after having accepted the conditions\r\n* He now can use this direct link with an HTTP basic authentication to get the file file by using a script\r\n\r\n\r\nGet the direct link after accepting the conditions:\r\n!get_direct_link_from_grid.png!\r\n\r\nAlternative: the download button link contains the direct link (updated by jQuery when user accepts the terms and conditions) -> no need for displaying the link\n\n**Fixed versions :** 4.3.2"
+    },
+    "comments": [
+        {
+            "body": "**Original author :** Blatti Yves\n\n+1",
+            "created_at": "2015-10-08T09:36:28Z"
+        },
+        {
+            "body": "**Original author :** Portier Thomas\n\nJust some questions:\r\n- do you have several partners that need this functionnality\r\n- don't you think a wfs webservice should be more appropriate?",
+            "created_at": "2015-10-12T22:15:50Z"
+        },
+        {
+            "body": "**Original author :** Blatti Yves\n\nHi Thomas,\r\n* for now our main provider (the state) will use the grid to give secured free access for the municipalities. Since they do it for 300+ municipalities, why not use the same system for the few one(5-10) that want to get the files automatically...\r\n* of course the WFS would the sexy way but:\r\n** some data have legal formats \r\n** some need relational models (with constraints... Like interlis) \r\n** and (afaik) the state does currently not have the infrastructure ",
+            "created_at": "2015-10-13T05:49:51Z"
+        },
+        {
+            "body": "**Original author :** Portier Thomas\n\nOk for me\r\n\r\n+1",
+            "created_at": "2015-10-13T07:37:02Z"
+        },
+        {
+            "body": "**Original author :** Van Hoecke H\u00e9l\u00e8ne \n\n+1",
+            "created_at": "2015-10-15T15:46:15Z"
+        },
+        {
+            "body": "**Original author :** Blatti Yves\n\nBasic authentication and URL are good to me.\r\nSome failures are due to : #1159",
+            "created_at": "2015-11-03T19:14:19Z"
+        }
+    ]
+}

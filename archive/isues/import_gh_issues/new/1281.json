@@ -1,0 +1,14 @@
+{
+    "issue": {
+        "closed": true,
+        "title": "direct download doesn't work anymorer for securised product",
+        "created_at": "2016-03-14T09:32:26Z",
+        "labels": [
+            "Defect",
+            "Redmine status : Closed",
+            "Category : SHOP"
+        ],
+        "body": "**Original author :** Portier Thomas\n\nDownload of securised products return error 500\n\n**Fixed versions :** 4.4.0"
+    },
+    "comments": []
+}

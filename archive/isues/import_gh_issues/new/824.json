@@ -1,0 +1,19 @@
+{
+    "issue": {
+        "closed": true,
+        "title": "Translations review",
+        "created_at": "2014-09-17T12:23:55Z",
+        "labels": [
+            "Defect",
+            "Redmine status : Closed",
+            "Category : CORE"
+        ],
+        "body": "**Original author :** Villemagne J\u00e9r\u00f4me\n\nA translation's files review is requested to fix some defects:\r\n- missing translations entries\r\n- french entries in the english files\n\n**Fixed versions :** 4.3.2"
+    },
+    "comments": [
+        {
+            "body": "**Original author :** Blatti Yves\n\n* Fixed all \"french in english\" that I found (rev. 9301)\r\n* Missing translations in other languages (FR + DE) are now managed in crowdin, and not on easySDI forge\r\n",
+            "created_at": "2015-11-27T15:44:27Z"
+        }
+    ]
+}

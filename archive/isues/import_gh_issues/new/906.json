@@ -1,0 +1,19 @@
+{
+    "issue": {
+        "closed": true,
+        "title": "Basket MAP : unable to cancel perimeter edition \/ loosing perimeter",
+        "created_at": "2015-02-23T09:10:25Z",
+        "labels": [
+            "Defect",
+            "Redmine status : Closed",
+            "Category : SHOP"
+        ],
+        "body": "**Original author :** Blatti Yves\n\nWe encounter some behavior problems with the basket perimeter edition.\r\nIt seems that the preview map (and the saved perimeter) is binded to the edition popup map. This leads to \"non-natural\" UX behavior.\r\nThe main problem is that *we cannot \"cancel\" perimeter edition*.\r\n\r\nWe have described 4 use cases: all 4 start with a user that sets a perimeter, saves, then go back to edit popop. Then:\r\n1) Do not change perimeter and save\r\n2) Do not change perimeter and do not save (cancel)\r\n3) Change perimeter and save\r\n4) Change perimeter and do not save (cancel)\r\n\r\n\r\nCases 2 and 4 fails, as the previously defined perimeter is lost on cancel.\r\n\r\nThis is a big issue for us, as we have users selecting dozens of WFS perimeters or drawing complex polygons (then eventually loosing it all).\r\n\r\n*Graph that presents our thinking on how it should behave:*\r\n\r\n!map_perim_defect_rev2.png!\n\n**Fixed versions :** 4.3.0"
+    },
+    "comments": [
+        {
+            "body": "**Original author :** Blatti Yves\n\nCan we imagine using tho different MAPs and different variable representing the SAVED perimeter the one been EDITED ?",
+            "created_at": "2015-02-23T09:11:53Z"
+        }
+    ]
+}

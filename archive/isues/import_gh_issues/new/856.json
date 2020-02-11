@@ -1,0 +1,14 @@
+{
+    "issue": {
+        "closed": true,
+        "title": "Metadata XML generated from model use name instead of XML isocode in RELATION",
+        "created_at": "2014-11-06T13:33:15Z",
+        "labels": [
+            "Defect",
+            "Redmine status : Closed",
+            "Category : CATALOG"
+        ],
+        "body": "**Original author :** Blatti Yves\n\nIn a relation between classes, the XML generated use the *name* of the relation instead of the *XML isocode*.\r\nHaven't seen it before cause all our relations have the name of the nodes...\r\nRenaming a relation makes incoherent model, or crashes form generation!\r\nSee screenshots.\n\n**Fixed versions :** 4.3.1"
+    },
+    "comments": []
+}

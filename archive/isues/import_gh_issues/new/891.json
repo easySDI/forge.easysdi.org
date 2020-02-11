@@ -1,0 +1,13 @@
+{
+    "issue": {
+        "closed": true,
+        "title": "Fix PHP warnings",
+        "created_at": "2015-01-06T10:56:43Z",
+        "labels": [
+            "Defect",
+            "Redmine status : Closed"
+        ],
+        "body": "**Original author :** Van Hoecke H\u00e9l\u00e8ne \n\nMinor corrections of some code raising PHP warnings.\n\n**Fixed versions :** 4.2.4"
+    },
+    "comments": []
+}

@@ -1,0 +1,14 @@
+{
+    "issue": {
+        "closed": true,
+        "title": "Resource visualization layer is added twice to the map",
+        "created_at": "2015-03-02T11:00:16Z",
+        "labels": [
+            "Defect",
+            "Redmine status : Closed",
+            "Category : MAP"
+        ],
+        "body": "**Original author :** Van Hoecke H\u00e9l\u00e8ne \n\nThe visualization link, built in metadata sheet view, allows user to open a map in which a 'previsualization layer' of the resource is added.\r\nThis layer is actually added twice since the external libraries (geoext and gxp) were upgraded.\n\n**Fixed versions :** 4.3.0"
+    },
+    "comments": []
+}

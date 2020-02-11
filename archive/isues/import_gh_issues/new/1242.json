@@ -1,0 +1,23 @@
+{
+    "issue": {
+        "closed": true,
+        "title": "Wrong value in the admin info panel",
+        "created_at": "2016-01-19T16:14:18Z",
+        "labels": [
+            "Defect",
+            "Redmine status : Closed",
+            "Category : DASHBOARD"
+        ],
+        "body": "**Original author :** Portier Thomas\n\nNumber of extractable resources is wrong\n\n**Fixed versions :** 4.4.0"
+    },
+    "comments": [
+        {
+            "body": "**Original author :** M\u00e9rour Xavier\n\nRelated problem : https:\/\/forge.easysdi.org\/issues\/744\r\n",
+            "created_at": "2016-01-19T17:11:07Z"
+        },
+        {
+            "body": "**Original author :** Van Hoecke H\u00e9l\u00e8ne \n\nMerge in r9485",
+            "created_at": "2016-02-23T08:48:51Z"
+        }
+    ]
+}

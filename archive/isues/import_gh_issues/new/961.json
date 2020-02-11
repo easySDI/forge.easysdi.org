@@ -1,0 +1,23 @@
+{
+    "issue": {
+        "closed": true,
+        "title": "Re-implement polygon import (as in v2)",
+        "created_at": "2015-03-27T13:53:17Z",
+        "labels": [
+            "Enhancement",
+            "Redmine status : Closed",
+            "Category : SHOP"
+        ],
+        "body": "**Original author :** Blatti Yves\n\nIn v2, if a basket allows free perimeter selection, we can import a list of coordinates instead of drawing a polygon.\r\nThis is important for users with complex geometries.\r\n\r\nWe propose to place it as a tab in the perimeter definition popup.\r\n\r\nThe first tab named \"selection tools\" will propose the classic tools (see #943).\r\nThe second tab will have:\r\n* An explanation text\r\n* A textarea to paste the points list (one polygon)\r\n* A button to import\r\n\r\nThe second tab is only displayed if the basket allows free perimeter (if intersection of products perimeters list permits it).\r\n\r\nThis will be client-side only.\r\n\r\nThe process will be:\r\n* Click on \"import tab\"\r\n* Paste a list of coordinates, they'll have to be in the MAP projection system\r\n* On click of the \"import\" button, the system will:\r\n** Create a polygon from points\r\n** Close the polygon if necessary\r\n** Enter \"polygon edit mode\" (see #943)\r\n** Display error messages if needed (area limits, auto intersect #959, etc.)\r\n\r\nMockups:\r\n\r\nTab1 \r\n!perimeter_tools_tab.png!\r\nTab2\r\n!perimeter_import_tab.png!\r\n\r\n\r\nLinked to #943\n\n**Fixed versions :** 4.3.2"
+    },
+    "comments": [
+        {
+            "body": "**Original author :** Van Hoecke H\u00e9l\u00e8ne \n\nTC accepts but this functionnality should be activate\/deactivate from administrator.",
+            "created_at": "2015-05-07T13:38:17Z"
+        },
+        {
+            "body": "**Original author :** Blatti Yves\n\nRe-implemented.\r\nIf you paste 2 points: creates a rectangle, then selects the \"rectangle edit mode\"\r\nIf you paste 3+ point: creates a polygon, then selects the \"polygon edit mode\"",
+            "created_at": "2015-06-10T15:11:44Z"
+        }
+    ]
+}

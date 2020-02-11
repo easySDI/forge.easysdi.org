@@ -1,0 +1,14 @@
+{
+    "issue": {
+        "closed": true,
+        "title": "sync-package-all ant doesn't copy sub package",
+        "created_at": "2015-12-08T15:21:50Z",
+        "labels": [
+            "Defect",
+            "Redmine status : Closed",
+            "Category : CORE"
+        ],
+        "body": "**Original author :** Portier Thomas\n\nWhen we launch a sync-package-all from the build.xml, th e sub packages are not copied in the src directory and doesn't appear in the installer\n\n**Fixed versions :** 4.4.0"
+    },
+    "comments": []
+}

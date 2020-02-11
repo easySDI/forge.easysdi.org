@@ -1,0 +1,14 @@
+{
+    "issue": {
+        "closed": true,
+        "title": "Pagination is not show in resources page",
+        "created_at": "2014-06-20T07:34:23Z",
+        "labels": [
+            "Defect",
+            "Redmine status : Closed",
+            "Category : CORE"
+        ],
+        "body": "**Original author :** Blatti Yves\n\nSince 4.2.0 Beta-1, pagination is not shown in Resources page.\r\nSeems to come from source:\/trunk\/joomla\/easysdi\/com_easysdi_core\/src\/site\/views\/resources\/tmpl\/default.php#L125\r\nLines: 125, 310, 317 @$show@ variable\r\nI suppose there was meant to be a test if there is results or not, but nothing appears in the code.\n\n**Fixed versions :** 4.2.0"
+    },
+    "comments": []
+}

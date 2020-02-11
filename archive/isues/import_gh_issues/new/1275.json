@@ -1,0 +1,23 @@
+{
+    "issue": {
+        "closed": true,
+        "title": "Remove external (CDN) version of jQuery",
+        "created_at": "2016-03-01T17:55:55Z",
+        "labels": [
+            "Defect",
+            "Redmine status : Closed",
+            "Category : CORE"
+        ],
+        "body": "**Original author :** Blatti Yves\n\n\\joomla\\components\\com_easysdi_core\\views\\application\\tmpl\\default.php\r\n\\joomla\\components\\com_easysdi_core\\views\\versionform\\tmpl\\default.php\r\n\\joomla\\components\\com_easysdi_core\\views\\versionrelationform\\tmpl\\default.php\r\n\r\n```\n\r\ngetScript('\/\/ajax.googleapis.com\/ajax\/libs\/jquery\/1.9.1\/jquery.min.js', function() {\r\n```\n\r\n\r\nIs there any problems with the joomla packaged version ?\n\n**Fixed versions :** 4.4.3"
+    },
+    "comments": [
+        {
+            "body": "**Original author :** Blatti Yves\n\nThere is no visible reason to keep them.\r\nOK from COTEC to replace them by standard joomla JQ",
+            "created_at": "2016-03-18T09:29:27Z"
+        },
+        {
+            "body": "**Original author :** Blatti Yves\n\nRev. 9983",
+            "created_at": "2016-09-05T07:40:48Z"
+        }
+    ]
+}

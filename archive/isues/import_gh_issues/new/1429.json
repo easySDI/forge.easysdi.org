@@ -1,0 +1,19 @@
+{
+    "issue": {
+        "closed": true,
+        "title": "Joomla 3.7 : \"file\" field type has changed layout, breaks diffusion view",
+        "created_at": "2017-06-23T12:18:54Z",
+        "labels": [
+            "Defect",
+            "Redmine status : Closed",
+            "Category : SHOP"
+        ],
+        "body": "**Original author :** Blatti Yves\n\nin Joomla 3.7, the \"file\":https:\/\/docs.joomla.org\/File_form_field_type\/en field type has changed layout, it now displays the max upload size in a new line.\r\nThis breaks a little layout of our 'diffusion' view, the current file is displayed after the size phrase.\r\nI propose to split the field: \r\n- one \"current file\" with the link, only displayed if a file exists\r\n- one \"new file\" to upload data file\r\n\r\nNow with Joomla 3.7 :\r\n\r\n!before.png!\r\n\r\nFix with split fields:\r\n\r\n!after.png!\r\n\r\n\n\n**Fixed versions :** 4.5.0"
+    },
+    "comments": [
+        {
+            "body": "**Original author :** Blatti Yves\n\nrev. 10212",
+            "created_at": "2017-06-23T13:19:50Z"
+        }
+    ]
+}

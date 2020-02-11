@@ -1,0 +1,14 @@
+{
+    "issue": {
+        "closed": false,
+        "title": "Cardinality between resources",
+        "created_at": "2016-07-04T08:16:20Z",
+        "labels": [
+            "Defect",
+            "Redmine status : Affected",
+            "Category : CATALOG"
+        ],
+        "body": "**Original author :** Van Hoecke H\u00e9l\u00e8ne \n\nPush in 4.4.x the comit of the 4.3.x\n\n**Fixed versions :** Unplanned"
+    },
+    "comments": []
+}

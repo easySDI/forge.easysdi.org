@@ -1,0 +1,13 @@
+{
+    "issue": {
+        "closed": true,
+        "title": "PHP 5.4 compliance",
+        "created_at": "2013-10-07T12:34:17Z",
+        "labels": [
+            "Feature",
+            "Redmine status : Closed"
+        ],
+        "body": "**Original author :** Magoni Bruno\n\nAs mentioned in title...\r\n\r\nExcepting fixing source code, php.ini must contains such error level configuration to avoid any other problem: *error_reporting = E_ALL & ~E_STRICT & ~E_DEPRECATED*\n\n**Fixed versions :** 4.0.0"
+    },
+    "comments": []
+}

@@ -1,0 +1,23 @@
+{
+    "issue": {
+        "closed": true,
+        "title": "Resource list fails to show if a state contains a quote.",
+        "created_at": "2015-08-14T16:24:38Z",
+        "labels": [
+            "Defect",
+            "Redmine status : Closed",
+            "Category : CORE"
+        ],
+        "body": "**Original author :** Blatti Yves\n\nResources metadatastate is not escaped in resources.js.php.\r\nResource list fails to show if a state contains a quote.\r\n\r\n```\n\r\nresource.version(200043, 200043, 'version-name-auto-generated', 3, 'En cours d'\u00e9dition', '2012-08-24 00:00:00');\r\n        resources.add(resource);\r\n```\n\n\n**Fixed versions :** 4.3.2"
+    },
+    "comments": [
+        {
+            "body": "**Original author :** Blatti Yves\n\nVersion name should not contain quote since it is auto-generated. Only the metadatastate string is problematic.",
+            "created_at": "2015-08-21T09:06:45Z"
+        },
+        {
+            "body": "**Original author :** Blatti Yves\n\nAll good, thank you !",
+            "created_at": "2015-08-21T12:51:49Z"
+        }
+    ]
+}

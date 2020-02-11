@@ -1,0 +1,23 @@
+{
+    "issue": {
+        "closed": true,
+        "title": "Extend grid (predefined perimeter) download",
+        "created_at": "2015-06-15T11:34:39Z",
+        "labels": [
+            "Enhancement",
+            "Redmine status : Closed",
+            "Category : SHOP"
+        ],
+        "body": "**Original author :** Blatti Yves\n\nThe actual system for grid download needs the full download URL to be provided by WFS service.\r\n\r\nThe problems are:\r\n* The WFS service can be used for one data only (or need to have multiple download fields... )\r\n* Service has to be updated if data URL changes\r\n* The full download URL is visible in WFS service\r\n\r\nThe proposed alternative is:\r\n* Use a code instead of full url in WFS\r\n* Set the URL + a \"to be replaced by code\" part in it. (ex: http:\/\/www.example.com\/path\/{CODE}.zip)\r\n\r\nThe new field to set URL :\r\n* will be mandatory\r\n* will have a placeholder : http:\/\/www.example.com\/path\/{CODE}.zip\r\n* will use a tooltip like all the other fields (difference with the proposed mockup below) \r\n\r\n\r\nTo allow seamless update for current users of grid download, the URL has to be set to \"{CODE}\" on existing diffusions. So the full url of their services will be used.\r\n\r\n!extend_grid_download.png!\r\n\n\n**Fixed versions :** 4.3.2"
+    },
+    "comments": [
+        {
+            "body": "**Original author :** Portier Thomas\n\n+1",
+            "created_at": "2015-06-26T08:17:41Z"
+        },
+        {
+            "body": "**Original author :** Blatti Yves\n\nWorks great, thank you",
+            "created_at": "2015-07-28T11:32:10Z"
+        }
+    ]
+}

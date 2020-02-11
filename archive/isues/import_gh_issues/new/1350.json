@@ -1,0 +1,14 @@
+{
+    "issue": {
+        "closed": false,
+        "title": "Monitor : grid edit does not work",
+        "created_at": "2016-06-24T13:08:06Z",
+        "labels": [
+            "Defect",
+            "Redmine status : New",
+            "Category : MONITOR"
+        ],
+        "body": "**Original author :** Blatti Yves\n\nUnable to edit a job from the grid view (changes not committed)"
+    },
+    "comments": []
+}

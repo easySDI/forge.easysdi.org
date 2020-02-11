@@ -1,0 +1,14 @@
+{
+    "issue": {
+        "closed": false,
+        "title": "Display the name of the service in the Available services dropdown in the add layers toolbox",
+        "created_at": "2015-05-05T11:05:26Z",
+        "labels": [
+            "Defect",
+            "Redmine status : New",
+            "Category : MAP"
+        ],
+        "body": "**Original author :** Portier Thomas\n\nFor now the alias is displaid in the service list of the add layers toolbox. It must be the name of the service."
+    },
+    "comments": []
+}

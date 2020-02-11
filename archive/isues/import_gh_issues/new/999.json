@@ -1,0 +1,23 @@
+{
+    "issue": {
+        "closed": true,
+        "title": "Warning in JSON response on addToBasket",
+        "created_at": "2015-05-05T15:33:23Z",
+        "labels": [
+            "Defect",
+            "Redmine status : Closed",
+            "Category : SHOP"
+        ],
+        "body": "**Original author :** Blatti Yves\n\nWhen adding a product to basket in 4.3.1 (dev), we get a warning in JSON response:\r\n\r\n```\n\r\n( ! ) Warning: get_object_vars() expects parameter 1 to be object, null given in C:\\wamp\\vhosts\\dev\\components\\com_easysdi_shop\\libraries\\easysdi\\sdiPerimeter.php on line 43\r\nCall Stack\r\n#TimeMemoryFunctionLocation\r\n{main}(  )..\\index.php:0\r\nJApplicationCms->execute(  )..\\index.php:40\r\nJApplicationSite->doExecute(  )..\\cms.php:252\r\nJApplicationSite->dispatch(  )..\\site.php:230\r\nJComponentHelper::renderComponent(  )..\\site.php:191\r\nJComponentHelper::executeComponent(  )..\\helper.php:371\r\nrequire_once( 'C:\\wamp\\vhosts\\dev\\components\\com_easysdi_shop\\easysdi_shop.php' )..\\helper.php:391\r\nJControllerLegacy->execute(  )..\\easysdi_shop.php:24\r\nEasysdi_shopController->addToBasket(  )..\\legacy.php:728\r\nEasysdi_shopHelper::addToBasket(  )..\\controller.php:22\r\nsdiExtraction->__construct(  )..\\easysdi_shop.php:66\r\nsdiPerimeter->__construct(  )..\\sdiExtraction.php:43\r\nsdiPerimeter->loadData(  )..\\sdiPerimeter.php:27\r\nget_object_vars(  )..\\sdiPerimeter.php:43\r\n( ! ) Warning: Invalid argument supplied for foreach() in C:\\wamp\\vhosts\\dev\\components\\com_easysdi_shop\\libraries\\easysdi\\sdiPerimeter.php on line 44\r\nCall Stack\r\n#TimeMemoryFunctionLocation\r\n{main}(  )..\\index.php:0\r\nJApplicationCms->execute(  )..\\index.php:40\r\nJApplicationSite->doExecute(  )..\\cms.php:252\r\nJApplicationSite->dispatch(  )..\\site.php:230\r\nJComponentHelper::renderComponent(  )..\\site.php:191\r\nJComponentHelper::executeComponent(  )..\\helper.php:371\r\nrequire_once( 'C:\\wamp\\vhosts\\dev\\components\\com_easysdi_shop\\easysdi_shop.php' )..\\helper.php:391\r\nJControllerLegacy->execute(  )..\\easysdi_shop.php:24\r\nEasysdi_shopController->addToBasket(  )..\\legacy.php:728\r\nEasysdi_shopHelper::addToBasket(  )..\\controller.php:22\r\nsdiExtraction->__construct(  )..\\easysdi_shop.php:66\r\nsdiPerimeter->__construct(  )..\\sdiExtraction.php:43\r\nsdiPerimeter->loadData(  )..\\sdiPerimeter.php:27\r\n{\"COUNT\":1}\r\n```\n\r\n\r\n\r\nThis is due to: \\components\\com_easysdi_shop\\libraries\\easysdi\\sdiPerimeter.php:40+\r\n\r\nIf the perimeter is free perimeter, we don't have a maplayer and the following query returns nothing:\r\n```\n\r\n<code class=\"sql\">\r\nselect p.*, l.service_id, l.servicetype,l.layername as maplayername,l.istiled,l.opacity, l.isindoor,l.levelfield\r\nfrom jos_sdi_perimeter p\r\njoin jos_sdi_maplayer l ON l.id=p.maplayer_id\r\nwhere p.id = 1\r\n\r\n```\n\r\n\n\n**Fixed versions :** 4.3.1"
+    },
+    "comments": [
+        {
+            "body": "**Original author :** Blatti Yves\n\nIntroduced in rev. 8573",
+            "created_at": "2015-05-05T16:45:46Z"
+        },
+        {
+            "body": "**Original author :** Van Hoecke H\u00e9l\u00e8ne \n\nHave you found the fix or does it need to be investigate?",
+            "created_at": "2015-05-07T06:30:11Z"
+        }
+    ]
+}

@@ -1,0 +1,23 @@
+{
+    "issue": {
+        "closed": true,
+        "title": "Typo in pricing profile VAT translation causes tooltip fail",
+        "created_at": "2017-03-14T08:59:48Z",
+        "labels": [
+            "Defect",
+            "Redmine status : Closed",
+            "Category : SHOP"
+        ],
+        "body": "**Original author :** Blatti Yves\n\nTypo in pricing profile VAT translation causes tooltip fail\r\n!apply_vat_tooltip.png!\n\n**Fixed versions :** 4.4.4"
+    },
+    "comments": [
+        {
+            "body": "**Original author :** Blatti Yves\n\nrev. 10119",
+            "created_at": "2017-03-14T09:01:33Z"
+        },
+        {
+            "body": "**Original author :** Blatti Yves\n\nCan it be merged before we release 4.4.4 ?",
+            "created_at": "2017-03-14T09:02:15Z"
+        }
+    ]
+}

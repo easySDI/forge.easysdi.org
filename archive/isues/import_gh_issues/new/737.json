@@ -1,0 +1,14 @@
+{
+    "issue": {
+        "closed": true,
+        "title": "Metadata notification",
+        "created_at": "2014-06-11T08:06:17Z",
+        "labels": [
+            "Feature",
+            "Redmine status : Closed",
+            "Category : CATALOG"
+        ],
+        "body": "**Original author :** Magoni Bruno\n\nWhen a parent metadata and each child metadata are in status \"validated\", an email notification is sent to each metatada managers of the corresponding resource.\r\nThis notification allows them to publish all these metadata.\r\n\r\nSuch new feature is not voted as it is already existing in previous easySDI version.\r\n\n\n**Fixed versions :** 4.2.0"
+    },
+    "comments": []
+}

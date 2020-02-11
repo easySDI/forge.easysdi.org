@@ -1,0 +1,26 @@
+{
+    "issue": {
+        "closed": true,
+        "title": "Synchronisation should be an option",
+        "created_at": "2014-11-04T09:04:46Z",
+        "labels": [
+            "Enhancement",
+            "Redmine status : Closed"
+        ],
+        "body": "**Original author :** M\u00e9rour Xavier\n\nJust like \"assignation feature\" (see #749), synchronization feature should be optionnal as a global catalog'soption.\n\n**Fixed versions :** 4.2.4"
+    },
+    "comments": [
+        {
+            "body": "**Original author :** Portier Thomas\n\nThis is done but I can't change the status. Could you please mark it as resolved?\r\n\r\nThanks and Happy new year!",
+            "created_at": "2015-01-06T11:41:18Z"
+        },
+        {
+            "body": "**Original author :** Van Hoecke H\u00e9l\u00e8ne \n\nIt's done and committed in svn?",
+            "created_at": "2015-01-06T12:03:27Z"
+        },
+        {
+            "body": "**Original author :** Portier Thomas\n\nyes, in the 4.2.x branche",
+            "created_at": "2015-01-06T12:47:24Z"
+        }
+    ]
+}

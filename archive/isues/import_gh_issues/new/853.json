@@ -1,0 +1,14 @@
+{
+    "issue": {
+        "closed": true,
+        "title": "Cache invalidation",
+        "created_at": "2014-11-03T10:09:06Z",
+        "labels": [
+            "Defect",
+            "Redmine status : Closed",
+            "Category : PROXY"
+        ],
+        "body": "**Original author :** Van Hoecke H\u00e9l\u00e8ne \n\nTrying to invalidate all the cache with the following request returns an error and the cache is not cleaned :\r\n\r\nhttp:\/\/server:8080\/proxy\/cache?complete=TRUE\n\n**Fixed versions :** 4.2.0"
+    },
+    "comments": []
+}

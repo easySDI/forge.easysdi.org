@@ -1,0 +1,19 @@
+{
+    "issue": {
+        "closed": true,
+        "title": "Delete a catalog",
+        "created_at": "2014-04-01T14:30:29Z",
+        "labels": [
+            "Defect",
+            "Redmine status : Closed",
+            "Category : CATALOG"
+        ],
+        "body": "**Original author :** Portier Thomas\n\nWhen deleting a catalog context, this error appears : \r\nCannot delete or update a parent row: a foreign key constraint fails (`tigeo`.`vyh7j_sdi_catalog_searchsort`, CONSTRAINT `vyh7j_sdi_catalog_searchsort_fk1` FOREIGN KEY (`catalog_id`) REFERENCES `vyh7j_sdi_catalog` (`id`) ON DELETE NO ACTION ON UPDATE NO ACTION) SQL=DELETE FROM vyh7j_sdi_catalog WHERE `id` = '2'\n\n**Fixed versions :** 4.1.0"
+    },
+    "comments": [
+        {
+            "body": "**Original author :** Magoni Bruno\n\nConstraint must be altered through CORE installer with ON DELETE CASCADE and ON UPDATE CASCADE; to be done cross-database!\r\n\r\n@Thomas: if you need such fix immediately, please alter it manually as describe above\r\n\r\nThanks,",
+            "created_at": "2014-05-03T11:17:51Z"
+        }
+    ]
+}

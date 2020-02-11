@@ -1,0 +1,19 @@
+{
+    "issue": {
+        "closed": false,
+        "title": "WFS 1.1 compliancy",
+        "created_at": "2010-12-02T09:18:49Z",
+        "labels": [
+            "Feature",
+            "Redmine status : New",
+            "Category : PROXY"
+        ],
+        "body": "**Original author :** M\u00e9rour Xavier\n\nCurrently, PROXY only support WFS in its version 1.0\r\n\r\nAn evolution would be to support the obligatory part of WFS 1.1 specification (http:\/\/www.opengeospatial.org\/standards\/wfs).\r\n\r\n_WFS 2.0 is also available but, as it is a brand-new spec., it has no need to be integrated in PROXY (no tierce OGC server implement it so far...)_\r\n\r\n"
+    },
+    "comments": [
+        {
+            "body": "**Original author :** M\u00e9rour Xavier\n\nSome good news about WFS 2.0.0 :\r\n\r\nNegeo and Opengeo will implement WFS 2.0 in Geoserver : http:\/\/twitter.com\/neogeo_fr\/status\/58116037694074880\r\n\r\nMore info about WFS 2.0.0 in french : http:\/\/www.neogeo-online.net\/blog\/archives\/561\/",
+            "created_at": "2011-04-15T08:24:10Z"
+        }
+    ]
+}

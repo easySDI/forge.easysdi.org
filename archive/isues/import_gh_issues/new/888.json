@@ -1,0 +1,13 @@
+{
+    "issue": {
+        "closed": true,
+        "title": "The list of resources is empty when the assignment is not configured.",
+        "created_at": "2014-12-16T10:38:53Z",
+        "labels": [
+            "Defect",
+            "Redmine status : Closed"
+        ],
+        "body": "**Original author :** Battaglia Marc\n\n\n\n**Fixed versions :** 4.2.3"
+    },
+    "comments": []
+}

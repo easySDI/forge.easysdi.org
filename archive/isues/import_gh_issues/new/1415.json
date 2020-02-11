@@ -1,0 +1,14 @@
+{
+    "issue": {
+        "closed": true,
+        "title": "Search criterias with value = '0' are not handle",
+        "created_at": "2017-05-18T13:44:18Z",
+        "labels": [
+            "Defect",
+            "Redmine status : Closed",
+            "Category : CATALOG"
+        ],
+        "body": "**Original author :** Van Hoecke H\u00e9l\u00e8ne \n\nWhen a search criteria has a selected option with a value = '0', the criteria is not handle in the CSW request.\n\n**Fixed versions :** 4.5.0"
+    },
+    "comments": []
+}

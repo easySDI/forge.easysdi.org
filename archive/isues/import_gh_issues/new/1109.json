@@ -1,0 +1,19 @@
+{
+    "issue": {
+        "closed": true,
+        "title": "Wrong text in button displayed for requests \"done\" ",
+        "created_at": "2015-09-04T14:47:32Z",
+        "labels": [
+            "Defect",
+            "Redmine status : Closed",
+            "Category : SHOP"
+        ],
+        "body": "**Original author :** M\u00e9rour Xavier\n\nIn view=requests when filter \"completed\" is selected (see screenshot), the button on right hand has text \"Answer\" (R\u00e9pondre) which is wrong since the request is already completed.\r\n\r\nIt should display another button with text \"Open\" (Ouvrir)\n\n**Fixed versions :** 4.3.2"
+    },
+    "comments": [
+        {
+            "body": "**Original author :** Blatti Yves\n\nrev. 9026\r\nfix swpa : rev. 9060",
+            "created_at": "2015-09-07T12:40:58Z"
+        }
+    ]
+}

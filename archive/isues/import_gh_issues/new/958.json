@@ -1,0 +1,39 @@
+{
+    "issue": {
+        "closed": true,
+        "title": "Enhance and simplify Orders and Requests views",
+        "created_at": "2015-03-27T10:21:37Z",
+        "labels": [
+            "Enhancement",
+            "Redmine status : Closed",
+            "Category : SHOP"
+        ],
+        "body": "**Original author :** Blatti Yves\n\nWe propose to enhance and simplify Orders and Requests views.\r\n\r\n## Orders\r\n\r\nThe goal is to:\r\n* add readability to this view (one the most used in our platform !)\r\n* gain space for orders name that can be very long (\"Project 588423.335 east side ground plan + elevation\")\r\n* make it look like other list views in easySDI\r\n\r\n\r\nChanges are:\r\n* Add the request id, as it is used by many users to communicate with providers or platform managers (especially since order names can be auto generated...)\r\n* Replace the datetime by a simple \"<n> <time unit> ago\" like \"2 hours ago\" \"or 3 days ago\". We keep precise date and time in the tooltip.\r\n* Merge the type and status column\r\n** If the request is an order or an estimate : show the status (send, validation, received...)\r\n** In the order has at last one product with a response, add the number of product in the label: \"(1\/5)\"\r\n** If the order a draft : show \"draft\" in the column (a draft cannot have specific status)\r\n** To maintain the visible difference between an order and an estimate, we propose to mark only the estimates (as it is a very small pert or all requests) with an icon and a text\r\n* use \"btn-primary\" instead of \"btn-success\" for action button (same as all views in FE) (brow in my screenshot, but blue if default bootstrap is used)\r\n* Actions buttons is always present, as with #957 we propose to allow an order or estimate copy at anytime\r\n\r\nList before:\r\n!orders_before.png!\r\n\r\nList after:\r\n!orders_after.png!\r\n\r\n## Requests\r\n\r\nThe goal is to:\r\n* add readability to this view\r\n* make the important information visible first\r\n* gain space for orders and organisms name\r\n* make it look like other list views in easySDI, specially with the orders view\r\n\r\nChanges are:\r\n\r\n* Add the request id, as it is used to communicate with users (clients)\r\n* Only display the type if it's an estimate and drop the column to gain space\r\n* Display the organisms who's made the request, and the account in a tooltip (organism is the primary information, because it defines the pricing etc... user is secondary information)\r\n* Add a \"reply\" button to make it clear (whe had this in easySDI v2)\r\n* Add a \"done\/todo\" filter (We had it in V2), very useful for support, with users that have complaints or questions on past requests\r\n** When \"done\" is selected, two additional filters appear (like in v2)\r\n*** A response date from\/to filter\r\n*** A client organism filter\r\n*** Those two filters are very important for providers that treat thousands of requests per year !\r\n* Add a \"manual\/automatic\" filter (We had this in v2), very useful to track automatic orders with delay, or problems. (Automatic requests are read-only ! )\r\n\r\nList before:\r\n!requests_before.png!\r\n\r\nList after:\r\n!requests_after.png!\r\n\r\n\n\n**Fixed versions :** 4.3.2"
+    },
+    "comments": [
+        {
+            "body": "**Original author :** Blatti Yves\n\nTC remark: use text instead of clip icon",
+            "created_at": "2015-04-10T08:38:57Z"
+        },
+        {
+            "body": "**Original author :** Blatti Yves\n\nIn case of *1* product, when finished, do not display count.",
+            "created_at": "2015-04-10T08:47:07Z"
+        },
+        {
+            "body": "**Original author :** Blatti Yves\n\nFor Requests view: display two columns : organism + user.\r\n(Hide one CSS if nedded)",
+            "created_at": "2015-04-10T08:52:23Z"
+        },
+        {
+            "body": "**Original author :** Villemagne J\u00e9r\u00f4me\n\nTC agree this enhancement",
+            "created_at": "2015-04-10T08:53:12Z"
+        },
+        {
+            "body": "**Original author :** Villemagne J\u00e9r\u00f4me\n\nlinked to #977, TC remarks that a column must be added to the request list",
+            "created_at": "2015-04-10T08:59:35Z"
+        },
+        {
+            "body": "**Original author :** Blatti Yves\n\nRequests view: look and feel: rev 8888\r\nRequests filters : rev 8890\r\norders : rev 8891\r\npatch JS : 8892\r\nFix btn class : 8904\r\nFix URLs in list : 8906",
+            "created_at": "2015-08-03T07:58:08Z"
+        }
+    ]
+}

@@ -1,0 +1,19 @@
+{
+    "issue": {
+        "closed": true,
+        "title": "Request panel not shown when wfs filter too long",
+        "created_at": "2015-05-04T15:21:48Z",
+        "labels": [
+            "Defect",
+            "Redmine status : Closed",
+            "Category : SHOP"
+        ],
+        "body": "**Original author :** Portier Thomas\n\nWhen a user manager requests, if the user made an order with a lot of wfs features, the request is too long in the request panel and the browser crashes.\r\nI fixed it by limiting the size of the url but the request should be passed in a post request.\n\n**Fixed versions :** 4.3.2"
+    },
+    "comments": [
+        {
+            "body": "**Original author :** Blatti Yves\n\nWe'll use an @OpenLayers.Protocol.WFS@ with POST method and @OpenLayers.Filter.*@",
+            "created_at": "2015-06-09T07:07:24Z"
+        }
+    ]
+}

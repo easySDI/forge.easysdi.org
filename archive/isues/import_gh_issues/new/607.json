@@ -1,0 +1,14 @@
+{
+    "issue": {
+        "closed": false,
+        "title": "Adding \"enumeration\" entity type",
+        "created_at": "2013-03-25T04:07:48Z",
+        "labels": [
+            "Feature",
+            "Redmine status : New",
+            "Category : CATALOG"
+        ],
+        "body": "**Original author :** Magoni Bruno\n\nFor now, \"list\" attributes are defined for themselves.\r\nWhen multiple \"list\" attributes point on same list codes, each content list must be redefined.\r\n\r\nThe goal is to add an entity type called \"enumeration\" which can be used by one or more \"list\" attributes.\r\n\r\nWith such logical, backoffice interface should be re-engineered based on more strict UML definitions..."
+    },
+    "comments": []
+}

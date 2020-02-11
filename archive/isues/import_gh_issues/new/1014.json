@@ -1,0 +1,22 @@
+{
+    "issue": {
+        "closed": true,
+        "title": "Uniformize backend menus",
+        "created_at": "2015-05-21T11:05:25Z",
+        "labels": [
+            "Enhancement",
+            "Redmine status : Closed"
+        ],
+        "body": "**Original author :** Blatti Yves\n\nTo prepare Joomla 3.4.x compatibility, we should uniformize backend menus using Joomla! helpers.\r\nSome components use the correct helpers (the majority), some doesn't : (core and monitor).\r\n\r\nSee the differences in the screenshots.\n\n**Fixed versions :** 4.3.2"
+    },
+    "comments": [
+        {
+            "body": "**Original author :** Blatti Yves\n\nHi H\u00e9l\u00e8ne !\r\nWe talked about and accepted this entry on last COTEC, I think we forgot to change its status.\r\nCan you change it ?\r\n\r\nThanks",
+            "created_at": "2015-06-15T09:13:55Z"
+        },
+        {
+            "body": "**Original author :** Van Hoecke H\u00e9l\u00e8ne \n\nOf course!",
+            "created_at": "2015-06-15T09:19:15Z"
+        }
+    ]
+}

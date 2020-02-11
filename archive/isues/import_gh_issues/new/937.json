@@ -1,0 +1,31 @@
+{
+    "issue": {
+        "closed": true,
+        "title": "Use easySDI layer where it is possible",
+        "created_at": "2015-03-13T14:54:29Z",
+        "labels": [
+            "Enhancement",
+            "Redmine status : Closed",
+            "Category : SHOP"
+        ],
+        "body": "**Original author :** Van Hoecke H\u00e9l\u00e8ne \n\nTo define a predefined perimeter in the SHOP component, we still have to define the WMS layer with the old fashioned way : select a source AND fill the layer name.\r\n\r\nWe should enforce, where it's possible, the use of easySDI layer object, like it was done for the definition of resource visualization.\r\n\r\nWith this, the availability of the layer is (more) guaranteed, use of easySDI layer is more integrated and transverse and gives consistency to the solution.\n\n**Fixed versions :** 4.3.1"
+    },
+    "comments": [
+        {
+            "body": "**Original author :** Magoni Bruno\n\nI will add that such centralization will ease configuration's changes when an endpoint layer is not accessible (removed, name changed, temporary unavailable, and so on).\r\nThere is only one easySDI object to manage instead of founding where layer \"XYZ\" has been used inside easySDI platform...",
+            "created_at": "2015-03-30T10:20:48Z"
+        },
+        {
+            "body": "**Original author :** Villemagne J\u00e9r\u00f4me\n\nTC agree with such enhancement but we must be aware that it will have impact on existing predifined perimeters whose cannot be automatically updated.",
+            "created_at": "2015-04-10T08:09:50Z"
+        },
+        {
+            "body": "**Original author :** Van Hoecke H\u00e9l\u00e8ne \n\nPredefined perimeters are now configured by using an easySDI layer.",
+            "created_at": "2015-05-05T12:32:10Z"
+        },
+        {
+            "body": "**Original author :** Blatti Yves\n\nWe'll need to add a release note, as we cannot have a transparent update with this change !",
+            "created_at": "2015-05-15T16:22:50Z"
+        }
+    ]
+}

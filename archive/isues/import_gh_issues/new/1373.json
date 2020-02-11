@@ -1,0 +1,27 @@
+{
+    "issue": {
+        "closed": false,
+        "title": "Edition form: the fields have to be wider",
+        "created_at": "2016-09-26T12:28:16Z",
+        "labels": [
+            "Enhancement",
+            "Redmine status : New",
+            "Category : CATALOG"
+        ],
+        "body": "**Original author :** Arnaud Rapha\u00eblle\n\nIn the edition forms it would be better if the fields (type = text) will be wider.\r\nFields were wider on V3 (see enclosed FeldBreiteV3 and FeldBreiteV4)."
+    },
+    "comments": [
+        {
+            "body": "**Original author :** Blatti Yves\n\nHi Rapha\u00eblle, pleased to see you on the forge !\r\n\r\nIn my opinion, this should be fixed by template CSS, since everyone will have different needs.\r\nAs an example, at asitvd.ch we have customized fields for :\r\n* wider area\r\n* right aligned\r\n* icon for tooltips\r\n* bold for mandatory fields\r\n\r\n(easySDI has classes ready for this type of customization.)\r\n\r\nOur form as example: \r\n\r\n!{width: 50%}asitvd_md_edit_css.png!:\/attachments\/download\/1023\/asitvd_md_edit_css.png\r\n\r\nPart of our LESS template code for MD edition :\r\n\r\n```\n\r\n<code class=\"css\">\r\n\/\/ Metdata Edit Form\r\n.com_easysdi_catalog.view-metadata.layout-edit{\r\n\r\n   #form-metadata{\r\n        \/\/Big fields\r\n        input, textarea, .uneditable-input {\r\n            width: 500px;\r\n        }\r\n        \/\/Big selects\r\n        .chzn-container {\r\n            width: 514px !important;\r\n        }\r\n\r\n        \/\/fieldsets legend\r\n        legend{\r\n            display: block;\r\n            width: 100%;\r\n            padding: 0;\r\n            margin-bottom: 0;\r\n            border: 0;\r\n            border-top: 0px;\r\n            border-left: 1px solid #BDBDBD;\r\n            background-color: rgba(200, 200, 200, 0.2);\r\n\r\n            span{\r\n                font-size: 16px;\r\n            }\r\n        }\r\n        \/\/Nested teansparency\r\n        .inner-fds{\r\n            background-color: rgba(200, 200, 200, 0.2);\r\n            padding-left: 40px;\r\n        }\r\n        \/\/Buttons sizes\r\n        .add-btn{\r\n            font-size: 10px !important;\r\n            line-height: 12px;\r\n            padding: 1px 4px 1px 2px !important;\r\n        }\r\n        .remove-btn{\r\n            font-size: 10px !important;\r\n            line-height: 12px;\r\n            padding: 1px 4px 1px 2px !important;\r\n            margin-left:10px;\r\n            float: none;\r\n        }\r\n        .collapse-btn{\r\n            margin-left: 4px;\r\n        }\r\n\r\n        \/\/First level titles\r\n        &> div > fieldset{\r\n\r\n            width: 100%;\r\n\r\n            &> .action{\r\n                font-size: 25px;\r\n                padding-bottom: 15px;\r\n                margin-top: 30px;\r\n                color: #54af32;\r\n                &:first-child{\r\n                    margin-top: 0;\r\n                }\r\n            }\r\n            &> fieldset {\r\n                &> legend{\r\n                    \/\/background: none;\r\n                }\r\n                &> div{\r\n                    \/\/background: none;\r\n                }\r\n\r\n            }\r\n        }\r\n\r\n        \/\/other titles\r\n        .action{\r\n            padding-bottom: 10px;\r\n            padding-top: 5px;\r\n            font-size: 16px;\r\n        }\r\n\r\n        \/\/placement\r\n        .control-group {\r\n            margin-left: auto;\r\n            margin-right: 0;\r\n            width: 1000px;\r\n            .control-label{\r\n                text-align: right;\r\n                width: 200px;\r\n                margin-right: 10px;\r\n            }\r\n        }\r\n    }\r\n\r\n    \r\n    label{\r\n        \/\/required\r\n        &.labelrequired::after {\r\n            content: \"\";\r\n        }\r\n\r\n        &.labelrequired {\r\n            font-weight: bold;\r\n        }\r\n        \r\n        \/\/has tooltips\r\n        &[data-original-title]::after {\r\n            color: #949494;\r\n            content: \"E\";\r\n            \/\/content: \"\ue222\";\r\n            font-family: IcoMoon;\r\n            font-size: 12px;\r\n            margin-left: 4px;\r\n        }\r\n    }\r\n    .well{\r\n        box-shadow: none;\r\n        background: none;\r\n        border: none;\r\n    }\r\n}\r\n\r\n```\n",
+            "created_at": "2016-09-27T07:14:55Z"
+        },
+        {
+            "body": "**Original author :** Blatti Yves\n\nHere is the LESS file (since redmine broke some characters).\r\n\r\nDon't hesitate to ring or mail me if you need more!\r\n\r\nHIH, regards\r\n\r\n  \r\n\r\n*PS* : If you really prefer to propose an enhancement of easySDI, you have to assign it to \"Technical Committee\".\r\nEnhancement have to be voted first.",
+            "created_at": "2016-09-27T07:22:03Z"
+        },
+        {
+            "body": "**Original author :** Blatti Yves\n\nHi Rapha\u00eblle !\r\n\r\nAny news ?\r\n- is the proposed 'custom css' solution OK for you ? (This issue can be market as 'rejected', but we should add some of this content in the wiki help)\r\n- or do you think something need to be done is easysdi components ? (in this case, the issue must be completed, assigned to technical committee as 'request for comments')\r\n\r\nThanks",
+            "created_at": "2016-11-04T11:09:19Z"
+        }
+    ]
+}

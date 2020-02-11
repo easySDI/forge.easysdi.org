@@ -1,0 +1,19 @@
+{
+    "issue": {
+        "closed": true,
+        "title": "GXP uses external resources (EXT sprites) from HTTP cachefly CND",
+        "created_at": "2015-07-29T09:43:21Z",
+        "labels": [
+            "Defect",
+            "Redmine status : Closed",
+            "Category : MAP"
+        ],
+        "body": "**Original author :** Blatti Yves\n\nGXP uses external resources (EXT sprites) from HTTP CND.\r\nProblem is on HTTPS we end up with a \"mixed content\" page which results on a browser warning or a non functional page.\r\n\r\nI see two solutions (both hack GXP CSS files):\r\n- use cachefly HTTPS URL\r\n- use local ext resources (we have the in joomla\\easysdi\\com_easysdi_core\\src\\administrator\\libraries\\ext\\resources)\r\n\r\nI suggest using the second solution and do not rely on cachefly.\r\n\r\n!cachefly-resources.png!\n\n**Fixed versions :** 4.3.2"
+    },
+    "comments": [
+        {
+            "body": "**Original author :** Blatti Yves\n\nIn GXP's CSS files I replaced: \r\n@http:\/\/extjs.cachefly.net\/ext-3.4.0\/@\r\nby\r\n@..\/..\/ext\/@\r\n\r\n\r\nFor example:\r\n@background-image:url(http:\/\/extjs.cachefly.net\/ext-3.4.0\/resources\/images\/gray\/panel\/tool-sprites.gif);@\r\nbecomes:\r\n@background-image:url(..\/..\/ext\/resources\/images\/gray\/panel\/tool-sprites.gif);@",
+            "created_at": "2015-07-29T10:02:13Z"
+        }
+    ]
+}

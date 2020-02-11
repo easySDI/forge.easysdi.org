@@ -1,0 +1,27 @@
+{
+    "issue": {
+        "closed": true,
+        "title": "Free selection permieter: Coordinates check for manual insert",
+        "created_at": "2012-01-19T07:08:43Z",
+        "labels": [
+            "Enhancement",
+            "Redmine status : Closed",
+            "Category : SHOP"
+        ],
+        "body": "**Original author :** Blatti Yves\n\nWhen manually inserting coordinates on step 2, they're only tested for non-numerical values.\r\n\r\nThey should be tested against a BBox ton ensure quality, p.e by extending isValidCoordinates() in mod_easysdi_perimeter\/mod_easysdi_perimeter.php.\r\n\r\nWe temporary fixed by adding:\r\n```\n<code class=\"js\">\r\nelse{\r\n\tif( !( yVal > 100000 && yVal < 250000 && xVal > 450000 && xVal < 600000 )){\r\n\t\talert('<?php echo JText::_(\"EASYSDI_PERIMETER_MESSAGE__ERROR_COORD_VALUE_INVALID\");?>');\r\n\t\treturn false;\r\n\t}\r\n\telse \r\n\t{\r\n\t\treturn true;\r\n\t}\r\n}\r\n```\n \r\n\r\nQuestion: Where should the values come from?\r\n - Max map extent?\r\n - Custom parameters?\n\n**Fixed versions :** 4.3.2"
+    },
+    "comments": [
+        {
+            "body": "**Original author :** Blatti Yves\n\nNeed to write specs to port this feature on 4.X",
+            "created_at": "2014-12-12T12:17:19Z"
+        },
+        {
+            "body": "**Original author :** Blatti Yves\n\nLinked to : #961\r\n\r\nIf we \"manually\" insert polygons (import), we have to check for coordinates to be in restricted bounds.\r\n\r\nI suggest using the MAP restricted extent. Is it OK for all of you ?\r\n",
+            "created_at": "2015-06-10T08:00:47Z"
+        },
+        {
+            "body": "**Original author :** Blatti Yves\n\nRev. 8896",
+            "created_at": "2015-08-04T09:07:36Z"
+        }
+    ]
+}

@@ -1,0 +1,13 @@
+{
+    "issue": {
+        "closed": true,
+        "title": "Stereotype file delete file on resave",
+        "created_at": "2014-12-19T11:46:04Z",
+        "labels": [
+            "Defect",
+            "Redmine status : Closed"
+        ],
+        "body": "**Original author :** Portier Thomas\n\nWhen uploding a file while editing a metadata, on the next save of the metadata, file is deleted\n\n**Fixed versions :** 4.2.4"
+    },
+    "comments": []
+}

@@ -1,0 +1,27 @@
+{
+    "issue": {
+        "closed": false,
+        "title": "Update mPDF lib",
+        "created_at": "2016-03-16T14:15:15Z",
+        "labels": [
+            "Enhancement",
+            "Redmine status : Affected",
+            "Category : CORE"
+        ],
+        "body": "**Original author :** Blatti Yves\n\nmPDF has evolved, and some cool addition have been made (spcially in CSS support) \r\n(copy of changelog here : https:\/\/github.com\/kartik-v\/mpdf\/blob\/master\/CHANGELOG.txt)\r\nCan we update it ?"
+    },
+    "comments": [
+        {
+            "body": "**Original author :** Blatti Yves\n\nThe more active fork is https:\/\/github.com\/mpdf\/mpdf\r\nThey will release the (6.1.0 soon see changelog : https:\/\/github.com\/mpdf\/mpdf\/blob\/81339340b8dc167c6e7ca7b8b60a7a82b8d4e346\/CHANGELOG.txt), I'll wait for this release",
+            "created_at": "2016-03-29T14:32:42Z"
+        },
+        {
+            "body": "**Original author :** Blatti Yves\n\n6.1.0 Is out, I tested it, and it does a lot things better (in facts of styling ability, css selectors, etc).\r\nOne major problem : the package has gone from 12Mo to 52Mo !!\r\n\r\nAfter a check, the weight gain comes from the new exotics fonts: Chinese, Japanese, Korean, Tibetan, Egyptian hieroglyphs, etc.\r\nI propose to remove them (~60Mo uncompressed) and document how to add them if needed.\r\n\r\nFonts and uncompressed size are:\r\n\r\n|Sun-ExtA\t    | 22455\t|Ko\t|Simplified Chinese                                                                                           |\r\n|Sun-ExtB\t    | 17219\t|Ko\t|Simplified Chinese                                                                                           |\r\n|UnBatang_0613\t| 6775\t|Ko\t|Korean                                                                                                       |\r\n|Aegyptus\t    | 5705\t|Ko\t|Hieroglyphs                                                                                                  |\r\n|Jomolhari\t    | 2216\t|Ko\t|Tibetan script                                                                                               |\r\n|Akkadian\t    | 1467\t|Ko\t|Sumero-Akkadian Cuneiform                                                                                    |\r\n|XB Riyaz*\t    | 4490\t|Ko\t|Persian, Arabic, Urdu, Pashto, Dari, Uzbek, Kurdish, Uighur, old Turkish (Ottoman) and modern Turkish (Roman)|\r\n\r\n",
+            "created_at": "2016-05-06T07:59:12Z"
+        },
+        {
+            "body": "**Original author :** Blatti Yves\n\nIncompatible PHP versions.\r\nWait till Joomla ups the version",
+            "created_at": "2016-07-07T13:35:51Z"
+        }
+    ]
+}

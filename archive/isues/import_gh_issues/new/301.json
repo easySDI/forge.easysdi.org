@@ -1,0 +1,19 @@
+{
+    "issue": {
+        "closed": false,
+        "title": "Monitoring capabilities changes",
+        "created_at": "2011-02-04T15:41:24Z",
+        "labels": [
+            "Feature",
+            "Redmine status : New",
+            "Category : MONITOR"
+        ],
+        "body": "**Original author :** Portier Thomas\n\nAdd the capability of detecting changes in capabilities of a wms\/wfs service. An email could be send if the number of layer has changed or if a layer name has changed."
+    },
+    "comments": [
+        {
+            "body": "**Original author :** M\u00e9rour Xavier\n\nThis is a very nice idea and surely convenient feature, Thomas !\r\n\r\nCould you describe it a bit more and explain what you have to detect specifically in Getcapabilities changes (added\/deleted layers, change in layers names, etc...).\r\n\r\nIf you have any use case to describe, it would be of great help to understand better the need and use of this feature. \r\n\r\nI see it as a very interesting new feature for the MONITOR. \r\n\r\nDanemark may also be interested to know more about it...",
+            "created_at": "2011-02-11T17:51:25Z"
+        }
+    ]
+}

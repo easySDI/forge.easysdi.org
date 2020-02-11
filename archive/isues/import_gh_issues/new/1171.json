@@ -1,0 +1,19 @@
+{
+    "issue": {
+        "closed": false,
+        "title": "Metadata edition form : multiple select list always has empty option selected by default",
+        "created_at": "2015-11-03T15:05:10Z",
+        "labels": [
+            "Defect",
+            "Redmine status : New",
+            "Category : CATALOG"
+        ],
+        "body": "**Original author :** Van Hoecke H\u00e9l\u00e8ne \n\nIn the metadata edition form, a multiple select list always has an empty option selected by default,\r\n\r\nThis is a problem when applying form validation with cardinality check : a multiple list with a lower cardinality bound > 0 will pass the check even if the user didn't select anything."
+    },
+    "comments": [
+        {
+            "body": "**Original author :** Blatti Yves\n\nThis fix breaks the single selects (impossible to unselecte a value)\r\nReverted in rev 9209 in my sandbox",
+            "created_at": "2015-11-10T13:02:25Z"
+        }
+    ]
+}

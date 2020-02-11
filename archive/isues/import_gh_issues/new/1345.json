@@ -1,0 +1,19 @@
+{
+    "issue": {
+        "closed": true,
+        "title": "__sdi_diffusion_perimeter->buffer not removed by update script (#992)",
+        "created_at": "2016-06-16T12:03:00Z",
+        "labels": [
+            "Defect",
+            "Redmine status : Closed",
+            "Category : SHOP"
+        ],
+        "body": "**Original author :** Blatti Yves\n\n__sdi_diffusion_perimeter->buffer not removed by update script (#992)\n\n**Fixed versions :** 4.4.1"
+    },
+    "comments": [
+        {
+            "body": "**Original author :** Blatti Yves\n\nrev. 9848",
+            "created_at": "2016-06-16T12:56:30Z"
+        }
+    ]
+}

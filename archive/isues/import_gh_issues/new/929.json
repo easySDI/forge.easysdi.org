@@ -1,0 +1,18 @@
+{
+    "issue": {
+        "closed": true,
+        "title": "Real-time cartography",
+        "created_at": "2015-03-09T10:59:35Z",
+        "labels": [
+            "Feature",
+            "Redmine status : Rejected"
+        ],
+        "body": "**Original author :** Van Hoecke H\u00e9l\u00e8ne \n\nEasySDI MAP could easily be extended to allow real-time cartography.\r\n\r\nThis new feature would add two parameters on layers defined in the MAP component :\r\n- is the layer exposed real-time  data : yes\/no\r\n- reload frequency : interval between each call to the service\r\n\r\nA new MAP tool would be added to activate the real-time functionnality.\r\n\r\nWhen activated, this functionnality will automatically reload real-time layers in the map using the OpenLayers features.\r\n\r\n"
+    },
+    "comments": [
+        {
+            "body": "**Original author :** Blatti Yves\n\nDuplicate of #842",
+            "created_at": "2016-02-03T13:26:42Z"
+        }
+    ]
+}

@@ -1,0 +1,43 @@
+{
+    "issue": {
+        "closed": true,
+        "title": "Extend file\/upload stereotype to allow external URL",
+        "created_at": "2014-08-15T10:59:43Z",
+        "labels": [
+            "Enhancement",
+            "Redmine status : Closed",
+            "Category : CATALOG"
+        ],
+        "body": "**Original author :** Blatti Yves\n\nWe'd like to extend file the file (upload) stereotype to allow usage of external URLs.\r\nA user would choose if he uploads the file on easySDI *or* put a link to the resource.\r\n(Currently the stereotype only allows to upload the file on the system)\r\n\r\nReasons are:\r\n* We have attached files fields in our model that needs +upload+ *or* +external link+ (depending on the owner of the metadata usages)\r\n* Current stereotype usage may be unclear (due to it's layout) -> Simplify edit forms and increase readability\r\n* There is work to do on this stereotype anyway (#808 , #622)\r\n* Is Internet \"standard\" (many references uses a 'file popup' with options, gmail for instance)\r\n\r\n## Our proposal:\r\n\r\n* Have a \"one line\" stereotype containing:\r\n** existing URL if set (text field, disabled)\r\n** an 'attach file' button to open an 'attach file' popup (bootstrap appended button)\r\n** a link to open current URL (if it exists only, in a _blank target)\r\n* The file popup offers 2 tabs:\r\n** 1) Local file (upload)\r\n** 2) File on the internet (URL)\r\n* The presence of the tabs is configurable on relation in MD model (options: _upload_ , _url_ or _upload+url_)\r\n** To avoid change for existing clients, default value will be _upload_\r\n* Include URL testing (#894) for URLs (tab 2)\r\n** Test of link is done 'onChange' of the field BUT it does not avoid using the entered URL, this done for private\/internal metadata, when the URL can point on an Intranet resource. The informative message is shown below the URL field with a green tick or a red cross depending on test result.\r\n* Fix #808 (Validation fails with stereotype \"file\"), validation will be easier since there will be only 1 field in form\r\n* Fix #622 (\"File\" stereotype :deletion of file, problem of relpicated MD)\r\n** Use solution N\u00b01 proposed in #622: \r\n*** (Solution 1 is choosen cause it does not need special actions for upgrade existing easySDI installations)\r\n*** Keep file storage and naming as in versions <= 4.3.0\r\n*** On replication : parse XML for \"locally attached items\", if found: duplicate the files with a new name, and replace the links\r\n*** On deletion of file node : if file is local (uploaded), remove file with node\r\n**** To identify local uploaded files we'll use a conjunction _linkedfilebaseurl_ (exposed in XML) and _linkedfilerepository_ (local base path) catalog configs\r\n\r\n\r\n\r\n\r\n## Mockups:\r\n\r\n!file_stereotype_enhancements_v2.png!\n\n**Fixed versions :** 4.3.2"
+    },
+    "comments": [
+        {
+            "body": "**Original author :** Blatti Yves\n\nUpdated description, mockup added",
+            "created_at": "2015-03-04T11:44:22Z"
+        },
+        {
+            "body": "**Original author :** Van Hoecke H\u00e9l\u00e8ne \n\nTC validates but requests for more detailed specifications.",
+            "created_at": "2015-03-06T08:42:52Z"
+        },
+        {
+            "body": "**Original author :** Blatti Yves\n\nUpdated specifications following TC request (1\/2)",
+            "created_at": "2015-03-11T12:22:42Z"
+        },
+        {
+            "body": "**Original author :** Blatti Yves\n\nUpdated specifications following TC request (2\/2)",
+            "created_at": "2015-03-11T13:34:33Z"
+        },
+        {
+            "body": "**Original author :** Blatti Yves\n\nupdate mockups",
+            "created_at": "2015-03-11T13:40:53Z"
+        },
+        {
+            "body": "**Original author :** Van Hoecke H\u00e9l\u00e8ne \n\nOK with me.",
+            "created_at": "2015-03-16T08:40:25Z"
+        },
+        {
+            "body": "**Original author :** Villemagne J\u00e9r\u00f4me\n\nfor me too",
+            "created_at": "2015-03-16T09:29:51Z"
+        }
+    ]
+}

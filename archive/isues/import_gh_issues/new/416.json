@@ -1,0 +1,31 @@
+{
+    "issue": {
+        "closed": true,
+        "title": "Translation work",
+        "created_at": "2011-06-23T10:17:13Z",
+        "labels": [
+            "Defect",
+            "Redmine status : Closed",
+            "Category : MONITOR"
+        ],
+        "body": "**Original author :** M\u00e9rour Xavier\n\nWith the great new functionalities coming with version 2.1, quite a lot of UI was redesigned or extented.\r\n\r\nWhat about the translation file ? I guess all new UI words are in English at least.\r\nThis is what I see here : http:\/\/forge.easysdi.org\/projects\/monitor\/repository\/diff\/joomla\/1.5\/trunk\/com_easysdi_monitor\/language\/admin\/fr-FR.com_easysdi_monitor.ini?rev=3110&rev_to=2902\r\n\r\nI can do the translation work for french. *Please give me a \"go\" when no more change on localization file will be done*\n\n**Fixed versions :** 4.0.0"
+    },
+    "comments": [
+        {
+            "body": "**Original author :** M\u00e9rour Xavier\n\nBy the way, translation code should be \"adapted\" to stick to others EasySDI component logic :\r\n\r\nNAME-OF-COMPONENT_CODE (example : MONITOR_SAVE_DATA)\r\n\r\nCurrently, translation code in MONITOR do not respect this pattern.\r\nI open a new ticket for this -> http:\/\/forge.easysdi.org\/issues\/417\r\n\r\n",
+            "created_at": "2011-06-23T10:24:05Z"
+        },
+        {
+            "body": "**Original author :** Magoni Bruno\n\nHi Xavier,\r\n\r\nI guess that such ticket is no more needed anymore.\r\nThanks",
+            "created_at": "2013-12-20T10:41:03Z"
+        },
+        {
+            "body": "**Original author :** M\u00e9rour Xavier\n\nRight",
+            "created_at": "2013-12-20T10:43:22Z"
+        },
+        {
+            "body": "**Original author :** Magoni Bruno\n\nFrench translation delivered with V4",
+            "created_at": "2014-03-26T21:03:34Z"
+        }
+    ]
+}

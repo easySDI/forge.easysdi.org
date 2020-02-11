@@ -1,0 +1,14 @@
+{
+    "issue": {
+        "closed": false,
+        "title": "Missing instance in metadata edition form",
+        "created_at": "2017-02-17T08:47:19Z",
+        "labels": [
+            "Defect",
+            "Redmine status : Affected",
+            "Category : CATALOG"
+        ],
+        "body": "**Original author :** Van Hoecke H\u00e9l\u00e8ne \n\nDans le masque d'\u00e9dition des m\u00e9tadonn\u00e9es il y a un comportement inattendu au niveau des instances.\r\nEn effet, lorsque l'on saisit des informations et elles disparaissent parfois compl\u00e8tement (champs vides \/ Instanz_Partiel_Geleert.png) ou alors des champs disparaissent et ne peuvent du coup plus \u00eatre saisis (KBSOEV_1 est complet \/ KBSOEV_2 ne contient plus le champ \"automatisch laden\"). Cela est apparue sur une nouvelle version du g\u00e9oproduit KBSOEV dont la version pr\u00e9c\u00e9dante a d\u00e9j\u00e0 certains champ manquant (par exemple \"automatisch laden\"). Les informations disparaissent lorsque l'on sauve la m\u00e9tadonn\u00e9e\n\n**Fixed versions :** 4.3.9"
+    },
+    "comments": []
+}

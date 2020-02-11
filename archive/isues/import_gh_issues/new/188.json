@@ -1,0 +1,27 @@
+{
+    "issue": {
+        "closed": true,
+        "title": "Info message to users if CSW down",
+        "created_at": "2010-07-15T14:05:37Z",
+        "labels": [
+            "Feature",
+            "Redmine status : Rejected",
+            "Category : CATALOG"
+        ],
+        "body": "**Original author :** M\u00e9rour Xavier\n\nIt would be convenient and user-friendly to let the admin define a text to display in the CATALOG front-end if the CSW interface is down. Now, if CSW is down, there is just no answer which is quite unpleasant.\r\n\r\nThis message should be visible in two places :\r\n\r\n- front end of the CATALOG, when a search in performed (to be exact when result should be exposed)\r\n- front end of the CATALOG, when metadata details (ViewMetadata) are displayed.\r\n\r\nThe default text could be something like \"Metadata server is currently unavailable for maintenance reasons. Thanks for your understanding\"."
+    },
+    "comments": [
+        {
+            "body": "**Original author :** M\u00e9rour Xavier\n\nA third place should also be considered to show this message : the metadata edition panel in front-end.\r\nIt is a highly \"sensible\" panel as a lot of work can be done there and if the CSW remote server is down, this work could be lost.\r\n\r\nMoreover, I would suggest that a mechanism to check CSW availability is set before updating any CSW record. If CSW is down, the user is inform and remained in the update panel. With this mechanism, he would not loose his job.",
+            "created_at": "2010-07-15T14:37:27Z"
+        },
+        {
+            "body": "**Original author :** M\u00e9rour Xavier\n\nIt's a relative old \"ticket\" -> is there any improvement concerning this issue with CATALOG V2 ?",
+            "created_at": "2011-09-08T16:41:10Z"
+        },
+        {
+            "body": "**Original author :** Blatti Yves\n\nThis is implemented in easySDI v4 with a default message like \"Unable to read metadata from catalog\" but it can be customized in Joomla language overrides.",
+            "created_at": "2016-02-03T15:22:59Z"
+        }
+    ]
+}

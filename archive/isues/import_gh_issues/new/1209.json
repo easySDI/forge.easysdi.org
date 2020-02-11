@@ -1,0 +1,23 @@
+{
+    "issue": {
+        "closed": true,
+        "title": "Wrong rejection date is shown at product level (current date used) in recap",
+        "created_at": "2015-11-27T12:33:51Z",
+        "labels": [
+            "Defect",
+            "Redmine status : Closed",
+            "Category : SHOP"
+        ],
+        "body": "**Original author :** Blatti Yves\n\nWrong rejection date is shown at product level (current date used) in recap.\r\nBecause the source of the date is a different field\n\n**Fixed versions :** 4.3.2"
+    },
+    "comments": [
+        {
+            "body": "**Original author :** Blatti Yves\n\nrev. 9298",
+            "created_at": "2015-11-27T12:34:53Z"
+        },
+        {
+            "body": "**Original author :** Van Hoecke H\u00e9l\u00e8ne \n\nCommited in 4.3.x branch under rev.9315 (wrong Message)",
+            "created_at": "2015-12-03T15:40:14Z"
+        }
+    ]
+}

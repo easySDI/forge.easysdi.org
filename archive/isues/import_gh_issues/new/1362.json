@@ -1,0 +1,14 @@
+{
+    "issue": {
+        "closed": true,
+        "title": "Missing traduction key",
+        "created_at": "2016-07-14T08:18:32Z",
+        "labels": [
+            "Defect",
+            "Redmine status : Closed",
+            "Category : CATALOG"
+        ],
+        "body": "**Original author :** Van Hoecke H\u00e9l\u00e8ne \n\nIn metadata edition form, missing a traduction key for \"Close\"\n\n**Fixed versions :** 4.3.5"
+    },
+    "comments": []
+}

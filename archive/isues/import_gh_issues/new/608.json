@@ -1,0 +1,14 @@
+{
+    "issue": {
+        "closed": false,
+        "title": "Support of generalization association",
+        "created_at": "2013-03-26T13:14:21Z",
+        "labels": [
+            "Feature",
+            "Redmine status : New",
+            "Category : CATALOG"
+        ],
+        "body": "**Original author :** Magoni Bruno\n\nBuilding metadata formularies doesn't allow to manage generalization association.\r\nIt could be very helpful as such metadata formularies are based on UML language description.\r\n"
+    },
+    "comments": []
+}

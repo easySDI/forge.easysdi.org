@@ -1,0 +1,27 @@
+{
+    "issue": {
+        "closed": true,
+        "title": "Service interface to service health",
+        "created_at": "2011-11-04T11:15:37Z",
+        "labels": [
+            "Feature",
+            "Redmine status : Rejected",
+            "Category : MONITOR"
+        ],
+        "body": "**Original author :** Larsen de Martino Jorgen\n\nA service interface to service health would be much appreciated - \r\n\r\nTo be used to show service health on other platforms than JOOMLA.\r\n\r\n - Not sure if it already done - "
+    },
+    "comments": [
+        {
+            "body": "**Original author :** M\u00e9rour Xavier\n\nHello Jorgen,\r\n\r\nYes, we have some \"piece of code\" to do this, but it's relatively simple. We created a Joomla! plugin that request the MONITOR API (java servlet) to display the current status of a job (statuts available, not available, etc.) \r\n\r\nSee here : http:\/\/forge.easysdi.org\/projects\/monitor\/wiki\/Frontend_plugin\r\n\r\nIt's done within Joomla! but could be done outside Joomla! as well if the API is well and enough documented -> we did the documentation for the first version before your contribution (see here : http:\/\/forge.easysdi.org\/projects\/monitor\/wiki) so documentation should be updated with new features you added.\r\n\r\nA \"service health\" view with historic data (what we have in report tab in the backend) could be done and proposed via the API by extended it. In that way, any third application could directly request this API to get this health view.\r\n\r\n_By the way, you asked what is \"public\/private\" statuts for a job in another issue -> we introduced this status for each job to distinguish jobs that can be requested by anyone without authentication (via the API) and otehrs jobs that can only be requested with the admin account (via the API). The idea was that we would like to monitor services but not show results publicly. Hope it's clear..._\r\n\r\n",
+            "created_at": "2011-11-04T12:51:57Z"
+        },
+        {
+            "body": "**Original author :** Larsen de Martino Jorgen\n\nThanks - very helpfull",
+            "created_at": "2011-11-04T13:02:04Z"
+        },
+        {
+            "body": "**Original author :** M\u00e9rour Xavier\n\nThis is an old and very specific ticket & the community plans to make a large MONITOR refactoring.\r\n\r\nTherefore, this ticket is rejected.",
+            "created_at": "2016-02-03T15:00:49Z"
+        }
+    ]
+}

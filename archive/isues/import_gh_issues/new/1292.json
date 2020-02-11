@@ -1,0 +1,14 @@
+{
+    "issue": {
+        "closed": true,
+        "title": "easySDI user is not correctly loaded in Orders and requests list views",
+        "created_at": "2016-03-18T16:22:27Z",
+        "labels": [
+            "Defect",
+            "Redmine status : Closed",
+            "Category : SHOP"
+        ],
+        "body": "**Original author :** Van Hoecke H\u00e9l\u00e8ne \n\nWhen an order is treated, the created_by field which is Joomla user id, is replaced by sdiUser id.\r\n\r\nWhen list views orders or requests are loaded, the Joomla user can not be correctly loaded and a PHP warning is raised.\n\n**Fixed versions :** 4.4.1"
+    },
+    "comments": []
+}

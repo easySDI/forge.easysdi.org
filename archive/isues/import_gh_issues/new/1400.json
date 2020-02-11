@@ -1,0 +1,19 @@
+{
+    "issue": {
+        "closed": true,
+        "title": "An order can be validated or rejected twice",
+        "created_at": "2017-01-17T14:02:36Z",
+        "labels": [
+            "Defect",
+            "Redmine status : Closed",
+            "Category : SHOP"
+        ],
+        "body": "**Original author :** Blatti Yves\n\nIf two validations views are opened simultaneously, the order can be validated or rejected multiple times.\r\nWe have to ensure the state of order, in model, before committing.\r\n\n\n**Fixed versions :** 4.4.4"
+    },
+    "comments": [
+        {
+            "body": "**Original author :** Blatti Yves\n\nrev. 10069",
+            "created_at": "2017-01-17T14:15:35Z"
+        }
+    ]
+}

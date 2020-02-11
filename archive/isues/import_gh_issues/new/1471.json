@@ -1,0 +1,19 @@
+{
+    "issue": {
+        "closed": true,
+        "title": "Browsers try to autocomplete REST extraction account user and password in BE, disable autocomplete ",
+        "created_at": "2019-01-09T07:53:22Z",
+        "labels": [
+            "Defect",
+            "Redmine status : Closed",
+            "Category : CONTACT"
+        ],
+        "body": "**Original author :** Blatti Yves\n\nBrowsers try to autocomplete REST extraction account user and password in BE.\r\nTODO: disable autocomplete.\n\n**Fixed versions :** 4.5.1"
+    },
+    "comments": [
+        {
+            "body": "**Original author :** Blatti Yves\n\nRev. 10461",
+            "created_at": "2019-01-09T07:58:07Z"
+        }
+    ]
+}

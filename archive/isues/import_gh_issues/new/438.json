@@ -1,0 +1,31 @@
+{
+    "issue": {
+        "closed": true,
+        "title": "Add option to \"suspend\" SHOP ",
+        "created_at": "2011-07-01T06:36:30Z",
+        "labels": [
+            "Feature",
+            "Redmine status : Rejected",
+            "Category : SHOP"
+        ],
+        "body": "**Original author :** M\u00e9rour Xavier\n\nBecause of maintenance purposes, the administrator may want to suspend for some minutes or hours the SHOP.\r\nIt's not really possible right now -> you have to change all links in Joomla! to redirect to an article or homepage.\r\n\r\nA nice feature would be an option available in the backend to \"suspend\" the SHOP. Could be integrated in the General configuration panel under SHOP tab with two fields :\r\n\r\n1. offline : yes\/no (default is \"no\")\r\n2. if offline, link to a Joomla! article (to give explanation about maintenance issue, duration,etc.)\r\n\r\n\r\n_PS : same mechanism could be developped for other components with frontend (CATALOG, MAP, PUBLISH,...)\r\nNeed to think on a generic implementation._"
+    },
+    "comments": [
+        {
+            "body": "**Original author :** Baud R\u00e9my\n\nThis could be done with sending 301 header or using the maineframe->redirect mechanism. \r\n\r\nMaybe a Joomla component does this task?!\r\n\r\nThis feature should be able to \"suspend\" any of the specified task in the menu.\r\n\r\n\r\n\r\n",
+            "created_at": "2011-07-01T08:36:01Z"
+        },
+        {
+            "body": "**Original author :** Magoni Bruno\n\nAs proposed by Xavier, I guess that it will be more convenient to add such config which will be taken in charge for automatic extraction process.\r\nNotice that web interface for automatic extraction process won't be managed in the future by a WPS Java servlet but directly by a JSON PHP URL...",
+            "created_at": "2013-12-20T11:00:43Z"
+        },
+        {
+            "body": "**Original author :** M\u00e9rour Xavier\n\nQuestion to TC : is this feature still relevant with the new easySDI 4.x and new REST service ?\r\n\r\n",
+            "created_at": "2016-02-03T11:24:11Z"
+        },
+        {
+            "body": "**Original author :** Blatti Yves\n\n* For maintenance, we can put the full Joomla in maintenance.\r\n* For remote systems maintenance using services, they're all in client mode, so they just have to stop polling the service.\r\n\r\nThis is very revelant for easySDI v4+\r\n",
+            "created_at": "2016-02-19T10:13:54Z"
+        }
+    ]
+}

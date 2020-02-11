@@ -1,0 +1,23 @@
+{
+    "issue": {
+        "closed": true,
+        "title": "Adapt order summary (for client) to pricing",
+        "created_at": "2015-04-07T07:41:15Z",
+        "labels": [
+            "Enhancement",
+            "Redmine status : Closed",
+            "Category : SHOP"
+        ],
+        "body": "**Original author :** Blatti Yves\n\nWith #643 (add price calculation for diffusion) we decided not to adapt the order summary (recap) in the first feature set.\r\nThis enhancement is here to complete that.\r\n\r\nAs initially discussed, we propose to use the basket view as a base, to have consistent screens (basket -> order summary AND basket -> product transmission page) in terms of content and layout.\r\n\r\n## Order summary (recap) for clients :\r\n\r\nChanges in layout :\r\n\r\n* Use basket gloabl layout:\r\n** Map on top + gloabl order informations (date, type, client and third party if necessary)\r\n** Pricing elements if pricing is enabled\r\n** Product properties in a list (presented here as a flattened list, but constructed as ul\/li like in basket)\r\n** Display status of each item with an icon (+ special CSS class for coloring if desired, like in screenshot)\r\n** Display provider remark (if present) in a specific span\r\n* Display a \"file\" column only if request is an order (not an estimate, and not a draft !):\r\n** Download button if file is available (+ timespan indication) \r\n** A disabled download button if file is NOT YET available\r\n** A message if file is not available anymore (using retention configurations: current config for internal + #980)\r\n** Nothing in case of canceled element\r\n\r\n## Screen shot of products list part of the summary:\r\n\r\n!recap_html_client.png!\r\n\r\n\n\n**Fixed versions :** 4.3.2"
+    },
+    "comments": [
+        {
+            "body": "**Original author :** Villemagne J\u00e9r\u00f4me\n\nOK for TC.",
+            "created_at": "2015-04-10T09:49:05Z"
+        },
+        {
+            "body": "**Original author :** Blatti Yves\n\nRevision: 9099",
+            "created_at": "2015-09-18T14:36:11Z"
+        }
+    ]
+}

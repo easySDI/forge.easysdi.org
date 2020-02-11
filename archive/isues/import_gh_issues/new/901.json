@@ -1,0 +1,23 @@
+{
+    "issue": {
+        "closed": true,
+        "title": "Front-end pagination issue",
+        "created_at": "2015-02-16T10:01:43Z",
+        "labels": [
+            "Defect",
+            "Redmine status : Closed",
+            "Category : CATALOG"
+        ],
+        "body": "**Original author :** Van Hoecke H\u00e9l\u00e8ne \n\nIn front-end lists (ressources and catalog search results), when you use the pagination, you can't get back to the first page once you navigated to a later page.\r\n\r\nThis is a known issue of Joomla 3.3.6 (compatible version of easySDI 4.3.x ): https:\/\/github.com\/joomla\/joomla-cms\/pull\/4488\r\n\n\n**Fixed versions :** 4.3.1"
+    },
+    "comments": [
+        {
+            "body": "**Original author :** Van Hoecke H\u00e9l\u00e8ne \n\nThe fix found in github should be integrated in easySDI installer as a \"postflight\" operation : the corrected file found in github should replace the original one from the joomla 3.3.6 version.",
+            "created_at": "2015-03-12T08:40:47Z"
+        },
+        {
+            "body": "**Original author :** Magoni Bruno\n\nHas to be pushed in 4.3.0",
+            "created_at": "2015-03-13T08:17:51Z"
+        }
+    ]
+}

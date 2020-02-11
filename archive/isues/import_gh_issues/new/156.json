@@ -1,0 +1,14 @@
+{
+    "issue": {
+        "closed": true,
+        "title": "Adding Google Maps base layers connectors",
+        "created_at": "2010-04-19T08:23:18Z",
+        "labels": [
+            "Feature",
+            "Redmine status : Closed",
+            "Category : MAP"
+        ],
+        "body": "**Original author :** Portier Thomas\n\nThe proxy must propose Google maps base layers\n\n**Fixed versions :** 4.0.0"
+    },
+    "comments": []
+}

@@ -1,0 +1,23 @@
+{
+    "issue": {
+        "closed": true,
+        "title": "Time scale disappears on report tap when zooming in",
+        "created_at": "2011-03-18T15:03:58Z",
+        "labels": [
+            "Enhancement",
+            "Redmine status : Rejected",
+            "Category : MONITOR"
+        ],
+        "body": "**Original author :** Larsen de Martino Jorgen\n\nWhen choosing period:week and then zooming in the X values disappears on the graph"
+    },
+    "comments": [
+        {
+            "body": "**Original author :** Larsen de Martino Jorgen\n\nRelated to #486",
+            "created_at": "2011-11-03T07:31:02Z"
+        },
+        {
+            "body": "**Original author :** M\u00e9rour Xavier\n\nThis is an old and very specific ticket & the community plans to make a large MONITOR refactoring.\r\n\r\nTherefore, this ticket is rejected.",
+            "created_at": "2016-02-03T15:08:37Z"
+        }
+    ]
+}

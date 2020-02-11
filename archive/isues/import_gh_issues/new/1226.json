@@ -1,0 +1,19 @@
+{
+    "issue": {
+        "closed": true,
+        "title": "#1149 (download big files) does not work on 32 bit systems",
+        "created_at": "2015-12-11T10:11:17Z",
+        "labels": [
+            "Defect",
+            "Redmine status : Closed",
+            "Category : SHOP"
+        ],
+        "body": "**Original author :** Blatti Yves\n\n#1149 (download big files) does not work on 32 bit server systems.\r\nA file bigger than 2GB cannot have its size stored on a 32bits integer.\r\nProblem: php @filesize($file)@ will fail and HTTP header @Content-Length@ will contain an erroneous size (and browsers will stop download @ ~2GB).\r\n\r\nWe cannot rely on filesize on this systems (return is unpredictable : http:\/\/php.net\/manual\/en\/function.filesize.php#refsect1-function.filesize-returnvalues)\r\nProposal: do not send @Content-Length@ on 32 bits systems, check this with PHP_INT_SIZE (4 = 32 bits, 8 = 64 bits)\r\nDownload will work, but there will be no size and time displayed on browsers.\r\nAffected server are 32 bit linux (very rare), and 32+64 bits windows with PHP < 7 (Most of them).\n\n**Fixed versions :** 4.4.0"
+    },
+    "comments": [
+        {
+            "body": "**Original author :** Blatti Yves\n\nrev. 9347",
+            "created_at": "2015-12-11T10:15:34Z"
+        }
+    ]
+}

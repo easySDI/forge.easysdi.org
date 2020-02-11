@@ -1,0 +1,14 @@
+{
+    "issue": {
+        "closed": true,
+        "title": "trying to download restricted product when not logged in returns a blank page",
+        "created_at": "2016-03-17T13:17:00Z",
+        "labels": [
+            "Defect",
+            "Redmine status : Closed",
+            "Category : SHOP"
+        ],
+        "body": "**Original author :** Portier Thomas\n\nWhen a user try to download a product with no session active a 401 http is returned; It should return the login page.\r\nIf the tmpl parameter is passed, it should transfer it to the login page.\r\n\r\nWe use it form the download link from the map.\n\n**Fixed versions :** 4.4.1"
+    },
+    "comments": []
+}

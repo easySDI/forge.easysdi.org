@@ -1,0 +1,14 @@
+{
+    "issue": {
+        "closed": true,
+        "title": "Search criteria label",
+        "created_at": "2016-05-31T17:00:22Z",
+        "labels": [
+            "Defect",
+            "Redmine status : Closed",
+            "Category : CATALOG"
+        ],
+        "body": "**Original author :** Van Hoecke H\u00e9l\u00e8ne \n\nSearch criterias defined on a relation are not correctly labeled in catalog search form.\r\n\r\nThe label displayed are those from the relation defintions and not from the search criteria definitions.\n\n**Fixed versions :** 4.4.1"
+    },
+    "comments": []
+}

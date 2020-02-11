@@ -1,0 +1,30 @@
+{
+    "issue": {
+        "closed": true,
+        "title": "easySDI forge CSS for code highlight",
+        "created_at": "2015-06-26T13:01:53Z",
+        "labels": [
+            "Defect",
+            "Redmine status : Closed"
+        ],
+        "body": "**Original author :** Blatti Yves\n\nHi J\u00e9r\u00f4me,\r\n\r\nWe talked about the code highlight in the forge \"this morning\":https:\/\/forge.easysdi.org\/projects\/joomla\/wiki\/Meeting_26th_june_2015.\r\nHere is the reason why it is not active in the forge:\r\n\r\nThe template of the forge should override redmine CSS classes. But it does not include the base classes.\r\n\r\nYou can use our forge as an example:\r\n\r\nThis is our template:\r\nhttps:\/\/projets.asitvd.ch\/themes\/asitvd\/stylesheets\/application.css\r\n\r\nas you can see is refers to redmine default template:\r\n```\n\r\n@import url(..\/..\/..\/stylesheets\/application.css);\r\n```\n\r\n\r\nThis file exists in easysdi forge's install: https:\/\/forge.easysdi.org\/stylesheets\/application.css\r\nAnd contains coderay classes:\r\n\r\n```\n\r\n<code class=\"css\">\r\n\/************* CodeRay styles *************\/\r\n.syntaxhl div {display: inline;}\r\n.syntaxhl .line-numbers {padding: 2px 4px 2px 4px; background-color: #eee; margin:0px 5px 0px 0px;}\r\n.syntaxhl .code pre { overflow: auto }\r\n.syntaxhl .debug { color: white !important; background: blue !important; }\r\n\r\n```\n\r\n\r\n\r\n*So this line should do the trick* at the top of : https:\/\/forge.easysdi.org\/themes\/easysdi\/stylesheets\/application.css\r\n\r\n```\n\r\n@import url(..\/..\/..\/stylesheets\/application.css);\r\n```\n\r\n"
+    },
+    "comments": [
+        {
+            "body": "**Original author :** Villemagne J\u00e9r\u00f4me\n\nHi Yves,\r\n\r\nThanks for time spent ;-)\r\nI copy\/paste your informations in our internal issue, and as said this morning I'll do the trick in a few days (scheduled for monday), so highlight should be back soon :-)",
+            "created_at": "2015-06-26T13:07:25Z"
+        },
+        {
+            "body": "**Original author :** Blatti Yves\n\nNice! thanks\r\nI hope there'll be no side effects ;-)",
+            "created_at": "2015-06-26T13:14:49Z"
+        },
+        {
+            "body": "**Original author :** Villemagne J\u00e9r\u00f4me\n\nLooking at this issue's description, your 'CodeRay' snippet seems higlighted now...",
+            "created_at": "2015-06-30T12:34:33Z"
+        },
+        {
+            "body": "**Original author :** Blatti Yves\n\nYeah that's perfect !\r\n\r\nAnd we had other small layout problems that have been corrected with that (free bonus !)\r\n\r\nThanks !",
+            "created_at": "2015-06-30T12:37:29Z"
+        }
+    ]
+}

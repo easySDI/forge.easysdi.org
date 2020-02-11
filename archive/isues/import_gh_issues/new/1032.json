@@ -1,0 +1,31 @@
+{
+    "issue": {
+        "closed": true,
+        "title": "Basket: predefined perimeter does not show a warning if WMS is off scale limit",
+        "created_at": "2015-06-08T13:20:01Z",
+        "labels": [
+            "Defect",
+            "Redmine status : Closed",
+            "Category : SHOP"
+        ],
+        "body": "**Original author :** Blatti Yves\n\nWhen using a predefine perimeter in basket (WFS selection + WMS visualization):\r\nif the WMS if out of the visibility range, there is no message, just a transparent tile.\r\n(We had this in v2)\n\n**Fixed versions :** 4.4.0"
+    },
+    "comments": [
+        {
+            "body": "**Original author :** Blatti Yves\n\nCan be checked with : @appname.mapPanel.map.getLayersByName('perimeterLayer')[0].inRange@\r\n\r\nShould be checked on @map.changelayer@ and add or remove layers... something like:\r\n```\n\r\nappname.mapPanel.map.events.register('changelayer',this,function(e){\r\n  if(e.property==\"visibility\" && e.layer.name==\"perimeterLayer\"){\r\n    \/\/need to check inRange\r\n    console.log(e);\r\n  }\r\n  \r\n});\r\n\r\nappname.mapPanel.map.events.register('addlayer',this,function(e){\r\n  if(e.layer.name==\"perimeterLayer\"){\r\n    \/\/need to check inRange\r\n    console.log(e);\r\n  }\r\n \r\n});\r\n\r\nappname.mapPanel.map.events.register('removelayer',this,function(e){\r\n  if(e.layer.name==\"perimeterLayer\"){\r\n    \/\/need to check inRange\r\n    console.log(e);\r\n  }\r\n \r\n});\r\n```\n",
+            "created_at": "2016-02-11T16:00:03Z"
+        },
+        {
+            "body": "**Original author :** Blatti Yves\n\nPresentation to user:\r\n!layer_not_in_range.png!",
+            "created_at": "2016-02-11T16:00:48Z"
+        },
+        {
+            "body": "**Original author :** Blatti Yves\n\nrev. 9466",
+            "created_at": "2016-02-12T09:09:36Z"
+        },
+        {
+            "body": "**Original author :** Blatti Yves\n\nFinal version: used the crossed eye, as 'non visible' icon, and added a tooltip\r\n!not-visible-v2.png!\r\n",
+            "created_at": "2016-02-12T09:11:21Z"
+        }
+    ]
+}

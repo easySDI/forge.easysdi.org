@@ -1,0 +1,18 @@
+{
+    "issue": {
+        "closed": true,
+        "title": "Call to google url in GXP librarie",
+        "created_at": "2015-04-03T06:38:13Z",
+        "labels": [
+            "Enhancement",
+            "Redmine status : Rejected"
+        ],
+        "body": "**Original author :** Van Hoecke H\u00e9l\u00e8ne \n\nTo fix call to google url that should be made with https protocol instead of http one, some modificationes were made directly inside the GXP library code.\r\nBetter solution should be found to fix that."
+    },
+    "comments": [
+        {
+            "body": "**Original author :** Van Hoecke H\u00e9l\u00e8ne \n\nThere will be no update on the GPX library so this issue can be closed. ",
+            "created_at": "2015-06-26T09:13:45Z"
+        }
+    ]
+}

@@ -1,0 +1,27 @@
+{
+    "issue": {
+        "closed": true,
+        "title": "Unable to download BIG order file with remote storage (curlHelper)",
+        "created_at": "2016-02-15T12:59:48Z",
+        "labels": [
+            "Defect",
+            "Redmine status : Closed",
+            "Category : SHOP"
+        ],
+        "body": "**Original author :** Blatti Yves\n\nLocal big file can be downloaded easyli now (#1149 & #1226) but remote files are stored in memory by cURL before being written to client.\r\nWe should stream data to client to avoid memory problems...\n\n**Fixed versions :** 4.4.0"
+    },
+    "comments": [
+        {
+            "body": "**Original author :** Blatti Yves\n\nThis is a general problem of the curlHelper in easySDI libraries.\r\nThe files are downloaded in memory entirely before being sent to client.\r\n\r\nI propose to stream the result directly to client.\r\n\r\nThe only downside is the the http header Content-Length cannot be sent since size cannot be calculated, but we'll not be limited by php\/server memory limitations anymore.",
+            "created_at": "2016-02-24T10:24:58Z"
+        },
+        {
+            "body": "**Original author :** Blatti Yves\n\nokay, I made small adaptations in curlHelper, it now \"streams\" (write to client data blocks from curl and flush buffer).\r\nI tested it with:\r\n* MAP\r\n** WMS via php proxy\r\n** WFS via PHP proxy\r\n* SHOP\r\n** Download from remote file (MD link in catalog)\r\n*** Single file\r\n*** Grid\r\n*** With and without authentication\r\n** Download a remote order-diffusion file\r\n* the URL tester",
+            "created_at": "2016-02-25T10:39:39Z"
+        },
+        {
+            "body": "**Original author :** Blatti Yves\n\nrev. 9496",
+            "created_at": "2016-02-25T10:42:54Z"
+        }
+    ]
+}

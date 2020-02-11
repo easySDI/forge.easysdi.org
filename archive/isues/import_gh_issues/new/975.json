@@ -1,0 +1,19 @@
+{
+    "issue": {
+        "closed": true,
+        "title": "Order with multiple products",
+        "created_at": "2015-04-03T14:44:32Z",
+        "labels": [
+            "Defect",
+            "Redmine status : Closed",
+            "Category : SHOP"
+        ],
+        "body": "**Original author :** Van Hoecke H\u00e9l\u00e8ne \n\nIn the orders list view, when at least one product was uploaded by the provider on a order concerning multiple products, all the download links are automatically built in the dropdown list.\r\nOnly the provided products must have a download link.\n\n**Fixed versions :** 4.3.1"
+    },
+    "comments": [
+        {
+            "body": "**Original author :** Van Hoecke H\u00e9l\u00e8ne \n\n!orders.png!",
+            "created_at": "2015-04-03T14:47:02Z"
+        }
+    ]
+}

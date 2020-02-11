@@ -1,0 +1,19 @@
+{
+    "issue": {
+        "closed": true,
+        "title": "MAP Helper may leads to double loading js libraries",
+        "created_at": "2014-05-19T11:46:58Z",
+        "labels": [
+            "Defect",
+            "Redmine status : Closed",
+            "Category : MAP"
+        ],
+        "body": "**Original author :** Blatti Yves\n\nin  components\\com_easysdi_map\\helpers\\easysdi_map.php\r\n\r\nJQuery and Bootstrap may be loaded twice depending on debug enabled or not.\r\n(because Joomla loads each script URI only once, but loads uncompressed versions in debug mode)\r\n\n\n**Fixed versions :** 4.1.0"
+    },
+    "comments": [
+        {
+            "body": "**Original author :** Blatti Yves\n\nPatched in my sandbox : ...\/sandboxes\/asit-vd\/4.0.2\/joomla\/easysdi\/com_easysdi_map\/src\/site\/helpers\/easysdi_map.php",
+            "created_at": "2014-05-19T11:47:58Z"
+        }
+    ]
+}

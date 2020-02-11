@@ -1,0 +1,31 @@
+{
+    "issue": {
+        "closed": false,
+        "title": "Cannot add a \"class association\" to a relation having a \"resource\" childtype.",
+        "created_at": "2015-08-12T12:37:09Z",
+        "labels": [
+            "Defect",
+            "Redmine status : Affected",
+            "Category : CATALOG"
+        ],
+        "body": "**Original author :** Blatti Yves\n\nI cannot save a linked Metadata (a Contact) in MD edit form if the relation has a class association.\r\nOn each load the field is empty. And it seems to not be saved in XML."
+    },
+    "comments": [
+        {
+            "body": "**Original author :** Blatti Yves\n\nHi Marc,\r\nCan we talk about that tomorrow ?\r\n\r\nThanks !",
+            "created_at": "2015-08-12T12:37:42Z"
+        },
+        {
+            "body": "**Original author :** Blatti Yves\n\nFound the source, in V4 we cannot add a \"class association\" to a relation having a \"resource\" childtype.",
+            "created_at": "2015-08-13T12:07:31Z"
+        },
+        {
+            "body": "**Original author :** Blatti Yves\n\nSince this seems to be 'by design' in easySDI, should we:\r\n- avoid this case\r\n- just document the fact the this should not be done..\r\n?",
+            "created_at": "2016-02-03T13:02:40Z"
+        },
+        {
+            "body": "**Original author :** Blatti Yves\n\nThis is a defect and can be resolved in the future",
+            "created_at": "2016-02-19T10:02:24Z"
+        }
+    ]
+}

@@ -1,0 +1,19 @@
+{
+    "issue": {
+        "closed": true,
+        "title": "Bad translation in pricing profile list",
+        "created_at": "2015-10-09T13:16:28Z",
+        "labels": [
+            "Defect",
+            "Redmine status : Closed",
+            "Category : SHOP"
+        ],
+        "body": "**Original author :** Blatti Yves\n\nBad translation in pricing profile list (YES\/NO instead of JYES\/JNO)\n\n**Fixed versions :** 4.3.2"
+    },
+    "comments": [
+        {
+            "body": "**Original author :** Blatti Yves\n\nRev. 9133",
+            "created_at": "2015-10-14T11:59:09Z"
+        }
+    ]
+}

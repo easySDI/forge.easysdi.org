@@ -1,0 +1,14 @@
+{
+    "issue": {
+        "closed": true,
+        "title": "share link processing order doesn't work",
+        "created_at": "2016-02-22T10:58:30Z",
+        "labels": [
+            "Defect",
+            "Redmine status : Closed",
+            "Category : PROCESSING"
+        ],
+        "body": "**Original author :** Portier Thomas\n\n\n\n**Fixed versions :** 4.0.0"
+    },
+    "comments": []
+}

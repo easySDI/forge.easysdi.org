@@ -1,0 +1,31 @@
+{
+    "issue": {
+        "closed": true,
+        "title": "List for users notification",
+        "created_at": "2015-02-20T09:58:30Z",
+        "labels": [
+            "Defect",
+            "Redmine status : Closed",
+            "Category : SHOP"
+        ],
+        "body": "**Original author :** M\u00e9rour Xavier\n\nIn Front-end Resources Diffusion screen, the diffusion manager can add users to be notified when an order is sent for the resource (see attached screenshot).\r\n\r\nThe user list expose all the users of the platform --> it should not be the case.\r\n\r\nThe list should only expose :\r\n- the users in the same organism as the selected resource\r\n- the users in the same organism as the user who is editing the current form (in case of delegation)\r\n\r\n\r\nAm I write ?\r\n\r\nThanks for feedback.\r\n\n\n**Fixed versions :** 4.3.2"
+    },
+    "comments": [
+        {
+            "body": "**Original author :** M\u00e9rour Xavier\n\nAm I right ? (better so... ;-)",
+            "created_at": "2015-02-20T10:13:47Z"
+        },
+        {
+            "body": "**Original author :** M\u00e9rour Xavier\n\nIs there any input on my remark ?\r\nDoes anyone agree that the current behaviour should not happen ?",
+            "created_at": "2015-03-03T17:42:27Z"
+        },
+        {
+            "body": "**Original author :** M\u00e9rour Xavier\n\nThanks to TC to valide the proposed behaviour.",
+            "created_at": "2015-03-04T10:11:17Z"
+        },
+        {
+            "body": "**Original author :** Van Hoecke H\u00e9l\u00e8ne \n\nTC validates.",
+            "created_at": "2015-03-06T09:10:52Z"
+        }
+    ]
+}

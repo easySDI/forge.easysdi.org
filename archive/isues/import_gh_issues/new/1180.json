@@ -1,0 +1,19 @@
+{
+    "issue": {
+        "closed": true,
+        "title": "auto created name for requests does not use timezone",
+        "created_at": "2015-11-10T16:38:16Z",
+        "labels": [
+            "Defect",
+            "Redmine status : Closed",
+            "Category : SHOP"
+        ],
+        "body": "**Original author :** Blatti Yves\n\nauto created name for requests does not use timezone\n\n**Fixed versions :** 4.3.2"
+    },
+    "comments": [
+        {
+            "body": "**Original author :** Blatti Yves\n\nrev. 9211",
+            "created_at": "2015-11-10T16:40:01Z"
+        }
+    ]
+}

@@ -1,0 +1,14 @@
+{
+    "issue": {
+        "closed": false,
+        "title": "Add the alias when selecting a layer to add in a layer group",
+        "created_at": "2016-03-11T11:17:58Z",
+        "labels": [
+            "Enhancement",
+            "Redmine status : New",
+            "Category : MAP"
+        ],
+        "body": "**Original author :** Portier Thomas\n\nIf two layers have the same name, it is impossible to make the difference between them when selecting it in the layer group combobox  definition. Adding the alias between brackets should be a solution"
+    },
+    "comments": []
+}

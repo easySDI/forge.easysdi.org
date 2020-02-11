@@ -1,0 +1,19 @@
+{
+    "issue": {
+        "closed": true,
+        "title": "Disable the ability to move a resource from an organism to another",
+        "created_at": "2015-06-02T12:56:13Z",
+        "labels": [
+            "Enhancement",
+            "Redmine status : Closed",
+            "Category : CORE"
+        ],
+        "body": "**Original author :** Blatti Yves\n\nWhen a resource is created, it's attached to an organism.\r\n\r\nBut we also can \"move\" it later. I think this may be dangerous, especially with roles and rights.\r\n\r\nI would suggest do disable the ability of moving a resource.\n\n**Fixed versions :** 4.3.2"
+    },
+    "comments": [
+        {
+            "body": "**Original author :** Blatti Yves\n\nTested: OK\r\nThanks",
+            "created_at": "2015-07-28T09:32:26Z"
+        }
+    ]
+}

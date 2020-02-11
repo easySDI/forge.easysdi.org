@@ -1,0 +1,23 @@
+{
+    "issue": {
+        "closed": true,
+        "title": "search by definedBoundary doen't use boundary's parents",
+        "created_at": "2014-07-24T09:08:45Z",
+        "labels": [
+            "Defect",
+            "Redmine status : Closed",
+            "Category : CATALOG"
+        ],
+        "body": "**Original author :** Blatti Yves\n\nIn v2, when we search for a bounday, it's parent are taken in account, it's not the case in v4.\r\nFor example, I have a hierarchy like this:\r\n```\n\r\n+-Suisse [Pays]\r\n  +-Vaud [Canton]\r\n    +-Bex [Commune]\r\n    +-Aigle [Commune]\r\n```\n\r\n\r\nIf I search for metadatas in \"Bex\", the results should contain metadatas with Boundaries of \"Bex\", \"Vaud\" and \"Suisse\".\r\nI v2 it works like this for \"Search By ID\", I don't know it's the same for the \"Search by BBox\" (or if it should in v4)\n\n**Fixed versions :** 4.2.0"
+    },
+    "comments": [
+        {
+            "body": "**Original author :** Blatti Yves\n\nin my sandbox: svn:\/\/127.0.0.1:13690\/easysdi\/sandboxes\/asit-vd\/4.2.x",
+            "created_at": "2014-07-30T13:59:47Z"
+        },
+        {
+            "body": "**Original author :** Blatti Yves\n\nRevision 7199",
+            "created_at": "2014-08-14T09:13:19Z"
+        }
+    ]
+}

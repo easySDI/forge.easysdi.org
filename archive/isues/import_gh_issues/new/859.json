@@ -1,0 +1,14 @@
+{
+    "issue": {
+        "closed": true,
+        "title": "Support of relations with cardinality [0..1] in metadata edition form",
+        "created_at": "2014-11-13T14:34:50Z",
+        "labels": [
+            "Defect",
+            "Redmine status : Closed",
+            "Category : CATALOG"
+        ],
+        "body": "**Original author :** Van Hoecke H\u00e9l\u00e8ne \n\nOn relations with a cardinality of 0..1 (and from class to class), the metadata edition form is not working correctly.\r\n\r\nOn those kind of relations, buttons to manage occurences are not displayed as expected when the metadata was already saved once : in this case, it is no more possible to delete the occurence because the [X] button is not visible while the occurence is optional.\r\n\r\nOn a relation with a cardinality with a upper bound gretter than 1, buttons to manage occurences are well displayed as expected.\n\n**Fixed versions :** 4.2.0"
+    },
+    "comments": []
+}

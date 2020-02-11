@@ -1,0 +1,23 @@
+{
+    "issue": {
+        "closed": true,
+        "title": "Use order layout in backend, to have a full view of orders",
+        "created_at": "2015-11-11T08:30:45Z",
+        "labels": [
+            "Enhancement",
+            "Redmine status : Closed",
+            "Category : SHOP"
+        ],
+        "body": "**Original author :** Blatti Yves\n\nWe have a common layout for order, validation and request.\r\nWe should reuse it in backend.\r\n\r\nThis is the current backend order view:\r\n!current_backend_order_view.png!\r\n\r\nThis enhancement would add:\r\n* access to perimeter (view + download)\r\n* view user details\r\n* view third party\r\n* view third party\r\n* view properties\r\n* view pricing\n\n**Fixed versions :** 4.4.0"
+    },
+    "comments": [
+        {
+            "body": "**Original author :** Van Hoecke H\u00e9l\u00e8ne \n\nTC has accepted this enhancement.",
+            "created_at": "2015-12-04T10:03:43Z"
+        },
+        {
+            "body": "**Original author :** Blatti Yves\n\nrev. 9333",
+            "created_at": "2015-12-10T09:28:06Z"
+        }
+    ]
+}

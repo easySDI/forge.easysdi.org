@@ -1,0 +1,14 @@
+{
+    "issue": {
+        "closed": true,
+        "title": "CATALOG Backend edition form : order of choice lists",
+        "created_at": "2014-10-17T14:43:38Z",
+        "labels": [
+            "Defect",
+            "Redmine status : Closed",
+            "Category : CATALOG"
+        ],
+        "body": "**Original author :** Van Hoecke H\u00e9l\u00e8ne \n\nChoice lists available in all edition form in the CATALOG backend must be ordered by name.\n\n**Fixed versions :** 4.2.0"
+    },
+    "comments": []
+}

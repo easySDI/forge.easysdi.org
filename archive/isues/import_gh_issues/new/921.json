@@ -1,0 +1,19 @@
+{
+    "issue": {
+        "closed": true,
+        "title": "Perimeter in the basket is not kept when an order is saved",
+        "created_at": "2015-02-27T16:29:23Z",
+        "labels": [
+            "Defect",
+            "Redmine status : Closed",
+            "Category : SHOP"
+        ],
+        "body": "**Original author :** Portier Thomas\n\nWhen I make an order and I save it. If I re-open it, the perimeter is not shown and the map is not well displaid.\n\n**Fixed versions :** 4.2.7"
+    },
+    "comments": [
+        {
+            "body": "**Original author :** Portier Thomas\n\nproj4js 1.1.0 didn't take into account EPSG:3857 (it was called EPSG:3875)...",
+            "created_at": "2015-03-02T08:57:05Z"
+        }
+    ]
+}

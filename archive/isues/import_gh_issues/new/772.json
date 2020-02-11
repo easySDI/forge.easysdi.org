@@ -1,0 +1,38 @@
+{
+    "issue": {
+        "closed": false,
+        "title": "easySDI extensions definition",
+        "created_at": "2014-07-06T20:00:46Z",
+        "labels": [
+            "Feature",
+            "Redmine status : Accepted"
+        ],
+        "body": "**Original author :** Magoni Bruno\n\n1. Versions' *name* are managed uniformly in all easySDI Joomla extensions (name is strictly the same and is driven by build scripts). Here are some proposal for uniform and industrialized extensions' definition:\r\n* version should follow Semantic Versionning rules as explained in http:\/\/semver.org (i.e. 4.2.0-beta.3+[build number])\r\n* date should be also defined automatically with build script using the current date; <creationDate> in manifest xml file must be used to store date of creation\/release of the extension instead of <releaseDate> which is not displayed in backoffice extensions management interface and should be removed from easySDI manifest files\r\n* author should be a \"constant\" which is \"easySDI Community\" (easySDI mark starts lower case and not upper case)\r\n\r\n!easysdi_extensions.png!\r\n\r\n2. Adding to this, naming review of easySDI extensions is proposed. I would also propose to simplify numerous extensions which was initially performed for bringing backoffice templating and indicators plugin by removing them (are such plugin really indispensable as it need one specific plugin for each desired indicator ?).\r\n\r\n|*Name*|*Location*|*Type*|\r\n|easySDI|Site|Package|\r\n|easySDI Basket|Site|Module|\r\n|easySDI Monitor|Site|Plugin|\r\n|easySDI Catalog|Administrator|Component|\r\n|easySDI Contact|Administrator|Component|\r\n|easySDI Map|Administrator|Component|\r\n|easySDI Monitor|Administrator|Component|\r\n|easySDI Service|Administrator|Component|\r\n|easySDI Dashboard|Administrator|Component|\r\n|-easySDI plugin Button : Orders-|-Site-|-Plugin-|\r\n|-easySDI plugin Button : Users-|-Site-|-Plugin-|\r\n|easySDI Contact|Site|Plugin|\r\n|-easySDI plugin Info : Downloadable ressources-|-Site-|-Plugin-|\r\n|-easySDI plugin Info : Downloads-|-Site-|-Plugin-|\r\n|-easySDI plugin Info : Extractables ressources-|-Site-|-Plugin-|\r\n|-easySDI plugin Info : Extractions-|-Site-|-Plugin-|\r\n|-easySDI plugin Info : Order Response time-|-Site-|-Plugin-|\r\n|-easySDI plugin Info : Organisms-|-Site-|-Plugin-|\r\n|-easySDI plugin Info : Resources-|-Site-|-Plugin-|\r\n|-easySDI plugin Info : Users-|-Site-|-Plugin-|\r\n|easySDI Service|Site|Plugin|\r\n|-easySDI Admin Positions-|-Administrator-|-Template-|\r\n|easySDI Shop|Administrator|Component|\r\n|-easySDI - Administration Buttons-|-Administrator-|-Module-|\r\n|-easySDI - Administration Information-|-Administrator-|-Module-|\r\n|easySDI Core|Administrator|Component|\r\n\n\n**Fixed versions :** Unplanned"
+    },
+    "comments": [
+        {
+            "body": "**Original author :** Magoni Bruno\n\n1. Verifying if semantic version is compliant with PHP API (without build number) and to add build number inside extensions description + recovering servlets versions from POM into servlet display name\r\n2. Be aware that translation terms must follow same logical\r\n\r\nAccepted by everyone...\r\n\r\n",
+            "created_at": "2014-09-05T09:07:41Z"
+        },
+        {
+            "body": "**Original author :** Magoni Bruno\n\n+1",
+            "created_at": "2014-10-07T10:18:35Z"
+        },
+        {
+            "body": "**Original author :** M\u00e9rour Xavier\n\n+1",
+            "created_at": "2014-10-07T10:18:40Z"
+        },
+        {
+            "body": "**Original author :** Teixeira J\u00e9r\u00f4me\n\n+ 1",
+            "created_at": "2014-10-07T10:18:44Z"
+        },
+        {
+            "body": "**Original author :** Plainecassagne Laurent\n\n+1",
+            "created_at": "2014-10-07T10:21:07Z"
+        },
+        {
+            "body": "**Original author :** Van Hoecke H\u00e9l\u00e8ne \n\nIn 4.2.0 rc1 :\r\n```\n\r\ndate should be also defined automatically with build script using the current date; <creationDate> in manifest xml file must be used to store date of creation\/release of the extension instead of <releaseDate> which is not displayed in backoffice extensions management interface and should be removed from easySDI manifest files\r\n```\n",
+            "created_at": "2014-10-16T09:26:52Z"
+        }
+    ]
+}

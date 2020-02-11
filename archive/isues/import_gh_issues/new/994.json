@@ -1,0 +1,19 @@
+{
+    "issue": {
+        "closed": false,
+        "title": "Merge Component service and monitor",
+        "created_at": "2015-05-05T08:52:36Z",
+        "labels": [
+            "Feature",
+            "Redmine status : Request For Comments",
+            "Category : MONITOR"
+        ],
+        "body": "**Original author :** Portier Thomas\n\nI think that we could merge the service and monitor components.\r\n\r\nIt could work like that :\r\n- Add a radio button in the definition of a service : Monitor (yes\/no). It will do a getCapabilities on the service.\r\n- Add global parameters in the service component to fix url of the monitor service, email to alert when a status service change, the frequency of the requests\r\n- Add a Monitor menu entry to display results of the monitoring with a selection of service monitored and a period that will display a D3 graph includind response time and status changes\r\n\r\nThe servlet works great, we could just keep it as it is"
+    },
+    "comments": [
+        {
+            "body": "**Original author :** M\u00e9rour Xavier\n\nI am personnaly in favor of such changes (these are directions PSC had already discussed) BUT it needs more description and layouts proposals (wireframe for example).\r\n\r\nBoth functional impact and ergonomic impacts MUST be addressed.\r\n\r\nWhat about current MONITOR entry in backend ? \r\nWhat about other parameters (SLA, advanced requests such as GetMap..., etc...) ?\r\n",
+            "created_at": "2015-05-05T12:22:00Z"
+        }
+    ]
+}

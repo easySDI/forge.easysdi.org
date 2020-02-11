@@ -1,0 +1,19 @@
+{
+    "issue": {
+        "closed": true,
+        "title": "\"Resource type\" relation does not use the configured label and tooltip",
+        "created_at": "2016-02-05T12:21:31Z",
+        "labels": [
+            "Defect",
+            "Redmine status : Closed",
+            "Category : CATALOG"
+        ],
+        "body": "**Original author :** Blatti Yves\n\n\"Resource type\" relation does not use the configured label and tooltip.\r\nA genereic text was added here: https:\/\/forge.easysdi.org\/projects\/easysdi\/repository\/revisions\/7527\/diff\/sandboxes\/depth\/running\/hvh\/4.2.x\/joomla\/easysdi\/com_easysdi_catalog\/src\/site\/libraries\/easysdi\/FormGenerator.php\r\n\r\nBut we should use the backcend config values:\r\n!resource-type-relation.png!\r\n\r\n\n\n**Fixed versions :** 4.4.0"
+    },
+    "comments": [
+        {
+            "body": "**Original author :** Blatti Yves\n\nrev. 9453",
+            "created_at": "2016-02-05T12:25:48Z"
+        }
+    ]
+}

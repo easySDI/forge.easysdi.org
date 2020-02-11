@@ -1,0 +1,30 @@
+{
+    "issue": {
+        "closed": true,
+        "title": "WMS format filtering",
+        "created_at": "2008-07-29T12:52:43Z",
+        "labels": [
+            "Feature",
+            "Redmine status : Rejected"
+        ],
+        "body": "**Original author :** M\u00e9rour Xavier\n\nLe Proxy devrait \u00eatre en mesure de filtrer les formats d'images (JPEG, PNG, TIFF) propos\u00e9s \u00e0 l'utilisateur final de services WMS. Le fournisseur peut ainsi d\u00e9finir les formats qu'il met \u00e0 disposition \u00e0 tout ou partie des utilisateurs."
+    },
+    "comments": [
+        {
+            "body": "**Original author :** Magoni Bruno\n\nMerci de chiffrer la demande et de me la r\u00e9assigner...\nA+",
+            "created_at": "2008-08-29T14:06:05Z"
+        },
+        {
+            "body": "**Original author :** Magoni Bruno\n\nLa configuration des droits dans le CMS r\u00e9percutera cette possibilit\u00e9.",
+            "created_at": "2008-08-29T15:10:46Z"
+        },
+        {
+            "body": "**Original author :** Magoni Bruno\n\nHi Xavier,\r\n\r\nIs this very old issue still up to date or can we remove it?\r\nI don't see use cases for such feature.\r\n\r\nThanks,",
+            "created_at": "2014-08-03T18:04:35Z"
+        },
+        {
+            "body": "**Original author :** M\u00e9rour Xavier\n\nWe can remove it.",
+            "created_at": "2015-03-03T16:50:05Z"
+        }
+    ]
+}

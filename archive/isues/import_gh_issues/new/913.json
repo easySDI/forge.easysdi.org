@@ -1,0 +1,14 @@
+{
+    "issue": {
+        "closed": true,
+        "title": "WFS : Feature Types can not be listed for policy definition",
+        "created_at": "2015-02-26T09:45:32Z",
+        "labels": [
+            "Defect",
+            "Redmine status : Closed",
+            "Category : SERVICE"
+        ],
+        "body": "**Original author :** Van Hoecke H\u00e9l\u00e8ne \n\nWhen defining a policy for a WFS virtual service, the Feature Type list of the capabilities document can not be parsed if the XML document doesn't used a default namespace.\r\n\r\n\r\nParsed OK :\r\n```\n\r\n<WFS_Capabilities \r\n   version=\"1.0.0\" \r\n   updateSequence=\"0\" \r\n   xmlns=\"http:\/\/www.opengis.net\/wfs\" \r\n   xmlns:ogc=\"http:\/\/www.opengis.net\/ogc\" \r\n   xmlns:xsi=\"http:\/\/www.w3.org\/2001\/XMLSchema-instance\"\r\n   xsi:schemaLocation=\"http:\/\/www.opengis.net\/wfs http:\/\/schemas.opengeospatial.net\/wfs\/1.0.0\/WFS-capabilities.xsd\">\r\n\r\n...\r\n\r\n<FeatureTypeList>\r\n    <FeatureType>\r\n        <Name> ... <\/Name>\r\n        <Title> ... <\/Abstract>\r\n        <Keywords> ... <\/Keywords>\r\n        <SRS ... <\/SRS>\r\n\r\n...\r\n```\n\r\n\r\nCan not be parsed : \r\n```\n\r\n<wfs:WFS_Capabilities version='1.0.0' xsi:schemaLocation='http:\/\/www.opengis.net\/gml \r\n                                                          http:\/\/schemas.opengis.net\/gml\/2.1.2.1\/feature.xsd \r\n                                                          http:\/\/www.opengis.net\/ogc \r\n                                                          http:\/\/schemas.opengis.net\/filter\/1.0.0\/filter.xsd \r\n                                                          http:\/\/www.opengis.net\/wfs \r\n                                                          http:\/\/schemas.opengis.net\/wfs\/1.0.0\/WFS-capabilities.xsd' \r\nxmlns:wfs='http:\/\/www.opengis.net\/wfs' \r\nxmlns:ogc='http:\/\/www.opengis.net\/ogc' \r\nxmlns:gml='http:\/\/www.opengis.net\/gml' \r\nxmlns:xsi='http:\/\/www.w3.org\/2001\/XMLSchema-instance' \r\nxmlns:xlink='http:\/\/www.w3.org\/1999\/xlink' xmlns:gva_GVA='http:\/\/localhost:6080\/arcgis\/services\/gva\/GVA\/MapServer\/WFSServer'>\r\n\r\n...\r\n\r\n<wfs:FeatureTypeList>\r\n\t\t<wfs:FeatureType>\r\n\t\t\t<wfs:Name> ... <\/wfs:Name>\r\n\t\t\t<wfs:Title> ... <\/wfs:Title>\r\n\t\t\t<wfs:SRS> ... <\/wfs:SRS>\r\n...\r\n\r\n```\n\r\n\r\nBoth cases are correct and must be handle by the easySDI service component.\n\n**Fixed versions :** 4.3.0"
+    },
+    "comments": []
+}

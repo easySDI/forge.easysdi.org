@@ -1,0 +1,23 @@
+{
+    "issue": {
+        "closed": true,
+        "title": "Hide \"advanced search\" label when unnecessary",
+        "created_at": "2012-05-23T12:48:37Z",
+        "labels": [
+            "Feature",
+            "Redmine status : Closed",
+            "Category : CATALOG"
+        ],
+        "body": "**Original author :** M\u00e9rour Xavier\n\nIn a CATALOG context, if you have no advanced search criteria activated, the label \"advanced search\" in the front-end should not be visible ---> it brings nothing !\r\n\r\n\n\n**Fixed versions :** 4.2.0"
+    },
+    "comments": [
+        {
+            "body": "**Original author :** Magoni Bruno\n\nIn such case, I would also add that \"Simple search\" button is not needed like button \"Advanced search\".\r\n",
+            "created_at": "2014-07-17T20:10:51Z"
+        },
+        {
+            "body": "**Original author :** M\u00e9rour Xavier\n\n@Bruno\r\nYou are right, \"simple search^\" button is not need as well in such case.",
+            "created_at": "2014-07-28T13:08:57Z"
+        }
+    ]
+}

@@ -1,0 +1,14 @@
+{
+    "issue": {
+        "closed": true,
+        "title": "Manage an incorrect perimeter input",
+        "created_at": "2018-11-20T15:20:25Z",
+        "labels": [
+            "Enhancement",
+            "Redmine status : Closed",
+            "Category : EXTRACT"
+        ],
+        "body": "**Original author :** Blatti Yves\n\n*Description*\r\n\r\nModification on the easySDI v4 plugin.\r\nIf the user orders a data with a predefined perimeter (plot, common...) on an easySDI platform, EXTRACT is not able to manage the extraction because there is no associated geometry. The result is that:\r\n* Incorrect display in EXTRACT interfaces (no map, surface etc.)\r\n* A crash of tasks waiting for a geometry WKT (FME processing, etc.)\r\n\r\nThe distinction is made on the \"@type@\" attribute of the \"@perimeter@\" tag\r\n\r\n*Perimeter OK:*\r\n\r\nPerimeter type: \"coordinates\" -> OK can be imported without errors\r\n\r\n```\n\r\n    <sdi:perimeter type=\"coordinates\" id=\"1\" alias=\"freeperimeter\" guid=\"f0d48c8e-ad5a-09f4-d1b0-dce7dfa544a9\">\r\n      <sdi:surface unit=\"m2\">1874219.75000000000000000000000000<\/sdi:surface>\r\n      <sdi:contents>\r\n        <sdi:content>POLYGON((6.556053540245442 46.5406858665773,6.564736227940287 46.552776494518355,6.579339266387595 46.54778277789993,6.57065411715828 46.53569326277157,6.556053540245442 46.5406858665773)<\/sdi:content>\r\n      <\/sdi:contents>\r\n    <\/sdi:perimeter>\r\n```\n\r\n\r\n*Perimeter KO:*\r\n\r\nPerimeter type: \"values\" -> KO must be imported in error\r\n\r\n```\n\r\n  <sdi:perimeter type=\"values\" id=\"4\" alias=\"COMMUNE\" guid=\"71ae448a-cfe4-f1f4-f597-ce2d7a0702bb\">\r\n     <sdi:surface unit=\"m2\">8568479.0000000000000000000000000000<\/sdi:surface>\r\n      <sdi:contents>\r\n        <sdi:content>348<\/sdi:content>\r\n        <sdi:content>312<\/sdi:content>\r\n      <\/sdi:contents>\r\n  <\/sdi:perimeter>\r\n```\n\r\n\r\n*Expected behaviour :*\r\n\r\n* An element without a perimeter of type=\"coordinates\" should be imported in error, with a clear message and the possibility to cancel it (or delete it if connected as administrator, at the bottom of the screen, already implemented).\r\n* Message to the user: \"This element has no geographical scope, it cannot be processed.\"\r\n\r\nSource (french) : https:\/\/projets.asitvd.ch\/issues\/17755\r\n\n\n**Fixed versions :** 4.5.1"
+    },
+    "comments": []
+}

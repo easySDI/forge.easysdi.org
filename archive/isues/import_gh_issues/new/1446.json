@@ -1,0 +1,14 @@
+{
+    "issue": {
+        "closed": true,
+        "title": "Image of file type missing",
+        "created_at": "2017-12-05T11:59:50Z",
+        "labels": [
+            "Defect",
+            "Redmine status : Closed",
+            "Category : CATALOG"
+        ],
+        "body": "**Original author :** Portier Thomas\n\nIn the upload file stereotype in the catalog, some images identifying the file type are missing (json, geojson)\n\n**Fixed versions :** 4.5.0"
+    },
+    "comments": []
+}

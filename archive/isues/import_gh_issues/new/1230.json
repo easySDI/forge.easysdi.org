@@ -1,0 +1,14 @@
+{
+    "issue": {
+        "closed": true,
+        "title": "Estimate button displaid in basket even if pricing is not activated",
+        "created_at": "2015-12-22T08:13:17Z",
+        "labels": [
+            "Defect",
+            "Redmine status : Closed",
+            "Category : SHOP"
+        ],
+        "body": "**Original author :** Portier Thomas\n\n\n\n**Fixed versions :** 4.4.0"
+    },
+    "comments": []
+}

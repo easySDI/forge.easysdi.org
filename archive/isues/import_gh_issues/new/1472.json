@@ -1,0 +1,19 @@
+{
+    "issue": {
+        "closed": true,
+        "title": "Metadata edit can be blocked by #1268 if browser caches AJAX query",
+        "created_at": "2019-03-13T12:42:55Z",
+        "labels": [
+            "Defect",
+            "Redmine status : Closed",
+            "Category : CATALOG"
+        ],
+        "body": "**Original author :** Blatti Yves\n\n#1268 introduced an AJAX check to ensure that no more than ONE metadata is opened by every user session.\r\n\r\nThe AJAX GET query may be cache by browsers (IE11), this would block user from editing more than one metadata in a session.\n\n**Fixed versions :** 4.5.1"
+    },
+    "comments": [
+        {
+            "body": "**Original author :** Blatti Yves\n\nRev. 10465",
+            "created_at": "2019-03-13T12:44:21Z"
+        }
+    ]
+}

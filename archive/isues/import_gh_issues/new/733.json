@@ -1,0 +1,27 @@
+{
+    "issue": {
+        "closed": false,
+        "title": "Hide status of search criteria",
+        "created_at": "2014-06-10T08:52:32Z",
+        "labels": [
+            "Feature",
+            "Redmine status : New",
+            "Category : CATALOG"
+        ],
+        "body": "**Original author :** Portier Thomas\n\nThe status of search criteria is not taken into account on front end.\r\nI suggest to fix its value to \"published\" by default and to hide it in th eback office in the list and in the form."
+    },
+    "comments": [
+        {
+            "body": "**Original author :** M\u00e9rour Xavier\n\nYou mean, whatever the status is, the search criteria is visible in FE ?",
+            "created_at": "2014-06-11T08:47:09Z"
+        },
+        {
+            "body": "**Original author :** Portier Thomas\n\nyes",
+            "created_at": "2014-06-11T08:55:43Z"
+        },
+        {
+            "body": "**Original author :** M\u00e9rour Xavier\n\nConcerning this issue, the status \"published\/unpublished\" is redundant with the \"criteria type\" set to \"none\".\r\n(see attachment)\r\n\r\nSo, I agree all search criteria should be set automatically to \"published\" and hiden in back-office.\r\n",
+            "created_at": "2014-07-01T08:58:37Z"
+        }
+    ]
+}

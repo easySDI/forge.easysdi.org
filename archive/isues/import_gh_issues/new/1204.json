@@ -1,0 +1,14 @@
+{
+    "issue": {
+        "closed": true,
+        "title": "4.3.2 Installation files",
+        "created_at": "2015-11-24T09:56:22Z",
+        "labels": [
+            "Defect",
+            "Redmine status : Closed",
+            "Category : CORE"
+        ],
+        "body": "**Original author :** Van Hoecke H\u00e9l\u00e8ne \n\nSome SQL statements are missing in 4.3.2 installation files (but presents in update files)\n\n**Fixed versions :** 4.3.2"
+    },
+    "comments": []
+}

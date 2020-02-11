@@ -1,0 +1,27 @@
+{
+    "issue": {
+        "closed": true,
+        "title": "Switch all the libraries from the backend into frontend",
+        "created_at": "2015-12-04T11:13:08Z",
+        "labels": [
+            "Enhancement",
+            "Redmine status : Closed",
+            "Category : CORE"
+        ],
+        "body": "**Original author :** Portier Thomas\n\nSome users of easySDI want to securize backend access (\/administrator) to only certain IP address.\r\nToday it's not possible because all the common libraries (gxp, openlayers etc...) are stored in the backend.\r\n\r\nThe work that we have to do is to transfer all the libraries from :\r\n- administrator\/components\/com_easysdi_core\/libraries\r\n- administrator\/components\/com_easysdi_core\/libraries\r\n- administrator\/components\/com_easysdi_dashboard\/libraries\r\n- administrator\/components\/com_easysdi_service\/libraries\r\n\r\nto a single : \r\n- administrator\/components\/com_easysdi_core\/libraries\r\n\r\nand find and replace all paths in the code\r\n\n\n**Fixed versions :** 4.4.1"
+    },
+    "comments": [
+        {
+            "body": "**Original author :** Blatti Yves\n\n+1 for me ! Very good idea, many joomla users does that.\r\n\r\nBut be careful : we may have other calls from frontend :\r\n* posts on backend\r\n* ajax calls\r\n* php proxies\r\n* assets (images, css)\r\n* ...",
+            "created_at": "2015-12-04T12:36:45Z"
+        },
+        {
+            "body": "**Original author :** Van Hoecke H\u00e9l\u00e8ne \n\nTC +1",
+            "created_at": "2016-01-14T13:31:20Z"
+        },
+        {
+            "body": "**Original author :** Portier Thomas\n\nWhat I did : \r\n\r\nMove to front : \r\nadministrator\/components\/com_easysdi_core\/libraries\r\n- filesaver\r\n- proj4js-1.1.0\r\n- DataTables-1.9.4\r\n- OpenLayers-2.13.1\r\n- ext\r\n- gemetclient-2.0.0\r\n- geoext\r\n- gxp\r\n- jQuery-File-Upload-9.9.3\r\n- leaflet\r\n- syntaxhighlihter\r\n- tablednd\r\n- ux\r\n- easysdi\/catalog\/addToBasket.js\r\n- easysdi\/catalog\/bootbox.min.js\r\n- easysdi\/catalog\/editMetadata.js\r\n- easysdi\/catalog\/searchMetadata.js\r\n- easysdi\/js\/*.*\r\n- easysdi\/view\/view.js\r\n\r\nadministrator\/components\/com_easysdi_processing\/assets\/js\/params_editors.js\r\nadministrator\/components\/com_easysdi_catalog\/assets\/css\/easysdi_catalog.css\r\nadministrator\/components\/com_easysdi_catalog\/assets\/images\/*.*\r\nadministrator\/components\/com_easysdi_core\/assets\/css\/easysdi_loader.css\r\n\r\nMove from components\/com_easysdi_dashboard\/libraries\/flot-0.8.3 to components\/com_easysdi_core\/libraries\/flot-0.8.3\r\n\r\nDeleted folders :\r\nadministrator\/components\/com_easysdi_core\/libraries\/proj4js-1.4.1\r\nadministrator\/components\/com_easysdi_core\/libraries\/proxy\r\nadministrator\/components\/com_easysdi_core\/libraries\/openlayers\r\nadministrator\/components\/com_easysdi_monitor\/libraries\/ext\r\nadministrator\/components\/com_easysdi_service\/libraries\r\n\r\n",
+            "created_at": "2016-04-14T09:37:39Z"
+        }
+    ]
+}

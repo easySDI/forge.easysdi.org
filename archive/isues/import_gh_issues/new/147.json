@@ -1,0 +1,22 @@
+{
+    "issue": {
+        "closed": false,
+        "title": "Add watermarks & attribution",
+        "created_at": "2010-03-27T12:04:17Z",
+        "labels": [
+            "Feature",
+            "Redmine status : New"
+        ],
+        "body": "**Original author :** M\u00e9rour Xavier\n\nJust an idea... a nice to have feature would be the ability of the PROXY to add watermarks on WMS responses, according to policies for example.\r\n\r\nWhat for :\r\n\r\n- add sources\/copyright\r\n- add restriction use\r\n- display logo or other image"
+    },
+    "comments": [
+        {
+            "body": "**Original author :** M\u00e9rour Xavier\n\nActually, when looking at best practices, there are two kind of info that could be added :\r\n\r\n1. a watermark, means a text or image that would be embeded in the WMS response in the \r\nthis watermark should be added in the middle of the image.\r\n\r\n2. an attribution information, meaning copyright or sources. Example : \"Copyright xxx - licence CC-SA\"\r\nThis information should be added in a corner of the image (normally lower right corner). for more flexibility, the position could be optional (choosen among the four possible corners).",
+            "created_at": "2010-05-28T11:50:12Z"
+        },
+        {
+            "body": "**Original author :** M\u00e9rour Xavier\n\nSome more ideas...\r\n\r\nWatermark and attribution could be managed at two level (with pros and cons) :\r\n\r\n1. policy level\r\nFor each policy declared in the PROXY, an attribution text or watermak could be defined. It is relatively simple to manage. But it means that all attribution infos are always visible, even if only one among five layers are visible (requested by the client).\r\n\r\n\r\n2. layer level\r\nFor each layer, a different attribution or watermark could be defined. This is the more flexible but also the more complexe option to manage. And it addresses problems like how to manage a GetMap request on two layers with two differents attribution or watermark. Merge them in one text before rendering ? \r\nFor complexity reasons, I think this \"layer level\" should not be supported.",
+            "created_at": "2010-05-31T08:16:48Z"
+        }
+    ]
+}

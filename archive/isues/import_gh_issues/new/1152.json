@@ -1,0 +1,23 @@
+{
+    "issue": {
+        "closed": true,
+        "title": "Sort orders in backend desc",
+        "created_at": "2015-09-29T07:51:46Z",
+        "labels": [
+            "Defect",
+            "Redmine status : Closed",
+            "Category : SHOP"
+        ],
+        "body": "**Original author :** Portier Thomas\n\nThe list of orders are sorted from the oldest to the newest. It must be from the newest to the oldest.\n\n**Fixed versions :** 4.3.2"
+    },
+    "comments": [
+        {
+            "body": "**Original author :** Blatti Yves\n\nHi thomas !\r\nI can do it, if you're OK with it",
+            "created_at": "2015-09-29T09:21:14Z"
+        },
+        {
+            "body": "**Original author :** Blatti Yves\n\nrev. 9121\r\nI also displayed the ID (usefull + add the sort on title)",
+            "created_at": "2015-10-06T16:08:06Z"
+        }
+    ]
+}

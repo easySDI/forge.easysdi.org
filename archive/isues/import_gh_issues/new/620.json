@@ -1,0 +1,18 @@
+{
+    "issue": {
+        "closed": false,
+        "title": "Track user activity",
+        "created_at": "2013-05-17T08:57:37Z",
+        "labels": [
+            "Feature",
+            "Redmine status : New"
+        ],
+        "body": "**Original author :** M\u00e9rour Xavier\n\nOften seen as a missing feature, tracking user activity on EasySDI would be great improvement to have a better overview on(for example) :\r\n\r\n\r\n- metadata creation\/update\r\n- user account creation\/update\r\n- geodata upload\r\n- geodata request (SHOP)\r\n- and so on...\r\n\r\nThis features could be added to the DASHBOARD by writing plugins based on \"User Activity component\":https:\/\/projectfork.net\/docs\/23-user-activity\/45-introduction - This component tracks activity based on events, such as saving, updating and deleting data.\r\n\r\nWe could extend the logging capabilities by creating and installing activity plugins which track one or more EasySDI extensions.\r\n\r\nCode source : https:\/\/github.com\/eaxs\/User-Activity\r\n\r\n\r\n"
+    },
+    "comments": [
+        {
+            "body": "**Original author :** M\u00e9rour Xavier\n\nTwo example of a User Activity Stream (attached files) from :\r\n\r\n- Ckan.org (http:\/\/demo.ckan.org\/fr\/dataset\/activity\/afghanistan-election-data)\r\n- Logman component(http:\/\/www.joomlatools.com\/extensions\/logman\/overview)\r\n\r\n",
+            "created_at": "2013-05-17T15:48:50Z"
+        }
+    ]
+}

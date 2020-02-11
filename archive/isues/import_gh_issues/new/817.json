@@ -1,0 +1,13 @@
+{
+    "issue": {
+        "closed": true,
+        "title": "Problem saving default values in SQL Server",
+        "created_at": "2014-09-11T09:52:14Z",
+        "labels": [
+            "Defect",
+            "Redmine status : Closed"
+        ],
+        "body": "**Original author :** Van Hoecke H\u00e9l\u00e8ne \n\nWith an installation on SQL server, some easySDI objects can not be saved because default values set in the database schema are not correctly handle by the joomla SQL server driver : all values are send in SQL query as string that causes problems with int, datetime, etc...\r\n\r\nThe solution is to not use in easySDI classes extending JTable, the method \"$this->reset()\" when you want to load an item. This method initialize the object with the default values set in the database schema, and with SQL Server the types of those values are not well handle. \n\n**Fixed versions :** 4.2.0"
+    },
+    "comments": []
+}

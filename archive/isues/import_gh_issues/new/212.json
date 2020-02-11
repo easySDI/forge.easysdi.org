@@ -1,0 +1,26 @@
+{
+    "issue": {
+        "closed": true,
+        "title": "Aggregate logs add diponibility time columns",
+        "created_at": "2010-09-23T15:27:23Z",
+        "labels": [
+            "Feature",
+            "Redmine status : Rejected"
+        ],
+        "body": "**Original author :** Baud R\u00e9my\n\nWe should add in the aggregate logs the following aggregate times:\r\n-Unavailability\r\n-Failure\r\n-untested\r\n\r\n..Like it is done for the raw logs. It would help for the health graph to make it more meaningfull."
+    },
+    "comments": [
+        {
+            "body": "**Original author :** Baud R\u00e9my\n\nshould be done in this issue:\r\n\r\nhttp:\/\/forge.easysdi.org\/issues\/show\/274",
+            "created_at": "2011-02-17T15:39:57Z"
+        },
+        {
+            "body": "**Original author :** Bergstedt Thomas\n\nAre adding the \r\n-Unavailability\r\n-Failure\r\n-untested \r\nto the aggregate logs so the graph would show it.\r\nin the ticket 274.",
+            "created_at": "2011-08-15T12:26:07Z"
+        },
+        {
+            "body": "**Original author :** Magoni Bruno\n\nRealized in #274 as mentionned by Thomas...",
+            "created_at": "2014-05-18T19:17:40Z"
+        }
+    ]
+}

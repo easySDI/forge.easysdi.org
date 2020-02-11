@@ -1,0 +1,39 @@
+{
+    "issue": {
+        "closed": true,
+        "title": "Add version to javascript call",
+        "created_at": "2015-03-30T08:23:39Z",
+        "labels": [
+            "Defect",
+            "Redmine status : Rejected",
+            "Category : CORE"
+        ],
+        "body": "**Original author :** Portier Thomas\n\nIn order to prevent cache client problems, it would be usefull to add easysdi version to javascript loads as : \r\neditMetadata.js?version=4.3"
+    },
+    "comments": [
+        {
+            "body": "**Original author :** Villemagne J\u00e9r\u00f4me\n\nTC agree on this enhancement :\r\n- this has to be done on all javascript files of easySDI (external libraries included but not Joomla's)\r\n- technical implementation has to be discussed further",
+            "created_at": "2015-04-10T09:20:20Z"
+        },
+        {
+            "body": "**Original author :** Villemagne J\u00e9r\u00f4me\n\nThomas will propose an implementation.",
+            "created_at": "2015-04-10T09:21:18Z"
+        },
+        {
+            "body": "**Original author :** Portier Thomas\n\nYou can close this ticket H\u00e9l\u00e8ne?",
+            "created_at": "2016-04-08T12:26:49Z"
+        },
+        {
+            "body": "**Original author :** M\u00e9rour Xavier\n\nWhy was it rejected ?",
+            "created_at": "2016-05-17T12:17:46Z"
+        },
+        {
+            "body": "**Original author :** Portier Thomas\n\nBecause Yves did it on https:\/\/forge.easysdi.org\/issues\/1244",
+            "created_at": "2016-05-17T13:18:05Z"
+        },
+        {
+            "body": "**Original author :** M\u00e9rour Xavier\n\nRight ;-)",
+            "created_at": "2016-05-17T13:23:38Z"
+        }
+    ]
+}

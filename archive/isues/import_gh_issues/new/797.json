@@ -1,0 +1,27 @@
+{
+    "issue": {
+        "closed": true,
+        "title": "Missing redertype \"checkbox\" for CSW searchfields in CATALOG",
+        "created_at": "2014-08-13T11:20:01Z",
+        "labels": [
+            "Defect",
+            "Redmine status : Closed",
+            "Category : CATALOG"
+        ],
+        "body": "**Original author :** Blatti Yves\n\nIn v2, we can set CSW search fields rendered as: textbox,date and checkbox.\r\nThe checkbox type is missing in V4.\n\n**Fixed versions :** 4.3.2"
+    },
+    "comments": [
+        {
+            "body": "**Original author :** Van Hoecke H\u00e9l\u00e8ne \n\nCorrections made in 4.2.0 rc1 will solve this issue.",
+            "created_at": "2014-10-07T09:59:11Z"
+        },
+        {
+            "body": "**Original author :** Blatti Yves\n\nHi H\u00e9l\u00e8ne,\r\nI re-open this issue since I cannot find any fix in 4.2x or 4.3.x branch.\r\nI suppose there should be an additional line in #__sdi_sys_rendertype_criteriatype and according code to create CSW filter.\r\n\r\nMaybe not merged ? \r\n\r\nThanks for your input on this!",
+            "created_at": "2015-06-17T09:09:02Z"
+        },
+        {
+            "body": "**Original author :** Van Hoecke H\u00e9l\u00e8ne \n\nThis functionnality was just not present in 4.2.0.\r\nIt's added to 4.3.2.",
+            "created_at": "2015-07-31T09:48:30Z"
+        }
+    ]
+}

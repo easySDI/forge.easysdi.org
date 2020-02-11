@@ -1,0 +1,14 @@
+{
+    "issue": {
+        "closed": true,
+        "title": "Basket is missing JText::script for some strings",
+        "created_at": "2015-07-29T09:26:12Z",
+        "labels": [
+            "Defect",
+            "Redmine status : Closed",
+            "Category : SHOP"
+        ],
+        "body": "**Original author :** Blatti Yves\n\nBasket is missing JText::script for some strings\n\n**Fixed versions :** 4.3.2"
+    },
+    "comments": []
+}

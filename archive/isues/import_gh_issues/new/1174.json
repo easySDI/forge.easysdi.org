@@ -1,0 +1,14 @@
+{
+    "issue": {
+        "closed": true,
+        "title": "Relation management panel : cannot add children",
+        "created_at": "2015-11-09T09:43:12Z",
+        "labels": [
+            "Defect",
+            "Redmine status : Closed",
+            "Category : CORE"
+        ],
+        "body": "**Original author :** Van Hoecke H\u00e9l\u00e8ne \n\nWhen defining relation between parent ressource and child(ren), the button \"Add child\" is supposed to be visible when :\r\n- current (parent) ressource is in state \"in progress\" or \"validated\"\r\nor\r\n- current user is ressource manager for the current (parent) ressource.\r\n\r\nIt's not the case.\r\n\r\nThere is a bug in the code testing the visibility of the button. Bug has been introduced with organism manager functionnality.\n\n**Fixed versions :** 4.3.2"
+    },
+    "comments": []
+}

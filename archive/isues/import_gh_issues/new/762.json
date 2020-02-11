@@ -1,0 +1,14 @@
+{
+    "issue": {
+        "closed": true,
+        "title": "language in geographic extent",
+        "created_at": "2014-07-01T07:36:00Z",
+        "labels": [
+            "Defect",
+            "Redmine status : Closed",
+            "Category : CATALOG"
+        ],
+        "body": "**Original author :** Portier Thomas\n\nThe language is not well taken into account in the metadata form if the language user is set to default.\r\n\r\nIt is fixed and commited in my 4.2.0_RC1 release\n\n**Fixed versions :** 4.2.0"
+    },
+    "comments": []
+}

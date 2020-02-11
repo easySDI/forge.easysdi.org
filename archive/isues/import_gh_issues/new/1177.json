@@ -1,0 +1,19 @@
+{
+    "issue": {
+        "closed": true,
+        "title": "deleting an order does not delete order files + attached metadata xml and pdf",
+        "created_at": "2015-11-10T12:05:43Z",
+        "labels": [
+            "Defect",
+            "Redmine status : Closed",
+            "Category : SHOP"
+        ],
+        "body": "**Original author :** Blatti Yves\n\ndeleting an order (in backend) does not delete order files\n\n**Fixed versions :** 4.4.0"
+    },
+    "comments": [
+        {
+            "body": "**Original author :** Blatti Yves\n\nDone using postDeleteHook of controller\r\nrev. 9440",
+            "created_at": "2016-02-02T12:31:12Z"
+        }
+    ]
+}

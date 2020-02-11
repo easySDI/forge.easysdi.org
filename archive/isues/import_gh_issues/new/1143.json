@@ -1,0 +1,27 @@
+{
+    "issue": {
+        "closed": true,
+        "title": "Show the mail and phone of the client in order recap",
+        "created_at": "2015-09-22T10:53:59Z",
+        "labels": [
+            "Enhancement",
+            "Redmine status : Closed",
+            "Category : SHOP"
+        ],
+        "body": "**Original author :** Blatti Yves\n\nWe propose to add the mail and phone of the client in order views for provider and validator.\r\nWe need this for suppliers: when they have questions or problems, the need to be able to contact the client.\r\n\r\nIf the field is not set in contact address (phone), the line will not be shown.\r\n\r\n!show_mail_and_phone_in_recap.png!\r\n\n\n**Fixed versions :** 4.3.2"
+    },
+    "comments": [
+        {
+            "body": "**Original author :** Blatti Yves\n\nDear TC members, can we imagine to talk about it here, and eventually vote on it before the next TC meeting ?\r\nThanks to all !\r\n\r\n(Of course, +1 for me ^^ )",
+            "created_at": "2015-09-22T10:55:07Z"
+        },
+        {
+            "body": "**Original author :** Van Hoecke H\u00e9l\u00e8ne \n\nTC validated this enhancement.",
+            "created_at": "2015-09-28T12:37:44Z"
+        },
+        {
+            "body": "**Original author :** Blatti Yves\n\nrev. 9124\r\nrev. 9129",
+            "created_at": "2015-10-07T11:37:00Z"
+        }
+    ]
+}

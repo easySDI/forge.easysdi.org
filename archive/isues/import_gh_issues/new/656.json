@@ -1,0 +1,14 @@
+{
+    "issue": {
+        "closed": true,
+        "title": "Proxy metadata published filter",
+        "created_at": "2014-03-26T17:04:40Z",
+        "labels": [
+            "Defect",
+            "Redmine status : Closed",
+            "Category : CATALOG"
+        ],
+        "body": "**Original author :** Magoni Bruno\n\nWhen CSW policies restrictions are based on \"published\" state, the PROXY build complementary filters to satisfy such restriction.\r\nThe CQL filter expression takes correctly in charge publish date:\r\n```\n\r\nfilter += \" AND published <= '\" + dateFormat.format(new Date()) + \"'\";\r\n```\n \r\n\r\nbut unfortunately the OGC filter expression is not equivalent\r\n```\n\r\nfilter += \"<ogc:PropertyIsGreaterThanOrEqualTo>\";\r\nfilter += \"<ogc:PropertyName>published<\/ogc:PropertyName>\";\r\nDateFormat dateFormat = new SimpleDateFormat(\"yyyy-MM-dd HH:mm:ss\");\r\nfilter += \"<ogc:Literal>\" + dateFormat.format(new Date()) + \"<\/ogc:Literal>\";\r\nfilter += \"<\/ogc:PropertyIsGreaterThanOrEqualTo>\";\r\n```\n\r\n\r\nFix proposal is to replace @ogc:PropertyIsGreaterThanOrEqualTo@ xml node by @ogc:PropertyIsLessThanOrEqualTo@ into https:\/\/forge.easysdi.org\/projects\/easysdi\/repository\/entry\/trunk\/java\/easysdi\/proxy\/src\/main\/java\/org\/easysdi\/proxy\/csw\/CSWProxyDataAccessibilityManager.java#L814\r\n\n\n**Fixed versions :** 4.0.1"
+    },
+    "comments": []
+}

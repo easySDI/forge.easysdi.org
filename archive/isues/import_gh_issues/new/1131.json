@@ -1,0 +1,19 @@
+{
+    "issue": {
+        "closed": true,
+        "title": "Pricing : when a product has fee without profile is updated via EXTRACT interface, the pricing branch is not correctly updated",
+        "created_at": "2015-09-16T08:04:09Z",
+        "labels": [
+            "Defect",
+            "Redmine status : Closed",
+            "Category : SHOP"
+        ],
+        "body": "**Original author :** Blatti Yves\n\nPricing :\r\nWhen an order containing at least a product with 'fee without profile' is updated via EXTRACT interface, the pricing branch is not correctly updated:\r\n* The pricing branch should be updated only when all product have a price (do not 'increment' totals)\r\n* The totals should include the fees at all level (provider and order)\r\n* The saved configuration at the time of the order (fees and pricing policies) should be applied\r\n\r\nPlus:\r\n* The update method should be place in the component helper to be user by the _manual process_ (_request_ controller)\n\n**Fixed versions :** 4.3.2"
+    },
+    "comments": [
+        {
+            "body": "**Original author :** Blatti Yves\n\nrev 9094",
+            "created_at": "2015-09-16T17:43:03Z"
+        }
+    ]
+}

@@ -1,0 +1,19 @@
+{
+    "issue": {
+        "closed": true,
+        "title": "Sitemap exposes resources with non public access scope",
+        "created_at": "2017-04-10T11:35:15Z",
+        "labels": [
+            "Defect",
+            "Redmine status : Closed",
+            "Category : CATALOG"
+        ],
+        "body": "**Original author :** Blatti Yves\n\nSitemap exposes resources with non public access scope in <sdiURL>\/component\/easysdi_catalog\/sitemap\/generateSitemap.\r\n\r\nSQL query get the wrong table's accessscope (metadata instead of resource)\n\n**Fixed versions :** 4.5.0"
+    },
+    "comments": [
+        {
+            "body": "**Original author :** Blatti Yves\n\nrev. 10161",
+            "created_at": "2017-04-10T11:40:37Z"
+        }
+    ]
+}

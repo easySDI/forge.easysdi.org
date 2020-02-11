@@ -1,0 +1,19 @@
+{
+    "issue": {
+        "closed": true,
+        "title": "#__sdi_order_diffusion : remark size",
+        "created_at": "2015-11-13T14:34:08Z",
+        "labels": [
+            "Defect",
+            "Redmine status : Closed",
+            "Category : SHOP"
+        ],
+        "body": "**Original author :** Blatti Yves\n\nSame problem as #1083 : the remark size has been shortened from 4000 to 500 chars for order_diffusion.\r\nWe have to extend this to 4000 (where have data truncation in v2->v4)\n\n**Fixed versions :** 4.3.2"
+    },
+    "comments": [
+        {
+            "body": "**Original author :** Blatti Yves\n\nrev. 9232",
+            "created_at": "2015-11-13T14:39:52Z"
+        }
+    ]
+}

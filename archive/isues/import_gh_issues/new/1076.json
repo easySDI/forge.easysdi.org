@@ -1,0 +1,19 @@
+{
+    "issue": {
+        "closed": true,
+        "title": "Remove COM_EASYSDI_CATALOGE* (#787)",
+        "created_at": "2015-08-04T11:29:31Z",
+        "labels": [
+            "Defect",
+            "Redmine status : Closed",
+            "Category : CATALOG"
+        ],
+        "body": "**Original author :** Blatti Yves\n\nIn #787 we waited for erroneous translation strings to be removed from code.\r\nWe can now remove them from translation files.\n\n**Fixed versions :** 4.3.2"
+    },
+    "comments": [
+        {
+            "body": "**Original author :** Blatti Yves\n\nrev. 8897",
+            "created_at": "2015-08-04T12:50:55Z"
+        }
+    ]
+}

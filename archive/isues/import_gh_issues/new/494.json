@@ -1,0 +1,19 @@
+{
+    "issue": {
+        "closed": true,
+        "title": "Add WMTS support",
+        "created_at": "2011-12-06T11:04:27Z",
+        "labels": [
+            "Feature",
+            "Redmine status : Closed",
+            "Category : MAP"
+        ],
+        "body": "**Original author :** Portier Thomas\n\nAdd the WMTS support for the map\n\n**Fixed versions :** 4.0.0"
+    },
+    "comments": [
+        {
+            "body": "**Original author :** M\u00e9rour Xavier\n\nFor info Thomas :  GeoExt 1.1 now support printing of WMTS layer (in REST, not KVP) -> http:\/\/trac.geoext.org\/wiki\/Release\/1.1\/Notes",
+            "created_at": "2011-12-23T14:19:11Z"
+        }
+    ]
+}

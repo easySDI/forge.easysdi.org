@@ -1,0 +1,19 @@
+{
+    "issue": {
+        "closed": true,
+        "title": "extend access scope for PROXY",
+        "created_at": "2014-03-14T09:07:37Z",
+        "labels": [
+            "Feature",
+            "Redmine status : Rejected",
+            "Category : PROXY"
+        ],
+        "body": "**Original author :** M\u00e9rour Xavier\n\nThe idea is to add the possibility to choose one or n categorie of organism when defining a policy in the PROXY.\r\n\r\n!! need to address the aggregation issue of policies (the same user could have two policies for one service)\r\n\r\nto be more described."
+    },
+    "comments": [
+        {
+            "body": "**Original author :** Blatti Yves\n\nDuplicated by and closes by #1156",
+            "created_at": "2016-02-03T14:17:26Z"
+        }
+    ]
+}

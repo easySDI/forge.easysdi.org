@@ -1,0 +1,13 @@
+{
+    "issue": {
+        "closed": true,
+        "title": "Hidden fields being displayed",
+        "created_at": "2013-01-11T16:05:15Z",
+        "labels": [
+            "Defect",
+            "Redmine status : Rejected"
+        ],
+        "body": "**Original author :** Van Hoecke H\u00e9l\u00e8ne \n\n1\/ Fields being set as hidden for editor are succesfully hidden but the surrouding fieldsets are displayed.\r\n2\/ The guid of a metadata is still visible even if is visibility is set to hidden for editor\r\n\r\n"
+    },
+    "comments": []
+}

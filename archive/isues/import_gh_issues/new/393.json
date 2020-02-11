@@ -1,0 +1,22 @@
+{
+    "issue": {
+        "closed": true,
+        "title": "Map Configuration ",
+        "created_at": "2011-05-19T09:34:48Z",
+        "labels": [
+            "Defect",
+            "Redmine status : Closed"
+        ],
+        "body": "**Original author :** Drapeau laurent\n\nHi \r\n\r\nMy joomla site is in english. When i installed EasySDI everything went fine, except that the menu from the configuration panel still display the info in French while other menus are in English ...\r\n\r\n\n\n**Fixed versions :** 4.0.0"
+    },
+    "comments": [
+        {
+            "body": "**Original author :** M\u00e9rour Xavier\n\nHello,\r\n\r\nPossibly, the menu item title are not translated in English but is a copy of the french version. Have a look at in this file to check this :\r\n\r\nweb\/administrator\/language\/en-GB\/en-GB.com_easysdi_map.ini\r\n\r\nXavier",
+            "created_at": "2011-05-24T06:33:00Z"
+        },
+        {
+            "body": "**Original author :** M\u00e9rour Xavier\n\nlaurent, any follow-up on this issue ?",
+            "created_at": "2011-06-14T12:57:01Z"
+        }
+    ]
+}

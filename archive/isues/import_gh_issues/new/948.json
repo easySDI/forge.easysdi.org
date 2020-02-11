@@ -1,0 +1,19 @@
+{
+    "issue": {
+        "closed": true,
+        "title": "Basket : not using plural string",
+        "created_at": "2015-03-20T16:15:28Z",
+        "labels": [
+            "Defect",
+            "Redmine status : Closed",
+            "Category : SHOP"
+        ],
+        "body": "**Original author :** Blatti Yves\n\nBasket does not use Joomla plural system, we end up having strings like:\r\n\"1 donn\u00e9e(s) ...\"\r\n\"Donn\u00e9e(s) fournie(s) par : ...\"\r\n\n\n**Fixed versions :** 4.3.1"
+    },
+    "comments": [
+        {
+            "body": "**Original author :** Blatti Yves\n\nIn my sandbox",
+            "created_at": "2015-03-23T08:57:31Z"
+        }
+    ]
+}

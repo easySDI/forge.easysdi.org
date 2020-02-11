@@ -1,0 +1,31 @@
+{
+    "issue": {
+        "closed": true,
+        "title": "Define bootbox style and strings",
+        "created_at": "2015-05-15T09:24:58Z",
+        "labels": [
+            "Enhancement",
+            "Redmine status : Closed",
+            "Category : CATALOG"
+        ],
+        "body": "**Original author :** Blatti Yves\n\nBootbox confirm modals currently use default style and strings.\r\nTwo things can be improved:\r\n- text: we can set the buttons texts. (Currently the default has strange translations in french : \"D'accord\")\r\n- style: we can set some specific classes, like btn-danger for deletions.\n\n**Fixed versions :** 4.4.0"
+    },
+    "comments": [
+        {
+            "body": "**Original author :** Blatti Yves\n\nTodo in catalog (remove nodes, etc)",
+            "created_at": "2015-05-15T09:35:14Z"
+        },
+        {
+            "body": "**Original author :** Blatti Yves\n\nNotes:\r\n* We're using bootbox 3.x. Here's the doc: http:\/\/bootboxjs.com\/v3.x\/documentation.html\r\n\r\n* Bootbox locales: \r\nBootbox locales are very simple: 3 string only.\r\nIf needed we can use addLocale method (that allows override of existing locales), and set it with esaySDI translated strings.\r\n```\n\r\nbootbox.addLocale('fr' , {\r\n            OK      : 'OK',\r\n            CANCEL  : 'Annuler',\r\n            CONFIRM : 'Confirmer'\r\n        });\r\n```\n\r\n\r\n* When we need custom text on buttons (but standard classes) : \r\n```\n\r\nbootbox.confirm('Est-tu vraiment s\u00fbr??', 'Annuler', 'Ouais, super s\u00fbr de moi!', function(e){alert('plop')});\r\n```\n\r\n\r\n* For custom classes, I think we have to make a custom dialog :\r\n```\n\r\nbootbox.dialog(\"Voulez-vous supprimer ?\",\r\n[{\r\n    \"label\" : \"Annuler\"\r\n    \r\n}, {\r\n    \"label\" : \"Supprimer\",\r\n    \"class\" : \"btn-danger\",\r\n    \"callback\": function() {\r\n        alert('now delete !');\r\n    }\r\n}]);\r\n```\n",
+            "created_at": "2015-05-18T07:53:16Z"
+        },
+        {
+            "body": "**Original author :** Blatti Yves\n\nAdd overrides in core lang file as all libs are in core.\r\nProposed values:\r\nde:{OK:\"OK\",CANCEL:\"Abbrechen\",CONFIRM:\"Akzeptieren\"}\r\nen:{OK:\"OK\",CANCEL:\"Cancel\",CONFIRM:\"Confirm\"}\r\nfr:{OK:\"OK\",CANCEL:\"Annuler\",CONFIRM:\"Confirmer\"}\r\n\r\n",
+            "created_at": "2016-02-10T07:54:48Z"
+        },
+        {
+            "body": "**Original author :** Blatti Yves\n\nrev. 9464\r\nTodo : -crowdin- done",
+            "created_at": "2016-02-10T09:18:05Z"
+        }
+    ]
+}

@@ -1,0 +1,14 @@
+{
+    "issue": {
+        "closed": true,
+        "title": "Issue when deleting a resource",
+        "created_at": "2014-09-25T09:04:20Z",
+        "labels": [
+            "Defect",
+            "Redmine status : Closed",
+            "Category : CORE"
+        ],
+        "body": "**Original author :** Van Hoecke H\u00e9l\u00e8ne \n\nTwo cases :\r\n\r\n1\/ Resource object is not deleted when the last version of it is deleted\r\nWhen deleting the last version of a resource, the resource itself must be deleted and it's not the case.\r\nThe confirmation message, which popped up after the deletion request, is right : it asks a confirmation for the resource deletion, but only linked metatada and version are removed.\r\nFor now, SQL requests are the only way to cleared the database of the obsolete resource objects.\r\n\r\n2\/ If the XML metadata is not found in geonetwork, the database objects are not deleted\r\nIf for any reason, the XML metadata of the resource is not found in geonetwork, easySDI abort the deletion process.\r\nIt should going on and delete all objects related to this non existing metadata (resource, version and metadata entries).\n\n**Fixed versions :** 4.4.1"
+    },
+    "comments": []
+}

@@ -1,0 +1,13 @@
+{
+    "issue": {
+        "closed": true,
+        "title": "Cleaning E_STRICT messages",
+        "created_at": "2012-10-03T20:59:57Z",
+        "labels": [
+            "Defect",
+            "Redmine status : Closed"
+        ],
+        "body": "**Original author :** Magoni Bruno\n\n*PHP 5 conformance*\r\n> \"As of PHP 5, the new operator returns a reference automatically, so assigning the result of new by reference results in an E_DEPRECATED message in PHP 5.3 and later, and an E_STRICT message in earlier versions.\"\r\n\r\nEncountered messages must be fixed inside EasySDI installers and extensions to conform with PHP 5 coding rules:\r\n* Strict Standards: Only variables should be assigned by reference --> remove @&@ pointer before called reference\r\n\r\n\n\n**Fixed versions :** 3.1.0"
+    },
+    "comments": []
+}

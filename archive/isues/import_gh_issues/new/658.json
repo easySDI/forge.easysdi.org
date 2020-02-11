@@ -1,0 +1,14 @@
+{
+    "issue": {
+        "closed": false,
+        "title": "Adding Boolean stereotype",
+        "created_at": "2014-03-27T14:50:47Z",
+        "labels": [
+            "Feature",
+            "Redmine status : New",
+            "Category : CATALOG"
+        ],
+        "body": "**Original author :** Magoni Bruno\n\nThe gco:Boolean stereotype is not implemented inside easysdi, and for now can be managed through an easySDI metadata list.\r\n\r\nImplementing Boolean stereotype should follow such implementation http:\/\/www.schemacentral.com\/sc\/xsd\/t-xsd_boolean.html"
+    },
+    "comments": []
+}

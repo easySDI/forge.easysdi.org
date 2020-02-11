@@ -1,0 +1,19 @@
+{
+    "issue": {
+        "closed": true,
+        "title": "Manual products price is not saved in pricing tables but in the old \"fee\" field",
+        "created_at": "2015-08-21T08:00:32Z",
+        "labels": [
+            "Defect",
+            "Redmine status : Closed",
+            "Category : SHOP"
+        ],
+        "body": "**Original author :** Blatti Yves\n\nManual products price is not saved in pricing tables but in the old \"fee\" field.\r\nThis is inconsistent.\n\n**Fixed versions :** 4.3.2"
+    },
+    "comments": [
+        {
+            "body": "**Original author :** Blatti Yves\n\nrev 9020",
+            "created_at": "2015-09-09T16:12:00Z"
+        }
+    ]
+}

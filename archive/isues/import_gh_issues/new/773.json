@@ -1,0 +1,39 @@
+{
+    "issue": {
+        "closed": false,
+        "title": "Resource language compliant with INSPIRE directive",
+        "created_at": "2014-07-15T07:42:40Z",
+        "labels": [
+            "Feature",
+            "Redmine status : Accepted",
+            "Category : CATALOG"
+        ],
+        "body": "**Original author :** Magoni Bruno\n\nRegarding INSPIRE implementation rules (V1.3), there are two ways of inserting the language\r\n```\n\r\nExamples of XML encoding:\r\n1) Most interoperable: the element value repeats the codeListValue\r\n<gmd:language>\r\n<gmd:LanguageCode codeList=\"http:\/\/www.loc.gov\/standards\/iso639-2\/\" codeListValue=\"eng\">eng<\/gmd:LanguageCode>\r\n<\/gmd:language>\r\n2) Most compliant: the element value is the name of the codeListValue expressed in the\r\ndefault language of the Metadata\r\n<gmd:language>\r\n<gmd:LanguageCode codeList=\"http:\/\/www.loc.gov\/standards\/iso639-2\/ \" codeListValue=\"eng\">English<\/gmd:LanguageCode>\r\n<\/gmd:language>\r\n```\n\r\n\r\n* most compliant: the element value is the name of the codeListValue expressed in the default language of the metadata (ej: if the metadata is filled in English, the values should be English, Spanish, French\u2026)\r\n* most interoperable: the element value repeats the codeListValue (ej: eng for English, spa for Spanish, fre for French\u2026)\r\n\r\nSuch option should be proposed in easySDI CATALOG configuration as many catalogues are implementing such feature in a different ways. Per default behaviour could be the most compliant way...\n\n**Fixed versions :** Unplanned"
+    },
+    "comments": [
+        {
+            "body": "**Original author :** M\u00e9rour Xavier\n\n@Bruno\r\nI do not find the XML sample ? Can you attach it again please ?",
+            "created_at": "2014-07-28T13:10:39Z"
+        },
+        {
+            "body": "**Original author :** Magoni Bruno\n\nHi Xavier,\r\n\r\nSorry for missing copy-paste samples. it's done inside updated feature's description.\r\n",
+            "created_at": "2014-08-03T17:57:15Z"
+        },
+        {
+            "body": "**Original author :** Magoni Bruno\n\nNeed to communicate which manipulation should be done on already saved metadata regarding implementation of such feature.\r\nAccepted by everyone...",
+            "created_at": "2014-09-05T08:44:49Z"
+        },
+        {
+            "body": "**Original author :** Teixeira J\u00e9r\u00f4me\n\n+ 1",
+            "created_at": "2014-10-07T10:10:00Z"
+        },
+        {
+            "body": "**Original author :** M\u00e9rour Xavier\n\n+1",
+            "created_at": "2014-10-07T10:13:09Z"
+        },
+        {
+            "body": "**Original author :** Magoni Bruno\n\n+1",
+            "created_at": "2014-10-07T10:13:11Z"
+        }
+    ]
+}

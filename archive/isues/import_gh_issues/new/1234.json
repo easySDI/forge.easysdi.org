@@ -1,0 +1,14 @@
+{
+    "issue": {
+        "closed": true,
+        "title": "Catalog search on \"last version\" ",
+        "created_at": "2016-01-08T08:07:33Z",
+        "labels": [
+            "Defect",
+            "Redmine status : Closed",
+            "Category : CATALOG"
+        ],
+        "body": "**Original author :** Van Hoecke H\u00e9l\u00e8ne \n\nCatalog search on \"last version\"  doesn't return the last version if a new version is schedule to be published in the future.\n\n**Fixed versions :** 4.3.3"
+    },
+    "comments": []
+}

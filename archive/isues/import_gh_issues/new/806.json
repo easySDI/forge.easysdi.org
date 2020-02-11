@@ -1,0 +1,13 @@
+{
+    "issue": {
+        "closed": false,
+        "title": "New stereotype : Resource Type (for HierarchyLevel and HierarchyLevelName)",
+        "created_at": "2014-08-19T13:07:13Z",
+        "labels": [
+            "Feature",
+            "Redmine status : New"
+        ],
+        "body": "**Original author :** Blatti Yves\n\nISO Model imposes to fill HierarchyLevel and HierarchyLevelName if not a dataset.\r\nA stereotype could fill those information using easySDI resource type."
+    },
+    "comments": []
+}

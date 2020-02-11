@@ -1,0 +1,23 @@
+{
+    "issue": {
+        "closed": true,
+        "title": "\"User perimeter\" should be an option",
+        "created_at": "2014-11-04T12:51:34Z",
+        "labels": [
+            "Enhancement",
+            "Redmine status : Closed",
+            "Category : SHOP"
+        ],
+        "body": "**Original author :** Blatti Yves\n\nThe feature in shop \"User perimeter\" or \"my perimeter\" should be a platform option.\r\nIf a platform doesn't use this feature (users don't have a perimeter), the selection of \"my perimeter\" in a diffusion is problematic.\r\n\r\nWe should introduce a SHOP option to disable this feature, which will drive:\r\n- the visibility of the perimeter list offered in screen (hide \"my perimeter\")\r\n- the \"restrict to user perimeter\" choice\n\n**Fixed versions :** 4.3.1"
+    },
+    "comments": [
+        {
+            "body": "**Original author :** Van Hoecke H\u00e9l\u00e8ne \n\nTC validates.",
+            "created_at": "2015-03-06T08:44:51Z"
+        },
+        {
+            "body": "**Original author :** M\u00e9rour Xavier\n\nTranslation done in crowdin !",
+            "created_at": "2015-04-17T07:35:42Z"
+        }
+    ]
+}

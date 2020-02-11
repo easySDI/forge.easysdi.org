@@ -1,0 +1,43 @@
+{
+    "issue": {
+        "closed": true,
+        "title": "WPS for SHOP : remote user identification",
+        "created_at": "2009-04-17T16:18:28Z",
+        "labels": [
+            "Feature",
+            "Redmine status : Closed",
+            "Category : SHOP"
+        ],
+        "body": "**Original author :** M\u00e9rour Xavier\n\nThe identification of remote users for accessing the SHOP WPS is today a unique couple login\/password + the joomla user login.\r\n\r\nFor more security, it would be better to use the *guid* (known as \"code\" in PARTNER administration) instead of the joomla user login.\r\n\r\n\n\n**Fixed versions :** 4.0.0"
+    },
+    "comments": [
+        {
+            "body": "**Original author :** M\u00e9rour Xavier\n\nI suggest to keep this in mind and try to integrate it for V3.\r\nAny input ?",
+            "created_at": "2012-06-01T17:03:23Z"
+        },
+        {
+            "body": "**Original author :** Magoni Bruno\n\nIn easySDI V4, SHOP WPS will be replaced by a SHOP REST service.\r\nSuch service will authenticate requester with http basic authentication. Login will be stored in easySDI and attached to each organism. Such REST service will be secured with SSL\/TLS encryption.",
+            "created_at": "2013-12-20T15:10:16Z"
+        },
+        {
+            "body": "**Original author :** M\u00e9rour Xavier\n\nthis ticket should be updated with the last \"state\" of the WPS (what was finally done for V4.0.0 release).",
+            "created_at": "2014-03-18T20:25:09Z"
+        },
+        {
+            "body": "**Original author :** Magoni Bruno\n\nHi Xavier,\r\n\r\nAs this feature is available in easySDI V4, I suggest to close it.\r\nI guess that WPS technical description has a better place inside Wiki than this ticket. Part of the global documentation to write about easySDI...",
+            "created_at": "2014-03-19T12:12:21Z"
+        },
+        {
+            "body": "**Original author :** M\u00e9rour Xavier\n\nYou are right for the doc.\r\n\r\nMy question was more : what is the delta (if there is one) beetween the first description of the ticket (use of GUID, WPS in REST,...) and the delivered WPS.\r\n\r\n\r\n",
+            "created_at": "2014-03-19T13:18:31Z"
+        },
+        {
+            "body": "**Original author :** Magoni Bruno\n\nHi Xavier,\r\n\r\nI will resume what is implemented in this new PHP WPS service.\r\n\r\n* the PHP WPS service replaces totally the WPS Java servlet\r\n* the WPS service asks always an HTTP basic authentication for any call (it's important to secure this service with SSL)\r\n* the SHOP options allows Administrator to define which easySDI account is used for a global authentication on WPS service (managing all requests of all organisms)\r\n* the Administrator is able to define, inside the \"extraction\" tab, the authentication login for each organism (managing all requests of this organism)\r\n\r\nI hope it is clearer :-)",
+            "created_at": "2014-03-21T11:54:59Z"
+        },
+        {
+            "body": "**Original author :** M\u00e9rour Xavier\n\nThanks Bruno for those precisions.\r\n\r\n",
+            "created_at": "2014-03-21T12:59:52Z"
+        }
+    ]
+}

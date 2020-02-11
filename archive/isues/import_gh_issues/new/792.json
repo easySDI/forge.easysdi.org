@@ -1,0 +1,19 @@
+{
+    "issue": {
+        "closed": true,
+        "title": "MAP CSS problem in basket",
+        "created_at": "2014-08-05T11:35:23Z",
+        "labels": [
+            "Defect",
+            "Redmine status : Closed",
+            "Category : MAP"
+        ],
+        "body": "**Original author :** Blatti Yves\n\nIn basket, the map is not correctly styled with gxp extensions (it uses the default openlayer style for some elements) see screenshot.\r\n\r\nIt seems that the problem comes from openlayers loading the @\/administrator\/components\/com_easysdi_core\/libraries\/OpenLayers-2.13.1\/theme\/default\/style.css@ \r\nafter \r\n@\/administrator\/components\/com_easysdi_core\/libraries\/openlayers\/theme\/default\/style.css@\r\nand \r\n@\/administrator\/components\/com_easysdi_core\/libraries\/gxp\/theme\/all.css@\r\n(in that order, because all.css overrides some OL classes)\r\n\r\nI tried this with our template, and with protostar, no change.\r\nI cannot see this problem on si-17.\r\nI cannot say if it has been introduced recently, because we didn't have a functional MAP before. (Bur recent OL changes may be the cause)\r\n\r\n\r\n\r\n\n\n**Fixed versions :** 4.3.0"
+    },
+    "comments": [
+        {
+            "body": "**Original author :** Blatti Yves\n\nSince Openlayers libraries have been changed changed (OL 2.13), we have to change CSS path in MAP helper.\r\nOtherwise Openlayers loads CSS on it's own, after GXP theme, and overwrites it.\r\n\r\n\r\nIn: \\components\\com_easysdi_map\\helpers\\easysdi_map.php line 37:\r\nreplace \r\n```\n\r\n$doc->addStyleSheet($base_url . '\/openlayers\/theme\/default\/style.css');\r\n```\n\r\n\r\nby\r\n\r\n```\n\r\n$doc->addStyleSheet($base_url . '\/OpenLayers-2.13.1\/theme\/default\/style.css');\r\n```\n",
+            "created_at": "2015-02-23T12:25:44Z"
+        }
+    ]
+}

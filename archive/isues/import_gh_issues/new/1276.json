@@ -1,0 +1,14 @@
+{
+    "issue": {
+        "closed": true,
+        "title": "Multiselect default value is always saved, even if there's another value selected",
+        "created_at": "2016-03-03T09:43:27Z",
+        "labels": [
+            "Defect",
+            "Redmine status : Closed",
+            "Category : CATALOG"
+        ],
+        "body": "**Original author :** Blatti Yves\n\nMulti select default value is always saved, even if there's another value selected\r\n\r\nIf there's not default value set in back-end (relations), it works BUT the validation test does not work.\n\n**Fixed versions :** 4.4.2"
+    },
+    "comments": []
+}

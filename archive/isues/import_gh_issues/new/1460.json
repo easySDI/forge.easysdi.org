@@ -1,0 +1,14 @@
+{
+    "issue": {
+        "closed": true,
+        "title": "Cancel plugin",
+        "created_at": "2018-11-20T14:27:47Z",
+        "labels": [
+            "Enhancement",
+            "Redmine status : Closed",
+            "Category : EXTRACT"
+        ],
+        "body": "**Original author :** Blatti Yves\n\n*Description*\r\n\r\n* New task plugin\r\n* When executing the task:\r\n** The task changes the element to \"rejected\" (rejected = true)\r\n** The task defines the remark with the one configured in the interface (called \"Reason for cancellation\" in the interface)\r\n** If a remark is present before the cancellation step, it is overwritten by the reason for the cancellation\r\n* Example of use: to cancel an out-of-area element\r\n** 1) Create a new treatment, give it a name (e. g. \"Direct cancellation\")\r\n** 2) Add the cancellation plugin (often, the cancellation plugin will be the only one in the process)\r\n** 3) Define the Reason for cancellation: \"Sorry, we don't have any data on this area\"\r\n** 4) Add a rule that points to this treatment, for example, geographical rule \"If the perimeter is outside the area\".\r\n@perimeter disjoint POLYGON((6.82 46.82 46.39,6.92 46.39,6.92 46.19,6.92 46.19,6.92 46.19,6.82 46.39))@\r\n** 5) Place this rule at the top, so that it matches first if necessary\r\n** From now on, any out-of-area orders will be cancelled with the Reason for cancellation defined in the interface as follows\r\n\r\n*Configuration interface*\r\n\r\n* Plugin name in French: Annulation\r\n* Description in the drag\/dropper block: \"Cancels processing and defines the remark for the customer\" \/ \"Annule le traitement et d\u00e9finit la remarque pour le client\"\r\n* Icon class: \"fa-ban\"\r\n* Settings :\r\n** \"Reason for cancellation\", type: textarea, mandatory\r\n* Help message (tooltip)\r\n** \"This plugin allows you to cancel the processing of an element and define the reason for the cancellation in the remark to the customer.\r\n   If a remark exists it will be overwritten by the reason for the cancellation.\"\r\n** \"Ce plugin permet d'annuler le traitement d'un \u00e9l\u00e9ment et de d\u00e9finit inscrit la raison de l'annulation dans la remarque au client.\r\nSi une remarque existe elle sera \u00e9cras\u00e9e par la raison de l'annulation.\"\r\n\r\n*Models*\r\n\r\nNew drag dropper block + block in the processing process:\r\n\r\n!16683-plugin-annulation-full.png!\r\n\r\nHelp tooltip:\r\n\r\n!16683-plugin-annulation-tooltip.png!\r\n\r\nSource : https:\/\/projets.asitvd.ch\/issues\/16683\n\n**Fixed versions :** 4.5.1"
+    },
+    "comments": []
+}

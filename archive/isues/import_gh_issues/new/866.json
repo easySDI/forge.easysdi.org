@@ -1,0 +1,19 @@
+{
+    "issue": {
+        "closed": true,
+        "title": "Error in diffusion table binding",
+        "created_at": "2014-11-19T10:15:06Z",
+        "labels": [
+            "Defect",
+            "Redmine status : Closed",
+            "Category : SHOP"
+        ],
+        "body": "**Original author :** Blatti Yves\n\n```\n\r\nWarning: Illegal string offset 'perimeter' in C:\\wamp2.2\\vhosts\\dev\\administrator\\components\\com_easysdi_shop\\tables\\diffusion.php\r\n```\n\r\n\r\nProblem is that binding uses JForm for default values. Outside of edit form, the JForm array doesn't exists.\r\nIntroduced \"here\":https:\/\/forge.easysdi.org\/projects\/easysdi\/repository\/annotate\/branches\/4.3.x\/joomla\/easysdi\/com_easysdi_shop\/src\/administrator\/tables\/diffusion.php#L38\r\n\r\nPatch is to test existence of JForm array\n\n**Fixed versions :** 4.3.0"
+    },
+    "comments": [
+        {
+            "body": "**Original author :** Blatti Yves\n\nIn my sandbox",
+            "created_at": "2014-11-19T15:09:05Z"
+        }
+    ]
+}

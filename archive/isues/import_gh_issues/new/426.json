@@ -1,0 +1,31 @@
+{
+    "issue": {
+        "closed": true,
+        "title": "Change Monitor servlet name and web.xml",
+        "created_at": "2011-06-27T14:13:00Z",
+        "labels": [
+            "Feature",
+            "Redmine status : Rejected",
+            "Category : MONITOR"
+        ],
+        "body": "**Original author :** M\u00e9rour Xavier\n\nAs suggested here #399, and if PSC validate this change, we could take benefit of the new MONITOR release to adapt the servlet name to get uniformized EasySDI names.\r\n\r\ncurrent name : Monitor\r\nnew name : sdi_monitor\r\n\r\nNew web.xml would be adapted as well.\r\n\r\n_Does it impl a lot in term of code change ?_\r\n\r\n\r\n\r\n"
+    },
+    "comments": [
+        {
+            "body": "**Original author :** M\u00e9rour Xavier\n\nAccepted according to  #399",
+            "created_at": "2011-07-05T12:16:40Z"
+        },
+        {
+            "body": "**Original author :** M\u00e9rour Xavier\n\nDoes this still make sense ?",
+            "created_at": "2014-04-28T11:54:22Z"
+        },
+        {
+            "body": "**Original author :** Magoni Bruno\n\nHi Xavier,\r\n\r\nIn my opinion it doesn't make sense anymore!\r\nSo I suggest to reject this feature, if you agree with.\r\n\r\nBruno",
+            "created_at": "2014-07-17T19:14:04Z"
+        },
+        {
+            "body": "**Original author :** M\u00e9rour Xavier\n\nAgree",
+            "created_at": "2014-07-19T15:45:16Z"
+        }
+    ]
+}

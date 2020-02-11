@@ -1,0 +1,19 @@
+{
+    "issue": {
+        "closed": true,
+        "title": "Typo in category check (if statement)",
+        "created_at": "2016-12-21T14:33:11Z",
+        "labels": [
+            "Defect",
+            "Redmine status : Closed",
+            "Category : CATALOG"
+        ],
+        "body": "**Original author :** Blatti Yves\n\nTypo in category check (if statement):\r\n\\components\\com_easysdi_catalog\\controllers\\metadata.php\r\nand\r\n\\components\\com_easysdi_catalog\\libraries\\easysdi\\SearchJForm.php\r\n\r\n```\n\r\nis_null($caegories) -> is_null($categories)\r\n```\n\n\n**Fixed versions :** 4.4.4"
+    },
+    "comments": [
+        {
+            "body": "**Original author :** Blatti Yves\n\nrev. 10056",
+            "created_at": "2016-12-21T14:33:46Z"
+        }
+    ]
+}

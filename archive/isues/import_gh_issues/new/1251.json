@@ -1,0 +1,13 @@
+{
+    "issue": {
+        "closed": true,
+        "title": "Filter 'last version' in catalogue search",
+        "created_at": "2016-01-26T14:42:48Z",
+        "labels": [
+            "Defect",
+            "Redmine status : Closed"
+        ],
+        "body": "**Original author :** Battaglia Marc\n\nLorsque l'on publie la m\u00e9tadonn\u00e9e depuis le formulaire d'\u00e9dition, la m\u00e9thode changeStatusAndSave est appel\u00e9e : l'attribut \"endpublished\" est bien mis \u00e0 jour\r\nLorsque l'on publie la m\u00e9tadonn\u00e9e depuis la liste des ressources, la m\u00e9thode changeStatusAndUpdate est appel\u00e9e : l'attribut \"endpublished\" n'est pas mis \u00e0 jour --> c'est ce cas qui est \u00e0 corriger.\n\n**Fixed versions :** 4.3.3"
+    },
+    "comments": []
+}

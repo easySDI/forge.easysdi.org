@@ -1,0 +1,35 @@
+{
+    "issue": {
+        "closed": true,
+        "title": "Remove version info if version management is disabled.",
+        "created_at": "2011-08-24T13:38:47Z",
+        "labels": [
+            "Feature",
+            "Redmine status : Closed",
+            "Category : CATALOG"
+        ],
+        "body": "**Original author :** M\u00e9rour Xavier\n\nFor each object type, the administrator can able\/disable the management of versions.\r\n\r\nIf he\/she disable it, I would suggest to remove any reference to versioning in the different UI -> it gives uneeded information and overcharge the screen.\r\n\r\nExample here where version info could be removed (red square) :\r\nhttp:\/\/www.webpagescreenshot.info\/img\/412927-824201143442PM\r\n\r\n@Bruno\r\nDo you see any drawbacks by doing this ?\n\n**Fixed versions :** 4.0.0"
+    },
+    "comments": [
+        {
+            "body": "**Original author :** Magoni Bruno\n\nHum...\r\nEven if object type are not choosen to supply versionning, an objet possess alway at least one version.\r\nThe current human interface have been designed to always show date of a version to be as generic as possible when displaying object properties.\r\nMy opinion is to keep human interface as it instead of adding extra code with several switch cases (display some information or not).\r\n\r\nAs metadata versionning was a new concept in EasySDI, I'm sure that it can be improved by other aspects than GUI (i.e. displaying only last version with possibility to ask for timeline of all versions). Some time have to be spent thinking and exchanging about this...\r\n\r\n\r\n",
+            "created_at": "2011-08-25T16:34:26Z"
+        },
+        {
+            "body": "**Original author :** M\u00e9rour Xavier\n\nThat's right, managing switch cases is not the best way of doing it.\r\n\r\nI agree with the idea of thinking deeper on this question... we might open a new ticket about it ?\r\n\r\n",
+            "created_at": "2011-08-26T06:01:45Z"
+        },
+        {
+            "body": "**Original author :** Magoni Bruno\n\nYes I guess that user interface simplification could be discussed and I move this issue as a feature...\r\n",
+            "created_at": "2011-11-28T16:02:35Z"
+        },
+        {
+            "body": "**Original author :** Magoni Bruno\n\nHi Xavier,\r\n\r\nMay we consider that such issue is solved with new easySDI V4 user interface?\r\n\r\nThanks",
+            "created_at": "2014-04-02T15:54:56Z"
+        },
+        {
+            "body": "**Original author :** M\u00e9rour Xavier\n\nClearly solved ! :-)",
+            "created_at": "2014-04-02T15:59:02Z"
+        }
+    ]
+}

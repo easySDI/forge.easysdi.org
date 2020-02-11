@@ -1,0 +1,18 @@
+{
+    "issue": {
+        "closed": true,
+        "title": "Problem with SRS definition in metadata edition",
+        "created_at": "2014-09-19T07:36:00Z",
+        "labels": [
+            "Defect",
+            "Redmine status : Closed"
+        ],
+        "body": "**Original author :** Van Hoecke H\u00e9l\u00e8ne \n\nFollowing this ticket : https:\/\/forge.easysdi.org\/issues\/785.\r\n\r\nUsing other SRS than EPSG:4326 and EPSG:900913 in the metadata edition form raised a javascript error due to unknown SRS.\r\nRegarding the analysis done in #785, we should replace the Proj4js 1.4.1 by the 1.1.0 version AND the openlayers library 2.12 by the 2.13 version.\r\n\r\nWith this done, we solve the inconsistent situation which was having 2 versions of those libraries in the project.\n\n**Fixed versions :** 4.2.0"
+    },
+    "comments": [
+        {
+            "body": "**Original author :** Van Hoecke H\u00e9l\u00e8ne \n\nOpenlayers 2.12 is still used in components\/com_easysdi_catalog\/views\/catalog\/tmpl\/default.php.\r\nMust be replaced by the 2.13 version.",
+            "created_at": "2014-09-30T09:37:02Z"
+        }
+    ]
+}

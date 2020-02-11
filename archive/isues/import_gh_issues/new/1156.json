@@ -1,0 +1,23 @@
+{
+    "issue": {
+        "closed": true,
+        "title": "Use organism categories in SERVICE PROXY access scopes",
+        "created_at": "2015-10-07T09:28:55Z",
+        "labels": [
+            "Enhancement",
+            "Redmine status : Closed",
+            "Category : SERVICE"
+        ],
+        "body": "**Original author :** Blatti Yves\n\nIn feature #642 (Add categories for organism) it has been accepted (PSC) that the organism categories should be used wherever possible in easySDI.\r\n\r\nOne of the missing elements is now the access scopes on virtual services (access rules).\r\n\r\nWe propose to make that change \n\n**Fixed versions :** 4.3.2"
+    },
+    "comments": [
+        {
+            "body": "**Original author :** Van Hoecke H\u00e9l\u00e8ne \n\n+1",
+            "created_at": "2015-11-05T07:08:05Z"
+        },
+        {
+            "body": "**Original author :** Portier Thomas\n\n+1",
+            "created_at": "2015-11-05T08:17:17Z"
+        }
+    ]
+}

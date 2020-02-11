@@ -1,0 +1,19 @@
+{
+    "issue": {
+        "closed": true,
+        "title": "SHOP basket perimeter : string Define\/Edit for perimeter button",
+        "created_at": "2015-03-20T13:05:39Z",
+        "labels": [
+            "Defect",
+            "Redmine status : Closed",
+            "Category : SHOP"
+        ],
+        "body": "**Original author :** Blatti Yves\n\nLinked to basket enhancement in #643 pricing.\r\nThe string in the perimeter button should change depending of perimeter status:\r\n\"Define order perimeter\" when not set\r\n\"Modify order perimeter\" when a perimeter has been set (or \"edit\", what's the most correct verb for that in English ?)\r\n\r\nThis was defined in #643 (only in html mockup, not in description, sorry about that)\n\n**Fixed versions :** 4.4.3"
+    },
+    "comments": [
+        {
+            "body": "**Original author :** Blatti Yves\n\nrev. 9971",
+            "created_at": "2016-08-09T10:35:03Z"
+        }
+    ]
+}

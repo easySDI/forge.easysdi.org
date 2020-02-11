@@ -1,0 +1,27 @@
+{
+    "issue": {
+        "closed": false,
+        "title": "Ability to add keywords others than from thesaurus GEMET",
+        "created_at": "2011-10-27T12:58:59Z",
+        "labels": [
+            "Feature",
+            "Redmine status : New",
+            "Category : CATALOG"
+        ],
+        "body": "**Original author :** M\u00e9rour Xavier\n\nThe stereotype \"Thesaurus GEMET\" allows only the metadata editor to add keywords from the thesaurus.\r\nWe need to add others keywords (for example, very specific to a geodata or a place) not available in the thesaurus.\r\n\r\nMy proposal is to adapt the stereotype \"thesaurus GEMET\" by adding, beside the button \"thesaurus GEMET\", :\r\n\r\n1) a free text field where the user write a keyword \r\n2) a button \"+\" to add the keyword to the list of keyword above\r\n\r\nPlease comment."
+    },
+    "comments": [
+        {
+            "body": "**Original author :** M\u00e9rour Xavier\n\nThe \"multilingual\" issue is not that easy to handle with this proposal... using a Thesaurus helps a lot since they deal with it.\n\nSo maybe a simpler approach would be to use the current stereotype \"locale\" and attach it to the attribute \"keyword\"",
+            "created_at": "2011-11-14T17:33:57Z"
+        },
+        {
+            "body": "**Original author :** M\u00e9rour Xavier\n\nCurrent GEMET thesaurus could be also extended\/adapted with other thesaurus sources, like it's done here (in french) :\r\nhttp:\/\/www.neogeo-online.net\/blog\/archives\/416\/",
+            "created_at": "2011-11-14T21:09:41Z"
+        },
+        {
+            "body": "**Original author :** Blatti Yves\n\nAn alternative way would be using a single field, with auto-complete from Gemet thesaurus but not restricted to gemet values.\r\nIt could look like : timschlechter.github.io\/bootstrap-tagsinput\/examples\/ (see Typeahead section).\r\nA new stereotype? An alternative layout ?",
+            "created_at": "2014-08-15T11:06:37Z"
+        }
+    ]
+}

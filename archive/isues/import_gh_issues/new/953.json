@@ -1,0 +1,31 @@
+{
+    "issue": {
+        "closed": true,
+        "title": "Pricing: new pricing profile php warning",
+        "created_at": "2015-03-26T15:07:06Z",
+        "labels": [
+            "Defect",
+            "Redmine status : Closed",
+            "Category : SHOP"
+        ],
+        "body": "**Original author :** Blatti Yves\n\nOn creation of a new pricing profile:\r\n\r\n```\n\r\nWarning: Creating default object from empty value in C:\\wamp\\vhosts\\dev\\components\\com_easysdi_shop\\models\\pricingprofile.php on line 83\r\n```\n\r\n\r\n&getData tries to load an id=0 profile.\n\n**Fixed versions :** 4.3.2"
+    },
+    "comments": [
+        {
+            "body": "**Original author :** Battaglia Marc\n\nSorry but unable to reproduce... Please specify the context.",
+            "created_at": "2015-05-19T13:29:54Z"
+        },
+        {
+            "body": "**Original author :** Blatti Yves\n\nHi J\u00e9r\u00f4me !\r\n\r\nIf I create a new pricing profile I get the mext message:\r\n!2015-06-09 19_04_53-ASIT VD - ASIT VD.png!\r\n\r\n(PHP & Joomla must have Warning ON)",
+            "created_at": "2015-06-09T17:06:30Z"
+        },
+        {
+            "body": "**Original author :** M\u00e9rour Xavier\n\nHi J\u00e9r\u00f4me,\r\n\r\nAny news on this defect ?",
+            "created_at": "2015-06-26T13:56:09Z"
+        },
+        {
+            "body": "**Original author :** Blatti Yves\n\nAll good, thanks",
+            "created_at": "2015-07-29T08:28:29Z"
+        }
+    ]
+}

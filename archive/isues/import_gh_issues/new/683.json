@@ -1,0 +1,13 @@
+{
+    "issue": {
+        "closed": true,
+        "title": "Required OLStyle on wms layer configuration",
+        "created_at": "2014-04-15T13:42:00Z",
+        "labels": [
+            "Defect",
+            "Redmine status : Closed"
+        ],
+        "body": "**Original author :** Portier Thomas\n\nIt was required to fill the OLStyle when configuring WMS layer.\n\n**Fixed versions :** 4.0.2"
+    },
+    "comments": []
+}

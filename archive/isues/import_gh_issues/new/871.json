@@ -1,0 +1,19 @@
+{
+    "issue": {
+        "closed": true,
+        "title": "third party validation - reject pop-up does not show up",
+        "created_at": "2014-11-20T10:12:23Z",
+        "labels": [
+            "Defect",
+            "Redmine status : Closed",
+            "Category : SHOP"
+        ],
+        "body": "**Original author :** M\u00e9rour Xavier\n\nIf a want to reject an order as validator manager, I click in the Action menu and then choose \"Reject the order\".\r\n\r\n>> I have an error message \"You must select an order to reject and type a message.\"\r\n\r\n\r\n\n\n**Fixed versions :** 4.3.0"
+    },
+    "comments": [
+        {
+            "body": "**Original author :** M\u00e9rour Xavier\n\nWorks like a charm. Thanks J\u00e9r\u00f4me.",
+            "created_at": "2015-01-20T15:17:45Z"
+        }
+    ]
+}

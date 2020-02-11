@@ -1,0 +1,14 @@
+{
+    "issue": {
+        "closed": true,
+        "title": "Scale is not loaded in leaflet map",
+        "created_at": "2016-05-17T08:25:10Z",
+        "labels": [
+            "Defect",
+            "Redmine status : Closed",
+            "Category : MAP"
+        ],
+        "body": "**Original author :** Portier Thomas\n\n\n\n**Fixed versions :** 4.4.1"
+    },
+    "comments": []
+}

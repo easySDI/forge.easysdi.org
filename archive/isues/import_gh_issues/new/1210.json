@@ -1,0 +1,14 @@
+{
+    "issue": {
+        "closed": true,
+        "title": "Css issue in replication modal dialog & XML preview",
+        "created_at": "2015-11-30T08:20:11Z",
+        "labels": [
+            "Defect",
+            "Redmine status : Closed",
+            "Category : CATALOG"
+        ],
+        "body": "**Original author :** Van Hoecke H\u00e9l\u00e8ne \n\nIn Joomla 3.4.5, replication modal dialog & XML preview have some css problems that made the bottom tool bar invisible and the modal itself not center in the window.\n\n**Fixed versions :** 4.3.2"
+    },
+    "comments": []
+}

@@ -1,0 +1,19 @@
+{
+    "issue": {
+        "closed": true,
+        "title": "bizError & httpError job parameters",
+        "created_at": "2010-10-08T09:41:55Z",
+        "labels": [
+            "Feature",
+            "Redmine status : Rejected",
+            "Category : MONITOR"
+        ],
+        "body": "**Original author :** M\u00e9rour Xavier\n\nThese paramaters will be obsolete in a next version. They have been foreseen to test HTTP only services. To achieve this requirement, it would be far better to use the serviceType parameter set to \"HTTP\".\r\n\r\nFor now, the monitor will check for the errors, but if set to false, he will not take care about the result and will set the status as Available"
+    },
+    "comments": [
+        {
+            "body": "**Original author :** M\u00e9rour Xavier\n\nThis is an old and very specific ticket & the community plans to make a large MONITOR refactoring.\r\n\r\nTherefore, this ticket is rejected.",
+            "created_at": "2016-02-03T15:12:38Z"
+        }
+    ]
+}

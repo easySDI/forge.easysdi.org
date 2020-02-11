@@ -1,0 +1,43 @@
+{
+    "issue": {
+        "closed": true,
+        "title": "add an order validation process",
+        "created_at": "2014-03-14T14:34:40Z",
+        "labels": [
+            "Feature",
+            "Redmine status : Closed",
+            "Category : SHOP"
+        ],
+        "body": "**Original author :** M\u00e9rour Xavier\n\nIf an order is done with a third party (organism), this third party have to validate the order BEFORE it is sent to the supplier(s).\r\n\r\n* in backend\r\n\r\n- add a new role \"validation manager\" in the \"user\" screen, tab \"role\" (the user can have the role in 0 to n organisms)\r\n\r\n- in the organism management, there is a toggle for setting \"can be selected as a third party\" yes\/no (it replaces the \"eligible to order to\" which has to be removed - see #700).\r\n\r\n\r\n* in frontend\r\n\r\n- a new screen where the validation manager will be able to validate or reject an order done with third party = its organism\r\nsee gliffy attached 7.\r\n--> with this, a new \"remark\" field must be attached to each order\r\n\r\n- remark must be displayed in order's resume\r\n\r\n- a notification email is send to the all the validation manager in the organism (third party selected) with a permalink (without any login) to the page with the order detail (see gliffy) 7.1\r\n\r\n- in the basket, there will be possible to select the tiers. If one selected, three extra fields will appear below (see basket layout attached in #643 ). those fields are mandatory\r\nthe third party selec only appears if at least one organism is \"can be selected as a third party\" (toggle above)\r\nthe visibility of the 3 extra fields should be optionnal (in the backend)\r\n\r\n- on the basket a texte can be added to give some explanations about third-party (the text is definable in the backend in SHOP parameters, juste like we have already one)\r\n\r\n- it implies adding two new states in treatment order (\"waiting to be validated\" and \"rejected\" when defining tierce orgsnism) which have impact upon SHOP web service\r\n\r\n- if rejected an email notification is sent to the order's author with reject's reason (remark)\n\n**Fixed versions :** 4.3.0"
+    },
+    "comments": [
+        {
+            "body": "**Original author :** M\u00e9rour Xavier\n\nHere are the screens (gliffy 7 and 7.1) coming along with description done above\r\n",
+            "created_at": "2014-04-24T13:32:39Z"
+        },
+        {
+            "body": "**Original author :** M\u00e9rour Xavier\n\nTo the PSC.\r\n\r\nThe feature is ready to be coded in EasySDI : please vote !",
+            "created_at": "2014-05-23T08:51:44Z"
+        },
+        {
+            "body": "**Original author :** M\u00e9rour Xavier\n\n+1 for me",
+            "created_at": "2014-05-23T08:54:15Z"
+        },
+        {
+            "body": "**Original author :** Magoni Bruno\n\n+1",
+            "created_at": "2014-05-23T10:17:59Z"
+        },
+        {
+            "body": "**Original author :** Teixeira J\u00e9r\u00f4me\n\n+1",
+            "created_at": "2014-05-23T13:33:45Z"
+        },
+        {
+            "body": "**Original author :** Plainecassagne Laurent\n\n+1",
+            "created_at": "2014-05-26T07:34:58Z"
+        },
+        {
+            "body": "**Original author :** Blatti Yves\n\nThe Gliffy flow that has been discussed when describing specs was not incorporated in the issue (omission).\r\nYou can find it in the wiki (a page has been created, as it'll be used as documentation in future),\r\nhere : https:\/\/forge.easysdi.org\/projects\/easysdi\/wiki\/4_shop_orders_and_products_status",
+            "created_at": "2014-08-12T08:32:10Z"
+        }
+    ]
+}

@@ -1,0 +1,19 @@
+{
+    "issue": {
+        "closed": true,
+        "title": "ON DELETE behavior for pricing should not always CASCADE",
+        "created_at": "2017-06-23T10:10:03Z",
+        "labels": [
+            "Defect",
+            "Redmine status : Closed",
+            "Category : SHOP"
+        ],
+        "body": "**Original author :** Blatti Yves\n\nON DELETE behavior for pricing should not always CASCADE: \r\n\r\nThis is a simplified view of the order\/diffusion\/pricing tables to show (in RED) the problematic constraints. Notes under the figure.\r\n\r\n!on_delete.png!\r\n\r\n*[note1]* @jos_sdi_pricing_order_supplier_product_profile[pricing_profile_id] -> jos_sdi_pricing_profile[id]@ : Should not CASCADE, the point of the jos_sdi_pricing_order_* tables is to keep the history, even if a profile changes, or is deleted. I suggest to change to *SET NULL*.\r\n*[note2]* @jos_sdi_diffusion[pricing_profile_id] -> jos_sdi_pricing_profile[id]@ : SET NULL seems to be correct, BUT we should not be able to delete a profile if a diffusion is active (need a check in PHP)\r\n*[note3]* we should not be able to delete a @jos_sdi_diffusion@, we have to delete a resource, and there is a check in PHP, I propose to leave it as is.\r\n*[note4]* we should not be able to delete a @jos_sdi_organism@ if there is a resource attached, I propose to leave it as is.\r\n\n\n**Fixed versions :** 4.5.0"
+    },
+    "comments": [
+        {
+            "body": "**Original author :** Blatti Yves\n\nRev. 10213. Patched for note1 and note2.",
+            "created_at": "2017-06-26T12:30:43Z"
+        }
+    ]
+}

@@ -1,0 +1,14 @@
+{
+    "issue": {
+        "closed": true,
+        "title": "Organism perimeter must be provided as WKT, not geoJSON",
+        "created_at": "2015-05-15T08:49:59Z",
+        "labels": [
+            "Defect",
+            "Redmine status : Closed",
+            "Category : SHOP"
+        ],
+        "body": "**Original author :** Blatti Yves\n\nOrganism perimeter must be provided as WKT, not geoJSON.\r\nHelp is not up to date.\n\n**Fixed versions :** 4.3.2"
+    },
+    "comments": []
+}

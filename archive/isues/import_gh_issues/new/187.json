@@ -1,0 +1,23 @@
+{
+    "issue": {
+        "closed": true,
+        "title": "Add email cloaking on metadata",
+        "created_at": "2010-07-15T10:02:22Z",
+        "labels": [
+            "Feature",
+            "Redmine status : Rejected",
+            "Category : CATALOG"
+        ],
+        "body": "**Original author :** M\u00e9rour Xavier\n\nTo avoid robots harvesting emails from metadata (contacts info) and inundating inbox with spam, CATALOG should support email cloaking function.\r\n\r\nThe difficulty is to applied this cloaking on XSL tranformation...\r\n\r\nBut it would be a great security enhancement in respect to all geodata suppliers."
+    },
+    "comments": [
+        {
+            "body": "**Original author :** M\u00e9rour Xavier\n\n2Bruno\r\nIs it really an EasySDI issue or more an deployment issue that can be solved with metadata XSL configuration ?\r\nIf so, I would suggest to reject this issue.\r\n",
+            "created_at": "2011-09-08T16:40:01Z"
+        },
+        {
+            "body": "**Original author :** Magoni Bruno\n\nHi Xavier,\r\n\r\nA little bit late but I reject this feature as proposed.\r\nYou are right, email cloacking can only be fixed through XSL configuration!\r\n\r\nThanks,",
+            "created_at": "2014-06-24T11:15:40Z"
+        }
+    ]
+}

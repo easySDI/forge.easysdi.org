@@ -1,0 +1,23 @@
+{
+    "issue": {
+        "closed": true,
+        "title": "SQL changes of #1231 and #1239 are not reflected in other DBMS and update scripts + missing FK",
+        "created_at": "2016-01-20T16:19:55Z",
+        "labels": [
+            "Defect",
+            "Redmine status : Rejected",
+            "Category : CORE"
+        ],
+        "body": "**Original author :** Blatti Yves\n\n*1)* SQL changes of #1231 and #1239 are not reflected in other DBMS and update scripts.\r\nChanges are: *\/joomla\/easysdi\/com_easysdi_core\/src\/administrator\/sql\/install\/mysql\/install.sql*\r\n@`attribution` VARCHAR(255) -> `attribution` TEXT@ in @#__sdi_maplayer@ and\r\nadding @`access_key` varchar(255)@ to @#__sdi_processing_order@\r\n\r\nThey should also appear in :\r\n\/joomla\/easysdi\/com_easysdi_core\/src\/administrator\/sql\/install\/postgresql\/install.sql\r\n\/joomla\/easysdi\/com_easysdi_core\/src\/administrator\/sql\/install\/sqlsrv\/install.sql\r\n+ update scripts in :\r\n\/joomla\/easysdi\/com_easysdi_core\/src\/administrator\/sql\/install\/mysql\/install.sql\r\n\/joomla\/easysdi\/com_easysdi_core\/src\/administrator\/sql\/install\/postgresql\/install.sql\r\n\/joomla\/easysdi\/com_easysdi_core\/src\/administrator\/sql\/install\/sqlsrv\/install.sql\r\n\r\n*2)* There seems to be no foreign keys in the _processing_ tables, I think there should be some (process_order \u21d2 user , process_order \u21d2 process, etc)\r\n\r\n*3)* MSSQL scripts look broken: \r\n- identifiers: @`created` [nvarchar]@ instead of @[created] [nvarchar]@\r\n- types missmatch, example: On MySQL @`status` varchar(255) NOT NULL DEFAULT ''@ is differently typed on MSSQL : @`status` [int] NOT NULL@"
+    },
+    "comments": [
+        {
+            "body": "**Original author :** Blatti Yves\n\nFKs are OK (#1283), PGSQL will be removed, and MSSQL is not tested.\r\nI propose to reject this issue since there's no code attached, and n reason to keep it open...\r\nThat do you think Thomas ?",
+            "created_at": "2016-03-22T09:30:47Z"
+        },
+        {
+            "body": "**Original author :** Portier Thomas\n\nok",
+            "created_at": "2016-03-22T09:42:20Z"
+        }
+    ]
+}

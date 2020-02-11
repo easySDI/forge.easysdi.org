@@ -1,0 +1,14 @@
+{
+    "issue": {
+        "closed": true,
+        "title": "Size of layer attribution property",
+        "created_at": "2015-12-22T08:50:23Z",
+        "labels": [
+            "Defect",
+            "Redmine status : Closed",
+            "Category : MAP"
+        ],
+        "body": "**Original author :** Portier Thomas\n\nThe size in mysql for the attribution layer propertie is set to varchar(255). It should be in TEXT\n\n**Fixed versions :** 4.4.0"
+    },
+    "comments": []
+}

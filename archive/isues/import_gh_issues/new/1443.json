@@ -1,0 +1,19 @@
+{
+    "issue": {
+        "closed": true,
+        "title": "Add the ability to select default background for a map context",
+        "created_at": "2017-10-26T08:05:58Z",
+        "labels": [
+            "Enhancement",
+            "Redmine status : Closed",
+            "Category : MAP"
+        ],
+        "body": "**Original author :** Portier Thomas\n\nAdd the ability to select default background for a map context\n\n**Fixed versions :** 4.5.0"
+    },
+    "comments": [
+        {
+            "body": "**Original author :** Blatti Yves\n\nAccepted on October 26th 2017",
+            "created_at": "2018-02-22T17:27:16Z"
+        }
+    ]
+}

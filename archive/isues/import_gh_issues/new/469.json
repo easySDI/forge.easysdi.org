@@ -1,0 +1,22 @@
+{
+    "issue": {
+        "closed": true,
+        "title": "Keywords duplication in xml",
+        "created_at": "2011-08-30T09:20:16Z",
+        "labels": [
+            "Defect",
+            "Redmine status : Rejected"
+        ],
+        "body": "**Original author :** BRUNET Cl\u00e9ment\n\nSaving a metadata, using keywords information, duplicates the chosen keywords in xml.\r\n\r\nThis duplication prevents INSPIRE xml validation."
+    },
+    "comments": [
+        {
+            "body": "**Original author :** BRUNET Cl\u00e9ment\n\nAfter a test, \r\n\r\nA complement : I had add a relation class in my model, which was duplicating  the keyword field selected.\r\n\r\nParent Class   Son Class\r\nMD_Metadata -> MD_Keywords and I added on this relation, a relation class : MD_Keyword... It generated the duplication of the field.\r\n\r\nI solve my problem, and just explain it for feedback.",
+            "created_at": "2011-08-30T09:38:28Z"
+        },
+        {
+            "body": "**Original author :** Magoni Bruno\n\nThanks Cl\u00e9ment for this tips & trick.\r\n",
+            "created_at": "2011-11-28T15:11:15Z"
+        }
+    ]
+}

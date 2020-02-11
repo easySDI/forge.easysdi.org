@@ -1,0 +1,19 @@
+{
+    "issue": {
+        "closed": false,
+        "title": "Saving and loading cartographic context",
+        "created_at": "2013-02-01T13:09:37Z",
+        "labels": [
+            "Feature",
+            "Redmine status : New",
+            "Category : MAP"
+        ],
+        "body": "**Original author :** Magoni Bruno\n\nGoal is to save cartographic context through MAP component and:\r\n* load it again for authenticated users\r\n* display it inside MAP component with a specific link (i.e. http:\/\/www.myeasysdi.org\/map?context=gfd8gdg4fgf0), even for public users"
+    },
+    "comments": [
+        {
+            "body": "**Original author :** M\u00e9rour Xavier\n\nWhat about using Web Map Context from OGC ? shouldn't be better ?\r\nOr are there some technical limitations ?",
+            "created_at": "2013-02-01T13:31:27Z"
+        }
+    ]
+}

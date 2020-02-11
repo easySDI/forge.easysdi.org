@@ -1,0 +1,19 @@
+{
+    "issue": {
+        "closed": true,
+        "title": "Should not be able to add a price on a product with a pre-defined price (free or with profile)",
+        "created_at": "2015-08-03T07:14:06Z",
+        "labels": [
+            "Defect",
+            "Redmine status : Closed",
+            "Category : SHOP"
+        ],
+        "body": "**Original author :** Blatti Yves\n\nWhen responding to an order manually, we can add a price (> 0) to a free product in the \"request\" view.\r\nSame for a product with a pricing profile and a calculated price.\r\nThis should not be possible.\n\n**Fixed versions :** 4.3.2"
+    },
+    "comments": [
+        {
+            "body": "**Original author :** Blatti Yves\n\nRevision: 9099",
+            "created_at": "2015-09-18T14:35:15Z"
+        }
+    ]
+}

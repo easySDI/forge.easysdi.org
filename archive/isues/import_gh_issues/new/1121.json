@@ -1,0 +1,14 @@
+{
+    "issue": {
+        "closed": true,
+        "title": "Add the ability to manage single tile for map leaflet",
+        "created_at": "2015-09-10T08:47:33Z",
+        "labels": [
+            "Defect",
+            "Redmine status : Closed",
+            "Category : MAP"
+        ],
+        "body": "**Original author :** Portier Thomas\n\nUse the plugin https:\/\/github.com\/ptv-logistics\/Leaflet.NonTiledLayer to force leaflet using single tile when single tile option is defined for the layer\n\n**Fixed versions :** 4.5.0"
+    },
+    "comments": []
+}

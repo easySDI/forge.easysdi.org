@@ -1,0 +1,23 @@
+{
+    "issue": {
+        "closed": true,
+        "title": "XML metadata previewer",
+        "created_at": "2011-08-30T09:24:02Z",
+        "labels": [
+            "Defect",
+            "Redmine status : Closed",
+            "Category : CATALOG"
+        ],
+        "body": "**Original author :** BRUNET Cl\u00e9ment\n\nWhen we launch an xml Preview of the metadata, the xml content is bad formatted.\r\n\r\nA lot of closed tag are at the end of the file.\r\n\r\nI don't know exactly how does it generate the preview, but it is very different of the xml saved in the metadata field of the database.\r\n\r\n\r\nCl\u00e9ment. \n\n**Fixed versions :** 4.0.0"
+    },
+    "comments": [
+        {
+            "body": "**Original author :** Magoni Bruno\n\nPreview is based on a tierce API called SyntaxHighlighter.\r\nIt seems that there is some bugs inside it when displaying XML content...\r\n",
+            "created_at": "2011-11-28T16:01:06Z"
+        },
+        {
+            "body": "**Original author :** Magoni Bruno\n\nLast stable release of SyntaxHighlighter has fixed such problems and is implemented inside easySDI V4\r\n\r\nXML content sample preview in V4...\r\n!preview.png!",
+            "created_at": "2014-03-25T21:08:38Z"
+        }
+    ]
+}

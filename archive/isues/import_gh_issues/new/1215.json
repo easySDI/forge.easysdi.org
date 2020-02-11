@@ -1,0 +1,14 @@
+{
+    "issue": {
+        "closed": true,
+        "title": "PROXY doesn't load correctly the user's organism",
+        "created_at": "2015-12-03T14:25:46Z",
+        "labels": [
+            "Defect",
+            "Redmine status : Closed",
+            "Category : PROXY"
+        ],
+        "body": "**Original author :** Van Hoecke H\u00e9l\u00e8ne \n\nWhen a request is performed on the PROXY, informations about the user are getting from the database. Those informations are used to identify the user's authority on the resource requested.\r\n\r\nOne of these informations is the user's organism, and this information is not correctly loaded from the database.\r\n\r\n\n\n**Fixed versions :** 4.3.2"
+    },
+    "comments": []
+}

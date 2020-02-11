@@ -1,0 +1,18 @@
+{
+    "issue": {
+        "closed": true,
+        "title": "Changing available functionnalties on resource type should launch a clean of user role on the existing resources",
+        "created_at": "2015-04-03T12:51:37Z",
+        "labels": [
+            "Defect",
+            "Redmine status : Rejected"
+        ],
+        "body": "**Original author :** Van Hoecke H\u00e9l\u00e8ne \n\nWhen the administrator change the available functionalities on a resource type (diffusion and visualization options), a script should clean the user roles affected to the pre existing resource of this type.\r\nThis is not done for now and we could see inconsistent behaviours in resources display."
+    },
+    "comments": [
+        {
+            "body": "**Original author :** Magoni Bruno\n\nCannot be reproduce neither on MySQL nor on SQLServer !\r\n\r\nThe clean of user role on existing resources is programmatically trigerred from the user's model save method (code to delete is in the method deleteRoleAttribution in the same model)",
+            "created_at": "2015-04-24T14:00:00Z"
+        }
+    ]
+}

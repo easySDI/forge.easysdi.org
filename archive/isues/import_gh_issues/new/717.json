@@ -1,0 +1,31 @@
+{
+    "issue": {
+        "closed": true,
+        "title": "unpublish resource type & delete resource type",
+        "created_at": "2014-05-21T12:08:34Z",
+        "labels": [
+            "Defect",
+            "Redmine status : Rejected",
+            "Category : CATALOG"
+        ],
+        "body": "**Original author :** Portier Thomas\n\nunpublish ressource type by clicking on the publishing icon in the ressource type list return the error : \r\nFatal error: Call to a member function publish() on a non-object in \/home\/...\/libraries\/legacy\/controller\/admin.php on line 208"
+    },
+    "comments": [
+        {
+            "body": "**Original author :** Portier Thomas\n\nThis bug appears in the back-end -> EasySDI -> Catalog -> Resource Type",
+            "created_at": "2014-05-21T12:39:36Z"
+        },
+        {
+            "body": "**Original author :** M\u00e9rour Xavier\n\nFor info, this defect is still here in 4.2.0-beta-2.",
+            "created_at": "2014-07-01T09:25:36Z"
+        },
+        {
+            "body": "**Original author :** M\u00e9rour Xavier\n\nProblem still there... and same behaviour if I want to delete the resource : \r\n\r\n```\n\r\nFatal error: Call to a member function publish() on a non-object in \/home\/data\/www\/www.asitvd.ch\/html\/libraries\/legacy\/controller\/admin.php on line 208\r\n```\n\r\n\r\n\r\nThis should have been corrected since a while (ticket is more than one year old...)",
+            "created_at": "2015-09-03T15:42:04Z"
+        },
+        {
+            "body": "**Original author :** Blatti Yves\n\nFixed by Defect #703",
+            "created_at": "2015-11-27T14:46:06Z"
+        }
+    ]
+}

@@ -1,0 +1,19 @@
+{
+    "issue": {
+        "closed": true,
+        "title": "#1244 broke backend recap map",
+        "created_at": "2016-03-23T16:17:25Z",
+        "labels": [
+            "Defect",
+            "Redmine status : Closed",
+            "Category : SHOP"
+        ],
+        "body": "**Original author :** Blatti Yves\n\nWe cannot use JHTML::script with parameters in URL.\r\nSwitch to $document->addScript in \\easysdi\\com_easysdi_shop\\src\\administrator\\views\\order\\tmpl\\edit.php \n\n**Fixed versions :** 4.4.1"
+    },
+    "comments": [
+        {
+            "body": "**Original author :** Blatti Yves\n\nRev. 9563",
+            "created_at": "2016-03-23T16:37:57Z"
+        }
+    ]
+}

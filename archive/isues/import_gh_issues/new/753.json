@@ -1,0 +1,13 @@
+{
+    "issue": {
+        "closed": false,
+        "title": "Verify revisions of extensions and servlets",
+        "created_at": "2014-06-26T16:25:51Z",
+        "labels": [
+            "Feature",
+            "Redmine status : New"
+        ],
+        "body": "**Original author :** Magoni Bruno\n\nActually, there is no validation of Joomla extensions and servlets versions which are deployed.\r\nThe proposed feature is that easySDI backend compares revision of all Joomla extensions (components, modules, plugins, templates) and all servlets (proxy, monitor).\r\n\r\nIf at least one revision is different than easySDI displays some message which mention that all easySDI bricks are not coherent and that they must be updated in the same upper version."
+    },
+    "comments": []
+}

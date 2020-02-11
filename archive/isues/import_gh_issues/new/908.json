@@ -1,0 +1,27 @@
+{
+    "issue": {
+        "closed": true,
+        "title": "Shop perimeter edit : there is a shift\/gap between browser pointer and map",
+        "created_at": "2015-02-23T10:20:36Z",
+        "labels": [
+            "Defect",
+            "Redmine status : Closed",
+            "Category : SHOP"
+        ],
+        "body": "**Original author :** Blatti Yves\n\nIn the map for perimeter edition popup (basket) there may have a \"gap\" or \"shift\" between the mouse pointer of the browser, and the effective action in the map.\r\nOn most of the cases, the shift is vertical only (Y axis).\r\n\r\n!shop_map_gap_shift_in_perimeter_edit.png!\r\n\r\nBest way to reproduce is:\r\n* Scroll in basket before editing perimeter, or between two perimeter editions\r\n* OR have a message on top of map (which moves the maps some pixels down), like when selected area is over max \r\n\r\nSometimes also seen:\r\n* On first edition of perimeter without moving (strange)\r\n* If the browser window is resized (can trigger X+Y shift)\r\n\r\nThe issue certainly comes from the fact that the MAP is built in a hidden static bootstrap popup.\r\nReproducible on IE11, Chrome 40 and Firefox 35.\r\n\r\n\n\n**Fixed versions :** 4.3.2"
+    },
+    "comments": [
+        {
+            "body": "**Original author :** Portier Thomas\n\nThis is due to the css transition effect on the modal : \r\n\r\ndiv.modal.fade {\r\n-webkit-transition: opacity .3s linear, top .3s ease-out;\r\n-moz-transition: opacity .3s linear, top .3s ease-out;\r\n-o-transition: opacity .3s linear, top .3s ease-out;\r\ntransition: opacity .3s linear, top .3s ease-out;\r\ntop: -25%;\r\n}\r\n\r\nI disable it in the css template but we could think of integrated it in the component.\r\n",
+            "created_at": "2015-02-23T11:00:35Z"
+        },
+        {
+            "body": "**Original author :** Van Hoecke H\u00e9l\u00e8ne \n\nProblem still came from \"fade\" effect.\r\nThe proposed solution removes fade effect and add \"invisible\" class on the modal to have it initially hidden.",
+            "created_at": "2015-08-20T10:55:13Z"
+        },
+        {
+            "body": "**Original author :** Blatti Yves\n\nThanks you, works like a charm! Unable to reproduce.\r\nCan be closed.",
+            "created_at": "2015-08-21T07:38:50Z"
+        }
+    ]
+}

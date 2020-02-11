@@ -1,0 +1,14 @@
+{
+    "issue": {
+        "closed": true,
+        "title": "Perimeters ordering is not used for button rendering in basket",
+        "created_at": "2015-06-04T12:59:57Z",
+        "labels": [
+            "Defect",
+            "Redmine status : Closed",
+            "Category : SHOP"
+        ],
+        "body": "**Original author :** Blatti Yves\n\nPerimeters ordering is not used for button rendering in basket.\r\n\n\n**Fixed versions :** 4.3.2"
+    },
+    "comments": []
+}

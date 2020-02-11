@@ -1,0 +1,39 @@
+{
+    "issue": {
+        "closed": true,
+        "title": "Make easySDI proxy cache invalidation plugin optionally silent",
+        "created_at": "2015-10-14T18:25:54Z",
+        "labels": [
+            "Enhancement",
+            "Redmine status : Closed",
+            "Category : PROXY"
+        ],
+        "body": "**Original author :** Blatti Yves\n\nEvery time an easySDI user on joomla user is saved, we have the confirmation message,\r\nbut front end users don't care about this technical feature.\r\n\r\nI propose to make this optional (configuration of the plugin)\r\n\r\nCurrent message in front-end edit:\r\n!account_edit_message.png!\n\n**Fixed versions :** 4.3.2"
+    },
+    "comments": [
+        {
+            "body": "**Original author :** Blatti Yves\n\nIf COTEC wants to vote, the code is ready and could be integrated soon.\r\n\r\nPreview: \r\n!params.png!\r\n\r\nNote: default values is FE+BE to keep current behavior",
+            "created_at": "2015-10-16T12:56:06Z"
+        },
+        {
+            "body": "**Original author :** Blatti Yves\n\n+1",
+            "created_at": "2015-10-16T12:56:13Z"
+        },
+        {
+            "body": "**Original author :** Van Hoecke H\u00e9l\u00e8ne \n\n+1\r\nThansk Yves!",
+            "created_at": "2015-10-16T12:57:54Z"
+        },
+        {
+            "body": "**Original author :** Portier Thomas\n\nFor sure, I can't stand with these messages anymore ;-)\r\n\r\n+1",
+            "created_at": "2015-10-16T13:31:34Z"
+        },
+        {
+            "body": "**Original author :** Blatti Yves\n\nHehe thanks, @H\u00e9l\u00e8ne: can you set it to accepted ?",
+            "created_at": "2015-10-16T14:08:59Z"
+        },
+        {
+            "body": "**Original author :** Blatti Yves\n\nrev. 9137",
+            "created_at": "2015-10-16T14:22:09Z"
+        }
+    ]
+}

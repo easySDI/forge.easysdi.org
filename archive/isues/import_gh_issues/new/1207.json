@@ -1,0 +1,14 @@
+{
+    "issue": {
+        "closed": true,
+        "title": "download order file from remote storage is not implemented",
+        "created_at": "2015-11-27T10:42:19Z",
+        "labels": [
+            "Defect",
+            "Redmine status : Closed",
+            "Category : SHOP"
+        ],
+        "body": "**Original author :** Blatti Yves\n\ndownload order file from remote storage is not implemented, we cannot download a file if @$orderdiffusion->storage_id == Easysdi_shopHelper::EXTRACTSTORAGE_REMOTE@\r\nIt has not been implemented at all.\n\n**Fixed versions :** 4.3.2"
+    },
+    "comments": []
+}

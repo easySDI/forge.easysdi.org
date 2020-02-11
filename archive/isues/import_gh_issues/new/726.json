@@ -1,0 +1,59 @@
+{
+    "issue": {
+        "closed": true,
+        "title": "Enhance \"empty basket\"",
+        "created_at": "2014-06-03T14:29:22Z",
+        "labels": [
+            "Feature",
+            "Redmine status : Closed",
+            "Category : SHOP"
+        ],
+        "body": "**Original author :** M\u00e9rour Xavier\n\nWhen the basket is empty, it returns a simple \"Your basket is empty\" to the user... with no other explanations or information.\r\n\r\nI think it would be good to have the following behaviour :\r\n\r\n- if the basket is empty, the user is redirected to a specific URL (definable in the backend), for example an article.\r\n- if the specific URL is not defined, we keep the current behaviour.\r\n\r\n\r\nThis solution is relatively simple to code, it gives a nice personalization mean... and do not change anything if anyone like the current behaviour ;-)\r\n\r\n\r\nWhat do you think ?\r\n\n\n**Fixed versions :** 4.3.0"
+    },
+    "comments": [
+        {
+            "body": "**Original author :** Portier Thomas\n\nGood feature! Ok for me",
+            "created_at": "2014-06-06T17:08:40Z"
+        },
+        {
+            "body": "**Original author :** M\u00e9rour Xavier\n\n@Bruno\r\n\r\nDo you have any input on this proposal, do you agree ?",
+            "created_at": "2014-06-25T09:09:35Z"
+        },
+        {
+            "body": "**Original author :** Magoni Bruno\n\n+1",
+            "created_at": "2014-06-25T12:08:14Z"
+        },
+        {
+            "body": "**Original author :** M\u00e9rour Xavier\n\nJ\u00e9r\u00f4me,\r\n\r\nAre you OK with this proposal ?\r\nOr do you have any input ?\r\n\r\nThanks",
+            "created_at": "2014-06-25T12:12:12Z"
+        },
+        {
+            "body": "**Original author :** Teixeira J\u00e9r\u00f4me\n\nHello,\r\nYour proposal seems rather consistent and user-oriented. \r\nOK for this proposal\r\n\r\nThanks",
+            "created_at": "2014-06-26T13:49:15Z"
+        },
+        {
+            "body": "**Original author :** M\u00e9rour Xavier\n\nAs this feature does not change any \"default behaviour\" and is a minor enhancement, I think it does not need a formal vote. Right ?\r\n\r\nWe (Yves) will do this dev. in the coming weeks.\r\n\r\n",
+            "created_at": "2014-06-26T13:52:51Z"
+        },
+        {
+            "body": "**Original author :** Magoni Bruno\n\nHi Xavier,\r\n\r\nI understand that it could be a minor enhancement but I guess it's important to keep the same process.\r\n\r\nI've small questions about URL even if I have already vote on it ;-)\r\nShould it not be always selection of a Joomla article or do you think to other use case ?\r\nI guess it will be more convenient to select a Joomla article than typing some URL ?\r\n\r\nThanks for your feedback...\r\nBruno",
+            "created_at": "2014-06-26T14:15:36Z"
+        },
+        {
+            "body": "**Original author :** M\u00e9rour Xavier\n\nOK for the vote, that's no problem.\n\n```\nShould it not be always selection of a Joomla article or do you think to other use case ?\nI guess it will be more convenient to select a Joomla article than typing some URL ?\n```\n\nYes, it will be more convenient... BUT they are drawbacks :\n- if an administrator would like to point to another resource than \"article\", for example a special component, it would not be possible\n- if you want to specify an item ID (for menu and SEO), it's not automatic. By having a simple URL, the administrator can add parameters he wants in the URL.\n\nTo sum up, it's maybe less user-friendly (but it's for the admin !) but more flexible.\n",
+            "created_at": "2014-06-26T14:44:26Z"
+        },
+        {
+            "body": "**Original author :** Magoni Bruno\n\nOK, thanks for these explanations that I agree with.\r\n",
+            "created_at": "2014-06-26T16:14:32Z"
+        },
+        {
+            "body": "**Original author :** M\u00e9rour Xavier\n\nAssigned to you... to do later.",
+            "created_at": "2014-07-01T08:03:36Z"
+        },
+        {
+            "body": "**Original author :** Blatti Yves\n\nIn my sandbox",
+            "created_at": "2015-02-11T12:50:09Z"
+        }
+    ]
+}

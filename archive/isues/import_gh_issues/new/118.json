@@ -1,0 +1,18 @@
+{
+    "issue": {
+        "closed": true,
+        "title": "Merge several layers of several WMS\/WFS into a single layer",
+        "created_at": "2010-01-27T15:26:47Z",
+        "labels": [
+            "Feature",
+            "Redmine status : Rejected"
+        ],
+        "body": "**Original author :** Portier Thomas\n\nEasysdi allows merging different services (WMS or WFS) to produce a single service but the layers of this new service are independent from each other.\r\n\r\nOur need is to select services with similar layers from different regions to produce a single service where layers are merged into a unique one.\r\n\r\nExample: Consider 2 WMS of 2 different regions offering both a layer representing the hydro network. I want that the proxy create one WMS layer containing a single layer hydro\r\n\r\nEn fran\u00e9ais :\r\n\r\nA l'heure actuelle easysdi permet de fusionner diff\u00e9rents flux wms (ou WFS) pour ne produire qu'un seul flux de donn\u00e9es mais les couches de ces flux restent ind\u00e9pendant les uns des autres.\r\n\r\nNotre besoin consiste \u00c3\u00a0 s\u00e9lectionner des flux de diff\u00e9rentes r\u00e9gions mais dont les couches sont similaires afin de produire un seul flux de donn\u00e9es ne disposant plus que d'une couche dont le r\u00e9sultat sera la fusion des couches identiques dans les diff\u00e9rents flux de donn\u00e9es.\r\n\r\nExemple : Prenons deux flux WMS de deux r\u00e9gions diff\u00e9rentes proposant toutes les deux une couche repr\u00e9sentant le r\u00e9seau hydro. Je souhaiterais disposer en sortie du proxy d'une seule couche WMS contenant une seule couche hydro."
+    },
+    "comments": [
+        {
+            "body": "**Original author :** Portier Thomas\n\nWe can do this with geoserver",
+            "created_at": "2014-04-02T09:53:38Z"
+        }
+    ]
+}

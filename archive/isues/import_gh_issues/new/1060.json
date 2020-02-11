@@ -1,0 +1,23 @@
+{
+    "issue": {
+        "closed": true,
+        "title": "Installation does not to set the infrastrcture ID",
+        "created_at": "2015-07-10T09:09:49Z",
+        "labels": [
+            "Defect",
+            "Redmine status : Closed",
+            "Category : CORE"
+        ],
+        "body": "**Original author :** Blatti Yves\n\nWe have to reports of *infrastructure ID* missing after a full install:\r\nhttps:\/\/forge.easysdi.org\/boards\/34\/topics\/599\r\nhttps:\/\/forge.easysdi.org\/boards\/34\/topics\/653\r\n\r\nCATALOG cannot work without it!\r\n\r\nWe need an urgent install check.\r\n\n\n**Fixed versions :** 4.4.0"
+    },
+    "comments": [
+        {
+            "body": "**Original author :** Blatti Yves\n\nConfirmed on a fresh install",
+            "created_at": "2016-02-02T17:39:47Z"
+        },
+        {
+            "body": "**Original author :** Blatti Yves\n\ncom_easysdi_shopInstallerScript::setParams was buggy\r\nrev. 9442",
+            "created_at": "2016-02-02T17:50:47Z"
+        }
+    ]
+}

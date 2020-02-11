@@ -1,0 +1,43 @@
+{
+    "issue": {
+        "closed": true,
+        "title": "Filter on \"status\" deleted does not work",
+        "created_at": "2014-06-27T14:32:20Z",
+        "labels": [
+            "Enhancement",
+            "Redmine status : Closed",
+            "Category : CATALOG"
+        ],
+        "body": "**Original author :** M\u00e9rour Xavier\n\nI deleted a resource on the front-end and then I filtered on \"status=deleted\"... the deleted resource is not displayed (the list is empty).\r\n\r\nCan someone try to reproduce it ?\n\n**Fixed versions :** 4.3.2"
+    },
+    "comments": [
+        {
+            "body": "**Original author :** Magoni Bruno\n\nHi,\r\n\r\nDid someone reproduce it in previous stable versions or just in under development 4.2 version ?\r\n\r\nThanks",
+            "created_at": "2014-06-27T22:37:34Z"
+        },
+        {
+            "body": "**Original author :** M\u00e9rour Xavier\n\nI tested it again (with a brand new resource) on 4.3.0-rc-8 and the same behaviour occurs.",
+            "created_at": "2015-03-03T18:05:35Z"
+        },
+        {
+            "body": "**Original author :** M\u00e9rour Xavier\n\nI am wondering what shoud be the right behaviour : after all, if the resource is deleted, it is normal not to see it any more. So maybe the behaviour is OK and the status \"deleted\" should not be available in the status filter list.\r\n\r\nWhat do you think ?\r\n\r\n_PS : we have the \"archive\" statuts if the resouce manager want to keep a resource in the system but tag it as \"not any more used\"_\r\n\r\n",
+            "created_at": "2015-03-03T18:10:20Z"
+        },
+        {
+            "body": "**Original author :** M\u00e9rour Xavier\n\nAfter some thoughts, I suggest the following - and minor - change :\r\n\r\n- remove from the status list the item \"deleted\"\r\n\r\nIs it OK with the TC ?\r\n\r\n",
+            "created_at": "2015-03-04T10:21:22Z"
+        },
+        {
+            "body": "**Original author :** Van Hoecke H\u00e9l\u00e8ne \n\nTC validates the remove of status \"deleted\".",
+            "created_at": "2015-03-06T08:31:58Z"
+        },
+        {
+            "body": "**Original author :** M\u00e9rour Xavier\n\nTo be done... please.",
+            "created_at": "2015-06-17T08:47:22Z"
+        },
+        {
+            "body": "**Original author :** Blatti Yves\n\nDone in revision : 8899\r\n\r\nNote: the strings were kept in translations files to maintain compatibility with the 4.2.x -> 4.3.1 versions",
+            "created_at": "2015-08-04T14:44:21Z"
+        }
+    ]
+}

@@ -1,0 +1,14 @@
+{
+    "issue": {
+        "closed": true,
+        "title": "Duplicate SQL files crashes update",
+        "created_at": "2014-06-18T09:59:57Z",
+        "labels": [
+            "Defect",
+            "Redmine status : Closed",
+            "Category : CORE"
+        ],
+        "body": "**Original author :** Blatti Yves\n\nThere's two files with identical content in SQL updates (for every DBMS).\r\nThey're both executed in case of update, the installer crashes on command that can't be run twice (column renaming for example..)\r\n\r\nsource:\/tags\/4.2.0-beta-1\/joomla\/easysdi\/com_easysdi_core\/src\/administrator\/sql\/updates\/mysql\/4.2.0-beta-1.sql\r\nsource:\/tags\/4.2.0-beta-1\/joomla\/easysdi\/com_easysdi_core\/src\/administrator\/sql\/updates\/mysql\/4.2.0.sql\n\n**Fixed versions :** 4.2.0"
+    },
+    "comments": []
+}

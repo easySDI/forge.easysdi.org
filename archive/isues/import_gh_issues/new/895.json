@@ -1,0 +1,47 @@
+{
+    "issue": {
+        "closed": true,
+        "title": "Add an \"organism manager\" role",
+        "created_at": "2015-02-11T10:01:37Z",
+        "labels": [
+            "Enhancement",
+            "Redmine status : Closed",
+            "Category : CONTACT"
+        ],
+        "body": "**Original author :** Blatti Yves\n\nWe'd like to add a new role for users : \"organism manager\".\r\n\r\n------------\r\n\r\n## EDIT: Following COTEC meeting 2015-03-06:\r\n\r\n### Role definition:\r\n\r\n* The role is called *\"organism manager\"*\r\n* This role has NO rights associated on resources (like _Pricing Manager_)\r\n* This role *gives access to all resources of an organism*, including detailed screens like _diffusion_, etc\r\n*+read only+*, if the user doesn't have specific right on the resource\r\n* Like other roles, a user could obtain this role for *multiple organisms*.\r\n\r\n\r\n### TC arguments:\r\n\r\nPros : \r\n\r\n* Add visibility on all organism's resources, this is a problem today, especially in large organisms !!\r\n* Visibility doesn't give rights to alter items: the user can see all resources without being resource manager.\r\n* Can replace #902 'administrator role'\r\n* This role will be usable for other organisms related tasks, not managed in easySDI, like:\r\n** give access to front end organism edition, like name and addresses\r\n** give access to front end user creation and role management\r\n* In the future we can imagine grant access to FE dashboard to this role\r\n\r\nCons :\r\n\r\n* If used as #902 'administrator role' we must set this role on all organisms for the user.\r\n\r\n------------\r\n\r\n\r\n\r\n\r\n\n\n**Fixed versions :** 4.3.2"
+    },
+    "comments": [
+        {
+            "body": "**Original author :** Portier Thomas\n\nI'm not sure it's a good practice to add rules that don't have impact on the easySDI features.\r\nWhy don't you use a joomla group \"organism Manager\" that will be able to manage their own organism?",
+            "created_at": "2015-03-05T15:55:02Z"
+        },
+        {
+            "body": "**Original author :** Van Hoecke H\u00e9l\u00e8ne \n\nTC validates but detailed specifications are needed.",
+            "created_at": "2015-03-06T09:06:13Z"
+        },
+        {
+            "body": "**Original author :** Blatti Yves\n\nDescription has been added as discussed with TC.\r\nTC members please vote if OK.",
+            "created_at": "2015-03-13T09:48:01Z"
+        },
+        {
+            "body": "**Original author :** Van Hoecke H\u00e9l\u00e8ne \n\nOK with me.\r\nThat could replace #902.",
+            "created_at": "2015-03-16T08:24:34Z"
+        },
+        {
+            "body": "**Original author :** Villemagne J\u00e9r\u00f4me\n\nfor me too",
+            "created_at": "2015-03-16T09:28:08Z"
+        },
+        {
+            "body": "**Original author :** M\u00e9rour Xavier\n\nWe need some more votes to go ahead... :-)\r\nThanks",
+            "created_at": "2015-03-18T06:56:18Z"
+        },
+        {
+            "body": "**Original author :** Magoni Bruno\n\n+1",
+            "created_at": "2015-03-18T07:41:04Z"
+        },
+        {
+            "body": "**Original author :** Magoni Bruno\n\nRegarding TC votes and last \"Cons\" remark, I propose to accept such enhancement *as is* and to add a new enhancement to treat *all organism\/organism's categories* definition logical for each role endorsed by a user (especially when a platform manages hundreds of organisms...)\r\n",
+            "created_at": "2015-03-25T10:33:13Z"
+        }
+    ]
+}

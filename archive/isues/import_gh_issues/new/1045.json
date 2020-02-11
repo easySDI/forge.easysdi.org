@@ -1,0 +1,14 @@
+{
+    "issue": {
+        "closed": true,
+        "title": "Non standard buttons in dialogs (modals)",
+        "created_at": "2015-06-16T06:53:57Z",
+        "labels": [
+            "Defect",
+            "Redmine status : Closed",
+            "Category : CATALOG"
+        ],
+        "body": "**Original author :** Blatti Yves\n\nFollowing #924, found some more modals with buttons to fix in metadatata replication and import.\n\n**Fixed versions :** 4.3.2"
+    },
+    "comments": []
+}

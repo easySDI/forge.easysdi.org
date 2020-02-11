@@ -1,0 +1,39 @@
+{
+    "issue": {
+        "closed": false,
+        "title": "Rendering Real Time data",
+        "created_at": "2014-10-20T13:07:52Z",
+        "labels": [
+            "Feature",
+            "Redmine status : Accepted",
+            "Category : MAP"
+        ],
+        "body": "**Original author :** Magoni Bruno\n\nThere is a need of rendering automatically fresh data with small time intervals into a MAP context (which is not exactly real time rendering as exposed into the title).\r\n\r\nbackoffice layers' definition could be completed with two more parameters:\r\n* Real time layer : yes \/ no\r\n* Update frequency [in seconds]\r\n\r\nThese new parameters will be taken in charge by each MAP context displaying such real time layers. Only those layers will be automatically refresh with their own update frequency (not all the MAP).\r\n"
+    },
+    "comments": [
+        {
+            "body": "**Original author :** Magoni Bruno\n\nWe have to focus about which kind of parameters real-time relates on (is it an \"openlayers\" parameters\" or not).\r\nIf not we can go ahead with such feature, or we have to wait about reflexion over issue #880.",
+            "created_at": "2014-12-12T10:40:13Z"
+        },
+        {
+            "body": "**Original author :** Van Hoecke H\u00e9l\u00e8ne \n\nTC has validated the interest of allowing real time data in easySDI MAP.\r\n\r\nBut, with the new Leaflet MAP, working with vector layers (GeoJSON) seems to be a better approch.\r\n\r\nHowever, with the actual capacities of the GeoExt MAP, TC validates the proposition of using WMS with an update frequency.\r\n",
+            "created_at": "2015-12-04T09:39:14Z"
+        },
+        {
+            "body": "**Original author :** Magoni Bruno\n\n+1",
+            "created_at": "2015-12-11T17:47:24Z"
+        },
+        {
+            "body": "**Original author :** Teixeira J\u00e9r\u00f4me\n\n+1",
+            "created_at": "2015-12-11T17:58:45Z"
+        },
+        {
+            "body": "**Original author :** Van Hoecke H\u00e9l\u00e8ne \n\n+1",
+            "created_at": "2015-12-14T07:51:45Z"
+        },
+        {
+            "body": "**Original author :** M\u00e9rour Xavier\n\n+1",
+            "created_at": "2016-01-05T10:21:06Z"
+        }
+    ]
+}

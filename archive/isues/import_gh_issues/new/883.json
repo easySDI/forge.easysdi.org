@@ -1,0 +1,14 @@
+{
+    "issue": {
+        "closed": true,
+        "title": "Can't save search criteria based on relation",
+        "created_at": "2014-12-15T10:20:24Z",
+        "labels": [
+            "Defect",
+            "Redmine status : Closed",
+            "Category : CATALOG"
+        ],
+        "body": "**Original author :** Van Hoecke H\u00e9l\u00e8ne \n\nIn easySDI on SQL server, it is impossible to save a search criteria based on a relation.\r\nSql server errors are raised.\n\n**Fixed versions :** 4.2.3"
+    },
+    "comments": []
+}

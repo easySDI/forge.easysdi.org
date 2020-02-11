@@ -1,0 +1,27 @@
+{
+    "issue": {
+        "closed": true,
+        "title": "Add a link to edit Joomla user from and easySDI user",
+        "created_at": "2015-07-29T08:45:48Z",
+        "labels": [
+            "Enhancement",
+            "Redmine status : Closed",
+            "Category : CONTACT"
+        ],
+        "body": "**Original author :** Blatti Yves\n\nTo ease users management I propose to add a link to edit Joomla user from and easySDI user.\r\nNext to the user field.\r\n!EditJoomlaUser.png!\r\n\n\n**Fixed versions :** 4.3.2"
+    },
+    "comments": [
+        {
+            "body": "**Original author :** Blatti Yves\n\nNote: the link has to updated in JS if user is changed.",
+            "created_at": "2015-07-29T08:47:52Z"
+        },
+        {
+            "body": "**Original author :** Van Hoecke H\u00e9l\u00e8ne \n\nTC OK.",
+            "created_at": "2015-08-28T08:26:16Z"
+        },
+        {
+            "body": "**Original author :** Blatti Yves\n\nrevision: 8978  \r\n",
+            "created_at": "2015-08-29T19:23:43Z"
+        }
+    ]
+}

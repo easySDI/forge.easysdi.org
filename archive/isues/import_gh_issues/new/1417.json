@@ -1,0 +1,19 @@
+{
+    "issue": {
+        "closed": true,
+        "title": "SHOP Currency : Strict standards: Only variables should be assigned by reference",
+        "created_at": "2017-05-18T14:58:49Z",
+        "labels": [
+            "Defect",
+            "Redmine status : Closed",
+            "Category : SHOP"
+        ],
+        "body": "**Original author :** Blatti Yves\n\nSHOP Currency : Strict standards: Only variables should be assigned by reference in:\r\n\\administrator\\components\\com_easysdi_contact\\views\\category\\view.html.php\n\n**Fixed versions :** 4.5.0"
+    },
+    "comments": [
+        {
+            "body": "**Original author :** Blatti Yves\n\nrev. 10168",
+            "created_at": "2017-05-18T15:01:17Z"
+        }
+    ]
+}

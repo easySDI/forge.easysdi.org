@@ -1,0 +1,19 @@
+{
+    "issue": {
+        "closed": true,
+        "title": "RSS Feed: display name instead of ID",
+        "created_at": "2010-09-23T08:18:30Z",
+        "labels": [
+            "Feature",
+            "Redmine status : Rejected",
+            "Category : MONITOR"
+        ],
+        "body": "**Original author :** Baud R\u00e9my\n\nIt would be nice to display the job name instead of the job ID in the job rss feed.\r\n\r\nExample:\r\nAlertes Monitor pour le job n\u00b04"
+    },
+    "comments": [
+        {
+            "body": "**Original author :** M\u00e9rour Xavier\n\nThis is an old and very specific ticket & the community plans to make a large MONITOR refactoring.\r\n\r\nTherefore, this ticket is rejected.",
+            "created_at": "2016-02-03T15:10:57Z"
+        }
+    ]
+}

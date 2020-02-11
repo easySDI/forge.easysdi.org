@@ -1,0 +1,26 @@
+{
+    "issue": {
+        "closed": true,
+        "title": "Function for emailing to PROXY users",
+        "created_at": "2009-06-09T15:56:01Z",
+        "labels": [
+            "Feature",
+            "Redmine status : Rejected"
+        ],
+        "body": "**Original author :** M\u00e9rour Xavier\n\nA convenient function in the admin panel of the PROXY would be the ability to send an email to all PROXY users (or a group of users, for a specific service for example) in order to inform them about :\r\n\r\n- service evolutions (new capacities, renaming of layers,etc...)\r\n- server maintenance (server down for a certain period)\r\n- any other info that may impact their use of the services\r\n\r\nTo discuss... (the funtion could also be available for geoservices suppliers ? use RSS feed ?)\r\n"
+    },
+    "comments": [
+        {
+            "body": "**Original author :** M\u00e9rour Xavier\n\nIs an evolution, not a bug ! ... sorry",
+            "created_at": "2009-06-09T15:56:56Z"
+        },
+        {
+            "body": "**Original author :** Blatti Yves\n\nI don't think it's a relevant feature ton integrate a mailing system +so specific+.\r\nWith easySDI v4 access to OGC services is integrated id DB, access can be granted to 'users', 'organisms' and 'organisms categories'. Same for any access scope in the application.\r\nI would prefer an export facility in contact component with filters (organism,organisms categories, joomla group, etc...), this would be more flexible.\r\n\r\nIs this precise mail feature still a need ?\r\n",
+            "created_at": "2016-02-03T12:43:11Z"
+        },
+        {
+            "body": "**Original author :** M\u00e9rour Xavier\n\nThis mail feature is not needed anymore I think (at least not by us).\r\n\r\nI reject it.",
+            "created_at": "2016-02-03T12:49:48Z"
+        }
+    ]
+}

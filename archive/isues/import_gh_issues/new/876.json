@@ -1,0 +1,19 @@
+{
+    "issue": {
+        "closed": true,
+        "title": "Footer messages in basket",
+        "created_at": "2014-11-24T14:46:01Z",
+        "labels": [
+            "Defect",
+            "Redmine status : Closed",
+            "Category : SHOP"
+        ],
+        "body": "**Original author :** M\u00e9rour Xavier\n\nIn the basket's footer, the admin is able to manage two types of message :\r\n\r\n- one when the user is not logged\r\n- one when the user is logged in\r\n\r\nsee here (in the center of the flow) : https:\/\/forge.easysdi.org\/attachments\/download\/732\/new_basket_flow_v2.png\r\n\r\n\r\nThose two messages should be localized and, therefore, definable through the language files of Joomla!\r\n\r\n\r\n\n\n**Fixed versions :** 4.3.0"
+    },
+    "comments": [
+        {
+            "body": "**Original author :** M\u00e9rour Xavier\n\nJ\u00e9r\u00f4me,\r\nI do not see those 2 texts, either logged or not.\r\n\r\nDo you have an explanation ?",
+            "created_at": "2015-01-20T15:26:11Z"
+        }
+    ]
+}

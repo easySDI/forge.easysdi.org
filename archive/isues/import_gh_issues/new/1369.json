@@ -1,0 +1,14 @@
+{
+    "issue": {
+        "closed": true,
+        "title": "Content of modal windows can overlap action buttons",
+        "created_at": "2016-08-19T07:39:49Z",
+        "labels": [
+            "Defect",
+            "Redmine status : Closed",
+            "Category : CORE"
+        ],
+        "body": "**Original author :** Van Hoecke H\u00e9l\u00e8ne \n\nContent of modal windows can overlap action buttons and be longer than the modal size.\r\n\r\nSolution is to add a vertical scrollbar in the embedded css.\n\n**Fixed versions :** 4.3.5"
+    },
+    "comments": []
+}

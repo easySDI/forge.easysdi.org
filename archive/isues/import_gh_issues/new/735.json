@@ -1,0 +1,14 @@
+{
+    "issue": {
+        "closed": true,
+        "title": "Constraint about new version",
+        "created_at": "2014-06-11T07:53:34Z",
+        "labels": [
+            "Defect",
+            "Redmine status : Closed",
+            "Category : CATALOG"
+        ],
+        "body": "**Original author :** Magoni Bruno\n\nA new version can not be created if an already one which is not published does exist\r\n\n\n**Fixed versions :** 4.2.0"
+    },
+    "comments": []
+}

@@ -1,0 +1,14 @@
+{
+    "issue": {
+        "closed": true,
+        "title": "During viral publication, metadata children are not updated",
+        "created_at": "2016-06-10T09:16:46Z",
+        "labels": [
+            "Defect",
+            "Redmine status : Closed",
+            "Category : CATALOG"
+        ],
+        "body": "**Original author :** Van Hoecke H\u00e9l\u00e8ne \n\nPush in 4.4.1 the fix originally made for the 4.3.x and kept in this branch.\n\n**Fixed versions :** 4.4.1"
+    },
+    "comments": []
+}

@@ -1,0 +1,19 @@
+{
+    "issue": {
+        "closed": true,
+        "title": "Add all users & Remove all users buttons are not bootstraped",
+        "created_at": "2014-06-30T07:41:53Z",
+        "labels": [
+            "Defect",
+            "Redmine status : Closed",
+            "Category : CORE"
+        ],
+        "body": "**Original author :** Blatti Yves\n\nAdd all users & Remove all users buttons are not bootstraped (see screenshot).\r\nClass should be \r\n```\n\r\nclass=\"btn btn-mini\"\r\n```\n\n\n**Fixed versions :** 4.2.0"
+    },
+    "comments": [
+        {
+            "body": "**Original author :** Blatti Yves\n\nPatched in my sandbox: \/sandboxes\/asit-vd\/4.2.x\/com_easysdi_core\/src\/site\/views\/resource\/tmpl\/default.php",
+            "created_at": "2014-06-30T11:31:42Z"
+        }
+    ]
+}

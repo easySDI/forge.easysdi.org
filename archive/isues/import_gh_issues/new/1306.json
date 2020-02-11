@@ -1,0 +1,14 @@
+{
+    "issue": {
+        "closed": true,
+        "title": "Can't assign specific rules to admin map management",
+        "created_at": "2016-04-04T11:53:58Z",
+        "labels": [
+            "Defect",
+            "Redmine status : Closed",
+            "Category : MAP"
+        ],
+        "body": "**Original author :** Portier Thomas\n\nAdministration of maps, groups, layers can only be done by super user. It must be possible to share admin rules with other users.\n\n**Fixed versions :** 4.4.1"
+    },
+    "comments": []
+}

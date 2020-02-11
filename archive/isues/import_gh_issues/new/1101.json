@@ -1,0 +1,19 @@
+{
+    "issue": {
+        "closed": true,
+        "title": "On creation of a pricing profile categories are not shown",
+        "created_at": "2015-08-29T18:08:48Z",
+        "labels": [
+            "Defect",
+            "Redmine status : Closed",
+            "Category : SHOP"
+        ],
+        "body": "**Original author :** Blatti Yves\n\nOn creation of a pricing profile categories are not shown (defect in model)\n\n**Fixed versions :** 4.3.2"
+    },
+    "comments": [
+        {
+            "body": "**Original author :** Blatti Yves\n\nrev. 8976",
+            "created_at": "2015-08-29T18:26:28Z"
+        }
+    ]
+}

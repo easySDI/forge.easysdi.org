@@ -1,0 +1,14 @@
+{
+    "issue": {
+        "closed": true,
+        "title": "Fix array usage to be compatible with PHP < 5.4",
+        "created_at": "2015-11-13T15:53:40Z",
+        "labels": [
+            "Defect",
+            "Redmine status : Closed",
+            "Category : SHOP"
+        ],
+        "body": "**Original author :** Van Hoecke H\u00e9l\u00e8ne \n\nSince PHP 5.4 it's possible to do that: getSomeArray()[index]\r\n\r\nPrior to PHP 5.4, you'll need to use a temporary variable.\r\n\r\nCorrections made in :\r\n- \/components\/com_easysdi_shop\/controllers\/order.php\r\n- \/administrator\/components\/com_easysdi_shop\/layouts\/com_eaysdi_shop\/order.php\r\n\n\n**Fixed versions :** 4.3.2"
+    },
+    "comments": []
+}

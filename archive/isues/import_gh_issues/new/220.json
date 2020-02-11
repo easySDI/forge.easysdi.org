@@ -1,0 +1,27 @@
+{
+    "issue": {
+        "closed": false,
+        "title": "Add social bookmarking\/ networking capacities to CATALOG",
+        "created_at": "2010-10-01T15:14:53Z",
+        "labels": [
+            "Feature",
+            "Redmine status : New",
+            "Category : CATALOG"
+        ],
+        "body": "**Original author :** M\u00e9rour Xavier\n\nA nice feature in the CATALOG would be to give the ability to users to share metadata references on various social networking or bookmarking tools like twitter, del.icio.us, digg, facebook, google buz, etc...\r\n\r\n\r\nExisting tools like AddThis (http:\/\/www.addthis.com\/) or sharethis can be easily integrated within Joomla! component via existing plugins or specific dev.\r\n\r\nhttp:\/\/extensions.joomla.org\/extensions\/social-web\/social-bookmarking\/9111\r\nhttp:\/\/extensions.joomla.org\/extensions\/social-web\/social-bookmarking\/5070\r\n\r\n\r\n"
+    },
+    "comments": [
+        {
+            "body": "**Original author :** M\u00e9rour Xavier\n\nBecause all EasySDI administrator may not want to have such widget in their metadate page, the feature should be optionnal (setup parameters to define in the backend under CATALOG general configuration)",
+            "created_at": "2011-06-28T13:04:27Z"
+        },
+        {
+            "body": "**Original author :** M\u00e9rour Xavier\n\nAnother thing : because the metadata render in Joomla is done via an XSLtransformation, adding social bookmarking capabilities in a metadata can be done easily without doing any coding inside EasySDI.",
+            "created_at": "2012-02-24T14:09:50Z"
+        },
+        {
+            "body": "**Original author :** M\u00e9rour Xavier\n\nIt concerns CATALOG, not MONITOR",
+            "created_at": "2016-02-03T15:11:51Z"
+        }
+    ]
+}

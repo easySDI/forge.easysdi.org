@@ -1,0 +1,14 @@
+{
+    "issue": {
+        "closed": false,
+        "title": "Add ability to configure the width of the get Feature Info window",
+        "created_at": "2015-04-03T08:19:45Z",
+        "labels": [
+            "Enhancement",
+            "Redmine status : New",
+            "Category : MAP"
+        ],
+        "body": "**Original author :** Portier Thomas\n\nAdd in back-end a parameter to configure the width of the map getFeatureinfo window"
+    },
+    "comments": []
+}

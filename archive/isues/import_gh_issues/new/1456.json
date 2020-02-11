@@ -1,0 +1,14 @@
+{
+    "issue": {
+        "closed": true,
+        "title": "Leaflet : GetFeatureInfo on proxy service doesn't work",
+        "created_at": "2018-09-25T10:07:11Z",
+        "labels": [
+            "Defect",
+            "Redmine status : Closed",
+            "Category : MAP"
+        ],
+        "body": "**Original author :** Portier Thomas\n\n\n\n**Fixed versions :** 4.5.1"
+    },
+    "comments": []
+}

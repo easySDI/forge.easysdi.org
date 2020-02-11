@@ -1,0 +1,19 @@
+{
+    "issue": {
+        "closed": true,
+        "title": "Loosing itemid between components breaks active menu and breadcrumbs",
+        "created_at": "2015-05-11T08:07:54Z",
+        "labels": [
+            "Defect",
+            "Redmine status : Rejected",
+            "Category : CORE"
+        ],
+        "body": "**Original author :** Blatti Yves\n\nLoosing itemid between components breaks active menu and breadcrumbs:\r\n\r\nIn front end, when a user access the \"resources\" view from a menu, the item id is lost between components. The result is the loss of hierarchical navigation:\r\n- breadcrumb doesn't work\r\n- menus items aren't \"active\"\r\n\r\nWorking example:\r\nIf we edit a resource the hierarchy is kept: menu_entry -> resources -> one resource\r\n\r\nNon working example:\r\nIf we edit a diffusion we move from com_easysdi_core to com_esysdi_shop, and loose itemid. Navigation is broken.\r\n"
+    },
+    "comments": [
+        {
+            "body": "**Original author :** Blatti Yves\n\nThis not possible because of easySDI multi-component architecture.\r\nUsers that want to have visual continuity or working breadcrumb must hack their own way around.",
+            "created_at": "2016-09-05T12:18:31Z"
+        }
+    ]
+}

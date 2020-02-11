@@ -1,0 +1,23 @@
+{
+    "issue": {
+        "closed": true,
+        "title": "Limitation when filtering by metadata ID",
+        "created_at": "2010-12-24T09:06:10Z",
+        "labels": [
+            "Feature",
+            "Redmine status : Closed",
+            "Category : CATALOG"
+        ],
+        "body": "**Original author :** Magoni Bruno\n\nEasySDI is based on storing metadata ID inside it's own database.\r\nThe rights access over metadata is based on EasySDI's rules which are transform in sending CSW filter where clause based on metadata ID to Geonetwork.\r\n\r\nSome limitation have been encountered with geonetwork when sending more than 64000 metadata ID inside CSW getRecords filter.\r\nRemoving this limitation implies that EasySDI sended filters are not based anymore on metadata ID and should be replaced by inserting EasySDI management information inside distant metadata.\r\nInformation like:\r\n- metadata visibility\r\n- metadata state\r\n- metadata version\r\nshould be kept inside EasySDI mysql database (to keep on performance when managing metadata inside EasySDI interface) but should also stored inside Geonetwork metadata (to throw out this 64000 metadata constraint).\r\nIn addition, CSW Proxy should support filtering criteria per policy to allow securing metadata access from tierce OGC application.\r\n\r\nThis improvement could be thought into a global logical: why EasySDI management information must not be stored inside metadata themselves ?\r\n\n\n**Fixed versions :** 4.0.0"
+    },
+    "comments": [
+        {
+            "body": "**Original author :** M\u00e9rour Xavier\n\nJust for info, interesting article (in french) about Geonetwork limitation and use of PostGis to manage thousands of metadata.\n\nhttp:\/\/www.neogeo-online.net\/blog\/archives\/294\/\n\n-> See comment from FX Prunayre : http:\/\/www.neogeo-online.net\/blog\/archives\/294\/comment-page-1\/#comment-762\n\nhttp:\/\/www.neogeo-online.net\/blog\/archives\/482\/\nhttp:\/\/www.neogeo-online.net\/blog\/archives\/428\/",
+            "created_at": "2011-01-07T08:49:27Z"
+        },
+        {
+            "body": "**Original author :** Magoni Bruno\n\nSuch limitation doesn't exist anymore sine easySDI V4 as all information are stored inside metadata through specific sdi nodes!\r\n",
+            "created_at": "2014-06-24T11:00:38Z"
+        }
+    ]
+}

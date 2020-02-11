@@ -1,0 +1,14 @@
+{
+    "issue": {
+        "closed": true,
+        "title": "Metadata edition form : extent list may be very slow to build",
+        "created_at": "2016-04-15T06:54:09Z",
+        "labels": [
+            "Defect",
+            "Redmine status : Closed",
+            "Category : CATALOG"
+        ],
+        "body": "**Original author :** Blatti Yves\n\nIn metadata edition form, every selected perimeter in predefined boundary (\"code mode\" \/ multi-select) is processed as a full stereotype, it is correctly rendered at the end, but each element can take up .7 seconds to build.\r\nWe have some metadata the use up to 200 predefined boundaries, the the form uses multiples minutes to open...\r\n\n\n**Fixed versions :** 4.4.2"
+    },
+    "comments": []
+}

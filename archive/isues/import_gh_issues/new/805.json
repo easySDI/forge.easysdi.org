@@ -1,0 +1,14 @@
+{
+    "issue": {
+        "closed": false,
+        "title": "New stereotype : Pricing",
+        "created_at": "2014-08-19T12:31:28Z",
+        "labels": [
+            "Feature",
+            "Redmine status : New",
+            "Category : CATALOG"
+        ],
+        "body": "**Original author :** Blatti Yves\n\nSince pricing will be extended (#643) to add pricing profile, it would be great to have a stereotype to fill pricing informations in iso or custom fields in metadata.\r\n\r\n* that would include automatic fields:\r\n** Is it free, fee (pricing unknown) or with a pricing profile.\r\n** If with a profile:\r\n*** the detail of the profile applied to the product (liked to version) (Base fee, surface fee, min price and max price)\r\n*** category discounts from profile\r\n*** provider taxes (per order)\r\n*** provider discounts\r\n*** platform taxes (per order)\r\n* a free text field : to add informations in metadata about special conditions etc...\r\n\r\n\r\n\r\nSame question as in #800 applies: is it stored at edit time, or injected by java proxy ?\r\n(Should clearly be the second option, as a profile could be used for may products)"
+    },
+    "comments": []
+}

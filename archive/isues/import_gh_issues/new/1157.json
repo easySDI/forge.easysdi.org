@@ -1,0 +1,19 @@
+{
+    "issue": {
+        "closed": true,
+        "title": "Basket surface message is not well formated, should be splitted",
+        "created_at": "2015-10-07T12:46:00Z",
+        "labels": [
+            "Defect",
+            "Redmine status : Closed",
+            "Category : SHOP"
+        ],
+        "body": "**Original author :** Blatti Yves\n\nCurrent message : \r\n```\n\r\n[EN]\r\nYour current selection of %SURFACE is not in the allowed surface range [%SURFACEMIN,%SURFACEMAX].\r\nYour current selection of 16605241.443363762 is not in the allowed surface range [, 200000].\r\n[FR]\r\nVotre s\u00e9lection actuelle de 16605241.443363762 n'est pas dans la plage autoris\u00e9e de surface [, 200000].\r\n```\n\r\n\r\n* If there's not min OR max value, the bracket range is strange.\r\n** I propose to have 2 messages, one for \"too large\" and one for \"too small\" selections.\r\n\r\n* Units are not displayed.\r\n** Display units (the  surface should use km\u00b2 if the area is > 1000000 m\u00b2)\r\n** Values rounded (2 digits after the decimal separator).\r\n** If the surface selected is in km\u00b2 the indication should use the same\r\n\r\nResult max:\r\n```\n\r\n[EN]\r\nYour current selection of 16.61 km\u00b2 exceeds the 0.2 km\u00b2 limit.\r\n[FR]\r\nVotre s\u00e9lection actuelle de 16.61 km\u00b2 d\u00e9passe la limite de 0.2 km\u00b2.\r\n```\n\r\nResult min:\r\n```\n\r\n[EN]\r\nYour current selection of 88.96 m\u00b2 is under the 1000 m\u00b2 minimum.\r\n[FR]\r\nVotre s\u00e9lection actuelle de 88.96 m\u00b2 est inf\u00e9rieure au minimum de 1000 m\u00b2.\r\n```\n\n\n**Fixed versions :** 4.3.2"
+    },
+    "comments": [
+        {
+            "body": "**Original author :** Blatti Yves\n\nrev. 9134",
+            "created_at": "2015-10-14T14:02:00Z"
+        }
+    ]
+}

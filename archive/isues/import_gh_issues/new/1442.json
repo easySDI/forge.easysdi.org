@@ -1,0 +1,19 @@
+{
+    "issue": {
+        "closed": true,
+        "title": "SQL slowdowns on Shop > Requests",
+        "created_at": "2017-10-03T08:21:01Z",
+        "labels": [
+            "Enhancement",
+            "Redmine status : Closed",
+            "Category : SHOP"
+        ],
+        "body": "**Original author :** Bubloz Ivan\n\nOn the page \"Requests\" (Frontend) the data loading is very slow.\r\n\r\nThe Organisms query (for filters) in the pending view would be ignored because it not used at this status.\r\n\r\nIn the Requests view, we implemented a new optional parameter \"filter_smartview\".\r\nIt optimize SQL queries and forces the user to choose a filter.\r\nThis prevente using \"JPagination\" with several thousand rows.\r\n\r\n!Snap.png!\n\n**Fixed versions :** 4.5.0"
+    },
+    "comments": [
+        {
+            "body": "**Original author :** Blatti Yves\n\nVoted on 2017-10-26",
+            "created_at": "2017-10-26T08:50:17Z"
+        }
+    ]
+}

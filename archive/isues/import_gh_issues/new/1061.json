@@ -1,0 +1,14 @@
+{
+    "issue": {
+        "closed": true,
+        "title": "Orders status managment",
+        "created_at": "2015-07-17T15:56:00Z",
+        "labels": [
+            "Defect",
+            "Redmine status : Closed",
+            "Category : SHOP"
+        ],
+        "body": "**Original author :** Van Hoecke H\u00e9l\u00e8ne \n\nAccording to this specs : https:\/\/forge.easysdi.org\/projects\/easysdi\/wiki\/4_shop_orders_and_products_status, some behaviours seem to be missing :\r\n\r\n- status \"historize\" must be dropped.\r\n- status \"archived\" can be set only manually by the user, on all \"finished\" orders.\r\n- files linked to an order are clean up by the system, like now, but the process will no more affects the status : \"finished\" orders will be cleaned up after the retention delay and will keep theirs status\r\n\r\n\n\n**Fixed versions :** 4.3.2"
+    },
+    "comments": []
+}

@@ -1,0 +1,19 @@
+{
+    "issue": {
+        "closed": true,
+        "title": "SHOP Extraction REST interface does not notify user of order state",
+        "created_at": "2015-09-16T18:43:15Z",
+        "labels": [
+            "Defect",
+            "Redmine status : Closed",
+            "Category : SHOP"
+        ],
+        "body": "**Original author :** Blatti Yves\n\nSHOP Extraction REST interface does not notify user of order state\n\n**Fixed versions :** 4.3.2"
+    },
+    "comments": [
+        {
+            "body": "**Original author :** Blatti Yves\n\nRevision: 9099",
+            "created_at": "2015-09-18T14:34:54Z"
+        }
+    ]
+}

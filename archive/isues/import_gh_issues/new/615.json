@@ -1,0 +1,19 @@
+{
+    "issue": {
+        "closed": true,
+        "title": "Notify Manager - Email Addresses Missing",
+        "created_at": "2013-05-02T13:46:19Z",
+        "labels": [
+            "Defect",
+            "Redmine status : Closed",
+            "Category : CATALOG"
+        ],
+        "body": "**Original author :** Van Hoecke H\u00e9l\u00e8ne \n\nThere is a new function for editors to let them notify the manager(s) about the completion of their editing work.\r\nOnce the button is pressed, an email is sent to the manager(s). But, unfortunately, neither FROM-email address nor TO-email address is displayed. SUBJECT is OK.\r\nThese two informations need to be added to the mail.\r\n\n\n**Fixed versions :** 4.0.0"
+    },
+    "comments": [
+        {
+            "body": "**Original author :** Van Hoecke H\u00e9l\u00e8ne \n\nFrom and To field are now filled by the application.",
+            "created_at": "2013-05-07T14:51:11Z"
+        }
+    ]
+}

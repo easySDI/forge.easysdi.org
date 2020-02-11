@@ -1,0 +1,19 @@
+{
+    "issue": {
+        "closed": true,
+        "title": "Polygon import fails with only two points (rectangle)",
+        "created_at": "2016-08-25T13:28:49Z",
+        "labels": [
+            "Defect",
+            "Redmine status : Closed",
+            "Category : SHOP"
+        ],
+        "body": "**Original author :** Blatti Yves\n\nPolygon import fails with only two points (rectangle), the rectangle is shown but is not valid (basket cannot be sent).\n\n**Fixed versions :** 4.4.3"
+    },
+    "comments": [
+        {
+            "body": "**Original author :** Blatti Yves\n\nrev. 9981",
+            "created_at": "2016-08-25T13:39:57Z"
+        }
+    ]
+}

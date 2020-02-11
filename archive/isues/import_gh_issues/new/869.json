@@ -1,0 +1,19 @@
+{
+    "issue": {
+        "closed": true,
+        "title": "Map in SHOP basket is not correctly hidden",
+        "created_at": "2014-11-19T14:45:50Z",
+        "labels": [
+            "Defect",
+            "Redmine status : Closed",
+            "Category : SHOP"
+        ],
+        "body": "**Original author :** Blatti Yves\n\nThe map for perimeter selection is not correctly hidden, it prevents clicking on some areas in the basket.\r\nI suppose it comes from some sort of hack, because it's not possible to instantiate an openlayers map if the modal is hidden.\r\nSee screenshot\n\n**Fixed versions :** 4.3.0"
+    },
+    "comments": [
+        {
+            "body": "**Original author :** Portier Thomas\n\nTo prevent that, I had in my template css : \r\n#modal-perimeter {\r\nmargin-left: -45%;\r\nmin-height: 500px;\r\nwidth: 90%;\r\nmargin-top: -1000px;\r\n}\r\n\r\n#modal-perimeter.in {\r\nmargin-top: 0px;\r\n}\r\n\r\n#modal-perimeter.fade {\r\ntop: 0%;\r\n}\r\n\r\nThis could be included in easySDI",
+            "created_at": "2015-01-09T11:00:28Z"
+        }
+    ]
+}

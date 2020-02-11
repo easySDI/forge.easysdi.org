@@ -1,0 +1,19 @@
+{
+    "issue": {
+        "closed": true,
+        "title": "debug sentence in diffusion view",
+        "created_at": "2015-10-01T15:57:51Z",
+        "labels": [
+            "Defect",
+            "Redmine status : Closed",
+            "Category : SHOP"
+        ],
+        "body": "**Original author :** Blatti Yves\n\nThere's a 'console.log('here');return false;' in js of diffusion introduced in rev 7549\n\n**Fixed versions :** 4.3.2"
+    },
+    "comments": [
+        {
+            "body": "**Original author :** Blatti Yves\n\nrev. 9119",
+            "created_at": "2015-10-01T15:59:11Z"
+        }
+    ]
+}

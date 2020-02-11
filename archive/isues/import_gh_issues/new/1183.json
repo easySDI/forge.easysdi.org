@@ -1,0 +1,19 @@
+{
+    "issue": {
+        "closed": true,
+        "title": "notification is sent to extraction manager for 'auto' product mining",
+        "created_at": "2015-11-11T13:07:03Z",
+        "labels": [
+            "Defect",
+            "Redmine status : Closed",
+            "Category : SHOP"
+        ],
+        "body": "**Original author :** Blatti Yves\n\nNotification is sent to extraction manager for 'auto' product mining, it wasn't in V2.\n\n**Fixed versions :** 4.3.2"
+    },
+    "comments": [
+        {
+            "body": "**Original author :** Blatti Yves\n\nAlso fixed : when multiple extraction managers are set, only one is notified\r\nrev. 9264\r\n",
+            "created_at": "2015-11-18T07:45:39Z"
+        }
+    ]
+}

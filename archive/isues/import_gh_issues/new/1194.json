@@ -1,0 +1,19 @@
+{
+    "issue": {
+        "closed": true,
+        "title": "unable to respond to an estimate request manually",
+        "created_at": "2015-11-16T13:03:10Z",
+        "labels": [
+            "Defect",
+            "Redmine status : Closed",
+            "Category : SHOP"
+        ],
+        "body": "**Original author :** Blatti Yves\n\nUnable to respond to an estimate request manually (error message).\r\n- wrong test in front end\r\n- wrong test function in backend\r\n\r\n\n\n**Fixed versions :** 4.3.2"
+    },
+    "comments": [
+        {
+            "body": "**Original author :** Blatti Yves\n\nrev. 9244",
+            "created_at": "2015-11-16T13:21:39Z"
+        }
+    ]
+}

@@ -1,0 +1,14 @@
+{
+    "issue": {
+        "closed": true,
+        "title": "Map tools configuration not correctly loaded in administrator edition form",
+        "created_at": "2014-07-25T09:09:45Z",
+        "labels": [
+            "Defect",
+            "Redmine status : Closed",
+            "Category : MAP"
+        ],
+        "body": "**Original author :** Van Hoecke H\u00e9l\u00e8ne \n\nSaving map tools configuration works but the configuration can not be correctly reloaded in the administration map edition form.\r\n\r\nDefect due to adaptations done during cross database migration.\n\n**Fixed versions :** 4.2.0"
+    },
+    "comments": []
+}

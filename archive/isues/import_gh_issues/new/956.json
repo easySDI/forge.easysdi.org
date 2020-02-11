@@ -1,0 +1,22 @@
+{
+    "issue": {
+        "closed": true,
+        "title": "Missing CSS class for search\/filters\/actions top bars : \"sdi-searchcriteria\"",
+        "created_at": "2015-03-26T16:09:32Z",
+        "labels": [
+            "Defect",
+            "Redmine status : Closed"
+        ],
+        "body": "**Original author :** Blatti Yves\n\nIn most of easySDI list screens, we miss the class \"sdi-searchcriteria\"\r\n\n\n**Fixed versions :** 4.3.1"
+    },
+    "comments": [
+        {
+            "body": "**Original author :** Blatti Yves\n\nFound that this class exists in some views : \"sdi-searchcriteria\"",
+            "created_at": "2015-03-26T16:14:15Z"
+        },
+        {
+            "body": "**Original author :** Blatti Yves\n\nIn my sandobx",
+            "created_at": "2015-03-26T16:38:04Z"
+        }
+    ]
+}

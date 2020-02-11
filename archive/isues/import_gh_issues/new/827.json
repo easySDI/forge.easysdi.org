@@ -1,0 +1,35 @@
+{
+    "issue": {
+        "closed": true,
+        "title": "Bug whith CSW and filtering published metadata",
+        "created_at": "2014-09-19T08:04:11Z",
+        "labels": [
+            "Defect",
+            "Redmine status : Closed",
+            "Category : PROXY"
+        ],
+        "body": "**Original author :** Portier Thomas\n\nI configured a virtual CSW service with a rule with a filter on published metadata.\r\n\r\nWith a GET request it works. But not with a POST one, it returns always 0 metadata. If I configure the rule with \"All states\", it works.\r\n\r\nGET request : http:\/\/www.tigeo.fr\/proxy\/geonetwork-cat?request=GetCapabilities&service=CSW\r\n\r\nPOST params : \r\n\r\n<csw:GetRecords xmlns:dc=\"http:\/\/purl.org\/dc\/elements\/1.1\/\"\r\nxmlns:dct=\"http:\/\/purl.org\/dc\/terms\/\"\r\nxmlns:csw=\"http:\/\/www.opengis.net\/cat\/csw\/2.0.2\"\r\nservice=\"CSW\"\r\nresultType=\"results\" startPosition=\"1\" maxRecords=\"20\"\r\nversion=\"2.0.2\"\r\noutputSchema=\"http:\/\/www.opengis.net\/cat\/csw\/2.0.2\">\r\n<csw:Query typeNames=\"csw:Record\"\r\nxmlns:ogc=\"http:\/\/www.opengis.net\/ogc\"\r\nxmlns:gml=\"http:\/\/www.opengis.net\/gml\">\r\n<csw:ElementSetName>brief<\/csw:ElementSetName>\r\n<csw:Constraint version=\"1.1.0\">\r\n<ogc:Filter xmlns:ogc=\"http:\/\/www.opengis.net\/ogc\" xmlns:gml=\"http:\/\/www.opengis.net\/gml\">\r\n<\/ogc:Filter>\r\n<\/csw:Constraint>\r\n<\/csw:Query>\r\n<\/csw:GetRecords>\n\n**Fixed versions :** 4.3.1"
+    },
+    "comments": [
+        {
+            "body": "**Original author :** Portier Thomas\n\nGET request = http:\/\/www.tigeo.fr\/proxy\/geonetwork-cat?request=GetRecords&service=CSW&typeNames=csw%3ARecord",
+            "created_at": "2014-09-23T13:09:55Z"
+        },
+        {
+            "body": "**Original author :** Portier Thomas\n\nI did not test on the correct version. sorry.",
+            "created_at": "2014-09-29T16:05:26Z"
+        },
+        {
+            "body": "**Original author :** Portier Thomas\n\nI got this problem on the 4.2.7.\r\nI had a look in the log and I noticed that when status is set to published, the request sent to geonetwork is like : \r\n\r\n<ogc:Or>\r\n              <ogc:And>\r\n                <ogc:PropertyIsEqualTo>\r\n                  <ogc:PropertyName>metadatastate<\/ogc:PropertyName>\r\n                  <ogc:Literal>published<\/ogc:Literal>\r\n                <\/ogc:PropertyIsEqualTo>\r\n                <ogc:PropertyIsGreaterThanOrEqualTo>\r\n                  <ogc:PropertyName>published<\/ogc:PropertyName>\r\n                  <ogc:Literal>2015-03-30 16:34:23<\/ogc:Literal>\r\n                <\/ogc:PropertyIsGreaterThanOrEqualTo>\r\n              <\/ogc:And>\r\n            <\/ogc:Or>\r\n\r\nWhere PropertyIsGreaterThanOrEqualTo is set to the date of the day. That's mean that it filters on metadata published after today... Is there a reason to add this filter?",
+            "created_at": "2015-03-30T15:04:12Z"
+        },
+        {
+            "body": "**Original author :** Portier Thomas\n\nOk I got it, the filter must be set to PropertyIsLessThanOrEqualTo. We want to expose metadata that has been published before today.",
+            "created_at": "2015-04-02T08:08:57Z"
+        },
+        {
+            "body": "**Original author :** Van Hoecke H\u00e9l\u00e8ne \n\nYou're right, filter is not correct.\r\nWe have to test the state AND the published date but the comparator is not correct on this last one.",
+            "created_at": "2015-04-02T08:14:38Z"
+        }
+    ]
+}

@@ -1,0 +1,14 @@
+{
+    "issue": {
+        "closed": true,
+        "title": "Layer order is not well rendered in leaflet map",
+        "created_at": "2017-04-27T16:37:30Z",
+        "labels": [
+            "Defect",
+            "Redmine status : Closed",
+            "Category : MAP"
+        ],
+        "body": "**Original author :** Portier Thomas\n\n \n\n**Fixed versions :** 4.5.0"
+    },
+    "comments": []
+}

@@ -1,0 +1,14 @@
+{
+    "issue": {
+        "closed": true,
+        "title": "CATALOG : Buttons for simple\/advanced search ",
+        "created_at": "2015-02-24T12:37:29Z",
+        "labels": [
+            "Defect",
+            "Redmine status : Closed",
+            "Category : CATALOG"
+        ],
+        "body": "**Original author :** Van Hoecke H\u00e9l\u00e8ne \n\nIn search form, buttons for simple or advanced search must be hide if there is no advanced search criteria.\n\n**Fixed versions :** 4.3.0"
+    },
+    "comments": []
+}

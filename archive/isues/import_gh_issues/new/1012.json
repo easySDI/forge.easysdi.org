@@ -1,0 +1,23 @@
+{
+    "issue": {
+        "closed": true,
+        "title": "[backend] Add a tab \"Users and roles\" in organisms ",
+        "created_at": "2015-05-20T12:23:07Z",
+        "labels": [
+            "Enhancement",
+            "Redmine status : Closed",
+            "Category : CONTACT"
+        ],
+        "body": "**Original author :** M\u00e9rour Xavier\n\n*Need*\r\nCurrently, administrators can only see roles from a users perpective. It would be convenient to have the \"organism's perpective\" as well.\r\n\r\n*Proposal*\r\nThe idea is to add a new \"tab\" named \"Users and roles\" in the organisme view in backend to give a transversal view of which users have roles in a specific organism.\r\n!https:\/\/forge.easysdi.org\/attachments\/download\/879\/Administration%20-%20easySDI%20-%20organisme.png!\r\n\r\nThis would be a \"read-only\" screen since roles are defined in the users screen. Thus, to facilitate the roles' edition, all users listed in the view could be linked to the \"com_easysdi_contact&view=user&layout=edit\" to ease their edition if necessary.\r\n\r\n\r\n*\"Mockup\"*\r\nI suggest the following view structure :\r\n\r\n\r\n\r\n|_.Organism|_.Users|_\\5=.Roles|\r\n|           |           |_.Resources manager|_.Metadata manager|_.Metadata editor|_.Diffusion manager|_.etc...|\r\n|_.Organism A|_.User 1|=. X |=. - |=. - |=. - |=. - |\r\n|_.Organism A|_.User 2|=. X |=. - |=. - |=. - |=. - |\r\n|_.Organism A|_.User 3|=. - |=. X|=. - |=. X |=. - |\r\n|_.Organism B|_.User 45|=. - |=. X|=. X |=. X |=. - |\r\n|_.Organism B|_.User 47|=. - |=. X|=. X |=. X |=. - |\r\n|_.Organism C|_.User 23|=. - |=. X|=. X |=. X |=. - |\r\n|_.Organism D|_.User 12|=. - |=. X|=. X |=. X |=. - |\r\n\r\nremark : all users of the organism (member of the current organism) should be listed, also ones with no current roles in the organism.\r\n\r\n\r\n*Extra features*\r\n\r\n_could be done with datatable_\r\n\r\n- order on organism\r\n- order on roles \r\n- order on users' name\r\n- make a typo difference between internal users (member of the current organism) and external users\n\n**Fixed versions :** 4.3.2"
+    },
+    "comments": [
+        {
+            "body": "**Original author :** Van Hoecke H\u00e9l\u00e8ne \n\nTC has validated this enhancement.\r\nThe datatable should offer : group by organism (with collapsable group) and a by role filter.",
+            "created_at": "2015-05-29T08:05:01Z"
+        },
+        {
+            "body": "**Original author :** Blatti Yves\n\nSome further layout work may be necessary. But it's working !",
+            "created_at": "2015-06-12T09:11:47Z"
+        }
+    ]
+}

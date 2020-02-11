@@ -1,0 +1,95 @@
+{
+    "issue": {
+        "closed": true,
+        "title": "add price calculation for diffusion",
+        "created_at": "2014-03-14T11:24:46Z",
+        "labels": [
+            "Feature",
+            "Redmine status : Closed",
+            "Category : SHOP"
+        ],
+        "body": "**Original author :** M\u00e9rour Xavier\n\nthe need is to be able to calculate prices directly \"on the fly\" in the basket, before validating an order.\r\n\r\nMany impacts :\r\n\r\n*in back-end*\r\n\r\n* add a new role \"pricing manager\" in the \"user\" screen, tab \"role\" (the user can have the role in 0 to n organisms); \"pricing manager\" is an effective role related to organism and not to resource like \"diffusion manager\", \"metadata editor\", ...\r\n* in the SHOP webservice, the tarification and price calculation details must be delivered (see gliffy attachement number 4)\r\n* in the SHOP, add a new menu \"pricing\", the admin can configure the tax amount per categorie (see gliffy attachement 6); after discussion some implementation changes are validated:\r\n\r\n * cost per category is filled in category's edition form\r\n * other global parameter are integrated in SHOP options form (\"Pricing\" tab)\r\n * \"Pricing\" tab will have a message like \"Category's cost are editable in category edition form (link to categories list)\r\n\r\n* in the SHOP, add a general parameter to enable\/disable the online price calculation : if set to disable, the basket remain as in easySDI V4.1 -and the \"pricing manager\" role is not available in CONTACT-\r\n\r\n*in front-end*\r\n\r\n* a new screen where the pricing manager will be able to define its entire price politic \r\nif the user can manage pricing for different organisms, the user must first choose for which organism he wants see the pricing.\r\n\r\n * first screen lists all organisms that a pricing manager is responsible for (with per organism filter); if the user is responsible of only one organism than the first screen displays automatically pricing's edition form\r\n\r\n\r\n(see gliffy screen in attachement, number 2)\r\n\r\n* in \"diffusion management\" under \"ressources\". The attribute \"tarif\" will be move under \"extraction\" and will contain the following items :\r\n1. free\r\n2. fee without a pricing profile (if set, \"Ask for estimate\" button is available inside the basket beside \"Place order\" button)\r\n3. fee with a pricing profil\r\n - profil 1\r\n - profil 2\r\n - profil ...\r\n - ...\r\n\r\n* basket will evolve with all pricing information, per data supplier (see layout in attachement basket5.zip : html example)\r\n\r\n * Perimeter selection is pushed on top of basket (because perimeter is needed for price calculation and therefore should be defined by the user at first - not mandatory but in logical order)\r\n * Basket and display logic is described in attachment : new_basket_explain.png\r\n\r\n* formula to determinate the price is attached to this issue (gliffy number 3 document)\r\n* pseudo-code for product price calculation is provided here : https:\/\/forge.easysdi.org\/issues\/643#note-18\r\n\r\n* *price calculation MUST be done server-side for security reasons*\r\n\r\n## Open questions :\r\n\r\n- how to store pricing parameters for each elements n the basket ?\r\n- which XML structure to add in the SHOP webservce to transmit prices details to providers ?\r\n\n\n**Fixed versions :** 4.3.0"
+    },
+    "comments": [
+        {
+            "body": "**Original author :** M\u00e9rour Xavier\n\ngliffy has to be changed (basket)",
+            "created_at": "2014-03-14T11:25:17Z"
+        },
+        {
+            "body": "**Original author :** M\u00e9rour Xavier\n\nquestion open : tax rate (TVA) ???",
+            "created_at": "2014-03-14T12:48:04Z"
+        },
+        {
+            "body": "**Original author :** M\u00e9rour Xavier\n\nWork on basket to do (layout proposal with Gliffy)\r\n\r\nThanks Yves.",
+            "created_at": "2014-03-21T15:01:23Z"
+        },
+        {
+            "body": "**Original author :** M\u00e9rour Xavier\n\nHi Bruno,\r\n\r\nWe completed this new feature description. Hope you have now all you need to digg in !\r\nPlease do not hesitate to write your questions here.\r\n\r\nThen we will need a vote :-)",
+            "created_at": "2014-04-24T13:35:17Z"
+        },
+        {
+            "body": "**Original author :** M\u00e9rour Xavier\n\nHi,\n\nWe realized we should complete the description of this feature in three areas :\n\n- price calculation details (rules of rounding mainly)\n- pice details given to the third-party via WPS\n- XML structure in WPS \n\nWe get back to you !\n",
+            "created_at": "2014-05-27T13:56:54Z"
+        },
+        {
+            "body": "**Original author :** Blatti Yves\n\nPseudo-code for price calculation (with pricing profile) of an item in basket:\r\n\r\n```\n\r\n<code class=\"php\">\r\n\/\/$diffusion represents the \"product\" (jos_sdi_diffusion) and linked properties like princing profile\r\n\/\/$order represents the order, with the client, third party the surface...\r\n\/\/$config is shop configuration\r\n\/\/$provider is the organism that provides the product (diffusion)\r\n\/\/$provider.princing is the configuration of pricing at organism level\r\n\r\n$priceExclTaxes = 0;\r\n$finalPriceExclTaxes = 0;\r\n$finalPriceInclTaxes = 0;\r\n\r\n$floorReached = false;\r\n$ceilingReached = false;\r\n$isFreeForMyCategory = false;\r\n$freeForMyCategoryName = \"\";\r\n$hasRebateForCategory = false;\r\n$rebateForMyCategory = 0;\r\n$rebateForMyCategoryName = \"\";\r\n$isFreeInternalOrder = false;\r\n\r\n$provider = $diffusion.getOrganism();\r\n\r\n\/\/ if a third party is set, use it for pricing instead of client\r\nif($order.thirdparty != null){\r\n    $organismForPricing  = $order.thirdparty.organism;\r\n}else{\r\n    $organismForPricing  = $order.client.organism;\r\n}\r\n\r\n\/\/ if \"free for internal orders\" is set -> no pricing\r\nif( ! ($organismForPricing == $provider) && $provider.princing.doNotBillInternalOrders ){\r\n\r\n    \/\/ Test if free product by category\r\n    foreach($organismForPricing.categories[] as $categ){\r\n        if($diffusion.princingProfile.isFreeForCateg($categ)){\r\n            \/\/ Yeah product is free for this category !\r\n            $isFreeForMyCategory = true;\r\n            $freeForMyCategoryName = $categ.name;\r\n            break;\r\n        }\r\n    }\r\n    \r\n    \/\/ if product is not free for any of the (cleint\/thridparty) organism category\r\n    if(!$isFreeForMyCategory){\r\n        $priceExclTaxes = $diffusion.princingProfile.fixedBasePrice\r\n                        + $diffusion.princingProfile.pricePerSurface * $order.surface;\r\n        \/\/Adapt with ceil and floor\r\n        if ($priceExclTaxes > $diffusion.princingProfile.ceilingPrice){\r\n            $ceilingReached = true;\r\n            $priceExclTaxes = $diffusion.princingProfile.ceilingPrice;\r\n        }\r\n        if ($priceExclTaxes < $diffusion.princingProfile.floorPrice){\r\n            $floorReached = true;\r\n            $priceExclTaxes = $diffusion.princingProfile.floorPrice;\r\n        }\r\n        \r\n        \/\/Check org. category has a rebate given by provider organism\r\n        foreach($organismForPricing.categories[] as $categ){\r\n            $reb = $provider.princing.getRebateForCateg($categ);\r\n            if($reb > $rebateForMyCategory){\r\n                $rebateForMyCategory = $reb;\r\n                $hasRebateForCategory = true;\r\n                $rebateForMyCategoryName = $categ.name;\r\n            }\r\n        }\r\n        \r\n        \/\/Apply rebate\r\n        if($hasRebateForCategory){\r\n            $finalPriceExclTaxes = $priceExclTaxes - $priceExclTaxes * ($rebateForMyCategory \/ 100)\r\n        }else{\r\n            $finalPriceExclTaxes = $priceExclTaxes;\r\n        }\r\n        \r\n        \/\/Round excl. tax price to cent\r\n        $finalPriceExclTaxes = round($finalPriceExclTaxes,2);\r\n        \r\n        \/\/Apply VAT     \r\n        $finalPriceInclTaxes = $finalPriceExclTaxes + ($finalPriceExclTaxes * ($config.VAT \/ 100));\r\n    }\r\n}\r\n\r\n```\n",
+            "created_at": "2014-06-25T14:32:54Z"
+        },
+        {
+            "body": "**Original author :** Magoni Bruno\n\nThanks for voting on such feature described by Xavier...",
+            "created_at": "2014-06-26T12:42:39Z"
+        },
+        {
+            "body": "**Original author :** Magoni Bruno\n\n+1",
+            "created_at": "2014-06-26T12:42:45Z"
+        },
+        {
+            "body": "**Original author :** M\u00e9rour Xavier\n\nSurprisingly... it's a +1 for me ;-)",
+            "created_at": "2014-06-26T12:53:41Z"
+        },
+        {
+            "body": "**Original author :** Teixeira J\u00e9r\u00f4me\n\nOl\u00e0 amigos,\r\n+1",
+            "created_at": "2014-06-26T14:49:29Z"
+        },
+        {
+            "body": "**Original author :** Blatti Yves\n\nAs we discussed to create a new service instead of extending the current WPS, I have started a specification page in the wiki (as it will be used as documentation in future).\r\nThere are still many question (documented in the wiki), like how do we store perimeters of \"code\/value\" type. You will also find an XML sample and an XSD schema.\r\nAny comments are welcome !\r\n\r\nYou'll find the page here: https:\/\/forge.easysdi.org\/projects\/easysdi\/wiki\/4_shop_extraction_interface",
+            "created_at": "2014-08-12T08:39:08Z"
+        },
+        {
+            "body": "**Original author :** Blatti Yves\n\nXML\/XSD updated in https:\/\/forge.easysdi.org\/projects\/easysdi\/wiki\/4_shop_extraction_interface.\r\nComments are welcom",
+            "created_at": "2014-08-15T09:28:25Z"
+        },
+        {
+            "body": "**Original author :** Villemagne J\u00e9r\u00f4me\n\nAbout the getOrders part of your wiki page.\r\n\r\nAs an order can have no thirdparty, min\/maxOccurs were added into the xsd to the tierce organism.\r\nI also added id and guid attributes to the tarification profile (change done also in db ^^).\r\n\r\nQuestion:\r\n - -in the xsd, the product guid is named metadataId : why not guid ?- (cf #643-41)\r\n\r\nAbout the XSD validity : $myXML->schemaValidate($yourXSD) returns TRUE - so I would say that it's ok",
+            "created_at": "2014-08-27T10:40:56Z"
+        },
+        {
+            "body": "**Original author :** M\u00e9rour Xavier\n\nAssigned to Yves, he will answer asap.",
+            "created_at": "2014-08-27T11:40:02Z"
+        },
+        {
+            "body": "**Original author :** Villemagne J\u00e9r\u00f4me\n\nI made a mistake !\r\n\r\nmetadataId exposes the metadata's guid... so, to avoid any confusion, I propose the followig change to xsd:\r\n- metadataId becomes guid and exposes the product guid\r\n- product has a new children named metadata\r\n- xml and pdf are moved into metadata\r\n- metadata's id and guid are exposed as attributes\r\n```\n\r\n    <!-- Describes the products of a supplier -->         \r\n    <xs:complexType name=\"productsType\">\r\n        <xs:sequence>\r\n            <!-- There's at least one product -->  \r\n            <xs:element name=\"product\" maxOccurs=\"unbounded\" minOccurs=\"1\">\r\n                <xs:complexType>\r\n                    <xs:sequence>\r\n                        <xs:element type=\"xs:string\" name=\"name\"\/>\r\n                        <!-- Products pricing definition -->\r\n                        <xs:element xmlns:sdi=\"http:\/\/www.easysdi.org\/2011\/sdi\" type=\"sdi:productPricingType\" name=\"pricing\"\/>\r\n                        <!-- Product properties, this element is mandatory, but my be empty if no properties are set for this product -->\r\n                        <xs:element xmlns:sdi=\"http:\/\/www.easysdi.org\/2011\/sdi\" type=\"sdi:productPropertiesType\" name=\"properties\"\/>\r\n                        <!-- Product metadata -->\r\n                        <xs:element xmlns:sdi=\"http:\/\/www.easysdi.org\/2011\/sdi\" type=\"sdi:productMetadataType\" name=\"metadata\"\/>\r\n                        \r\n                    <\/xs:sequence>\r\n                    <xs:attribute type=\"xs:integer\" name=\"id\" use=\"required\"\/>\r\n                    <xs:attribute type=\"xs:string\" name=\"guid\" use=\"required\"\/>\r\n                <\/xs:complexType>\r\n            <\/xs:element>\r\n        <\/xs:sequence>\r\n    <\/xs:complexType>   \r\n\r\n\t<!-- Describes the metadata of a product -->\r\n\t<xs:complexType name=\"productMetadataType\">\r\n\t\t<xs:sequence>\r\n\t\t\t<!-- XML copy of product's metadata, saved when order is placed -->\r\n\t\t\t<xs:element type=\"xs:base64Binary\" name=\"xml\"\/>\r\n\t\t\t<!-- PDF copy of product's metadata, saved when order is placed -->\r\n\t\t\t<xs:element type=\"xs:base64Binary\" name=\"pdf\"\/>\r\n\t\t<\/xs:sequence>\r\n\t\t<xs:attribute type=\"xs:integer\" name=\"id\" use=\"required\"\/>\r\n\t\t<xs:attribute type=\"xs:string\" name=\"guid\" use=\"required\"\/>\r\n\t<\/xs:complexType>\r\n```\n\r\n\r\nBtw: I also propose to add the client's name:\r\n```\n\r\n<!-- Describes a client (a user) -->\r\n    <xs:complexType name=\"clientType\">\r\n        <xs:sequence>\r\n            <xs:element type=\"xs:string\" name=\"name\"\/>\r\n            <!-- client's addresses -->\r\n            <xs:element xmlns:sdi=\"http:\/\/www.easysdi.org\/2011\/sdi\" type=\"sdi:contactType\" name=\"contact\"\/>\r\n            <xs:element xmlns:sdi=\"http:\/\/www.easysdi.org\/2011\/sdi\" type=\"sdi:invoiceType\" name=\"invoice\"\/>\r\n            <xs:element xmlns:sdi=\"http:\/\/www.easysdi.org\/2011\/sdi\" type=\"sdi:deliveryType\" name=\"delivery\"\/>\r\n            <xs:element xmlns:sdi=\"http:\/\/www.easysdi.org\/2011\/sdi\" type=\"sdi:organismType\" name=\"organism\"\/>\r\n        <\/xs:sequence>\r\n        <xs:attribute type=\"xs:integer\" name=\"id\" use=\"required\"\/>\r\n        <xs:attribute type=\"xs:string\" name=\"guid\" use=\"required\"\/>\r\n    <\/xs:complexType>\r\n```\n",
+            "created_at": "2014-08-28T14:22:25Z"
+        },
+        {
+            "body": "**Original author :** Blatti Yves\n\nLooks perfect to me !\r\n\r\n- Wow infos\r\n- Such clearer\r\n!http:\/\/tof.canardpc.com\/view\/de063400-3ade-4aa6-98d8-11a87a841545.jpg!\r\n\r\nCan you merge your improvements in the wiki page attachments ?\r\nhttps:\/\/forge.easysdi.org\/projects\/easysdi\/wiki\/4_shop_extraction_interface",
+            "created_at": "2014-09-01T07:59:45Z"
+        },
+        {
+            "body": "**Original author :** Villemagne J\u00e9r\u00f4me\n\nUpdate done for getOrders !\r\n\r\nAbout setOrder:\r\nwith this method, we're allowed to set only one product at once (even if order has many products) : so why not call this method *setProduct* ?\r\nif it's a remote storage, the supplier send a filename : why not if it's a local storage ?\r\nwhat is the benefit using POST instead of XML\/XSD ?\r\nAfter some reflexions, we think we should use an XSD to validate the request cause:\r\n- some parameters cannot be free filed (productState ...)\r\n- an xsd validation protects us against unpredictable cases and allows a more concise\/readable webservice's code\r\n- it's more consistent (for us !) to have get and set using the same philosophy",
+            "created_at": "2014-09-01T13:12:22Z"
+        },
+        {
+            "body": "**Original author :** Blatti Yves\n\n- name setProduct : you're totally right about this !\r\n- localStorage filename: I didn't set it as mandatory, because if we use the file post right: we set the content-disposition header with a filename (RFC:6266). But this can be discussed.\r\n- I proposed using POST mainly for sending the data as a file and not XML encoded: like this PHP can stream the file to disk, and not load it to memory. This allows us to load extra-large files (the only limits are upload size in apache and php... and disk space).\r\n- I agree that a full XML webservice would be more consistent, and \"classic\". But do we have a solution that would allow large files in XML response without blowing up server's memory?",
+            "created_at": "2014-09-02T07:02:59Z"
+        },
+        {
+            "body": "**Original author :** Villemagne J\u00e9r\u00f4me\n\nxml samples for setProduct requests and xsd : open for comments :-)",
+            "created_at": "2014-09-03T12:29:15Z"
+        },
+        {
+            "body": "**Original author :** Villemagne J\u00e9r\u00f4me\n\nAs discussed with Yves, xml should be lighter:\r\n- supplier is identified accross authentication\r\n- we don't need id *AND* guid : I propose to drop id\r\n- in the same way, we don't need id *AND* textual information (ie for state, storage...) : I propose to drop id\r\n\r\nhere is updated proposal files",
+            "created_at": "2014-09-04T06:24:27Z"
+        }
+    ]
+}

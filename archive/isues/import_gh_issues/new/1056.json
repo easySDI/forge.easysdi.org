@@ -1,0 +1,19 @@
+{
+    "issue": {
+        "closed": true,
+        "title": "Wrong label from \"featureTypeName\" in easySDI shop ",
+        "created_at": "2015-07-06T08:10:43Z",
+        "labels": [
+            "Defect",
+            "Redmine status : Closed",
+            "Category : SHOP"
+        ],
+        "body": "**Original author :** Blatti Yves\n\nWrong label from \"featureTypeName\" in easySDI shop \r\nIs duplicate of \"field containing name\"\n\n**Fixed versions :** 4.3.2"
+    },
+    "comments": [
+        {
+            "body": "**Original author :** Blatti Yves\n\nHas been merge and translated in crowdin (fr).\r\nCan be closed.",
+            "created_at": "2015-07-27T12:20:14Z"
+        }
+    ]
+}

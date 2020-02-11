@@ -1,0 +1,18 @@
+{
+    "issue": {
+        "closed": true,
+        "title": "classes for sys table",
+        "created_at": "2014-09-24T12:27:16Z",
+        "labels": [
+            "Enhancement",
+            "Redmine status : Rejected"
+        ],
+        "body": "**Original author :** Villemagne J\u00e9r\u00f4me\n\nClasses for all sys tables should be create and contain as class' constants the entries of the tables.\r\nThus:\r\n* we can directly make reference to this constants from everywhere without having to maintain the list in various place\r\n* constants are more readable than integer (with or without comment)\r\n* commenting removed table entries can hold history and be helpful for comprehension"
+    },
+    "comments": [
+        {
+            "body": "**Original author :** Van Hoecke H\u00e9l\u00e8ne \n\nTC agrees. Each developper should add when it's needed such classes.\r\n\r\nTicket is rejected, it doesn't need to be kept open.",
+            "created_at": "2015-05-07T13:10:19Z"
+        }
+    ]
+}

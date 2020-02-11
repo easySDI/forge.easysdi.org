@@ -1,0 +1,23 @@
+{
+    "issue": {
+        "closed": true,
+        "title": "Archive an order should delete files",
+        "created_at": "2016-06-17T15:12:08Z",
+        "labels": [
+            "Defect",
+            "Redmine status : Rejected",
+            "Category : SHOP"
+        ],
+        "body": "**Original author :** Portier Thomas\n\nWhen you archive an order, files should not be deleted?"
+    },
+    "comments": [
+        {
+            "body": "**Original author :** M\u00e9rour Xavier\n\nNo, the file should not be deleted.\r\n\r\n-->\"Archive\" just mean that the request is tagged to be differentiated from \"active\" requests (see enhancement description #1216)\r\n--> the file is deleted automatically according to the time of file retention defined in backend (cleanup order delay in SHOP parameters)\r\n\r\n\r\n\r\n",
+            "created_at": "2016-06-17T15:25:49Z"
+        },
+        {
+            "body": "**Original author :** Portier Thomas\n\nYou are right. Thanks.",
+            "created_at": "2016-06-17T15:35:01Z"
+        }
+    ]
+}

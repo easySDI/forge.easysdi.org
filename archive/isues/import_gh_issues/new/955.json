@@ -1,0 +1,19 @@
+{
+    "issue": {
+        "closed": true,
+        "title": "Pricing views : html titles levels and forms formatted by tables",
+        "created_at": "2015-03-26T15:32:36Z",
+        "labels": [
+            "Defect",
+            "Redmine status : Closed",
+            "Category : SHOP"
+        ],
+        "body": "**Original author :** Blatti Yves\n\nIn pricing organism, and pricing profile's views:\r\n* Titles are h4 instead of ##\r\n* Some form layout is made of html tables -> change for J!\/bootstrap style\n\n**Fixed versions :** 4.3.1"
+    },
+    "comments": [
+        {
+            "body": "**Original author :** Blatti Yves\n\nIn my sandbox",
+            "created_at": "2015-03-26T15:34:05Z"
+        }
+    ]
+}

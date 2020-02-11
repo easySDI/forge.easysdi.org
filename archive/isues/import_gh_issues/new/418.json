@@ -1,0 +1,23 @@
+{
+    "issue": {
+        "closed": true,
+        "title": "Add others CSW filter",
+        "created_at": "2011-06-23T13:38:11Z",
+        "labels": [
+            "Feature",
+            "Redmine status : Rejected",
+            "Category : PROXY"
+        ],
+        "body": "**Original author :** M\u00e9rour Xavier\n\nCSW filters embedded in PROXY are currently based on \r\n\r\n(1) methods (GetCapabilities, GetRecords,...)\r\n(2) visibility (private, public, protected)\r\n(3) object status (validated, published,...)\r\n(4) type of objects (layer, map, dataset,...)\r\n(5) XML tags (attributes)\r\n(6) period of availability\r\n\r\nWe could imagine propose a new kind of filter based on \"usage\". \r\nThis is the idea developped by BRGM in France to harvest catalogs (CSW) for a specific use.\r\n\r\nSee idea here (dia 13, 14 & 16 - only in french): http:\/\/www.rencontres-sig-la-lettre.fr\/wp-content\/uploads\/2011\/03\/Interoperabilite-Riviere.pdf\r\n\r\nBriefly : they want to search for layers with specific keywords, those layers being available in WMS\r\nUse case : integrate a CSW client in webmapping interface to allow users to search data by CSW request and then add layers to the map.(such a client exist : http:\/\/cswclient.brgm-rec.fr\/csw-iso-ap\/exemples\/)\r\n\r\n\r\n***************************\r\nAn other kind of filter could be add to a CSW policy in the PROXY by allowing the administrator to define specific but standard CSW filters, for example :\r\n\r\nA. search for metadata with a specific Geographical Extent\r\nUse case : we want to provide access to metadata of Paris extent, not the whole country.\r\n\r\nB. search for metadata belonging to a specific ISO Thematic\r\nUse case : we want to provide access to metadate concerning only \"Farming\"\r\n\r\n_Of course, this kind of filter can be done as well by the final client in its request by putting specific filters. But by doing this directly in the PROXY, it may ease the discover process for specific use or application._\r\n\r\n\r\nThese are ideas... to develop !\r\n"
+    },
+    "comments": [
+        {
+            "body": "**Original author :** M\u00e9rour Xavier\n\nThey seems to develop this kind of filters in Geonetwork, see here :\nhttp:\/\/trac.osgeo.org\/geonetwork\/wiki\/proposals\/VirtualCSW",
+            "created_at": "2011-11-18T15:35:57Z"
+        },
+        {
+            "body": "**Original author :** Blatti Yves\n\nThis is now supported by easySDI (v4):\r\n* Some by system (like geographic extent)\r\n* The other by custom CSW search fields",
+            "created_at": "2016-02-03T15:15:33Z"
+        }
+    ]
+}

@@ -1,0 +1,19 @@
+{
+    "issue": {
+        "closed": true,
+        "title": "\"no result\" not displayed",
+        "created_at": "2015-09-08T13:04:56Z",
+        "labels": [
+            "Defect",
+            "Redmine status : Closed",
+            "Category : SHOP"
+        ],
+        "body": "**Original author :** M\u00e9rour Xavier\n\nWhen a list has no result, the mention \"Aucun enregistrement dans la liste\" (translatable string of course) should be displayed.\r\nThis view is displaying the right mention : view=resources\r\n\r\nHere are the views where it's missing (the one I found):\r\n\r\n- view=orders&layout=validation\r\n- view=orders\r\n \r\n*Possibly, each translatable string should be differentiated so ones can customize mentions*\n\n**Fixed versions :** 4.4.3"
+    },
+    "comments": [
+        {
+            "body": "**Original author :** Blatti Yves\n\nrev. 9973",
+            "created_at": "2016-08-09T12:21:03Z"
+        }
+    ]
+}

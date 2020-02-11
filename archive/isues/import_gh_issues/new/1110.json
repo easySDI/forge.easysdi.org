@@ -1,0 +1,19 @@
+{
+    "issue": {
+        "closed": true,
+        "title": "False button displayed for requests \"done\" in edit mode",
+        "created_at": "2015-09-04T15:12:48Z",
+        "labels": [
+            "Defect",
+            "Redmine status : Rejected",
+            "Category : SHOP"
+        ],
+        "body": "**Original author :** M\u00e9rour Xavier\n\nWhen opening a request (view=request&layout=edit) that is already completed, there are two buttons at the bottom :\r\n\r\n- \"Send to the user\"\r\n- \"Cancel\"\r\n\r\nOnly one single button should be displayed with the text \"Back\".\r\n\r\n"
+    },
+    "comments": [
+        {
+            "body": "**Original author :** Blatti Yves\n\nWill be fixed by Enhancement #979 (We'll not be able to respond to all product at one, we'll have one post per product\/diffusion)",
+            "created_at": "2015-09-07T12:32:49Z"
+        }
+    ]
+}

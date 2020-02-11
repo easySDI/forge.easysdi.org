@@ -1,0 +1,26 @@
+{
+    "issue": {
+        "closed": true,
+        "title": "Translation changes",
+        "created_at": "2014-05-02T10:03:07Z",
+        "labels": [
+            "Feature",
+            "Redmine status : Closed"
+        ],
+        "body": "**Original author :** Magoni Bruno\n\nSome translation changes has been brought in en-GB and fr-FR locales\r\n\r\n*en-GB files to integrate in repository*\r\n* attachment:en-GB.pkg_easysdi.sys.ini\r\n* attachment:en-GB.com_easysdi_core.sys.ini\r\n* attachment:en-GB.mod_easysdi_adminbutton.sys.ini\r\n* attachment:en-GB.mod_easysdi_admininfo.sys.ini\r\n\r\n*translation files to integrate in repository*\r\nBuild translated archive from localization platform\r\n\r\n---\r\n\n\n**Fixed versions :** 4.1.0"
+    },
+    "comments": [
+        {
+            "body": "**Original author :** Magoni Bruno\n\n\n",
+            "created_at": "2014-05-02T10:08:09Z"
+        },
+        {
+            "body": "**Original author :** Magoni Bruno\n\nMagoni Bruno wrote:\r\n> Some translation changes has been brought in en-GB and fr-FR locales\r\n> \r\n> *en-GB files to integrate in repository*\r\n> * attachment:en-GB.pkg_easysdi.sys.ini\r\n> \r\n> *translation files to integrate in repository*\r\n\r\n",
+            "created_at": "2014-05-02T12:41:53Z"
+        },
+        {
+            "body": "**Original author :** Magoni Bruno\n\nMagoni Bruno wrote:\r\n> Some translation changes has been brought in en-GB and fr-FR locales\r\n> \r\n> *en-GB files to integrate in repository*\r\n> * attachment:en-GB.pkg_easysdi.sys.ini\r\n> * attachment:en-GB.com_easysdi_core_sys.ini\r\n> * attachment:en-GB.mod_easysdi_adminbutton.sys.ini\r\n> * attachment:en-GB.mod_easysdi_admininfo.sys.ini\r\n> \r\n> *translation files to integrate in repository*\r\n> Build translated archive from localization platform\r\n> \r\n> ---\r\n\r\n",
+            "created_at": "2014-05-02T12:42:59Z"
+        }
+    ]
+}

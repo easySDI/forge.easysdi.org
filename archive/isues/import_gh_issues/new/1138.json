@@ -1,0 +1,27 @@
+{
+    "issue": {
+        "closed": true,
+        "title": "request save crashes if pricing disabled",
+        "created_at": "2015-09-17T15:27:35Z",
+        "labels": [
+            "Defect",
+            "Redmine status : Closed",
+            "Category : SHOP"
+        ],
+        "body": "**Original author :** Portier Thomas\n\nIf pricing is disabled in shop parameter, if you try to upload a result, there is an error : \r\n\r\nFatal error: Cannot access empty property in \/components\/com_easysdi_shop\/models\/request.php on line 263\n\n**Fixed versions :** 4.3.2"
+    },
+    "comments": [
+        {
+            "body": "**Original author :** Blatti Yves\n\nHi Thomas !\r\n\r\nI'm working on this ! Will be commited very soon !",
+            "created_at": "2015-09-17T15:31:10Z"
+        },
+        {
+            "body": "**Original author :** Portier Thomas\n\nOk thanks",
+            "created_at": "2015-09-18T07:31:17Z"
+        },
+        {
+            "body": "**Original author :** Blatti Yves\n\nRevision: 9099",
+            "created_at": "2015-09-18T14:33:54Z"
+        }
+    ]
+}

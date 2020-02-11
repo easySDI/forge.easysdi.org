@@ -1,0 +1,23 @@
+{
+    "issue": {
+        "closed": true,
+        "title": "Unable to save a catalog ",
+        "created_at": "2014-11-18T13:25:44Z",
+        "labels": [
+            "Defect",
+            "Redmine status : Closed",
+            "Category : CATALOG"
+        ],
+        "body": "**Original author :** Blatti Yves\n\nUnable to save a catalog:\r\n```\n\r\nUnknown column 'created' in 'field list' SQL=INSERT INTO `jos_sdi_catalog_resourcetype` (`ordering`,`state`,`catalog_id`,`resourcetype_id`,`created`,`created_by`,`guid`) VALUES ('2','1','2','2','2014-11-18 13:19:31','10000','ad3bcbbc-ec0e-ae04-c508-bcf16a899e3b') \r\n```\n\r\n\r\nIt seems to be a change introduced in: \"7529\":https:\/\/forge.easysdi.org\/projects\/easysdi\/repository\/revisions\/7529\/diff\/branches\/4.2.x\/joomla\/easysdi\/com_easysdi_catalog\/src\/administrator\/tables\/catalogresourcetype.php\r\n\r\n*Easysdi_catalogTablecatalogresourcetype* now extends *sdiTable* (previously : JTable) but database model doesn't fit (no _created_, _modified_, _..._by_ ... fields)"
+    },
+    "comments": [
+        {
+            "body": "**Original author :** Villemagne J\u00e9r\u00f4me\n\nHello Yves,\r\n\r\nit was fixed in 4.2.x and thus should be fix in 4.3.x ; if you're agree, you can close it :-)",
+            "created_at": "2015-01-21T07:29:46Z"
+        },
+        {
+            "body": "**Original author :** Blatti Yves\n\nPerfect, thanks",
+            "created_at": "2015-02-11T10:18:31Z"
+        }
+    ]
+}

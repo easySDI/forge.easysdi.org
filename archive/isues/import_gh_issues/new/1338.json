@@ -1,0 +1,13 @@
+{
+    "issue": {
+        "closed": false,
+        "title": "Publish metadata from the resource list",
+        "created_at": "2016-06-10T09:21:17Z",
+        "labels": [
+            "Defect",
+            "Redmine status : New"
+        ],
+        "body": "**Original author :** Van Hoecke H\u00e9l\u00e8ne \n\nFollowing this fix : https:\/\/forge.easysdi.org\/issues\/1333.\r\n\r\nA solution has to be found to allow metadata publication from the resource list.\r\nAccording to the problem met, it seems that a status is missing in the metadata life cycle : a single \"validated\" status exists, but two are needed \"validated by editor\" and \"validated by publisher\"."
+    },
+    "comments": []
+}

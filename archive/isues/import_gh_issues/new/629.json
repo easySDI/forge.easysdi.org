@@ -1,0 +1,91 @@
+{
+    "issue": {
+        "closed": false,
+        "title": "Compatibility with geonetwork 3.0.x",
+        "created_at": "2013-08-22T10:52:27Z",
+        "labels": [
+            "Feature",
+            "Redmine status : Request For Comments",
+            "Category : CATALOG"
+        ],
+        "body": "**Original author :** Portier Thomas\n\nGeonetwork 3.x has changed its authentication method and added a dedicated service for transactions : geonetwork\/srv\/eng\/csw-publication\r\n\r\nEasySDI has evolve to be compatible with this new version."
+    },
+    "comments": [
+        {
+            "body": "**Original author :** M\u00e9rour Xavier\n\nHello,\r\n\r\nDoes it mean that previous versions of GN will not work with EasySDI V4 ?\r\n\r\nThanks,\r\n\r\nXavier",
+            "created_at": "2013-08-22T11:29:51Z"
+        },
+        {
+            "body": "**Original author :** Portier Thomas\n\nI would like to say \"EasySDI has TO evolve to be compatible with this new version\"\r\nThe first version of easysdi V4 will be compatible with geonetwork 2.6.\r\n\r\nI dont't know the effort to make the V4 compatible with 2.10 AND 2.6.",
+            "created_at": "2013-08-22T12:34:13Z"
+        },
+        {
+            "body": "**Original author :** M\u00e9rour Xavier\n\nOK, I got it ;-)\r\n\r\nThanks",
+            "created_at": "2013-08-22T12:57:59Z"
+        },
+        {
+            "body": "**Original author :** M\u00e9rour Xavier\n\nAccording to what we have seen, there are two different aspect of this issue :\n\n1. Geonetwork now implement a new authentication method\n2. Geonetwork has splitted its CSW into two different : one for \"read-only access\" and one for \"publication\/transaction\". \n\nIn conclusion, to work with this last version, EasySDI has to evolve on those two aspects.",
+            "created_at": "2013-10-18T08:54:16Z"
+        },
+        {
+            "body": "**Original author :** Magoni Bruno\n\nIn the meantime, easySDI should change the current authenticating's way and switch it from the PROXY servlet to the CATALOG php side.\nIt will remove the absolute need of deploying a JAVA servlet to use easySDI.\n\nA question is also about keeping previous authentication method for geonetwrok versions equals or lesser than 2.6.4",
+            "created_at": "2013-12-20T10:23:20Z"
+        },
+        {
+            "body": "**Original author :** M\u00e9rour Xavier\n\nQuestion :\r\n\r\nThe dual access to CSW (one for \"read-only access\" and one for \"publication\/transaction\") in Geonetwork is still unmanaged by EasySDI, is it right ? or adaptations were made to support these new characteristics ?\r\n\r\nThanks\r\n\r\nXavier",
+            "created_at": "2013-12-20T11:05:54Z"
+        },
+        {
+            "body": "**Original author :** M\u00e9rour Xavier\n\nDoes anyone has any input of this issue (GN 2.10 compatibiliyt and authentication methods) ? Was there any work done so far ? or still an issue to dig ?\r\n\r\nThanks",
+            "created_at": "2014-04-15T15:01:21Z"
+        },
+        {
+            "body": "**Original author :** Portier Thomas\n\nGeonetwork 2.6.4 doesn't support harvesting HTTPS csw. An other agrument to make EasySDI compliant with a most recent version of Geonetwork.",
+            "created_at": "2014-07-18T13:19:58Z"
+        },
+        {
+            "body": "**Original author :** M\u00e9rour Xavier\n\nIn its last meeting, the PSC decided to wait for geonetwork version 3.0 tp make adaptation in easySDI (since 3.0 will be the next major GN release https:\/\/github.com\/geonetwork\/core-geonetwork\/wiki\/Roadmap-GeoNetwork-3.0).\r\n\r\nMaking intermediate effort with lower versions would certainly be lost with the upcoming version.\r\n\r\n\r\n\r\n",
+            "created_at": "2014-07-28T13:02:24Z"
+        },
+        {
+            "body": "**Original author :** Portier Thomas\n\nDo we have a date of this 3.0 release? Isn't it risky to rely on the first version of a major release (3.0)? \r\nThe 2.10 has been tested for more than 1 year.\r\n\r\nAn other bug found on the 2.6.4 : [[http:\/\/sourceforge.net\/p\/geonetwork\/mailman\/message\/27609028\/]]\r\nYou have to install the 2.6.3 if you want the search to be fully functional.",
+            "created_at": "2014-08-01T13:39:04Z"
+        },
+        {
+            "body": "**Original author :** Magoni Bruno\n\nHi Thomas,\r\n\r\nMay be you're right not to wait too much on effective 3.0 stable version!\r\nDo you have time to spent about deploying geonetwork 2.10 and make analysis of what should be changed inside easysdi to be compliant with ?\r\n\r\nThanks,\r\nBruno",
+            "created_at": "2014-09-02T10:04:16Z"
+        },
+        {
+            "body": "**Original author :** Magoni Bruno\n\nRegarding Geonetwork roadmap https:\/\/github.com\/geonetwork\/core-geonetwork\/releases, I propose that TC discuss about how embracing migration under 2.10.x OR\/AND 3.0.x",
+            "created_at": "2015-04-06T11:45:54Z"
+        },
+        {
+            "body": "**Original author :** Villemagne J\u00e9r\u00f4me\n\nAfter TC's discussion, it seems that there is more cost than benefit migrating to geonetwork 3.0 ; TC agree that this discussion should stay opened but waiting for more plus.",
+            "created_at": "2015-04-10T09:09:09Z"
+        },
+        {
+            "body": "**Original author :** Van Hoecke H\u00e9l\u00e8ne \n\nWith the fixed bugs proposed by the v3 (specifically on harvesting), the migration should be now put on the schedule.",
+            "created_at": "2015-06-26T09:38:48Z"
+        },
+        {
+            "body": "**Original author :** M\u00e9rour Xavier\n\nPSC decides *not* to put any effort on Geonetwork 3.0 BUT, instead, have in mind the developpment of an \"easySDI inernal CSW engine\" which will be \"lighter\" and \"easyier\" to deploy than GN.\r\n\r\nNext step : organize a tech workshop on the question to draw the architecture of this engine. Each partner will think about it internally to come with inputs for the workshop.\r\nTarget : beginning of october 2015\r\n\r\n",
+            "created_at": "2015-07-07T10:21:59Z"
+        },
+        {
+            "body": "**Original author :** Van Hoecke H\u00e9l\u00e8ne \n\nThomas has performed some tests on GN3 and easySDI 4. \r\nIt appears that easySDI 4 *is*, without any adaptation to make, *compatible* with GN3.\r\n\r\nNo effort has to be put in this direction.\r\n\r\nWhat should we do about the idea of an internal CSW engine?",
+            "created_at": "2015-09-28T12:01:56Z"
+        },
+        {
+            "body": "**Original author :** Van Hoecke H\u00e9l\u00e8ne \n\n*Informations given during TC meeting :*\r\n\r\n* Version negociation is not possible from easySDI service configuration because GN3 only support GetCapabilities in POST. This must be a GN3 bug, because CSW specifications required GetCapabilities in HTTP GET. Work around is : use a preexisting physical service, change the url and authentication informations, but don't perform negociation on it.\r\n* GN3 uses HTTP Basic authentication, we do not need to use anymore the specific provider authentication mecanism\r\n* Conclusion is : some few days are required to adapt easySDI to the new GN3 specificities, but it can be use as it is.\r\n\r\nConcerning the oncoming workshop, with this GN3 compatibility news, the developpment of an internal CSW engine seems to be no more a hot topic. \r\n*TC members have proposed following topics to be discussed :*\r\n# CSW search enhancements :\r\n* Faceted search\r\n* search autocompletion\r\n* multi-criteria search\r\n* ...\r\n\r\n# Extraction features (ASIT-VD)\r\n\r\n# Roadmap easySDI:\r\n* Monitor + services?\r\n* ...\r\n\r\n\r\n\r\n\r\n",
+            "created_at": "2015-09-28T15:07:09Z"
+        },
+        {
+            "body": "**Original author :** Magoni Bruno\n\nSuch issue will be reassigned to SC when further technical info will be available about Geonetwork V3 compliance...",
+            "created_at": "2016-03-04T08:44:24Z"
+        },
+        {
+            "body": "**Original author :** Blatti Yves\n\nWIKI for TC : https:\/\/forge.easysdi.org\/projects\/joomla\/wiki\/GeoNetwork_3_support",
+            "created_at": "2017-01-06T07:16:34Z"
+        }
+    ]
+}

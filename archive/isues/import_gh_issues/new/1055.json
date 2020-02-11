@@ -1,0 +1,14 @@
+{
+    "issue": {
+        "closed": true,
+        "title": "Unable to preview a metadata as editor or responsible if not in access scope",
+        "created_at": "2015-07-03T13:14:55Z",
+        "labels": [
+            "Defect",
+            "Redmine status : Closed",
+            "Category : CATALOG"
+        ],
+        "body": "**Original author :** Blatti Yves\n\nUnable to preview a metadata as editor or responsible if not in access scope.\r\n\r\nWith delegation, we can manage and edit objects of other organisms.\r\n\r\nThe problem is specific:\r\nif the user \"userA\" of organism \"orgA\" has the rights to edit a resource in organism \"orgB\": he can edit metadata, diffusion etc...\r\nif the resource has an access scope to \"only organism orgB\" he will not be able to preview the metadata.\n\n**Fixed versions :** 4.4.1"
+    },
+    "comments": []
+}

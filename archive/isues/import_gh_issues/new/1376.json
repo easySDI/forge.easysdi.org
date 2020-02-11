@@ -1,0 +1,19 @@
+{
+    "issue": {
+        "closed": true,
+        "title": "Notice: Undefined offset in sdiuser.php",
+        "created_at": "2016-10-19T08:48:01Z",
+        "labels": [
+            "Defect",
+            "Redmine status : Closed",
+            "Category : CORE"
+        ],
+        "body": "**Original author :** Blatti Yves\n\nNotice: Undefined offset in sdiuser.php\r\n\r\nIn getTPValidationManagerOrganisms and getOrganismManagerOrganisms\n\n**Fixed versions :** 4.4.3"
+    },
+    "comments": [
+        {
+            "body": "**Original author :** Blatti Yves\n\nrev. 10011",
+            "created_at": "2016-10-19T09:08:52Z"
+        }
+    ]
+}

@@ -1,0 +1,23 @@
+{
+    "issue": {
+        "closed": true,
+        "title": "Add time stats to topextractions + add organisms details link to topdownloads",
+        "created_at": "2017-09-14T08:35:05Z",
+        "labels": [
+            "Enhancement",
+            "Redmine status : Closed",
+            "Category : DASHBOARD"
+        ],
+        "body": "**Original author :** Bubloz Ivan\n\n* Topextractions : add 3 cols (min, max, median) at then end of the table\r\n* Topdownloads : add 1 col (link) to organisms details. This link will export product download count groupped by organisms directly to PDF.\r\n* Add new backend parameter to choose length of \"Top indicators\" (will keep the default walue 5)\r\n\r\n!Statistiques.png!\n\n**Fixed versions :** 4.5.0"
+    },
+    "comments": [
+        {
+            "body": "**Original author :** Bubloz Ivan\n\n-Add new backend parameter to choose length of \"Top indicators\" (will keep the default walue 5)-\r\nNo backend parameter needed, the default value will be change to 10\r\n",
+            "created_at": "2017-09-19T10:19:12Z"
+        },
+        {
+            "body": "**Original author :** Blatti Yves\n\nVoted on 2017-10-26",
+            "created_at": "2017-10-26T08:43:28Z"
+        }
+    ]
+}

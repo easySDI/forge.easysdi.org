@@ -1,0 +1,19 @@
+{
+    "issue": {
+        "closed": false,
+        "title": "mpdf incompatibility with php 7",
+        "created_at": "2019-05-16T12:48:32Z",
+        "labels": [
+            "Defect",
+            "Redmine status : New",
+            "Category : CORE"
+        ],
+        "body": "**Original author :** Portier Thomas\n\n"
+    },
+    "comments": [
+        {
+            "body": "**Original author :** Blatti Yves\n\nYes, but recent versions of mPDF are not compatible with older PHP versions (5.3, 5.4, 5.5) (already pointed here #1285).\r\n\r\nThis will cause problems since we've always matched Joomla minimum requirement (https:\/\/downloads.joomla.org\/technical-requirements) and there are current easySDI users with older PHP versions in production (ASIT, AGI, GVA, ...)\r\n",
+            "created_at": "2019-05-16T12:59:26Z"
+        }
+    ]
+}

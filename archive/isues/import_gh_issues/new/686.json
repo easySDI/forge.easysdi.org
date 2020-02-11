@@ -1,0 +1,35 @@
+{
+    "issue": {
+        "closed": true,
+        "title": "Hidden fields in metadata edition \"take space\", they should be \"really hidden\"",
+        "created_at": "2014-04-16T13:04:26Z",
+        "labels": [
+            "Defect",
+            "Redmine status : Closed",
+            "Category : CATALOG"
+        ],
+        "body": "**Original author :** Blatti Yves\n\nIn metadata edition form, hidden fields are not shown but the containers use space.\r\nCan we imagine to hide the containers too?\r\n\r\n(See screenshot)\r\n\n\n**Fixed versions :** 4.0.2"
+    },
+    "comments": [
+        {
+            "body": "**Original author :** Portier Thomas\n\nYes, agree. We could also skip containers for these hidden fields.",
+            "created_at": "2014-04-16T14:22:50Z"
+        },
+        {
+            "body": "**Original author :** Magoni Bruno\n\nAlso agree but need to verify potential impacts.\r\nAs this is not a functional defect, may I propose to change it from \"defect\" to \"feature\" as it will ease acceptance workflow ?\r\n\r\nThanks a lot,",
+            "created_at": "2014-04-16T14:25:53Z"
+        },
+        {
+            "body": "**Original author :** M\u00e9rour Xavier\n\nFor me, it seems to be a defect since the layout is \"missed up\" by this behaviour. ",
+            "created_at": "2014-04-16T14:34:10Z"
+        },
+        {
+            "body": "**Original author :** Magoni Bruno\n\nAfter consolidating information, hidden entries engage large lost of space inside metadata edition form.\r\nSo it's to be considered as a problematic visual bug...\r\n\r\nGoal is to use a specific CSS class for main hidden block to prevent any lost of space without loosing potential hidden data.\r\n\r\nNote:\r\nWith Geonetwork 3, updating metadata will perform submitting partial metadata; it will theoratically allow not maintaining anymore hidden information inside metadata edition form",
+            "created_at": "2014-04-17T09:29:25Z"
+        },
+        {
+            "body": "**Original author :** Battaglia Marc\n\nI added a class \"hidden\" on the \"DIV\" surrounding the hidden fields.",
+            "created_at": "2014-04-30T07:58:39Z"
+        }
+    ]
+}

@@ -1,0 +1,13 @@
+{
+    "issue": {
+        "closed": true,
+        "title": "Number of characters of a layer name",
+        "created_at": "2010-12-10T17:03:56Z",
+        "labels": [
+            "Feature",
+            "Redmine status : Rejected"
+        ],
+        "body": "**Original author :** Portier Thomas\n\nThe number of characters in the name of a layer in the map configuration should not be limited\r\n"
+    },
+    "comments": []
+}

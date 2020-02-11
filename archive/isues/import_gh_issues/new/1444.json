@@ -1,0 +1,23 @@
+{
+    "issue": {
+        "closed": true,
+        "title": "Improve getfeature on leaflet",
+        "created_at": "2017-10-26T08:12:56Z",
+        "labels": [
+            "Enhancement",
+            "Redmine status : Closed",
+            "Category : MAP"
+        ],
+        "body": "**Original author :** Portier Thomas\n\nWhen using a geatFeature with leaflet we have to choose the interrogation layer.\r\nThis enhancement propose to query all layers at once and display the results grouped by type.\r\n\n\n**Fixed versions :** 4.5.0"
+    },
+    "comments": [
+        {
+            "body": "**Original author :** Blatti Yves\n\nAccepted on 2017-10-26",
+            "created_at": "2017-10-26T09:04:02Z"
+        },
+        {
+            "body": "**Original author :** Blatti Yves\n\nAccepter on October 26th 2017",
+            "created_at": "2018-02-22T17:24:30Z"
+        }
+    ]
+}

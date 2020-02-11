@@ -1,0 +1,14 @@
+{
+    "issue": {
+        "closed": false,
+        "title": "M\u00e9tadata r\u00e9plication: derni\u00e8re version disponible",
+        "created_at": "2018-04-06T11:18:40Z",
+        "labels": [
+            "Defect",
+            "Redmine status : Affected",
+            "Category : CATALOG"
+        ],
+        "body": "**Original author :** Van Hoecke H\u00e9l\u00e8ne \n\nLors de la r\u00e9plication d'une m\u00e9tadonn\u00e9e le crit\u00e8re de recherche \"Version: Derni\u00e8re version\" ne\r\nfonctionne pas toujours correctement, ce n'est pas toujours la derni\u00e8re version qui est renvoy\u00e9e.\n\n**Fixed versions :** 4.3.16"
+    },
+    "comments": []
+}

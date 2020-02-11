@@ -1,0 +1,23 @@
+{
+    "issue": {
+        "closed": true,
+        "title": "mail not sent when using wps setorder request",
+        "created_at": "2016-04-01T13:22:37Z",
+        "labels": [
+            "Defect",
+            "Redmine status : Closed",
+            "Category : SHOP"
+        ],
+        "body": "**Original author :** Portier Thomas\n\n\n\n**Fixed versions :** 4.4.1"
+    },
+    "comments": [
+        {
+            "body": "**Original author :** M\u00e9rour Xavier\n\n-Actually, *it's not a defect*.- \r\n\r\n-the mail is not send on purpose since it is an automatic extraction and, thus, should not need manual intervention.-\r\n-if mails are sent, we have by ASIT VD providers who would receives 100 emails per day. Not what they need :-)-\r\n\r\n\r\n-What is you use case Thomas ?-\r\n\r\n\r\nAfter a call with Thomas, I interpreted wrong the ticket. This case is specific to the WPS (not the REST connector) and concerns email notification to users (the clients) , not providers.\r\nMy apologize...",
+            "created_at": "2016-04-01T13:26:53Z"
+        },
+        {
+            "body": "**Original author :** Portier Thomas\n\nno problem, my description of the issue was not really clear...",
+            "created_at": "2016-04-05T10:25:54Z"
+        }
+    ]
+}

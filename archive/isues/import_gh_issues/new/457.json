@@ -1,0 +1,23 @@
+{
+    "issue": {
+        "closed": true,
+        "title": "Clean up\/Delete error log",
+        "created_at": "2011-08-19T14:40:50Z",
+        "labels": [
+            "Feature",
+            "Redmine status : Rejected",
+            "Category : MONITOR"
+        ],
+        "body": "**Original author :** Larsen de Martino Jorgen\n\nThe newly committed code saves pictures from WMS and WMTS reponses if the service returns an error.\r\n\r\nThe database and with that the hard drive can very fast be over flooded with data.\r\n\r\nI suggest that a delete button is placed under the tab 'Maintenance'\r\n\r\nIt would be nice to be able to: \r\n# to select a date range to delete \r\n# to set an auto delete that keeps a specified period in the database at all times\r\n# to specify how often the auto delete should run\r\n\r\nAnd maybe more - please fill in\r\n\r\nI for one would be happy when the first bullet is done\r\n\r\n"
+    },
+    "comments": [
+        {
+            "body": "**Original author :** M\u00e9rour Xavier\n\nHi Jorgen,\r\n\r\nGood idea ! It extend the current log maintenance options.\r\n\r\nIf we add an \"auto delete\" option, I would suggest to made it available as well for the log (so far, it's done manually -> as you suggest in your point 1.)\r\n\r\nHum... I am wondering as well if logs and pictures should not be managed all together ?\r\nIs there any need to keep logs longer in the databse than the pictures ?? for space issues I guess...",
+            "created_at": "2011-08-19T16:08:16Z"
+        },
+        {
+            "body": "**Original author :** M\u00e9rour Xavier\n\nThis is an old and very specific ticket & the community plans to make a large MONITOR refactoring.\r\n\r\nTherefore, this ticket is rejected.",
+            "created_at": "2016-02-03T15:00:48Z"
+        }
+    ]
+}

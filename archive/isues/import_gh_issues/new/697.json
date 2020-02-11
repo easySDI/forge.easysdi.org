@@ -1,0 +1,14 @@
+{
+    "issue": {
+        "closed": true,
+        "title": "Inconsistent back button",
+        "created_at": "2014-04-25T17:02:23Z",
+        "labels": [
+            "Defect",
+            "Redmine status : Closed",
+            "Category : CATALOG"
+        ],
+        "body": "**Original author :** Magoni Bruno\n\nResource type management in backoffice has got an action \"back\" which should not be present in the toolbar.\r\n!resourcetype_back.png!\n\n**Fixed versions :** 4.0.2"
+    },
+    "comments": []
+}

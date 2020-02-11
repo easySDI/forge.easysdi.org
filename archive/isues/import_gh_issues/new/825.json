@@ -1,0 +1,19 @@
+{
+    "issue": {
+        "closed": true,
+        "title": "Error when associate ressource and visualisation",
+        "created_at": "2014-09-18T15:31:11Z",
+        "labels": [
+            "Defect",
+            "Redmine status : Closed",
+            "Category : MAP"
+        ],
+        "body": "**Original author :** Portier Thomas\n\nWhen two ressources have the same name, associate a visualisation generates an arror because an the same alias is created in #_sdi_visualisation table.\r\nI think this must be refactored in the future but to fix the bug, we can also remove the unique key for column alias.\n\n**Fixed versions :** 4.3.2"
+    },
+    "comments": [
+        {
+            "body": "**Original author :** Van Hoecke H\u00e9l\u00e8ne \n\nResource, unique, alias is now used as visualization alias. \r\n#_sdi_visualization schema was updated to fix alias field size to the same size than in #_sdi_resource table. ",
+            "created_at": "2015-05-19T12:54:41Z"
+        }
+    ]
+}

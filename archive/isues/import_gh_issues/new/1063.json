@@ -1,0 +1,19 @@
+{
+    "issue": {
+        "closed": true,
+        "title": "When no action is availlable on resource, the action button should be disabled",
+        "created_at": "2015-07-28T08:17:13Z",
+        "labels": [
+            "Defect",
+            "Redmine status : Closed",
+            "Category : CATALOG"
+        ],
+        "body": "**Original author :** Blatti Yves\n\nWhen no action is available on resource, the action button should be disabled (visible, but not inactive).\r\nIt currently shows a blank menu (not very user friendly).\r\n!no-action-availble.png!\r\n\n\n**Fixed versions :** 4.3.2"
+    },
+    "comments": [
+        {
+            "body": "**Original author :** Blatti Yves\n\nWorks for me. Tanks",
+            "created_at": "2015-08-21T15:04:21Z"
+        }
+    ]
+}

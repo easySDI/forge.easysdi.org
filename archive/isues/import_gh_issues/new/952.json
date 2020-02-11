@@ -1,0 +1,14 @@
+{
+    "issue": {
+        "closed": true,
+        "title": "Ease roles' definition",
+        "created_at": "2015-03-25T15:08:41Z",
+        "labels": [
+            "Enhancement",
+            "Redmine status : Rejected",
+            "Category : CONTACT"
+        ],
+        "body": "**Original author :** Magoni Bruno\n\nRoles'definition per user can be very time consuming when the platform manages hundreds of organisms, especially when some user have been delegated by all organisms to manage some tasks.\r\n\r\nI.e. delegation list could be completed, for each role, with \"All organisms\" and with \"Category\" items to speed up assignation.\r\nRight access logical will be fixed in consequenec (i.e. available actions in ressources list, and so on)\r\n"
+    },
+    "comments": []
+}

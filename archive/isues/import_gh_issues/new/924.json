@@ -1,0 +1,26 @@
+{
+    "issue": {
+        "closed": true,
+        "title": "Standardize buttons in dialogs (modals)",
+        "created_at": "2015-03-04T13:50:17Z",
+        "labels": [
+            "Enhancement",
+            "Redmine status : Closed"
+        ],
+        "body": "**Original author :** Blatti Yves\n\nEasySDI has different placements and colors of buttons in modals.\r\n\r\nI think we should establish a rule, and stick to it as possible.\r\n\r\nThe default in bootstrap, and most commonly seen is to place \"Main action\" button on the right most, and other buttons on its left.\r\nAnd prefer default color: \"primary\" (blue) for the primary button, and grey\/white for the rest.\r\nWe can add a rule for \"risky actions\", like delete: \"danger\" (red) for the main action button.\r\n\r\n*My proposal as a rule:*\r\n\r\n!standardize_buttons_in_dialogs.png!\r\n\r\n*What does TC thinks ?*\r\n---------------------------\r\n \r\n\r\n## Bootstrap default:\r\n\r\n!bootstap_default.png!\r\n\r\n## easySDI modals:\r\n\r\n*We have some dialogs that are pretty standard:*\r\n\r\n!import_metadata.png!\r\n\r\n*We have risky actions that could be set to red:*\r\n\r\n!remove_node_in_metadata.png!\r\n!reject_validation.png!\r\n\r\n*And we have mixed ones*\r\n\r\n!delete_resource.png!\r\n!publish_metadata.png!\r\n\r\n\r\n\r\n\r\n\r\n\r\n\n\n**Fixed versions :** 4.3.2"
+    },
+    "comments": [
+        {
+            "body": "**Original author :** Van Hoecke H\u00e9l\u00e8ne \n\nTC has validated the Yves proposal.\r\nThanks to assigned to Yves.",
+            "created_at": "2015-03-06T10:27:46Z"
+        },
+        {
+            "body": "**Original author :** Magoni Bruno\n\nThanks Yves :-)",
+            "created_at": "2015-03-06T21:00:17Z"
+        },
+        {
+            "body": "**Original author :** Blatti Yves\n\nDone, except for bootbox ones (separate issue: #1006)",
+            "created_at": "2015-05-15T09:36:43Z"
+        }
+    ]
+}

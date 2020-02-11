@@ -1,0 +1,19 @@
+{
+    "issue": {
+        "closed": true,
+        "title": "Pricing dropdown in diffusion panel",
+        "created_at": "2016-06-10T08:47:29Z",
+        "labels": [
+            "Defect",
+            "Redmine status : Closed",
+            "Category : SHOP"
+        ],
+        "body": "**Original author :** Portier Thomas\n\nif pricing disabled in shop options, pricing dropdown in diffusion panel show not be shown.\n\n**Fixed versions :** 4.4.2"
+    },
+    "comments": [
+        {
+            "body": "**Original author :** Blatti Yves\n\nrev. 9907",
+            "created_at": "2016-07-01T09:46:16Z"
+        }
+    ]
+}

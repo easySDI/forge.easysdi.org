@@ -1,0 +1,14 @@
+{
+    "issue": {
+        "closed": true,
+        "title": "Bad management of multiple attributes inside a metadata",
+        "created_at": "2012-03-30T14:42:31Z",
+        "labels": [
+            "Defect",
+            "Redmine status : Closed",
+            "Category : CATALOG"
+        ],
+        "body": "**Original author :** Magoni Bruno\n\nWhen defining attribute having multiple occurrences inside metadata, playing with it (adding\/removing occurrences) leads to obtain inconsistent formulary.\r\nUser loose control of managing such occurrences as minus button disapears for some of them.\r\n(see copy screen in attachment)\r\n\r\nIt happens in frontend and backend metadata edition formularies.\n\n**Fixed versions :** 4.0.0"
+    },
+    "comments": []
+}

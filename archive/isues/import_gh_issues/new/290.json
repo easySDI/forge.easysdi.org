@@ -1,0 +1,26 @@
+{
+    "issue": {
+        "closed": true,
+        "title": "Support WMS DescribeLayer Request",
+        "created_at": "2011-01-21T14:47:58Z",
+        "labels": [
+            "Feature",
+            "Redmine status : Rejected"
+        ],
+        "body": "**Original author :** Portier Thomas\n\nThe DescribeLayer request is not yet supported by the PROXY. \r\nIt must be possible to assign to the wms a new wfs adress."
+    },
+    "comments": [
+        {
+            "body": "**Original author :** M\u00e9rour Xavier\n\nHello Thomas,\r\n\r\nI am not sur to get the whole picture of this issue... it seems there are two differents issues :\r\n\r\n1. When you say \"The DescribeLayer request is not yet supported by the PROXY\", it means that a remote server supporting DescribeLayer request cannot be properly relayed by the PROXY, that's right ?\r\n\r\n\r\n2. When you say \"It must be possible to assign to the wms a new wfs adress\", you mean the PROXY should be able to rewrite the XML response by adding\/changing the WFS (or WCS) corresponding to the WMY layer. It it so ?\r\n\r\nThanks for your answer ;-)\r\n",
+            "created_at": "2011-03-17T14:05:34Z"
+        },
+        {
+            "body": "**Original author :** M\u00e9rour Xavier\n\nThomas, since we are soon putting new contributions into the PROXY, I would like to have your comment on this issue... can you answers my previous questions ? ;-)",
+            "created_at": "2011-04-15T08:14:43Z"
+        },
+        {
+            "body": "**Original author :** Portier Thomas\n\n1. Yes that's right. The DescribeLayer checkbox in the policy admin panel is \r\nalways disabled. That's logical, indeed the describeLayer request gives the \r\ncoresponding wfs for a wms (in geoserver when you had a new layer, it creates a \r\nwms and a wfs with the same data).\r\n2. Yes. We can also imagine to add a login\/password to access to this service.",
+            "created_at": "2011-04-18T09:39:50Z"
+        }
+    ]
+}

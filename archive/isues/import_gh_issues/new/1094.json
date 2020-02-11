@@ -1,0 +1,14 @@
+{
+    "issue": {
+        "closed": true,
+        "title": "Basket MAX\/MIN area\/surface is not recalculated when a product is removed",
+        "created_at": "2015-08-27T13:14:33Z",
+        "labels": [
+            "Defect",
+            "Redmine status : Closed",
+            "Category : SHOP"
+        ],
+        "body": "**Original author :** Blatti Yves\n\nBasket MAX\/MIN area\/surface is not recalculated when a product is removed\r\n\n\n**Fixed versions :** 4.3.2"
+    },
+    "comments": []
+}

@@ -1,0 +1,19 @@
+{
+    "issue": {
+        "closed": true,
+        "title": "Since #895 organism manager has been added, metadata edit may get locked",
+        "created_at": "2015-06-15T14:40:49Z",
+        "labels": [
+            "Defect",
+            "Redmine status : Closed",
+            "Category : CATALOG"
+        ],
+        "body": "**Original author :** Blatti Yves\n\nSince #895 organism manager has been added, metadata edit may get locked.\r\n\r\nVisible only if versioning has been used, or if version IDs differ from metadata IDs.\n\n**Fixed versions :** 4.3.2"
+    },
+    "comments": [
+        {
+            "body": "**Original author :** Blatti Yves\n\nsdiFactory::getSdiUser()->authorizeOnMetadata should be used on MD version instead of sdiFactory::getSdiUser()->authorize",
+            "created_at": "2015-06-15T15:04:54Z"
+        }
+    ]
+}

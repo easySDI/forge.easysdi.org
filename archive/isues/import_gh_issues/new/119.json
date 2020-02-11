@@ -1,0 +1,18 @@
+{
+    "issue": {
+        "closed": true,
+        "title": "Recently added features",
+        "created_at": "2010-02-01T10:26:27Z",
+        "labels": [
+            "Feature",
+            "Redmine status : Rejected"
+        ],
+        "body": "**Original author :** Baud R\u00e9my\n\n-Shop: Ability to insert a watermark for a basemap, or copyright things for a map layer. The config can be done under the basemap content, attribute \"attribution\".\r\n\r\n-Mod Perimeter: Possibility to set the EasySDI key : \"MOD_PERIM_METERTOKILOMETERLIMIT\". This surface limit switches the surface unit from meter to kilometer.\r\n\r\n_Mod Perimeter + Mod location: For a location definition or a perimeter definition, you can set a \"allowMultipleSelection\" value. If it is set to true, a textual search based on this object will return all occurences that match the text (for instance \"100\" will also return \"1000\",\"10000\" etc..).\r\nIf set to false this will EXACTLY search for the value (Usefull for parcel numbers, if I search 100, I don't want 1000 to appear also in the result). If it is found, a zoom or add feature will atomatically be processed.\r\n\r\n"
+    },
+    "comments": [
+        {
+            "body": "**Original author :** M\u00e9rour Xavier\n\nI dispatched the different evolutions in 4 demands in concerned sub-projects. \r\n\r\nThis demand can be closed.",
+            "created_at": "2010-02-01T15:17:47Z"
+        }
+    ]
+}

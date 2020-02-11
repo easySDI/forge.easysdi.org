@@ -1,0 +1,35 @@
+{
+    "issue": {
+        "closed": true,
+        "title": "Indoor navigation",
+        "created_at": "2014-10-20T12:21:26Z",
+        "labels": [
+            "Feature",
+            "Redmine status : Closed",
+            "Category : MAP"
+        ],
+        "body": "**Original author :** Magoni Bruno\n\nBeside outdoor information, indoor navigation is also a great consumer of maps through building\/level principle (which is not 3D!).\r\n\r\nGoal of indoor navigation is to display geographical information of buildings equipment (like premises, doors, corridors, ...) into a map context, mixing it with outdoor classical information.\r\n\r\nProposal is to add a new \"indoor\" tool for map context definition.\r\nIf such tool is used, backoffice will ask for:\r\n* the default level which is displayed when opening the map\r\n* the list of all potential levels that a user can select into the map\r\n\r\nLevels are defined through label\/code parameters:\r\n* label will be displayed into the map through a levels selector (same as a zoom selector)\r\n* corresponding code will be sent through WMS filtering to any OGC server to recover indoor information of a specific level for all buildings\r\n \r\nBackoffice interface will also contain a new parameter for layers which expose indoor information: the name of the WMS attribute which stores level information for such layer\r\n\r\nInside a map, the user will be able to change the current displayed level. Only layers which are concerned by indoor navigation will be refreshed.\r\n\r\nAs WMS filtering is a vendor specific functionality, easySDI will ask for each indoor layer the kind of OGC server which deliver such data: GeoServer or ArcGISserver\r\nEven if CQL is a common ways to filter WMS server, GeoServer and ArcGI Server have got some implementation differences about how to send WMS filter parameters.\r\nFront office Map will then send the correct WMS Filter CQL definition regarding the targeted OGC server.\r\nLevels selector will be developed with GeoExt LayerOpacitySlider which overloads Ext.slider.SingleSlider\r\n\n\n**Fixed versions :** 4.3.0"
+    },
+    "comments": [
+        {
+            "body": "**Original author :** Portier Thomas\n\nFor this kind of advanced feature, I don't believe that it should be included in the trunk of EasySDI.\r\nI also think that the actual technology used for the actual map is outdated.\r\n\r\nWe developped a new map fed with layers configured in EasySDI but rendered in leaflet : https:\/\/test.geoplateforme17.fr\/cadastre\r\nThis development could be added as a new Map view in EasySDI.\r\n\r\nInstead of adding new features to the actual geoext Map, I think it would be better to propose a leaflet Map that could be overwritten easyly to add new features (as indoor navigation).\r\n\r\nSome implementations of indoor maps with leaflet : \r\nhttp:\/\/osmtools.org\/indoor\/#lat=51.09447&lon=17.01945&z=18\r\nhttp:\/\/cbaines.github.io\/leaflet-indoor\/examples\/",
+            "created_at": "2014-10-29T09:07:48Z"
+        },
+        {
+            "body": "**Original author :** Magoni Bruno\n\nHi Thomas,\r\n\r\nThanks for your feedback which is very interesting.\r\nI see two main points under your last notice:\r\n\r\n*1. current feature should not be added in MAP component*\r\nAs such feature is proposed as a new MAP tool, the benefit is that any MAP context can potentially benefit of all tools; my opinion is that viewing data through an INSIPRE compliant tool like easySDI must integrate several kind of data (like 2D & 3D for outdoor +and+ indoor context). For example, printing a MAP must apply to any kind of data and I prefer maintaining one global component then several with different \"data kind\" approach\r\n\r\n*2. Community must think about new MAP technologies*\r\nI totally agree with you and have added such discussion point in the next Technical Committee session.\r\nThe approach of using new technology for business specific need (like you did it for territorial survey) is a good one as experience can be made without involving trunk.\r\nBut changing core API (in this case for MAP extension) still need to be carefully embraced in a global manner (loose of current functionalities, backward compatibility, stability, and so on).\r\n\r\nThis current feature has been discussed yesterday in Steering Committee because there is some \"urgency\" about realizing it.\r\nSteering Committee has decided to go ahead with such proposed feature and keep it in trunk for several strategic reasons.\r\nSuch situation reveals that talking about MAP API is a hot topic with OL3 new release and Leaflet new kid of the block !\r\n",
+            "created_at": "2014-11-05T10:00:01Z"
+        },
+        {
+            "body": "**Original author :** Portier Thomas\n\nMy opinion is that indoor navigation must be rendered with vector features for two reasons :\r\n- Each building have a different level number. With your approach, the user will be able to ask the same levels for all buildings\r\n- The user doesn't care about just viewing a level as an image but he wants to have informations about the rooms in the level. It's easier and faster to do it with a vector layer\r\n\r\nA good example here : http:\/\/clement-lagrange.github.io\/osmtools-indoor\/\r\n\r\nAbout technologies, my proposition is not to abandon the GeoExt version of the Map but to add a new type of map based on Leaflet. It could be  a parameter in back-end : MapType GeoExt\/Leaflet. If the user chooses Leaflet, he will have less tools than the Geoext one.",
+            "created_at": "2014-11-05T22:30:34Z"
+        },
+        {
+            "body": "**Original author :** Blatti Yves\n\nBruno, your proposal would look a little like this ? \r\n-> http:\/\/plan.epfl.ch\/?zoom=20&recenter_y=5864108.49084&recenter_x=730707.03375&layerNodes=fonds,batiments,labels,information,parkings_publics,arrets_metro,transports_publics&floor=1",
+            "created_at": "2014-11-06T09:33:43Z"
+        },
+        {
+            "body": "**Original author :** Magoni Bruno\n\nTC agree about integrating indoor navigation inside current MAP version and ask SC to define which kind of features should be delivered by MAP component.\r\nThe strategic way will help choice of new APIs which can be used for new MAP version (i.e. OL3, Leaflet, ...)\r\n",
+            "created_at": "2014-11-14T16:07:00Z"
+        }
+    ]
+}

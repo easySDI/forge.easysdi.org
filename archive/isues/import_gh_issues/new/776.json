@@ -1,0 +1,35 @@
+{
+    "issue": {
+        "closed": true,
+        "title": "Direct acces to a metadata does not check accessscopes",
+        "created_at": "2014-07-21T11:23:11Z",
+        "labels": [
+            "Defect",
+            "Redmine status : Closed",
+            "Category : CATALOG"
+        ],
+        "body": "**Original author :** Blatti Yves\n\nIf a users knows the metadata URL, he can open the sheet. Access scopes are not checked.\r\nI propose to do this in the controller to avoid loading the data from catalog (CSW) for no reason.\n\n**Fixed versions :** 4.2.0"
+    },
+    "comments": [
+        {
+            "body": "**Original author :** Magoni Bruno\n\nHi Yves,\r\n\r\nAccess scope have unfortunately not been confronted to all use cases and it's one of them.\r\nBefore realizing such feature, I guess that it is important to have a global vision of these use cases as other extensions are accessing metadata (and proxy servlet too).\r\n\r\nFor my point of view, Community has worked on access scope definition but not on implementation; and with such logical implementation should be a discussed feature and not a defect fixed quickly.\r\n\r\nAs this big picture is not so clear for me, I prefer being prudent. May be you are totally sure that your proposal won't break any other existing feature :-)\r\n\r\nThanks\r\n",
+            "created_at": "2014-07-21T11:34:20Z"
+        },
+        {
+            "body": "**Original author :** Blatti Yves\n\nHi Bruno,\r\n\r\nWorking on #770, I saw that other views\/features are checked, such as \"preview\" (map), \"download\" and \"add to basket\".\r\nMetadata sheet is the only one that I saw with this problem.\r\nCertainly not checked, because links are not shown if not logged in (no results in search)\r\n",
+            "created_at": "2014-07-21T11:40:45Z"
+        },
+        {
+            "body": "**Original author :** Magoni Bruno\n\nOK, thanks for your explanations.\r\nWe can go ahead as you proposed.",
+            "created_at": "2014-07-23T09:15:36Z"
+        },
+        {
+            "body": "**Original author :** Blatti Yves\n\nin my sandbox: svn:\/\/127.0.0.1:13690\/easysdi\/sandboxes\/asit-vd\/4.2.x",
+            "created_at": "2014-07-30T14:00:17Z"
+        },
+        {
+            "body": "**Original author :** Blatti Yves\n\nRevision 7199",
+            "created_at": "2014-08-14T09:11:53Z"
+        }
+    ]
+}

@@ -1,0 +1,23 @@
+{
+    "issue": {
+        "closed": true,
+        "title": "Use shorter dates in generated names for orders + make it customizable",
+        "created_at": "2015-12-09T08:47:00Z",
+        "labels": [
+            "Enhancement",
+            "Redmine status : Closed",
+            "Category : SHOP"
+        ],
+        "body": "**Original author :** Blatti Yves\n\nUse shorter dates in generated names for orders, the are currently in \"MySQL style\" : \"2015-12-09 09:24:16\".\r\nThe date is 19 chars long, and the exact time is not very an interesting value for users (if a user needs the time, it is visible in the list and in the recap view).\r\n\r\nI propose using a custom date string in translations (JHtml::date + JText), which is dependent of the language of the user and is overridable.\r\nWe can use DATE_FORMAT_JS1 as default, it is 8 to 9 chars long. It will give:\r\nfr-FR : \"j\/m\/y\" -> \"9\/12\/15\"\r\nen-GB and en-US : \"y-m-d\" -> \"15-12-09\"\r\nde-DE : \"d.m.y\" -> \"09.12.15\"\r\n\r\nAn auto generated request name would become : \"Yves Blatti 9\/12\/15\" instead of \"Yves Blatti 2015-12-09 09:24\" in french.\r\nAny administrator can edit the date format, or remove the date from the name.\n\n**Fixed versions :** 4.4.0"
+    },
+    "comments": [
+        {
+            "body": "**Original author :** Blatti Yves\n\nrev. 9417\r\n\r\nTranslation on crowdin todo (based on Joomla DATE_FORMAT_JS1)\r\nfr-FR : COM_EASYSDI_SHOP_BASKET_DATE_IN_NAME_FORMAT=\" - j\/m\/y\"\r\nde-DE : COM_EASYSDI_SHOP_BASKET_DATE_IN_NAME_FORMAT=\" - d.m.y\"",
+            "created_at": "2016-01-21T13:13:18Z"
+        },
+        {
+            "body": "**Original author :** Blatti Yves\n\ncrowdin OK",
+            "created_at": "2016-02-02T09:24:07Z"
+        }
+    ]
+}

@@ -1,0 +1,23 @@
+{
+    "issue": {
+        "closed": true,
+        "title": "Error with proxy invalidation when saving an organism's category",
+        "created_at": "2014-06-27T12:18:27Z",
+        "labels": [
+            "Defect",
+            "Redmine status : Closed",
+            "Category : CATALOG"
+        ],
+        "body": "**Original author :** Blatti Yves\n\nErreur lors de l'invalidation du cache du Proxy : java.lang.NoSuchMethodException: org.easysdi.proxy.hibernate.ProxyCacheInvalidationServlet.requestInvalidate()\n\n**Fixed versions :** 4.2.0"
+    },
+    "comments": [
+        {
+            "body": "**Original author :** Magoni Bruno\n\nIn backoffice organism's category management or when affiliating an organism's category to some object (i.e. resource) ?",
+            "created_at": "2014-06-27T22:35:41Z"
+        },
+        {
+            "body": "**Original author :** Blatti Yves\n\nYes, in category management.",
+            "created_at": "2014-06-30T07:06:53Z"
+        }
+    ]
+}

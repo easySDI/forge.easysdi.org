@@ -1,0 +1,19 @@
+{
+    "issue": {
+        "closed": false,
+        "title": "In Context translation",
+        "created_at": "2014-07-06T19:45:27Z",
+        "labels": [
+            "Feature",
+            "Redmine status : New",
+            "Category : CORE"
+        ],
+        "body": "**Original author :** Magoni Bruno\n\neasySDI localization platform have got a nice feature which allow translating in context (inside the web application) most of locale resources.\r\nThis feature is very powerful as it helps translators to find the best translation texts regarding the interface context (for more details see https:\/\/crowdin.net\/page\/in-context-localization).\r\n\r\nA new feature could be to add an easySDI plugin which allows administrator to turn on\/off in context translation (crowdin javascript is activated\/inactivated just like google analytics javascript plugin).\r\n \r\nA dedicated JIPT language has to be defined; why not \"English (upside down)\" which is coded en-UD ?\r\nMost important will be the way of loading en-UD resource files instead of those driven by Joomla configuration (how to load those en-UD specific ini files in each easySDI backoffice\/frontoffice interfaces ?). Can this way be applied without needing translating core Joomla en-UD resource files http:\/\/docs.joomla.org\/Loading_extra_language_files ?\r\n\r\n"
+    },
+    "comments": [
+        {
+            "body": "**Original author :** Magoni Bruno\n\nTechnical Committee has decided to set such issue in low priority and won't treat it quickly, unless some Community users are bringing it to the front...",
+            "created_at": "2014-10-03T12:29:40Z"
+        }
+    ]
+}

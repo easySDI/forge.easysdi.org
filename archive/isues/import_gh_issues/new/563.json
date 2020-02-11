@@ -1,0 +1,14 @@
+{
+    "issue": {
+        "closed": true,
+        "title": "Projection 3857 problem?",
+        "created_at": "2012-10-19T15:25:48Z",
+        "labels": [
+            "Defect",
+            "Redmine status : Closed",
+            "Category : PROXY"
+        ],
+        "body": "**Original author :** Portier Thomas\n\nI made a new config in my proxy on a wms service.\r\nWhen I want to execute a GetMap with the SRS 3857, I have the error message : \r\nRequest contains a SRS not offered by the service instance for one or more of the layers.\r\n\r\nIf I make a getcapabilities on the original service I can see that the 3857 is available.\r\nhttp:\/\/geobretagne.fr\/imposm-google?request=GetCapabilities&service=WMS\r\n\r\nhttp:\/\/www.crigeos.org\/proxy_crigeos\/ogc\/osm_open?SERVICE=WMS&LAYERS=osm_default&CRS=EPSG:3857&FORMAT=image%2Fpng&TRANSPARENT=FALSE&HEIGHT=977&BGCOLOR=0xFFFFFF&REQUEST=GetMap&BBOX=-152665.39419492602,5357816.753907561,-142183.96669277968,5367252.048391959&WIDTH=1087&STYLES=&VERSION=1.3.0\r\n\n\n**Fixed versions :** 4.0.0"
+    },
+    "comments": []
+}

@@ -1,0 +1,23 @@
+{
+    "issue": {
+        "closed": true,
+        "title": "Search in view=requests does not include request ID",
+        "created_at": "2015-09-03T14:58:53Z",
+        "labels": [
+            "Defect",
+            "Redmine status : Closed",
+            "Category : SHOP"
+        ],
+        "body": "**Original author :** M\u00e9rour Xavier\n\nWhen searching in \"view=requests\" in Front-end with the \"text filter\", it search only on the name of the request.\r\n\r\nIt should also search on requests ID (since they are often used and are easier to identify a specific request)\n\n**Fixed versions :** 4.3.2"
+    },
+    "comments": [
+        {
+            "body": "**Original author :** M\u00e9rour Xavier\n\nlinked with *1068",
+            "created_at": "2015-09-04T15:25:15Z"
+        },
+        {
+            "body": "**Original author :** Blatti Yves\n\nrev. 9027",
+            "created_at": "2015-09-07T13:11:41Z"
+        }
+    ]
+}

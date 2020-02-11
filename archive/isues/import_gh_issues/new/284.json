@@ -1,0 +1,18 @@
+{
+    "issue": {
+        "closed": true,
+        "title": "improve the base layer management",
+        "created_at": "2011-01-05T09:53:45Z",
+        "labels": [
+            "Feature",
+            "Redmine status : Rejected"
+        ],
+        "body": "**Original author :** Portier Thomas\n\nIn the V1, the base layer management is very complicated. There is two level of management. It would be nice to improve this management to get it more simple."
+    },
+    "comments": [
+        {
+            "body": "**Original author :** M\u00e9rour Xavier\n\nI was wondering : should we have a generic base layer management in the CORE, then defined baselayers will be available for all modules (MAP, SHOP, etc...)\r\n\r\nWe noticed that it is a transversal need so we may put it in the CORE... but there are maybe some modules' specificity ?",
+            "created_at": "2011-01-06T12:17:05Z"
+        }
+    ]
+}

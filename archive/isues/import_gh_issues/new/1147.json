@@ -1,0 +1,19 @@
+{
+    "issue": {
+        "closed": true,
+        "title": "The validation link in mail is not secured",
+        "created_at": "2015-09-24T08:22:12Z",
+        "labels": [
+            "Defect",
+            "Redmine status : Closed",
+            "Category : SHOP"
+        ],
+        "body": "**Original author :** Blatti Yves\n\nThe validation link in mail is not secured:\r\nThe link allow a non authenticated user having the link to validate or reject an order (this is the goal).\r\nBut the link is built with the id of the order (known by everyone: clien, third party and provider) and the id of the validator,\r\nif a user knows the id of one of the validators, he can validates his own order.\n\n**Fixed versions :** 4.4.0"
+    },
+    "comments": [
+        {
+            "body": "**Original author :** Blatti Yves\n\nrev 9383",
+            "created_at": "2015-12-22T15:37:11Z"
+        }
+    ]
+}

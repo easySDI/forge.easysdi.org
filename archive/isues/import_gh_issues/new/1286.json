@@ -1,0 +1,19 @@
+{
+    "issue": {
+        "closed": true,
+        "title": "Fix DASHBOARD and add a front end view",
+        "created_at": "2016-03-16T16:29:02Z",
+        "labels": [
+            "Enhancement",
+            "Redmine status : Closed",
+            "Category : DASHBOARD"
+        ],
+        "body": "**Original author :** Blatti Yves\n\n## Changes proposal:\r\n\r\n* fix backend dashboard (values, layout)\r\n* add front-end view for dashboard\r\n** same structure as BE (by default, but can be overridden)\r\n** without the global view\r\n** a user can only view data on organisms with 'diffusion related' roles (organism manager, diffusion manager, extraction responsible, resource manager)\r\n* use Joomla Layout mechanism to allow code reuse and template override ability\r\n* for now, keep only the diffusion view (we don't have this need yet)\r\n* simplify deployment :\r\n** remove birt dependency\r\n** generate only CSV and PDF report, do it in PHP\r\n** add a light customization of reports (custom CSS and ability to add an HTML header) in backend\r\n* simplify interface\r\n** simple filters\r\n** drop the reporting modal (use simple links)\r\n\r\n## mock-ups\r\n\r\nBackend (almost unchanged in layout, except the repartition)\r\n!{width: 50%}be.png!\r\n\r\nFrontend with default template\r\n!{width: 50%}fe-protostar.png!\r\n\r\nFrontend with a custom template for example\r\n!{width: 50%}fe-template-asitvd.png!\r\n\r\nSample report\r\n!report.png!\r\n\n\n**Fixed versions :** 4.4.1"
+    },
+    "comments": [
+        {
+            "body": "**Original author :** Blatti Yves\n\nrev. 9554 + 9608",
+            "created_at": "2016-03-23T11:33:04Z"
+        }
+    ]
+}

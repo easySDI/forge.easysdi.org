@@ -1,0 +1,19 @@
+{
+    "issue": {
+        "closed": true,
+        "title": "Zoning download access scope doesn't work",
+        "created_at": "2015-10-08T09:20:24Z",
+        "labels": [
+            "Defect",
+            "Redmine status : Closed",
+            "Category : SHOP"
+        ],
+        "body": "**Original author :** Blatti Yves\n\nZoning download access scope doesn't work (except public)\n\n**Fixed versions :** 4.3.2"
+    },
+    "comments": [
+        {
+            "body": "**Original author :** Blatti Yves\n\nOK for me",
+            "created_at": "2015-11-23T09:15:34Z"
+        }
+    ]
+}

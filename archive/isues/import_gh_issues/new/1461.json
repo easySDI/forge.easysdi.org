@@ -1,0 +1,14 @@
+{
+    "issue": {
+        "closed": true,
+        "title": "Configurable map",
+        "created_at": "2018-11-20T15:17:10Z",
+        "labels": [
+            "Enhancement",
+            "Redmine status : Closed",
+            "Category : EXTRACT"
+        ],
+        "body": "**Original author :** Blatti Yves\n\nThe \"request\" view displays by default a map with the OSM service as the background.\r\nThe objective is to allow the administrator to overload the default map if he wishes, with one or more backgrounds, and possibly one or more layers to overlay.\r\n\r\nBy default load a @map.js@ file, if present load a map.custom.js, which the admin can configure.\r\n\r\nSource (french) : https:\/\/projets.asitvd.ch\/issues\/17219\n\n**Fixed versions :** 4.5.1"
+    },
+    "comments": []
+}

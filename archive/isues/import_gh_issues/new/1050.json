@@ -1,0 +1,19 @@
+{
+    "issue": {
+        "closed": true,
+        "title": "SHOP Pricing does not support \"large\" amounts",
+        "created_at": "2015-06-17T12:36:58Z",
+        "labels": [
+            "Defect",
+            "Redmine status : Closed",
+            "Category : SHOP"
+        ],
+        "body": "**Original author :** Blatti Yves\n\nSHOP Pricing does not support \"large\" amounts due to low storage definition in databases.\r\nSurface rate, fees, min and max values, totals... ALL have the same datatype : @DECIMAL(6,2)@ which means that *@9'999.99@ is the max.\r\nThis is way too low.*\r\nWe should be able to store at least millions + some margin (low value currencies or enormous orders).\r\n\r\n\r\nNote:\r\nStorage size optimization: @DECIMAL(precision, scale)@\r\n*MySQL*:\r\nhttps:\/\/dev.mysql.com\/doc\/refman\/5.1\/en\/precision-math-decimal-characteristics.html\r\n@packs nine decimal (precision) digits into 4 bytes@\r\n+\r\n@1 byte for every 2 leftover digits@\r\n\r\n*MSSQL*:\r\nhttps:\/\/msdn.microsoft.com\/fr-ch\/library\/ms187746.aspx\r\n|precision| bytes |\r\n|1 - 9| 5 |\r\n|10-19| 9 |\r\n|20-28| 13 |\r\n|29-38| 17 |\r\n\r\n*PostgreSQL*:\r\nhttp:\/\/www.postgresql.org\/docs\/8.1\/static\/datatype.html#DATATYPE-NUMERIC-DECIMAL\r\n@ two bytes for each group of four decimal digits, plus eight bytes overhead@ but @physically stored without any extra leading or trailing zeroes@\r\n\r\n----\r\nSo *@DECIMAL(19,2)@* looks good since it fits on 9Bytes for MySQL and MSSQL (most used easySDI DBMS) and 10Bytes(Maximum)+overhead on PgSQL.\r\n\r\nThe new datatype should be applied to all fields containing prices, fees, etc, min, max, etc.\r\n\r\n\n\n**Fixed versions :** 4.3.2"
+    },
+    "comments": [
+        {
+            "body": "**Original author :** Blatti Yves\n\nAll good to me (MySQL)",
+            "created_at": "2015-06-30T13:06:50Z"
+        }
+    ]
+}

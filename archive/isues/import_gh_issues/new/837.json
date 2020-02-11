@@ -1,0 +1,14 @@
+{
+    "issue": {
+        "closed": true,
+        "title": "Access scope definition in back-end on CATALOG object",
+        "created_at": "2014-10-17T13:58:26Z",
+        "labels": [
+            "Defect",
+            "Redmine status : Closed",
+            "Category : CATALOG"
+        ],
+        "body": "**Original author :** Van Hoecke H\u00e9l\u00e8ne \n\nSince categories were added, the definition of access scope (selection of users or selection of organisms) is no more functionnal. \r\nSee in resource type edition form :\r\n- when select organism access scope : user list is prompted\r\n- when select user acces scope : no choice list visible.\n\n**Fixed versions :** 4.2.0"
+    },
+    "comments": []
+}

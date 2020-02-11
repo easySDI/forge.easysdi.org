@@ -1,0 +1,63 @@
+{
+    "issue": {
+        "closed": false,
+        "title": "Access to ressources in replication and contact",
+        "created_at": "2014-06-06T15:03:42Z",
+        "labels": [
+            "Enhancement",
+            "Redmine status : Request For Comments",
+            "Category : CATALOG"
+        ],
+        "body": "**Original author :** Portier Thomas\n\nHi,\r\n\r\nIn the actual version of easySDI, a metadata editor can access to all the ressources (even if the ressources are not published and if the user doesn't have edit or view permission on it) to replicate or fill the contact in the metadata form. I think he should only see its own ressources (same list than in the resource list). \r\n\r\nAre you ok with that?\r\n\r\nThomas"
+    },
+    "comments": [
+        {
+            "body": "**Original author :** M\u00e9rour Xavier\n\nWell... it was actually the same behaviour in previous version (easySDI V2) BUT it was also quite annoying for us because a \"small resource manager\" with 3 resources can have access to hundreds of resources managed on the same platform by others managers.\r\n\r\n(If a remember well, it was added in V2 with Bern because of some constraints)\r\n\r\nDo we have the same constraints in V4 ?\r\n\r\n\r\nI would also be in favour of filtering on its own ressources (mask resources from others)\r\n\r\n\r\n",
+            "created_at": "2014-06-06T16:20:33Z"
+        },
+        {
+            "body": "**Original author :** Magoni Bruno\n\nHi to all,\n\nV4 uses the same logic than V2 for the two mentioned use cases:\n* linking resources between themselves through their metadata - see attachment:resourcelink.png\n* importing metadata from another resource - see attachment:import.png\n\nThe goal was to be able to replicate or link other resources that are globally available for -an- all organisms.\nIf we limit access only to users own resources, it will break down functionalities like:\n* linking a point of contact which is common to an organism (contact are not managed by any resource's managers)\n* replicating resource which is common to an organism (i.e. any resource's template)\n\nFor now access scope is not used for filtering resources in such cases but I guess that it could suit logically part of this need without breaking down existing functionalities.\nAbout replication, the interface allows users filtering resources he wants and we could add complementary filters like toggle buttons \"Resources\" (\"All\" or \"Mine only\").\n\n",
+            "created_at": "2014-06-09T13:32:44Z"
+        },
+        {
+            "body": "**Original author :** M\u00e9rour Xavier\n\nHello !\r\n\r\n```\n\r\nThe goal was to be able to replicate or link other resources that are globally available for an organism.\r\n```\n\r\n\r\nYou are right Bruno... but the current behaviour is not what you describe : resources are globally available for ALL organism (not just yours). In your example (Resource link), I can be in organism A and see all contacts from others organism. The idea is not to restrict access to users own resources but to users organims' resources only.\r\n\r\n```\n\r\nAbout replication, the interface allows users filtering resources he wants and we could add complementary filters like toggle buttons \"Resources\" (\"All\" or \"Mine only\").\r\n```\n\r\n\r\nGood idea... \r\n\r\n",
+            "created_at": "2014-06-10T06:22:24Z"
+        },
+        {
+            "body": "**Original author :** Magoni Bruno\n\nHi Xavier,\r\n\r\nYou're right about your note, I've wrong typed my explanation as all resources are available for all organisms.\r\nSo to resume, the best way is to apply access scope when exposing resources through resource link and resource replication.",
+            "created_at": "2014-06-10T08:03:22Z"
+        },
+        {
+            "body": "**Original author :** M\u00e9rour Xavier\n\nYes, applying access scope is a good thing but I would go further. Here is our proposal :\n\n* Concerning \"linking resources between themselves through their metadata\"\n*Current situation* : any user can access to any contact of any organism\n*Target* :\n- any user can access only contacts according to their scope of any organism \n- add in the contact list (when editing metadata) the name of the organism after the name of contact (to avoid homonym confusion)\n- in back-end (see \"relations_screen.png\":https:\/\/forge.easysdi.org\/attachments\/download\/711), in the edition of a relation in metadata model, add two options when the child type is \"resource type\"\n(1) only show resources of the user's organism \n(2) only show resources belonging to the organism of the metadata currently edited\nremark : both options can be set to \"true\". By adding theses options, the admin can limit the list of child resource available to the user when editing metadatas.\n\n* concerning \"importing metadata from another resource\"\n*Current situation* : any user can access to any resource of any organism and filters on \"status\", \"name\" and \"resource type\".\n*Target* :\n- any user can access only resource according to their scope of any organism \n- add a new filter \"organism\" with \"my organism\" set by default\n- the filter \"resource type\" should be set by default to the resource type currently in edition \n\n\nThere is a third case :\n\n* concerning \"relation between resources\"\n*Current situation* : any user can add a relation between its resource and others resources of any organism and filters on \"status\", \"name\" \"id\" and \"resource type\".\n*Target* :\n- at least apply scopes as well... \n- need some input from Berne maybe ?\n",
+            "created_at": "2014-06-10T14:42:39Z"
+        },
+        {
+            "body": "**Original author :** M\u00e9rour Xavier\n\n@Bruno\r\nSince the proposal is now fully described (https:\/\/forge.easysdi.org\/issues\/730#note-6), may I ask you to change the status to \"Request for Comment\" ?\r\n",
+            "created_at": "2014-07-04T18:38:36Z"
+        },
+        {
+            "body": "**Original author :** Blatti Yves\n\nWe have *simplification proposal* for \"note6\":https:\/\/forge.easysdi.org\/issues\/730#note-6\r\n\r\n*1) \"linking resources between themselves through their metadata\" (for example contacts in metadata) :*\r\n* Current situation : \r\n** any user can access to any resource of any organism\r\n* Target :\r\n** in front-end when editing metadata : add in the resources list (contact list) the name of the organism (to avoid homonym confusion)\r\n** in back-end (see relations_screen.png), in the *edition of a relation in metadata model*, add an option when the child type is \"resource type\" named *\"restrict linkable resources according to user rights\" (yes\/no)*\r\n*** If disabled: same behavior as 4.2.x : user can select any resources of the platform\r\n*** If enabled: a user can access to the *same resources that he sees in \"my resources\"* ^a^\r\n\r\n\r\n*2) \"importing metadata from another resource\"*\r\n* Current situation : \r\n** any user can access to any resource of any organism\r\n** filters on \"status\", \"name\" and \"resource type\".\r\n* Target :\r\n** a user can access only resource according to their *access scope* (from any organism) : same results as in a catalog search for the user...\r\n** add a new filter \"organism\" with \"my organism\" set by default\r\n** the filter \"resource type\" should be set by default to the resource type currently in edition\r\n\r\n*3) \"relation between resources\" (in database, not in metadata, for example between products and layers) :*\r\n* Current situation : \r\n** a user can add a relation between its resource and others resources of any organism\r\n** filters on \"status\", \"name\" \"id\" and \"resource type\".\r\n* Target (same logic a N\u00b01):\r\n** in back-end, in *resources type relation*, add an option named *\"restrict linkable resources according to user rights\" (yes\/no)*\r\n*** If disabled: same behavior as 4.2.x : user can select any resources of the platform\r\n*** If enabled: a user can access to the *same resources that he sees in \"my resources\"* ^a^\r\n\r\n*Remarks:*\r\n* [a] displayed resources in this page depends on the roles of the user in different organisms\r\n* For points 1 & 3: the logic is to propose the same resources to the user in every screens, actual behavior is kind of disturbing\r\n* For points 1 & 3: we may be able to reuse JModel from Resources, less code, more time for coffee\r\n* For point 2: Replication is a sort of \"copy assistant\", a user can copy content from any resources visible in a catalog search by hand. So we propose to use the same logic: Just apply the access scope.\r\n* We need input from \"multi-organisms\" easySDI users: Bern? SI17? Others?\r\n\r\n\r\n",
+            "created_at": "2014-11-12T10:53:23Z"
+        },
+        {
+            "body": "**Original author :** Magoni Bruno\n\nNeed some \"\u00e9claircissements\"",
+            "created_at": "2014-11-14T09:30:38Z"
+        },
+        {
+            "body": "**Original author :** Villemagne J\u00e9r\u00f4me\n\nAs requested by Bruno, here is a point I met.\r\n\r\nIn the resources list page, you can click on 'Relation' to add children to a resource ; the availble children lists all resources that can be children, even if you don't have any right on it. Then, if you add as children a resource on which you don't have right, it will neither be count in the 'Children list' nor appear on the chilren list page.",
+            "created_at": "2014-11-14T15:11:24Z"
+        },
+        {
+            "body": "**Original author :** Van Hoecke H\u00e9l\u00e8ne \n\n* After discussion, the point 3 (\"relation between resources\") is set aside for the moment. \r\nA new proposal will be made once some inputs from Bern and others users will be arrived.\r\n\r\n* Precision for point 1 implementation : in back-end, the selection of the option will be made in one selector containing following options : \r\n(1) only show resources of the user's organism \r\n(2) only show resources belonging to the organism of the metadata currently edited\r\n(3) combination of the 2 previous options",
+            "created_at": "2014-11-17T14:30:33Z"
+        },
+        {
+            "body": "**Original author :** Van Hoecke H\u00e9l\u00e8ne \n\nTC keeps this ticket as it is until users inputs on :\r\n\r\n```\n\r\n3) \"relation between resources\" (in database, not in metadata, for example between products and layers) :\r\nCurrent situation :\r\na user can add a relation between its resource and others resources of any organism\r\nfilters on \"status\", \"name\" \"id\" and \"resource type\".\r\nTarget (same logic a N\u00b01):\r\nin back-end, in resources type relation, add an option named \"restrict linkable resources according to user rights\" (yes\/no)\r\nIf disabled: same behavior as 4.2.x : user can select any resources of the platform\r\nIf enabled: a user can access to the same resources that he sees in \"my resources\" a\r\n```\n",
+            "created_at": "2015-03-06T08:28:35Z"
+        },
+        {
+            "body": "**Original author :** Van Hoecke H\u00e9l\u00e8ne \n\nHVH will ask to AGI about the still opened point.",
+            "created_at": "2015-06-26T08:56:54Z"
+        }
+    ]
+}

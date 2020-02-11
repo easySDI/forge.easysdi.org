@@ -1,0 +1,19 @@
+{
+    "issue": {
+        "closed": true,
+        "title": "Organism Create and Update dates and users doesn't work",
+        "created_at": "2015-08-14T16:39:39Z",
+        "labels": [
+            "Defect",
+            "Redmine status : Closed",
+            "Category : CONTACT"
+        ],
+        "body": "**Original author :** Blatti Yves\n\nOrganism Create and Update dates and users doesn't work (backend).\r\n\r\nSeems to come from bind() in Easysdi_contactTableorganism.\n\n**Fixed versions :** 4.3.2"
+    },
+    "comments": [
+        {
+            "body": "**Original author :** Blatti Yves\n\nAll good, thank you !",
+            "created_at": "2015-08-21T12:46:55Z"
+        }
+    ]
+}

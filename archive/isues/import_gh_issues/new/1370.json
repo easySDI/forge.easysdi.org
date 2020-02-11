@@ -1,0 +1,19 @@
+{
+    "issue": {
+        "closed": true,
+        "title": "Min\/Max surface is only checked on perimerter edit",
+        "created_at": "2016-08-25T13:27:13Z",
+        "labels": [
+            "Defect",
+            "Redmine status : Closed",
+            "Category : SHOP"
+        ],
+        "body": "**Original author :** Blatti Yves\n\nMin\/Max surface is only checked on perimeter edit, not when a product is added to basket, nor before saving the basket\/sending the order.\r\n\r\nIf a user has set a perimeter with a non limiter product, he can then add a limited product without verification.\n\n**Fixed versions :** 4.4.3"
+    },
+    "comments": [
+        {
+            "body": "**Original author :** Blatti Yves\n\nrev. 9982",
+            "created_at": "2016-08-30T13:48:32Z"
+        }
+    ]
+}

@@ -1,0 +1,14 @@
+{
+    "issue": {
+        "closed": true,
+        "title": "#1244 broke the leaflet Map",
+        "created_at": "2016-03-22T13:39:06Z",
+        "labels": [
+            "Defect",
+            "Redmine status : Closed",
+            "Category : MAP"
+        ],
+        "body": "**Original author :** Portier Thomas\n\n\n\n**Fixed versions :** 4.4.0"
+    },
+    "comments": []
+}

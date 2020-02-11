@@ -1,0 +1,14 @@
+{
+    "issue": {
+        "closed": false,
+        "title": "GXP implementation of WMS GetFeatureInfo doesn't support WMS 1.3.0",
+        "created_at": "2015-03-06T16:22:11Z",
+        "labels": [
+            "Enhancement",
+            "Redmine status : New",
+            "Category : MAP"
+        ],
+        "body": "**Original author :** Van Hoecke H\u00e9l\u00e8ne \n\nTo perform a GetFeatureInfo from a map, easySDI uses the GXP plugins WMSGetFeatureInfo.\r\n\r\nThis plugin builds the request, for a grid format, with the INFO_FORMAT param set to \"application\/vnd.ogc.gml\".\r\nThis value is not compatible with WMS 1.3.0, it should be \"application\/vnd.ogc.wms_xml\"."
+    },
+    "comments": []
+}

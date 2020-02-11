@@ -1,0 +1,31 @@
+{
+    "issue": {
+        "closed": true,
+        "title": "Copy an order at any time (any status)",
+        "created_at": "2015-03-26T17:12:43Z",
+        "labels": [
+            "Enhancement",
+            "Redmine status : Closed",
+            "Category : SHOP"
+        ],
+        "body": "**Original author :** Blatti Yves\n\nThis was discussed in the initial Workshop in 2013, but not yet implemented, it has been ported as it was in v2:\r\n\r\nA user should be able to copy an order (place all of the currently available products in the basket again) whatever the status of the order is.\r\n\r\nEDIT: The feature has not been ported at all. It has to be fully re-implemented.\r\n\r\n2015-07-09 EDIT specs with H\u00e9l\u00e8ne:\r\n\r\n* Add an action button in orders lists \"order again\" that will:\r\n** Copy all products in basket\r\n** Copy all products properties in basket\r\n** Copy perimeters in basket\r\n** Copy name + append \" - copy\" (translatable string)\r\n** Copy third party + third party fields (ref, contact, email)\r\n* This copy is formed in a besket in session\r\n* If there is existing products and perimeters in basket:\r\n** ask for confirmation before copy\r\n** if confirmed, drop existing basket content and replace with the copy\r\n\r\n\n\n**Fixed versions :** 4.3.2"
+    },
+    "comments": [
+        {
+            "body": "**Original author :** Villemagne J\u00e9r\u00f4me\n\nTC agree this enhancement",
+            "created_at": "2015-04-10T08:35:38Z"
+        },
+        {
+            "body": "**Original author :** Blatti Yves\n\nH\u00e9l\u00e8ne: is it OK for you if we choose a translatable string to append at the end of the copy ?\r\nLike \"originalOrderName - copy\"\r\nin french \"originalOrderName - copie\"",
+            "created_at": "2015-07-09T07:25:46Z"
+        },
+        {
+            "body": "**Original author :** Blatti Yves\n\nAs mentioned on depth forge:\r\n- the copy button should not be visible in the \"validation\" page. (Since this is not the owner of the order that sees it)\r\n- can we use a baket icon in the copy button ?\r\n\r\nThanks",
+            "created_at": "2015-07-28T09:45:49Z"
+        },
+        {
+            "body": "**Original author :** Blatti Yves\n\nPerfect, thanks",
+            "created_at": "2015-07-29T10:50:57Z"
+        }
+    ]
+}

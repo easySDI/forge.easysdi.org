@@ -1,0 +1,79 @@
+{
+    "issue": {
+        "closed": true,
+        "title": "Enhance roles definition when editing a resource",
+        "created_at": "2014-04-28T12:55:35Z",
+        "labels": [
+            "Feature",
+            "Redmine status : Closed",
+            "Category : CATALOG"
+        ],
+        "body": "**Original author :** M\u00e9rour Xavier\n\nWhen adding or editing a resource, the user is asked to fill a form with several attributes.\r\nI suggest to make some changes in this form to simplify it \/ be more comprehensible.\r\n\r\nSee attachment with proposals in read.\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\n\n**Fixed versions :** 4.2.0"
+    },
+    "comments": [
+        {
+            "body": "**Original author :** M\u00e9rour Xavier\n\nHello Thomas,\r\n\r\nDo you have any remark on our proposal ?\r\n\r\nThanks",
+            "created_at": "2014-05-14T15:20:51Z"
+        },
+        {
+            "body": "**Original author :** Portier Thomas\n\nYes I agree with all your notes. I'd add one. It would be great to add a button to fill all potential authorized users.",
+            "created_at": "2014-05-14T16:30:23Z"
+        },
+        {
+            "body": "**Original author :** M\u00e9rour Xavier\n\nThe button \"add all potential users\" is a nice feature indeed. Do you see it at the general level or for each role ?",
+            "created_at": "2014-05-14T19:18:48Z"
+        },
+        {
+            "body": "**Original author :** Portier Thomas\n\nAt a general level",
+            "created_at": "2014-05-15T06:56:42Z"
+        },
+        {
+            "body": "**Original author :** Magoni Bruno\n\nDear All,\r\n\r\n* I prefer keeping optional attribute like \"Description\" as it used as a common property in every easySDI object types; but such property should be presented as a textarea instead of a simple text entry.\r\n* State property has been presented in a simple select list as such state can be more than two values (i.e. trash); for now only two values are implemented and it could be a cosmetic add-on...\r\n* Organism selected value could be effectively filled in when only one organism is available, you're right\r\n* Roles accordions are not convenient at all, you're right, and could be removed completely (as I understand in your proposal why keeping one accordion as there won't be lot of users for each role ?). For now all roles are automatically filled in when organism property is defined for the first time and adding potential users seems to be a nice option. But we must care about large organism which describes lots of editors (i.e. Bern) and didn't want to remove manually users added with such option... In this case I will add a new button \"Empty roles\".\r\n\r\n* Additionally we have seen that all resource's managers can be removed so we have potentially ghost resources that no one can manage anymore :-(\r\nFor such case, easySDI must force that at least one resource's manager is defined!\r\n\r\nBest Wishes,\r\nBruno\r\n",
+            "created_at": "2014-05-30T13:36:19Z"
+        },
+        {
+            "body": "**Original author :** M\u00e9rour Xavier\n\nHello,\r\n\r\nSome comments below\r\n\r\n\r\n\r\n```\n\r\nI prefer keeping optional attribute like \"Description\" as it used as a common property in every easySDI object types;\r\n but such property should be presented as a textarea instead of a simple text entry.\r\n```\n\r\nWell... do we need description textarea in easySDI object types ? I am not sure. I still think it adds some \"noise\" in the form for nothing. Nevertheless, if it is used (who use it?), OK for keeping it.\r\n\r\n\r\n```\n\r\nState property has been presented in a simple select list as such state can be more than two values (i.e. trash);\r\nfor now only two values are implemented and it could be a cosmetic add-on...\r\n```\n\r\nYes, the cosmetic add-on is welcome :-) By the way, we talk about \"status\"... like the status of the metadata. Should we use another terminology like \"Active yes\/no\" ? (It is confusing for users)\r\n\r\n\r\n```\n\r\nOrganism selected value could be effectively filled in when only one organism is available, you're right\r\n```\n\r\nThanks :-)\r\n\r\n\r\n```\n\r\nRoles accordions are not convenient at all, you're right, and could be removed completely (as I understand in your\r\n proposal why keeping one accordion as there won't be lot of users for each role ?). \r\n```\n\r\nI would keep one accordion because, by default, roles are nots shown : it was the idea of accordion --> \"hidding\" advanced options since roles are defined automatically via organism. By doing like this, this form  remain simple (for a small organisation) BUT offers as well all need advanced options (for big organisation).\r\n\r\n```\n\r\nFor now all roles are  automatically filled in when organism property is defined for the first time and adding\r\npotential users seems to be a nice option. But we must care about large organism which describes lots of editors\r\n(i.e. Bern) and didn't want to remove manually users added with such option... In this case I will add a new button\r\n\"Empty roles\".\r\n```\n\r\nSo we would have two buttons \"add all users\" (means all users who have potential roles) and \"remove all users\". Seems good and covers all use cases.\r\n\r\n\r\n```\n\r\nAdditionally we have seen that all resource's managers can be removed so we have potentially ghost resources that no\r\none can manage anymore :-( For such case, easySDI must force that at least one resource's manager is defined!\r\n```\n\r\nYes, easySDI must check that at least one user is defined for each role before saving the form.",
+            "created_at": "2014-06-02T13:33:03Z"
+        },
+        {
+            "body": "**Original author :** Portier Thomas\n\nOk for removing \"description\" for all easysdi object. \r\n\r\nWe also have to display the only roles associated to the resource type (ex: no difusion for contacts). We can also considere to display only roles associated to at least one user.\r\n\r\nI think only ressource manager should be mandatory. The ressource manager can think that a resource won't never be difused\r\n\r\n\r\n",
+            "created_at": "2014-06-03T15:09:34Z"
+        },
+        {
+            "body": "**Original author :** M\u00e9rour Xavier\n\n```\nWe also have to display the only roles associated to the resource type (ex: no difusion for contacts).\n```\n\nIt's already on its way : #694 #693\n\n```\nWe can also considere to display only roles associated to at least one user.\n```\n\nI do not see the need really... it could even be confusing (conditionnal display). Can you explain this need Thomas ?\n\n```\nI think only ressource manager should be mandatory. The ressource manager can think that\na resource won't never be difused\n```\n\nGood point !",
+            "created_at": "2014-06-03T15:13:36Z"
+        },
+        {
+            "body": "**Original author :** Magoni Bruno\n\nI agree that resource's manager should be the only mandatory role!\nBut to prevent any dysfunction, such mandatory fields implies additional control (information message and choice of actions if an easySDI user tries to be removed and is the only one manager of at least one resource, same case if an Administrator wants to remove the potential role of resource's manager to an easySDI user which is the only one manager of at least one resource)\nFor such case, contact plug-in and some back office interfaces must be completed to full-fill such use cases...\n\nRegarding such mandatory role, I guess that it will be more logical that creator of a new resource will be automatically attached to the resource's manager role and not to each roles as they will be optional.\n\nAbout roles definition we could also put them inside a new tab called \"Roles\" like in back-office roles' contact definition instead of using any accordion! (see attachment:role_tab.png)\n",
+            "created_at": "2014-06-04T17:19:19Z"
+        },
+        {
+            "body": "**Original author :** M\u00e9rour Xavier\n\nLet's try to summarize this issue ! :-)\n\n\nWhat has to be done :\n\n- keep the description but change the type (to textarea). If we want to hide it, we will use CSS.\n- change state property to a toggle.\n- Organism selected value should be filled by default when only one organism is available\n- add two buttons : \"add all users\" \/ \"remove all users\" (users of the selected organism)\n- check that at least one \"resource manager\" is defined (mandatory field)\n- add additional control (see last note https:\/\/forge.easysdi.org\/issues\/699#note-9 )\n\n\nwhat still has to be discussed :\n\n- change the terminology \"status\" to \"Active\" yes\/no (to avoid the confusion with the status of the metadata.\n- about role, definition, I agree we can remove the accordion and use the same layout as in backend BUT keep it in the same tab (not a new one). Why ? because there are interaction between the choise of organism and the users so it should be in the same tab.\n\n\nI hope I did not forget anything... \n\n@Thomas, Bruno, Yves\nPlease add your comment on the \"still to be discussed\" points above. Then we can code  :-)\n\n\n\n",
+            "created_at": "2014-06-06T09:48:56Z"
+        },
+        {
+            "body": "**Original author :** Portier Thomas\n\nI don't think description must be kept\r\n\r\nFor the status, I would like to understand exactly what it is used for? I changed it to unpublished for a resource but it still appears in the catalog search results, in the replication form etc...\r\n\r\nWe could also remove it if it is not usefull.\r\n\r\nOk for a single toggle in the same page for roles.\r\n\r\nThomas",
+            "created_at": "2014-06-06T10:55:38Z"
+        },
+        {
+            "body": "**Original author :** M\u00e9rour Xavier\n\n```\n\r\nFor the status, I would like to understand exactly what it is used for? I changed it to unpublished for a resource but it still appears in the catalog search results, in the replication form etc...\r\n```\n\r\n\r\nHum... OK. Bruno, any input ? \r\n(I guess it's like the \"description\" --> it's a default item attribute in Joomla) But if not used, I would also remove it.",
+            "created_at": "2014-06-06T12:24:02Z"
+        },
+        {
+            "body": "**Original author :** M\u00e9rour Xavier\n\nJust got Bruno on phone...\r\n\r\nHere are our proposals:\r\n\r\nDescription --> we keep it (since its transversal to all easySDDI object and is sometime used by Bern). If we do not want do have it, we use the CSS to mask it.\r\n\r\nstatut --> we suggest to hide it automatically (not used) BUT it remains in the database (since its a common attribute of any easysdi object)\r\n\r\n--> we keep the roles details in the first tab with the rest of the form, without accordion.\r\n\r\n\r\nThanks Thomas to confirm you are OK with these choices.\r\n\r\n\r\n",
+            "created_at": "2014-06-06T16:12:09Z"
+        },
+        {
+            "body": "**Original author :** Portier Thomas\n\nOk for me",
+            "created_at": "2014-06-06T17:06:41Z"
+        },
+        {
+            "body": "**Original author :** Magoni Bruno\n\nSo may I ask you to vote on such feature ?\r\n\r\n+1\r\n",
+            "created_at": "2014-06-09T06:57:22Z"
+        },
+        {
+            "body": "**Original author :** M\u00e9rour Xavier\n\n+1 for me",
+            "created_at": "2014-06-09T18:49:37Z"
+        }
+    ]
+}

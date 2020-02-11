@@ -1,0 +1,19 @@
+{
+    "issue": {
+        "closed": true,
+        "title": "Add Latest news in the administration panel",
+        "created_at": "2011-01-04T11:50:04Z",
+        "labels": [
+            "Feature",
+            "Redmine status : Rejected",
+            "Category : CORE"
+        ],
+        "body": "**Original author :** Portier Thomas\n\nIt could be interesting to add latest news in the EasySDI administrator panel : \r\n\r\nNews :\r\nhttp:\/\/www.easysdi.org\/index.php\/fr\/news\/easysdi-communication-news?format=feed&type=rss\r\n\r\nTechnical news :\r\nhttp:\/\/forge.easysdi.org\/news?format=atom&key=oWNV8uUXTYWOfDFelCI6UGknsbktJKYGd5l0odeu"
+    },
+    "comments": [
+        {
+            "body": "**Original author :** M\u00e9rour Xavier\n\ndo we reallay need this ?",
+            "created_at": "2014-03-25T21:17:14Z"
+        }
+    ]
+}

@@ -1,0 +1,14 @@
+{
+    "issue": {
+        "closed": true,
+        "title": "#__sdi_order_perimeter value is too short",
+        "created_at": "2019-05-07T09:22:15Z",
+        "labels": [
+            "Defect",
+            "Redmine status : Closed",
+            "Category : SHOP"
+        ],
+        "body": "**Original author :** Blatti Yves\n\n#__sdi_order_perimeter value is too short.\r\n\r\nWe tend to have truncated perimeters.\r\n\r\nIncrease the size by changing type from *TEXT* to *LONGTEXT*.\r\n\r\nFor reference :\r\n\r\n```\n\r\nTINYBLOB, TINYTEXT       L + 1 bytes, where L < 2^8    (255 Bytes)\r\nBLOB, TEXT               L + 2 bytes, where L < 2^16   (64 Kilobytes)\r\nMEDIUMBLOB, MEDIUMTEXT   L + 3 bytes, where L < 2^24   (16 Megabytes)\r\nLONGBLOB, LONGTEXT       L + 4 bytes, where L < 2^32   (4 Gigabytes)\r\n```\n\n\n**Fixed versions :** 4.5.2"
+    },
+    "comments": []
+}

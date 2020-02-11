@@ -1,0 +1,19 @@
+{
+    "issue": {
+        "closed": true,
+        "title": "Multiline provider remarks are not rendered as multiline in order layout",
+        "created_at": "2017-06-19T08:31:53Z",
+        "labels": [
+            "Defect",
+            "Redmine status : Closed",
+            "Category : SHOP"
+        ],
+        "body": "**Original author :** Blatti Yves\n\nMultiline provider remarks are not rendered as multiline in order layout.\r\nShould add an 'nl2br' in layout.\n\n**Fixed versions :** 4.5.0"
+    },
+    "comments": [
+        {
+            "body": "**Original author :** Blatti Yves\n\nrev. 10209",
+            "created_at": "2017-06-19T09:43:36Z"
+        }
+    ]
+}

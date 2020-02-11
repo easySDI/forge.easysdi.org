@@ -1,0 +1,35 @@
+{
+    "issue": {
+        "closed": true,
+        "title": "Allow any property value code (in alias field) + properties + perimeters",
+        "created_at": "2015-07-03T08:40:20Z",
+        "labels": [
+            "Defect",
+            "Redmine status : Closed",
+            "Category : SHOP"
+        ],
+        "body": "**Original author :** Blatti Yves\n\nIn SHOP property values we set codes that are transmitted over WPS\/REST service to providers.\r\nIn easySDI V2, that was a distinct field named CODE. In V4 this value is stored in *the alias field*.\r\n\r\n*Problem is* by using the alias field, the values have to be *\"URL safe\"* and *unique*. But:\r\n- On some system the values are predefined (we have upper cases values on some remote systems)\r\n- Values are the same in multiple properties (\"YES\" or \"TRUE\" for example) and they become \"yes-1\" by getting aliased.\r\n\r\nI suggest disabling this mechanism by overriding the @check()@ function to avoid altering @alias@ in @Easysdi_shopTablepropertyvalue@ class.\r\nSince theses aliases are never used in frontend they don't have to be unique nor URL safe.\r\n\r\nSample code :\r\n```\n\r\n<code class=\"php\">\r\n    public function check() {\r\n        $fields = $this->getFields();\r\n        \/\/If there is an ordering column and this is a new row then get the next ordering value\r\n        if (property_exists($this, 'ordering') && $this->id == 0) {\r\n            $this->ordering = $this->getNextOrder();\r\n        }\r\n        \/\/Do not call parent check to avoid alias alteration\r\n        return true;\r\n    }\r\n\r\n```\n\r\n\r\n*Is it OK for TC if I correct this* in the proposed way?\r\nThank for your responses. \n\n**Fixed versions :** 4.3.2"
+    },
+    "comments": [
+        {
+            "body": "**Original author :** Blatti Yves\n\nSame applies to perimeters and properties alias !",
+            "created_at": "2015-07-03T09:25:46Z"
+        },
+        {
+            "body": "**Original author :** Van Hoecke H\u00e9l\u00e8ne \n\nIt's OK with me.",
+            "created_at": "2015-07-10T08:14:26Z"
+        },
+        {
+            "body": "**Original author :** Villemagne J\u00e9r\u00f4me\n\n+1",
+            "created_at": "2015-07-10T08:16:29Z"
+        },
+        {
+            "body": "**Original author :** Blatti Yves\n\nThanks for your votes",
+            "created_at": "2015-07-10T08:51:15Z"
+        },
+        {
+            "body": "**Original author :** Blatti Yves\n\nIn my branch rev: 8824",
+            "created_at": "2015-07-10T08:51:53Z"
+        }
+    ]
+}

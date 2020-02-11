@@ -1,0 +1,19 @@
+{
+    "issue": {
+        "closed": true,
+        "title": "deleting a ressource doesn't delete related visualization",
+        "created_at": "2014-05-02T15:43:35Z",
+        "labels": [
+            "Defect",
+            "Redmine status : Closed",
+            "Category : CORE"
+        ],
+        "body": "**Original author :** Portier Thomas\n\nWhen a ressource is deleted, corresponded record in table #_sdi_visualization is not deleted.\r\nThen we can't assign the layer to an other ressource\n\n**Fixed versions :** 4.1.0"
+    },
+    "comments": [
+        {
+            "body": "**Original author :** Magoni Bruno\n\nRelation between #__sdi_visualitation.version_id and #__sdi_version.id with constraints ON DELETE CASCADE, ON UPDATE CASCADE is missing.\nAdd such constraint through easySDI installers.\n",
+            "created_at": "2014-05-03T14:18:17Z"
+        }
+    ]
+}

@@ -1,0 +1,19 @@
+{
+    "issue": {
+        "closed": true,
+        "title": "Wrong string in pricing profile delete modal",
+        "created_at": "2016-08-09T10:52:09Z",
+        "labels": [
+            "Defect",
+            "Redmine status : Closed",
+            "Category : SHOP"
+        ],
+        "body": "**Original author :** Blatti Yves\n\nWrong string in pricing profile delete modal confirmation.\n\n**Fixed versions :** 4.4.3"
+    },
+    "comments": [
+        {
+            "body": "**Original author :** Blatti Yves\n\nrev. 9972",
+            "created_at": "2016-08-09T11:00:01Z"
+        }
+    ]
+}

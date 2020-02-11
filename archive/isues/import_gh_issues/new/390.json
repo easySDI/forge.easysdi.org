@@ -1,0 +1,35 @@
+{
+    "issue": {
+        "closed": true,
+        "title": "KeyWord GEMET",
+        "created_at": "2011-05-17T15:13:14Z",
+        "labels": [
+            "Defect",
+            "Redmine status : Closed",
+            "Category : CATALOG"
+        ],
+        "body": "**Original author :** Portier Thomas\n\nI added a keyword GEMET field in my catalog. In the form I can't access to the gemet service, I just have a combobox (see image attached)\n\n**Fixed versions :** 4.0.0"
+    },
+    "comments": [
+        {
+            "body": "**Original author :** Portier Thomas\n\nThis is not a bug, It was just a wrong configuration.\r\n\r\nBut I found an other bug.\r\n\r\nThe hard coded Inspire theme service : http:\/\/inspire.jrc.it\/theme\/ is wrong\r\nThe good one is : http:\/\/inspire-registry.jrc.ec.europa.eu\/registers\/FCD\/items\/\r\n\r\nThis path should not be hard coded but available in the configuration form.",
+            "created_at": "2011-05-18T08:58:06Z"
+        },
+        {
+            "body": "**Original author :** M\u00e9rour Xavier\n\nHello Thomas,\r\n\r\nGood to read that it's not a bug. Can you explain us the right config to do ?\u00c2\u00a8\r\n(should be wrote somewhere in the WIKI...)\r\n\r\nThanks ",
+            "created_at": "2011-05-18T19:34:10Z"
+        },
+        {
+            "body": "**Original author :** M\u00e9rour Xavier\n\nThomas, \r\n\r\nAny news on this issue ?\r\nDoes any change will come with next release of CATALOG ?",
+            "created_at": "2011-09-08T16:44:54Z"
+        },
+        {
+            "body": "**Original author :** M\u00e9rour Xavier\n\nThomas, any relevant info ?\r\nI think this ticket should be rejected, am I right ?",
+            "created_at": "2012-05-23T08:31:42Z"
+        },
+        {
+            "body": "**Original author :** M\u00e9rour Xavier\n\nPlease Thomas, any update on this ?",
+            "created_at": "2012-09-07T07:44:38Z"
+        }
+    ]
+}
